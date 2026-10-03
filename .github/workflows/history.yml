@@ -14,7 +14,7 @@ on:
         default: ""
 permissions:
   contents: write
-concurrency: history
+concurrency: history-${{ inputs.only }}
 
 jobs:
   mine:
