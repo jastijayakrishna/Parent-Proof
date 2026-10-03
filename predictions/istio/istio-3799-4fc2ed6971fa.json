@@ -1,0 +1,52 @@
+{
+  "pr": {
+    "n": 3799,
+    "head": "4fc2ed6971fa04b0081d2efbd3d735c3d13bf6db",
+    "base": "409e35b9212797a9d4a05b952da9e2b7a7eb4152",
+    "title": "Allow 63-character WorkloadEntry port names",
+    "url": "https://github.com/istio/api/pull/3799",
+    "updated": "2026-10-02T11:03:11Z",
+    "eco": "istio",
+    "key": "istio-3799-4fc2ed6971fa",
+    "provider": "istio/api",
+    "consumer": "istio/istio",
+    "consumer_sha": "e412490989daa7bb81d1bfca46fc0f7442905067"
+  },
+  "merge_base": "409e35b9212797a9d4a05b952da9e2b7a7eb4152",
+  "decided": "59b3068d792051fe9085fe76a21756f7394a0291",
+  "started": "2026-10-03T21:30:25Z",
+  "finished": "2026-10-03T21:36:01Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37155200771",
+  "verifier": {
+    "version": "v0.0.0-20261003184320-54f7dc896ce4 protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.13.0",
+    "sha256": "b97ec2f453637db0076f4b2d2bbcae084eedc940d8a00a267ce5cc6980b68eee"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "istio",
+      "commit": "59b3068d792051fe9085fe76a21756f7394a0291",
+      "parent": "409e35b9212797a9d4a05b952da9e2b7a7eb4152",
+      "date": "2026-10-03",
+      "subject": "pull request 3799 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "networking/v1alpha3/workload_entry.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 316
+      },
+      "seconds": 329.860444605,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-03T21:30:25.840Z level=INFO msg=cloning repo=c-istio url=https://github.com/istio/istio.git\nistio       59b3068d GO       source_build=GO      compiler=compiles          329.9s \nistio          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 5m36s."
+}

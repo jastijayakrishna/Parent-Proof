@@ -1,0 +1,52 @@
+{
+  "pr": {
+    "n": 3787,
+    "head": "cc46dfdb058e5000b5001a0d6d0a1d907d99bddc",
+    "base": "a9f309745a1d45840bede9d3051319de214f50c6",
+    "title": " add cert_signer_namespace_map field to MeshConfig for namespace-scoped CSR signer authorization",
+    "url": "https://github.com/istio/api/pull/3787",
+    "updated": "2026-10-02T11:27:03Z",
+    "eco": "istio",
+    "key": "istio-3787-cc46dfdb058e",
+    "provider": "istio/api",
+    "consumer": "istio/istio",
+    "consumer_sha": "e412490989daa7bb81d1bfca46fc0f7442905067"
+  },
+  "merge_base": "a9f309745a1d45840bede9d3051319de214f50c6",
+  "decided": "d616ab9fad31f5216d059ffbb6929eb6a7ac5315",
+  "started": "2026-10-03T21:30:24Z",
+  "finished": "2026-10-03T21:36:15Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37155200771",
+  "verifier": {
+    "version": "v0.0.0-20261003184320-54f7dc896ce4 protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.13.0",
+    "sha256": "b97ec2f453637db0076f4b2d2bbcae084eedc940d8a00a267ce5cc6980b68eee"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "istio",
+      "commit": "d616ab9fad31f5216d059ffbb6929eb6a7ac5315",
+      "parent": "a9f309745a1d45840bede9d3051319de214f50c6",
+      "date": "2026-10-03",
+      "subject": "pull request 3787 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "mesh/v1alpha1/config.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 316
+      },
+      "seconds": 345.946295627,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-03T21:30:24.558Z level=INFO msg=cloning repo=c-istio url=https://github.com/istio/istio.git\nistio       d616ab9f GO       source_build=GO      compiler=compiles          345.9s \nistio          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 5m51s."
+}

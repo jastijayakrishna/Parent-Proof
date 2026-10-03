@@ -1,0 +1,56 @@
+{
+  "pr": {
+    "n": 10504,
+    "head": "1c4d67b67b47006b7868c956667a9387803b2186",
+    "base": "8df972d965fbd815aba635ae0d36400c3cf2a8a1",
+    "title": "lnwallet/btcwallet: support taproot script path fee estimation in FundPSBT",
+    "url": "https://github.com/lightningnetwork/lnd/pull/10504",
+    "updated": "2026-10-02T05:31:20Z",
+    "eco": "lnd",
+    "key": "lnd-10504-1c4d67b67b47",
+    "provider": "lightningnetwork/lnd",
+    "consumer": "lightninglabs/lndclient",
+    "consumer_sha": "5c1b59d36c94ab2b520515f6b75d270c401166c8"
+  },
+  "merge_base": "8df972d965fbd815aba635ae0d36400c3cf2a8a1",
+  "decided": "e2174072cbf185771da7f01a6193c4c61e8f82cb",
+  "started": "2026-10-03T21:30:25Z",
+  "finished": "2026-10-03T21:31:15Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37155200771",
+  "verifier": {
+    "version": "v0.0.0-20261003184320-54f7dc896ce4 protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.13.0",
+    "sha256": "b97ec2f453637db0076f4b2d2bbcae084eedc940d8a00a267ce5cc6980b68eee"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "lnd",
+      "commit": "e2174072cbf185771da7f01a6193c4c61e8f82cb",
+      "parent": "8df972d965fbd815aba635ae0d36400c3cf2a8a1",
+      "date": "2026-10-03",
+      "subject": "pull request 10504 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "lnrpc/walletrpc/walletkit.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 9,
+        "excluded": 1,
+        "excluded_dirs": [
+          "."
+        ]
+      },
+      "seconds": 48.431946442,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-03T21:30:25.753Z level=INFO msg=cloning repo=c-lnd url=https://github.com/lightninglabs/lndclient.git\nlnd         e2174072 GO       source_build=GO      compiler=compiles           48.4s \nlnd            1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 50s."
+}

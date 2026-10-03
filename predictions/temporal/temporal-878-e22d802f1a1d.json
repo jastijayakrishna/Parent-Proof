@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 878,
+    "head": "e22d802f1a1d8c3313a2c411ea138baa8971021d",
+    "base": "1c27468c756fc8abc800235c33b74c6eba638c88",
+    "title": "Deprecate BatchOperationResetActivities.reset_attempts",
+    "url": "https://github.com/temporalio/api/pull/878",
+    "updated": "2026-10-02T22:18:40Z",
+    "eco": "temporal",
+    "key": "temporal-878-e22d802f1a1d",
+    "provider": "temporalio/api",
+    "consumer": "temporalio/sdk-go",
+    "consumer_sha": "9ab12d61bd89ec88b3ab12725be2eecc93abb003"
+  },
+  "merge_base": "1c27468c756fc8abc800235c33b74c6eba638c88",
+  "decided": "23dc910d409f635e48db197cc21842516aa6a020",
+  "started": "2026-10-03T21:30:27Z",
+  "finished": "2026-10-03T21:30:32Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37155200771",
+  "verifier": {
+    "version": "v0.0.0-20261003184320-54f7dc896ce4 protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.13.0",
+    "sha256": "b97ec2f453637db0076f4b2d2bbcae084eedc940d8a00a267ce5cc6980b68eee"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "temporal",
+      "commit": "23dc910d409f635e48db197cc21842516aa6a020",
+      "parent": "1c27468c756fc8abc800235c33b74c6eba638c88",
+      "date": "2026-10-03",
+      "subject": "pull request 878 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "temporal/api/batch/v1/message.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 1.845491759,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-03T21:30:27.241Z level=INFO msg=cloning repo=c-temporal url=https://github.com/temporalio/sdk-go.git\ntemporal    23dc910d GO       source_build=GO      compiler=-                   1.8s \ntemporal       1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 5s."
+}

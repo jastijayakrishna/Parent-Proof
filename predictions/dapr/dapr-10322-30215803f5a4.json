@@ -1,0 +1,52 @@
+{
+  "pr": {
+    "n": 10322,
+    "head": "30215803f5a42c5a423e463f7d4d5bc17275ca56",
+    "base": "464764b8b9d4d77a34ab099a28316562472fbbb8",
+    "title": "Feat/conversation max tokens",
+    "url": "https://github.com/dapr/dapr/pull/10322",
+    "updated": "2026-10-03T08:40:17Z",
+    "eco": "dapr",
+    "key": "dapr-10322-30215803f5a4",
+    "provider": "dapr/dapr",
+    "consumer": "dapr/go-sdk",
+    "consumer_sha": "9d745f76a46e23ae0d022f1abb098132b67603e5"
+  },
+  "merge_base": "464764b8b9d4d77a34ab099a28316562472fbbb8",
+  "decided": "9e3c7319372b6aa1a8e4652697fb63f27d9fb395",
+  "started": "2026-10-03T21:30:29Z",
+  "finished": "2026-10-03T21:31:00Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37155200771",
+  "verifier": {
+    "version": "v0.0.0-20261003184320-54f7dc896ce4 protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.13.0",
+    "sha256": "b97ec2f453637db0076f4b2d2bbcae084eedc940d8a00a267ce5cc6980b68eee"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "dapr",
+      "commit": "9e3c7319372b6aa1a8e4652697fb63f27d9fb395",
+      "parent": "464764b8b9d4d77a34ab099a28316562472fbbb8",
+      "date": "2026-10-03",
+      "subject": "pull request 10322 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "dapr/proto/runtime/v1/ai.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 6
+      },
+      "seconds": 30.297931385,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-03T21:30:29.486Z level=INFO msg=cloning repo=c-dapr url=https://github.com/dapr/go-sdk.git\ndapr        9e3c7319 GO       source_build=GO      compiler=compiles           30.3s \ndapr           1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 31s."
+}

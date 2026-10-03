@@ -1,0 +1,52 @@
+{
+  "pr": {
+    "n": 10993,
+    "head": "04ab8a357be2ab25043bb39780ccf37e8681f089",
+    "base": "32b6e2dce485c0c0246a011ba392e6ffc7249b74",
+    "title": "walletrpc: return the master key birthday from ListAccounts",
+    "url": "https://github.com/lightningnetwork/lnd/pull/10993",
+    "updated": "2026-10-02T01:35:17Z",
+    "eco": "lnd",
+    "key": "lnd-10993-04ab8a357be2",
+    "provider": "lightningnetwork/lnd",
+    "consumer": "lightninglabs/lndclient",
+    "consumer_sha": "5c1b59d36c94ab2b520515f6b75d270c401166c8"
+  },
+  "merge_base": "32b6e2dce485c0c0246a011ba392e6ffc7249b74",
+  "decided": "e10da844fae7c7f8d049d6730b7889e9c7942def",
+  "started": "2026-10-03T21:30:26Z",
+  "finished": "2026-10-03T21:33:14Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37155200771",
+  "verifier": {
+    "version": "v0.0.0-20261003184320-54f7dc896ce4 protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.13.0",
+    "sha256": "b97ec2f453637db0076f4b2d2bbcae084eedc940d8a00a267ce5cc6980b68eee"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "lnd",
+      "commit": "e10da844fae7c7f8d049d6730b7889e9c7942def",
+      "parent": "32b6e2dce485c0c0246a011ba392e6ffc7249b74",
+      "date": "2026-10-03",
+      "subject": "pull request 10993 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "lnrpc/walletrpc/walletkit.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 10
+      },
+      "seconds": 167.235966145,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-03T21:30:26.071Z level=INFO msg=cloning repo=c-lnd url=https://github.com/lightninglabs/lndclient.git\nlnd         e10da844 GO       source_build=GO      compiler=compiles          167.2s \nlnd            1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 2m49s."
+}

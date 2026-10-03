@@ -1,0 +1,53 @@
+{
+  "pr": {
+    "n": 10367,
+    "head": "b1ba4afd5723c83696fff7eb1e6db61eb8c6f32d",
+    "base": "464764b8b9d4d77a34ab099a28316562472fbbb8",
+    "title": "Binary storebuilding block support",
+    "url": "https://github.com/dapr/dapr/pull/10367",
+    "updated": "2026-10-03T16:56:48Z",
+    "eco": "dapr",
+    "key": "dapr-10367-b1ba4afd5723",
+    "provider": "dapr/dapr",
+    "consumer": "dapr/go-sdk",
+    "consumer_sha": "9d745f76a46e23ae0d022f1abb098132b67603e5"
+  },
+  "merge_base": "464764b8b9d4d77a34ab099a28316562472fbbb8",
+  "decided": "15ba3ee5b4a2b9486705125e001b2e3436f4e942",
+  "started": "2026-10-03T21:30:27Z",
+  "finished": "2026-10-03T21:30:59Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37155200771",
+  "verifier": {
+    "version": "v0.0.0-20261003184320-54f7dc896ce4 protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.13.0",
+    "sha256": "b97ec2f453637db0076f4b2d2bbcae084eedc940d8a00a267ce5cc6980b68eee"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "dapr",
+      "commit": "15ba3ee5b4a2b9486705125e001b2e3436f4e942",
+      "parent": "464764b8b9d4d77a34ab099a28316562472fbbb8",
+      "date": "2026-10-03",
+      "subject": "pull request 10367 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "dapr/proto/runtime/v1/binarystore.proto",
+        "dapr/proto/runtime/v1/dapr.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 6
+      },
+      "seconds": 30.578364028,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-03T21:30:27.674Z level=INFO msg=cloning repo=c-dapr url=https://github.com/dapr/go-sdk.git\ndapr        15ba3ee5 GO       source_build=GO      compiler=compiles           30.6s \ndapr           1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 32s."
+}

@@ -1,0 +1,52 @@
+{
+  "pr": {
+    "n": 10943,
+    "head": "ed0a3dda2599866b02ac5e96f82b5e1d6d7094aa",
+    "base": "6f65644448ad9e0b4b6312c28d63498a0d16ee9f",
+    "title": "lnrpc/chainrpc: surface re-org depth and Done over the chain notifier",
+    "url": "https://github.com/lightningnetwork/lnd/pull/10943",
+    "updated": "2026-10-02T00:24:04Z",
+    "eco": "lnd",
+    "key": "lnd-10943-ed0a3dda2599",
+    "provider": "lightningnetwork/lnd",
+    "consumer": "lightninglabs/lndclient",
+    "consumer_sha": "5c1b59d36c94ab2b520515f6b75d270c401166c8"
+  },
+  "merge_base": "40c64f9db30de8ff22d42f1146d07508a30bed14",
+  "decided": "0d5c8be75090f9f13e90922f212af806633e0ee3",
+  "started": "2026-10-03T21:30:25Z",
+  "finished": "2026-10-03T21:33:14Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37155200771",
+  "verifier": {
+    "version": "v0.0.0-20261003184320-54f7dc896ce4 protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.13.0",
+    "sha256": "b97ec2f453637db0076f4b2d2bbcae084eedc940d8a00a267ce5cc6980b68eee"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "lnd",
+      "commit": "0d5c8be75090f9f13e90922f212af806633e0ee3",
+      "parent": "40c64f9db30de8ff22d42f1146d07508a30bed14",
+      "date": "2026-10-03",
+      "subject": "pull request 10943 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "lnrpc/chainrpc/chainnotifier.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 10
+      },
+      "seconds": 166.85289076,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-03T21:30:25.655Z level=INFO msg=cloning repo=c-lnd url=https://github.com/lightninglabs/lndclient.git\nlnd         0d5c8be7 GO       source_build=GO      compiler=compiles          166.9s \nlnd            1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 2m48s."
+}
