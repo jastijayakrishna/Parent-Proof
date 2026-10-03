@@ -1,0 +1,17 @@
+time=2026-10-03T17:59:54.763Z level=INFO msg=cloning repo=proto-go url=https://github.com/open-telemetry/opentelemetry-proto-go.git
+time=2026-10-03T17:59:55.277Z level=INFO msg=cloning repo=opentelemetry-proto url=https://github.com/open-telemetry/opentelemetry-proto.git
+time=2026-10-03T17:59:55.825Z level=INFO msg=cloning repo=otel-go url=https://github.com/open-telemetry/opentelemetry-go.git
+time=2026-10-03T18:00:00.095Z level=INFO msg=mined consumer=otel-go pin_moves=14 to_compile=12
+time=2026-10-03T18:00:00.481Z level=INFO msg=window consumer=otel-go bump=e7ff6a36 select=breaking breaking=4 compiler=baseline_fails
+time=2026-10-03T18:00:00.728Z level=INFO msg=window consumer=otel-go bump=0b00bfb1 select=breaking breaking=2 compiler=baseline_fails
+time=2026-10-03T18:00:00.879Z level=INFO msg=window consumer=otel-go bump=3ec9a8a3 select=breaking breaking=23 compiler=baseline_fails
+time=2026-10-03T18:00:01.039Z level=INFO msg=window consumer=otel-go bump=96fe06df select=breaking breaking=33 compiler=baseline_fails
+time=2026-10-03T18:00:01.253Z level=INFO msg=window consumer=otel-go bump=801e7712 select=breaking breaking=9 compiler=baseline_fails
+time=2026-10-03T18:00:01.494Z level=INFO msg=window consumer=otel-go bump=8c8cd0a9 select=breaking breaking=47 compiler=baseline_fails
+time=2026-10-03T18:00:01.679Z level=INFO msg=window consumer=otel-go bump=4438ec3e select=breaking breaking=14 compiler=baseline_fails
+time=2026-10-03T18:00:01.936Z level=INFO msg=window consumer=otel-go bump=1d91055e select=breaking breaking=3 compiler=baseline_fails
+time=2026-10-03T18:00:01.979Z level=INFO msg=window consumer=otel-go bump=648b40ea select=additive breaking=0 compiler=baseline_fails
+time=2026-10-03T18:00:02.164Z level=INFO msg=window consumer=otel-go bump=e451d1fa select=additive breaking=0 compiler=baseline_fails
+time=2026-10-03T18:00:02.222Z level=INFO msg=window consumer=otel-go bump=3f74d774 select=additive breaking=0 compiler=baseline_fails
+time=2026-10-03T18:00:02.577Z level=INFO msg=window consumer=otel-go bump=59914dc0 select=additive breaking=0 compiler=baseline_fails
+time=2026-10-03T18:00:02.577Z level=INFO msg="suite built" suite=otlp windows_added=12

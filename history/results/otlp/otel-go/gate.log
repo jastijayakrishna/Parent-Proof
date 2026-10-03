@@ -1,0 +1,18 @@
+otel-go    e7ff6a36 UNKNOWN  source_build=GO      compiler=baseline_fails     0.6s replay=true 
+otel-go    0b00bfb1 UNKNOWN  source_build=GO      compiler=baseline_fails     0.7s replay=true 
+otel-go    3ec9a8a3 UNKNOWN  source_build=GO      compiler=baseline_fails     0.6s replay=true 
+otel-go    96fe06df UNKNOWN  source_build=GO      compiler=baseline_fails     0.7s replay=true 
+otel-go    801e7712 UNKNOWN  source_build=GO      compiler=baseline_fails     0.5s replay=true 
+otel-go    8c8cd0a9 UNKNOWN  source_build=GO      compiler=baseline_fails     0.7s replay=true 
+otel-go    4438ec3e UNKNOWN  source_build=GO      compiler=baseline_fails     0.6s replay=true 
+otel-go    1d91055e UNKNOWN  source_build=GO      compiler=baseline_fails     0.8s replay=true 
+otel-go    648b40ea UNKNOWN  source_build=GO      compiler=baseline_fails     0.6s replay=true 
+otel-go    e451d1fa GO       source_build=GO      compiler=baseline_fails     0.4s replay=true 
+otel-go    3f74d774 UNKNOWN  source_build=GO      compiler=baseline_fails     0.5s replay=true 
+otel-go    59914dc0 GO       source_build=GO      compiler=baseline_fails     1.0s replay=true 
+otel-go/additive       windows=  4 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=4 (NO-GO 0, UNKNOWN 2, GO 2) | wire: judged=4 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=4
+otel-go/breaking       windows=  8 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=8 (NO-GO 0, UNKNOWN 8, GO 0) | wire: judged=8 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=8
+TOTAL                  windows= 12 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=12 (NO-GO 0, UNKNOWN 10, GO 2) | wire: judged=12 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=12
+
+12 windows in 4s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`

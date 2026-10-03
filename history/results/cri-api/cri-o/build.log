@@ -1,0 +1,12 @@
+time=2026-10-03T17:59:37.179Z level=INFO msg=cloning repo=cri-api url=https://github.com/kubernetes/cri-api.git
+time=2026-10-03T17:59:38.384Z level=INFO msg=cloning repo=cri-o url=https://github.com/cri-o/cri-o.git
+time=2026-10-03T17:59:53.555Z level=INFO msg=mined consumer=cri-o pin_moves=37 to_compile=8
+time=2026-10-03T18:01:43.529Z level=INFO msg=window consumer=cri-o bump=11f2b51a select=breaking breaking=1 compiler=baseline_fails
+time=2026-10-03T18:01:46.373Z level=INFO msg=window consumer=cri-o bump=f94f91ed select=breaking breaking=4 compiler=compiles
+time=2026-10-03T18:03:08.530Z level=INFO msg=window consumer=cri-o bump=07a1e0ee select=additive breaking=0 compiler=breaks
+time=2026-10-03T18:03:14.455Z level=INFO msg=window consumer=cri-o bump=64de36a6 select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:04:10.063Z level=INFO msg=window consumer=cri-o bump=043cae7b select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:04:44.278Z level=INFO msg=window consumer=cri-o bump=86effcdc select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:05:20.106Z level=INFO msg=window consumer=cri-o bump=ba02be89 select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:05:47.286Z level=INFO msg=window consumer=cri-o bump=d1e7bdc8 select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:05:47.286Z level=INFO msg="suite built" suite=cri-api windows_added=8

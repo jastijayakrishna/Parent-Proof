@@ -1,0 +1,11 @@
+time=2026-10-03T17:59:42.542Z level=INFO msg=cloning repo=cri-api url=https://github.com/kubernetes/cri-api.git
+time=2026-10-03T17:59:43.815Z level=INFO msg=cloning repo=containerd url=https://github.com/containerd/containerd.git
+time=2026-10-03T17:59:53.243Z level=INFO msg=mined consumer=containerd pin_moves=34 to_compile=7
+time=2026-10-03T18:01:09.559Z level=INFO msg=window consumer=containerd bump=85723784 select=breaking breaking=1 compiler=breaks
+time=2026-10-03T18:01:28.803Z level=INFO msg=window consumer=containerd bump=6c6eac53 select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:02:13.079Z level=INFO msg=window consumer=containerd bump=79309361 select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:02:19.354Z level=INFO msg=window consumer=containerd bump=97dd9d50 select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:03:02.929Z level=INFO msg=window consumer=containerd bump=7467d819 select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:03:07.312Z level=INFO msg=window consumer=containerd bump=2b2195c3 select=additive breaking=0 compiler=breaks
+time=2026-10-03T18:03:31.124Z level=INFO msg=window consumer=containerd bump=8b31ac6e select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:03:31.124Z level=INFO msg="suite built" suite=cri-api windows_added=7

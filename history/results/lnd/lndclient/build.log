@@ -1,0 +1,10 @@
+time=2026-10-03T17:59:36.511Z level=INFO msg=cloning repo=lnd url=https://github.com/lightningnetwork/lnd.git
+time=2026-10-03T17:59:45.877Z level=INFO msg=cloning repo=lndclient url=https://github.com/lightninglabs/lndclient.git
+time=2026-10-03T17:59:48.380Z level=INFO msg=mined consumer=lndclient pin_moves=14 to_compile=6
+time=2026-10-03T18:01:27.381Z level=INFO msg=window consumer=lndclient bump=1274ede4 select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:01:58.723Z level=INFO msg=window consumer=lndclient bump=d7e9e25f select=additive breaking=0 compiler=bump_side_effect
+time=2026-10-03T18:03:04.600Z level=INFO msg=window consumer=lndclient bump=548fa9bc select=breaking breaking=1 compiler=bump_side_effect
+time=2026-10-03T18:03:47.097Z level=INFO msg=window consumer=lndclient bump=84cb4819 select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:03:55.349Z level=INFO msg=window consumer=lndclient bump=6bc4df00 select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:04:40.325Z level=INFO msg=window consumer=lndclient bump=2afdacdb select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:04:40.325Z level=INFO msg="suite built" suite=lnd windows_added=6
