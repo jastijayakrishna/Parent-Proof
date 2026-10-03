@@ -22,14 +22,18 @@ jobs:
       max-parallel: 20
       matrix:
         include:
-          - {suite: cri-api, consumer: containerd}
-          - {suite: cri-api, consumer: cri-o}
-          - {suite: otlp, consumer: otel-go}
-          - {suite: dapr, consumer: go-sdk}
-          - {suite: tipb, consumer: tidb}
-          - {suite: lnd, consumer: lndclient}
-          - {suite: containerd-api, consumer: nerdctl}
-    name: "${{ matrix.suite }} -> ${{ matrix.consumer }}"
+          - {suite: cri-api, consumer: containerd, shard: "1/1"}
+          - {suite: cri-api, consumer: cri-o, shard: "1/1"}
+          - {suite: otlp, consumer: otel-go, shard: "1/1"}
+          - {suite: dapr, consumer: go-sdk, shard: "1/1"}
+          - {suite: lnd, consumer: lndclient, shard: "1/1"}
+          - {suite: containerd-api, consumer: nerdctl, shard: "1/1"}
+          # TiDB builds slowly: four machines share its compiles.
+          - {suite: tipb, consumer: tidb, shard: "1/4"}
+          - {suite: tipb, consumer: tidb, shard: "2/4"}
+          - {suite: tipb, consumer: tidb, shard: "3/4"}
+          - {suite: tipb, consumer: tidb, shard: "4/4"}
+    name: "${{ matrix.suite }} -> ${{ matrix.consumer }} ${{ matrix.shard }}"
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
@@ -42,13 +46,14 @@ jobs:
       - env:
           SUITE: ${{ matrix.suite }}
           CONSUMER: ${{ matrix.consumer }}
+          SHARD: ${{ matrix.shard }}
           SINCE: ${{ inputs.since || '2023-01-01' }}
           GOTOOLCHAIN: auto
         run: bash scripts/history.sh
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         if: always()
         with:
-          name: history-${{ matrix.suite }}-${{ matrix.consumer }}
+          name: history-${{ matrix.suite }}-${{ matrix.consumer }}-${{ strategy.job-index }}
           path: out/
           if-no-files-found: ignore
       # Each job commits its own results as soon as it ends, so a slow pair
@@ -58,6 +63,7 @@ jobs:
         env:
           SUITE: ${{ matrix.suite }}
           CONSUMER: ${{ matrix.consumer }}
+          SHARD: ${{ matrix.shard }}
         run: |
           dest="history/results/$SUITE/$CONSUMER"
           mkdir -p "$dest"
@@ -67,7 +73,7 @@ jobs:
           git config user.email "proto-shadow@users.noreply.github.com"
           git add history HISTORY.md
           git diff --cached --quiet && exit 0
-          git commit -q -m "History: $SUITE -> $CONSUMER"
+          git commit -q -m "History: $SUITE -> $CONSUMER ($SHARD)"
           for i in 1 2 3 4 5; do
             git pull -q --rebase origin main && bash scripts/history-score.sh > HISTORY.md && git add HISTORY.md && { git diff --cached --quiet || git commit -q --amend --no-edit; } && git push -q && exit 0
             sleep $((i * 7))

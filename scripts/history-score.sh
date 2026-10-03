@@ -4,7 +4,7 @@
 # the Go compiler says about the consumer's code at that upgrade.
 set -euo pipefail
 shopt -s nullglob
-files=(history/results/*/*/results.jsonl)
+files=(history/results/*/*/results*.jsonl)
 
 echo "# History: real upgrades, judged by the compiler"
 echo
