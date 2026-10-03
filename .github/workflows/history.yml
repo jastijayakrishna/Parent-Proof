@@ -9,6 +9,9 @@ on:
       since:
         description: "Only upgrades from this day on (YYYY-MM-DD)"
         default: "2023-01-01"
+      only:
+        description: "Only these contracts (comma-separated, e.g. cri-api,otlp); empty runs all"
+        default: ""
 permissions:
   contents: write
 concurrency: history
@@ -47,6 +50,7 @@ jobs:
           SUITE: ${{ matrix.suite }}
           CONSUMER: ${{ matrix.consumer }}
           SHARD: ${{ matrix.shard }}
+          ONLY: ${{ inputs.only }}
           SINCE: ${{ inputs.since || '2023-01-01' }}
           GOTOOLCHAIN: auto
         run: bash scripts/history.sh

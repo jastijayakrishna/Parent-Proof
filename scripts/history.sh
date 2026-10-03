@@ -5,6 +5,11 @@
 # pinned verifier. Writes out/{windows,results}-<shard>.jsonl and log tails.
 set -uo pipefail
 
+if [ -n "${ONLY:-}" ] && [[ ",${ONLY// /}," != *",$SUITE,"* ]]; then
+  echo "skipping $SUITE: this run is only for $ONLY"
+  exit 0
+fi
+
 shard=${SHARD:-1/1}
 tag=${shard/\//of}
 tmp=${RUNNER_TEMP:-/tmp}
