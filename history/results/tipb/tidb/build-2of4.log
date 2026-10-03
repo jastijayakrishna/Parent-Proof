@@ -1,0 +1,8 @@
+time=2026-10-03T18:38:38.887Z level=INFO msg=cloning repo=tipb url=https://github.com/pingcap/tipb.git
+time=2026-10-03T18:38:39.980Z level=INFO msg=cloning repo=tidb url=https://github.com/pingcap/tidb.git
+time=2026-10-03T18:39:38.633Z level=INFO msg=mined consumer=tidb pin_moves=36 to_compile=4
+time=2026-10-03T18:44:39.705Z level=INFO msg=window consumer=tidb bump=304f3281 select=breaking breaking=17 compiler=compiles
+time=2026-10-03T18:45:56.144Z level=INFO msg=window consumer=tidb bump=5ead7e9a select=breaking breaking=24 compiler=breaks
+time=2026-10-03T18:50:05.751Z level=INFO msg=window consumer=tidb bump=aedbcd08 select=breaking breaking=1 compiler=breaks
+time=2026-10-03T18:52:04.306Z level=INFO msg=window consumer=tidb bump=967cc9b1 select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:52:04.307Z level=INFO msg="suite built" suite=tipb windows_added=4
