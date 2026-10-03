@@ -1,15 +1,15 @@
-# Every six hours: find the open pull requests that change a .proto file in
+# Every hour: find the open pull requests that change a .proto file in
 # the 17 projects of corpus.json, decide each with the pinned verifier, let the
 # Go compiler build the real consumer against it, and commit the records.
 name: shadow
 on:
   schedule:
-    - cron: "23 */6 * * *"
+    - cron: "23 * * * *"
   workflow_dispatch:
     inputs:
       max_prs:
         description: "At most this many pull requests in this run"
-        default: "12"
+        default: "20"
 permissions:
   contents: write
 concurrency: shadow
@@ -25,7 +25,7 @@ jobs:
       - id: plan
         env:
           GH_TOKEN: ${{ github.token }}
-          MAX_PRS: ${{ inputs.max_prs || '12' }}
+          MAX_PRS: ${{ inputs.max_prs || '20' }}
         run: |
           prs=$(bash scripts/plan.sh)
           echo "$prs" | jq -r '.[] | "\(.eco) #\(.n) \(.title)"'
@@ -38,7 +38,7 @@ jobs:
     timeout-minutes: 50
     strategy:
       fail-fast: false
-      max-parallel: 6
+      max-parallel: 20
       matrix:
         pr: ${{ fromJSON(needs.plan.outputs.prs) }}
     name: "${{ matrix.pr.eco }} #${{ matrix.pr.n }}"

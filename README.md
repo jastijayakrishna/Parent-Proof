@@ -3,7 +3,7 @@
 A public, timestamped record of how a contract verifier does on real pull
 requests it has never seen.
 
-Every six hours a GitHub Actions job finds the open pull requests that change
+Every hour a GitHub Actions job finds the open pull requests that change
 a `.proto` file in 17 open-source projects (Istio, etcd, raft, Temporal,
 containerd, cri-api, Envoy's data-plane-api, Linkerd, SPIFFE, Consul, lnd,
 Dapr, authzed, Jaeger, Loki, Cortex, Thanos; the pairs are in
