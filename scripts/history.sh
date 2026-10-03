@@ -33,3 +33,10 @@ fi
 sha256sum "$bin" | cut -c1-64 >> out/verifier.txt
 tail -5 out/gate.log 2>/dev/null
 tail -5 out/build.log
+
+# A one-line summary as a run annotation, readable without access to the logs.
+mined=$(wc -l < out/windows.jsonl)
+breaking=$(grep -c '"select":"breaking"' out/windows.jsonl 2>/dev/null || true)
+total=$(grep -m1 '^TOTAL' out/gate.log 2>/dev/null | cut -c1-400)
+err=$(grep -m1 -iE 'error|fatal|refus|no such|not found' out/build.log 2>/dev/null | cut -c1-300)
+echo "::notice title=$SUITE -> $CONSUMER::mined $mined upgrades ($breaking breaking). ${total:-no decisions}. ${err:+first error: $err}"
