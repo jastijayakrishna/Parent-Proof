@@ -1,0 +1,19 @@
+time=2026-10-03T18:38:02.975Z level=INFO msg=cloning repo=dapr url=https://github.com/dapr/dapr.git
+time=2026-10-03T18:38:08.846Z level=INFO msg=cloning repo=go-sdk url=https://github.com/dapr/go-sdk.git
+time=2026-10-03T18:38:11.875Z level=INFO msg=mined consumer=go-sdk pin_moves=29 to_compile=15
+time=2026-10-03T18:38:13.942Z level=INFO msg=window consumer=go-sdk bump=5779353f select=breaking breaking=13 compiler=baseline_fails
+time=2026-10-03T18:38:42.876Z level=INFO msg=window consumer=go-sdk bump=69e78804 select=breaking breaking=2 compiler=breaks
+time=2026-10-03T18:38:44.868Z level=INFO msg=window consumer=go-sdk bump=87bbb8cd select=breaking breaking=2 compiler=breaks
+time=2026-10-03T18:38:58.614Z level=INFO msg=window consumer=go-sdk bump=9bc7d823 select=breaking breaking=14 compiler=breaks
+time=2026-10-03T18:39:11.684Z level=INFO msg=window consumer=go-sdk bump=c81a3818 select=breaking breaking=2 compiler=compiles
+time=2026-10-03T18:39:15.596Z level=INFO msg=window consumer=go-sdk bump=81312e9d select=breaking breaking=4 compiler=breaks
+time=2026-10-03T18:39:29.585Z level=INFO msg=window consumer=go-sdk bump=99b259fe select=breaking breaking=6 compiler=compiles
+time=2026-10-03T18:39:40.705Z level=INFO msg=window consumer=go-sdk bump=444cb5a1 select=breaking breaking=123 compiler=compiles
+time=2026-10-03T18:39:45.484Z level=INFO msg=window consumer=go-sdk bump=897eb386 select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:39:51.005Z level=INFO msg=window consumer=go-sdk bump=1dd64086 select=breaking breaking=12 compiler=compiles
+time=2026-10-03T18:39:51.871Z level=INFO msg=window consumer=go-sdk bump=63b1ea1d select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:40:10.066Z level=INFO msg=window consumer=go-sdk bump=16374cdb select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:40:10.505Z level=INFO msg=window consumer=go-sdk bump=cefbadb3 select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:40:15.720Z level=INFO msg=window consumer=go-sdk bump=4111304b select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:40:21.419Z level=INFO msg=window consumer=go-sdk bump=dce63f19 select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:40:21.419Z level=INFO msg="suite built" suite=dapr windows_added=15
