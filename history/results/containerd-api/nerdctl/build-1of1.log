@@ -1,0 +1,11 @@
+time=2026-10-03T18:38:04.179Z level=INFO msg=cloning repo=containerd url=https://github.com/containerd/containerd.git
+time=2026-10-03T18:38:10.265Z level=INFO msg=cloning repo=nerdctl url=https://github.com/containerd/nerdctl.git
+time=2026-10-03T18:38:16.352Z level=INFO msg=mined consumer=nerdctl pin_moves=16 to_compile=7
+time=2026-10-03T18:39:30.048Z level=INFO msg=window consumer=nerdctl bump=60c8491d select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:39:30.632Z level=INFO msg=window consumer=nerdctl bump=72c42eae select=breaking breaking=184 compiler=bump_side_effect
+time=2026-10-03T18:40:27.432Z level=INFO msg=window consumer=nerdctl bump=673484ac select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:40:28.386Z level=INFO msg=window consumer=nerdctl bump=4e5cc62b select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:41:12.277Z level=INFO msg=window consumer=nerdctl bump=69f8f783 select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:41:23.638Z level=INFO msg=window consumer=nerdctl bump=c3dd63fe select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:41:56.479Z level=INFO msg=window consumer=nerdctl bump=592c011f select=additive breaking=0 compiler=compiles
+time=2026-10-03T18:41:56.479Z level=INFO msg="suite built" suite=containerd-api windows_added=7
