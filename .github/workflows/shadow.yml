@@ -85,4 +85,5 @@ jobs:
           git add predictions SCOREBOARD.md
           git diff --cached --quiet && exit 0
           git commit -q -m "Predictions of $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull -q --rebase origin main
           git push

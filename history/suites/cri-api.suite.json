@@ -1,0 +1,23 @@
+{
+  "name": "cri-api",
+  "description": "Held-out history: every pin bump of the provider module in the consumer's history since the chosen day, the compiler judging every breaking one and a sample of additive ones. Kubernetes CRI upgrades of containerd and cri-o.",
+  "provider": {
+    "name": "cri-api",
+    "repo": "kubernetes/cri-api",
+    "url": "https://github.com/kubernetes/cri-api.git",
+    "module": "k8s.io/cri-api"
+  },
+  "consumers": {
+    "containerd": {
+      "repo": "containerd/containerd",
+      "url": "https://github.com/containerd/containerd.git"
+    },
+    "cri-o": {
+      "repo": "cri-o/cri-o",
+      "url": "https://github.com/cri-o/cri-o.git"
+    }
+  },
+  "windows": "cri-api.jsonl",
+  "workers": 2,
+  "proof": "Kubernetes CRI upgrades of containerd and cri-o"
+}

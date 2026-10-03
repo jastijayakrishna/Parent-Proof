@@ -1,0 +1,20 @@
+{
+  "name": "containerd-api",
+  "description": "Held-out history: every pin bump of the provider module in the consumer's history since the chosen day, the compiler judging every breaking one and a sample of additive ones. containerd API upgrades of nerdctl.",
+  "provider": {
+    "name": "containerd",
+    "repo": "containerd/containerd",
+    "url": "https://github.com/containerd/containerd.git",
+    "module": "github.com/containerd/containerd/api",
+    "tag_prefix": "api/"
+  },
+  "consumers": {
+    "nerdctl": {
+      "repo": "containerd/nerdctl",
+      "url": "https://github.com/containerd/nerdctl.git"
+    }
+  },
+  "windows": "containerd-api.jsonl",
+  "workers": 2,
+  "proof": "containerd API upgrades of nerdctl"
+}

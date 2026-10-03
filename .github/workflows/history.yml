@@ -1,0 +1,81 @@
+# On demand: mine every real upgrade of a contract module in seven projects'
+# histories, let the Go compiler judge each, decide each with the pinned
+# verifier, and commit the results with HISTORY.md. Each job is one
+# contract -> project pair; all run at once.
+name: history
+on:
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "Only upgrades from this day on (YYYY-MM-DD)"
+        default: "2023-01-01"
+permissions:
+  contents: write
+concurrency: history
+
+jobs:
+  mine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include:
+          - {suite: cri-api, consumer: containerd}
+          - {suite: cri-api, consumer: cri-o}
+          - {suite: otlp, consumer: otel-go}
+          - {suite: dapr, consumer: go-sdk}
+          - {suite: tipb, consumer: tidb}
+          - {suite: lnd, consumer: lndclient}
+          - {suite: containerd-api, consumer: nerdctl}
+    name: "${{ matrix.suite }} -> ${{ matrix.consumer }}"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+          cache: false
+      - env:
+          SUITE: ${{ matrix.suite }}
+          CONSUMER: ${{ matrix.consumer }}
+          SINCE: ${{ inputs.since || '2023-01-01' }}
+          GOTOOLCHAIN: auto
+        run: bash scripts/history.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: history-${{ matrix.suite }}-${{ matrix.consumer }}
+          path: out/
+          if-no-files-found: ignore
+
+  record:
+    needs: mine
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: history-*
+          path: incoming
+      - name: File the results and rebuild HISTORY.md
+        run: |
+          shopt -s nullglob
+          for d in incoming/history-*; do
+            pair=${d#incoming/history-}
+            for s in $(ls history/suites | sed 's/\.suite\.json$//'); do
+              case "$pair" in "$s"-*) suite=$s; consumer=${pair#"$s"-};; esac
+            done
+            mkdir -p "history/results/$suite/$consumer"
+            cp "$d"/* "history/results/$suite/$consumer/"
+          done
+          bash scripts/history-score.sh > HISTORY.md
+          git config user.name "proto-shadow"
+          git config user.email "proto-shadow@users.noreply.github.com"
+          git add history HISTORY.md
+          git diff --cached --quiet && exit 0
+          git commit -q -m "History results of $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull -q --rebase origin main
+          git push

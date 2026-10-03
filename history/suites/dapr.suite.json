@@ -1,0 +1,19 @@
+{
+  "name": "dapr",
+  "description": "Held-out history: every pin bump of the provider module in the consumer's history since the chosen day, the compiler judging every breaking one and a sample of additive ones. Dapr runtime API upgrades of the Dapr Go SDK.",
+  "provider": {
+    "name": "dapr",
+    "repo": "dapr/dapr",
+    "url": "https://github.com/dapr/dapr.git",
+    "module": "github.com/dapr/dapr"
+  },
+  "consumers": {
+    "go-sdk": {
+      "repo": "dapr/go-sdk",
+      "url": "https://github.com/dapr/go-sdk.git"
+    }
+  },
+  "windows": "dapr.jsonl",
+  "workers": 2,
+  "proof": "Dapr runtime API upgrades of the Dapr Go SDK"
+}

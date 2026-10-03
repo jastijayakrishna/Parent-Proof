@@ -1,0 +1,19 @@
+{
+  "name": "lnd",
+  "description": "Held-out history: every pin bump of the provider module in the consumer's history since the chosen day, the compiler judging every breaking one and a sample of additive ones. lnd RPC upgrades of lndclient.",
+  "provider": {
+    "name": "lnd",
+    "repo": "lightningnetwork/lnd",
+    "url": "https://github.com/lightningnetwork/lnd.git",
+    "module": "github.com/lightningnetwork/lnd"
+  },
+  "consumers": {
+    "lndclient": {
+      "repo": "lightninglabs/lndclient",
+      "url": "https://github.com/lightninglabs/lndclient.git"
+    }
+  },
+  "windows": "lnd.jsonl",
+  "workers": 2,
+  "proof": "lnd RPC upgrades of lndclient"
+}

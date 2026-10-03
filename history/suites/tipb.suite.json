@@ -1,0 +1,19 @@
+{
+  "name": "tipb",
+  "description": "Held-out history: every pin bump of the provider module in the consumer's history since the chosen day, the compiler judging every breaking one and a sample of additive ones. tipb upgrades of TiDB.",
+  "provider": {
+    "name": "tipb",
+    "repo": "pingcap/tipb",
+    "url": "https://github.com/pingcap/tipb.git",
+    "module": "github.com/pingcap/tipb"
+  },
+  "consumers": {
+    "tidb": {
+      "repo": "pingcap/tidb",
+      "url": "https://github.com/pingcap/tidb.git"
+    }
+  },
+  "windows": "tipb.jsonl",
+  "workers": 2,
+  "proof": "tipb upgrades of TiDB"
+}

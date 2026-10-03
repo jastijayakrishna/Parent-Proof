@@ -1,0 +1,26 @@
+{
+  "name": "otlp",
+  "description": "Held-out history: every pin bump of the provider module in the consumer's history since the chosen day, the compiler judging every breaking one and a sample of additive ones. OpenTelemetry OTLP upgrades of the OpenTelemetry Go SDK's trace exporter.",
+  "provider": {
+    "name": "proto-go",
+    "repo": "open-telemetry/opentelemetry-proto-go",
+    "url": "https://github.com/open-telemetry/opentelemetry-proto-go.git",
+    "module": "go.opentelemetry.io/proto/otlp",
+    "tag_prefix": "otlp/",
+    "contracts": {
+      "name": "opentelemetry-proto",
+      "url": "https://github.com/open-telemetry/opentelemetry-proto.git",
+      "path": "opentelemetry-proto"
+    }
+  },
+  "consumers": {
+    "otel-go": {
+      "repo": "open-telemetry/opentelemetry-go",
+      "url": "https://github.com/open-telemetry/opentelemetry-go.git",
+      "gomod": "exporters/otlp/otlptrace/go.mod"
+    }
+  },
+  "windows": "otlp.jsonl",
+  "workers": 2,
+  "proof": "OpenTelemetry OTLP upgrades of the OpenTelemetry Go SDK's trace exporter"
+}

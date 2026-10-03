@@ -22,6 +22,18 @@ The record is committed while the pull request is still open, so the
 prediction cannot be fitted to what happened afterwards. The commit history and
 the Actions run linked in each record show when it was made.
 
+## History: the hard cases
+
+Open pull requests rarely break anything, so a second workflow, **history**
+(run on demand), mines every real upgrade of a contract module in seven
+projects' git histories: Kubernetes CRI in containerd and cri-o,
+OpenTelemetry's OTLP in the OpenTelemetry Go SDK, Dapr's runtime API in its Go
+SDK, tipb in TiDB, lnd's RPC in lndclient, containerd's API in nerdctl
+([history/suites/](history/suites/)). The Go compiler builds each project's
+code at each upgrade against the old and the new module, so every upgrade
+that really broke the build is known; the verifier, which was never tuned on
+these projects, decides each one. Results: [HISTORY.md](HISTORY.md).
+
 ## Reading the scoreboard
 
 - **Wrong GO**: the verifier said the consumer still builds; the compiler says
