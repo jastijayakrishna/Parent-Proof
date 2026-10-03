@@ -1,0 +1,88 @@
+# Every six hours: find the open pull requests that change a .proto file in
+# the 17 projects of corpus.json, decide each with the pinned verifier, let the
+# Go compiler build the real consumer against it, and commit the records.
+name: shadow
+on:
+  schedule:
+    - cron: "23 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      max_prs:
+        description: "At most this many pull requests in this run"
+        default: "12"
+permissions:
+  contents: write
+concurrency: shadow
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      prs: ${{ steps.plan.outputs.prs }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: plan
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MAX_PRS: ${{ inputs.max_prs || '12' }}
+        run: |
+          prs=$(bash scripts/plan.sh)
+          echo "$prs" | jq -r '.[] | "\(.eco) #\(.n) \(.title)"'
+          echo "prs=$(jq -c . <<<"$prs")" >> "$GITHUB_OUTPUT"
+
+  predict:
+    needs: plan
+    if: needs.plan.outputs.prs != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        pr: ${{ fromJSON(needs.plan.outputs.prs) }}
+    name: "${{ matrix.pr.eco }} #${{ matrix.pr.n }}"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+          cache: false
+      - env:
+          PR: ${{ toJSON(matrix.pr) }}
+          GOTOOLCHAIN: auto
+        run: bash scripts/predict.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: record-${{ matrix.pr.key }}
+          path: out/
+          if-no-files-found: ignore
+
+  record:
+    needs: [plan, predict]
+    if: always() && needs.plan.outputs.prs != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: record-*
+          path: incoming
+          merge-multiple: true
+      - name: File the records and rebuild the scoreboard
+        run: |
+          shopt -s nullglob
+          for f in incoming/*.json; do
+            eco=$(jq -r .pr.eco "$f")
+            mkdir -p "predictions/$eco"
+            mv "$f" "predictions/$eco/"
+          done
+          bash scripts/score.sh > SCOREBOARD.md
+          git config user.name "proto-shadow"
+          git config user.email "proto-shadow@users.noreply.github.com"
+          git add predictions SCOREBOARD.md
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Predictions of $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
