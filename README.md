@@ -9,7 +9,8 @@ containerd, cri-api, Envoy's data-plane-api, Linkerd, SPIFFE, Consul, lnd,
 Dapr, authzed, Jaeger, Loki, Cortex, Thanos; the pairs are in
 [corpus.json](corpus.json)). For each one it:
 
-1. decides, with the pinned verifier in [bin/](bin/), whether the project that
+1. decides the whole pull request (its merge base to its head) with the pinned
+   verifier in [bin/](bin/): whether the project that
    uses the contract (Istio for istio/api, etcd for raft, and so on) breaks:
    **GO**, **NO-GO** or **UNKNOWN**;
 2. builds that consumer against the pull request's code with the Go compiler,
