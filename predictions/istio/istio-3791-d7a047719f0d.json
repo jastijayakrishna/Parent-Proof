@@ -1,0 +1,49 @@
+{
+  "pr": {
+    "n": 3791,
+    "head": "d7a047719f0d52e3511beadc0ecad5e43f455199",
+    "base": "e0d275e5684ddd935813ac470148c8b69f6f573f",
+    "title": "docs: use camelCase prefixRewrite in HTTPRedirect example",
+    "url": "https://github.com/istio/api/pull/3791",
+    "updated": "2026-09-24T09:35:20Z",
+    "eco": "istio",
+    "key": "istio-3791-d7a047719f0d",
+    "provider": "istio/api",
+    "consumer": "istio/istio",
+    "consumer_sha": "e412490989daa7bb81d1bfca46fc0f7442905067"
+  },
+  "started": "2026-10-03T17:43:38Z",
+  "finished": "2026-10-03T17:49:16Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37141491441",
+  "verifier": {
+    "version": "v0.0.0-20261003170200-ea6acee448ab protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.12.0",
+    "sha256": "7b48c33546b59672665b02dedcf72a7d77b234394735faefcaf724586669f045"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "istio",
+      "commit": "d7a047719f0d52e3511beadc0ecad5e43f455199",
+      "parent": "e0d275e5684ddd935813ac470148c8b69f6f573f",
+      "date": "2026-09-24",
+      "subject": "docs: use camelCase prefixRewrite in HTTPRedirect example",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "networking/v1alpha3/virtual_service.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 316
+      },
+      "seconds": 333.501053044,
+      "total": 1
+    }
+  ]
+}

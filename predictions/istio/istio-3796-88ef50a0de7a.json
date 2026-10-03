@@ -1,0 +1,49 @@
+{
+  "pr": {
+    "n": 3796,
+    "head": "88ef50a0de7a3f19e7b082eb053c43a58881e770",
+    "base": "409e35b9212797a9d4a05b952da9e2b7a7eb4152",
+    "title": "destinationrule: add hash_balance_factor to ConsistentHashLB",
+    "url": "https://github.com/istio/api/pull/3796",
+    "updated": "2026-09-30T05:40:51Z",
+    "eco": "istio",
+    "key": "istio-3796-88ef50a0de7a",
+    "provider": "istio/api",
+    "consumer": "istio/istio",
+    "consumer_sha": "e412490989daa7bb81d1bfca46fc0f7442905067"
+  },
+  "started": "2026-10-03T17:43:35Z",
+  "finished": "2026-10-03T17:49:24Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37141491441",
+  "verifier": {
+    "version": "v0.0.0-20261003170200-ea6acee448ab protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.12.0",
+    "sha256": "7b48c33546b59672665b02dedcf72a7d77b234394735faefcaf724586669f045"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "istio",
+      "commit": "f1ac03d1be94a53658d2168e2c042b5a03d54e88",
+      "parent": "409e35b9212797a9d4a05b952da9e2b7a7eb4152",
+      "date": "2026-09-29",
+      "subject": "destinationrule: add hash_balance_factor to ConsistentHashLB",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "networking/v1alpha3/destination_rule.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 316
+      },
+      "seconds": 343.531383913,
+      "total": 1
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "pr": {
+    "n": 10504,
+    "head": "1c4d67b67b47006b7868c956667a9387803b2186",
+    "base": "8df972d965fbd815aba635ae0d36400c3cf2a8a1",
+    "title": "lnwallet/btcwallet: support taproot script path fee estimation in FundPSBT",
+    "url": "https://github.com/lightningnetwork/lnd/pull/10504",
+    "updated": "2026-10-02T05:31:20Z",
+    "eco": "lnd",
+    "key": "lnd-10504-1c4d67b67b47",
+    "provider": "lightningnetwork/lnd",
+    "consumer": "lightninglabs/lndclient",
+    "consumer_sha": "5c1b59d36c94ab2b520515f6b75d270c401166c8"
+  },
+  "started": "2026-10-03T17:43:35Z",
+  "finished": "2026-10-03T17:44:24Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37141491441",
+  "verifier": {
+    "version": "v0.0.0-20261003170200-ea6acee448ab protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.12.0",
+    "sha256": "7b48c33546b59672665b02dedcf72a7d77b234394735faefcaf724586669f045"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "lnd",
+      "commit": "1c4d67b67b47006b7868c956667a9387803b2186",
+      "parent": "e26fae87979d6346442e6ebcdcd6cc3d6cc80c09",
+      "date": "2026-04-30",
+      "subject": "lnwallet+walletrpc: add witness_size_hint RPC field for tapscript fee estimation",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "lnrpc/walletrpc/walletkit.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 9,
+        "excluded": 1,
+        "excluded_dirs": [
+          "."
+        ]
+      },
+      "seconds": 47.685112458,
+      "total": 1
+    }
+  ]
+}

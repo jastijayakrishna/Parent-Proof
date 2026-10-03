@@ -1,0 +1,49 @@
+{
+  "pr": {
+    "n": 10670,
+    "head": "2f41fe7084d1ba88e0515325dbe94a3828c1f801",
+    "base": "e9a8b3f9c8f96610204672e4f93c8f8b030a444e",
+    "title": "Add raw transaction hex to `pendingsweeps` response",
+    "url": "https://github.com/lightningnetwork/lnd/pull/10670",
+    "updated": "2026-10-02T10:55:26Z",
+    "eco": "lnd",
+    "key": "lnd-10670-2f41fe7084d1",
+    "provider": "lightningnetwork/lnd",
+    "consumer": "lightninglabs/lndclient",
+    "consumer_sha": "5c1b59d36c94ab2b520515f6b75d270c401166c8"
+  },
+  "started": "2026-10-03T17:43:37Z",
+  "finished": "2026-10-03T17:46:14Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37141491441",
+  "verifier": {
+    "version": "v0.0.0-20261003170200-ea6acee448ab protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.12.0",
+    "sha256": "7b48c33546b59672665b02dedcf72a7d77b234394735faefcaf724586669f045"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "lnd",
+      "commit": "bc9fcaf8e9c6bf02e5c43de3ce0feef48f14049d",
+      "parent": "737239b85b7f3f3a7825b2fc7af61c300a28b6d4",
+      "date": "2026-03-25",
+      "subject": "lnrpc+walletrpc: add raw_tx_hex to PendingSweep response",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "lnrpc/walletrpc/walletkit.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 10
+      },
+      "seconds": 154.51510108,
+      "total": 1
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "pr": {
+    "n": 10993,
+    "head": "04ab8a357be2ab25043bb39780ccf37e8681f089",
+    "base": "32b6e2dce485c0c0246a011ba392e6ffc7249b74",
+    "title": "walletrpc: return the master key birthday from ListAccounts",
+    "url": "https://github.com/lightningnetwork/lnd/pull/10993",
+    "updated": "2026-10-02T01:35:17Z",
+    "eco": "lnd",
+    "key": "lnd-10993-04ab8a357be2",
+    "provider": "lightningnetwork/lnd",
+    "consumer": "lightninglabs/lndclient",
+    "consumer_sha": "5c1b59d36c94ab2b520515f6b75d270c401166c8"
+  },
+  "started": "2026-10-03T17:43:32Z",
+  "finished": "2026-10-03T17:45:27Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37141491441",
+  "verifier": {
+    "version": "v0.0.0-20261003170200-ea6acee448ab protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.12.0",
+    "sha256": "7b48c33546b59672665b02dedcf72a7d77b234394735faefcaf724586669f045"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "lnd",
+      "commit": "d07d9c34b7453dbfb9a414a3f72fc096388a1ae1",
+      "parent": "9572deaad2657b7455145f9e52e0fb2412da2157",
+      "date": "2026-07-24",
+      "subject": "walletrpc: return the master key birthday from ListAccounts",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "lnrpc/walletrpc/walletkit.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 10
+      },
+      "seconds": 113.814653679,
+      "total": 1
+    }
+  ]
+}

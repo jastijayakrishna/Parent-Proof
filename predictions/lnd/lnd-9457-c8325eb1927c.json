@@ -1,0 +1,53 @@
+{
+  "pr": {
+    "n": 9457,
+    "head": "c8325eb1927c0d3159209533be4ab5dd9bee284d",
+    "base": "f25e44712f1306d79f0947b6890d267f78417863",
+    "title": "routerrpc: add option PreventSubsequentPayment to TrackPaymentV2",
+    "url": "https://github.com/lightningnetwork/lnd/pull/9457",
+    "updated": "2026-10-01T21:46:06Z",
+    "eco": "lnd",
+    "key": "lnd-9457-c8325eb1927c",
+    "provider": "lightningnetwork/lnd",
+    "consumer": "lightninglabs/lndclient",
+    "consumer_sha": "5c1b59d36c94ab2b520515f6b75d270c401166c8"
+  },
+  "started": "2026-10-03T17:43:36Z",
+  "finished": "2026-10-03T17:44:31Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37141491441",
+  "verifier": {
+    "version": "v0.0.0-20261003170200-ea6acee448ab protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.12.0",
+    "sha256": "7b48c33546b59672665b02dedcf72a7d77b234394735faefcaf724586669f045"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "lnd",
+      "commit": "c8325eb1927c0d3159209533be4ab5dd9bee284d",
+      "parent": "b568debdc476eef8f04096c88e1a3db4daa00ca3",
+      "date": "2025-01-27",
+      "subject": "routerrpc: add option PreventSubsequentPayment",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "lnrpc/routerrpc/router.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 9,
+        "excluded": 1,
+        "excluded_dirs": [
+          "."
+        ]
+      },
+      "seconds": 51.663350076,
+      "total": 1
+    }
+  ]
+}

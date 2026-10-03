@@ -1,0 +1,50 @@
+{
+  "pr": {
+    "n": 10367,
+    "head": "b1ba4afd5723c83696fff7eb1e6db61eb8c6f32d",
+    "base": "464764b8b9d4d77a34ab099a28316562472fbbb8",
+    "title": "Binary storebuilding block support",
+    "url": "https://github.com/dapr/dapr/pull/10367",
+    "updated": "2026-10-03T16:56:48Z",
+    "eco": "dapr",
+    "key": "dapr-10367-b1ba4afd5723",
+    "provider": "dapr/dapr",
+    "consumer": "dapr/go-sdk",
+    "consumer_sha": "9d745f76a46e23ae0d022f1abb098132b67603e5"
+  },
+  "started": "2026-10-03T17:43:37Z",
+  "finished": "2026-10-03T17:44:10Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37141491441",
+  "verifier": {
+    "version": "v0.0.0-20261003170200-ea6acee448ab protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.12.0",
+    "sha256": "7b48c33546b59672665b02dedcf72a7d77b234394735faefcaf724586669f045"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "dapr",
+      "commit": "e42b834f999db82f01f35c2f4d3202bd44bc37ad",
+      "parent": "b9b518906a4f65876089f7bd6cbcf8b090ae4ef0",
+      "date": "2026-10-02",
+      "subject": "Updated to have an alpha1 suffix on protos",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "dapr/proto/runtime/v1/binarystore.proto",
+        "dapr/proto/runtime/v1/dapr.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 6
+      },
+      "seconds": 31.026184227,
+      "total": 1
+    }
+  ]
+}

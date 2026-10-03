@@ -1,0 +1,45 @@
+{
+  "pr": {
+    "n": 874,
+    "head": "b349b0d2d9afc6e1452b432af7954b2bf608e954",
+    "base": "1c27468c756fc8abc800235c33b74c6eba638c88",
+    "title": "Add ExportedExecutions type for export",
+    "url": "https://github.com/temporalio/api/pull/874",
+    "updated": "2026-10-02T14:21:13Z",
+    "eco": "temporal",
+    "key": "temporal-874-b349b0d2d9af",
+    "provider": "temporalio/api",
+    "consumer": "temporalio/sdk-go",
+    "consumer_sha": "9ab12d61bd89ec88b3ab12725be2eecc93abb003"
+  },
+  "started": "2026-10-03T17:43:33Z",
+  "finished": "2026-10-03T17:43:36Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37141491441",
+  "verifier": {
+    "version": "v0.0.0-20261003170200-ea6acee448ab protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.12.0",
+    "sha256": "7b48c33546b59672665b02dedcf72a7d77b234394735faefcaf724586669f045"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "temporal",
+      "commit": "b349b0d2d9afc6e1452b432af7954b2bf608e954",
+      "parent": "f97f21961732a508d28a8ea5256e6f320056d613",
+      "date": "2026-10-02",
+      "subject": "update comment",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "temporal/api/export/v1/message.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 0.59696457,
+      "total": 1
+    }
+  ]
+}

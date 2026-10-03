@@ -1,0 +1,49 @@
+{
+  "pr": {
+    "n": 3787,
+    "head": "cc46dfdb058e5000b5001a0d6d0a1d907d99bddc",
+    "base": "a9f309745a1d45840bede9d3051319de214f50c6",
+    "title": " add cert_signer_namespace_map field to MeshConfig for namespace-scoped CSR signer authorization",
+    "url": "https://github.com/istio/api/pull/3787",
+    "updated": "2026-10-02T11:27:03Z",
+    "eco": "istio",
+    "key": "istio-3787-cc46dfdb058e",
+    "provider": "istio/api",
+    "consumer": "istio/istio",
+    "consumer_sha": "e412490989daa7bb81d1bfca46fc0f7442905067"
+  },
+  "started": "2026-10-03T17:43:32Z",
+  "finished": "2026-10-03T17:47:40Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37141491441",
+  "verifier": {
+    "version": "v0.0.0-20261003170200-ea6acee448ab protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.12.0",
+    "sha256": "7b48c33546b59672665b02dedcf72a7d77b234394735faefcaf724586669f045"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "istio",
+      "commit": "9df2a45d0c9140be79947a57220d3debf81c39db",
+      "parent": "a9f309745a1d45840bede9d3051319de214f50c6",
+      "date": "2026-09-23",
+      "subject": " add cert_signer_namespace_map field to MeshConfig for namespace-scoped CSR signer authorization",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "mesh/v1alpha1/config.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 316
+      },
+      "seconds": 243.488180671,
+      "total": 1
+    }
+  ]
+}

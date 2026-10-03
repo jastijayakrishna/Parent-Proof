@@ -1,0 +1,49 @@
+{
+  "pr": {
+    "n": 3792,
+    "head": "d20be30160d5c848bdadfc585065ea09631a5e73",
+    "base": "e0d275e5684ddd935813ac470148c8b69f6f573f",
+    "title": "docs: expose presence field in JWTRule reference docs",
+    "url": "https://github.com/istio/api/pull/3792",
+    "updated": "2026-09-24T09:35:56Z",
+    "eco": "istio",
+    "key": "istio-3792-d20be30160d5",
+    "provider": "istio/api",
+    "consumer": "istio/istio",
+    "consumer_sha": "e412490989daa7bb81d1bfca46fc0f7442905067"
+  },
+  "started": "2026-10-03T17:43:37Z",
+  "finished": "2026-10-03T17:49:18Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37141491441",
+  "verifier": {
+    "version": "v0.0.0-20261003170200-ea6acee448ab protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.12.0",
+    "sha256": "7b48c33546b59672665b02dedcf72a7d77b234394735faefcaf724586669f045"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "istio",
+      "commit": "d20be30160d5c848bdadfc585065ea09631a5e73",
+      "parent": "e0d275e5684ddd935813ac470148c8b69f6f573f",
+      "date": "2026-09-24",
+      "subject": "docs: expose presence field in JWTRule reference docs",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "security/v1beta1/request_authentication.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 316
+      },
+      "seconds": 335.807887182,
+      "total": 1
+    }
+  ]
+}

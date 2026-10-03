@@ -1,0 +1,49 @@
+{
+  "pr": {
+    "n": 3799,
+    "head": "4fc2ed6971fa04b0081d2efbd3d735c3d13bf6db",
+    "base": "409e35b9212797a9d4a05b952da9e2b7a7eb4152",
+    "title": "Allow 63-character WorkloadEntry port names",
+    "url": "https://github.com/istio/api/pull/3799",
+    "updated": "2026-10-02T11:03:11Z",
+    "eco": "istio",
+    "key": "istio-3799-4fc2ed6971fa",
+    "provider": "istio/api",
+    "consumer": "istio/istio",
+    "consumer_sha": "e412490989daa7bb81d1bfca46fc0f7442905067"
+  },
+  "started": "2026-10-03T17:43:34Z",
+  "finished": "2026-10-03T17:49:23Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37141491441",
+  "verifier": {
+    "version": "v0.0.0-20261003170200-ea6acee448ab protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.12.0",
+    "sha256": "7b48c33546b59672665b02dedcf72a7d77b234394735faefcaf724586669f045"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "istio",
+      "commit": "4fc2ed6971fa04b0081d2efbd3d735c3d13bf6db",
+      "parent": "409e35b9212797a9d4a05b952da9e2b7a7eb4152",
+      "date": "2026-10-02",
+      "subject": "fix: allow 63-character workload port names",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "networking/v1alpha3/workload_entry.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 316
+      },
+      "seconds": 344.628999714,
+      "total": 1
+    }
+  ]
+}
