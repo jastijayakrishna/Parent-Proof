@@ -1,4 +1,4 @@
-# proto-shadow
+# Parent-Proof
 
 A public, timestamped record of how a contract verifier does on real pull
 requests it has never seen.
