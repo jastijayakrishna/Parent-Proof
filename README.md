@@ -12,7 +12,7 @@ Dapr, authzed, Jaeger, Loki, Cortex, Thanos; the pairs are in
 1. decides the whole pull request (its merge base to its head) with the pinned
    verifier in [bin/](bin/): whether the project that
    uses the contract (Istio for istio/api, etcd for raft, and so on) breaks:
-   **GO**, **NO-GO** or **UNKNOWN**;
+   **Merge**, **Don't merge** or **Needs review**;
 2. builds that consumer against the pull request's code with the Go compiler,
    which says **compiles** or **breaks**; the verifier never sees this answer;
 3. commits both to [predictions/](predictions/) and recounts
@@ -36,11 +36,11 @@ these projects, decides each one. Results: [HISTORY.md](HISTORY.md).
 
 ## Reading the scoreboard
 
-- **Wrong GO**: the verifier said the consumer still builds; the compiler says
-  it breaks. The failure that matters most.
-- **False NO-GO**: the verifier said the consumer breaks; the compiler says it
-  builds.
-- **UNKNOWN**: the verifier could not prove either; each row says why.
+- **Missed**: the verifier said *Merge*; the compiler says the consumer
+  breaks. The failure that matters most: a customer would have trusted it.
+- **False alarm**: the verifier said *Don't merge*; the compiler says the
+  consumer builds.
+- **Needs review**: the verifier could not prove either; each row says why.
 - **Not judged**: the compiler could not build the consumer before the change
   either, or the contract's Go code is not in a module the consumer builds
   against. Those predictions are graded later by what happened to the pull
