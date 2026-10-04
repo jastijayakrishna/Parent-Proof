@@ -1,0 +1,16 @@
+{
+  "name": "temporal-api",
+  "description": "Held-out test, 2026-10-02: Temporal API (go.temporal.io/api, protos in temporalio/api) pin bumps of temporalio/temporal (server) and temporalio/sdk-go since 2025-10-01, with the compiler's verdict on the consumer at the bump's parent.",
+  "provider": {"name": "api-go", "repo": "temporalio/api-go", "url": "https://github.com/temporalio/api-go.git", "module": "go.temporal.io/api",
+    "contracts": {"name": "temporal-api", "url": "https://github.com/temporalio/api.git", "path": "proto/api"}},
+  "consumers": {
+    "temporal": {"repo": "temporalio/temporal", "url": "https://github.com/temporalio/temporal.git"},
+    "sdk-go": {"repo": "temporalio/sdk-go", "url": "https://github.com/temporalio/sdk-go.git"}
+  },
+  "windows": "temporal-api.jsonl",
+  "baseline": "temporal-api.baseline.json",
+  "expected_failures": "temporal-api.expected-failures.json",
+  "jobs": 3,
+  "workers": 2,
+  "proof": "Temporal API upgrades of the Temporal server and its Go SDK"
+}

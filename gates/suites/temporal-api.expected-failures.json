@@ -1,0 +1,9 @@
+[
+  {
+    "window": "temporal@b9f54400a1409c58550c76f3dc28971d036975c9:cd46361430c22f4b6ecf620888ec8617b59728de..6c8bd137c96b5e1a80b0291fa5e7e70b79726421",
+    "kind": "wrong_go",
+    "reason": "A wrong GO outside the contract: the nexus generator renamed workflowservicenexus.WorkflowService in api-go while the .proto files changed only comments. The verifier checks the protobuf contract, not other generators' code (README, What it cannot see); the Go compiler catches it when the caller upgrades.",
+    "approver": "founder",
+    "label": "outside the contract"
+  }
+]

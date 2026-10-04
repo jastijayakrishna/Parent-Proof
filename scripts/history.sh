@@ -5,6 +5,13 @@
 # pinned verifier. Writes out/{windows,results}-<shard>.jsonl and log tails.
 set -uo pipefail
 
+# Started by a push of history/request.txt: its lines say only=... and since=...
+if [ "${GITHUB_EVENT_NAME:-}" = push ] && [ -f history/request.txt ]; then
+  ONLY=$(sed -n 's/^only=//p' history/request.txt)
+  SINCE=$(sed -n 's/^since=//p' history/request.txt)
+  SINCE=${SINCE:-2023-01-01}
+fi
+
 if [ -n "${ONLY:-}" ] && [[ ",${ONLY// /}," != *",$SUITE,"* ]]; then
   echo "skipping $SUITE: this run is only for $ONLY"
   exit 0

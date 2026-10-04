@@ -4,6 +4,9 @@
 # contract -> project pair; all run at once.
 name: history
 on:
+  push:
+    paths:
+      - history/request.txt
   workflow_dispatch:
     inputs:
       since:
@@ -14,7 +17,7 @@ on:
         default: ""
 permissions:
   contents: write
-concurrency: history-${{ inputs.only }}
+concurrency: history-${{ inputs.only || github.event_name }}
 
 jobs:
   mine:

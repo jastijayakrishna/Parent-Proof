@@ -1,0 +1,29 @@
+{
+  "name": "kvproto",
+  "description": "Every kvproto pin bump of client-go, pd and TiDB with a breaking change, plus 12 random additive bumps per consumer (seed 7), each with the compiler's verdict on the consumer at the bump's parent.",
+  "provider": {
+    "name": "kvproto",
+    "repo": "pingcap/kvproto",
+    "url": "https://github.com/pingcap/kvproto.git",
+    "module": "github.com/pingcap/kvproto"
+  },
+  "consumers": {
+    "client-go": {
+      "repo": "tikv/client-go",
+      "url": "https://github.com/tikv/client-go.git"
+    },
+    "pd": {
+      "repo": "tikv/pd",
+      "url": "https://github.com/tikv/pd.git"
+    },
+    "tidb": {
+      "repo": "pingcap/tidb",
+      "url": "https://github.com/pingcap/tidb.git"
+    }
+  },
+  "windows": "kvproto.jsonl",
+  "baseline": "kvproto.baseline.json",
+  "jobs": 10,
+  "workers": 2,
+  "proof": "kvproto upgrades of client-go, pd and TiDB (rerun on every change that can move a verdict, and before every release)"
+}
