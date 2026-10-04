@@ -1,0 +1,52 @@
+{
+  "pr": {
+    "n": 3792,
+    "head": "d20be30160d5c848bdadfc585065ea09631a5e73",
+    "base": "e0d275e5684ddd935813ac470148c8b69f6f573f",
+    "title": "docs: expose presence field in JWTRule reference docs",
+    "url": "https://github.com/istio/api/pull/3792",
+    "updated": "2026-09-24T09:35:56Z",
+    "eco": "istio",
+    "key": "istio-3792-d20be30160d5",
+    "provider": "istio/api",
+    "consumer": "istio/istio",
+    "consumer_sha": "e412490989daa7bb81d1bfca46fc0f7442905067"
+  },
+  "merge_base": "e0d275e5684ddd935813ac470148c8b69f6f573f",
+  "decided": "5523df5641dec83b33c9e31192e621dd9e9cbd99",
+  "started": "2026-10-04T00:48:16Z",
+  "finished": "2026-10-04T00:52:07Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37165974815",
+  "verifier": {
+    "version": "v0.0.0-20261003184320-54f7dc896ce4 protocompile/v0.14.1 verdict/v0.8.1 go-analyzer/v0.13.0",
+    "sha256": "b97ec2f453637db0076f4b2d2bbcae084eedc940d8a00a267ce5cc6980b68eee"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "istio",
+      "commit": "5523df5641dec83b33c9e31192e621dd9e9cbd99",
+      "parent": "e0d275e5684ddd935813ac470148c8b69f6f573f",
+      "date": "2026-10-04",
+      "subject": "pull request 3792 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "security/v1beta1/request_authentication.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 316
+      },
+      "seconds": 226.412385156,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-04T00:48:16.201Z level=INFO msg=cloning repo=c-istio url=https://github.com/istio/istio.git\nistio       5523df56 GO       source_build=GO      compiler=compiles          226.4s \nistio          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 3m52s."
+}
