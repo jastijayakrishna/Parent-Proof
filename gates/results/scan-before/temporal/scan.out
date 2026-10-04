@@ -1,0 +1,31 @@
+time=2026-10-04T10:57:41.915Z level=INFO msg=cloning repo=p-temporal url=https://github.com/temporalio/api.git
+time=2026-10-04T10:57:42.209Z level=INFO msg=cloning repo=c-temporal url=https://github.com/temporalio/sdk-go.git
+temporal    2a1d8f76 GO       source_build=GO      compiler=-                   4.9s 
+temporal    46ee8b82 NO_GO    source_build=GO      compiler=-                   1.0s 
+temporal    10a041c3 GO       source_build=GO      compiler=-                   0.8s 
+temporal    4369aa11 NO_GO    source_build=GO      compiler=-                   0.9s 
+temporal    5520164f GO       source_build=GO      compiler=-                   0.2s 
+temporal    78685101 GO       source_build=GO      compiler=-                   0.4s 
+temporal    3ebdff42 GO       source_build=GO      compiler=-                   0.9s 
+temporal    5fd4740d UNKNOWN  source_build=GO      compiler=-                   0.9s 
+temporal    17d10bff GO       source_build=GO      compiler=-                   0.9s 
+temporal    13d59637 GO       source_build=GO      compiler=-                   1.0s 
+temporal    6d7ba8f0 NO_GO    source_build=GO      compiler=-                   1.0s 
+temporal    3f611ea9 GO       source_build=GO      compiler=-                   0.9s 
+temporal    ae9d1d6f NO_GO    source_build=GO      compiler=-                   0.8s 
+temporal    e4863be8 GO       source_build=GO      compiler=-                   0.8s 
+temporal    f53963d4 GO       source_build=GO      compiler=-                   0.2s 
+temporal    96d49950 GO       source_build=GO      compiler=-                   0.8s 
+temporal    89718e9f GO       source_build=GO      compiler=-                   0.8s 
+temporal    8093081c GO       source_build=GO      compiler=-                   0.8s 
+temporal    16c84595 GO       source_build=GO      compiler=-                   0.9s 
+temporal    dd971263 GO       source_build=GO      compiler=-                   0.8s 
+temporal      20 decisions  GO  15  NO-GO   4  UNKNOWN   1 ( 5.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO  15  NO-GO   4  UNKNOWN   1 ( 5.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    2   1  DESCRIPTOR_REFLECTION (e.g. temporal@5fd4740d70eaa4f3b3b6f0e6314043496f7549e4)
+    1   1  WHOLE_MESSAGE_FLOW (e.g. temporal@5fd4740d70eaa4f3b3b6f0e6314043496f7549e4)
+
+20 windows in 21s.
+exit 0
