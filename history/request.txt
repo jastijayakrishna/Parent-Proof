@@ -1,3 +1,3 @@
-only=cri-api
+only=milvus
 since=2023-01-01
-verifier=77369a2
+verifier=bb4d10e

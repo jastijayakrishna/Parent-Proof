@@ -1,0 +1,25 @@
+{
+  "name": "milvus",
+  "description": "Held-out history: every pin bump of the provider module in the consumer's history since the chosen day, the compiler judging every breaking one and a sample of additive ones. Milvus API (milvus-proto) upgrades of the Milvus Go clients.",
+  "provider": {
+    "name": "milvus-proto",
+    "repo": "milvus-io/milvus-proto",
+    "url": "https://github.com/milvus-io/milvus-proto.git",
+    "module": "github.com/milvus-io/milvus-proto/go-api/v2",
+    "tag_prefix": "go-api/"
+  },
+  "consumers": {
+    "milvus-client": {
+      "repo": "milvus-io/milvus",
+      "url": "https://github.com/milvus-io/milvus.git",
+      "gomod": "client/go.mod"
+    },
+    "milvus-sdk-go": {
+      "repo": "milvus-io/milvus-sdk-go",
+      "url": "https://github.com/milvus-io/milvus-sdk-go.git"
+    }
+  },
+  "windows": "milvus.jsonl",
+  "workers": 2,
+  "proof": "Milvus API upgrades of the Milvus Go client and Go SDK"
+}
