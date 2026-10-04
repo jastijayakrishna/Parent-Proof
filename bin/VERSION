@@ -1,3 +1,3 @@
-source: jastijayakrishna/Parent, branch s1-fix, commit 77369a2c04dc8bd4e2746d240be86e95dc0ff2c9
-sha256 (uncompressed linux/amd64): 9d18d9e8ddc5fad588cc15da9b72de33afc6064e2f0f7d17f6c917e1640265e2
-built: 2026-10-04T02:17Z
+source: jastijayakrishna/Parent, branch s2-now-identity, commit 18da5d41ef3dced73e591a0aca79f359c939e053
+sha256 (uncompressed linux/amd64): dbbb85539f4ead6ea7576567743975fa4a26b4abc2921744d503ae00ad65a65d
+built: 2026-10-04T05:17Z
