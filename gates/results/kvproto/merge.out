@@ -6,6 +6,6 @@ tidb/additive          windows= 12 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0
 tidb/breaking          windows= 49 | breaks=22: caught=22 WRONG_GO=0 abstained=0 | compiles=24: GO=24 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 2) | unavailable=3 (NO-GO 0, UNKNOWN 3, GO 0) | wire: judged=49 broken=13 RUNTIME_WRONG_GO=0 confirmed=10 unconfirmed=6 | errors=0 | replayed=49
 TOTAL                  windows=152 | breaks=49: caught=49 WRONG_GO=0 abstained=0 | compiles=97: GO=95 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 6) | unavailable=6 (NO-GO 2, UNKNOWN 4, GO 0) | wire: judged=152 broken=26 RUNTIME_WRONG_GO=0 confirmed=21 unconfirmed=16 | errors=0 | replayed=152
 
-152 windows merged; verifier b97ec2f453637db0076f4b2d2bbcae084eedc940d8a00a267ce5cc6980b68eee; slowest window 0.8 minutes; 0 differ from the baseline.
+152 windows merged; verifier 9d18d9e8ddc5fad588cc15da9b72de33afc6064e2f0f7d17f6c917e1640265e2; slowest window 0.4 minutes; 0 differ from the baseline.
 Release gate passed.
 exit 0
