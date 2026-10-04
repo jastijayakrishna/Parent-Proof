@@ -1,0 +1,33 @@
+time=2026-10-04T10:56:39.791Z level=INFO msg=cloning repo=p-cortex url=https://github.com/cortexproject/cortex.git
+time=2026-10-04T10:56:41.268Z level=INFO msg=cloning repo=c-cortex url=https://github.com/cortexproject/cortex.git
+cortex      00c5f76f GO       source_build=GO      compiler=-                  11.0s 
+cortex      bfbeb673 GO       source_build=GO      compiler=-                   0.0s 
+cortex      9dfa8944 UNKNOWN  source_build=UNKNOWN compiler=-                   3.1s 
+cortex      94aa45fb GO       source_build=GO      compiler=-                   0.0s 
+cortex      ae029000 GO       source_build=GO      compiler=-                   0.0s 
+cortex      9792d457 GO       source_build=GO      compiler=-                   0.0s 
+cortex      d4e51d56 UNKNOWN  source_build=UNKNOWN compiler=-                   2.7s 
+cortex      17740816 UNKNOWN  source_build=UNKNOWN compiler=-                   1.4s 
+cortex      ac267599 GO       source_build=GO      compiler=-                   0.9s 
+cortex      bf8ae576 GO       source_build=GO      compiler=-                   2.1s 
+cortex      f1b0c35c GO       source_build=GO      compiler=-                   0.7s 
+cortex      9d6ef5cb GO       source_build=GO      compiler=-                   0.7s 
+cortex      316cae0d GO       source_build=GO      compiler=-                   0.0s 
+cortex      d6455917 GO       source_build=GO      compiler=-                   0.0s 
+cortex      048ea8a2 GO       source_build=GO      compiler=-                   0.0s 
+cortex      6185c1ec GO       source_build=GO      compiler=-                   2.9s 
+cortex      f3113c9d GO       source_build=GO      compiler=-                   1.0s 
+cortex      918aa419 NO_GO    source_build=NO_GO   compiler=-                   0.7s 
+cortex      0c2e3136 UNKNOWN  source_build=GO      compiler=-                   0.7s 
+cortex      09a30526 UNKNOWN  source_build=GO      compiler=-                   0.5s 
+cortex        20 decisions  GO  14  NO-GO   1  UNKNOWN   5 (25.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO  14  NO-GO   1  UNKNOWN   5 (25.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    2   1  CONTRACT_COMPILE_ERROR (e.g. cortex@0c2e31364503613b95d956922f8bf3b234a28d7c)
+    2   1  OPTION_CHANGED (e.g. cortex@d4e51d56f6af944176d6a855d122c898a7eaf5ce)
+    1   1  NEEDS_REVIEW (e.g. cortex@9dfa8944a2d5e138757e22b41829cadcbd01d460)
+    1   1  UNRESOLVED_MEMBER (e.g. cortex@d4e51d56f6af944176d6a855d122c898a7eaf5ce)
+
+20 windows in 36s.
+exit 0
