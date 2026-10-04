@@ -1,0 +1,2 @@
+v0.0.0-20261004152245-bb4d10ef2e9b+dirty protocompile/v0.14.1 verdict/v0.8.2 go-analyzer/v0.18.0
+f55e2e31c0d61822deeb5bacc36e24bb1d2c8639acda2da655efc8ffd1a5fffb
