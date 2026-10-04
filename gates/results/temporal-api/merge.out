@@ -6,6 +6,6 @@ TOTAL                  windows= 36 | breaks=10: caught= 9 WRONG_GO=1 abstained=0
   EXPECTED temporal@b9f54400a140..6c8bd137: wrong_go: chasm\lib\workflow\nexus_service.go:66:47: undefined: workflowservicenexus.WorkflowService | chasm\lib\workflow\nexus_service.go:68:24: undefined: workflowservicenexus.WorkflowService | chasm\lib\workflow\nexus_service.go:133:60: undefined: workflowservicenexus.WorkflowService (accepted by founder: A wrong GO outside the contract: the nexus generator renamed workflowservicenexus.WorkflowService in api-go while the .proto files changed only comments. The verifier checks the protobuf contract, not other generators' code (README, What it cannot see); the Go compiler catches it when the caller upgrades.)
   DIFFERS FROM BASELINE sdk-go@5a9bd6a4c4cd..d2fc34ab: expected NO_GO (generated_code UNKNOWN, runtime NO_GO, source_build UNKNOWN; UNKNOWN: OPTION_CHANGED), got NO_GO (generated_code GO, runtime NO_GO, source_build GO; UNKNOWN: OPTION_CHANGED)
 
-36 windows merged; verifier b97ec2f453637db0076f4b2d2bbcae084eedc940d8a00a267ce5cc6980b68eee; slowest window 0.8 minutes; 1 differ from the baseline.
+36 windows merged; verifier 9d18d9e8ddc5fad588cc15da9b72de33afc6064e2f0f7d17f6c917e1640265e2; slowest window 0.5 minutes; 1 differ from the baseline.
 verifier gate: release gate failed: 1 windows differ from the baseline (record intended changes with `verifier gate baseline` and a reason for each); 4 of 25 compiler-safe windows only UNKNOWN (more than 5%)
 exit 1
