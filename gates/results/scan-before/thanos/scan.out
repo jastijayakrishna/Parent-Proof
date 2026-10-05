@@ -1,25 +1,25 @@
-time=2026-10-05T04:55:29.976Z level=INFO msg=cloning repo=p-thanos url=https://github.com/thanos-io/thanos.git
-time=2026-10-05T04:55:30.514Z level=INFO msg=cloning repo=c-thanos url=https://github.com/thanos-io/thanos.git
-thanos      9fe2d4c9 GO       source_build=GO      compiler=-                  20.7s 
-thanos      2f83caaa GO       source_build=GO      compiler=-                   0.5s 
-thanos      ac3df121 GO       source_build=GO      compiler=-                   0.5s 
+time=2026-10-05T06:01:11.788Z level=INFO msg=cloning repo=p-thanos url=https://github.com/thanos-io/thanos.git
+time=2026-10-05T06:01:13.163Z level=INFO msg=cloning repo=c-thanos url=https://github.com/thanos-io/thanos.git
+thanos      9fe2d4c9 GO       source_build=GO      compiler=-                  25.5s 
+thanos      2f83caaa GO       source_build=GO      compiler=-                   0.6s 
+thanos      ac3df121 GO       source_build=GO      compiler=-                   0.6s 
 thanos      c14df1d9 GO       source_build=GO      compiler=-                   0.6s 
 thanos      a463eb15 NO_GO    source_build=UNKNOWN compiler=-                   0.6s 
 thanos      51094534 GO       source_build=GO      compiler=-                   0.6s 
-thanos      27bf8fad NO_GO    source_build=UNKNOWN compiler=-                   0.4s 
-thanos      cdca5483 NO_GO    source_build=NO_GO   compiler=-                   0.7s 
-thanos      569a32ac GO       source_build=GO      compiler=-                   0.5s 
-thanos      802f43f3 NO_GO    source_build=GO      compiler=-                   0.6s 
-thanos      23063063 GO       source_build=GO      compiler=-                   0.5s 
-thanos      38129bbb GO       source_build=GO      compiler=-                   0.5s 
-thanos      6a45d754 GO       source_build=GO      compiler=-                   0.3s 
+thanos      27bf8fad NO_GO    source_build=UNKNOWN compiler=-                   0.2s 
+thanos      cdca5483 NO_GO    source_build=NO_GO   compiler=-                   0.6s 
+thanos      569a32ac GO       source_build=GO      compiler=-                   0.6s 
+thanos      802f43f3 NO_GO    source_build=GO      compiler=-                   0.8s 
+thanos      23063063 GO       source_build=GO      compiler=-                   0.6s 
+thanos      38129bbb GO       source_build=GO      compiler=-                   0.6s 
+thanos      6a45d754 GO       source_build=GO      compiler=-                   0.2s 
 thanos      d05e90ae NO_GO    source_build=GO      compiler=-                   0.5s 
-thanos      be442a51 GO       source_build=GO      compiler=-                   0.7s 
-thanos      20900389 GO       source_build=GO      compiler=-                   0.7s 
-thanos      e2f6ca34 GO       source_build=GO      compiler=-                   0.6s 
-thanos      1bdcc655 GO       source_build=GO      compiler=-                   0.7s 
-thanos      328385ac GO       source_build=GO      compiler=-                   0.9s 
-thanos      bcd20a3b NO_GO    source_build=NO_GO   compiler=-                   1.4s 
+thanos      be442a51 GO       source_build=GO      compiler=-                   0.5s 
+thanos      20900389 GO       source_build=GO      compiler=-                   0.6s 
+thanos      e2f6ca34 GO       source_build=GO      compiler=-                   0.5s 
+thanos      1bdcc655 GO       source_build=GO      compiler=-                   0.5s 
+thanos      328385ac GO       source_build=GO      compiler=-                   0.4s 
+thanos      bcd20a3b NO_GO    source_build=NO_GO   compiler=-                   1.2s 
 thanos        20 decisions  GO  14  NO-GO   6  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
 TOTAL         20 decisions  GO  14  NO-GO   6  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
 
@@ -29,5 +29,5 @@ UNKNOWN reasons across all: windows, ecosystems, an example
     1   1  OPTION_CHANGED (e.g. thanos@bcd20a3b88eaf29bb337b78fec7e1fe36d06f048)
     1   1  UNRESOLVED_MEMBER (e.g. thanos@bcd20a3b88eaf29bb337b78fec7e1fe36d06f048)
 
-20 windows in 35s.
+20 windows in 42s.
 exit 0
