@@ -1,0 +1,232 @@
+/home/runner/work/Parent-Proof/Parent-Proof/stress/probe/layout.py:130: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  cutoff = (datetime.datetime.utcnow() - datetime.timedelta(days=30)).strftime("%Y-%m-%dT%H:%M:%SZ")
+{
+ "name": "beam",
+ "set": "holdout",
+ "consumer": {
+  "repo": "apache/beam",
+  "commit": "7711c5345ad906fe0d05234c9fcee8add95fc561"
+ },
+ "head": "7711c5345ad906fe0d05234c9fcee8add95fc561 2026-10-05T12:32:07-04:00",
+ "default_branch": "origin/master",
+ "history": {
+  "count": 56,
+  "with_proto_changes": 56,
+  "last": [
+   {
+    "commit": "f5ed5862bd97d4bc20c3b98f146eca3ec406e500",
+    "date": "2025-02-20",
+    "subject": "Add histogram parsing in runner v2 (#34017)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "88031b46f6c59de0358e98eaef2ed2d082d5c3ca",
+    "date": "2025-03-05",
+    "subject": "Add histogram to metrics container (#33043)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "53baae84bd8779c4f696908ee48541848473cba2",
+    "date": "2025-03-11",
+    "subject": "Kafka add counters v1 uw2 (#33503)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "332fe03b72800f37d24951ab78533a74e453ba64",
+    "date": "2025-03-20",
+    "subject": "[Managed Iceberg] unbounded source (#33504)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "b7bd1274039bd92a955dfdb01e7cb57f2b850166",
+    "date": "2025-04-22",
+    "subject": "Add new resource hints: max active bundles per worker (#34529)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "e35cc141772ad08e314b54cc521a9d3c83d90d9f",
+    "date": "2025-05-19",
+    "subject": "Update Beam model protos with element metadata (#34971)",
+    "files": 2,
+    "protos": 2
+   },
+   {
+    "commit": "be4fb977e181e86fd68753218563c5884744df02",
+    "date": "2025-09-08",
+    "subject": "Support managed jdbc io (Postgres) (#36034)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "f86452f32fbfe3c62845c6ddfa4d569f1d79d206",
+    "date": "2025-09-17",
+    "subject": "Support managed jdbc io (MySQL) (#36045)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "527e821e3c925d8252504e104fa67678514b1f01",
+    "date": "2025-09-24",
+    "subject": "Support managed jdbc io (SQLServer)  (#36055)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "2bd497f5d5583b1f7271372565091998e012781d",
+    "date": "2025-10-26",
+    "subject": "Merge pull request #36524: Drain - model part + windowedValue changes",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "21dbf592f87d17f2f6e863323c9b946ae6b09b4a",
+    "date": "2025-10-28",
+    "subject": "Adds Multimap support to JAVA FnApi (#36218)",
+    "files": 2,
+    "protos": 2
+   },
+   {
+    "commit": "6d24c3dec3bfab3d49c32ed2ef2fe3d0a8d803ef",
+    "date": "2025-11-04",
+    "subject": "[Prism] Fix a distribution metric problem when count is zero (#36723)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "3721c17265e86346fb1671af8083ceb6df12e3dd",
+    "date": "2025-11-17",
+    "subject": "Adds proto fields for overwriting fetch/write state functionality (#36708)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "a6932b60e91469203acba78818ee68a05b70ca08",
+    "date": "2025-12-05",
+    "subject": "[OpenTelemetry] Add traceparent and tracestate to extended element metadata proto (#36963)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "e12436a9bd3fcec486d682fb9649e33fd647ba8f",
+    "date": "2026-01-26",
+    "subject": "Merge pull request #37376: Adds a new SchemaCoderPayload proto to use for portable SchemaCoders.",
+    "files": 2,
+    "protos": 2
+   },
+   {
+    "commit": "c1e44fb0258582207c38100bf33368d6dc3a33e9",
+    "date": "2026-04-05",
+    "subject": "portable date java and model changes (#38077)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "a5496c61a0f71d9b97ca080b9327ea08fa625c46",
+    "date": "2026-05-04",
+    "subject": "[ValueKind] Add to model (#38308)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "782953e342243e04f0c6b6d05b926c3ab1ef49a8",
+    "date": "2026-06-11",
+    "subject": "Add Delta Lake source to the Java Managed API (#38902)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "fc370c9fdc8a2e5e5b379149a9210dd19c615396",
+    "date": "2026-06-19",
+    "subject": "[FnApi Java] Add support for separate named data streams to provide bundle isolation (#38863)",
+    "files": 2,
+    "protos": 2
+   },
+   {
+    "commit": "22a595161680ed170ebc196deb30f8f7adbbd2e3",
+    "date": "2026-07-22",
+    "subject": "Document job management and interactive API protos (#39294)",
+    "files": 3,
+    "protos": 3
+   },
+   {
+    "commit": "f1d9c3e122e210dc1a5dc09beaa2e2d3cc14197b",
+    "date": "2026-07-22",
+    "subject": "docs: Document pipeline runner API protos (#39292)",
+    "files": 5,
+    "protos": 5
+   },
+   {
+    "commit": "c8aa28f7e2e9ce0d1af3b88d4f75f001882d5759",
+    "date": "2026-07-23",
+    "subject": "docs: Document Fn Execution API protos (#39293)",
+    "files": 2,
+    "protos": 2
+   },
+   {
+    "commit": "f5feab8c598a4cbd03f1bd4cdad8f540c977a335",
+    "date": "2026-07-30",
+    "subject": "Enhance Python Timestamp to be precision-variable up to nanos, and map it to Timestamp logical type ",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "86ca05321d51cd8c8719c1f6d8fd10d6c5ee7c0a",
+    "date": "2026-08-04",
+    "subject": "Adds the Delta Lake CDC read transforms to the Managed I/O API (#39599)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "6317b1942f2aaf4de6afad341c895488af2abdb4",
+    "date": "2026-09-25",
+    "subject": "Reduce severity for state requests cancelled by runner (#40254)",
+    "files": 1,
+    "protos": 1
+   }
+  ]
+ },
+ "users": [
+  "model/fn-execution/build.gradle",
+  "model/interactive/build.gradle",
+  "model/job-management/build.gradle",
+  "runners/core-java/build.gradle",
+  "runners/direct-java/build.gradle",
+  "runners/google-cloud-dataflow-java/build.gradle",
+  "runners/google-cloud-dataflow-java/worker/build.gradle",
+  "runners/java-fn-execution/build.gradle",
+  "runners/java-job-service/build.gradle",
+  "runners/jet/build.gradle",
+  "runners/kafka-streams/build.gradle",
+  "runners/kafka-streams/measurement/build.gradle",
+  "runners/portability/java/build.gradle",
+  "runners/twister2/build.gradle",
+  "sdks/java/core/build.gradle",
+  "sdks/java/expansion-service/build.gradle",
+  "sdks/java/extensions/python/build.gradle",
+  "sdks/java/extensions/schemaio-expansion-service/build.gradle",
+  "sdks/java/harness/build.gradle",
+  "sdks/java/harness/jmh/build.gradle",
+  "sdks/java/io/delta/build.gradle",
+  "sdks/java/io/google-cloud-platform/build.gradle",
+  "sdks/java/io/iceberg/build.gradle",
+  "sdks/java/io/jdbc/build.gradle",
+  "sdks/java/io/kafka/build.gradle",
+  "sdks/java/io/kafka/upgrade/build.gradle",
+  "sdks/java/managed/build.gradle",
+  "sdks/java/transform-service/build.gradle"
+ ],
+ "jdk_hints": [],
+ "proto_count": 30,
+ "build_files": 306,
+ "prs": {
+  "checked": 46,
+  "matching": []
+ }
+}
+
+exit 0 seconds 38
