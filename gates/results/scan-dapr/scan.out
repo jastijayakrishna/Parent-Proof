@@ -1,27 +1,27 @@
-time=2026-10-04T10:57:36.879Z level=INFO msg=cloning repo=p-dapr url=https://github.com/dapr/dapr.git
-time=2026-10-04T10:57:37.996Z level=INFO msg=cloning repo=c-dapr url=https://github.com/dapr/go-sdk.git
-dapr        3d9dbe6e GO       source_build=GO      compiler=compiles           25.5s 
-dapr        e2030a5f GO       source_build=GO      compiler=compiles            7.9s 
-dapr        19e9dbd4 GO       source_build=GO      compiler=compiles            3.7s 
-dapr        cd72c15f GO       source_build=GO      compiler=compiles            7.4s 
-dapr        8fd31d16 GO       source_build=GO      compiler=compiles            5.1s 
-dapr        df9137ce GO       source_build=GO      compiler=compiles            8.3s 
-dapr        a86c03bd GO       source_build=GO      compiler=compiles            2.5s 
-dapr        d16e4ded GO       source_build=GO      compiler=compiles            2.1s 
-dapr        6d8290ef GO       source_build=GO      compiler=compiles            1.8s 
-dapr        88a04ddb GO       source_build=GO      compiler=compiles            3.1s 
-dapr        1ebb8588 GO       source_build=GO      compiler=compiles            1.1s 
-dapr        1b4bef84 GO       source_build=GO      compiler=compiles            1.5s 
-dapr        39c1ef7f GO       source_build=GO      compiler=compiles            2.1s 
-dapr        c581fa82 GO       source_build=GO      compiler=compiles            2.3s 
-dapr        c8463fcc GO       source_build=GO      compiler=compiles            2.4s 
-dapr        5da1cdbf GO       source_build=GO      compiler=compiles            1.6s 
-dapr        f2d61989 GO       source_build=GO      compiler=compiles            1.2s 
-dapr        60cd667f GO       source_build=GO      compiler=compiles            3.1s 
-dapr        c9db84ed GO       source_build=GO      compiler=compiles            3.0s 
-dapr        d4c6ba52 GO       source_build=GO      compiler=compiles            1.0s 
+time=2026-10-05T04:56:51.157Z level=INFO msg=cloning repo=p-dapr url=https://github.com/dapr/dapr.git
+time=2026-10-05T04:56:52.338Z level=INFO msg=cloning repo=c-dapr url=https://github.com/dapr/go-sdk.git
+dapr        3d9dbe6e GO       source_build=GO      compiler=compiles           32.2s 
+dapr        e2030a5f GO       source_build=GO      compiler=compiles            8.7s 
+dapr        19e9dbd4 GO       source_build=GO      compiler=compiles            4.5s 
+dapr        cd72c15f GO       source_build=GO      compiler=compiles            8.2s 
+dapr        8fd31d16 GO       source_build=GO      compiler=compiles            5.8s 
+dapr        df9137ce GO       source_build=GO      compiler=compiles            8.9s 
+dapr        a86c03bd GO       source_build=GO      compiler=compiles            3.1s 
+dapr        d16e4ded GO       source_build=GO      compiler=compiles            2.5s 
+dapr        6d8290ef GO       source_build=GO      compiler=compiles            2.2s 
+dapr        88a04ddb GO       source_build=GO      compiler=compiles            3.7s 
+dapr        1ebb8588 GO       source_build=GO      compiler=compiles            1.8s 
+dapr        1b4bef84 GO       source_build=GO      compiler=compiles            2.4s 
+dapr        39c1ef7f GO       source_build=GO      compiler=compiles            3.2s 
+dapr        c581fa82 GO       source_build=GO      compiler=compiles            2.9s 
+dapr        c8463fcc GO       source_build=GO      compiler=compiles            2.8s 
+dapr        5da1cdbf GO       source_build=GO      compiler=compiles            1.9s 
+dapr        f2d61989 GO       source_build=GO      compiler=compiles            1.4s 
+dapr        60cd667f GO       source_build=GO      compiler=compiles            4.6s 
+dapr        c9db84ed GO       source_build=GO      compiler=compiles            4.1s 
+dapr        d4c6ba52 GO       source_build=GO      compiler=compiles            1.6s 
 dapr          20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
 TOTAL         20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
 
-20 windows in 1m29s.
+20 windows in 1m49s.
 exit 0
