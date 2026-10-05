@@ -1,6 +1,6 @@
 jetcd history: 5 windows, shard 1/1 has 5
-f25f8dcf8054 2022-08-20 verifier=NO_GO build=NO_GO compiler=breaks 80.1s 
-e5da670d9958 2022-11-09 verifier=GO build=GO compiler=compiles 65.3s 
-471c5690d02b 2023-09-06 verifier=GO build=GO compiler=compiles 81.9s 
-2e9f41d433d7 2025-11-01 verifier=GO build=GO compiler=compiles 70.7s 
-c5646e9f5046 2025-11-01 verifier=GO build=GO compiler=compiles 52.1s 
+f25f8dcf8054 2022-08-20 verifier=NO_GO build=NO_GO compiler=breaks 38.8s 
+e5da670d9958 2022-11-09 verifier=GO build=GO compiler=compiles 40.7s 
+471c5690d02b 2023-09-06 verifier=GO build=GO compiler=compiles 44.1s 
+2e9f41d433d7 2025-11-01 verifier=GO build=GO compiler=compiles 46.8s 
+c5646e9f5046 2025-11-01 verifier=GO build=GO compiler=compiles 46.2s 
