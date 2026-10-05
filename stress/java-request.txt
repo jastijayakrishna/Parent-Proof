@@ -1,0 +1,3 @@
+set=regression
+only=jetcd,skywalking-java,client-java
+modes=history,scan
