@@ -1,0 +1,4 @@
+time=2026-10-05T17:35:50.223Z level=INFO msg=cloning repo=kubelet url=https://github.com/kubernetes/kubelet.git
+time=2026-10-05T17:35:50.822Z level=INFO msg=cloning repo=k8s-device-plugin url=https://github.com/NVIDIA/k8s-device-plugin.git
+time=2026-10-05T17:35:55.035Z level=INFO msg=mined consumer=k8s-device-plugin pin_moves=17 to_compile=0
+time=2026-10-05T17:35:55.035Z level=INFO msg="suite built" suite=kubelet windows_added=0
