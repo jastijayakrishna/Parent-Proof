@@ -1,0 +1,178 @@
+/home/runner/work/Parent-Proof/Parent-Proof/stress/probe/layout.py:130: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  cutoff = (datetime.datetime.utcnow() - datetime.timedelta(days=30)).strftime("%Y-%m-%dT%H:%M:%SZ")
+{
+ "name": "google-cloud-pubsub",
+ "set": "dev",
+ "consumer": {
+  "repo": "googleapis/google-cloud-java",
+  "commit": "70c7439de5a3ae401b8d5833abd06de32c8f7a0a"
+ },
+ "head": "70c7439de5a3ae401b8d5833abd06de32c8f7a0a 2026-10-05T22:35:01+05:30",
+ "default_branch": "origin/main",
+ "history": {
+  "count": 20,
+  "with_proto_changes": 3,
+  "last": [
+   {
+    "commit": "ddef7d255af64698be423cc991a963809c217fca",
+    "date": "2026-05-08",
+    "subject": "chore(pubsub): migrate java-pubsub to monorepo  (#12963)",
+    "files": 160,
+    "protos": 2
+   },
+   {
+    "commit": "32b4eb8e998a4665bb28041256663fe26d6dcb38",
+    "date": "2026-05-22",
+    "subject": "chore: bump grpc and proto submodule versions to unify with client module (#13220)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "6ce7a4941ef51e832a49994e49ef6e4e7d30a10a",
+    "date": "2026-06-03",
+    "subject": "chore(main): release 1.87.0 (#13346)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "05c2a56b2f165b1aff72e8062458b17e5847be1d",
+    "date": "2026-06-13",
+    "subject": "chore(main): release 1.88.0-SNAPSHOT (#13456)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "73c9a0342f91af269aec66d3951286a800ae0331",
+    "date": "2026-07-07",
+    "subject": "chore(main): release 1.88.0 (#13669)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "55ad3142b9099e403cd2a1cb1b4a2580137b6253",
+    "date": "2026-07-07",
+    "subject": "chore(main): release 1.89.0-SNAPSHOT (#13693)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "b7a850434fe03df53531c55dc85f5c694f46ebf8",
+    "date": "2026-07-08",
+    "subject": "feat(gapic-generator): Add NullMarked annotation to generated classes (#13584)",
+    "files": 6,
+    "protos": 0
+   },
+   {
+    "commit": "e3e9d0bc11bcd7cf8659c2da4051dada7606c2e8",
+    "date": "2026-07-14",
+    "subject": "feat(gapic-generator): Add Nullable annotation to generated classes (#13558)",
+    "files": 6,
+    "protos": 0
+   },
+   {
+    "commit": "5c6478cfe19f0e6fed142f628f625a978a16f345",
+    "date": "2026-07-27",
+    "subject": "deps: Update Protobuf-Java to v4.33.6 (#13876)",
+    "files": 140,
+    "protos": 0
+   },
+   {
+    "commit": "c2ce8c17fda33555724557aa163707206dc7a43a",
+    "date": "2026-07-30",
+    "subject": "chore(main): release 1.89.0 (#13934)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "12cc0537a10ce1d57310eb6b436f384172c95244",
+    "date": "2026-07-31",
+    "subject": "chore(main): release 1.90.0-SNAPSHOT (#13964)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "8cbbb563543219b18570adb4048e89a9c70a2947",
+    "date": "2026-08-24",
+    "subject": "chore(main): release 1.90.0 (#14173)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "dd50e0dcd3cb4e2f44150f88a1674d0f91995360",
+    "date": "2026-08-25",
+    "subject": "chore(main): release 1.91.0-SNAPSHOT (#14184)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "f07e1a4f8e35c9d4b91a7b08dfa57c8d42f09fde",
+    "date": "2026-08-27",
+    "subject": "chore: update googleapis commitish to de3c0d3 (#14194)",
+    "files": 26,
+    "protos": 2
+   },
+   {
+    "commit": "0b2991e56b4d0bed43608523f7fb244b1bb36011",
+    "date": "2026-09-04",
+    "subject": "chore(main): release 1.91.0 (#14271)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "5b769ed3e330dab7866f48526b6ba0bcf4472e8d",
+    "date": "2026-09-09",
+    "subject": "chore(main): release 1.92.0-SNAPSHOT (#14274)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "0c703082f1877f304a674c4bd6cc2357fdc3ede6",
+    "date": "2026-09-14",
+    "subject": "chore: update googleapis commitish to efc9e8f (#14369)",
+    "files": 4,
+    "protos": 1
+   },
+   {
+    "commit": "76cd7d96cba8483df8b7c9caac039de7b6b001a3",
+    "date": "2026-09-23",
+    "subject": "chore(main): release 1.92.0 (#14491)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "05a998f3368c1410bccc36953015516784a2314d",
+    "date": "2026-09-24",
+    "subject": "chore(main): release 1.93.0-SNAPSHOT (#14502)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "976d5888de5152ed93af51d58a669710fbaed9ec",
+    "date": "2026-09-30",
+    "subject": "chore(main): release 1.93.0 (#14552)",
+    "files": 2,
+    "protos": 0
+   }
+  ]
+ },
+ "users": [
+  "java-asset/google-cloud-asset/pom.xml",
+  "java-notification/pom.xml",
+  "java-pubsub/google-cloud-pubsub-bom/pom.xml",
+  "java-pubsub/google-cloud-pubsub/pom.xml",
+  "java-pubsub/grpc-google-cloud-pubsub-v1/pom.xml",
+  "java-pubsub/pom.xml",
+  "java-pubsub/proto-google-cloud-pubsub-v1/pom.xml",
+  "java-scheduler/google-cloud-scheduler/pom.xml",
+  "java-storage/google-cloud-storage/pom.xml"
+ ],
+ "jdk_hints": [],
+ "proto_count": 2980,
+ "build_files": 1705,
+ "prs": {
+  "checked": 34,
+  "matching": []
+ }
+}
+
+exit 0 seconds 32
