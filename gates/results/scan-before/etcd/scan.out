@@ -1,25 +1,25 @@
-time=2026-10-05T04:55:31.071Z level=INFO msg=cloning repo=p-etcd url=https://github.com/etcd-io/etcd.git
-time=2026-10-05T04:55:32.462Z level=INFO msg=cloning repo=c-etcd url=https://github.com/etcd-io/etcd.git
-etcd        d098a8b5 GO       source_build=GO      compiler=compiles           36.6s 
-etcd        ee374bdc GO       source_build=GO      compiler=compiles            8.0s 
-etcd        84e612f3 UNKNOWN  source_build=UNKNOWN compiler=compiles            5.7s 
+time=2026-10-05T06:01:02.964Z level=INFO msg=cloning repo=p-etcd url=https://github.com/etcd-io/etcd.git
+time=2026-10-05T06:01:04.388Z level=INFO msg=cloning repo=c-etcd url=https://github.com/etcd-io/etcd.git
+etcd        d098a8b5 GO       source_build=GO      compiler=compiles           24.0s 
+etcd        ee374bdc GO       source_build=GO      compiler=compiles            5.4s 
+etcd        84e612f3 UNKNOWN  source_build=UNKNOWN compiler=compiles            5.3s 
 etcd        ff2e00f5 GO       source_build=GO      compiler=-                   0.4s 
 etcd        c4e53cdd UNKNOWN  source_build=GO      compiler=-                   0.4s 
 etcd        74f54e6f GO       source_build=GO      compiler=-                   0.4s 
-etcd        c2251842 NO_GO    source_build=NO_GO   compiler=compiles            6.1s 
-etcd        121e8a3d UNKNOWN  source_build=GO      compiler=-                   0.3s 
-etcd        55035cab UNKNOWN  source_build=UNKNOWN compiler=-                   1.0s 
-etcd        75932ca1 UNKNOWN  source_build=GO      compiler=-                   0.7s 
-etcd        b428dc25 NO_GO    source_build=NO_GO   compiler=-                   0.6s 
-etcd        073d46a5 UNKNOWN  source_build=GO      compiler=compiles            5.1s 
-etcd        c501d6bf GO       source_build=GO      compiler=compiles            4.6s 
+etcd        c2251842 NO_GO    source_build=NO_GO   compiler=compiles            4.8s 
+etcd        121e8a3d UNKNOWN  source_build=GO      compiler=-                   0.2s 
+etcd        55035cab UNKNOWN  source_build=UNKNOWN compiler=-                   0.8s 
+etcd        75932ca1 UNKNOWN  source_build=GO      compiler=-                   0.6s 
+etcd        b428dc25 NO_GO    source_build=NO_GO   compiler=-                   0.5s 
+etcd        073d46a5 UNKNOWN  source_build=GO      compiler=compiles            4.0s 
+etcd        c501d6bf GO       source_build=GO      compiler=compiles            3.5s 
 etcd        f5409c42 GO       source_build=GO      compiler=-                   0.3s 
-etcd        022b9b22 GO       source_build=GO      compiler=compiles            5.2s 
-etcd        97c63c9f GO       source_build=GO      compiler=compiles            5.2s 
-etcd        9d57554c GO       source_build=GO      compiler=compiles            2.4s 
-etcd        2eca68e3 GO       source_build=GO      compiler=compiles            5.1s 
-etcd        63fe0f28 GO       source_build=GO      compiler=compiles            4.7s 
-etcd        4155d8bb GO       source_build=GO      compiler=compiles            5.4s 
+etcd        022b9b22 GO       source_build=GO      compiler=compiles            3.9s 
+etcd        97c63c9f GO       source_build=GO      compiler=compiles            3.2s 
+etcd        9d57554c GO       source_build=GO      compiler=compiles            1.6s 
+etcd        2eca68e3 GO       source_build=GO      compiler=compiles            3.5s 
+etcd        63fe0f28 GO       source_build=GO      compiler=compiles            3.3s 
+etcd        4155d8bb GO       source_build=GO      compiler=compiles            3.4s 
 etcd          20 decisions  GO  12  NO-GO   2  UNKNOWN   6 (30.0%)  errors 0 | compiler judged  12: agree  11  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 1 | not judged 8
 TOTAL         20 decisions  GO  12  NO-GO   2  UNKNOWN   6 (30.0%)  errors 0 | compiler judged  12: agree  11  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 1 | not judged 8
 
@@ -29,5 +29,5 @@ UNKNOWN reasons across all: windows, ecosystems, an example
     1   1  OPTION_CHANGED (e.g. etcd@55035caba28ac42c0eefc2b31e9f89127ec4a8c4)
     1   1  WHOLE_MESSAGE_FLOW (e.g. etcd@073d46a558de734e5e86ff2f84cd2f54f990f75d)
 
-20 windows in 1m42s.
+20 windows in 1m13s.
 exit 0
