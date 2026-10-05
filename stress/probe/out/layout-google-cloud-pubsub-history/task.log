@@ -1,0 +1,209 @@
+/home/runner/work/Parent-Proof/Parent-Proof/stress/probe/layout.py:130: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  cutoff = (datetime.datetime.utcnow() - datetime.timedelta(days=30)).strftime("%Y-%m-%dT%H:%M:%SZ")
+{
+ "name": "google-cloud-pubsub-history",
+ "set": "dev",
+ "consumer": {
+  "repo": "googleapis/java-pubsub",
+  "commit": "ba2b8a32c584e9a263d432beb691ab984e830ffa"
+ },
+ "head": "ba2b8a32c584e9a263d432beb691ab984e830ffa 2026-05-08T10:34:57-04:00",
+ "default_branch": "origin/main",
+ "history": {
+  "count": 248,
+  "with_proto_changes": 28,
+  "last": [
+   {
+    "commit": "4746abe9ab8f5815c61dc94dcad6c7060cfd9f41",
+    "date": "2025-12-11",
+    "subject": "chore(main): release 1.143.2-SNAPSHOT (#2614)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "006ce07f1d362b500d0b992499cf35ceb16b0758",
+    "date": "2025-12-11",
+    "subject": "chore(main): release 1.144.0 (#2635)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "4e59581dfd648faf00141cd7f6cc766ce313d4c7",
+    "date": "2025-12-12",
+    "subject": "chore(main): release 1.144.1-SNAPSHOT (#2637)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "d164024249fc9571cdceadc2f03cf0a021c12ae8",
+    "date": "2025-12-22",
+    "subject": "chore(main): release 1.144.1 (#2654)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "fe73614cdb6c2aca445c46e917c325cbfee3adfd",
+    "date": "2026-01-15",
+    "subject": "chore: Update generation configuration at Thu Jan 15 16:44:58 UTC 2026 (#2660)",
+    "files": 149,
+    "protos": 2
+   },
+   {
+    "commit": "7cd92308780fe25f113d6152aa0a1f7bd6415b0e",
+    "date": "2026-01-15",
+    "subject": "chore(main): release 1.144.2-SNAPSHOT (#2655)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "15d2f9607a5a9159e1d260d4d2d1889e0f847580",
+    "date": "2026-01-15",
+    "subject": "chore(main): release 1.145.0 (#2661)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "6e4c25c7c30cfc6a2c3edce4f69d74425f858a5f",
+    "date": "2026-01-23",
+    "subject": "chore(main): release 1.145.1-SNAPSHOT (#2662)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "a7edd5b705557bcf72ca47dc8219677ba8595f8c",
+    "date": "2026-01-26",
+    "subject": "chore: Update generation configuration at Mon Jan 26 16:02:26 UTC 2026 (#2668)",
+    "files": 138,
+    "protos": 0
+   },
+   {
+    "commit": "198a97e9c82479e6f7a5b8b21b45e35b59af316e",
+    "date": "2026-01-26",
+    "subject": "chore(main): release 1.146.0 (#2666)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "b66351c4f2e16fedf85d38b753bb7d2040eb40bb",
+    "date": "2026-01-26",
+    "subject": "chore(main): release 1.146.1-SNAPSHOT (#2669)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "1676abcdbe470912d6bda9c732bcea366d1e9e50",
+    "date": "2026-01-27",
+    "subject": "chore(main): release 1.147.0 (#2673)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "7e154469b5feff3da4811e26c2fbeba2f715f8e8",
+    "date": "2026-02-11",
+    "subject": "chore(main): release 1.147.1-SNAPSHOT (#2674)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "11c3e7b29d9aa9fbc99eedb4940a9e7471e078a4",
+    "date": "2026-02-11",
+    "subject": "chore(main): release 1.148.0 (#2688)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "c5ad5cee83605a4e2a9ddf07913aec2fdd522fef",
+    "date": "2026-02-26",
+    "subject": "chore(main): release 1.148.1-SNAPSHOT (#2689)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "d263eeff08e191f98d32a80a8dd153400428ef09",
+    "date": "2026-02-26",
+    "subject": "chore(main): release 1.149.0 (#2699)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "39378352cae559874f3e16f52d34e55eeadaec9c",
+    "date": "2026-03-16",
+    "subject": "chore(main): release 1.149.1-SNAPSHOT (#2700)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "f69de7ee2cb5b96adbf3fc5b11e1f8a3bbbd0bee",
+    "date": "2026-03-20",
+    "subject": "chore: Update generation configuration at Fri Mar 20 03:01:07 UTC 2026 (#2703)",
+    "files": 8,
+    "protos": 1
+   },
+   {
+    "commit": "336726c7bcd3f95069b66910ab7a1d2d4619ba4d",
+    "date": "2026-03-23",
+    "subject": "chore(main): release 1.150.0 (#2710)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "876aed861576c370fcb4dd2c0e9440646b5cdc04",
+    "date": "2026-03-23",
+    "subject": "chore(main): release 1.150.1-SNAPSHOT (#2712)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "49cb97ff6d8f1a12abc6689cadc04c888baab723",
+    "date": "2026-04-14",
+    "subject": "chore: Update generation configuration at Tue Apr 14 03:07:21 UTC 2026 (#2713)",
+    "files": 3,
+    "protos": 1
+   },
+   {
+    "commit": "880f28a11d7dc2864ae958e59940bb24bb6fa555",
+    "date": "2026-04-14",
+    "subject": "chore(main): release 1.150.1 (#2717)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "b2f79dca23689bd3ac460719dff61569136887c3",
+    "date": "2026-05-07",
+    "subject": "chore(main): release 1.150.2-SNAPSHOT (#2718)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "d21882fae39fd9ae70f5231199e02081289d9ae4",
+    "date": "2026-05-07",
+    "subject": "chore(main): release 1.150.2 (#2734)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "1c78534e1ccad40f8abb10174c4f2e4c7eace35b",
+    "date": "2026-05-07",
+    "subject": "chore(main): release 1.150.3-SNAPSHOT (#2735)",
+    "files": 2,
+    "protos": 0
+   }
+  ]
+ },
+ "users": [
+  "google-cloud-pubsub-bom/pom.xml",
+  "google-cloud-pubsub/pom.xml",
+  "grpc-google-cloud-pubsub-v1/pom.xml",
+  "pom.xml",
+  "proto-google-cloud-pubsub-v1/pom.xml"
+ ],
+ "jdk_hints": [],
+ "proto_count": 6,
+ "build_files": 9,
+ "prs": {
+  "checked": 0,
+  "matching": []
+ }
+}
+
+exit 0 seconds 2
