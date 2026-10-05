@@ -1,0 +1,13 @@
+clone seconds 2
+14M	/home/runner/work/_temp/src-google-cloud-pubsub-history
+openjdk version "11.0.32.1" 2026-08-18
+Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
+cold build exit 0 seconds 42
+stress/probe/build.sh: line 56: stress/probe/out/build-google-cloud-pubsub-history/cold.log: No such file or directory
+[INFO] BUILD SUCCESS
+warm clean build exit 0 seconds 11
+stress/probe/build.sh: line 63: stress/probe/out/build-google-cloud-pubsub-history/warm.log: No such file or directory
+class dirs 3, classes 670
+/dev/root       145G   59G   86G  41% /
+
+exit 0 seconds 57
