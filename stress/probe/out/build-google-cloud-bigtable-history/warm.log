@@ -1,0 +1,72 @@
+wnloading bigtable-linux-arm
+[INFO] Downloading bigtable-linux-x86
+[INFO] Downloading bigtable-linux-x86_64
+[INFO] Downloading bigtable-windows-x86
+[INFO] Downloading bigtable-windows-x86_64
+[INFO] Finished downloading all components
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ google-cloud-bigtable-emulator ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] skip non existing resourceDirectory /home/runner/work/_temp/src-google-cloud-bigtable-history/google-cloud-bigtable-emulator/src/main/proto
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ google-cloud-bigtable-emulator ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 2 source files with javac [debug deprecation release 8] to target/classes
+[INFO] 
+[INFO] ---------------< com.google.cloud:google-cloud-bigtable >---------------
+[INFO] Building Google Cloud Bigtable 2.78.1-SNAPSHOT                     [8/8]
+[INFO]   from google-cloud-bigtable/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.2:enforce (enforce) @ google-cloud-bigtable ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.6.2:enforce (enforce-valid-profile) @ google-cloud-bigtable ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- checkstyle:3.6.0:check (checkstyle) @ google-cloud-bigtable ---
+[INFO] 
+[INFO] --- jacoco:0.8.12:prepare-agent (default) @ google-cloud-bigtable ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- build-helper:3.6.0:add-source (add-source) @ google-cloud-bigtable ---
+[INFO] Source directory: /home/runner/work/_temp/src-google-cloud-bigtable-history/google-cloud-bigtable/target/generated-sources/java added.
+[INFO] 
+[INFO] --- build-helper:3.6.0:add-resource (add-main-proto-resources) @ google-cloud-bigtable ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ google-cloud-bigtable ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] skip non existing resourceDirectory /home/runner/work/_temp/src-google-cloud-bigtable-history/google-cloud-bigtable/src/main/proto
+[INFO] 
+[INFO] --- flatten:1.3.0:flatten (flatten) @ google-cloud-bigtable ---
+[INFO] Generating flattened POM of project com.google.cloud:google-cloud-bigtable:jar:2.78.1-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ google-cloud-bigtable ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 375 source files with javac [debug deprecation release 8] to target/classes
+[WARNING] /home/runner/work/_temp/src-google-cloud-bigtable-history/google-cloud-bigtable/src/main/java/com/google/cloud/bigtable/data/v2/internal/csm/metrics/CustomAttemptLatency.java:[75,41] INSTANCE_ID_KEY in com.google.cloud.bigtable.data.v2.internal.csm.metrics.Constants.MetricLabels has been deprecated
+[WARNING] /home/runner/work/_temp/src-google-cloud-bigtable-history/google-cloud-bigtable/src/main/java/com/google/cloud/bigtable/data/v2/internal/csm/metrics/CustomAttemptLatency.java:[72,41] BIGTABLE_PROJECT_ID_KEY in com.google.cloud.bigtable.data.v2.internal.csm.metrics.Constants.MetricLabels has been deprecated
+[WARNING] /home/runner/work/_temp/src-google-cloud-bigtable-history/google-cloud-bigtable/src/main/java/com/google/cloud/bigtable/gaxx/grpc/ChannelPoolHealthChecker.java:[154,17] sendPrimeRequestsAsync(io.grpc.ManagedChannel) in com.google.cloud.bigtable.gaxx.grpc.ChannelPrimer has been deprecated
+[WARNING] /home/runner/work/_temp/src-google-cloud-bigtable-history/google-cloud-bigtable/src/main/java/com/google/cloud/bigtable/gaxx/grpc/BigtableChannelPool.java:[116,20] primeChannel(io.grpc.ManagedChannel) in com.google.cloud.bigtable.gaxx.grpc.ChannelPrimer has been deprecated
+[WARNING] /home/runner/work/_temp/src-google-cloud-bigtable-history/google-cloud-bigtable/src/main/java/com/google/cloud/bigtable/gaxx/grpc/BigtableChannelPool.java:[422,27] primeChannel(io.grpc.ManagedChannel) in com.google.cloud.bigtable.gaxx.grpc.ChannelPrimer has been deprecated
+[WARNING] /home/runner/work/_temp/src-google-cloud-bigtable-history/google-cloud-bigtable/src/main/java/com/google/cloud/bigtable/gaxx/grpc/BigtableChannelPool.java:[462,29] primeChannel(io.grpc.ManagedChannel) in com.google.cloud.bigtable.gaxx.grpc.ChannelPrimer has been deprecated
+[INFO] /home/runner/work/_temp/src-google-cloud-bigtable-history/google-cloud-bigtable/src/main/java/com/google/cloud/bigtable/admin/v2/BaseBigtableInstanceAdminSettings.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/runner/work/_temp/src-google-cloud-bigtable-history/google-cloud-bigtable/src/main/java/com/google/cloud/bigtable/admin/v2/BaseBigtableInstanceAdminSettings.java: Recompile with -Xlint:unchecked for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Google Cloud Bigtable Parent 2.78.1-SNAPSHOT ....... SUCCESS [  0.730 s]
+[INFO] proto-google-cloud-bigtable-v2 2.78.1-SNAPSHOT ..... SUCCESS [  8.730 s]
+[INFO] grpc-google-cloud-bigtable-v2 2.78.1-SNAPSHOT ...... SUCCESS [  0.653 s]
+[INFO] proto-google-cloud-bigtable-admin-v2 2.78.1-SNAPSHOT SUCCESS [  9.171 s]
+[INFO] grpc-google-cloud-bigtable-admin-v2 2.78.1-SNAPSHOT  SUCCESS [  0.716 s]
+[INFO] Google Cloud Java - Bigtable Emulator Core 0.215.1-SNAPSHOT SUCCESS [  2.340 s]
+[INFO] Google Cloud Java - Bigtable Emulator 0.215.1-SNAPSHOT SUCCESS [  1.136 s]
+[INFO] Google Cloud Bigtable 2.78.1-SNAPSHOT .............. SUCCESS [  3.910 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.814 s (Wall Clock)
+[INFO] Finished at: 2026-10-05T17:31:33Z
+[INFO] ------------------------------------------------------------------------
