@@ -189,10 +189,16 @@
   ]
  },
  "users": [
+  "bom/pom.xml",
+  "clients/java/pom.xml",
+  "clients/spring-boot-protobuf-compatibility/pom.xml",
   "parent/pom.xml",
+  "zeebe/gateway-grpc/pom.xml",
   "zeebe/gateway-protocol-impl/pom.xml",
   "zeebe/gateway-protocol/pom.xml",
-  "zeebe/gateway-rest/pom.xml"
+  "zeebe/gateway-rest/pom.xml",
+  "zeebe/gateway/pom.xml",
+  "zeebe/qa/integration-tests/pom.xml"
  ],
  "jdk_hints": [],
  "proto_count": 4,
