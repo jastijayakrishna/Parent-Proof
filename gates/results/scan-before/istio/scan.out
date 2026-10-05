@@ -1,25 +1,25 @@
-time=2026-10-05T04:55:36.702Z level=INFO msg=cloning repo=p-istio url=https://github.com/istio/api.git
-time=2026-10-05T04:55:37.366Z level=INFO msg=cloning repo=c-istio url=https://github.com/istio/istio.git
-istio       e0d275e5 GO       source_build=GO      compiler=compiles          325.5s 
-istio       73ebf9ce GO       source_build=GO      compiler=compiles          116.9s 
-istio       bfea1c8d GO       source_build=GO      compiler=compiles           35.6s 
-istio       f7ae8c4f GO       source_build=GO      compiler=compiles           34.7s 
-istio       5803fb6a GO       source_build=GO      compiler=compiles           34.8s 
-istio       abc03d0e NO_GO    source_build=NO_GO   compiler=compiles           34.6s 
-istio       25d2a432 GO       source_build=GO      compiler=compiles           34.7s 
-istio       694749c7 GO       source_build=GO      compiler=compiles           34.7s 
-istio       e6999310 GO       source_build=GO      compiler=compiles           31.9s 
-istio       13c4afd2 GO       source_build=GO      compiler=compiles           15.7s 
-istio       b8f8791d GO       source_build=GO      compiler=compiles           18.2s 
-istio       c9bb2b80 GO       source_build=GO      compiler=compiles           26.1s 
+time=2026-10-05T05:58:39.984Z level=INFO msg=cloning repo=p-istio url=https://github.com/istio/api.git
+time=2026-10-05T05:58:40.438Z level=INFO msg=cloning repo=c-istio url=https://github.com/istio/istio.git
+istio       e0d275e5 GO       source_build=GO      compiler=compiles          323.3s 
+istio       73ebf9ce GO       source_build=GO      compiler=compiles          116.4s 
+istio       bfea1c8d GO       source_build=GO      compiler=compiles           35.4s 
+istio       f7ae8c4f GO       source_build=GO      compiler=compiles           34.4s 
+istio       5803fb6a GO       source_build=GO      compiler=compiles           34.5s 
+istio       abc03d0e NO_GO    source_build=NO_GO   compiler=compiles           34.3s 
+istio       25d2a432 GO       source_build=GO      compiler=compiles           34.3s 
+istio       694749c7 GO       source_build=GO      compiler=compiles           34.6s 
+istio       e6999310 GO       source_build=GO      compiler=compiles           31.5s 
+istio       13c4afd2 GO       source_build=GO      compiler=compiles           15.3s 
+istio       b8f8791d GO       source_build=GO      compiler=compiles           17.7s 
+istio       c9bb2b80 GO       source_build=GO      compiler=compiles           25.8s 
 istio       0ec93118 GO       source_build=GO      compiler=compiles           23.7s 
-istio       7d09c228 GO       source_build=GO      compiler=compiles           24.8s 
+istio       7d09c228 GO       source_build=GO      compiler=compiles           25.4s 
 istio       a5e37fdd NO_GO    source_build=NO_GO   compiler=compiles           18.2s 
-istio       55674782 GO       source_build=GO      compiler=compiles           11.1s 
-istio       ac56ebb2 GO       source_build=GO      compiler=compiles           15.5s 
-istio       e4be915e GO       source_build=GO      compiler=compiles           17.1s 
-istio       fd30c191 NO_GO    source_build=GO      compiler=compiles           11.2s 
-istio       28b8d466 GO       source_build=GO      compiler=compiles           17.0s 
+istio       55674782 GO       source_build=GO      compiler=compiles           10.9s 
+istio       ac56ebb2 GO       source_build=GO      compiler=compiles           15.6s 
+istio       e4be915e GO       source_build=GO      compiler=compiles           16.8s 
+istio       fd30c191 NO_GO    source_build=GO      compiler=compiles           10.8s 
+istio       28b8d466 GO       source_build=GO      compiler=compiles           16.8s 
 istio         20 decisions  GO  17  NO-GO   3  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  20: agree  19  WRONG_GO 0  FALSE_NOGO 1  UNKNOWN 0 | not judged 0
 TOTAL         20 decisions  GO  17  NO-GO   3  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  20: agree  19  WRONG_GO 0  FALSE_NOGO 1  UNKNOWN 0 | not judged 0
 
@@ -28,6 +28,6 @@ UNKNOWN reasons across all: windows, ecosystems, an example
     3   1  WHOLE_MESSAGE_FLOW (e.g. istio@abc03d0ea7f383790b922a23901af49484ab0ba0)
   FAILED istio@abc03d0ea7f383790b922a23901af49484ab0ba0: false_nogo: cni/pkg/install/kubeconfig.go:100, cni/pkg/install/kubeconfig.go:117, istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:206
 
-20 windows in 14m48s.
+20 windows in 14m42s.
 verifier gate: scan failed: 1 disagreements with the compiler or errors
 exit 1
