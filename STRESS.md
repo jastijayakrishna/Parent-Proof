@@ -1,6 +1,6 @@
 # Stress test: Go and Java consumers
 
-Updated 2026-10-05 18:18 UTC. Plan and rules: [stress/PREREG.md](stress/PREREG.md).
+Updated 2026-10-05 18:20 UTC. Plan and rules: [stress/PREREG.md](stress/PREREG.md).
 
 Every row is a real contract change of an open-source project never used to tune the verifier, decided by the
 verifier before the project's own compiler judged it (Go: `go build`; Java: the project's Maven or Gradle build).
@@ -9,7 +9,7 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 
 | language | windows | compiler judged | broke the build | caught | missed | false alarm | needs review (build) | errors |
 |---|---|---|---|---|---|---|---|---|
-| Go | 105 | 53 | 6 | 5 | **1** | 0 | 8 (8%) | 0 |
+| Go | 106 | 54 | 6 | 5 | **1** | 0 | 8 (8%) | 0 |
 | Java | 300 | 182 | 21 | 5 | **16** | 1 | 21 (11%) | 0 |
 
 ## Go by project
@@ -20,7 +20,7 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 | cometbft -> cosmos-sdk (history) | 12 | 11 | 5 | 4 | **1** | 0 | 0 (0%) | 0 |
 | cometbft-cosmos-sdk (scan) | 20 | 19 | 1 | 1 | **0** | 0 | 0 (0%) | 0 |
 | csi-provisioner (scan) | 20 | 18 | 0 | 0 | **0** | 0 | 6 (30%) | 0 |
-| csi-spec -> external-provisioner (history) | 5 | 5 | 0 | 0 | **0** | 0 | 2 (40%) | 0 |
+| csi-spec -> external-provisioner (history) | 6 | 6 | 0 | 0 | **0** | 0 | 2 (33%) | 0 |
 | kubelet -> k8s-device-plugin (history) | 8 | 0 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
 | kubelet-device-plugin (scan) | 20 | 0 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
 
