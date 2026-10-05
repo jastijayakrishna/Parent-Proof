@@ -151,6 +151,10 @@ def history_windows(p, since):
             changed = git("-C", cdir, "diff", "--name-only", parent, sha, "--", *paths).split("\n")
             if not any(f.endswith(".proto") for f in changed):
                 continue
+            # A commit that brings the contract into the repository (moves a
+            # library in) changes no contract a build had before it.
+            if not git("-C", cdir, "ls-tree", "--name-only", parent, "--", *paths, check=False):
+                continue
             w["old"], w["new"] = parent, sha
         else:
             old, new = pin_at(p, cdir, parent), pin_at(p, cdir, sha)
@@ -219,22 +223,29 @@ def prepare(p, w, side, wt):
     git("-C", cdir, "worktree", "prune", check=False)
     git("-C", cdir, "worktree", "add", "-q", "--detach", "--force", wt, w["consumer_commit"])
     k, kd = p["contract"], kind(p)
-    # Other submodules the build needs, at the consumer's own gitlinks.
-    for s in p.get("submodules", []):
-        if kd == "submodule" and s == k["submodule"]:
-            continue
-        f = git("-C", cdir, "ls-tree", w["consumer_commit"], "--", s, check=False).split()
-        if len(f) >= 3 and f[1] == "commit":
-            repo = re.sub(r"^https://github.com/|\.git$", "", submodule_url(wt, s))
-            sdir = clone(repo, full=True)
-            ensure(sdir, f[2])
-            export(sdir, f[2], os.path.join(wt, s))
     sha = w[side]
-    if kd == "submodule":
-        pdir = clone(provider_repo(p), full=True)
-        ensure(pdir, sha)
-        export(pdir, sha, os.path.join(wt, k["submodule"]))
-    elif kd == "regex":
+    # Submodules are real ones, as a clone with --recurse-submodules makes
+    # them, so a build that runs `git submodule update` itself (Temporal's
+    # does) keeps what is checked out; the contract's submodule is moved to
+    # the side's commit the way an upgrade commit moves it: its gitlink in the
+    # index too. Objects come from the harness's clones (--reference).
+    for s in p.get("submodules", []):
+        f = git("-C", cdir, "ls-tree", w["consumer_commit"], "--", s, check=False).split()
+        if len(f) < 3 or f[1] != "commit":
+            continue
+        repo = re.sub(r"^https://github.com/|\.git$", "", submodule_url(wt, s))
+        target = f[2]
+        if kd == "submodule" and s == k["submodule"]:
+            repo, target = provider_repo(p), sha
+        sdir = clone(repo, full=True)
+        ensure(sdir, f[2], target)
+        git("-C", wt, "submodule", "update", "-q", "--init", "--reference", sdir, "--", s)
+        git("-C", os.path.join(wt, s), "checkout", "-q", "--detach", target)
+        if target != f[2]:
+            git("-C", wt, "update-index", "--cacheinfo", f"160000,{target},{s}")
+    if kd == "submodule" and k["submodule"] not in p.get("submodules", []):
+        raise RuntimeError(f"{p['name']}: the contract's submodule {k['submodule']} must be listed in submodules")
+    if kd == "regex":
         for path in k["paths"]:
             fp = os.path.join(wt, path)
             if not os.path.exists(fp):
@@ -245,7 +256,7 @@ def prepare(p, w, side, wt):
                     body = re.sub(rx, lambda m: m.group(0).replace(m.group(1), sha), body, count=1, flags=re.M)
                     open(fp, "w", encoding="utf-8").write(body)
                     break
-    elif side == "new":
+    elif kd == "inrepo" and side == "new":
         # The contract paths and every changed .proto file, from new.
         diff = git("-C", cdir, "diff", "--name-status", "--no-renames", w["old"], w["new"], "--", *k["paths"], "*.proto")
         add, rm = [], []
@@ -322,6 +333,14 @@ def build(p, wt, oracle):
         # repository with JGit, which cannot read the harness's partial
         # clones; what they write never changes what compiles.
         cmd += " -Dmaven.gitcommitid.skip=true"
+        # A module the recipe lists may not exist yet at an older commit:
+        # the build compiles those that do.
+        m = re.search(r"(-pl\s+)(\S+)", cmd)
+        if m:
+            have = [x for x in m.group(2).split(",") if os.path.isfile(os.path.join(wt, x, "pom.xml"))]
+            if not have:
+                return 1, "none of the modules " + m.group(2) + " exists at this commit", 0.0
+            cmd = cmd[:m.start(2)] + ",".join(have) + cmd[m.end(2):]
     jh = os.environ.get(f"JAVA_HOME_{p['jdk']}_X64") or os.environ.get("JAVA_HOME", "")
     env = dict(os.environ, JAVA_HOME=jh, PATH=os.path.join(jh, "bin") + os.pathsep + os.environ["PATH"])
     log, secs = "", 0.0
@@ -378,7 +397,8 @@ def judge(rc, log, wt, theirs=()):
     consumer (generated code that does not compile, a failure without a
     compiler diagnostic)."""
     if rc == 0:
-        return {"outcome": "compiles"}
+        # What the build did is kept, so a judgement can be audited.
+        return {"outcome": "compiles", "log_tail": log[-2500:]}
     diags = diagnostics(log, wt)
     own = [d for d in diags if not generated(d[0]) and not test_code(d[0])
            and not any(d[0].startswith(t.rstrip("/") + "/") for t in theirs)]

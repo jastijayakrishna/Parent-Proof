@@ -150,7 +150,8 @@ def main():
     print(f"## Missed: {len(bad)}")
     print()
     for r in bad:
-        print(f"- {r['lang']} {r['project']} {r['mode']} {r['id']}: compiler: {'; '.join(r.get('errors') or [r['where']])[:300]}")
+        print(f"- {r['lang']} {r['project']} {r['mode']} {r['id']} (verifier's answer: {WORD.get(r['verdict'], r['verdict'])}, build line: Merge): "
+              f"compiler: {'; '.join(r.get('errors') or [r['where']])[:300]}")
     alarms = [r for r in allrows if r["compiler"] == "compiles" and r["build"] == "NO_GO"]
     print()
     print(f"## False alarms: {len(alarms)}")

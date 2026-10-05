@@ -1,3 +1,4 @@
+# rerun 2026-10-06: binary 6f9abec; harness: real submodules, existing modules only, contracts that existed before, log tails
 set=dev,regression
 only=
 modes=history,scan

@@ -1,3 +1,3 @@
-Gates of Parent main 68ee982 (suite build harness fixes: upgrades across release branches, skip reasons, module-exact judge, sibling replaces; decisions as fd5ae27) requested 2026-10-05T18:03Z
-source: jastijayakrishna/Parent, branch main, commit 68ee9824a853e2c6b9f7be41917f110c660a4168 sha256 (uncompressed linux/amd64): e98e854815b5cdf62c37a52bb3dba0bf332893015671a91b624c8d46ed5ca66e built: 2026-10-05T18:03Z 
-scan: all 17 corpus projects with the compiler, new (68ee982) and before (fd5ae27)
+Gates of Parent main 6f9abec (provider Go code checked; unread callers UNKNOWN in every aspect; shaded runtimes read; generic services implementers; judge siblings) requested 2026-10-05T18:46Z
+source: jastijayakrishna/Parent, branch main, commit 6f9abec1c81e37f55537cf3e191bf37afc0bd7f9 sha256 (uncompressed linux/amd64): a6749b5a4792c3b5709ab5cefbcdef0967b4c64dd9cfc9cb1cf37f1354e2b3f0 built: 2026-10-05T18:46Z 
+scan: all 17 corpus projects with the compiler, new (6f9abec) and before (68ee982)

@@ -1,4 +1,4 @@
-# rerun 2026-10-05: binary 68ee982 (release-branch upgrades counted, skips logged, module-exact judge)
+# rerun 2026-10-06: binary 6f9abec
 set=dev
 since=2023-01-01
 parts=history,scan
