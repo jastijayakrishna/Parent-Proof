@@ -1,0 +1,13 @@
+conductor history: 25 windows, shard 2/2 has 12
+e60b0e6ef2f5 2023-12-22 verifier=None build=None compiler=baseline_fails 8.2s 
+c67b2eb256e9 2024-11-27 verifier=GO build=GO compiler=compiles 96.9s 
+894c7dc136ad 2025-04-29 verifier=GO build=GO compiler=compiles 48.7s 
+72a06a4c7bc9 2025-07-25 verifier=GO build=GO compiler=compiles 63.9s 
+b9f50bbcc6ed 2025-11-24 verifier=GO build=GO compiler=compiles 49.2s 
+0c723f7aa4f8 2026-02-03 verifier=GO build=GO compiler=compiles 77.6s 
+d1dc16a618b3 2026-03-12 verifier=GO build=GO compiler=compiles 53.2s 
+ccc822a8dc3b 2026-03-25 verifier=GO build=GO compiler=compiles 48.2s 
+6456b564fad2 2026-04-21 verifier=GO build=GO compiler=compiles 47.0s 
+538c4505ec7e 2026-07-09 verifier=GO build=GO compiler=compiles 48.5s 
+80156f58ffc1 2026-07-17 verifier=GO build=GO compiler=compiles 45.6s 
+53eb2d918d10 2026-07-30 verifier=GO build=GO compiler=compiles 47.2s 
