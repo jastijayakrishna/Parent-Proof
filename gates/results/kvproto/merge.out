@@ -5,17 +5,7 @@ pd/breaking            windows= 41 | breaks=18: caught=18 WRONG_GO=0 abstained=0
 tidb/additive          windows= 12 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=12: GO=12 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=12 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=12
 tidb/breaking          windows= 49 | breaks=22: caught=22 WRONG_GO=0 abstained=0 | compiles=24: GO=24 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 2) | unavailable=3 (NO-GO 0, UNKNOWN 3, GO 0) | wire: judged=49 broken=13 RUNTIME_WRONG_GO=0 confirmed=10 unconfirmed=6 | errors=0 | replayed=49
 TOTAL                  windows=152 | breaks=49: caught=49 WRONG_GO=0 abstained=0 | compiles=97: GO=95 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 7) | unavailable=6 (NO-GO 2, UNKNOWN 4, GO 0) | wire: judged=152 broken=26 RUNTIME_WRONG_GO=0 confirmed=21 unconfirmed=18 | errors=0 | replayed=152
-  DIFFERS FROM BASELINE tidb@38f05d1f4bc2..0f5764a1: expected GO (generated_code GO, runtime GO, source_build GO), got UNKNOWN (generated_code GO, runtime UNKNOWN, source_build GO; UNKNOWN: WHOLE_MESSAGE_FLOW)
-  DIFFERS FROM BASELINE tidb@3d9196ddea80..3c7bd947: expected GO (generated_code GO, runtime GO, source_build GO), got UNKNOWN (generated_code GO, runtime UNKNOWN, source_build GO; UNKNOWN: WHOLE_MESSAGE_FLOW)
-  DIFFERS FROM BASELINE tidb@294a094d9055..d1a14066: expected NO_GO (generated_code NO_GO, runtime NO_GO, source_build NO_GO; UNKNOWN: NEEDS_REVIEW), got NO_GO (generated_code NO_GO, runtime NO_GO, source_build NO_GO; UNKNOWN: NEEDS_REVIEW, WHOLE_MESSAGE_FLOW)
-  DIFFERS FROM BASELINE tidb@e5e96c089fcf..12e2f5a9: expected NO_GO (generated_code NO_GO, runtime GO, source_build NO_GO), got NO_GO (generated_code NO_GO, runtime UNKNOWN, source_build NO_GO; UNKNOWN: WHOLE_MESSAGE_FLOW)
-  DIFFERS FROM BASELINE tidb@835922a5cdd6..a0f02b6e: expected NO_GO (generated_code NO_GO, runtime NO_GO, source_build NO_GO), got NO_GO (generated_code NO_GO, runtime NO_GO, source_build NO_GO; UNKNOWN: WHOLE_MESSAGE_FLOW)
-  DIFFERS FROM BASELINE tidb@5775995ea17c..51120697: expected GO (generated_code GO, runtime GO, source_build GO), got UNKNOWN (generated_code GO, runtime UNKNOWN, source_build GO; UNKNOWN: WHOLE_MESSAGE_FLOW)
-  DIFFERS FROM BASELINE tidb@38a7c6220ea6..25f1909b: expected NO_GO (generated_code NO_GO, runtime NO_GO, source_build NO_GO), got NO_GO (generated_code NO_GO, runtime NO_GO, source_build NO_GO; UNKNOWN: WHOLE_MESSAGE_FLOW)
-  DIFFERS FROM BASELINE tidb@f0575a847b87..a7c51106: expected NO_GO (generated_code NO_GO, runtime NO_GO, source_build NO_GO; UNKNOWN: NEEDS_REVIEW), got NO_GO (generated_code NO_GO, runtime NO_GO, source_build NO_GO; UNKNOWN: NEEDS_REVIEW, WHOLE_MESSAGE_FLOW)
-  DIFFERS FROM BASELINE tidb@bd3a036c9229..68d0eebd: expected GO (generated_code GO, runtime GO, source_build GO), got UNKNOWN (generated_code GO, runtime UNKNOWN, source_build GO; UNKNOWN: WHOLE_MESSAGE_FLOW)
-  DIFFERS FROM BASELINE tidb@4c83352678c7..e4919c19: expected GO (generated_code GO, runtime GO, source_build GO), got UNKNOWN (generated_code GO, runtime UNKNOWN, source_build GO; UNKNOWN: WHOLE_MESSAGE_FLOW)
 
-152 windows merged; verifier 19f1076ca7b4bd8ef14fe8f3fd0154c93e1ee8c6a2615cca2d57177de1915681; slowest window 0.9 minutes; 10 differ from the baseline.
-verifier gate: release gate failed: 10 windows differ from the baseline (record intended changes with `verifier gate baseline` and a reason for each)
-exit 1
+152 windows merged; verifier f7c9506da4271f0d8a7883653a3d266a69c6ae42179f8d69553311846b037091; slowest window 0.8 minutes; 0 differ from the baseline.
+Release gate passed.
+exit 0
