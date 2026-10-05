@@ -1,27 +1,27 @@
-time=2026-10-05T14:44:06.781Z level=INFO msg=cloning repo=p-etcd url=https://github.com/etcd-io/etcd.git
-time=2026-10-05T14:44:13.431Z level=INFO msg=cloning repo=c-etcd url=https://github.com/etcd-io/etcd.git
-etcd        d098a8b5 GO       source_build=GO      compiler=compiles           26.6s 
-etcd        ee374bdc GO       source_build=GO      compiler=compiles            5.6s 
-etcd        84e612f3 UNKNOWN  source_build=UNKNOWN compiler=compiles            5.1s 
-etcd        ff2e00f5 GO       source_build=GO      compiler=-                   0.7s 
-etcd        c4e53cdd UNKNOWN  source_build=GO      compiler=-                   0.7s 
-etcd        74f54e6f GO       source_build=GO      compiler=-                   1.7s 
-etcd        c2251842 NO_GO    source_build=NO_GO   compiler=compiles            5.1s 
+time=2026-10-05T18:13:32.033Z level=INFO msg=cloning repo=p-etcd url=https://github.com/etcd-io/etcd.git
+time=2026-10-05T18:13:34.089Z level=INFO msg=cloning repo=c-etcd url=https://github.com/etcd-io/etcd.git
+etcd        d098a8b5 GO       source_build=GO      compiler=compiles           37.1s 
+etcd        ee374bdc GO       source_build=GO      compiler=compiles            7.8s 
+etcd        84e612f3 UNKNOWN  source_build=UNKNOWN compiler=compiles            7.3s 
+etcd        ff2e00f5 GO       source_build=GO      compiler=-                   1.6s 
+etcd        c4e53cdd UNKNOWN  source_build=GO      compiler=-                   0.5s 
+etcd        74f54e6f GO       source_build=GO      compiler=-                   0.5s 
+etcd        c2251842 NO_GO    source_build=NO_GO   compiler=compiles            6.6s 
 etcd        121e8a3d UNKNOWN  source_build=GO      compiler=-                   0.2s 
-etcd        55035cab UNKNOWN  source_build=UNKNOWN compiler=-                   0.9s 
-etcd        75932ca1 UNKNOWN  source_build=GO      compiler=-                   1.8s 
-etcd        b428dc25 NO_GO    source_build=NO_GO   compiler=-                   0.9s 
-etcd        073d46a5 UNKNOWN  source_build=GO      compiler=compiles            4.7s 
-etcd        c501d6bf GO       source_build=GO      compiler=compiles            4.7s 
-etcd        f5409c42 GO       source_build=GO      compiler=-                   1.0s 
-etcd        022b9b22 GO       source_build=GO      compiler=compiles            5.3s 
-etcd        97c63c9f GO       source_build=GO      compiler=compiles            3.9s 
-etcd        9d57554c GO       source_build=GO      compiler=compiles            1.4s 
-etcd        2eca68e3 GO       source_build=GO      compiler=compiles            4.8s 
-etcd        63fe0f28 GO       source_build=GO      compiler=compiles            3.8s 
-etcd        4155d8bb GO       source_build=GO      compiler=compiles            4.7s 
-etcd          20 decisions  GO  12  NO-GO   2  UNKNOWN   6 (30.0%)  errors 0 | compiler judged  12: agree  11  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 1 | not judged 8
-TOTAL         20 decisions  GO  12  NO-GO   2  UNKNOWN   6 (30.0%)  errors 0 | compiler judged  12: agree  11  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 1 | not judged 8
+etcd        55035cab UNKNOWN  source_build=UNKNOWN compiler=-                   1.1s 
+etcd        75932ca1 UNKNOWN  source_build=GO      compiler=-                   0.6s 
+etcd        b428dc25 NO_GO    source_build=NO_GO   compiler=-                   0.6s 
+etcd        073d46a5 UNKNOWN  source_build=GO      compiler=compiles            6.1s 
+etcd        c501d6bf GO       source_build=GO      compiler=oracle_error        1.7s 
+etcd        f5409c42 GO       source_build=GO      compiler=-                   0.5s 
+etcd        022b9b22 GO       source_build=GO      compiler=oracle_error        2.2s 
+etcd        97c63c9f GO       source_build=GO      compiler=oracle_error        2.5s 
+etcd        9d57554c GO       source_build=GO      compiler=oracle_error        0.4s 
+etcd        2eca68e3 GO       source_build=GO      compiler=oracle_error        2.1s 
+etcd        63fe0f28 GO       source_build=GO      compiler=oracle_error        1.5s 
+etcd        4155d8bb GO       source_build=GO      compiler=oracle_error        2.0s 
+etcd          20 decisions  GO  12  NO-GO   2  UNKNOWN   6 (30.0%)  errors 0 | compiler judged   5: agree   4  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 1 | not judged 15
+TOTAL         20 decisions  GO  12  NO-GO   2  UNKNOWN   6 (30.0%)  errors 0 | compiler judged   5: agree   4  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 1 | not judged 15
 
 UNKNOWN reasons across all: windows, ecosystems, an example
     4   1  CONTRACT_COMPILE_ERROR (e.g. etcd@c4e53cdd272eb75eac8ab814fea74337c8fd0d1d)
@@ -30,6 +30,6 @@ UNKNOWN reasons across all: windows, ecosystems, an example
     1   1  WHOLE_MESSAGE_FLOW (e.g. etcd@073d46a558de734e5e86ff2f84cd2f54f990f75d)
   FAILED etcd@84e612f39b82d1c8ee3f884a59e3f973209d8fbc: unknown_on_safe: NEEDS_REVIEW
 
-20 windows in 1m35s.
+20 windows in 1m29s.
 verifier gate: scan failed: 1 disagreements with the compiler or errors
 exit 1
