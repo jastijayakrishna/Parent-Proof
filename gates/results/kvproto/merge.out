@@ -8,6 +8,6 @@ TOTAL                  windows=152 | breaks=49: caught=49 WRONG_GO=0 abstained=0
   WITHIN THE UNKNOWN LIMIT client-go@00eeab450c8c..62eb316d: unknown_on_safe: WHOLE_MESSAGE_FLOW, OPTION_CHANGED
   WITHIN THE UNKNOWN LIMIT client-go@57c12f7c64f6..aa9c2d20: unknown_on_safe: NEEDS_REVIEW
 
-152 windows merged; verifier 92fa9f95f4abc2ad519ef790c63538a5765803f1443690f533efbdbb4e4455c1; slowest window 5.4 minutes; 0 differ from the baseline.
+152 windows merged; verifier 92fa9f95f4abc2ad519ef790c63538a5765803f1443690f533efbdbb4e4455c1; slowest window 1.2 minutes; 0 differ from the baseline.
 Release gate passed.
 exit 0
