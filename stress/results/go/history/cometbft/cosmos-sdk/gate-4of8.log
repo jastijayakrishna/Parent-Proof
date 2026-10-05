@@ -1,0 +1,6 @@
+cosmos-sdk 3e18f408 UNKNOWN  source_build=GO      compiler=compiles          11.7s replay=true 
+cosmos-sdk/breaking    windows=  1 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 1: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=1
+TOTAL                  windows=  1 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 1: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=1
+
+1 windows in 12s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
