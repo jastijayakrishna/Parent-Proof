@@ -1,5 +1,5 @@
-Gates of verifier 0471207 requested 2026-10-04T10:56Z
-source: jastijayakrishna/Parent, branch s3-suite, commit 04712074 (adversarial suite fixes; go-analyzer/v0.18.0, rules-protobuf/v0.13.0)
-sha256 (uncompressed linux/amd64): ca85a693492e36d6b1548c3595415e0ca53eeb6a8dee98467834b3d9f194cac8
-built: 2026-10-04T10:56Z
-scan: all 17 corpus projects with the compiler, new and before (02abdaa, main 846afe7)
+Gates of the probe engine (Parent probe-experiment d6d1033, code 0026f9b) requested 2026-10-05T04:45Z
+source: jastijayakrishna/Parent, branch probe-experiment, commit d6d10334 (Phase 2: the probe decides field changes; the analyzer decides other kinds)
+sha256 (uncompressed linux/amd64): dbe8dc4c2a4a7c27f3010f830e59e4419a19449bc82276b9f68b6ab36a362af2
+built: 2026-10-05T04:45Z
+scan: all 17 corpus projects with the compiler, new (the probe) and before (the analyzer, main bb4d10e)
