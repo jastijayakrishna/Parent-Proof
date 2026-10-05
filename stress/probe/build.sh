@@ -5,7 +5,7 @@
 # class directories the verifier would read. Usage: build.sh NAME OUT_DIR.
 set -uo pipefail
 name=$1 out=$2
-mkdir -p "$out"
+mkdir -p "$out" && out=$(cd "$out" && pwd)
 cfg() { python3 stress/java/cfg.py "$name" "$1"; }
 repo=$(cfg consumer.repo) commit=$(cfg consumer.commit) jdk=$(cfg jdk)
 build=$(cfg build) clean=$(cfg clean) prebuild=$(cfg prebuild) subs=$(cfg submodules)
