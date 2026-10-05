@@ -1,0 +1,147 @@
+/home/runner/work/Parent-Proof/Parent-Proof/stress/probe/layout.py:130: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  cutoff = (datetime.datetime.utcnow() - datetime.timedelta(days=30)).strftime("%Y-%m-%dT%H:%M:%SZ")
+{
+ "name": "java-control-plane",
+ "set": "regression",
+ "consumer": {
+  "repo": "envoyproxy/java-control-plane",
+  "commit": "a3ecf70dc5b6698da94201f3a640c33669951f56"
+ },
+ "head": "a3ecf70dc5b6698da94201f3a640c33669951f56 2026-09-26T10:49:17-04:00",
+ "default_branch": "origin/main",
+ "history": {
+  "count": 16,
+  "with_proto_changes": 16,
+  "last": [
+   {
+    "commit": "d6a3d34c2c4f8f2ae5f4faa5b28dbbcabd37927f",
+    "date": "2023-01-19",
+    "subject": "[protobuf] Update protobuf definitions to v1.25.0 (#269)",
+    "files": 68,
+    "protos": 68
+   },
+   {
+    "commit": "6b509a75d381ba75f4c1ffec30b2d81c4121ae31",
+    "date": "2023-05-19",
+    "subject": "[protobuf] Update protobuf definitions to v1.25.5 (#282)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "c6e3bf3b568a42788ace78a673d3d15dee290408",
+    "date": "2023-05-20",
+    "subject": "[protobuf] Update protobuf definitions to v1.26.1 (#286)",
+    "files": 103,
+    "protos": 103
+   },
+   {
+    "commit": "aec2db3f28f7e072c3ed6803f76e200cd535ed2b",
+    "date": "2023-07-31",
+    "subject": "[protobuf] Update protobuf definitions to v1.27.0 (#295)",
+    "files": 61,
+    "protos": 61
+   },
+   {
+    "commit": "45d1c20682492f76391b96b74e7861a2eb0885fa",
+    "date": "2023-11-15",
+    "subject": "[protobuf] Update protobuf definitions to v1.28.0 (#299)",
+    "files": 63,
+    "protos": 63
+   },
+   {
+    "commit": "e69f8dbf1ad84ab57b528d50b1387f699d63e453",
+    "date": "2024-01-24",
+    "subject": "[protobuf] Update protobuf definitions to v1.29.0 (#319)",
+    "files": 53,
+    "protos": 53
+   },
+   {
+    "commit": "f889ce61247295a6fad1c3d688b50c5560610225",
+    "date": "2024-04-24",
+    "subject": "[protobuf] Update protobuf definitions to v1.30.1 (#364)",
+    "files": 71,
+    "protos": 71
+   },
+   {
+    "commit": "c8c1c32478883023b507cd94294b697057c566f8",
+    "date": "2024-08-20",
+    "subject": "[protobuf] Update protobuf definitions to v1.31.0 (#388)",
+    "files": 53,
+    "protos": 53
+   },
+   {
+    "commit": "815727d5835599617de3792533942b702b5fffcf",
+    "date": "2024-12-15",
+    "subject": "[protobuf] Update protobuf definitions to v1.32.2 (#433)",
+    "files": 55,
+    "protos": 55
+   },
+   {
+    "commit": "d7f793bcd7543f82ba79562083dbfd33f57292a7",
+    "date": "2025-02-06",
+    "subject": "[protobuf] Update protobuf definitions to v1.33.0 (#449)",
+    "files": 77,
+    "protos": 77
+   },
+   {
+    "commit": "075dd539a4e7ac06ba0da8497c145a8307ad1bb1",
+    "date": "2025-04-22",
+    "subject": "[protobuf] Update protobuf definitions to v1.34.0 (#465)",
+    "files": 65,
+    "protos": 65
+   },
+   {
+    "commit": "232b4bde6e43165356f7c35cd8d67837a5e00afd",
+    "date": "2025-10-20",
+    "subject": "[protobuf] Update protobuf definitions to v1.36.2 (#476)",
+    "files": 131,
+    "protos": 131
+   },
+   {
+    "commit": "51a818dbbbdf3380523d5f981130261fbfb9ac34",
+    "date": "2026-01-15",
+    "subject": "[protobuf] Update protobuf definitions to v1.37.0 (#480)",
+    "files": 96,
+    "protos": 96
+   },
+   {
+    "commit": "6e3dd85c662082ad3f37047fbd793d43834d1632",
+    "date": "2026-06-10",
+    "subject": "[protobuf] Update protobuf definitions to v1.38.1 (#508)",
+    "files": 85,
+    "protos": 85
+   },
+   {
+    "commit": "7a2559ae0a0c86a026f8cb71718a0e1ce84e950d",
+    "date": "2026-06-29",
+    "subject": "[protobuf] Update protobuf definitions to v1.38.3 (#512)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "89222526fbbf1ecf7d2cdf6a1cd2a518733ee82b",
+    "date": "2026-07-17",
+    "subject": "[protobuf] Update protobuf definitions to v1.39.0 (#515)",
+    "files": 67,
+    "protos": 67
+   }
+  ]
+ },
+ "users": [
+  "api/pom.xml",
+  "cache/pom.xml"
+ ],
+ "jdk_hints": [
+  "pom.xml:18: <java.version>1.8</java.version>",
+  "pom.xml:19: <maven.compiler.source>1.8</maven.compiler.source>",
+  "pom.xml:20: <maven.compiler.target>1.8</maven.compiler.target>"
+ ],
+ "proto_count": 705,
+ "build_files": 5,
+ "prs": {
+  "checked": 2,
+  "matching": []
+ }
+}
+
+exit 0 seconds 8
