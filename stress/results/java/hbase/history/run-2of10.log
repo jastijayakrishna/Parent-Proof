@@ -1,7 +1,7 @@
 hbase history: 57 windows, shard 2/10 has 6
-a71105997f2c 2023-04-13 verifier=GO build=GO compiler=compiles 90.8s 
-94ed6add0669 2023-08-23 verifier=UNKNOWN build=GO compiler=compiles 87.4s 
-4b015e6a5486 2023-11-29 verifier=UNKNOWN build=GO compiler=compiles 89.9s 
-634b200e8847 2024-07-27 verifier=UNKNOWN build=GO compiler=compiles 93.2s 
-cb28ebec7a9f 2025-06-26 verifier=UNKNOWN build=GO compiler=compiles 95.1s 
-01ca956ecf71 2026-04-30 verifier=UNKNOWN build=GO compiler=compiles 96.5s 
+a71105997f2c 2023-04-13 verifier=GO build=GO compiler=compiles 99.5s 
+94ed6add0669 2023-08-23 verifier=NO_GO build=GO compiler=compiles 67.3s 
+4b015e6a5486 2023-11-29 verifier=UNKNOWN build=GO compiler=compiles 73.7s 
+634b200e8847 2024-07-27 verifier=UNKNOWN build=GO compiler=compiles 73.9s 
+cb28ebec7a9f 2025-06-26 verifier=UNKNOWN build=GO compiler=compiles 77.2s 
+01ca956ecf71 2026-04-30 verifier=GO build=GO compiler=compiles 74.3s 
