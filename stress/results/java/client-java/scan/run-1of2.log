@@ -1,11 +1,11 @@
 client-java scan: 20 windows, shard 1/2 has 10
-eea846d2ab9e 2026-05-13 verifier=GO build=GO compiler=compiles 96.0s 
-b2b3bb492278 2026-06-01 verifier=GO build=GO compiler=compiles 83.1s 
-f8184e7702eb 2026-06-02 verifier=GO build=GO compiler=compiles 79.9s 
-412e01458771 2026-06-09 verifier=GO build=GO compiler=compiles 87.3s 
-b41e86365ce0 2026-06-22 verifier=GO build=GO compiler=compiles 86.5s 
-683dad8fa368 2026-07-21 verifier=GO build=GO compiler=compiles 84.9s 
-059694ae4472 2026-07-24 verifier=GO build=GO compiler=compiles 84.7s 
-af1ad1bef5b9 2026-08-13 verifier=GO build=GO compiler=compiles 86.7s 
-623e58e60fa9 2026-08-20 verifier=GO build=GO compiler=compiles 86.2s 
-65b4e27a438d 2026-09-03 verifier=GO build=GO compiler=compiles 88.7s 
+eea846d2ab9e 2026-05-13 verifier=GO build=GO compiler=compiles 107.7s 
+b2b3bb492278 2026-06-01 verifier=GO build=GO compiler=compiles 71.7s 
+f8184e7702eb 2026-06-02 verifier=GO build=GO compiler=compiles 73.6s 
+412e01458771 2026-06-09 verifier=GO build=GO compiler=compiles 74.7s 
+b41e86365ce0 2026-06-22 verifier=GO build=GO compiler=compiles 71.3s 
+683dad8fa368 2026-07-21 verifier=GO build=GO compiler=compiles 72.1s 
+059694ae4472 2026-07-24 verifier=GO build=GO compiler=compiles 73.7s 
+af1ad1bef5b9 2026-08-13 verifier=GO build=GO compiler=compiles 70.6s 
+623e58e60fa9 2026-08-20 verifier=GO build=GO compiler=compiles 72.4s 
+65b4e27a438d 2026-09-03 verifier=GO build=GO compiler=compiles 74.7s 
