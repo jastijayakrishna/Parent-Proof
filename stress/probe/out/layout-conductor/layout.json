@@ -1,0 +1,214 @@
+{
+ "name": "conductor",
+ "set": "dev",
+ "consumer": {
+  "repo": "conductor-oss/conductor",
+  "commit": "ab2de6da6c7b5935e6c6d09da29953b8d4cfe291"
+ },
+ "head": "ab2de6da6c7b5935e6c6d09da29953b8d4cfe291 2026-10-02T08:58:55-07:00",
+ "default_branch": "origin/main",
+ "history": {
+  "count": 25,
+  "with_proto_changes": 25,
+  "last": [
+   {
+    "commit": "013e82087ed47b1ddcab5349180caada0070c009",
+    "date": "2023-09-16",
+    "subject": "Merge pull request #3733 from alexmay48/alexmay48/java17-update",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "e60b0e6ef2f58cdae6bbc4be5103f0e2e1747ef1",
+    "date": "2023-12-22",
+    "subject": "Merge pull request #3 from ivakoleva/permissive-task-feature",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "17b790e486b4c676448e0a18ee0926171d8c4505",
+    "date": "2024-07-02",
+    "subject": "Merge pull request #194 from conductor-oss/core_updates",
+    "files": 11,
+    "protos": 11
+   },
+   {
+    "commit": "c67b2eb256e903083bac383d6c7418447a52a3b9",
+    "date": "2024-11-27",
+    "subject": "Merge pull request #313 from shaileshpadave/addTotalTimeout",
+    "files": 2,
+    "protos": 2
+   },
+   {
+    "commit": "c97708561c5436beb24dff2d47665ac3a16156d0",
+    "date": "2025-04-23",
+    "subject": "Merge pull request #488 from Sudakatux/add_metadata",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "894c7dc136ad0b3a05f1af3a10682be1794243eb",
+    "date": "2025-04-29",
+    "subject": "Merge pull request #492 from fw-himanshu/add-taskToDomain",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "ef0a6920d45d85b8debbdda93d7e61ad1863b0a1",
+    "date": "2025-06-25",
+    "subject": "Merge pull request #535 from conductor-oss/wf-cache-config",
+    "files": 3,
+    "protos": 3
+   },
+   {
+    "commit": "72a06a4c7bc9911bc862c1fd97a10277be87afb0",
+    "date": "2025-07-25",
+    "subject": "Merge pull request #559 from conductor-oss/CCOR-12630",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "919c416f6b9a5da3e8c96856be94fad466d4ced3",
+    "date": "2025-09-14",
+    "subject": "Merge pull request #545 from conductor-oss/CCOR-195",
+    "files": 3,
+    "protos": 3
+   },
+   {
+    "commit": "b9f50bbcc6ed9b8f3f8de2aacec9974b55abcca4",
+    "date": "2025-11-24",
+    "subject": "Merge pull request #667 from conductor-oss/rate_limit_policy",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "aa7de922578fe59d1d145881299b1a8306dde3b0",
+    "date": "2025-12-05",
+    "subject": "Merge pull request #676 from conductor-oss/upgrade-protobuf-4.33.0",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "0c723f7aa4f82dcf1341e55e4ed017f8c2ec3d36",
+    "date": "2026-02-03",
+    "subject": "Support Agentic flows (#745)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "7a048ae356945bdad9cb4ff7f6721a4054905633",
+    "date": "2026-03-01",
+    "subject": "AI task tracking, module reorganization, and new REST endpoints (#801)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "d1dc16a618b3e3e2dd27ed44b583afc4d6849279",
+    "date": "2026-03-12",
+    "subject": "Merge pull request #680 from conductor-oss/619-add-synchronous-join-support-to-fork_join",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "3aa148749398accdc5e6939e4836fdf6ba966d44",
+    "date": "2026-03-25",
+    "subject": "Feat/gemini api key support (#919)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "ccc822a8dc3b64e19f7b9ad362e3d2a4ea2b3abd",
+    "date": "2026-03-25",
+    "subject": "feat: Add TaskDef-level control for task status event publishing (#756)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "fec4f90e20d1f45ef90526969dac6f1bfbbbb8f0",
+    "date": "2026-04-08",
+    "subject": "feat: wildcard search and sub-workflow filtering (#996)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "6456b564fad28d0211c7c554259f4f82c678c0a4",
+    "date": "2026-04-21",
+    "subject": "Improve task retry policy (#1031)",
+    "files": 2,
+    "protos": 2
+   },
+   {
+    "commit": "42a9ed69f22b02f1cf0426211554d0d1066c643e",
+    "date": "2026-07-01",
+    "subject": "Terminate workflow with custom failure workflow version (#696)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "538c4505ec7e5eff50d74e173d15a171699f6b17",
+    "date": "2026-07-09",
+    "subject": "Merge pull request #1268 from conductor-oss/feature/workflow-classifier",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "8fc4df0470b94a10c8d6187ff3df115e4a69dc16",
+    "date": "2026-07-17",
+    "subject": "Merge pull request #1338 from conductor-oss/agent_task",
+    "files": 2,
+    "protos": 2
+   },
+   {
+    "commit": "80156f58ffc131b1f1964c05e33546b5cae47e7e",
+    "date": "2026-07-17",
+    "subject": "Task cancel contract (#1342)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "3ea601884dfcdc818befc540999515859606c495",
+    "date": "2026-07-20",
+    "subject": "Enhances A2A/AgentSpan execution (#1356)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "53eb2d918d106bbf3df197b4cef4142fa7e85fad",
+    "date": "2026-07-30",
+    "subject": "Merge pull request #1440 from conductor-oss/feature/prompt-template-and-start-agent-action",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "56e1eb80e8116e874ef22c84e998070e0324f28c",
+    "date": "2026-09-08",
+    "subject": "Show tasks that run inside a workflow but outside its DAG (#1604)",
+    "files": 1,
+    "protos": 1
+   }
+  ]
+ },
+ "users": [
+  "build.gradle",
+  "grpc-client/build.gradle",
+  "grpc-server/build.gradle"
+ ],
+ "jdk_hints": [
+  "build.gradle:47: toolchain {",
+  "build.gradle:48: languageVersion = JavaLanguageVersion.of(21)",
+  "build.gradle:52: sourceCompatibility = JavaVersion.VERSION_21",
+  "build.gradle:53: targetCompatibility = JavaVersion.VERSION_21"
+ ],
+ "proto_count": 32,
+ "build_files": 52,
+ "prs": {
+  "checked": 38,
+  "matching": [
+   {
+    "n": 1582,
+    "title": "feat(agents): hosted agent runtimes \u2014 stateless execution, Entra ID auth modes, discovery,",
+    "updated": "2026-10-01"
+   }
+  ]
+ }
+}
