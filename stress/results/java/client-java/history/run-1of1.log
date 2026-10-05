@@ -1,0 +1,11 @@
+client-java history: 10 windows, shard 1/1 has 10
+41aeed2679f8 2020-09-07 verifier=GO build=GO compiler=oracle_error 41.9s 
+10d8efbbc451 2021-02-20 verifier=NO_GO build=NO_GO compiler=breaks 52.1s 
+c9507c2fa7b0 2021-03-15 verifier=GO build=GO compiler=compiles 54.5s 
+dde59a38f8a8 2021-03-25 verifier=NO_GO build=NO_GO compiler=breaks 52.9s 
+798244cd9ef1 2021-07-22 verifier=GO build=GO compiler=compiles 53.7s 
+bbe4f9b0c4e0 2021-10-14 verifier=NO_GO build=NO_GO compiler=breaks 55.7s 
+b82276231c8a 2021-10-25 verifier=GO build=GO compiler=compiles 56.9s 
+5dbfe03b2cc0 2021-12-31 verifier=None build=None compiler=baseline_fails 17.3s 
+7122903f1dd5 2022-02-10 verifier=None build=None compiler=baseline_fails 11.9s 
+9ce52d34017e 2022-06-02 verifier=None build=None compiler=baseline_fails 13.7s 
