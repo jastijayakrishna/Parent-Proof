@@ -1,25 +1,25 @@
-time=2026-10-05T04:55:17.782Z level=INFO msg=cloning repo=p-crio url=https://github.com/kubernetes/cri-api.git
-time=2026-10-05T04:55:18.192Z level=INFO msg=cloning repo=c-crio url=https://github.com/cri-o/cri-o.git
-crio        5950389a GO       source_build=GO      compiler=compiles           69.0s 
-crio        d279f3cb GO       source_build=GO      compiler=compiles           10.3s 
-crio        d106c2f6 GO       source_build=GO      compiler=compiles            5.0s 
-crio        47789ac6 GO       source_build=GO      compiler=compiles            4.7s 
-crio        c9d92637 GO       source_build=GO      compiler=compiles            4.6s 
-crio        044b7dee NO_GO    source_build=NO_GO   compiler=compiles            4.7s 
-crio        d3d9c71c NO_GO    source_build=NO_GO   compiler=compiles            4.2s 
-crio        c71d95a3 GO       source_build=GO      compiler=compiles            4.7s 
-crio        2461a679 GO       source_build=GO      compiler=compiles            4.9s 
-crio        bb3131c5 GO       source_build=GO      compiler=compiles            4.6s 
-crio        ce6444f1 GO       source_build=GO      compiler=compiles            4.0s 
-crio        42f1638a GO       source_build=GO      compiler=compiles            3.1s 
-crio        65ec8e48 GO       source_build=GO      compiler=compiles            3.1s 
-crio        077888e1 GO       source_build=GO      compiler=compiles            4.2s 
-crio        3cd2df7d UNKNOWN  source_build=UNKNOWN compiler=compiles            4.2s 
-crio        9c7cf2cf UNKNOWN  source_build=UNKNOWN compiler=compiles            5.9s 
-crio        ea06df2a GO       source_build=GO      compiler=compiles            7.0s 
-crio        26564a8e GO       source_build=GO      compiler=compiles            7.0s 
-crio        475a7417 GO       source_build=GO      compiler=compiles            4.0s 
-crio        6477f0b2 GO       source_build=GO      compiler=compiles            6.7s 
+time=2026-10-05T05:59:01.583Z level=INFO msg=cloning repo=p-crio url=https://github.com/kubernetes/cri-api.git
+time=2026-10-05T05:59:01.899Z level=INFO msg=cloning repo=c-crio url=https://github.com/cri-o/cri-o.git
+crio        5950389a GO       source_build=GO      compiler=compiles           68.7s 
+crio        d279f3cb GO       source_build=GO      compiler=compiles            9.7s 
+crio        d106c2f6 GO       source_build=GO      compiler=compiles            4.5s 
+crio        47789ac6 GO       source_build=GO      compiler=compiles            4.4s 
+crio        c9d92637 GO       source_build=GO      compiler=compiles            4.4s 
+crio        044b7dee NO_GO    source_build=NO_GO   compiler=compiles            4.8s 
+crio        d3d9c71c NO_GO    source_build=NO_GO   compiler=compiles            4.5s 
+crio        c71d95a3 GO       source_build=GO      compiler=compiles            4.5s 
+crio        2461a679 GO       source_build=GO      compiler=compiles            4.4s 
+crio        bb3131c5 GO       source_build=GO      compiler=compiles            4.2s 
+crio        ce6444f1 GO       source_build=GO      compiler=compiles            4.3s 
+crio        42f1638a GO       source_build=GO      compiler=compiles            2.5s 
+crio        65ec8e48 GO       source_build=GO      compiler=compiles            3.0s 
+crio        077888e1 GO       source_build=GO      compiler=compiles            4.6s 
+crio        3cd2df7d UNKNOWN  source_build=UNKNOWN compiler=compiles            4.3s 
+crio        9c7cf2cf UNKNOWN  source_build=UNKNOWN compiler=compiles            5.6s 
+crio        ea06df2a GO       source_build=GO      compiler=compiles            6.7s 
+crio        26564a8e GO       source_build=GO      compiler=compiles            6.7s 
+crio        475a7417 GO       source_build=GO      compiler=compiles            3.6s 
+crio        6477f0b2 GO       source_build=GO      compiler=compiles            5.9s 
 crio          20 decisions  GO  16  NO-GO   2  UNKNOWN   2 (10.0%)  errors 0 | compiler judged  20: agree  18  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 2 | not judged 0
 TOTAL         20 decisions  GO  16  NO-GO   2  UNKNOWN   2 (10.0%)  errors 0 | compiler judged  20: agree  18  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 2 | not judged 0
 
@@ -29,5 +29,5 @@ UNKNOWN reasons across all: windows, ecosystems, an example
     2   1  UNRESOLVED_MEMBER (e.g. crio@d3d9c71cbdb59ef52e589f825ef17b34fd377c47)
     1   1  WHOLE_MESSAGE_FLOW (e.g. crio@044b7deef2ff223d2f4bba4f5b00d8b504e6307c)
 
-20 windows in 2m53s.
+20 windows in 2m48s.
 exit 0
