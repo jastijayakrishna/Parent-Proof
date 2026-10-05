@@ -1,0 +1,43 @@
+{
+ "name": "beam",
+ "cold_seconds": 409,
+ "cold_exit": 0,
+ "warm_clean_seconds": 16,
+ "warm_exit": 0,
+ "class_dirs": 8,
+ "classes": 4848,
+ "dirs": [
+  {
+   "dir": "sdks/java/transform-service/launcher/build/classes/java/main",
+   "classes": 2
+  },
+  {
+   "dir": "sdks/java/core/build/classes/java/main",
+   "classes": 2751
+  },
+  {
+   "dir": "sdks/java/harness/build/classes/java/main",
+   "classes": 294
+  },
+  {
+   "dir": "model/pipeline/build/classes/java/main",
+   "classes": 657
+  },
+  {
+   "dir": "model/fn-execution/build/classes/java/main",
+   "classes": 417
+  },
+  {
+   "dir": "model/job-management/build/classes/java/main",
+   "classes": 298
+  },
+  {
+   "dir": "runners/java-fn-execution/build/classes/java/main",
+   "classes": 150
+  },
+  {
+   "dir": "runners/core-java/build/classes/java/main",
+   "classes": 279
+  }
+ ]
+}

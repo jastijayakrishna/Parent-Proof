@@ -1,0 +1,13 @@
+clone seconds 28
+565M	/home/runner/work/_temp/src-beam
+openjdk version "17.0.20.1" 2026-08-18
+Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
+cold build exit 0 seconds 409
+stress/probe/build.sh: line 56: stress/probe/out/build-beam/cold.log: No such file or directory
+BUILD SUCCESSFUL in 6m 47s
+warm clean build exit 0 seconds 16
+stress/probe/build.sh: line 63: stress/probe/out/build-beam/warm.log: No such file or directory
+class dirs 8, classes 4848
+/dev/root       145G   61G   84G  42% /
+
+exit 0 seconds 593
