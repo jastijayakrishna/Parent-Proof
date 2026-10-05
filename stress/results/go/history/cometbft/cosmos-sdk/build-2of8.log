@@ -1,0 +1,5 @@
+time=2026-10-05T17:37:05.673Z level=INFO msg=cloning repo=cometbft url=https://github.com/cometbft/cometbft.git
+time=2026-10-05T17:37:12.912Z level=INFO msg=cloning repo=cosmos-sdk url=https://github.com/cosmos/cosmos-sdk.git
+time=2026-10-05T17:37:41.899Z level=INFO msg=mined consumer=cosmos-sdk pin_moves=46 to_compile=1
+time=2026-10-05T17:38:35.843Z level=INFO msg=window consumer=cosmos-sdk bump=27f3c729 select=breaking breaking=1 compiler=compiles
+time=2026-10-05T17:38:35.843Z level=INFO msg="suite built" suite=cometbft windows_added=1
