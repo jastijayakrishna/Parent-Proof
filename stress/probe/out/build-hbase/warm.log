@@ -1,0 +1,88 @@
+th [0] errors in [96] milliseconds
+    [mkdir] Created dir: /home/runner/work/_temp/src-hbase/hbase-server/target/hbase-webapps/canary/WEB-INF
+Oct 05, 2026 5:28:29 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Oct 05, 2026 5:28:29 PM org.apache.jasper.JspC execute
+INFO: Generation completed with [0] errors in [22] milliseconds
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hbase-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ hbase-server ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ hbase-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 20 resources
+[INFO] Copying 98 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.3.0:flatten (flatten) @ hbase-server ---
+[INFO] Generating flattened POM of project org.apache.hbase:hbase-server:jar:4.0.0-alpha-1-SNAPSHOT...
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (check-aggregate-license) @ hbase-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- dependency:3.8.1:unpack (unpack-ui-resources-js) @ hbase-server ---
+[INFO] Configured Artifact: org.webjars:bootstrap:5.3.3:jar
+[INFO] Configured Artifact: org.webjars:jquery:3.7.1:jar
+[INFO] Configured Artifact: org.webjars:tablesorter:2.32.0:jar
+[INFO] Configured Artifact: org.webjars:vega:5.32.0:jar
+[INFO] Configured Artifact: org.webjars:vega-embed:6.29.0:jar
+[INFO] Configured Artifact: org.webjars:vega-lite:5.23.0:jar
+[INFO] 
+[INFO] --- dependency:3.8.1:unpack (unpack-ui-resources-css) @ hbase-server ---
+[INFO] Configured Artifact: org.webjars:bootstrap:5.3.3:jar
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ hbase-server ---
+[INFO] Compiling 1289 source files to /home/runner/work/_temp/src-hbase/hbase-server/target/classes
+[WARNING] unknown enum constant javax.annotation.meta.When.UNKNOWN
+  reason: class file for javax.annotation.meta.When not found
+[WARNING] unknown enum constant javax.annotation.meta.When.ALWAYS
+[WARNING] unknown enum constant javax.annotation.meta.When.MAYBE
+[WARNING] /home/runner/work/_temp/src-hbase/hbase-server/src/main/java/org/apache/hadoop/hbase/tool/coprocessor/CoprocessorValidator.java:[100,12] java.security.AccessController in java.security has been deprecated and marked for removal
+[INFO] /home/runner/work/_temp/src-hbase/hbase-server/src/main/java/org/apache/hadoop/hbase/master/SplitLogManager.java: Some input files use or override a deprecated API.
+[INFO] /home/runner/work/_temp/src-hbase/hbase-server/src/main/java/org/apache/hadoop/hbase/master/SplitLogManager.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/runner/work/_temp/src-hbase/hbase-server/src/main/java/org/apache/hadoop/hbase/ipc/RpcExecutor.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/runner/work/_temp/src-hbase/hbase-server/src/main/java/org/apache/hadoop/hbase/ipc/RpcExecutor.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- build-helper:3.0.0:add-test-resource (add-test-source) @ hbase-server ---
+[INFO] 
+[INFO] --- dependency:3.8.1:build-classpath (create-mrapp-generated-classpath) @ hbase-server ---
+[INFO] Wrote classpath file '/home/runner/work/_temp/src-hbase/hbase-server/target/test-classes/mrapp-generated-classpath'.
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ hbase-server ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ hbase-server ---
+[INFO] Not compiling test sources
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Apache HBase 4.0.0-alpha-1-SNAPSHOT:
+[INFO] 
+[INFO] Apache HBase ....................................... SUCCESS [  1.194 s]
+[INFO] Apache HBase - Checkstyle .......................... SUCCESS [  0.179 s]
+[INFO] Apache HBase - Annotations ......................... SUCCESS [  0.063 s]
+[INFO] Apache HBase - Build Configuration ................. SUCCESS [  0.114 s]
+[INFO] Apache HBase - Logging ............................. SUCCESS [  1.331 s]
+[INFO] Apache HBase - Shaded Protocol ..................... SUCCESS [ 32.468 s]
+[INFO] Apache HBase - Common .............................. SUCCESS [  9.234 s]
+[INFO] Apache HBase - Metrics API ......................... SUCCESS [  1.569 s]
+[INFO] Apache HBase - Metrics Implementation .............. SUCCESS [  1.361 s]
+[INFO] Apache HBase - Hadoop Compatibility ................ SUCCESS [  2.949 s]
+[INFO] Apache HBase - Client .............................. SUCCESS [  5.407 s]
+[INFO] Apache HBase - Zookeeper ........................... SUCCESS [  2.329 s]
+[INFO] Apache HBase - Replication ......................... SUCCESS [  1.841 s]
+[INFO] Apache HBase - Balancer ............................ SUCCESS [  3.956 s]
+[INFO] Apache HBase - Resource Bundle ..................... SUCCESS [  0.194 s]
+[INFO] Apache HBase - HTTP ................................ SUCCESS [  5.092 s]
+[INFO] Apache HBase - Asynchronous FileSystem ............. SUCCESS [  4.573 s]
+[INFO] Apache HBase - Procedure ........................... SUCCESS [  2.443 s]
+[INFO] Apache HBase - Server .............................. SUCCESS [ 15.860 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:01 min (Wall Clock)
+[INFO] Finished at: 2026-10-05T17:28:44Z
+[INFO] ------------------------------------------------------------------------

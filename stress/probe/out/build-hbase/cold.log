@@ -1,0 +1,338 @@
+d-jersey) @ hbase-asyncfs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-htrace) @ hbase-asyncfs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-bouncycastle-jdk15on) @ hbase-asyncfs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-junit4) @ hbase-asyncfs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-hamcrest-core-and-library) @ hbase-asyncfs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-libthrift) @ hbase-asyncfs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber:1.4:create-timestamp (default) @ hbase-asyncfs ---
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hbase-asyncfs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ hbase-asyncfs ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ hbase-zookeeper ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/runner/work/_temp/src-hbase/hbase-zookeeper/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.3.0:flatten (flatten) @ hbase-zookeeper ---
+[INFO] Generating flattened POM of project org.apache.hbase:hbase-zookeeper:jar:4.0.0-alpha-1-SNAPSHOT...
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (check-aggregate-license) @ hbase-zookeeper ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ hbase-zookeeper ---
+[INFO] Compiling 23 source files to /home/runner/work/_temp/src-hbase/hbase-zookeeper/target/classes
+[INFO] /home/runner/work/_temp/src-hbase/hbase-zookeeper/src/main/java/org/apache/hadoop/hbase/zookeeper/ZKAuthentication.java: Some input files use or override a deprecated API.
+[INFO] /home/runner/work/_temp/src-hbase/hbase-zookeeper/src/main/java/org/apache/hadoop/hbase/zookeeper/ZKAuthentication.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- dependency:3.1.1:build-classpath (create-mrapp-generated-classpath) @ hbase-zookeeper ---
+[INFO] Wrote classpath file '/home/runner/work/_temp/src-hbase/hbase-zookeeper/target/test-classes/mrapp-generated-classpath'.
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ hbase-zookeeper ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ hbase-zookeeper ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] -----------------< org.apache.hbase:hbase-replication >-----------------
+[INFO] Building Apache HBase - Replication 4.0.0-alpha-1-SNAPSHOT       [18/19]
+[INFO]   from hbase-replication/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- build-helper:3.0.0:bsh-property (negate-license-bundles-property) @ hbase-replication ---
+[INFO] 
+[INFO] --- build-helper:3.0.0:regex-property (create-license-file-path-property) @ hbase-replication ---
+[INFO] No match to regex '\\' found in '/home/runner/work/_temp/src-hbase/hbase-replication/target/maven-shared-archive-resources/META-INF/LICENSE'. The initial value '/home/runner/work/_temp/src-hbase/hbase-replication/target/maven-shared-archive-resources/META-INF/LICENSE' is left as-is...
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (enforce-maven-version) @ hbase-replication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (hadoop-profile-min-maven-min-java-banned-xerces) @ hbase-replication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-jsr305) @ hbase-replication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-scala) @ hbase-replication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-commons-logging) @ hbase-replication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-other-logging-framework) @ hbase-replication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-jetty) @ hbase-replication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-jersey) @ hbase-replication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-htrace) @ hbase-replication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-bouncycastle-jdk15on) @ hbase-replication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-junit4) @ hbase-replication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-hamcrest-core-and-library) @ hbase-replication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-libthrift) @ hbase-replication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber:1.4:create-timestamp (default) @ hbase-replication ---
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hbase-replication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ hbase-replication ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ hbase-balancer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/runner/work/_temp/src-hbase/hbase-balancer/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.3.0:flatten (flatten) @ hbase-balancer ---
+[INFO] Generating flattened POM of project org.apache.hbase:hbase-balancer:jar:4.0.0-alpha-1-SNAPSHOT...
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (check-aggregate-license) @ hbase-balancer ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ hbase-balancer ---
+[INFO] Compiling 73 source files to /home/runner/work/_temp/src-hbase/hbase-balancer/target/classes
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ hbase-replication ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/runner/work/_temp/src-hbase/hbase-replication/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.3.0:flatten (flatten) @ hbase-replication ---
+[INFO] Generating flattened POM of project org.apache.hbase:hbase-replication:jar:4.0.0-alpha-1-SNAPSHOT...
+[WARNING] unknown enum constant javax.annotation.meta.When.ALWAYS
+  reason: class file for javax.annotation.meta.When not found
+[INFO] /home/runner/work/_temp/src-hbase/hbase-balancer/src/main/java/org/apache/hadoop/hbase/master/balancer/BalancerClusterState.java: Some input files use or override a deprecated API.
+[INFO] /home/runner/work/_temp/src-hbase/hbase-balancer/src/main/java/org/apache/hadoop/hbase/master/balancer/BalancerClusterState.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ hbase-balancer ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ hbase-balancer ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (check-aggregate-license) @ hbase-replication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ hbase-replication ---
+[INFO] Compiling 21 source files to /home/runner/work/_temp/src-hbase/hbase-replication/target/classes
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ hbase-asyncfs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/runner/work/_temp/src-hbase/hbase-asyncfs/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.3.0:flatten (flatten) @ hbase-asyncfs ---
+[INFO] Generating flattened POM of project org.apache.hbase:hbase-asyncfs:jar:4.0.0-alpha-1-SNAPSHOT...
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (check-aggregate-license) @ hbase-asyncfs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ hbase-asyncfs ---
+[INFO] Compiling 14 source files to /home/runner/work/_temp/src-hbase/hbase-asyncfs/target/classes
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ hbase-replication ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ hbase-replication ---
+[INFO] Not compiling test sources
+[INFO] /home/runner/work/_temp/src-hbase/hbase-asyncfs/src/main/java/org/apache/hadoop/hbase/io/asyncfs/FanOutOneBlockAsyncDFSOutputSaslHelper.java: Some input files use or override a deprecated API.
+[INFO] /home/runner/work/_temp/src-hbase/hbase-asyncfs/src/main/java/org/apache/hadoop/hbase/io/asyncfs/FanOutOneBlockAsyncDFSOutputSaslHelper.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ hbase-asyncfs ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ hbase-asyncfs ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] -------------------< org.apache.hbase:hbase-server >--------------------
+[INFO] Building Apache HBase - Server 4.0.0-alpha-1-SNAPSHOT            [19/19]
+[INFO]   from hbase-server/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- build-helper:3.0.0:bsh-property (negate-license-bundles-property) @ hbase-server ---
+[INFO] 
+[INFO] --- build-helper:3.0.0:regex-property (create-license-file-path-property) @ hbase-server ---
+[INFO] No match to regex '\\' found in '/home/runner/work/_temp/src-hbase/hbase-server/target/maven-shared-archive-resources/META-INF/LICENSE'. The initial value '/home/runner/work/_temp/src-hbase/hbase-server/target/maven-shared-archive-resources/META-INF/LICENSE' is left as-is...
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (enforce-maven-version) @ hbase-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (hadoop-profile-min-maven-min-java-banned-xerces) @ hbase-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-jsr305) @ hbase-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-scala) @ hbase-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-commons-logging) @ hbase-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-other-logging-framework) @ hbase-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-jetty) @ hbase-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-jersey) @ hbase-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-htrace) @ hbase-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-bouncycastle-jdk15on) @ hbase-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-junit4) @ hbase-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-hamcrest-core-and-library) @ hbase-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-libthrift) @ hbase-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber:1.4:create-timestamp (default) @ hbase-server ---
+[INFO] 
+[INFO] --- build-helper:3.0.0:add-source (jspcSource-packageInfo-source) @ hbase-server ---
+[INFO] Source directory: /home/runner/work/_temp/src-hbase/hbase-server/target/generated-sources/java added.
+[INFO] 
+[INFO] --- antrun:1.8:run (generate) @ hbase-server ---
+[INFO] Executing tasks
+
+main:
+    [mkdir] Created dir: /home/runner/work/_temp/src-hbase/hbase-server/target/hbase-webapps
+     [copy] Copying 17 files to /home/runner/work/_temp/src-hbase/hbase-server/target/hbase-webapps
+     [copy] Copied 7 empty directories to 1 empty directory under /home/runner/work/_temp/src-hbase/hbase-server/target/hbase-webapps
+    [mkdir] Created dir: /home/runner/work/_temp/src-hbase/hbase-server/target/jsp
+     [copy] Copying 80 files to /home/runner/work/_temp/src-hbase/hbase-server/target/jsp
+     [copy] Copying 2 files to /home/runner/work/_temp/src-hbase/hbase-server/target/jsp/master
+     [copy] Copying 2 files to /home/runner/work/_temp/src-hbase/hbase-server/target/jsp/regionserver
+    [mkdir] Created dir: /home/runner/work/_temp/src-hbase/hbase-server/target/hbase-webapps/master/WEB-INF
+Oct 05, 2026 5:27:21 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Oct 05, 2026 5:27:22 PM org.apache.jasper.JspC execute
+INFO: Generation completed with [0] errors in [363] milliseconds
+    [mkdir] Created dir: /home/runner/work/_temp/src-hbase/hbase-server/target/hbase-webapps/regionserver/WEB-INF
+Oct 05, 2026 5:27:22 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Oct 05, 2026 5:27:22 PM org.apache.jasper.JspC execute
+INFO: Generation completed with [0] errors in [119] milliseconds
+    [mkdir] Created dir: /home/runner/work/_temp/src-hbase/hbase-server/target/hbase-webapps/canary/WEB-INF
+Oct 05, 2026 5:27:22 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Oct 05, 2026 5:27:22 PM org.apache.jasper.JspC execute
+INFO: Generation completed with [0] errors in [19] milliseconds
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hbase-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ hbase-server ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ hbase-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 20 resources
+[INFO] Copying 98 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.3.0:flatten (flatten) @ hbase-server ---
+[INFO] Generating flattened POM of project org.apache.hbase:hbase-server:jar:4.0.0-alpha-1-SNAPSHOT...
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (check-aggregate-license) @ hbase-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- dependency:3.8.1:unpack (unpack-ui-resources-js) @ hbase-server ---
+[INFO] Configured Artifact: org.webjars:bootstrap:5.3.3:jar
+[INFO] Configured Artifact: org.webjars:jquery:3.7.1:jar
+[INFO] Configured Artifact: org.webjars:tablesorter:2.32.0:jar
+[INFO] Configured Artifact: org.webjars:vega:5.32.0:jar
+[INFO] Configured Artifact: org.webjars:vega-embed:6.29.0:jar
+[INFO] Configured Artifact: org.webjars:vega-lite:5.23.0:jar
+[INFO] 
+[INFO] --- dependency:3.8.1:unpack (unpack-ui-resources-css) @ hbase-server ---
+[INFO] Configured Artifact: org.webjars:bootstrap:5.3.3:jar
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ hbase-server ---
+[INFO] Compiling 1289 source files to /home/runner/work/_temp/src-hbase/hbase-server/target/classes
+[WARNING] unknown enum constant javax.annotation.meta.When.UNKNOWN
+  reason: class file for javax.annotation.meta.When not found
+[WARNING] unknown enum constant javax.annotation.meta.When.ALWAYS
+[WARNING] unknown enum constant javax.annotation.meta.When.MAYBE
+[WARNING] /home/runner/work/_temp/src-hbase/hbase-server/src/main/java/org/apache/hadoop/hbase/tool/coprocessor/CoprocessorValidator.java:[100,12] java.security.AccessController in java.security has been deprecated and marked for removal
+[INFO] /home/runner/work/_temp/src-hbase/hbase-server/src/main/java/org/apache/hadoop/hbase/master/SplitLogManager.java: Some input files use or override a deprecated API.
+[INFO] /home/runner/work/_temp/src-hbase/hbase-server/src/main/java/org/apache/hadoop/hbase/master/SplitLogManager.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/runner/work/_temp/src-hbase/hbase-server/src/main/java/org/apache/hadoop/hbase/ipc/RpcExecutor.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/runner/work/_temp/src-hbase/hbase-server/src/main/java/org/apache/hadoop/hbase/ipc/RpcExecutor.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- build-helper:3.0.0:add-test-resource (add-test-source) @ hbase-server ---
+[INFO] 
+[INFO] --- dependency:3.8.1:build-classpath (create-mrapp-generated-classpath) @ hbase-server ---
+[INFO] Wrote classpath file '/home/runner/work/_temp/src-hbase/hbase-server/target/test-classes/mrapp-generated-classpath'.
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ hbase-server ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ hbase-server ---
+[INFO] Not compiling test sources
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Apache HBase 4.0.0-alpha-1-SNAPSHOT:
+[INFO] 
+[INFO] Apache HBase ....................................... SUCCESS [  1.497 s]
+[INFO] Apache HBase - Checkstyle .......................... SUCCESS [  0.212 s]
+[INFO] Apache HBase - Annotations ......................... SUCCESS [  0.066 s]
+[INFO] Apache HBase - Build Configuration ................. SUCCESS [  0.129 s]
+[INFO] Apache HBase - Logging ............................. SUCCESS [  3.812 s]
+[INFO] Apache HBase - Shaded Protocol ..................... SUCCESS [ 32.534 s]
+[INFO] Apache HBase - Common .............................. SUCCESS [ 12.304 s]
+[INFO] Apache HBase - Metrics API ......................... SUCCESS [  1.678 s]
+[INFO] Apache HBase - Metrics Implementation .............. SUCCESS [  1.420 s]
+[INFO] Apache HBase - Hadoop Compatibility ................ SUCCESS [  6.068 s]
+[INFO] Apache HBase - Client .............................. SUCCESS [  7.391 s]
+[INFO] Apache HBase - Zookeeper ........................... SUCCESS [  1.980 s]
+[INFO] Apache HBase - Replication ......................... SUCCESS [  2.206 s]
+[INFO] Apache HBase - Balancer ............................ SUCCESS [  3.757 s]
+[INFO] Apache HBase - Resource Bundle ..................... SUCCESS [  0.180 s]
+[INFO] Apache HBase - HTTP ................................ SUCCESS [ 13.594 s]
+[INFO] Apache HBase - Asynchronous FileSystem ............. SUCCESS [  4.410 s]
+[INFO] Apache HBase - Procedure ........................... SUCCESS [  4.183 s]
+[INFO] Apache HBase - Server .............................. SUCCESS [ 20.333 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:08 min (Wall Clock)
+[INFO] Finished at: 2026-10-05T17:27:40Z
+[INFO] ------------------------------------------------------------------------

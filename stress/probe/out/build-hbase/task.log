@@ -2,26 +2,10 @@ clone seconds 12
 297M	/home/runner/work/_temp/src-hbase
 openjdk version "17.0.20.1" 2026-08-18
 Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
-cold build exit 1 seconds 41
-stress/probe/build.sh: line 56: stress/probe/out/build-hbase/cold.log: No such file or directory
-[INFO] Apache HBase - Common .............................. FAILURE [  9.468 s]
-[INFO] BUILD FAILURE
-[ERROR] Failed to execute goal on project hbase-common: Could not resolve dependencies for project org.apache.hbase:hbase-common:jar:4.0.0-alpha-1-SNAPSHOT
-[ERROR] dependency: org.apache.hbase:hbase-annotations:jar:tests:4.0.0-alpha-1-SNAPSHOT (test)
-[ERROR] 	Could not find artifact org.apache.hbase:hbase-annotations:jar:tests:4.0.0-alpha-1-SNAPSHOT in apache.snapshots (https://repository.apache.org/snapshots)
-[ERROR] dependency: org.apache.hbase:hbase-logging:jar:tests:4.0.0-alpha-1-SNAPSHOT (test)
-[ERROR] 	Could not find artifact org.apache.hbase:hbase-logging:jar:tests:4.0.0-alpha-1-SNAPSHOT in apache.snapshots (https://repository.apache.org/snapshots)
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <args> -rf :hbase-common
-class dirs 5, classes 3364
+cold build exit 0 seconds 70
+[INFO] BUILD SUCCESS
+warm clean build exit 0 seconds 63
+class dirs 17, classes 7633
 /dev/root       145G   59G   86G  41% /
 
-exit 0 seconds 53
+exit 0 seconds 149

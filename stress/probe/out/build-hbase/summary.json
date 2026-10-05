@@ -1,12 +1,24 @@
 {
  "name": "hbase",
- "cold_seconds": 41,
- "cold_exit": 1,
- "warm_clean_seconds": 0,
- "warm_exit": -1,
- "class_dirs": 5,
- "classes": 3364,
+ "cold_seconds": 70,
+ "cold_exit": 0,
+ "warm_clean_seconds": 63,
+ "warm_exit": 0,
+ "class_dirs": 17,
+ "classes": 7633,
  "dirs": [
+  {
+   "dir": "hbase-procedure/target/classes",
+   "classes": 104
+  },
+  {
+   "dir": "hbase-metrics/target/classes",
+   "classes": 13
+  },
+  {
+   "dir": "hbase-http/target/classes",
+   "classes": 68
+  },
   {
    "dir": "hbase-protocol-shaded/target/classes",
    "classes": 3361
@@ -16,16 +28,52 @@
    "classes": 3
   },
   {
+   "dir": "hbase-zookeeper/target/classes",
+   "classes": 35
+  },
+  {
    "dir": "hbase-checkstyle/target/classes",
    "classes": 0
+  },
+  {
+   "dir": "hbase-replication/target/classes",
+   "classes": 30
+  },
+  {
+   "dir": "hbase-metrics-api/target/classes",
+   "classes": 16
+  },
+  {
+   "dir": "hbase-client/target/classes",
+   "classes": 765
+  },
+  {
+   "dir": "hbase-asyncfs/target/classes",
+   "classes": 44
+  },
+  {
+   "dir": "hbase-balancer/target/classes",
+   "classes": 93
   },
   {
    "dir": "hbase-resource-bundle/target/classes",
    "classes": 0
   },
   {
+   "dir": "hbase-common/target/classes",
+   "classes": 541
+  },
+  {
+   "dir": "hbase-hadoop-compat/target/classes",
+   "classes": 125
+  },
+  {
    "dir": "hbase-annotations/target/classes",
    "classes": 0
+  },
+  {
+   "dir": "hbase-server/target/classes",
+   "classes": 2435
   }
  ]
 }
