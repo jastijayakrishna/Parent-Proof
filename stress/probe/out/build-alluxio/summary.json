@@ -1,15 +1,43 @@
 {
  "name": "alluxio",
- "cold_seconds": 73,
- "cold_exit": 1,
- "warm_clean_seconds": 0,
- "warm_exit": -1,
- "class_dirs": 5,
- "classes": 3334,
+ "cold_seconds": 46,
+ "cold_exit": 0,
+ "warm_clean_seconds": 34,
+ "warm_exit": 0,
+ "class_dirs": 19,
+ "classes": 4815,
  "dirs": [
+  {
+   "dir": "shell/target/classes",
+   "classes": 164
+  },
   {
    "dir": "shaded/hadoop/target/classes",
    "classes": 0
+  },
+  {
+   "dir": "stress/shell/target/classes",
+   "classes": 60
+  },
+  {
+   "dir": "stress/common/target/classes",
+   "classes": 112
+  },
+  {
+   "dir": "underfs/local/target/classes",
+   "classes": 4
+  },
+  {
+   "dir": "underfs/hdfs/target/classes",
+   "classes": 14
+  },
+  {
+   "dir": "underfs/s3a/target/classes",
+   "classes": 9
+  },
+  {
+   "dir": "integration/fuse/target/classes",
+   "classes": 49
   },
   {
    "dir": "integration/jnifuse/native/target/classes",
@@ -24,8 +52,36 @@
    "classes": 2422
   },
   {
+   "dir": "core/server/common/target/classes",
+   "classes": 212
+  },
+  {
+   "dir": "core/server/master/target/classes",
+   "classes": 381
+  },
+  {
+   "dir": "core/server/worker/target/classes",
+   "classes": 193
+  },
+  {
+   "dir": "core/client/hdfs/target/classes",
+   "classes": 11
+  },
+  {
+   "dir": "core/client/fs/target/classes",
+   "classes": 204
+  },
+  {
    "dir": "core/common/target/classes",
    "classes": 890
+  },
+  {
+   "dir": "job/client/target/classes",
+   "classes": 12
+  },
+  {
+   "dir": "job/common/target/classes",
+   "classes": 56
   }
  ]
 }

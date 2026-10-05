@@ -1,0 +1,91 @@
+--
+[INFO] Building Alluxio Core - Server - Master 2.10.0-SNAPSHOT          [29/29]
+[INFO]   from core/server/master/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven) @ alluxio-core-server-master ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-versions) @ alluxio-core-server-master ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle) @ alluxio-core-server-master ---
+[INFO] 
+[INFO] --- license:4.0.rc1:check (default) @ alluxio-core-server-master ---
+[WARNING]  Parameter 'legacyConfigExcludes' (user property 'license.excludes') is deprecated: use {@link LicenseSet#excludes}
+[INFO] 
+[INFO] --- git-commit-id:4.9.10:revision (get-the-git-infos) @ alluxio-core-server-master ---
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ alluxio-core-server-master ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ alluxio-core-server-master ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 246 source files to /home/runner/work/_temp/src-alluxio/core/server/master/target/classes
+[INFO] /home/runner/work/_temp/src-alluxio/core/server/master/src/main/java/alluxio/master/file/meta/MountTable.java: Some input files use or override a deprecated API.
+[INFO] /home/runner/work/_temp/src-alluxio/core/server/master/src/main/java/alluxio/master/file/meta/MountTable.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/runner/work/_temp/src-alluxio/core/server/master/src/main/java/alluxio/master/file/contexts/OperationContext.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/runner/work/_temp/src-alluxio/core/server/master/src/main/java/alluxio/master/file/contexts/OperationContext.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] >>> spotbugs:4.0.4:check (default) > :spotbugs @ alluxio-core-server-master >>>
+[INFO] 
+[INFO] --- spotbugs:4.0.4:spotbugs (spotbugs) @ alluxio-core-server-master ---
+[INFO] 
+[INFO] <<< spotbugs:4.0.4:check (default) < :spotbugs @ alluxio-core-server-master <<<
+[INFO] 
+[INFO] 
+[INFO] --- spotbugs:4.0.4:check (default) @ alluxio-core-server-master ---
+[INFO] 
+[INFO] --- swagger:3.1.7:generate (default) @ alluxio-core-server-master ---
+[INFO] Reflections took 51 ms to scan 314 urls, producing 4 keys and 4 values 
+[INFO] Reflections took 51 ms to scan 314 urls, producing 4 keys and 4 values 
+[INFO] Reflections took 51 ms to scan 314 urls, producing 4 keys and 4 values 
+[INFO] Reflections took 48 ms to scan 314 urls, producing 4 keys and 4 values 
+[INFO] Reflections took 307 ms to scan 25 urls, producing 1843 keys and 9285 values 
+[INFO] Writing doc to /home/runner/work/_temp/src-alluxio/generated/master/index.html...
+[INFO] Done!
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ alluxio-core-server-master ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ alluxio-core-server-master ---
+[INFO] Not compiling test sources
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Alluxio Parent 2.10.0-SNAPSHOT ..................... SUCCESS [  1.590 s]
+[INFO] Alluxio Core 2.10.0-SNAPSHOT ....................... SUCCESS [  0.177 s]
+[INFO] Alluxio Core - Transport 2.10.0-SNAPSHOT ........... SUCCESS [ 16.855 s]
+[INFO] Alluxio Core - Common Utilities 2.10.0-SNAPSHOT .... SUCCESS [  3.693 s]
+[INFO] Alluxio Under File System 2.10.0-SNAPSHOT .......... SUCCESS [  0.324 s]
+[INFO] Alluxio Under File System - Local FS 2.10.0-SNAPSHOT SUCCESS [  0.403 s]
+[INFO] Alluxio Core - Client 2.10.0-SNAPSHOT .............. SUCCESS [  0.045 s]
+[INFO] Alluxio Core - Client - File System 2.10.0-SNAPSHOT  SUCCESS [  1.617 s]
+[INFO] Alluxio Job Service 2.10.0-SNAPSHOT ................ SUCCESS [  0.195 s]
+[INFO] Alluxio Job Service - Common Utilities 2.10.0-SNAPSHOT SUCCESS [  0.369 s]
+[INFO] Alluxio Job Service - Client 2.10.0-SNAPSHOT ....... SUCCESS [  0.351 s]
+[INFO] Alluxio Shell 2.10.0-SNAPSHOT ...................... SUCCESS [  0.984 s]
+[INFO] Alluxio Core - Client - HDFS 2.10.0-SNAPSHOT ....... SUCCESS [  0.722 s]
+[INFO] Alluxio Core - Server 2.10.0-SNAPSHOT .............. SUCCESS [  0.045 s]
+[INFO] Alluxio Core - Server - Common Utilities 2.10.0-SNAPSHOT SUCCESS [  1.971 s]
+[INFO] Alluxio Integration 2.10.0-SNAPSHOT ................ SUCCESS [  0.058 s]
+[INFO] Alluxio Integration - JNIFUSE 2.10.0-SNAPSHOT ...... SUCCESS [  0.046 s]
+[INFO] Alluxio Integration - JNIFUSE - Native 2.10.0-SNAPSHOT SUCCESS [  0.964 s]
+[INFO] Alluxio Integration - JNIFUSE - Filesystem 2.10.0-SNAPSHOT SUCCESS [  1.131 s]
+[INFO] Alluxio Under File System - S3 2.10.0-SNAPSHOT ..... SUCCESS [  0.945 s]
+[INFO] Alluxio Integration - FUSE 2.10.0-SNAPSHOT ......... SUCCESS [  0.799 s]
+[INFO] Alluxio Shaded Libraries 2.10.0-SNAPSHOT ........... SUCCESS [  0.026 s]
+[INFO] Alluxio Shaded Libraries - Hadoop 3.3.4 ............ SUCCESS [  1.064 s]
+[INFO] Alluxio Under File System - HDFS 2.10.0-SNAPSHOT ... SUCCESS [  0.942 s]
+[INFO] Alluxio Core - Server - Worker 2.10.0-SNAPSHOT ..... SUCCESS [  2.484 s]
+[INFO] Alluxio Stress 2.10.0-SNAPSHOT ..................... SUCCESS [  0.064 s]
+[INFO] Alluxio Stress - Common 2.10.0-SNAPSHOT ............ SUCCESS [  0.478 s]
+[INFO] Alluxio Stress - Shell 2.10.0-SNAPSHOT ............. SUCCESS [  0.649 s]
+[INFO] Alluxio Core - Server - Master 2.10.0-SNAPSHOT ..... SUCCESS [  3.175 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  32.577 s (Wall Clock)
+[INFO] Finished at: 2026-10-05T17:27:47Z
+[INFO] ------------------------------------------------------------------------

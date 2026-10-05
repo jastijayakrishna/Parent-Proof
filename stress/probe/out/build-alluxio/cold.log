@@ -1,0 +1,325 @@
+lock/FuseReadWriteLockManager.java: /home/runner/work/_temp/src-alluxio/integration/fuse/src/main/java/alluxio/fuse/lock/FuseReadWriteLockManager.java uses or overrides a deprecated API.
+[INFO] /home/runner/work/_temp/src-alluxio/integration/fuse/src/main/java/alluxio/fuse/lock/FuseReadWriteLockManager.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/runner/work/_temp/src-alluxio/integration/fuse/src/main/java/alluxio/fuse/AlluxioJnrFuseFileSystem.java: /home/runner/work/_temp/src-alluxio/integration/fuse/src/main/java/alluxio/fuse/AlluxioJnrFuseFileSystem.java uses unchecked or unsafe operations.
+[INFO] /home/runner/work/_temp/src-alluxio/integration/fuse/src/main/java/alluxio/fuse/AlluxioJnrFuseFileSystem.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] >>> spotbugs:4.0.4:check (default) > :spotbugs @ alluxio-integration-fuse >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven) @ alluxio-core-client-hdfs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-versions) @ alluxio-core-client-hdfs ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle) @ alluxio-core-client-hdfs ---
+[INFO] 
+[INFO] --- license:4.0.rc1:check (default) @ alluxio-core-client-hdfs ---
+[WARNING]  Parameter 'legacyConfigExcludes' (user property 'license.excludes') is deprecated: use {@link LicenseSet#excludes}
+[INFO] /home/runner/work/_temp/src-alluxio/shell/src/main/java/alluxio/cli/docgen/ConfigurationDocGenerator.java: Some input files use or override a deprecated API.
+[INFO] /home/runner/work/_temp/src-alluxio/shell/src/main/java/alluxio/cli/docgen/ConfigurationDocGenerator.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/runner/work/_temp/src-alluxio/shell/src/main/java/alluxio/cli/bundler/CollectInfo.java: /home/runner/work/_temp/src-alluxio/shell/src/main/java/alluxio/cli/bundler/CollectInfo.java uses unchecked or unsafe operations.
+[INFO] /home/runner/work/_temp/src-alluxio/shell/src/main/java/alluxio/cli/bundler/CollectInfo.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] >>> spotbugs:4.0.4:check (default) > :spotbugs @ alluxio-shell >>>
+[INFO] 
+[INFO] --- git-commit-id:4.9.10:revision (get-the-git-infos) @ alluxio-core-client-hdfs ---
+[INFO] 
+[INFO] --- spotbugs:4.0.4:spotbugs (spotbugs) @ alluxio-underfs-hdfs ---
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ alluxio-core-client-hdfs ---
+[INFO] 
+[INFO] --- spotbugs:4.0.4:spotbugs (spotbugs) @ alluxio-shell ---
+[INFO] 
+[INFO] <<< spotbugs:4.0.4:check (default) < :spotbugs @ alluxio-underfs-hdfs <<<
+[INFO] 
+[INFO] 
+[INFO] --- spotbugs:4.0.4:check (default) @ alluxio-underfs-hdfs ---
+[INFO] 
+[INFO] --- spotbugs:4.0.4:spotbugs (spotbugs) @ alluxio-integration-fuse ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] <<< spotbugs:4.0.4:check (default) < :spotbugs @ alluxio-shell <<<
+[INFO] 
+[INFO] 
+[INFO] --- spotbugs:4.0.4:check (default) @ alluxio-shell ---
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ alluxio-core-client-hdfs ---
+[INFO] 
+[INFO] <<< spotbugs:4.0.4:check (default) < :spotbugs @ alluxio-integration-fuse <<<
+[INFO] 
+[INFO] 
+[INFO] --- spotbugs:4.0.4:check (default) @ alluxio-integration-fuse ---
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ alluxio-shell ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ alluxio-shell ---
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ alluxio-underfs-hdfs ---
+[INFO] Not compiling test sources
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ alluxio-underfs-hdfs ---
+[INFO] Not compiling test sources
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to /home/runner/work/_temp/src-alluxio/core/client/hdfs/target/classes
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ alluxio-integration-fuse ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ alluxio-integration-fuse ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] ---------------< org.alluxio:alluxio-core-server-worker >---------------
+[INFO] Building Alluxio Core - Server - Worker 2.10.0-SNAPSHOT          [26/29]
+[INFO]   from core/server/worker/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven) @ alluxio-core-server-worker ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-versions) @ alluxio-core-server-worker ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle) @ alluxio-core-server-worker ---
+[INFO] 
+[INFO] --- license:4.0.rc1:check (default) @ alluxio-core-server-worker ---
+[WARNING]  Parameter 'legacyConfigExcludes' (user property 'license.excludes') is deprecated: use {@link LicenseSet#excludes}
+[INFO] 
+[INFO] --- git-commit-id:4.9.10:revision (get-the-git-infos) @ alluxio-core-server-worker ---
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ alluxio-core-server-worker ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ alluxio-core-server-worker ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 133 source files to /home/runner/work/_temp/src-alluxio/core/server/worker/target/classes
+[INFO] /home/runner/work/_temp/src-alluxio/core/client/hdfs/src/main/java/alluxio/hadoop/AbstractFileSystem.java: Some input files use or override a deprecated API.
+[INFO] /home/runner/work/_temp/src-alluxio/core/client/hdfs/src/main/java/alluxio/hadoop/AbstractFileSystem.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] >>> spotbugs:4.0.4:check (default) > :spotbugs @ alluxio-core-client-hdfs >>>
+[INFO] 
+[INFO] --- spotbugs:4.0.4:spotbugs (spotbugs) @ alluxio-core-client-hdfs ---
+[INFO] 
+[INFO] <<< spotbugs:4.0.4:check (default) < :spotbugs @ alluxio-core-client-hdfs <<<
+[INFO] 
+[INFO] 
+[INFO] --- spotbugs:4.0.4:check (default) @ alluxio-core-client-hdfs ---
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ alluxio-core-client-hdfs ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ alluxio-core-client-hdfs ---
+[INFO] Not compiling test sources
+[INFO] /home/runner/work/_temp/src-alluxio/core/server/worker/src/main/java/alluxio/worker/grpc/BlockWorkerClientServiceHandler.java: Some input files use or override a deprecated API.
+[INFO] /home/runner/work/_temp/src-alluxio/core/server/worker/src/main/java/alluxio/worker/grpc/BlockWorkerClientServiceHandler.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/runner/work/_temp/src-alluxio/core/server/worker/src/main/java/alluxio/worker/block/annotator/BlockOrder.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/runner/work/_temp/src-alluxio/core/server/worker/src/main/java/alluxio/worker/block/annotator/BlockOrder.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] >>> spotbugs:4.0.4:check (default) > :spotbugs @ alluxio-core-server-worker >>>
+[INFO] 
+[INFO] --- spotbugs:4.0.4:spotbugs (spotbugs) @ alluxio-core-server-worker ---
+[INFO] 
+[INFO] <<< spotbugs:4.0.4:check (default) < :spotbugs @ alluxio-core-server-worker <<<
+[INFO] 
+[INFO] 
+[INFO] --- spotbugs:4.0.4:check (default) @ alluxio-core-server-worker ---
+[INFO] 
+[INFO] --- swagger:3.1.7:generate (default) @ alluxio-core-server-worker ---
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.21.0-GA during dependency collection step for plugin (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.2-GA during dependency collection step for plugin (use -X to see details)
+[INFO] Reflections took 67 ms to scan 220 urls, producing 4 keys and 4 values 
+[INFO] Reflections took 38 ms to scan 220 urls, producing 4 keys and 4 values 
+[INFO] Reflections took 39 ms to scan 220 urls, producing 4 keys and 4 values 
+[INFO] Reflections took 28 ms to scan 220 urls, producing 4 keys and 4 values 
+[INFO] Reflections took 350 ms to scan 15 urls, producing 1708 keys and 8470 values 
+[INFO] Writing doc to /home/runner/work/_temp/src-alluxio/generated/worker/index.html...
+[INFO] Done!
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ alluxio-core-server-worker ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ alluxio-core-server-worker ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] -----------------< org.alluxio:alluxio-stress-common >------------------
+[INFO] Building Alluxio Stress - Common 2.10.0-SNAPSHOT                 [27/29]
+[INFO]   from stress/common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven) @ alluxio-stress-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-versions) @ alluxio-stress-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle) @ alluxio-stress-common ---
+[INFO] 
+[INFO] --- license:4.0.rc1:check (default) @ alluxio-stress-common ---
+[WARNING]  Parameter 'legacyConfigExcludes' (user property 'license.excludes') is deprecated: use {@link LicenseSet#excludes}
+[INFO] 
+[INFO] --- git-commit-id:4.9.10:revision (get-the-git-infos) @ alluxio-stress-common ---
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ alluxio-stress-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/runner/work/_temp/src-alluxio/stress/common/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ alluxio-stress-common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 59 source files to /home/runner/work/_temp/src-alluxio/stress/common/target/classes
+[INFO] /home/runner/work/_temp/src-alluxio/stress/common/src/main/java/alluxio/stress/job/StressBenchConfig.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/runner/work/_temp/src-alluxio/stress/common/src/main/java/alluxio/stress/job/StressBenchConfig.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] >>> spotbugs:4.0.4:check (default) > :spotbugs @ alluxio-stress-common >>>
+[INFO] 
+[INFO] --- spotbugs:4.0.4:spotbugs (spotbugs) @ alluxio-stress-common ---
+[INFO] 
+[INFO] <<< spotbugs:4.0.4:check (default) < :spotbugs @ alluxio-stress-common <<<
+[INFO] 
+[INFO] 
+[INFO] --- spotbugs:4.0.4:check (default) @ alluxio-stress-common ---
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ alluxio-stress-common ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ alluxio-stress-common ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] ------------------< org.alluxio:alluxio-stress-shell >------------------
+[INFO] Building Alluxio Stress - Shell 2.10.0-SNAPSHOT                  [28/29]
+[INFO]   from stress/shell/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven) @ alluxio-stress-shell ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-versions) @ alluxio-stress-shell ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle) @ alluxio-stress-shell ---
+[INFO] 
+[INFO] --- license:4.0.rc1:check (default) @ alluxio-stress-shell ---
+[WARNING]  Parameter 'legacyConfigExcludes' (user property 'license.excludes') is deprecated: use {@link LicenseSet#excludes}
+[INFO] 
+[INFO] --- git-commit-id:4.9.10:revision (get-the-git-infos) @ alluxio-stress-shell ---
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ alluxio-stress-shell ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/runner/work/_temp/src-alluxio/stress/shell/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ alluxio-stress-shell ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 26 source files to /home/runner/work/_temp/src-alluxio/stress/shell/target/classes
+[INFO] /home/runner/work/_temp/src-alluxio/stress/shell/src/main/java/alluxio/stress/cli/StressJobServiceBench.java: Some input files use or override a deprecated API.
+[INFO] /home/runner/work/_temp/src-alluxio/stress/shell/src/main/java/alluxio/stress/cli/StressJobServiceBench.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/runner/work/_temp/src-alluxio/stress/shell/src/main/java/alluxio/stress/cli/Benchmark.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/runner/work/_temp/src-alluxio/stress/shell/src/main/java/alluxio/stress/cli/Benchmark.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] >>> spotbugs:4.0.4:check (default) > :spotbugs @ alluxio-stress-shell >>>
+[INFO] 
+[INFO] --- spotbugs:4.0.4:spotbugs (spotbugs) @ alluxio-stress-shell ---
+[INFO] 
+[INFO] <<< spotbugs:4.0.4:check (default) < :spotbugs @ alluxio-stress-shell <<<
+[INFO] 
+[INFO] 
+[INFO] --- spotbugs:4.0.4:check (default) @ alluxio-stress-shell ---
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ alluxio-stress-shell ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ alluxio-stress-shell ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] ---------------< org.alluxio:alluxio-core-server-master >---------------
+[INFO] Building Alluxio Core - Server - Master 2.10.0-SNAPSHOT          [29/29]
+[INFO]   from core/server/master/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven) @ alluxio-core-server-master ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-versions) @ alluxio-core-server-master ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle) @ alluxio-core-server-master ---
+[INFO] 
+[INFO] --- license:4.0.rc1:check (default) @ alluxio-core-server-master ---
+[WARNING]  Parameter 'legacyConfigExcludes' (user property 'license.excludes') is deprecated: use {@link LicenseSet#excludes}
+[INFO] 
+[INFO] --- git-commit-id:4.9.10:revision (get-the-git-infos) @ alluxio-core-server-master ---
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ alluxio-core-server-master ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ alluxio-core-server-master ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 246 source files to /home/runner/work/_temp/src-alluxio/core/server/master/target/classes
+[INFO] /home/runner/work/_temp/src-alluxio/core/server/master/src/main/java/alluxio/master/file/meta/MountTable.java: Some input files use or override a deprecated API.
+[INFO] /home/runner/work/_temp/src-alluxio/core/server/master/src/main/java/alluxio/master/file/meta/MountTable.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/runner/work/_temp/src-alluxio/core/server/master/src/main/java/alluxio/master/file/contexts/OperationContext.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/runner/work/_temp/src-alluxio/core/server/master/src/main/java/alluxio/master/file/contexts/OperationContext.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] >>> spotbugs:4.0.4:check (default) > :spotbugs @ alluxio-core-server-master >>>
+[INFO] 
+[INFO] --- spotbugs:4.0.4:spotbugs (spotbugs) @ alluxio-core-server-master ---
+[INFO] 
+[INFO] <<< spotbugs:4.0.4:check (default) < :spotbugs @ alluxio-core-server-master <<<
+[INFO] 
+[INFO] 
+[INFO] --- spotbugs:4.0.4:check (default) @ alluxio-core-server-master ---
+[INFO] 
+[INFO] --- swagger:3.1.7:generate (default) @ alluxio-core-server-master ---
+[INFO] Reflections took 62 ms to scan 314 urls, producing 4 keys and 4 values 
+[INFO] Reflections took 54 ms to scan 314 urls, producing 4 keys and 4 values 
+[INFO] Reflections took 112 ms to scan 314 urls, producing 4 keys and 4 values 
+[INFO] Reflections took 52 ms to scan 314 urls, producing 4 keys and 4 values 
+[INFO] Reflections took 367 ms to scan 25 urls, producing 1843 keys and 9285 values 
+[INFO] Writing doc to /home/runner/work/_temp/src-alluxio/generated/master/index.html...
+[INFO] Done!
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ alluxio-core-server-master ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ alluxio-core-server-master ---
+[INFO] Not compiling test sources
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Alluxio Parent 2.10.0-SNAPSHOT ..................... SUCCESS [  2.384 s]
+[INFO] Alluxio Core 2.10.0-SNAPSHOT ....................... SUCCESS [  0.171 s]
+[INFO] Alluxio Core - Transport 2.10.0-SNAPSHOT ........... SUCCESS [ 20.867 s]
+[INFO] Alluxio Core - Common Utilities 2.10.0-SNAPSHOT .... SUCCESS [  3.130 s]
+[INFO] Alluxio Under File System 2.10.0-SNAPSHOT .......... SUCCESS [  0.289 s]
+[INFO] Alluxio Under File System - Local FS 2.10.0-SNAPSHOT SUCCESS [  0.697 s]
+[INFO] Alluxio Core - Client 2.10.0-SNAPSHOT .............. SUCCESS [  0.046 s]
+[INFO] Alluxio Core - Client - File System 2.10.0-SNAPSHOT  SUCCESS [  1.641 s]
+[INFO] Alluxio Job Service 2.10.0-SNAPSHOT ................ SUCCESS [  0.165 s]
+[INFO] Alluxio Job Service - Common Utilities 2.10.0-SNAPSHOT SUCCESS [  0.393 s]
+[INFO] Alluxio Job Service - Client 2.10.0-SNAPSHOT ....... SUCCESS [  0.242 s]
+[INFO] Alluxio Shell 2.10.0-SNAPSHOT ...................... SUCCESS [  2.307 s]
+[INFO] Alluxio Core - Client - HDFS 2.10.0-SNAPSHOT ....... SUCCESS [  3.219 s]
+[INFO] Alluxio Core - Server 2.10.0-SNAPSHOT .............. SUCCESS [  0.031 s]
+[INFO] Alluxio Core - Server - Common Utilities 2.10.0-SNAPSHOT SUCCESS [  2.199 s]
+[INFO] Alluxio Integration 2.10.0-SNAPSHOT ................ SUCCESS [  0.098 s]
+[INFO] Alluxio Integration - JNIFUSE 2.10.0-SNAPSHOT ...... SUCCESS [  0.045 s]
+[INFO] Alluxio Integration - JNIFUSE - Native 2.10.0-SNAPSHOT SUCCESS [  4.319 s]
+[INFO] Alluxio Integration - JNIFUSE - Filesystem 2.10.0-SNAPSHOT SUCCESS [  1.999 s]
+[INFO] Alluxio Under File System - S3 2.10.0-SNAPSHOT ..... SUCCESS [  1.019 s]
+[INFO] Alluxio Integration - FUSE 2.10.0-SNAPSHOT ......... SUCCESS [  2.944 s]
+[INFO] Alluxio Shaded Libraries 2.10.0-SNAPSHOT ........... SUCCESS [  0.063 s]
+[INFO] Alluxio Shaded Libraries - Hadoop 3.3.4 ............ SUCCESS [  4.437 s]
+[INFO] Alluxio Under File System - HDFS 2.10.0-SNAPSHOT ... SUCCESS [  5.281 s]
+[INFO] Alluxio Core - Server - Worker 2.10.0-SNAPSHOT ..... SUCCESS [  6.531 s]
+[INFO] Alluxio Stress 2.10.0-SNAPSHOT ..................... SUCCESS [  0.054 s]
+[INFO] Alluxio Stress - Common 2.10.0-SNAPSHOT ............ SUCCESS [  0.608 s]
+[INFO] Alluxio Stress - Shell 2.10.0-SNAPSHOT ............. SUCCESS [  0.637 s]
+[INFO] Alluxio Core - Server - Master 2.10.0-SNAPSHOT ..... SUCCESS [  3.559 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  43.914 s (Wall Clock)
+[INFO] Finished at: 2026-10-05T17:27:13Z
+[INFO] ------------------------------------------------------------------------
