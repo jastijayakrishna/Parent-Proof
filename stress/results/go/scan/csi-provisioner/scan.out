@@ -1,25 +1,25 @@
-time=2026-10-05T18:14:23.739Z level=INFO msg=cloning repo=p-csi-provisioner url=https://github.com/container-storage-interface/spec.git
-time=2026-10-05T18:14:24.371Z level=INFO msg=cloning repo=c-csi-provisioner url=https://github.com/kubernetes-csi/external-provisioner.git
-csi-provisioner 25b3f102 GO       source_build=GO      compiler=compiles           72.9s 
-csi-provisioner 5334f340 GO       source_build=GO      compiler=compiles            9.3s 
-csi-provisioner 8e06851c GO       source_build=GO      compiler=compiles            2.4s 
-csi-provisioner 6f801196 GO       source_build=GO      compiler=compiles            2.4s 
-csi-provisioner 72e2e56b NO_GO    source_build=GO      compiler=baseline_fails      1.4s 
-csi-provisioner 0c337900 UNKNOWN  source_build=GO      compiler=bump_side_effect    2.5s 
-csi-provisioner 91b25fc4 UNKNOWN  source_build=UNKNOWN compiler=compiles            4.3s 
-csi-provisioner a539b4f9 GO       source_build=GO      compiler=compiles            3.8s 
-csi-provisioner f6b6d53d UNKNOWN  source_build=UNKNOWN compiler=compiles            3.6s 
-csi-provisioner 26967731 GO       source_build=GO      compiler=compiles            3.8s 
-csi-provisioner abf6346b UNKNOWN  source_build=GO      compiler=compiles            4.7s 
-csi-provisioner c918b7f6 GO       source_build=GO      compiler=compiles            3.3s 
-csi-provisioner 3e57adf7 GO       source_build=GO      compiler=compiles            2.4s 
-csi-provisioner 6eaead6d GO       source_build=GO      compiler=compiles            1.7s 
-csi-provisioner c6f94f66 GO       source_build=GO      compiler=compiles            1.9s 
-csi-provisioner 3084acc9 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.4s 
-csi-provisioner 47a0fa4c GO       source_build=GO      compiler=compiles            3.1s 
-csi-provisioner 77897809 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.0s 
-csi-provisioner d9ee9b8b UNKNOWN  source_build=UNKNOWN compiler=compiles            1.5s 
-csi-provisioner 62c6bbb6 UNKNOWN  source_build=UNKNOWN compiler=compiles            1.6s 
+time=2026-10-05T19:05:57.669Z level=INFO msg=cloning repo=p-csi-provisioner url=https://github.com/container-storage-interface/spec.git
+time=2026-10-05T19:05:58.136Z level=INFO msg=cloning repo=c-csi-provisioner url=https://github.com/kubernetes-csi/external-provisioner.git
+csi-provisioner 25b3f102 GO       source_build=GO      compiler=compiles          105.7s 
+csi-provisioner 5334f340 GO       source_build=GO      compiler=compiles           13.4s 
+csi-provisioner 8e06851c GO       source_build=GO      compiler=compiles            3.5s 
+csi-provisioner 6f801196 GO       source_build=GO      compiler=compiles            3.5s 
+csi-provisioner 72e2e56b NO_GO    source_build=GO      compiler=baseline_fails      1.8s 
+csi-provisioner 0c337900 UNKNOWN  source_build=GO      compiler=bump_side_effect    3.6s 
+csi-provisioner 91b25fc4 UNKNOWN  source_build=UNKNOWN compiler=compiles            7.3s 
+csi-provisioner a539b4f9 GO       source_build=GO      compiler=compiles            5.7s 
+csi-provisioner f6b6d53d UNKNOWN  source_build=UNKNOWN compiler=compiles            5.3s 
+csi-provisioner 26967731 GO       source_build=GO      compiler=compiles            5.6s 
+csi-provisioner abf6346b UNKNOWN  source_build=GO      compiler=compiles            5.2s 
+csi-provisioner c918b7f6 GO       source_build=GO      compiler=compiles            5.9s 
+csi-provisioner 3e57adf7 GO       source_build=GO      compiler=compiles            3.8s 
+csi-provisioner 6eaead6d GO       source_build=GO      compiler=compiles            3.7s 
+csi-provisioner c6f94f66 GO       source_build=GO      compiler=compiles            2.8s 
+csi-provisioner 3084acc9 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.3s 
+csi-provisioner 47a0fa4c GO       source_build=GO      compiler=compiles            2.8s 
+csi-provisioner 77897809 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.0s 
+csi-provisioner d9ee9b8b UNKNOWN  source_build=UNKNOWN compiler=compiles            2.4s 
+csi-provisioner 62c6bbb6 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.5s 
 csi-provisioner   20 decisions  GO  11  NO-GO   1  UNKNOWN   8 (40.0%)  errors 0 | compiler judged  18: agree  12  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 6 | not judged 2
 TOTAL         20 decisions  GO  11  NO-GO   1  UNKNOWN   8 (40.0%)  errors 0 | compiler judged  18: agree  12  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 6 | not judged 2
 
@@ -35,6 +35,6 @@ UNKNOWN reasons across all: windows, ecosystems, an example
   FAILED csi-provisioner@d9ee9b8bfac7f1868f0fc092edd690eb330cedb3: unknown_on_safe: OPTION_CHANGED, NEEDS_REVIEW, DESCRIPTOR_REFLECTION
   FAILED csi-provisioner@62c6bbb6bd2094c9e72bc28e9d0829bc5e713178: unknown_on_safe: OPTION_CHANGED, DESCRIPTOR_REFLECTION, NEEDS_REVIEW
 
-20 windows in 2m17s.
+20 windows in 3m16s.
 verifier gate: scan failed: 6 disagreements with the compiler or errors
-exit 1 seconds 137
+exit 1 seconds 196
