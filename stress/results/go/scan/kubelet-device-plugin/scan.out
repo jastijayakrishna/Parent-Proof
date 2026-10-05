@@ -1,0 +1,31 @@
+time=2026-10-05T17:35:51.665Z level=INFO msg=cloning repo=p-kubelet-device-plugin url=https://github.com/kubernetes/kubelet.git
+time=2026-10-05T17:35:52.215Z level=INFO msg=cloning repo=c-kubelet-device-plugin url=https://github.com/NVIDIA/k8s-device-plugin.git
+kubelet-device-plugin 20b23951 GO       source_build=GO      compiler=baseline_fails     39.7s 
+kubelet-device-plugin 43855acf GO       source_build=GO      compiler=baseline_fails      3.1s 
+kubelet-device-plugin 69781c54 GO       source_build=GO      compiler=baseline_fails      3.8s 
+kubelet-device-plugin b8f0b5fc GO       source_build=GO      compiler=baseline_fails      1.4s 
+kubelet-device-plugin 803c2a9d GO       source_build=GO      compiler=baseline_fails      1.5s 
+kubelet-device-plugin 5e736808 GO       source_build=GO      compiler=baseline_fails      1.1s 
+kubelet-device-plugin eee7528e GO       source_build=GO      compiler=baseline_fails      1.6s 
+kubelet-device-plugin 57d3a574 GO       source_build=GO      compiler=baseline_fails      1.4s 
+kubelet-device-plugin 5aff898c GO       source_build=GO      compiler=baseline_fails      1.4s 
+kubelet-device-plugin dfb0aa2c GO       source_build=GO      compiler=baseline_fails      2.3s 
+kubelet-device-plugin e6033dfb GO       source_build=GO      compiler=baseline_fails      1.5s 
+kubelet-device-plugin 3f57b9b2 GO       source_build=GO      compiler=baseline_fails      1.4s 
+kubelet-device-plugin db9675bc GO       source_build=GO      compiler=baseline_fails      1.4s 
+kubelet-device-plugin 3c7be057 NO_GO    source_build=NO_GO   compiler=baseline_fails      3.0s 
+kubelet-device-plugin 27761cab GO       source_build=GO      compiler=baseline_fails      1.9s 
+kubelet-device-plugin b1b8e206 GO       source_build=GO      compiler=baseline_fails      1.5s 
+kubelet-device-plugin 4defd3ee GO       source_build=GO      compiler=baseline_fails      0.9s 
+kubelet-device-plugin b469d38a GO       source_build=GO      compiler=baseline_fails      1.7s 
+kubelet-device-plugin 41096538 GO       source_build=GO      compiler=baseline_fails      1.5s 
+kubelet-device-plugin 5cbf982c GO       source_build=GO      compiler=baseline_fails      1.7s 
+kubelet-device-plugin   20 decisions  GO  19  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO  19  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    1   1  OPTION_CHANGED (e.g. kubelet-device-plugin@3c7be0577afb3dfbff2946b47c3b3ccf51a30b24)
+    1   1  TYPE_ERROR_HIDES_USES (e.g. kubelet-device-plugin@3c7be0577afb3dfbff2946b47c3b3ccf51a30b24)
+
+20 windows in 1m18s.
+exit 0 seconds 78
