@@ -1,0 +1,13 @@
+clone seconds 5
+87M	/home/runner/work/_temp/src-skywalking-java
+openjdk version "17.0.20.1" 2026-08-18
+Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
+cold build exit 0 seconds 56
+stress/probe/build.sh: line 56: stress/probe/out/build-skywalking-java/cold.log: No such file or directory
+[INFO] BUILD SUCCESS
+warm clean build exit 0 seconds 10
+stress/probe/build.sh: line 63: stress/probe/out/build-skywalking-java/warm.log: No such file or directory
+class dirs 4, classes 1382
+/dev/root       145G   59G   86G  41% /
+
+exit 0 seconds 72

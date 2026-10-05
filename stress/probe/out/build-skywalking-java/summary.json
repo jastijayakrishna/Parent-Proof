@@ -1,0 +1,27 @@
+{
+ "name": "skywalking-java",
+ "cold_seconds": 56,
+ "cold_exit": 0,
+ "warm_clean_seconds": 10,
+ "warm_exit": 0,
+ "class_dirs": 4,
+ "classes": 1382,
+ "dirs": [
+  {
+   "dir": "apm-sniffer/apm-agent-core/target/classes",
+   "classes": 359
+  },
+  {
+   "dir": "apm-protocol/apm-network/target/classes",
+   "classes": 989
+  },
+  {
+   "dir": "apm-commons/apm-datacarrier/target/classes",
+   "classes": 24
+  },
+  {
+   "dir": "apm-commons/apm-util/target/classes",
+   "classes": 10
+  }
+ ]
+}
