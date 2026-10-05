@@ -1,23 +1,23 @@
-time=2026-10-05T06:22:07.866Z level=INFO msg=cloning repo=p-authzed url=https://github.com/authzed/api.git
-time=2026-10-05T06:22:08.121Z level=INFO msg=cloning repo=c-authzed url=https://github.com/authzed/spicedb.git
-authzed     11008f57 GO       source_build=GO      compiler=-                  14.1s 
-authzed     0c8e4ab6 GO       source_build=GO      compiler=-                   0.9s 
-authzed     ad083956 GO       source_build=GO      compiler=-                   0.8s 
+time=2026-10-05T07:14:11.743Z level=INFO msg=cloning repo=p-authzed url=https://github.com/authzed/api.git
+time=2026-10-05T07:14:12.579Z level=INFO msg=cloning repo=c-authzed url=https://github.com/authzed/spicedb.git
+authzed     11008f57 GO       source_build=GO      compiler=-                  15.1s 
+authzed     0c8e4ab6 GO       source_build=GO      compiler=-                   0.8s 
+authzed     ad083956 GO       source_build=GO      compiler=-                   1.0s 
 authzed     c3ddfc3c GO       source_build=GO      compiler=-                   0.1s 
-authzed     a741a120 GO       source_build=GO      compiler=-                   0.6s 
-authzed     20a9897f UNKNOWN  source_build=UNKNOWN compiler=-                   0.7s 
-authzed     e986f0c3 GO       source_build=GO      compiler=-                   0.2s 
-authzed     b00907c0 GO       source_build=GO      compiler=-                   0.2s 
-authzed     c9311592 GO       source_build=GO      compiler=-                   0.6s 
-authzed     53206576 GO       source_build=GO      compiler=-                   0.2s 
+authzed     a741a120 GO       source_build=GO      compiler=-                   0.7s 
+authzed     20a9897f UNKNOWN  source_build=UNKNOWN compiler=-                   0.9s 
+authzed     e986f0c3 GO       source_build=GO      compiler=-                   0.5s 
+authzed     b00907c0 GO       source_build=GO      compiler=-                   0.3s 
+authzed     c9311592 GO       source_build=GO      compiler=-                   0.7s 
+authzed     53206576 GO       source_build=GO      compiler=-                   0.3s 
 authzed     2fbf9434 GO       source_build=GO      compiler=-                   0.6s 
 authzed     eecbab16 GO       source_build=GO      compiler=-                   0.6s 
 authzed     9eb6e4a6 GO       source_build=GO      compiler=-                   0.5s 
-authzed     5253a15f GO       source_build=GO      compiler=-                   0.2s 
-authzed     054df721 GO       source_build=GO      compiler=-                   0.6s 
+authzed     5253a15f GO       source_build=GO      compiler=-                   0.3s 
+authzed     054df721 GO       source_build=GO      compiler=-                   0.7s 
 authzed     458a5159 GO       source_build=GO      compiler=-                   0.6s 
-authzed     fdce6f05 GO       source_build=GO      compiler=-                   0.2s 
-authzed     3454618e UNKNOWN  source_build=GO      compiler=-                   0.6s 
+authzed     fdce6f05 GO       source_build=GO      compiler=-                   0.3s 
+authzed     3454618e UNKNOWN  source_build=GO      compiler=-                   0.7s 
 authzed     d0d2a2a3 UNKNOWN  source_build=GO      compiler=-                   0.7s 
 authzed     6fb0d434 NO_GO    source_build=NO_GO   compiler=-                   0.6s 
 authzed       20 decisions  GO  16  NO-GO   1  UNKNOWN   3 (15.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
@@ -29,5 +29,5 @@ UNKNOWN reasons across all: windows, ecosystems, an example
     1   1  NEEDS_REVIEW (e.g. authzed@20a9897fdbcad3bc4a7cd8746c45cef7b124c1e8)
     1   1  OPTION_CHANGED (e.g. authzed@20a9897fdbcad3bc4a7cd8746c45cef7b124c1e8)
 
-20 windows in 25s.
+20 windows in 28s.
 exit 0
