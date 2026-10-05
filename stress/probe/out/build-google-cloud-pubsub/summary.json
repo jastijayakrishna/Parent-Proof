@@ -1,0 +1,23 @@
+{
+ "name": "google-cloud-pubsub",
+ "cold_seconds": 46,
+ "cold_exit": 0,
+ "warm_clean_seconds": 11,
+ "warm_exit": 0,
+ "class_dirs": 3,
+ "classes": 702,
+ "dirs": [
+  {
+   "dir": "java-pubsub/grpc-google-cloud-pubsub-v1/target/classes",
+   "classes": 45
+  },
+  {
+   "dir": "java-pubsub/proto-google-cloud-pubsub-v1/target/classes",
+   "classes": 496
+  },
+  {
+   "dir": "java-pubsub/google-cloud-pubsub/target/classes",
+   "classes": 161
+  }
+ ]
+}
