@@ -1,25 +1,25 @@
-time=2026-10-05T06:21:15.905Z level=INFO msg=cloning repo=p-cortex url=https://github.com/cortexproject/cortex.git
-time=2026-10-05T06:21:18.032Z level=INFO msg=cloning repo=c-cortex url=https://github.com/cortexproject/cortex.git
-cortex      00c5f76f GO       source_build=GO      compiler=-                  10.2s 
+time=2026-10-05T07:14:13.778Z level=INFO msg=cloning repo=p-cortex url=https://github.com/cortexproject/cortex.git
+time=2026-10-05T07:14:15.990Z level=INFO msg=cloning repo=c-cortex url=https://github.com/cortexproject/cortex.git
+cortex      00c5f76f GO       source_build=GO      compiler=-                  11.2s 
 cortex      bfbeb673 GO       source_build=GO      compiler=-                   0.0s 
-cortex      9dfa8944 UNKNOWN  source_build=UNKNOWN compiler=-                   2.4s 
+cortex      9dfa8944 UNKNOWN  source_build=UNKNOWN compiler=-                   3.2s 
 cortex      94aa45fb GO       source_build=GO      compiler=-                   0.0s 
 cortex      ae029000 GO       source_build=GO      compiler=-                   0.0s 
 cortex      9792d457 GO       source_build=GO      compiler=-                   0.0s 
-cortex      d4e51d56 UNKNOWN  source_build=UNKNOWN compiler=-                   2.2s 
-cortex      17740816 UNKNOWN  source_build=UNKNOWN compiler=-                   1.0s 
-cortex      ac267599 GO       source_build=GO      compiler=-                   1.1s 
-cortex      bf8ae576 GO       source_build=GO      compiler=-                   1.9s 
-cortex      f1b0c35c GO       source_build=GO      compiler=-                   0.6s 
-cortex      9d6ef5cb GO       source_build=GO      compiler=-                   0.7s 
+cortex      d4e51d56 UNKNOWN  source_build=UNKNOWN compiler=-                   3.0s 
+cortex      17740816 UNKNOWN  source_build=UNKNOWN compiler=-                   1.6s 
+cortex      ac267599 GO       source_build=GO      compiler=-                   1.5s 
+cortex      bf8ae576 GO       source_build=GO      compiler=-                   2.7s 
+cortex      f1b0c35c GO       source_build=GO      compiler=-                   0.8s 
+cortex      9d6ef5cb GO       source_build=GO      compiler=-                   0.8s 
 cortex      316cae0d GO       source_build=GO      compiler=-                   0.0s 
 cortex      d6455917 GO       source_build=GO      compiler=-                   0.0s 
 cortex      048ea8a2 GO       source_build=GO      compiler=-                   0.0s 
-cortex      6185c1ec GO       source_build=GO      compiler=-                   2.5s 
-cortex      f3113c9d GO       source_build=GO      compiler=-                   1.1s 
-cortex      918aa419 NO_GO    source_build=NO_GO   compiler=-                   0.7s 
+cortex      6185c1ec GO       source_build=GO      compiler=-                   3.4s 
+cortex      f3113c9d GO       source_build=GO      compiler=-                   1.3s 
+cortex      918aa419 NO_GO    source_build=NO_GO   compiler=-                   0.8s 
 cortex      0c2e3136 UNKNOWN  source_build=GO      compiler=-                   0.8s 
-cortex      09a30526 UNKNOWN  source_build=GO      compiler=-                   0.6s 
+cortex      09a30526 UNKNOWN  source_build=GO      compiler=-                   0.5s 
 cortex        20 decisions  GO  14  NO-GO   1  UNKNOWN   5 (25.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
 TOTAL         20 decisions  GO  14  NO-GO   1  UNKNOWN   5 (25.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
 
@@ -29,5 +29,5 @@ UNKNOWN reasons across all: windows, ecosystems, an example
     1   1  NEEDS_REVIEW (e.g. cortex@9dfa8944a2d5e138757e22b41829cadcbd01d460)
     1   1  UNRESOLVED_MEMBER (e.g. cortex@d4e51d56f6af944176d6a855d122c898a7eaf5ce)
 
-20 windows in 34s.
+20 windows in 41s.
 exit 0
