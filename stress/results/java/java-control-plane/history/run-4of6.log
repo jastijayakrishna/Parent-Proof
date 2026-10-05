@@ -1,5 +1,5 @@
 java-control-plane history: 23 windows, shard 4/6 has 4
-bc48c2889d62 2022-04-30 verifier=NO_GO build=UNKNOWN compiler=compiles 129.0s 
-c6e3bf3b568a 2023-05-20 verifier=NO_GO build=UNKNOWN compiler=compiles 121.3s 
-815727d58355 2024-12-15 verifier=NO_GO build=UNKNOWN compiler=compiles 147.2s 
-7a2559ae0a0c 2026-06-29 verifier=GO build=GO compiler=compiles 152.2s 
+bc48c2889d62 2022-04-30 verifier=NO_GO build=UNKNOWN compiler=compiles 134.7s 
+c6e3bf3b568a 2023-05-20 verifier=NO_GO build=UNKNOWN compiler=compiles 116.3s 
+815727d58355 2024-12-15 verifier=NO_GO build=UNKNOWN compiler=compiles 141.5s 
+7a2559ae0a0c 2026-06-29 verifier=GO build=GO compiler=compiles 147.4s 
