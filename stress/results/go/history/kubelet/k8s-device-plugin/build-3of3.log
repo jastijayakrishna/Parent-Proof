@@ -1,4 +1,15 @@
-time=2026-10-05T17:37:04.492Z level=INFO msg=cloning repo=kubelet url=https://github.com/kubernetes/kubelet.git
-time=2026-10-05T17:37:06.357Z level=INFO msg=cloning repo=k8s-device-plugin url=https://github.com/NVIDIA/k8s-device-plugin.git
-time=2026-10-05T17:37:12.168Z level=INFO msg=mined consumer=k8s-device-plugin pin_moves=17 to_compile=0
-time=2026-10-05T17:37:12.168Z level=INFO msg="suite built" suite=kubelet windows_added=0
+time=2026-10-05T18:10:09.207Z level=INFO msg=cloning repo=kubelet url=https://github.com/kubernetes/kubelet.git
+time=2026-10-05T18:10:10.539Z level=INFO msg=cloning repo=k8s-device-plugin url=https://github.com/NVIDIA/k8s-device-plugin.git
+time=2026-10-05T18:10:16.514Z level=INFO msg=skip consumer=k8s-device-plugin bump=3a43aeb1 old=v0.28.3 new=v0.29.2 reason=no_contract_change
+time=2026-10-05T18:10:16.524Z level=INFO msg=skip consumer=k8s-device-plugin bump=9e324b46 old=v0.29.2 new=v0.29.3 reason=no_contract_change
+time=2026-10-05T18:10:17.537Z level=INFO msg=skip consumer=k8s-device-plugin bump=8ec6c0da old=v0.30.2 new=v0.30.3 reason=no_contract_change
+time=2026-10-05T18:10:18.612Z level=INFO msg=skip consumer=k8s-device-plugin bump=215e5d16 old=v0.31.1 new=v0.31.3 reason=no_contract_change
+time=2026-10-05T18:10:18.682Z level=INFO msg=skip consumer=k8s-device-plugin bump=7a1f5dab old=v0.32.1 new=v0.32.3 reason=no_contract_change
+time=2026-10-05T18:10:18.787Z level=INFO msg=skip consumer=k8s-device-plugin bump=7101d0f8 old=v0.34.1 new=v0.34.2 reason=no_contract_change
+time=2026-10-05T18:10:18.853Z level=INFO msg=skip consumer=k8s-device-plugin bump=4a7a0ce0 old=v0.35.0 new=v0.35.1 reason=no_contract_change
+time=2026-10-05T18:10:18.863Z level=INFO msg=skip consumer=k8s-device-plugin bump=48cf6e4d old=v0.35.1 new=v0.35.2 reason=no_contract_change
+time=2026-10-05T18:10:18.914Z level=INFO msg=skip consumer=k8s-device-plugin bump=c6eb1283 old=v0.36.2 new=v0.36.3 reason=no_contract_change
+time=2026-10-05T18:10:18.914Z level=INFO msg=mined consumer=k8s-device-plugin pin_moves=17 to_compile=2 skipped=map[no_contract_change:9]
+time=2026-10-05T18:11:03.397Z level=INFO msg=window consumer=k8s-device-plugin bump=783fcaac select=additive breaking=0 compiler=baseline_fails
+time=2026-10-05T18:11:03.826Z level=INFO msg=window consumer=k8s-device-plugin bump=993fe2a2 select=additive breaking=0 compiler=baseline_fails
+time=2026-10-05T18:11:03.826Z level=INFO msg="suite built" suite=kubelet windows_added=2
