@@ -75,7 +75,7 @@ def render(now):
         f"**Updated {now:%Y-%m-%d %H:%M} UTC.** "
         f"[![shadow](https://github.com/{REPO}/actions/workflows/shadow.yml/badge.svg)](https://github.com/{REPO}/actions/workflows/shadow.yml)",
         "",
-        "| | changes | broke the build | the verifier said Don't merge | missed | false alarms | needs review |",
+        "| | changes | broke the build | caught | missed | false alarms | needs review |",
         "|---|---|---|---|---|---|---|",
     ]
     hc, lc = counts(h, False), counts(l, True)
@@ -83,7 +83,8 @@ def render(now):
     out.append(f"| [Real upgrades](HISTORY.md), {projects} projects' history | " + " | ".join(map(str, hc)) + " |")
     out.append("| [Open pull requests](SCOREBOARD.md), decided live | " + " | ".join(map(str, lc)) + " |")
     out.append("")
-    out.append("**Missed** (the verifier said Merge, the compiler says it breaks) is the failure that matters most.")
+    out.append("**Caught**: it broke the build and the verifier said Don't merge first. **Missed**: the verifier said "
+               "Merge and the compiler says it breaks, the failure that matters most.")
     out.append("")
     catches = [r for r in h + l if r["compiler"] == "breaks" and r["build"] == "NO_GO"]
     catches.sort(key=lambda r: r["date"], reverse=True)
