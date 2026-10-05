@@ -1,0 +1,35 @@
+{
+ "name": "jetcd",
+ "cold_seconds": 94,
+ "cold_exit": 0,
+ "warm_clean_seconds": 14,
+ "warm_exit": 0,
+ "class_dirs": 6,
+ "classes": 775,
+ "dirs": [
+  {
+   "dir": "jetcd-common/build/classes/java/main",
+   "classes": 9
+  },
+  {
+   "dir": "jetcd-core/build/classes/java/main",
+   "classes": 156
+  },
+  {
+   "dir": "jetcd-launcher/build/classes/java/main",
+   "classes": 5
+  },
+  {
+   "dir": "jetcd-ctl/build/classes/java/main",
+   "classes": 4
+  },
+  {
+   "dir": "jetcd-test/build/classes/java/main",
+   "classes": 5
+  },
+  {
+   "dir": "jetcd-grpc/build/classes/java/main",
+   "classes": 596
+  }
+ ]
+}
