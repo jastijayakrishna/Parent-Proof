@@ -1,0 +1,31 @@
+{
+ "name": "hbase",
+ "cold_seconds": 41,
+ "cold_exit": 1,
+ "warm_clean_seconds": 0,
+ "warm_exit": -1,
+ "class_dirs": 5,
+ "classes": 3364,
+ "dirs": [
+  {
+   "dir": "hbase-protocol-shaded/target/classes",
+   "classes": 3361
+  },
+  {
+   "dir": "hbase-logging/target/classes",
+   "classes": 3
+  },
+  {
+   "dir": "hbase-checkstyle/target/classes",
+   "classes": 0
+  },
+  {
+   "dir": "hbase-resource-bundle/target/classes",
+   "classes": 0
+  },
+  {
+   "dir": "hbase-annotations/target/classes",
+   "classes": 0
+  }
+ ]
+}
