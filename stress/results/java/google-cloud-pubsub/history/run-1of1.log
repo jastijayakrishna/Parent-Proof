@@ -1,4 +1,3 @@
-google-cloud-pubsub history: 3 windows, shard 1/1 has 3
-ddef7d255af6 2026-05-08 verifier=None build=None compiler=baseline_fails 78.3s 
-f07e1a4f8e35 2026-08-27 verifier=None build=None compiler=baseline_fails 66.8s 
-0c703082f187 2026-09-14 verifier=None build=None compiler=baseline_fails 33.6s 
+google-cloud-pubsub history: 2 windows, shard 1/1 has 2
+f07e1a4f8e35 2026-08-27 verifier=None build=None compiler=baseline_fails 84.8s 
+0c703082f187 2026-09-14 verifier=None build=None compiler=baseline_fails 43.4s 
