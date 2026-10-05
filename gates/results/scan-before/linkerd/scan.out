@@ -1,27 +1,27 @@
-time=2026-10-05T05:59:00.662Z level=INFO msg=cloning repo=p-linkerd url=https://github.com/linkerd/linkerd2-proxy-api.git
-time=2026-10-05T05:59:01.488Z level=INFO msg=cloning repo=c-linkerd url=https://github.com/linkerd/linkerd2.git
-linkerd     fcb86cee GO       source_build=GO      compiler=compiles          131.3s 
-linkerd     7c584d4e GO       source_build=GO      compiler=compiles            9.1s 
-linkerd     9d153796 GO       source_build=GO      compiler=compiles           22.6s 
-linkerd     2be6843a GO       source_build=GO      compiler=compiles            3.8s 
-linkerd     2a2290ce GO       source_build=GO      compiler=compiles            2.6s 
-linkerd     c5648ae2 GO       source_build=GO      compiler=compiles            7.9s 
-linkerd     7c5fd84d GO       source_build=GO      compiler=compiles            7.7s 
-linkerd     c9914c25 GO       source_build=GO      compiler=compiles            2.6s 
-linkerd     a7387637 GO       source_build=GO      compiler=compiles            6.3s 
-linkerd     f07d4b61 GO       source_build=GO      compiler=compiles            6.4s 
-linkerd     2da43c5d GO       source_build=GO      compiler=compiles            3.1s 
-linkerd     7c82fb17 GO       source_build=GO      compiler=compiles            3.0s 
-linkerd     f1598b46 GO       source_build=GO      compiler=compiles            2.8s 
-linkerd     58c52427 GO       source_build=GO      compiler=compiles            2.1s 
-linkerd     ad750d83 GO       source_build=GO      compiler=compiles            2.2s 
-linkerd     afca924a GO       source_build=GO      compiler=compiles            2.1s 
-linkerd     afd13fc7 GO       source_build=GO      compiler=compiles            2.1s 
-linkerd     9efe50fd GO       source_build=GO      compiler=compiles           13.1s 
-linkerd     b2f7219b GO       source_build=GO      compiler=compiles            9.4s 
-linkerd     9762c9f8 GO       source_build=GO      compiler=compiles            3.0s 
+time=2026-10-05T06:21:16.510Z level=INFO msg=cloning repo=p-linkerd url=https://github.com/linkerd/linkerd2-proxy-api.git
+time=2026-10-05T06:21:16.753Z level=INFO msg=cloning repo=c-linkerd url=https://github.com/linkerd/linkerd2.git
+linkerd     fcb86cee GO       source_build=GO      compiler=compiles          129.6s 
+linkerd     7c584d4e GO       source_build=GO      compiler=compiles            8.8s 
+linkerd     9d153796 GO       source_build=GO      compiler=compiles           21.9s 
+linkerd     2be6843a GO       source_build=GO      compiler=compiles            3.5s 
+linkerd     2a2290ce GO       source_build=GO      compiler=compiles            2.3s 
+linkerd     c5648ae2 GO       source_build=GO      compiler=compiles            7.6s 
+linkerd     7c5fd84d GO       source_build=GO      compiler=compiles            7.3s 
+linkerd     c9914c25 GO       source_build=GO      compiler=compiles            2.2s 
+linkerd     a7387637 GO       source_build=GO      compiler=compiles            5.8s 
+linkerd     f07d4b61 GO       source_build=GO      compiler=compiles            5.9s 
+linkerd     2da43c5d GO       source_build=GO      compiler=compiles            2.6s 
+linkerd     7c82fb17 GO       source_build=GO      compiler=compiles            2.5s 
+linkerd     f1598b46 GO       source_build=GO      compiler=compiles            2.5s 
+linkerd     58c52427 GO       source_build=GO      compiler=compiles            1.8s 
+linkerd     ad750d83 GO       source_build=GO      compiler=compiles            1.9s 
+linkerd     afca924a GO       source_build=GO      compiler=compiles            1.8s 
+linkerd     afd13fc7 GO       source_build=GO      compiler=compiles            1.8s 
+linkerd     9efe50fd GO       source_build=GO      compiler=compiles           12.5s 
+linkerd     b2f7219b GO       source_build=GO      compiler=compiles            9.0s 
+linkerd     9762c9f8 GO       source_build=GO      compiler=compiles            2.5s 
 linkerd       20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
 TOTAL         20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
 
-20 windows in 4m7s.
+20 windows in 3m57s.
 exit 0
