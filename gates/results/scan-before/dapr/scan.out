@@ -1,27 +1,27 @@
-time=2026-10-05T14:44:09.229Z level=INFO msg=cloning repo=p-dapr url=https://github.com/dapr/dapr.git
-time=2026-10-05T14:44:10.364Z level=INFO msg=cloning repo=c-dapr url=https://github.com/dapr/go-sdk.git
-dapr        3d9dbe6e GO       source_build=GO      compiler=compiles           31.0s 
-dapr        e2030a5f GO       source_build=GO      compiler=compiles            8.4s 
-dapr        19e9dbd4 GO       source_build=GO      compiler=compiles            4.3s 
-dapr        cd72c15f GO       source_build=GO      compiler=compiles            8.0s 
-dapr        8fd31d16 GO       source_build=GO      compiler=compiles            6.0s 
-dapr        df9137ce GO       source_build=GO      compiler=compiles            9.2s 
-dapr        a86c03bd GO       source_build=GO      compiler=compiles            3.3s 
-dapr        d16e4ded GO       source_build=GO      compiler=compiles            3.1s 
-dapr        6d8290ef GO       source_build=GO      compiler=compiles            2.3s 
+time=2026-10-05T18:16:23.478Z level=INFO msg=cloning repo=p-dapr url=https://github.com/dapr/dapr.git
+time=2026-10-05T18:16:26.269Z level=INFO msg=cloning repo=c-dapr url=https://github.com/dapr/go-sdk.git
+dapr        3d9dbe6e GO       source_build=GO      compiler=compiles           27.0s 
+dapr        e2030a5f GO       source_build=GO      compiler=compiles            8.5s 
+dapr        19e9dbd4 GO       source_build=GO      compiler=compiles            3.7s 
+dapr        cd72c15f GO       source_build=GO      compiler=compiles            8.2s 
+dapr        8fd31d16 GO       source_build=GO      compiler=compiles            6.3s 
+dapr        df9137ce GO       source_build=GO      compiler=compiles            9.1s 
+dapr        a86c03bd GO       source_build=GO      compiler=compiles            3.2s 
+dapr        d16e4ded GO       source_build=GO      compiler=compiles            3.4s 
+dapr        6d8290ef GO       source_build=GO      compiler=compiles            2.2s 
 dapr        88a04ddb GO       source_build=GO      compiler=compiles            3.8s 
-dapr        1ebb8588 GO       source_build=GO      compiler=compiles            1.5s 
-dapr        1b4bef84 GO       source_build=GO      compiler=compiles            1.9s 
-dapr        39c1ef7f GO       source_build=GO      compiler=compiles            2.7s 
-dapr        c581fa82 GO       source_build=GO      compiler=compiles            2.8s 
-dapr        c8463fcc GO       source_build=GO      compiler=compiles            2.9s 
-dapr        5da1cdbf GO       source_build=GO      compiler=compiles            1.9s 
-dapr        f2d61989 GO       source_build=GO      compiler=compiles            1.4s 
-dapr        60cd667f GO       source_build=GO      compiler=compiles            4.0s 
-dapr        c9db84ed GO       source_build=GO      compiler=compiles            3.8s 
-dapr        d4c6ba52 GO       source_build=GO      compiler=compiles            1.3s 
+dapr        1ebb8588 GO       source_build=GO      compiler=compiles            1.4s 
+dapr        1b4bef84 GO       source_build=GO      compiler=compiles            1.8s 
+dapr        39c1ef7f GO       source_build=GO      compiler=compiles            2.6s 
+dapr        c581fa82 GO       source_build=GO      compiler=compiles            3.4s 
+dapr        c8463fcc GO       source_build=GO      compiler=compiles            5.2s 
+dapr        5da1cdbf GO       source_build=GO      compiler=compiles            2.0s 
+dapr        f2d61989 GO       source_build=GO      compiler=compiles            1.9s 
+dapr        60cd667f GO       source_build=GO      compiler=compiles            4.6s 
+dapr        c9db84ed GO       source_build=GO      compiler=compiles            4.1s 
+dapr        d4c6ba52 GO       source_build=GO      compiler=compiles            1.6s 
 dapr          20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
 TOTAL         20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
 
-20 windows in 1m46s.
+20 windows in 1m50s.
 exit 0
