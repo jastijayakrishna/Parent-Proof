@@ -1,15 +1,15 @@
-time=2026-10-05T04:55:14.323Z level=INFO msg=cloning repo=milvus-proto url=https://github.com/milvus-io/milvus-proto.git
-time=2026-10-05T04:55:16.747Z level=INFO msg=cloning repo=milvus-sdk-go url=https://github.com/milvus-io/milvus-sdk-go.git
-time=2026-10-05T04:55:18.816Z level=INFO msg=mined consumer=milvus-sdk-go pin_moves=16 to_compile=11
-time=2026-10-05T04:55:51.472Z level=INFO msg=window consumer=milvus-sdk-go bump=18efb15d select=breaking breaking=2 compiler=compiles
-time=2026-10-05T04:55:52.552Z level=INFO msg=window consumer=milvus-sdk-go bump=1c766f87 select=breaking breaking=3 compiler=compiles
-time=2026-10-05T04:55:57.004Z level=INFO msg=window consumer=milvus-sdk-go bump=abdee170 select=breaking breaking=7 compiler=compiles
-time=2026-10-05T04:55:58.956Z level=INFO msg=window consumer=milvus-sdk-go bump=00e74ab2 select=breaking breaking=1 compiler=compiles
-time=2026-10-05T04:56:02.956Z level=INFO msg=window consumer=milvus-sdk-go bump=6810978b select=breaking breaking=7 compiler=compiles
-time=2026-10-05T04:56:04.950Z level=INFO msg=window consumer=milvus-sdk-go bump=71ec76e9 select=breaking breaking=1 compiler=compiles
-time=2026-10-05T04:56:14.011Z level=INFO msg=window consumer=milvus-sdk-go bump=0c339b63 select=additive breaking=0 compiler=compiles
-time=2026-10-05T04:56:15.115Z level=INFO msg=window consumer=milvus-sdk-go bump=3d596ff9 select=additive breaking=0 compiler=compiles
-time=2026-10-05T04:56:19.442Z level=INFO msg=window consumer=milvus-sdk-go bump=a9bab450 select=additive breaking=0 compiler=compiles
-time=2026-10-05T04:56:22.681Z level=INFO msg=window consumer=milvus-sdk-go bump=3f8c3728 select=additive breaking=0 compiler=compiles
-time=2026-10-05T04:56:25.609Z level=INFO msg=window consumer=milvus-sdk-go bump=5a960e98 select=additive breaking=0 compiler=compiles
-time=2026-10-05T04:56:25.609Z level=INFO msg="suite built" suite=milvus windows_added=11
+time=2026-10-05T05:58:43.861Z level=INFO msg=cloning repo=milvus-proto url=https://github.com/milvus-io/milvus-proto.git
+time=2026-10-05T05:58:46.050Z level=INFO msg=cloning repo=milvus-sdk-go url=https://github.com/milvus-io/milvus-sdk-go.git
+time=2026-10-05T05:58:48.560Z level=INFO msg=mined consumer=milvus-sdk-go pin_moves=16 to_compile=11
+time=2026-10-05T05:59:23.684Z level=INFO msg=window consumer=milvus-sdk-go bump=18efb15d select=breaking breaking=2 compiler=compiles
+time=2026-10-05T05:59:23.997Z level=INFO msg=window consumer=milvus-sdk-go bump=1c766f87 select=breaking breaking=3 compiler=compiles
+time=2026-10-05T05:59:29.709Z level=INFO msg=window consumer=milvus-sdk-go bump=abdee170 select=breaking breaking=7 compiler=compiles
+time=2026-10-05T05:59:31.056Z level=INFO msg=window consumer=milvus-sdk-go bump=00e74ab2 select=breaking breaking=1 compiler=compiles
+time=2026-10-05T05:59:35.502Z level=INFO msg=window consumer=milvus-sdk-go bump=6810978b select=breaking breaking=7 compiler=compiles
+time=2026-10-05T05:59:38.217Z level=INFO msg=window consumer=milvus-sdk-go bump=71ec76e9 select=breaking breaking=1 compiler=compiles
+time=2026-10-05T05:59:48.495Z level=INFO msg=window consumer=milvus-sdk-go bump=0c339b63 select=additive breaking=0 compiler=compiles
+time=2026-10-05T05:59:48.503Z level=INFO msg=window consumer=milvus-sdk-go bump=3d596ff9 select=additive breaking=0 compiler=compiles
+time=2026-10-05T05:59:52.785Z level=INFO msg=window consumer=milvus-sdk-go bump=a9bab450 select=additive breaking=0 compiler=compiles
+time=2026-10-05T05:59:57.148Z level=INFO msg=window consumer=milvus-sdk-go bump=3f8c3728 select=additive breaking=0 compiler=compiles
+time=2026-10-05T05:59:59.490Z level=INFO msg=window consumer=milvus-sdk-go bump=5a960e98 select=additive breaking=0 compiler=compiles
+time=2026-10-05T05:59:59.490Z level=INFO msg="suite built" suite=milvus windows_added=11

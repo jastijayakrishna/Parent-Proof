@@ -1,17 +1,17 @@
-milvus-sdk-go 1c766f87 GO       source_build=GO      compiler=compiles           3.6s replay=true 
-milvus-sdk-go 18efb15d UNKNOWN  source_build=UNKNOWN compiler=compiles           3.7s replay=true 
-milvus-sdk-go abdee170 UNKNOWN  source_build=UNKNOWN compiler=compiles           1.3s replay=true 
-milvus-sdk-go 00e74ab2 UNKNOWN  source_build=UNKNOWN compiler=compiles           1.5s replay=true 
-milvus-sdk-go 71ec76e9 UNKNOWN  source_build=UNKNOWN compiler=compiles           2.0s replay=true 
-milvus-sdk-go 6810978b GO       source_build=GO      compiler=compiles           2.3s replay=true 
-milvus-sdk-go 0c339b63 GO       source_build=GO      compiler=compiles           1.6s replay=true 
-milvus-sdk-go 3d596ff9 GO       source_build=GO      compiler=compiles           1.9s replay=true 
-milvus-sdk-go a9bab450 GO       source_build=GO      compiler=compiles           1.8s replay=true 
-milvus-sdk-go 3f8c3728 GO       source_build=GO      compiler=compiles           2.2s replay=true 
-milvus-sdk-go 5a960e98 GO       source_build=GO      compiler=compiles           1.9s replay=true 
+milvus-sdk-go 1c766f87 GO       source_build=GO      compiler=compiles           2.7s replay=true 
+milvus-sdk-go 18efb15d UNKNOWN  source_build=UNKNOWN compiler=compiles           2.9s replay=true 
+milvus-sdk-go abdee170 UNKNOWN  source_build=UNKNOWN compiler=compiles           1.4s replay=true 
+milvus-sdk-go 00e74ab2 UNKNOWN  source_build=UNKNOWN compiler=compiles           1.6s replay=true 
+milvus-sdk-go 6810978b GO       source_build=GO      compiler=compiles           1.6s replay=true 
+milvus-sdk-go 71ec76e9 UNKNOWN  source_build=UNKNOWN compiler=compiles           1.7s replay=true 
+milvus-sdk-go 0c339b63 GO       source_build=GO      compiler=compiles           1.8s replay=true 
+milvus-sdk-go 3d596ff9 GO       source_build=GO      compiler=compiles           2.1s replay=true 
+milvus-sdk-go a9bab450 GO       source_build=GO      compiler=compiles           1.1s replay=true 
+milvus-sdk-go 3f8c3728 GO       source_build=GO      compiler=compiles           2.4s replay=true 
+milvus-sdk-go 5a960e98 GO       source_build=GO      compiler=compiles           2.2s replay=true 
 milvus-sdk-go/additive windows=  5 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 5: GO= 5 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=5 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=5
 milvus-sdk-go/breaking windows=  6 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 6: GO= 2 FALSE_NOGO=0 abstained=4 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=6 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=6
 TOTAL                  windows= 11 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=11: GO= 7 FALSE_NOGO=0 abstained=4 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=11 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=11
 
-11 windows in 12s with 2 workers; 0 differ from the baseline.
+11 windows in 11s with 2 workers; 0 differ from the baseline.
 verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`; 4 of 11 compiler-safe windows only UNKNOWN (more than 5%)
