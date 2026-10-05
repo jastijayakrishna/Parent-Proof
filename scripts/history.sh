@@ -36,7 +36,7 @@ timeout "${BUILD_TIMEOUT:-200m}" "$bin" suite build --suite "$suite" --oss "$tmp
 echo "suite build exit $?"
 tail -c 6000 "$tmp/build.log" > "out/build-$tag.log"
 # Every window mined and compiled, so a shard cut short shows what it skipped.
-grep -E 'msg=(mined|window) ' "$tmp/build.log" > "out/build-$tag.windows.log" || true
+grep -E 'msg=(mined|window|skip) ' "$tmp/build.log" > "out/build-$tag.windows.log" || true
 cp "$tmp/suite/$SUITE.jsonl" "out/windows-$tag.jsonl" 2>/dev/null || : > "out/windows-$tag.jsonl"
 echo "windows mined: $(wc -l < "out/windows-$tag.jsonl")"
 

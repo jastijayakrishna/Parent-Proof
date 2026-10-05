@@ -1,6 +1,3 @@
-Gates of Parent main fd5ae27 (go-analyzer v0.20.0, decisions as 7ecca11) requested 2026-10-05T12:38Z
-source: jastijayakrishna/Parent, branch main, commit fd5ae271c47bb18b8137bb105a1c0b729c03ca5b (a shard is no longer judged on the run's UNKNOWN limit, which failed kvproto shard 1, all of client-go, at 2 of 29 while the run is 2 of 97; the merge judges the limit)
-sha256 (uncompressed linux/amd64): 92fa9f95f4abc2ad519ef790c63538a5765803f1443690f533efbdbb4e4455c1
-built: 2026-10-05T12:38Z
-scan: all 17 corpus projects with the compiler, new (fd5ae27) and before (main 7ecca11)
-rerun 2026-10-05T14:43Z: run 37310913010 passed every gate and every scan, but its lnd before-scan could not save: it overlapped the run before, which had just saved the same files. Results now save with this run's files winning a conflict.
+Gates of Parent main 68ee982 (suite build harness fixes: upgrades across release branches, skip reasons, module-exact judge, sibling replaces; decisions as fd5ae27) requested 2026-10-05T18:03Z
+source: jastijayakrishna/Parent, branch main, commit 68ee9824a853e2c6b9f7be41917f110c660a4168 sha256 (uncompressed linux/amd64): e98e854815b5cdf62c37a52bb3dba0bf332893015671a91b624c8d46ed5ca66e built: 2026-10-05T18:03Z 
+scan: all 17 corpus projects with the compiler, new (68ee982) and before (fd5ae27)
