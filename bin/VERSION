@@ -1,3 +1,3 @@
-source: jastijayakrishna/Parent, branch fix-grpc-interceptor, commit 68371ceed907cc0b62024ccd6f9c5b37ce0beb24
-sha256 (uncompressed linux/amd64): 61b7a9f68bc3add59cfe3dc685dbcdb47e54e4f502f12b6374e67f8f4a63d469
-built: 2026-10-05T06:06Z
+source: jastijayakrishna/Parent, branch fix-grpc-interceptor, commit db103acd488eb5400c10d970b226c3e209cdb19d
+sha256 (uncompressed linux/amd64): f7c9506da4271f0d8a7883653a3d266a69c6ae42179f8d69553311846b037091
+built: 2026-10-05T07:13Z
