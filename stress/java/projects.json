@@ -21,7 +21,11 @@
       "users": "project\\(['\":]+temporal-serviceclient",
       "jdk": "17",
       "build": "./gradlew --no-daemon --console=plain --build-cache classes",
-      "clean": "./gradlew --no-daemon --console=plain clean"
+      "clean": "./gradlew --no-daemon --console=plain clean",
+      "shards": {
+        "history": 5,
+        "scan": 4
+      }
     },
     {
       "name": "camunda-zeebe",
@@ -37,8 +41,11 @@
       },
       "users": "<artifactId>zeebe-gateway-protocol(-impl)?</artifactId>",
       "jdk": "21",
-      "build": "./mvnw -B -ntp -T1C -Dquickly -DskipTests compile -pl zeebe/gateway-protocol,zeebe/gateway-protocol-impl,zeebe/gateway-grpc,clients/java -am",
-      "clean": "rm -rf $(find . -name target -type d -prune)"
+      "build": "./mvnw -B -ntp -T1C -Dquickly -DskipTests compile -pl zeebe/gateway-protocol,zeebe/gateway-protocol-impl,zeebe/gateway-grpc,zeebe/gateway,zeebe/gateway-rest,clients/java,clients/spring-boot-protobuf-compatibility -am",
+      "clean": "rm -rf $(find . -name target -type d -prune)",
+      "shards": {
+        "history": 12
+      }
     },
     {
       "name": "google-cloud-pubsub",
@@ -56,7 +63,10 @@
       "users": "<artifactId>(proto|grpc)-google-cloud-pubsub-v1</artifactId>",
       "jdk": "17",
       "build": "mvn -B -ntp -T1C -DskipTests -Dclirr.skip -Denforcer.skip -Dcheckstyle.skip -Dfmt.skip -Danimal.sniffer.skip -Djacoco.skip compile -f java-pubsub/pom.xml",
-      "clean": "rm -rf $(find java-pubsub -name target -type d -prune)"
+      "clean": "rm -rf $(find java-pubsub -name target -type d -prune)",
+      "shards": {
+        "history": 1
+      }
     },
     {
       "name": "google-cloud-pubsub-history",
@@ -75,7 +85,10 @@
       "users": "<artifactId>(proto|grpc)-google-cloud-pubsub-v1</artifactId>",
       "jdk": "11",
       "build": "mvn -B -ntp -T1C -DskipTests -Dclirr.skip -Denforcer.skip -Dcheckstyle.skip -Dfmt.skip -Danimal.sniffer.skip -Djacoco.skip compile",
-      "clean": "rm -rf $(find . -name target -type d -prune)"
+      "clean": "rm -rf $(find . -name target -type d -prune)",
+      "shards": {
+        "history": 2
+      }
     },
     {
       "name": "hbase",
@@ -92,7 +105,10 @@
       "users": "<artifactId>hbase-protocol-shaded</artifactId>",
       "jdk": "17",
       "build": "mvn -B -ntp -T1C -Dmaven.test.skip=true -Denforcer.skip -Dcheckstyle.skip -Dspotbugs.skip -Dspotless.check.skip test-compile -pl hbase-server -am",
-      "clean": "rm -rf $(find . -name target -type d -prune)"
+      "clean": "rm -rf $(find . -name target -type d -prune)",
+      "shards": {
+        "history": 10
+      }
     },
     {
       "name": "conductor",
@@ -109,7 +125,10 @@
       "users": "project\\(['\":]+conductor-grpc['\"]",
       "jdk": "21",
       "build": "./gradlew --no-daemon --console=plain --build-cache :conductor-grpc:classes :conductor-grpc-server:classes :conductor-grpc-client:classes",
-      "clean": "./gradlew --no-daemon --console=plain clean"
+      "clean": "./gradlew --no-daemon --console=plain clean",
+      "shards": {
+        "history": 2
+      }
     },
     {
       "name": "beam",
@@ -128,7 +147,34 @@
       "users": "project\\((path: *)?['\"]:model:(pipeline|fn-execution|job-management)['\"]",
       "jdk": "17",
       "build": "./gradlew --no-daemon --console=plain --build-cache :runners:core-java:classes :sdks:java:harness:classes :runners:java-fn-execution:classes",
-      "clean": "./gradlew --no-daemon --console=plain clean"
+      "clean": "./gradlew --no-daemon --console=plain clean",
+      "shards": {
+        "history": 17
+      }
+    },
+    {
+      "name": "google-cloud-bigtable-history",
+      "set": "holdout",
+      "note": "googleapis/java-bigtable before it moved into google-cloud-java (archived 2026-05); its history only.",
+      "consumer": {
+        "repo": "googleapis/java-bigtable",
+        "commit": "949c6965b14592eb6d7fa94854c62b62226f3682"
+      },
+      "contract": {
+        "paths": [
+          "proto-google-cloud-bigtable-v2",
+          "grpc-google-cloud-bigtable-v2",
+          "proto-google-cloud-bigtable-admin-v2",
+          "grpc-google-cloud-bigtable-admin-v2"
+        ]
+      },
+      "users": "<artifactId>(proto|grpc)-google-cloud-bigtable-(admin-)?v2</artifactId>",
+      "jdk": "11",
+      "build": "mvn -B -ntp -T1C -DskipTests -Dclirr.skip -Denforcer.skip -Dcheckstyle.skip -Dfmt.skip -Danimal.sniffer.skip -Djacoco.skip compile -pl google-cloud-bigtable -am",
+      "clean": "rm -rf $(find . -name target -type d -prune)",
+      "shards": {
+        "history": 4
+      }
     },
     {
       "name": "alluxio",
@@ -145,7 +191,10 @@
       "users": "<artifactId>alluxio-core-transport</artifactId>",
       "jdk": "11",
       "build": "mvn -B -ntp -T1C -Dmaven.test.skip=true -Dcheckstyle.skip -Dlicense.skip -Dfindbugs.skip -Dspotbugs.skip -Dmaven.javadoc.skip -Denforcer.skip test-compile -pl core/server/master -am",
-      "clean": "rm -rf $(find . -name target -type d -prune)"
+      "clean": "rm -rf $(find . -name target -type d -prune)",
+      "shards": {
+        "history": 4
+      }
     },
     {
       "name": "bazel",
@@ -163,7 +212,10 @@
       "users": "src/main/protobuf",
       "jdk": "21",
       "build": "",
-      "clean": ""
+      "clean": "",
+      "shards": {
+        "history": 5
+      }
     },
     {
       "name": "client-java",
@@ -184,7 +236,12 @@
       "jdk": "8",
       "prebuild": "if [ -f dev/proto.sh ]; then bash dev/proto.sh; else bash scripts/proto.sh; fi",
       "build": "mvn -B -ntp -DskipTests -Djacoco.skip -Dspotless.check.skip -Dspotless.apply.skip compile",
-      "clean": "rm -rf target"
+      "clean": "rm -rf target",
+      "shards": {
+        "history": 1,
+        "scan": 2
+      },
+      "since": "2018-01-01"
     },
     {
       "name": "java-control-plane",
@@ -201,7 +258,11 @@
       "users": "<artifactId>api</artifactId>",
       "jdk": "11",
       "build": "mvn -B -ntp -T1C -DskipTests -Dcheckstyle.skip compile",
-      "clean": "rm -rf $(find . -name target -type d -prune)"
+      "clean": "rm -rf $(find . -name target -type d -prune)",
+      "shards": {
+        "history": 6
+      },
+      "since": "2022-01-01"
     },
     {
       "name": "skywalking-java",
@@ -220,7 +281,12 @@
       "users": "<artifactId>apm-network</artifactId>",
       "jdk": "17",
       "build": "./mvnw -B -ntp -T1C -DskipTests -Dcheckstyle.skip -Drat.skip compile -pl apm-sniffer/apm-agent-core -am",
-      "clean": "rm -rf $(find . -name target -type d -prune)"
+      "clean": "rm -rf $(find . -name target -type d -prune)",
+      "shards": {
+        "history": 1,
+        "scan": 3
+      },
+      "since": "2022-01-01"
     },
     {
       "name": "jetcd",
@@ -237,7 +303,11 @@
       "users": "project\\(['\":]+jetcd-grpc",
       "jdk": "17",
       "build": "./gradlew --no-daemon --console=plain --build-cache classes",
-      "clean": "./gradlew --no-daemon --console=plain clean"
+      "clean": "./gradlew --no-daemon --console=plain clean",
+      "shards": {
+        "history": 1
+      },
+      "since": "2022-01-01"
     }
   ]
 }

@@ -1,5 +1,4 @@
-# Round 2 (2026-10-05): fixed recipes for HBase, Alluxio (test jars), Conductor (JDK 21); Camunda's users of the generated code. No verifier runs.
-layout-camunda-zeebe - python3 stress/probe/layout.py camunda-zeebe "$OUT"
-build-hbase hbase bash stress/probe/build.sh hbase "$OUT"
-build-alluxio alluxio bash stress/probe/build.sh alluxio "$OUT"
-build-conductor conductor bash stress/probe/build.sh conductor "$OUT"
+# Round 3 (2026-10-05): Camunda with every module that uses the generated gRPC code; Google bigtable (hold-out). No verifier runs.
+build-camunda-zeebe camunda-zeebe bash stress/probe/build.sh camunda-zeebe "$OUT"
+layout-google-cloud-bigtable-history - python3 stress/probe/layout.py google-cloud-bigtable-history "$OUT"
+build-google-cloud-bigtable-history google-cloud-bigtable-history bash stress/probe/build.sh google-cloud-bigtable-history "$OUT"
