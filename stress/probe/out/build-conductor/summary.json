@@ -1,0 +1,23 @@
+{
+ "name": "conductor",
+ "cold_seconds": 84,
+ "cold_exit": 1,
+ "warm_clean_seconds": 0,
+ "warm_exit": -1,
+ "class_dirs": 3,
+ "classes": 216,
+ "dirs": [
+  {
+   "dir": "annotations/build/classes/java/main",
+   "classes": 3
+  },
+  {
+   "dir": "annotations-processor/build/classes/java/main",
+   "classes": 21
+  },
+  {
+   "dir": "common/build/classes/java/main",
+   "classes": 192
+  }
+ ]
+}

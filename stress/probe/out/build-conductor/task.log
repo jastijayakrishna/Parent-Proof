@@ -1,0 +1,12 @@
+clone seconds 3
+88M	/home/runner/work/_temp/src-conductor
+openjdk version "17.0.20.1" 2026-08-18
+Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
+cold build exit 1 seconds 84
+stress/probe/build.sh: line 56: stress/probe/out/build-conductor/cold.log: No such file or directory
+FAILURE: Build failed with an exception.
+BUILD FAILED in 1m 22s
+class dirs 3, classes 216
+/dev/root       145G   60G   86G  41% /
+
+exit 0 seconds 87
