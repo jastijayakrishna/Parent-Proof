@@ -1,0 +1,23 @@
+{
+ "name": "java-control-plane",
+ "cold_seconds": 93,
+ "cold_exit": 0,
+ "warm_clean_seconds": 80,
+ "warm_exit": 0,
+ "class_dirs": 3,
+ "classes": 11752,
+ "dirs": [
+  {
+   "dir": "server/target/classes",
+   "classes": 33
+  },
+  {
+   "dir": "api/target/classes",
+   "classes": 11678
+  },
+  {
+   "dir": "cache/target/classes",
+   "classes": 41
+  }
+ ]
+}
