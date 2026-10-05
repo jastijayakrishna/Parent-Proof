@@ -1,27 +1,27 @@
-time=2026-10-05T12:39:12.433Z level=INFO msg=cloning repo=p-dapr url=https://github.com/dapr/dapr.git
-time=2026-10-05T12:39:13.974Z level=INFO msg=cloning repo=c-dapr url=https://github.com/dapr/go-sdk.git
-dapr        3d9dbe6e GO       source_build=GO      compiler=compiles           31.3s 
-dapr        e2030a5f GO       source_build=GO      compiler=compiles            8.8s 
-dapr        19e9dbd4 GO       source_build=GO      compiler=compiles            4.2s 
-dapr        cd72c15f GO       source_build=GO      compiler=compiles            8.8s 
-dapr        8fd31d16 GO       source_build=GO      compiler=compiles            7.7s 
-dapr        df9137ce GO       source_build=GO      compiler=compiles            9.1s 
-dapr        a86c03bd GO       source_build=GO      compiler=compiles            3.4s 
-dapr        d16e4ded GO       source_build=GO      compiler=compiles            3.4s 
-dapr        6d8290ef GO       source_build=GO      compiler=compiles            2.7s 
-dapr        88a04ddb GO       source_build=GO      compiler=compiles            4.7s 
-dapr        1ebb8588 GO       source_build=GO      compiler=compiles            1.2s 
-dapr        1b4bef84 GO       source_build=GO      compiler=compiles            1.8s 
-dapr        39c1ef7f GO       source_build=GO      compiler=compiles            2.4s 
-dapr        c581fa82 GO       source_build=GO      compiler=compiles            3.4s 
-dapr        c8463fcc GO       source_build=GO      compiler=compiles            3.0s 
+time=2026-10-05T14:44:10.818Z level=INFO msg=cloning repo=p-dapr url=https://github.com/dapr/dapr.git
+time=2026-10-05T14:44:11.737Z level=INFO msg=cloning repo=c-dapr url=https://github.com/dapr/go-sdk.git
+dapr        3d9dbe6e GO       source_build=GO      compiler=compiles           29.5s 
+dapr        e2030a5f GO       source_build=GO      compiler=compiles            8.0s 
+dapr        19e9dbd4 GO       source_build=GO      compiler=compiles            3.8s 
+dapr        cd72c15f GO       source_build=GO      compiler=compiles            7.8s 
+dapr        8fd31d16 GO       source_build=GO      compiler=compiles            5.7s 
+dapr        df9137ce GO       source_build=GO      compiler=compiles            8.9s 
+dapr        a86c03bd GO       source_build=GO      compiler=compiles            3.5s 
+dapr        d16e4ded GO       source_build=GO      compiler=compiles            3.2s 
+dapr        6d8290ef GO       source_build=GO      compiler=compiles            3.2s 
+dapr        88a04ddb GO       source_build=GO      compiler=compiles            3.7s 
+dapr        1ebb8588 GO       source_build=GO      compiler=compiles            1.1s 
+dapr        1b4bef84 GO       source_build=GO      compiler=compiles            1.7s 
+dapr        39c1ef7f GO       source_build=GO      compiler=compiles            2.2s 
+dapr        c581fa82 GO       source_build=GO      compiler=compiles            2.5s 
+dapr        c8463fcc GO       source_build=GO      compiler=compiles            2.7s 
 dapr        5da1cdbf GO       source_build=GO      compiler=compiles            1.8s 
 dapr        f2d61989 GO       source_build=GO      compiler=compiles            1.3s 
-dapr        60cd667f GO       source_build=GO      compiler=compiles            4.6s 
-dapr        c9db84ed GO       source_build=GO      compiler=compiles            3.9s 
-dapr        d4c6ba52 GO       source_build=GO      compiler=compiles            1.2s 
+dapr        60cd667f GO       source_build=GO      compiler=compiles            3.4s 
+dapr        c9db84ed GO       source_build=GO      compiler=compiles            3.3s 
+dapr        d4c6ba52 GO       source_build=GO      compiler=compiles            1.1s 
 dapr          20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
 TOTAL         20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
 
-20 windows in 1m52s.
+20 windows in 1m41s.
 exit 0
