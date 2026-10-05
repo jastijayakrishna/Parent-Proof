@@ -1,0 +1,198 @@
+{
+ "name": "temporal-sdk-java",
+ "set": "dev",
+ "consumer": {
+  "repo": "temporalio/sdk-java",
+  "commit": "1af71ba343d7fe4d5c6c97c959cea6b68f178e0e"
+ },
+ "head": "1af71ba343d7fe4d5c6c97c959cea6b68f178e0e 2026-10-03T01:15:15-07:00",
+ "default_branch": "origin/main",
+ "history": {
+  "count": 27,
+  "with_proto_changes": 27,
+  "last": [
+   {
+    "commit": "d9bd2c1e3dae62c3d316412143ff44f976930b30",
+    "date": "2023-03-16",
+    "pin": "9206f1556469515d8e5a82c4d4bf21f2dd9730ce"
+   },
+   {
+    "commit": "e354d1ff61e2ff3b70f43044b6d5ed15acdfc2ea",
+    "date": "2023-05-10",
+    "pin": "ae312b0724003957b96fb966e3fe25a02abaade4"
+   },
+   {
+    "commit": "c215a78b55020bec7f67b31c0dd8c62bcc007f62",
+    "date": "2023-06-16",
+    "pin": "cfa1a15b960920a47de8ec272873a4ee4db574c4"
+   },
+   {
+    "commit": "81cc6e037e3b0ac01901f81734f9315b907e0b3e",
+    "date": "2024-04-15",
+    "pin": "2227a14f482ae48fc440a5e9829cf6797009d5b8"
+   },
+   {
+    "commit": "4871168388bbb1003af22c31ee4d4f443aea37cf",
+    "date": "2024-08-05",
+    "pin": "39b0f69d19b67731e1f35fd2d231f2c871091359"
+   },
+   {
+    "commit": "03f718249f4ea5491fa9c0656ae8d3b5dd96b950",
+    "date": "2024-09-16",
+    "pin": "2ed0a18b7ad6b6052a15da6d9d81bb97e05bc359"
+   },
+   {
+    "commit": "92692b406cfc276c3caa4b20d70f3d1b56d7c36e",
+    "date": "2024-10-10",
+    "pin": "f6a14e5ad41fcbc0ea1117348daea90ba2c8c3c3"
+   },
+   {
+    "commit": "82d3c93d5e5fd873cf89a11dbb2a83900b5abfe6",
+    "date": "2025-01-06",
+    "pin": "bae790a6cfe59936cb26e613af107780deea500e"
+   },
+   {
+    "commit": "fc4d714b20de2550c16516dcb0e371a8dd1236c7",
+    "date": "2025-02-10",
+    "pin": "add5b501e1a717d42a4871a09833291c521aad42"
+   },
+   {
+    "commit": "93f124f4a0f0310d735b4b4dba530024a7650773",
+    "date": "2025-03-25",
+    "pin": "7f4882315504ef88b6e6e9bc371e75dc1fbda844"
+   },
+   {
+    "commit": "7460156411566d9a1ade1010b9b20ae44540647d",
+    "date": "2025-04-25",
+    "pin": "d7bb01b95f5ddff01799023c426d43a66e384c7d"
+   },
+   {
+    "commit": "7a093846fa7294cc0a9e19d97ab043743bcfa8f4",
+    "date": "2025-05-06",
+    "pin": "709bd1316664a762c611bbb1a47a21ab48ce1541"
+   },
+   {
+    "commit": "95314a2357cf56efc1d703c657fd937bf6cbbc81",
+    "date": "2025-05-16",
+    "pin": "9263046461616e83f06fa3bdb3441f2142319024"
+   },
+   {
+    "commit": "d75b253d4cfbdf08f294ffccf2eda5c754b08557",
+    "date": "2025-07-08",
+    "pin": "49f9286fae31a472ba4ca953df6a7432c493085f"
+   },
+   {
+    "commit": "b6b4290373df56ee2116970681c506011a7cc884",
+    "date": "2025-08-19",
+    "pin": "d96bd55e87799e9f6a33a1c40a56cfa932566bdf"
+   },
+   {
+    "commit": "4e9cc06a91e3ff78c297dc3032de32f725b9bb48",
+    "date": "2025-10-22",
+    "pin": "1ae5b673d66b0a94f6131c3eb06bc7173ae2c326"
+   },
+   {
+    "commit": "20fb8520cdb7fe03eb95d2c04933e6224956b76b",
+    "date": "2026-03-10",
+    "pin": "831177c393bb2d8d96d35c5b841453ac4cb45334"
+   },
+   {
+    "commit": "dbd648bdce3b53ed7a292cdf687ba9d6b72b38d0",
+    "date": "2026-03-10",
+    "pin": "188e309dee0acb3e3c84363d2d9f11be32df3bb8"
+   },
+   {
+    "commit": "a714cc1006c318d422a5d94d34182a1be29d5ec7",
+    "date": "2026-03-23",
+    "pin": "db5f593060ee579460e7f4e06d79b5e4f3af2387"
+   },
+   {
+    "commit": "187b778e394d22cf6db32bb09efc2ec158e366cf",
+    "date": "2026-04-07",
+    "pin": "43e48962c8dfb9fd693ed75419735983ecf5529c"
+   },
+   {
+    "commit": "5a765b170bccd8bc0a225a11f1cb1fe36d6da0d7",
+    "date": "2026-05-04",
+    "pin": "67150b14e0509210bf250960bd3278a4509e091c"
+   },
+   {
+    "commit": "187421b0e5e10b1dce62e661e5debeda45217e43",
+    "date": "2026-05-27",
+    "pin": "d2fc34ab844603f50e41365f46c7fb82bdedffe6"
+   },
+   {
+    "commit": "6d09a341c14daeddf9b3795cd43721de770fec2c",
+    "date": "2026-07-21",
+    "pin": "852ee3b339f9f1efe3503fe96f0351d361396daa"
+   },
+   {
+    "commit": "e8da68baf181ed5dfdee98b8ec1537d117ad00d3",
+    "date": "2026-07-24",
+    "pin": "f53963d4489c8a73aa30bd7091fe758f9896c08c"
+   },
+   {
+    "commit": "cd2b543e22adf9153e98df2bf106661b829fcf09",
+    "date": "2026-08-12",
+    "pin": "3ebdff42a9f07ac484b415fe8ff0b483b4ce3340"
+   }
+  ]
+ },
+ "users": [
+  "contrib/temporal-gcp-cloud-run-opentelemetry/build.gradle",
+  "contrib/temporal-opentelemetry/build.gradle",
+  "contrib/temporal-payload-storage-s3driver/build.gradle",
+  "temporal-bom/build.gradle",
+  "temporal-remote-data-encoder/build.gradle",
+  "temporal-sdk/build.gradle",
+  "temporal-shaded/build.gradle"
+ ],
+ "jdk_hints": [],
+ "proto_count": 4,
+ "build_files": 27,
+ "provider_prs": {
+  "checked": 8,
+  "matching": [
+   {
+    "n": 880,
+    "title": "Add Graal AOT and Kotlin worker runtimes",
+    "updated": "2026-10-03"
+   },
+   {
+    "n": 878,
+    "title": "Deprecate BatchOperationResetActivities.reset_attempts",
+    "updated": "2026-10-02"
+   },
+   {
+    "n": 876,
+    "title": "Add eager standalone activity start API",
+    "updated": "2026-10-02"
+   },
+   {
+    "n": 877,
+    "title": "Add resource id annotation for standalone Nexus operations",
+    "updated": "2026-10-02"
+   },
+   {
+    "n": 875,
+    "title": "Add region_id to ComputeConfigScalingGroup",
+    "updated": "2026-10-02"
+   },
+   {
+    "n": 873,
+    "title": "Preserve reset request IDs in workflow history",
+    "updated": "2026-10-01"
+   },
+   {
+    "n": 871,
+    "title": "Clarify namespace poller group snapshots",
+    "updated": "2026-09-29"
+   },
+   {
+    "n": 856,
+    "title": "vts: add time skipping to schedules",
+    "updated": "2026-09-27"
+   }
+  ]
+ }
+}
