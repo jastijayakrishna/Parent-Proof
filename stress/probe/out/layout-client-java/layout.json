@@ -1,0 +1,65 @@
+{
+ "name": "client-java",
+ "set": "regression",
+ "consumer": {
+  "repo": "tikv/client-java",
+  "commit": "c12047a026058e69db74a95d07a4162ceeeb03ec"
+ },
+ "head": "c12047a026058e69db74a95d07a4162ceeeb03ec 2025-03-29T18:39:33+08:00",
+ "default_branch": "origin/master",
+ "history": {
+  "count": 0,
+  "with_proto_changes": 0,
+  "last": []
+ },
+ "users": [],
+ "jdk_hints": [
+  "pom.xml:53: <maven.compiler.source>1.8</maven.compiler.source>",
+  "pom.xml:54: <maven.compiler.target>1.8</maven.compiler.target>",
+  "pom.xml:654: <id>jdk9plus</id>",
+  "pom.xml:656: <!-- activated when building with JDK9+ -->",
+  "pom.xml:657: <jdk>!1.8</jdk>"
+ ],
+ "proto_count": 0,
+ "build_files": 1,
+ "provider_prs": {
+  "checked": 7,
+  "matching": [
+   {
+    "n": 1543,
+    "title": "kvrpcpb: report noisy resource groups in HealthFeedback",
+    "updated": "2026-10-03"
+   },
+   {
+    "n": 1544,
+    "title": "kvrpcpb: report noisy resource groups in HealthFeedback",
+    "updated": "2026-10-03"
+   },
+   {
+    "n": 1539,
+    "title": "resource_manager: add replayable per-second RU observations",
+    "updated": "2026-09-23"
+   },
+   {
+    "n": 1542,
+    "title": "pdpb: preserve caller components in QueryRegion requests",
+    "updated": "2026-09-22"
+   },
+   {
+    "n": 1538,
+    "title": "proto: backport FTS/TiCI protocols to release-8.5-fts",
+    "updated": "2026-09-17"
+   },
+   {
+    "n": 1533,
+    "title": "import_sstpb: add RestoreRegion RPC for snapshot restore",
+    "updated": "2026-09-16"
+   },
+   {
+    "n": 1530,
+    "title": "brpb: support PiTR restore name routes",
+    "updated": "2026-09-14"
+   }
+  ]
+ }
+}
