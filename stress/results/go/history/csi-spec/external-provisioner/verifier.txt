@@ -1,2 +1,2 @@
-68ee982 protocompile/v0.14.1 verdict/v0.8.2 go-analyzer/v0.20.0
-e98e854815b5cdf62c37a52bb3dba0bf332893015671a91b624c8d46ed5ca66e
+6f9abec protocompile/v0.14.1 verdict/v0.10.0 go-analyzer/v0.21.0
+a6749b5a4792c3b5709ab5cefbcdef0967b4c64dd9cfc9cb1cf37f1354e2b3f0
