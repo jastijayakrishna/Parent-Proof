@@ -1,9 +1,8 @@
-clone seconds 34
+clone seconds 32
 688M	/home/runner/work/_temp/src-camunda-zeebe
 openjdk version "21.0.12.1" 2026-08-18 LTS
 Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
-cold build exit 0 seconds 239
-stress/probe/build.sh: line 56: stress/probe/out/build-camunda-zeebe/cold.log: No such file or directory
+cold build exit 0 seconds 69
 [WARNING] unknown enum constant org.immutables.annotate.InjectAnnotation.Where.BUILDER_TYPE
 [WARNING] unknown enum constant org.immutables.annotate.InjectAnnotation.Where.BUILDER_TYPE
 [WARNING] unknown enum constant org.immutables.annotate.InjectAnnotation.Where.BUILDER_TYPE
@@ -15,10 +14,11 @@ stress/probe/build.sh: line 56: stress/probe/out/build-camunda-zeebe/cold.log: N
 [WARNING] unknown enum constant org.immutables.annotate.InjectAnnotation.Where.BUILDER_TYPE
 [WARNING] /home/runner/work/_temp/src-camunda-zeebe/service/src/main/java/io/camunda/service/GlobalListenerServices.java: unknown enum constant org.immutables.annotate.InjectAnnotation.Where.BUILDER_TYPE
 [WARNING] unknown enum constant org.immutables.annotate.InjectAnnotation.Where.BUILDER_TYPE
+[WARNING] unknown enum constant org.immutables.annotate.InjectAnnotation.Where.BUILDER_TYPE
+[WARNING] /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-rest/src/main/java/io/camunda/zeebe/gateway/rest/controller/AgentInstanceController.java: unknown enum constant org.immutables.annotate.InjectAnnotation.Where.BUILDER_TYPE
 [INFO] BUILD SUCCESS
-warm clean build exit 0 seconds 69
-stress/probe/build.sh: line 63: stress/probe/out/build-camunda-zeebe/warm.log: No such file or directory
-class dirs 41, classes 8282
+warm clean build exit 0 seconds 60
+class dirs 48, classes 13067
 /dev/root       145G   60G   85G  42% /
 
-exit 0 seconds 345
+exit 0 seconds 166

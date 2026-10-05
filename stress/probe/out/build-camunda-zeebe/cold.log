@@ -1,0 +1,276 @@
+-----------------------------[ jar ]---------------------------------
+[INFO] Cache is DISABLED on project level for io.camunda:camunda-service
+[INFO] 
+[INFO] --- checkstyle:3.6.0:check (validate-java) @ camunda-service ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ camunda-service ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-dependency-convergence) @ camunda-service ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-unique-dependencies) @ camunda-service ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco:0.8.15:prepare-agent (coverage-initialize) @ camunda-service ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- spotless:3.10.3:apply (spotless-format) @ camunda-service ---
+[INFO] Spotless apply skipped
+[INFO] 
+[INFO] --- license:5.1.2:format (add-license) @ camunda-service ---
+[INFO] License Plugin is Skipped
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ camunda-service ---
+[INFO] skip non existing resourceDirectory /home/runner/work/_temp/src-camunda-zeebe/service/src/main/resources
+[INFO] 
+[INFO] --- flatten:1.8.0:flatten (flatten) @ camunda-service ---
+[INFO] Flatten skipped.
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ camunda-service ---
+[INFO] Compiling 79 source files with javac [debug parameters release 21] to target/classes
+[WARNING] /home/runner/work/_temp/src-camunda-zeebe/service/src/main/java/io/camunda/service/GlobalListenerServices.java: unknown enum constant org.immutables.value.Value.Style.ValidationMethod.NONE
+  reason: class file for org.immutables.value.Value$Style$ValidationMethod not found
+[WARNING] /home/runner/work/_temp/src-camunda-zeebe/service/src/main/java/io/camunda/service/GlobalListenerServices.java: unknown enum constant org.immutables.annotate.InjectAnnotation.Where.BUILDER_TYPE
+  reason: class file for org.immutables.annotate.InjectAnnotation$Where not found
+[WARNING] /home/runner/work/_temp/src-camunda-zeebe/service/src/main/java/io/camunda/service/GlobalListenerServices.java: unknown enum constant org.immutables.annotate.InjectAnnotation.Where.IMMUTABLE_TYPE
+[INFO] /home/runner/work/_temp/src-camunda-zeebe/service/src/main/java/io/camunda/service/ApiServices.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/runner/work/_temp/src-camunda-zeebe/service/src/main/java/io/camunda/service/ApiServices.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] 
+[INFO] -------------------< io.camunda:zeebe-gateway-grpc >--------------------
+[INFO] -----------------< io.camunda:camunda-authentication >------------------
+[INFO] Building Camunda Authentication 8.11.0-SNAPSHOT                  [55/57]
+[INFO]   from /home/runner/work/_temp/src-camunda-zeebe/authentication/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Cache is DISABLED on project level for io.camunda:camunda-authentication
+[INFO] Building Zeebe Gateway gRPC 8.11.0-SNAPSHOT                      [54/57]
+[INFO]   from /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-grpc/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Cache is DISABLED on project level for io.camunda:zeebe-gateway-grpc
+[INFO] 
+[INFO] --- checkstyle:3.6.0:check (validate-java) @ zeebe-gateway-grpc ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ zeebe-gateway-grpc ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-dependency-convergence) @ zeebe-gateway-grpc ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-unique-dependencies) @ zeebe-gateway-grpc ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco:0.8.15:prepare-agent (coverage-initialize) @ zeebe-gateway-grpc ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- spotless:3.10.3:apply (spotless-format) @ zeebe-gateway-grpc ---
+[INFO] Spotless apply skipped
+[INFO] 
+[INFO] --- license:5.1.2:format (add-license) @ zeebe-gateway-grpc ---
+[INFO] License Plugin is Skipped
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ zeebe-gateway-grpc ---
+[INFO] skip non existing resourceDirectory /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-grpc/src/main/resources
+[INFO] 
+[INFO] --- flatten:1.8.0:flatten (flatten) @ zeebe-gateway-grpc ---
+[INFO] Flatten skipped.
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ zeebe-gateway-grpc ---
+[INFO] Compiling 49 source files with javac [debug parameters release 21] to target/classes
+[WARNING] unknown enum constant org.immutables.value.Value.Style.ValidationMethod.NONE
+  reason: class file for org.immutables.value.Value$Style$ValidationMethod not found
+[WARNING] unknown enum constant org.immutables.annotate.InjectAnnotation.Where.BUILDER_TYPE
+  reason: class file for org.immutables.annotate.InjectAnnotation$Where not found
+[WARNING] unknown enum constant org.immutables.annotate.InjectAnnotation.Where.IMMUTABLE_TYPE
+[INFO] /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/ResponseMapper.java: Some input files use or override a deprecated API.
+[INFO] /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/ResponseMapper.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- checkstyle:3.6.0:check (validate-java) @ camunda-authentication ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ camunda-authentication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-dependency-convergence) @ camunda-authentication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-unique-dependencies) @ camunda-authentication ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco:0.8.15:prepare-agent (coverage-initialize) @ camunda-authentication ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- spotless:3.10.3:apply (spotless-format) @ camunda-authentication ---
+[INFO] Spotless apply skipped
+[INFO] 
+[INFO] --- license:5.1.2:format (add-license) @ camunda-authentication ---
+[INFO] License Plugin is Skipped
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ camunda-authentication ---
+[INFO] skip non existing resourceDirectory /home/runner/work/_temp/src-camunda-zeebe/authentication/src/main/resources
+[INFO] 
+[INFO] --- flatten:1.8.0:flatten (flatten) @ camunda-authentication ---
+[INFO] Flatten skipped.
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ camunda-authentication ---
+[INFO] Compiling 46 source files with javac [debug parameters release 21] to target/classes
+[WARNING] /home/runner/work/_temp/src-camunda-zeebe/authentication/src/main/java/io/camunda/authentication/config/OidcOverrideBeansConfiguration.java:[377,9] messageConverters(java.util.function.Consumer<java.util.List<org.springframework.http.converter.HttpMessageConverter<?>>>) in org.springframework.web.client.RestClient.Builder has been deprecated and marked for removal
+[INFO] /home/runner/work/_temp/src-camunda-zeebe/authentication/src/main/java/io/camunda/authentication/config/CustomDefaultClientRequestObservationConvention.java: /home/runner/work/_temp/src-camunda-zeebe/authentication/src/main/java/io/camunda/authentication/config/CustomDefaultClientRequestObservationConvention.java uses or overrides a deprecated API.
+[INFO] /home/runner/work/_temp/src-camunda-zeebe/authentication/src/main/java/io/camunda/authentication/config/CustomDefaultClientRequestObservationConvention.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --------------< io.camunda:camunda-gateway-mapping-http >---------------
+[INFO] Building Camunda Gateway Mapping for HTTP 8.11.0-SNAPSHOT        [56/57]
+[INFO]   from /home/runner/work/_temp/src-camunda-zeebe/gateways/gateway-mapping-http/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Cache is DISABLED on project level for io.camunda:camunda-gateway-mapping-http
+[INFO] 
+[INFO] --- checkstyle:3.6.0:check (validate-java) @ camunda-gateway-mapping-http ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ camunda-gateway-mapping-http ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-dependency-convergence) @ camunda-gateway-mapping-http ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-unique-dependencies) @ camunda-gateway-mapping-http ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco:0.8.15:prepare-agent (coverage-initialize) @ camunda-gateway-mapping-http ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- spotless:3.10.3:apply (spotless-format) @ camunda-gateway-mapping-http ---
+[INFO] Spotless apply skipped
+[INFO] 
+[INFO] --- license:5.1.2:format (add-license) @ camunda-gateway-mapping-http ---
+[INFO] License Plugin is Skipped
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ camunda-gateway-mapping-http ---
+[INFO] skip non existing resourceDirectory /home/runner/work/_temp/src-camunda-zeebe/gateways/gateway-mapping-http/src/main/resources
+[INFO] 
+[INFO] --- flatten:1.8.0:flatten (flatten) @ camunda-gateway-mapping-http ---
+[INFO] Flatten skipped.
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ camunda-gateway-mapping-http ---
+[INFO] Compiling 63 source files with javac [debug parameters release 21] to target/classes
+[WARNING] unknown enum constant org.immutables.value.Value.Style.ValidationMethod.NONE
+  reason: class file for org.immutables.value.Value$Style$ValidationMethod not found
+[WARNING] unknown enum constant org.immutables.annotate.InjectAnnotation.Where.BUILDER_TYPE
+  reason: class file for org.immutables.annotate.InjectAnnotation$Where not found
+[WARNING] unknown enum constant org.immutables.annotate.InjectAnnotation.Where.IMMUTABLE_TYPE
+[INFO] /home/runner/work/_temp/src-camunda-zeebe/gateways/gateway-mapping-http/src/main/java/io/camunda/gateway/mapping/http/search/SimpleSearchQueryMapper.java: /home/runner/work/_temp/src-camunda-zeebe/gateways/gateway-mapping-http/src/main/java/io/camunda/gateway/mapping/http/search/SimpleSearchQueryMapper.java uses or overrides a deprecated API.
+[INFO] /home/runner/work/_temp/src-camunda-zeebe/gateways/gateway-mapping-http/src/main/java/io/camunda/gateway/mapping/http/search/SimpleSearchQueryMapper.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] -------------------< io.camunda:zeebe-gateway-rest >--------------------
+[INFO] Building Zeebe Gateway REST API server 8.11.0-SNAPSHOT           [57/57]
+[INFO]   from /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-rest/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Cache is DISABLED on project level for io.camunda:zeebe-gateway-rest
+[INFO] 
+[INFO] --- checkstyle:3.6.0:check (validate-java) @ zeebe-gateway-rest ---
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ zeebe-gateway-rest ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-dependency-convergence) @ zeebe-gateway-rest ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-unique-dependencies) @ zeebe-gateway-rest ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco:0.8.15:prepare-agent (coverage-initialize) @ zeebe-gateway-rest ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- spotless:3.10.3:apply (spotless-format) @ zeebe-gateway-rest ---
+[INFO] Spotless apply skipped
+[INFO] 
+[INFO] --- license:5.1.2:format (add-license) @ zeebe-gateway-rest ---
+[INFO] License Plugin is Skipped
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ zeebe-gateway-rest ---
+[INFO] skip non existing resourceDirectory /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-rest/src/main/resources
+[INFO] 
+[INFO] --- flatten:1.8.0:flatten (flatten) @ zeebe-gateway-rest ---
+[INFO] Flatten skipped.
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ zeebe-gateway-rest ---
+[INFO] Compiling 138 source files with javac [debug parameters release 21] to target/classes
+[WARNING] /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-rest/src/main/java/io/camunda/zeebe/gateway/rest/config/JacksonConfig.java:[100,19] org.springframework.http.converter.json.Jackson2ObjectMapperBuilder in org.springframework.http.converter.json has been deprecated and marked for removal
+[WARNING] /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-rest/src/main/java/io/camunda/zeebe/gateway/rest/config/JacksonConfig.java: org.springframework.http.converter.json.Jackson2ObjectMapperBuilder in org.springframework.http.converter.json has been deprecated and marked for removal
+[WARNING] /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-rest/src/main/java/io/camunda/zeebe/gateway/rest/config/JacksonConfig.java:[189,25] org.springframework.http.converter.json.Jackson2ObjectMapperBuilder in org.springframework.http.converter.json has been deprecated and marked for removal
+[WARNING] /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-rest/src/main/java/io/camunda/zeebe/gateway/rest/controller/AgentInstanceController.java: unknown enum constant org.immutables.value.Value.Style.ValidationMethod.NONE
+  reason: class file for org.immutables.value.Value$Style$ValidationMethod not found
+[WARNING] /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-rest/src/main/java/io/camunda/zeebe/gateway/rest/controller/AgentInstanceController.java: unknown enum constant org.immutables.annotate.InjectAnnotation.Where.BUILDER_TYPE
+  reason: class file for org.immutables.annotate.InjectAnnotation$Where not found
+[WARNING] /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-rest/src/main/java/io/camunda/zeebe/gateway/rest/controller/AgentInstanceController.java: unknown enum constant org.immutables.annotate.InjectAnnotation.Where.IMMUTABLE_TYPE
+[INFO] /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-rest/src/main/java/io/camunda/zeebe/gateway/rest/GlobalControllerExceptionHandler.java: /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-rest/src/main/java/io/camunda/zeebe/gateway/rest/GlobalControllerExceptionHandler.java uses or overrides a deprecated API.
+[INFO] /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-rest/src/main/java/io/camunda/zeebe/gateway/rest/GlobalControllerExceptionHandler.java: Recompile with -Xlint:deprecation for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Camunda BOM 8.11.0-SNAPSHOT:
+[INFO] 
+[INFO] Camunda BOM ........................................ SUCCESS [  2.691 s]
+[INFO] Zeebe Build Tools .................................. SUCCESS [  1.195 s]
+[INFO] Zeebe Parent ....................................... SUCCESS [  0.510 s]
+[INFO] Camunda SDK Library Parent ......................... SUCCESS [  0.037 s]
+[INFO] Zeebe BPMN model API ............................... SUCCESS [  7.143 s]
+[INFO] Camunda Cluster .................................... SUCCESS [  1.786 s]
+[INFO] Camunda Spring Utils ............................... SUCCESS [  1.911 s]
+[INFO] Zeebe Gateway Protocol ............................. SUCCESS [  0.149 s]
+[INFO] Zeebe Gateway Protocol Implementation .............. SUCCESS [ 10.052 s]
+[INFO] Camunda Security Parent ............................ SUCCESS [  0.019 s]
+[INFO] Camunda Security Protocol .......................... SUCCESS [  0.779 s]
+[INFO] Zeebe Protocol ..................................... SUCCESS [ 10.470 s]
+[INFO] Camunda Client Java ................................ SUCCESS [ 18.037 s]
+[INFO] Camunda Search Domain .............................. SUCCESS [  2.746 s]
+[INFO] Camunda Search Parent .............................. SUCCESS [  0.013 s]
+[INFO] Camunda Search Client - Reader ..................... SUCCESS [  0.658 s]
+[INFO] Camunda Search Client .............................. SUCCESS [  1.211 s]
+[INFO] Zeebe Util ......................................... SUCCESS [  2.925 s]
+[INFO] Zeebe Atomix Parent Pom ............................ SUCCESS [  0.013 s]
+[INFO] Zeebe Atomix Utilities ............................. SUCCESS [  1.443 s]
+[INFO] Zeebe Scheduler .................................... SUCCESS [  1.548 s]
+[INFO] Zeebe Exporter API ................................. SUCCESS [  1.155 s]
+[INFO] Zeebe Test Util .................................... SUCCESS [  1.217 s]
+[INFO] Zeebe Snapshots .................................... SUCCESS [  1.592 s]
+[INFO] Zeebe Journal ...................................... SUCCESS [  2.272 s]
+[INFO] Zeebe Atomix Cluster ............................... SUCCESS [  3.437 s]
+[INFO] Zeebe Dynamic Cluster Configuration ................ SUCCESS [  4.471 s]
+[INFO] Zeebe Msgpack Core ................................. SUCCESS [  0.858 s]
+[INFO] Zeebe Msgpack Value ................................ SUCCESS [  1.093 s]
+[INFO] Zeebe Auth ......................................... SUCCESS [  1.493 s]
+[INFO] Zeebe Protocol Implementation ...................... SUCCESS [  2.975 s]
+[INFO] Zeebe Transport .................................... SUCCESS [  2.659 s]
+[INFO] Zeebe Protocol AssertJ Assertions .................. SUCCESS [  4.961 s]
+[INFO] Zeebe Protocol Test Util ........................... SUCCESS [  0.881 s]
+[INFO] Zeebe Broker Client ................................ SUCCESS [  0.870 s]
+[INFO] Zeebe Gateway ...................................... SUCCESS [  1.026 s]
+[INFO] Zeebe DB ........................................... SUCCESS [  3.314 s]
+[INFO] Zeebe Logstreams ................................... SUCCESS [  1.345 s]
+[INFO] Zeebe Stream Platform .............................. SUCCESS [  1.859 s]
+[INFO] Zeebe Backup ....................................... SUCCESS [  1.528 s]
+[INFO] Zeebe Rebalance .................................... SUCCESS [  1.544 s]
+[INFO] Camunda Document Store Parent ...................... SUCCESS [  0.012 s]
+[INFO] Camunda Document Store API ......................... SUCCESS [  0.802 s]
+[INFO] Camunda Document Store GCP module .................. SUCCESS [  1.683 s]
+[INFO] Camunda Secret Store ............................... SUCCESS [  0.014 s]
+[INFO] Camunda Secret Store API ........................... SUCCESS [  3.104 s]
+[INFO] Camunda Security Core .............................. SUCCESS [  1.723 s]
+[INFO] Camunda Service .................................... SUCCESS [  1.110 s]
+[INFO] Camunda Authentication ............................. SUCCESS [  2.103 s]
+[INFO] Camunda Search Client Plugin ....................... SUCCESS [  0.643 s]
+[INFO] Camunda Search Client - Connect .................... SUCCESS [  3.755 s]
+[INFO] Zeebe Gateway gRPC ................................. SUCCESS [  0.787 s]
+[INFO] Camunda Gateway Model .............................. SUCCESS [ 36.038 s]
+[INFO] Camunda Security Validation ........................ SUCCESS [  2.327 s]
+[INFO] Camunda Gateway Mapping for HTTP ................... SUCCESS [  1.514 s]
+[INFO] Zeebe Gateway REST API server ...................... SUCCESS [  4.522 s]
+[INFO] Camunda Spring Boot Protobuf Compatibility ......... SUCCESS [  0.276 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:06 min (Wall Clock)
+[INFO] Finished at: 2026-10-05T17:31:48Z
+[INFO] ------------------------------------------------------------------------

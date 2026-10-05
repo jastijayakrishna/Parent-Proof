@@ -1,0 +1,71 @@
+nceController.java: unknown enum constant org.immutables.annotate.InjectAnnotation.Where.BUILDER_TYPE
+  reason: class file for org.immutables.annotate.InjectAnnotation$Where not found
+[WARNING] /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-rest/src/main/java/io/camunda/zeebe/gateway/rest/controller/AgentInstanceController.java: unknown enum constant org.immutables.annotate.InjectAnnotation.Where.IMMUTABLE_TYPE
+[INFO] /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-rest/src/main/java/io/camunda/zeebe/gateway/rest/GlobalControllerExceptionHandler.java: /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-rest/src/main/java/io/camunda/zeebe/gateway/rest/GlobalControllerExceptionHandler.java uses or overrides a deprecated API.
+[INFO] /home/runner/work/_temp/src-camunda-zeebe/zeebe/gateway-rest/src/main/java/io/camunda/zeebe/gateway/rest/GlobalControllerExceptionHandler.java: Recompile with -Xlint:deprecation for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Camunda BOM 8.11.0-SNAPSHOT:
+[INFO] 
+[INFO] Camunda BOM ........................................ SUCCESS [  0.484 s]
+[INFO] Zeebe Build Tools .................................. SUCCESS [  0.608 s]
+[INFO] Zeebe Parent ....................................... SUCCESS [  0.460 s]
+[INFO] Camunda SDK Library Parent ......................... SUCCESS [  0.021 s]
+[INFO] Zeebe BPMN model API ............................... SUCCESS [  8.335 s]
+[INFO] Camunda Cluster .................................... SUCCESS [  1.313 s]
+[INFO] Camunda Spring Utils ............................... SUCCESS [  1.829 s]
+[INFO] Zeebe Gateway Protocol ............................. SUCCESS [  0.087 s]
+[INFO] Zeebe Gateway Protocol Implementation .............. SUCCESS [ 11.542 s]
+[INFO] Camunda Security Parent ............................ SUCCESS [  0.023 s]
+[INFO] Camunda Security Protocol .......................... SUCCESS [  1.038 s]
+[INFO] Zeebe Protocol ..................................... SUCCESS [ 11.266 s]
+[INFO] Camunda Client Java ................................ SUCCESS [ 18.577 s]
+[INFO] Camunda Search Domain .............................. SUCCESS [  3.479 s]
+[INFO] Camunda Search Parent .............................. SUCCESS [  0.019 s]
+[INFO] Camunda Search Client - Reader ..................... SUCCESS [  1.203 s]
+[INFO] Camunda Search Client .............................. SUCCESS [  1.127 s]
+[INFO] Zeebe Util ......................................... SUCCESS [  2.900 s]
+[INFO] Zeebe Atomix Parent Pom ............................ SUCCESS [  0.025 s]
+[INFO] Zeebe Atomix Utilities ............................. SUCCESS [  1.137 s]
+[INFO] Zeebe Scheduler .................................... SUCCESS [  1.633 s]
+[INFO] Zeebe Exporter API ................................. SUCCESS [  0.843 s]
+[INFO] Zeebe Test Util .................................... SUCCESS [  1.098 s]
+[INFO] Zeebe Snapshots .................................... SUCCESS [  1.814 s]
+[INFO] Zeebe Journal ...................................... SUCCESS [  2.374 s]
+[INFO] Zeebe Atomix Cluster ............................... SUCCESS [  2.620 s]
+[INFO] Zeebe Dynamic Cluster Configuration ................ SUCCESS [  4.585 s]
+[INFO] Zeebe Msgpack Core ................................. SUCCESS [  1.220 s]
+[INFO] Zeebe Msgpack Value ................................ SUCCESS [  1.045 s]
+[INFO] Zeebe Auth ......................................... SUCCESS [  1.013 s]
+[INFO] Zeebe Protocol Implementation ...................... SUCCESS [  1.526 s]
+[INFO] Zeebe Transport .................................... SUCCESS [  2.636 s]
+[INFO] Zeebe Protocol AssertJ Assertions .................. SUCCESS [  3.875 s]
+[INFO] Zeebe Protocol Test Util ........................... SUCCESS [  0.588 s]
+[INFO] Zeebe Broker Client ................................ SUCCESS [  1.272 s]
+[INFO] Zeebe Gateway ...................................... SUCCESS [  0.949 s]
+[INFO] Zeebe DB ........................................... SUCCESS [  1.337 s]
+[INFO] Zeebe Logstreams ................................... SUCCESS [  0.897 s]
+[INFO] Zeebe Stream Platform .............................. SUCCESS [  2.188 s]
+[INFO] Zeebe Backup ....................................... SUCCESS [  1.455 s]
+[INFO] Zeebe Rebalance .................................... SUCCESS [  1.879 s]
+[INFO] Camunda Document Store Parent ...................... SUCCESS [  0.044 s]
+[INFO] Camunda Document Store API ......................... SUCCESS [  0.789 s]
+[INFO] Camunda Document Store GCP module .................. SUCCESS [  2.225 s]
+[INFO] Camunda Secret Store ............................... SUCCESS [  0.020 s]
+[INFO] Camunda Secret Store API ........................... SUCCESS [  3.072 s]
+[INFO] Camunda Security Core .............................. SUCCESS [  1.817 s]
+[INFO] Camunda Service .................................... SUCCESS [  0.893 s]
+[INFO] Camunda Authentication ............................. SUCCESS [  0.647 s]
+[INFO] Camunda Search Client Plugin ....................... SUCCESS [  1.064 s]
+[INFO] Camunda Search Client - Connect .................... SUCCESS [  0.980 s]
+[INFO] Zeebe Gateway gRPC ................................. SUCCESS [  0.782 s]
+[INFO] Camunda Gateway Model .............................. SUCCESS [ 36.709 s]
+[INFO] Camunda Security Validation ........................ SUCCESS [  0.775 s]
+[INFO] Camunda Gateway Mapping for HTTP ................... SUCCESS [  1.789 s]
+[INFO] Zeebe Gateway REST API server ...................... SUCCESS [  0.979 s]
+[INFO] Camunda Spring Boot Protobuf Compatibility ......... SUCCESS [  0.022 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  58.779 s (Wall Clock)
+[INFO] Finished at: 2026-10-05T17:32:49Z
+[INFO] ------------------------------------------------------------------------

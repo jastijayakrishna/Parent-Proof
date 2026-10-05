@@ -1,11 +1,11 @@
 {
  "name": "camunda-zeebe",
- "cold_seconds": 239,
+ "cold_seconds": 69,
  "cold_exit": 0,
- "warm_clean_seconds": 69,
+ "warm_clean_seconds": 60,
  "warm_exit": 0,
- "class_dirs": 41,
- "classes": 8282,
+ "class_dirs": 48,
+ "classes": 13067,
  "dirs": [
   {
    "dir": "build-tools/target/classes",
@@ -14,6 +14,10 @@
   {
    "dir": "cluster/target/classes",
    "classes": 8
+  },
+  {
+   "dir": "security/security-validation/target/classes",
+   "classes": 1
   },
   {
    "dir": "security/security-protocol/target/classes",
@@ -32,8 +36,16 @@
    "classes": 16
   },
   {
+   "dir": "search/search-client-plugin/target/classes",
+   "classes": 2
+  },
+  {
    "dir": "search/search-client-reader/target/classes",
    "classes": 51
+  },
+  {
+   "dir": "search/search-client-connect/target/classes",
+   "classes": 22
   },
   {
    "dir": "search/search-client/target/classes",
@@ -52,8 +64,20 @@
    "classes": 19
   },
   {
+   "dir": "gateways/gateway-mapping-http/target/classes",
+   "classes": 84
+  },
+  {
+   "dir": "gateways/gateway-model/target/classes",
+   "classes": 4472
+  },
+  {
    "dir": "secret-store/secret-store-api/target/classes",
    "classes": 27
+  },
+  {
+   "dir": "authentication/target/classes",
+   "classes": 52
   },
   {
    "dir": "clients/java/target/classes",
@@ -90,6 +114,10 @@
   {
    "dir": "zeebe/msgpack-value/target/classes",
    "classes": 33
+  },
+  {
+   "dir": "zeebe/gateway-rest/target/classes",
+   "classes": 152
   },
   {
    "dir": "zeebe/transport/target/classes",
