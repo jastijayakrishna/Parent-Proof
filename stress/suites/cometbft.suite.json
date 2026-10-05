@@ -1,0 +1,19 @@
+{
+  "name": "cometbft",
+  "description": "Stress history (stress/PREREG.md): every pin bump of the provider module in the consumer's history since the chosen day; the compiler judges every one. CometBFT upgrades of the Cosmos SDK (gogoproto).",
+  "provider": {
+    "name": "cometbft",
+    "repo": "cometbft/cometbft",
+    "url": "https://github.com/cometbft/cometbft.git",
+    "module": "github.com/cometbft/cometbft"
+  },
+  "consumers": {
+    "cosmos-sdk": {
+      "repo": "cosmos/cosmos-sdk",
+      "url": "https://github.com/cosmos/cosmos-sdk.git"
+    }
+  },
+  "windows": "cometbft.jsonl",
+  "workers": 2,
+  "proof": "CometBFT upgrades of the Cosmos SDK (gogoproto)"
+}

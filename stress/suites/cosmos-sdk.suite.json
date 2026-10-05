@@ -1,0 +1,19 @@
+{
+  "name": "cosmos-sdk",
+  "description": "Stress history (stress/PREREG.md): every pin bump of the provider module in the consumer's history since the chosen day; the compiler judges every one. Cosmos SDK upgrades of Gaia (gogoproto, amino JSON).",
+  "provider": {
+    "name": "cosmos-sdk",
+    "repo": "cosmos/cosmos-sdk",
+    "url": "https://github.com/cosmos/cosmos-sdk.git",
+    "module": "github.com/cosmos/cosmos-sdk"
+  },
+  "consumers": {
+    "gaia": {
+      "repo": "cosmos/gaia",
+      "url": "https://github.com/cosmos/gaia.git"
+    }
+  },
+  "windows": "cosmos-sdk.jsonl",
+  "workers": 2,
+  "proof": "Cosmos SDK upgrades of Gaia (gogoproto, amino JSON)"
+}

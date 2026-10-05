@@ -1,0 +1,23 @@
+{
+  "name": "csi-spec",
+  "description": "Stress history (stress/PREREG.md): every pin bump of the provider module in the consumer's history since the chosen day; the compiler judges every one. CSI spec upgrades of two Kubernetes CSI sidecars.",
+  "provider": {
+    "name": "csi-spec",
+    "repo": "container-storage-interface/spec",
+    "url": "https://github.com/container-storage-interface/spec.git",
+    "module": "github.com/container-storage-interface/spec"
+  },
+  "consumers": {
+    "external-provisioner": {
+      "repo": "kubernetes-csi/external-provisioner",
+      "url": "https://github.com/kubernetes-csi/external-provisioner.git"
+    },
+    "external-attacher": {
+      "repo": "kubernetes-csi/external-attacher",
+      "url": "https://github.com/kubernetes-csi/external-attacher.git"
+    }
+  },
+  "windows": "csi-spec.jsonl",
+  "workers": 2,
+  "proof": "CSI spec upgrades of two Kubernetes CSI sidecars"
+}

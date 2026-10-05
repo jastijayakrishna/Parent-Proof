@@ -1,0 +1,132 @@
+# On demand (a push of stress/java-request.txt): the Java part of the stress
+# test (stress/PREREG.md). Every window of each project of the requested set
+# is built with the contract before the change, decided by the pinned
+# verifier, then built again from clean with the contract after it, and the
+# compiler's errors judge the decision (stress/java/harness.py). Shards come
+# from each project's `shards` in stress/java/projects.json; every job aims for
+# 20 minutes. Results are committed to stress/results/java/.
+name: stress-java
+on:
+  push:
+    paths:
+      - stress/java-request.txt
+  workflow_dispatch:
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      jobs: ${{ steps.p.outputs.jobs }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - id: p
+        run: |
+          set=$(sed -n 's/^set=//p' stress/java-request.txt)
+          only=$(sed -n 's/^only=//p' stress/java-request.txt | tr -d ' ')
+          modes=$(sed -n 's/^modes=//p' stress/java-request.txt | tr -d ' ')
+          jobs=$(python3 stress/java/plan.py "${set:-dev}" "$only" "${modes:-history,scan}")
+          echo "$jobs" | jq -r '.[] | "\(.project) \(.mode) \(.shard)"'
+          echo "jobs=$jobs" >> "$GITHUB_OUTPUT"
+
+  run:
+    needs: plan
+    if: needs.plan.outputs.jobs != '[]'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        job: ${{ fromJSON(needs.plan.outputs.jobs) }}
+    name: "${{ matrix.job.project }} ${{ matrix.job.mode }} ${{ matrix.job.shard }}"
+    env:
+      P: ${{ matrix.job.project }}
+      MODE: ${{ matrix.job.mode }}
+      SHARD: ${{ matrix.job.shard }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Restore the dependency caches
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: |
+            ~/.m2/repository
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: java-${{ matrix.job.project }}-${{ github.run_id }}
+          restore-keys: java-${{ matrix.job.project }}-
+      - name: Decide and judge this shard
+        run: |
+          gunzip -c bin/verifier-linux-amd64.gz > "$RUNNER_TEMP/verifier" && chmod +x "$RUNNER_TEMP/verifier"
+          tag=${SHARD/\//of}
+          dest="stress/results/java/$P/$MODE"
+          mkdir -p "$dest"
+          rm -f "$dest/results-$tag.jsonl"
+          started=$(date +%s)
+          set +e
+          timeout 40m python3 stress/java/harness.py run "$P" "$MODE" --shard "$SHARD" --out "$dest/results-$tag.jsonl" 2>&1 | tee "$RUNNER_TEMP/run.log"
+          rc=${PIPESTATUS[0]}
+          { head -1 bin/VERSION; "$RUNNER_TEMP/verifier" version 2>&1 | head -1; sha256sum "$RUNNER_TEMP/verifier" | cut -c1-64; } > "$dest/verifier.txt"
+          echo "{\"shard\": \"$SHARD\", \"exit\": $rc, \"seconds\": $(( $(date +%s) - started ))}" > "$dest/job-$tag.json"
+          tail -c 6000 "$RUNNER_TEMP/run.log" > "$dest/run-$tag.log"
+          summary=$(grep -cE ' verifier=' "$RUNNER_TEMP/run.log"); missed=$(grep -E 'build=GO compiler=breaks' "$RUNNER_TEMP/run.log" | head -3 | tr '\n' ' ')
+          echo "::notice title=$P $MODE $SHARD::$summary windows, exit $rc, $(( $(date +%s) - started )) s. ${missed:+MISSED: $missed}"
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        if: always()
+        with:
+          name: java-records-${{ matrix.job.project }}-${{ matrix.job.mode }}-${{ strategy.job-index }}
+          path: stress/results/java/${{ matrix.job.project }}/${{ matrix.job.mode }}/records/
+          if-no-files-found: ignore
+          retention-days: 90
+      - name: Save the dependency caches
+        if: always() && startsWith(matrix.job.shard, '1/')
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: |
+            ~/.m2/repository
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: java-${{ matrix.job.project }}-${{ github.run_id }}-${{ matrix.job.mode }}
+      - name: Commit this shard's results
+        if: always()
+        run: |
+          dest="stress/results/java/$P/$MODE"
+          rm -rf "$dest/records"
+          git config user.name "proto-shadow"
+          git config user.email "proto-shadow@users.noreply.github.com"
+          git add "$dest"
+          git commit -q -m "Stress Java: $P $MODE $SHARD" || exit 0
+          for i in 1 2 3 4 5 6; do
+            if git pull -q --rebase -X theirs origin main && git push -q; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          exit 1
+
+  score:
+    needs: run
+    if: always()
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - name: Rebuild STRESS.md
+        run: |
+          git config user.name "proto-shadow"
+          git config user.email "proto-shadow@users.noreply.github.com"
+          for i in 1 2 3 4 5 6; do
+            git pull -q --rebase origin main || { git rebase --abort 2>/dev/null; sleep 5; continue; }
+            python3 stress/score.py > STRESS.md
+            git add STRESS.md
+            git diff --cached --quiet && exit 0
+            git commit -q -m "STRESS.md of $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push -q && exit 0
+            git reset -q --soft HEAD~1
+            sleep $((i * 5))
+          done
+          exit 1

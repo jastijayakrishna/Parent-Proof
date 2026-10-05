@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Prints, as a JSON array, the open pull requests of the providers in
-# corpus.json that change a .proto file, were updated in the last DAYS days,
+# corpus.json, and of stress/corpus.json's sets in $STRESS_SETS (default dev),
+# that change a .proto file, were updated in the last DAYS days,
 # and have no prediction yet for their current head. At most MAX_PRS, taken
 # round-robin (each project's newest first) so every project gets its turn.
 set -euo pipefail
@@ -39,6 +40,6 @@ while IFS= read -r e; do
       '. + [$r + {eco: $eco, key: $key, provider: $prov, consumer: $cons, consumer_sha: $csha, rank: $rank}]' <<<"$all")
     rank=$((rank + 1))
   done < <(jq -c --arg s "$since" '.[] | select(.updated_at >= $s and (.draft | not)) | {n: .number, head: .head.sha, base: .base.sha, title: .title, url: .html_url, updated: .updated_at}' <<<"$prs")
-done < <(jq -c '.ecosystems[]' corpus.json)
+done < <(jq -c '.ecosystems[]' corpus.json; jq -c --arg sets "${STRESS_SETS:-dev}" '.ecosystems[] | select(.set as $s | $sets | split(",") | index($s) != null)' stress/corpus.json)
 
 jq -c --argjson max "$max" 'to_entries | sort_by(.value.rank, .key) | map(.value | del(.rank)) | .[:$max]' <<<"$all"

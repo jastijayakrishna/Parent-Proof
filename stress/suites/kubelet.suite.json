@@ -1,0 +1,19 @@
+{
+  "name": "kubelet",
+  "description": "Stress history (stress/PREREG.md): every pin bump of the provider module in the consumer's history since the chosen day; the compiler judges every one. kubelet API upgrades of NVIDIA's device plugin.",
+  "provider": {
+    "name": "kubelet",
+    "repo": "kubernetes/kubelet",
+    "url": "https://github.com/kubernetes/kubelet.git",
+    "module": "k8s.io/kubelet"
+  },
+  "consumers": {
+    "k8s-device-plugin": {
+      "repo": "NVIDIA/k8s-device-plugin",
+      "url": "https://github.com/NVIDIA/k8s-device-plugin.git"
+    }
+  },
+  "windows": "kubelet.jsonl",
+  "workers": 2,
+  "proof": "kubelet API upgrades of NVIDIA's device plugin"
+}

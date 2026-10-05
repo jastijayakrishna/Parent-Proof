@@ -5,10 +5,12 @@
 # pinned verifier. Writes out/{windows,results}-<shard>.jsonl and log tails.
 set -uo pipefail
 
-# Started by a push of history/request.txt: its lines say only=... and since=...
-if [ "${GITHUB_EVENT_NAME:-}" = push ] && [ -f history/request.txt ]; then
-  ONLY=$(sed -n 's/^only=//p' history/request.txt)
-  SINCE=$(sed -n 's/^since=//p' history/request.txt)
+# Started by a push of the request file ($REQUEST, default history/request.txt):
+# its lines say only=... and since=...
+request=${REQUEST:-history/request.txt}
+if [ "${GITHUB_EVENT_NAME:-}" = push ] && [ -f "$request" ]; then
+  ONLY=$(sed -n 's/^only=//p' "$request")
+  SINCE=$(sed -n 's/^since=//p' "$request")
   SINCE=${SINCE:-2023-01-01}
 fi
 
@@ -26,19 +28,21 @@ gunzip -c bin/verifier-linux-amd64.gz > "$bin"
 chmod +x "$bin"
 
 suite="$tmp/suite/$SUITE.suite.json"
-cp "history/suites/$SUITE.suite.json" "$suite"
+cp "${SUITE_DIR:-history/suites}/$SUITE.suite.json" "$suite"
 
 echo "mining $SUITE -> $CONSUMER since $SINCE, shard $shard"
-timeout 200m "$bin" suite build --suite "$suite" --oss "$tmp/oss" --work "$tmp/build" \
+timeout "${BUILD_TIMEOUT:-200m}" "$bin" suite build --suite "$suite" --oss "$tmp/oss" --work "$tmp/build" \
   --consumers "$CONSUMER" --since "$SINCE" --additive "${ADDITIVE:-6}" --workers 2 --shard "$shard" > "$tmp/build.log" 2>&1
 echo "suite build exit $?"
 tail -c 6000 "$tmp/build.log" > "out/build-$tag.log"
+# Every window mined and compiled, so a shard cut short shows what it skipped.
+grep -E 'msg=(mined|window) ' "$tmp/build.log" > "out/build-$tag.windows.log" || true
 cp "$tmp/suite/$SUITE.jsonl" "out/windows-$tag.jsonl" 2>/dev/null || : > "out/windows-$tag.jsonl"
 echo "windows mined: $(wc -l < "out/windows-$tag.jsonl")"
 
 : > "out/results-$tag.jsonl"
 if [ -s "out/windows-$tag.jsonl" ]; then
-  timeout 120m "$bin" gate --suite "$suite" --oss "$tmp/oss" --work "$tmp/gate" --workers 2 \
+  timeout "${GATE_TIMEOUT:-120m}" "$bin" gate --suite "$suite" --oss "$tmp/oss" --work "$tmp/gate" --workers 2 \
     --consumers "$CONSUMER" --out "out/results-$tag.jsonl" --timeout 20m > "$tmp/gate.log" 2>&1
   echo "gate exit $?"
   tail -c 6000 "$tmp/gate.log" > "out/gate-$tag.log"

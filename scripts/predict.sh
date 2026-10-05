@@ -18,8 +18,10 @@ bin="$tmp/verifier"
 gunzip -c bin/verifier-linux-amd64.gz > "$bin"
 chmod +x "$bin"
 
-purl=$(jq -r --arg eco "$eco" '.ecosystems[] | select(.name == $eco) | .provider.url' corpus.json)
-curl_=$(jq -r --arg eco "$eco" '.ecosystems[] | select(.name == $eco) | .consumer.url' corpus.json)
+# The ecosystem's entry, from corpus.json or the stress test's corpus.
+entry=$(jq -c --arg eco "$eco" '.ecosystems[] | select(.name == $eco)' corpus.json stress/corpus.json | head -1)
+purl=$(jq -r .provider.url <<<"$entry")
+curl_=$(jq -r .consumer.url <<<"$entry")
 : > "$tmp/scan.out"
 
 # A pull request's head is reachable only from its pull ref: fetch it into the
@@ -41,10 +43,9 @@ whole=$(git -C "$oss/p-$eco" commit-tree "$head^{tree}" -p "$mbase" -m "pull req
 
 # The corpus entry of this ecosystem, pinned to that commit and the consumer's
 # commit, deciding that one change.
-jq --arg eco "$eco" --arg whole "$whole" --arg csha "$csha" \
+jq -n --argjson e "$entry" --arg whole "$whole" --arg csha "$csha" \
   '{description: "one pull request", limit: 1, max_unknown_percent: 100,
-    ecosystems: [.ecosystems[] | select(.name == $eco) | .provider.commit = $whole | .consumer.commit = $csha]}' \
-  corpus.json > "$tmp/corpus.json"
+    ecosystems: [$e | .provider.commit = $whole | .consumer.commit = $csha]}' > "$tmp/corpus.json"
 
 started=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 : > "$tmp/scan.jsonl"

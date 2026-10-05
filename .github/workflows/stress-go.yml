@@ -1,0 +1,169 @@
+# On demand (a push of stress/go-request.txt): the Go part of the stress test
+# (stress/PREREG.md). History: every pin bump of each stress/suites pair since
+# `since`, every one judged by the Go compiler and decided by the pinned
+# verifier, in the shards of stress/go-plan.json. Scan: the last 20 contract
+# commits of each stress/corpus.json ecosystem, with the compiler. Only the
+# set the request names (dev, holdout or all). Results go to stress/results/go/.
+name: stress-go
+on:
+  push:
+    paths:
+      - stress/go-request.txt
+  workflow_dispatch:
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      history: ${{ steps.p.outputs.history }}
+      scan: ${{ steps.p.outputs.scan }}
+      since: ${{ steps.p.outputs.since }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - id: p
+        run: |
+          r=stress/go-request.txt
+          set=$(sed -n 's/^set=//p' $r); set=${set:-dev}
+          only=$(sed -n 's/^only=//p' $r | tr -d ' ')
+          since=$(sed -n 's/^since=//p' $r); since=${since:-2023-01-01}
+          parts=$(sed -n 's/^parts=//p' $r | tr -d ' '); parts=${parts:-history,scan}
+          history=$(jq -c --arg set "$set" --arg only "$only" '
+            [.history[] | select($set == "all" or .set == $set)
+             | select(.suite as $s | .consumer as $c | $only == "" or (($only | split(",")) | (index($s) != null or index($c) != null)))
+             | . as $p | range(1; $p.shards + 1) | {suite: $p.suite, consumer: $p.consumer, shard: "\(.)/\($p.shards)"}]' stress/go-plan.json)
+          scan=$(jq -c --arg set "$set" --arg only "$only" '
+            [.ecosystems[] | select($set == "all" or .set == $set)
+             | select(.name as $n | $only == "" or (($only | split(",")) | index($n) != null)) | .name]' stress/corpus.json)
+          [[ ",$parts," == *",history,"* ]] || history='[]'
+          [[ ",$parts," == *",scan,"* ]] || scan='[]'
+          echo "history: $history"; echo "scan: $scan"
+          { echo "history=$history"; echo "scan=$scan"; echo "since=$since"; } >> "$GITHUB_OUTPUT"
+
+  history:
+    needs: plan
+    if: needs.plan.outputs.history != '[]'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        job: ${{ fromJSON(needs.plan.outputs.history) }}
+    name: "history ${{ matrix.job.suite }} -> ${{ matrix.job.consumer }} ${{ matrix.job.shard }}"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: stable
+          cache: false
+      - run: echo "::remove-matcher owner=go::"
+      - name: Mine, judge and decide this shard
+        env:
+          SUITE: ${{ matrix.job.suite }}
+          CONSUMER: ${{ matrix.job.consumer }}
+          SHARD: ${{ matrix.job.shard }}
+          SINCE: ${{ needs.plan.outputs.since }}
+          SUITE_DIR: stress/suites
+          REQUEST: stress/none
+          ADDITIVE: "100000"
+          BUILD_TIMEOUT: 35m
+          GATE_TIMEOUT: 20m
+          GOTOOLCHAIN: auto
+        run: |
+          started=$(date +%s)
+          bash scripts/history.sh
+          echo "{\"shard\": \"$SHARD\", \"seconds\": $(( $(date +%s) - started ))}" > "out/job-${SHARD/\//of}.json"
+      - name: Commit this shard's results
+        if: always()
+        env:
+          SUITE: ${{ matrix.job.suite }}
+          CONSUMER: ${{ matrix.job.consumer }}
+          SHARD: ${{ matrix.job.shard }}
+        run: |
+          dest="stress/results/go/history/$SUITE/$CONSUMER"
+          mkdir -p "$dest"
+          cp out/* "$dest/" 2>/dev/null || true
+          git config user.name "proto-shadow"
+          git config user.email "proto-shadow@users.noreply.github.com"
+          git add stress/results
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Stress Go history: $SUITE -> $CONSUMER ($SHARD)"
+          for i in 1 2 3 4 5 6; do
+            if git pull -q --rebase -X theirs origin main && git push -q; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          exit 1
+
+  scan:
+    needs: plan
+    if: needs.plan.outputs.scan != '[]'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        ecosystem: ${{ fromJSON(needs.plan.outputs.scan) }}
+    name: "scan ${{ matrix.ecosystem }} with the compiler"
+    env:
+      GOTOOLCHAIN: auto
+      ECO: ${{ matrix.ecosystem }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: stable
+          cache: false
+      - run: echo "::remove-matcher owner=go::"
+      - name: Scan with the compiler and commit it
+        run: |
+          set +e
+          dest="stress/results/go/scan/$ECO"
+          gunzip -c bin/verifier-linux-amd64.gz > "$RUNNER_TEMP/verifier" && chmod +x "$RUNNER_TEMP/verifier"
+          mkdir -p "$dest"
+          started=$(date +%s)
+          timeout 50m "$RUNNER_TEMP/verifier" gate scan --corpus stress/corpus.json --only "$ECO" --oracle --oss ~/scan/oss --work ~/scan/work --out "$dest/scan.jsonl" > "$RUNNER_TEMP/scan.out" 2>&1
+          echo "exit $? seconds $(( $(date +%s) - started ))" >> "$RUNNER_TEMP/scan.out"
+          tail -c 8000 "$RUNNER_TEMP/scan.out" > "$dest/scan.out"
+          head -1 bin/VERSION > "$dest/verifier.txt"
+          summary=$(grep -E "decisions|failed|disagree|exit" "$dest/scan.out" | head -4 | tr '\n' ' ' | cut -c1-900)
+          echo "::notice title=scan $ECO::$summary"
+          git config user.name "proto-shadow"
+          git config user.email "proto-shadow@users.noreply.github.com"
+          git add stress/results
+          git commit -q -m "Stress Go scan: $ECO with the compiler" || exit 0
+          for i in 1 2 3 4 5 6; do
+            if git pull -q --rebase -X theirs origin main && git push -q; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          exit 1
+
+  score:
+    needs: [history, scan]
+    if: always()
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - name: Rebuild STRESS.md
+        run: |
+          git config user.name "proto-shadow"
+          git config user.email "proto-shadow@users.noreply.github.com"
+          for i in 1 2 3 4 5 6; do
+            git pull -q --rebase origin main || { git rebase --abort 2>/dev/null; sleep 5; continue; }
+            python3 stress/score.py > STRESS.md
+            git add STRESS.md
+            git diff --cached --quiet && exit 0
+            git commit -q -m "STRESS.md of $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push -q && exit 0
+            git reset -q --soft HEAD~1
+            sleep $((i * 5))
+          done
+          exit 1

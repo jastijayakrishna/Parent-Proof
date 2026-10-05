@@ -1,0 +1,19 @@
+{
+  "name": "buildkit",
+  "description": "Stress history (stress/PREREG.md): every pin bump of the provider module in the consumer's history since the chosen day; the compiler judges every one. BuildKit upgrades of Docker Buildx.",
+  "provider": {
+    "name": "buildkit",
+    "repo": "moby/buildkit",
+    "url": "https://github.com/moby/buildkit.git",
+    "module": "github.com/moby/buildkit"
+  },
+  "consumers": {
+    "buildx": {
+      "repo": "docker/buildx",
+      "url": "https://github.com/docker/buildx.git"
+    }
+  },
+  "windows": "buildkit.jsonl",
+  "workers": 2,
+  "proof": "BuildKit upgrades of Docker Buildx"
+}

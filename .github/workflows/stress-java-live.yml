@@ -1,0 +1,104 @@
+# The open pull requests that change the contract of a Java project of the
+# stress test (stress/java/projects.json, sets in $SETS), each decided by the
+# pinned verifier before the project's own build judges it
+# (stress/java/harness.py, mode live). A pull request whose head already has a
+# record is skipped. Records go to stress/results/java-live/. It runs by hand
+# until the harness has passed its first runs; then hourly ("37 * * * *").
+name: stress-java-live
+on:
+  workflow_dispatch:
+    inputs:
+      sets:
+        description: "Project sets to watch (comma-separated)"
+        default: "dev,regression"
+permissions:
+  contents: write
+concurrency: stress-java-live
+
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    outputs:
+      prs: ${{ steps.p.outputs.prs }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - id: p
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SETS: ${{ inputs.sets || vars.STRESS_JAVA_LIVE_SETS || 'dev,regression' }}
+        run: |
+          prs=$(python3 stress/java/harness.py live-plan --done stress/results/java-live)
+          echo "$prs" | jq -r '.[] | "\(.project) #\(.pr.n) \(.pr.title)"'
+          echo "prs=$prs" >> "$GITHUB_OUTPUT"
+
+  decide:
+    needs: plan
+    if: needs.plan.outputs.prs != '[]'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        pr: ${{ fromJSON(needs.plan.outputs.prs) }}
+    name: "${{ matrix.pr.project }} #${{ matrix.pr.pr.n }}"
+    env:
+      P: ${{ matrix.pr.project }}
+      KEY: ${{ matrix.pr.key }}
+      PR: ${{ toJSON(matrix.pr.pr) }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: |
+            ~/.m2/repository
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: java-${{ matrix.pr.project }}-${{ github.run_id }}
+          restore-keys: java-${{ matrix.pr.project }}-
+      - name: Decide and judge the pull request
+        run: |
+          gunzip -c bin/verifier-linux-amd64.gz > "$RUNNER_TEMP/verifier" && chmod +x "$RUNNER_TEMP/verifier"
+          dest="stress/results/java-live/$P"
+          mkdir -p "$dest"
+          set +e
+          timeout 40m python3 stress/java/harness.py run "$P" live --pr "$PR" --out "$dest/$KEY.jsonl" 2>&1 | tail -20
+          head -1 bin/VERSION > "$dest/verifier.txt"
+          rm -rf "$dest/records"
+          git config user.name "proto-shadow"
+          git config user.email "proto-shadow@users.noreply.github.com"
+          git add "$dest"
+          git commit -q -m "Stress Java live: $P $KEY" || exit 0
+          for i in 1 2 3 4 5 6; do
+            if git pull -q --rebase -X theirs origin main && git push -q; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          exit 1
+
+  score:
+    needs: decide
+    if: always() && needs.plan.outputs.prs != '[]'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - name: Rebuild STRESS.md
+        run: |
+          git config user.name "proto-shadow"
+          git config user.email "proto-shadow@users.noreply.github.com"
+          for i in 1 2 3 4 5 6; do
+            git pull -q --rebase origin main || { git rebase --abort 2>/dev/null; sleep 5; continue; }
+            python3 stress/score.py > STRESS.md
+            git add STRESS.md
+            git diff --cached --quiet && exit 0
+            git commit -q -m "STRESS.md of $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push -q && exit 0
+            git reset -q --soft HEAD~1
+            sleep $((i * 5))
+          done
+          exit 1

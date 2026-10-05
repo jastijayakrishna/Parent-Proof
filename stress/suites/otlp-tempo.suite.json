@@ -1,0 +1,25 @@
+{
+  "name": "otlp-tempo",
+  "description": "Stress history (stress/PREREG.md): every pin bump of the provider module in the consumer's history since the chosen day; the compiler judges every one. OpenTelemetry OTLP upgrades of Grafana Tempo.",
+  "provider": {
+    "name": "proto-go",
+    "repo": "open-telemetry/opentelemetry-proto-go",
+    "url": "https://github.com/open-telemetry/opentelemetry-proto-go.git",
+    "module": "go.opentelemetry.io/proto/otlp",
+    "tag_prefix": "otlp/",
+    "contracts": {
+      "name": "opentelemetry-proto",
+      "url": "https://github.com/open-telemetry/opentelemetry-proto.git",
+      "path": "opentelemetry-proto"
+    }
+  },
+  "consumers": {
+    "tempo": {
+      "repo": "grafana/tempo",
+      "url": "https://github.com/grafana/tempo.git"
+    }
+  },
+  "windows": "otlp-tempo.jsonl",
+  "workers": 2,
+  "proof": "OpenTelemetry OTLP upgrades of Grafana Tempo"
+}

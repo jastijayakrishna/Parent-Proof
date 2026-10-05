@@ -230,7 +230,10 @@
           "scripts/proto.sh"
         ],
         "provider": "pingcap/kvproto",
-        "regex": "kvproto_hash=['\"]?([0-9a-f]{40})"
+        "regex": [
+          "^\\s*kvproto_hash=['\\\"]?([0-9a-f]{40})",
+          "^\\s*commits=\\(\\s*['\\\"]?([0-9a-f]{40})"
+        ]
       },
       "users": "",
       "jdk": "8",
@@ -241,7 +244,7 @@
         "history": 1,
         "scan": 2
       },
-      "since": "2018-01-01"
+      "since": "2019-01-01"
     },
     {
       "name": "java-control-plane",

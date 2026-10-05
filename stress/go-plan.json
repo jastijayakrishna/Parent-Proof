@@ -1,0 +1,12 @@
+{
+  "description": "The Go jobs of the stress test: each history pair split into shards so a job compiles and decides its share in under 30 minutes, and the scan of every stress/corpus.json ecosystem. Set dev runs first; holdout once after the fixes freeze (stress/PREREG.md).",
+  "history": [
+    {"suite": "csi-spec", "consumer": "external-provisioner", "shards": 1, "set": "dev"},
+    {"suite": "kubelet", "consumer": "k8s-device-plugin", "shards": 3, "set": "dev"},
+    {"suite": "cometbft", "consumer": "cosmos-sdk", "shards": 8, "set": "dev"},
+    {"suite": "csi-spec", "consumer": "external-attacher", "shards": 1, "set": "holdout"},
+    {"suite": "cosmos-sdk", "consumer": "gaia", "shards": 8, "set": "holdout"},
+    {"suite": "buildkit", "consumer": "buildx", "shards": 6, "set": "holdout"},
+    {"suite": "otlp-tempo", "consumer": "tempo", "shards": 3, "set": "holdout"}
+  ]
+}
