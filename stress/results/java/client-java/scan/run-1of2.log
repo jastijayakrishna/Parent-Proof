@@ -1,0 +1,11 @@
+client-java scan: 20 windows, shard 1/2 has 10
+eea846d2ab9e 2026-05-13 verifier=None build=None compiler=baseline_fails 20.4s 
+b2b3bb492278 2026-06-01 verifier=None build=None compiler=baseline_fails 12.8s 
+f8184e7702eb 2026-06-02 verifier=None build=None compiler=baseline_fails 12.0s 
+412e01458771 2026-06-09 verifier=None build=None compiler=baseline_fails 12.8s 
+b41e86365ce0 2026-06-22 verifier=None build=None compiler=baseline_fails 11.9s 
+683dad8fa368 2026-07-21 verifier=None build=None compiler=baseline_fails 12.6s 
+059694ae4472 2026-07-24 verifier=None build=None compiler=baseline_fails 12.6s 
+af1ad1bef5b9 2026-08-13 verifier=None build=None compiler=baseline_fails 12.3s 
+623e58e60fa9 2026-08-20 verifier=None build=None compiler=baseline_fails 12.3s 
+65b4e27a438d 2026-09-03 verifier=None build=None compiler=baseline_fails 12.0s 
