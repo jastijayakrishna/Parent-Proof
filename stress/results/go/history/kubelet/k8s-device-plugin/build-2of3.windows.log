@@ -1,1 +1,13 @@
-time=2026-10-05T17:35:55.035Z level=INFO msg=mined consumer=k8s-device-plugin pin_moves=17 to_compile=0
+time=2026-10-05T18:13:02.323Z level=INFO msg=skip consumer=k8s-device-plugin bump=3a43aeb1 old=v0.28.3 new=v0.29.2 reason=no_contract_change
+time=2026-10-05T18:13:02.333Z level=INFO msg=skip consumer=k8s-device-plugin bump=9e324b46 old=v0.29.2 new=v0.29.3 reason=no_contract_change
+time=2026-10-05T18:13:03.337Z level=INFO msg=skip consumer=k8s-device-plugin bump=8ec6c0da old=v0.30.2 new=v0.30.3 reason=no_contract_change
+time=2026-10-05T18:13:04.348Z level=INFO msg=skip consumer=k8s-device-plugin bump=215e5d16 old=v0.31.1 new=v0.31.3 reason=no_contract_change
+time=2026-10-05T18:13:04.422Z level=INFO msg=skip consumer=k8s-device-plugin bump=7a1f5dab old=v0.32.1 new=v0.32.3 reason=no_contract_change
+time=2026-10-05T18:13:04.533Z level=INFO msg=skip consumer=k8s-device-plugin bump=7101d0f8 old=v0.34.1 new=v0.34.2 reason=no_contract_change
+time=2026-10-05T18:13:04.603Z level=INFO msg=skip consumer=k8s-device-plugin bump=4a7a0ce0 old=v0.35.0 new=v0.35.1 reason=no_contract_change
+time=2026-10-05T18:13:04.613Z level=INFO msg=skip consumer=k8s-device-plugin bump=48cf6e4d old=v0.35.1 new=v0.35.2 reason=no_contract_change
+time=2026-10-05T18:13:04.668Z level=INFO msg=skip consumer=k8s-device-plugin bump=c6eb1283 old=v0.36.2 new=v0.36.3 reason=no_contract_change
+time=2026-10-05T18:13:04.668Z level=INFO msg=mined consumer=k8s-device-plugin pin_moves=17 to_compile=3 skipped=map[no_contract_change:9]
+time=2026-10-05T18:13:52.931Z level=INFO msg=window consumer=k8s-device-plugin bump=43445380 select=breaking breaking=26 compiler=baseline_fails
+time=2026-10-05T18:13:52.982Z level=INFO msg=window consumer=k8s-device-plugin bump=88865359 select=breaking breaking=18 compiler=baseline_fails
+time=2026-10-05T18:14:04.657Z level=INFO msg=window consumer=k8s-device-plugin bump=bf991bb5 select=breaking breaking=11 compiler=baseline_fails
