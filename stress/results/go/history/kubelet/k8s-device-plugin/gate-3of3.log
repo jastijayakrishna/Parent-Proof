@@ -1,7 +1,7 @@
-k8s-device-plugin 993fe2a2 UNKNOWN  source_build=GO      compiler=baseline_fails     7.0s replay=true 
-k8s-device-plugin 783fcaac GO       source_build=GO      compiler=baseline_fails    18.2s replay=true 
+k8s-device-plugin 993fe2a2 UNKNOWN  source_build=UNKNOWN compiler=baseline_fails     5.4s replay=true 
+k8s-device-plugin 783fcaac GO       source_build=GO      compiler=baseline_fails    14.3s replay=true 
 k8s-device-plugin/additive windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=2 (NO-GO 0, UNKNOWN 1, GO 1) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
 TOTAL                  windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=2 (NO-GO 0, UNKNOWN 1, GO 1) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
 
-2 windows in 18s with 2 workers; 0 differ from the baseline.
+2 windows in 14s with 2 workers; 0 differ from the baseline.
 verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
