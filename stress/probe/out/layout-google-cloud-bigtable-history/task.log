@@ -1,0 +1,212 @@
+/home/runner/work/Parent-Proof/Parent-Proof/stress/probe/layout.py:130: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  cutoff = (datetime.datetime.utcnow() - datetime.timedelta(days=30)).strftime("%Y-%m-%dT%H:%M:%SZ")
+{
+ "name": "google-cloud-bigtable-history",
+ "set": "holdout",
+ "consumer": {
+  "repo": "googleapis/java-bigtable",
+  "commit": "949c6965b14592eb6d7fa94854c62b62226f3682"
+ },
+ "head": "949c6965b14592eb6d7fa94854c62b62226f3682 2026-05-08T14:20:45-04:00",
+ "default_branch": "origin/main",
+ "history": {
+  "count": 254,
+  "with_proto_changes": 36,
+  "last": [
+   {
+    "commit": "ca240078ea4400cd071d796259ed4b8c9501a6f6",
+    "date": "2026-01-30",
+    "subject": "chore: Update generation configuration at Fri Jan 30 03:01:57 UTC 2026 (#2716)",
+    "files": 361,
+    "protos": 0
+   },
+   {
+    "commit": "52d5ffe421833e7106a2f2aaaa007565765f73a6",
+    "date": "2026-01-30",
+    "subject": "chore(main): release 2.72.0 (#2760)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "e0b2d6c9d9e1405b9f98b3c4111deb502abafd8e",
+    "date": "2026-02-06",
+    "subject": "chore(main): release 2.72.1-SNAPSHOT (#2767)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "d36e8979e1488b3afe841f02e871eceed572d7c1",
+    "date": "2026-02-09",
+    "subject": "chore(main): release 2.73.0 (#2774)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "92d50ea7d73c37c01e8f778a07a8cf034165d9ca",
+    "date": "2026-02-09",
+    "subject": "chore(main): release 2.73.1-SNAPSHOT (#2776)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "c20cca42d63bece2bfe8c8d416513059b6aa83d2",
+    "date": "2026-02-17",
+    "subject": "chore(main): release 2.73.1 (#2782)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "2498287673c0088cbf0d48270307559070fb72ad",
+    "date": "2026-02-18",
+    "subject": "chore(main): release 2.73.2-SNAPSHOT (#2787)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "f05a1a3b0bb730e62c349dc8a7a1a82b0cf00fa7",
+    "date": "2026-02-27",
+    "subject": "chore: Update generation configuration at Fri Feb 27 03:03:33 UTC 2026 (#2768)",
+    "files": 8,
+    "protos": 1
+   },
+   {
+    "commit": "8d75343b01f315d921917d19cd5e59062249ffe1",
+    "date": "2026-03-02",
+    "subject": "chore(main): release 2.74.0 (#2792)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "ab10c554e9441db6f45bf8fd6a4cb3bd809d46a0",
+    "date": "2026-03-02",
+    "subject": "chore(main): release 2.74.1-SNAPSHOT (#2831)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "7745013b421b7ba26f2822c64f6416a3a6a1fefc",
+    "date": "2026-03-24",
+    "subject": "chore(main): release 2.75.0 (#2832)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "60d6a71bcce0055f88f5de48af9ff8c7cbd04cee",
+    "date": "2026-03-24",
+    "subject": "chore(main): release 2.75.1-SNAPSHOT (#2852)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "181480a1d37cf05cc912416b017657ea113818c6",
+    "date": "2026-03-26",
+    "subject": "chore(main): release 2.75.1 (#2854)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "1e00ef2d39d23021ae07ebdf32c093b4b1fea57d",
+    "date": "2026-03-27",
+    "subject": "chore(main): release 2.75.2-SNAPSHOT (#2855)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "9345b359a1ee2e6f03cc26d50358bf0937b113a4",
+    "date": "2026-04-07",
+    "subject": "chore: Update generation configuration at Tue Apr  7 03:10:38 UTC 2026 (#2845)",
+    "files": 4,
+    "protos": 2
+   },
+   {
+    "commit": "9fcae33c80523e8eac752e4b43b2ed5ca3276bcf",
+    "date": "2026-04-08",
+    "subject": "chore(main): release 2.76.0 (#2856)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "29db0f2ded1b31f1eea58a16764899317dd7c1ce",
+    "date": "2026-04-09",
+    "subject": "chore(main): release 2.76.1-SNAPSHOT (#2866)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "d5565b5a3e7bfe56d799b9db3f1d90821694fc67",
+    "date": "2026-04-09",
+    "subject": "feat: add new session based protocol stack (#2862)",
+    "files": 90,
+    "protos": 6
+   },
+   {
+    "commit": "6817ff60db1e1772f4996973cafb7baf8d959485",
+    "date": "2026-04-09",
+    "subject": "chore(main): release 2.77.0 (#2867)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "7a97d94924e2085944fcd597c700be7f61d51b0a",
+    "date": "2026-04-10",
+    "subject": "chore(main): release 2.77.1-SNAPSHOT (#2874)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "f91e0e5cff6ae19c3204e10814185f1f77b503b5",
+    "date": "2026-04-14",
+    "subject": "chore(main): release 2.77.1 (#2877)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "47a55045d738c787b922314e31355c3952bf2cc0",
+    "date": "2026-04-15",
+    "subject": "chore(main): release 2.77.2-SNAPSHOT (#2885)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "678346da1eaacd5fe95561985bca045ffc7928b4",
+    "date": "2026-04-22",
+    "subject": "chore: Update generation configuration at Wed Apr 22 03:11:38 UTC 2026 (#2894)",
+    "files": 6,
+    "protos": 1
+   },
+   {
+    "commit": "f6757768ab8123809fcc3cd8e2536eca7554aa5c",
+    "date": "2026-05-07",
+    "subject": "chore(main): release 2.78.0 (#2886)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "6b5ed7f23c9094cded2c567d3f68080f33f4ca2a",
+    "date": "2026-05-08",
+    "subject": "chore(main): release 2.78.1-SNAPSHOT (#2912)",
+    "files": 4,
+    "protos": 0
+   }
+  ]
+ },
+ "users": [
+  "google-cloud-bigtable-bom/pom.xml",
+  "google-cloud-bigtable-emulator/pom.xml",
+  "google-cloud-bigtable/pom.xml",
+  "grpc-google-cloud-bigtable-admin-v2/pom.xml",
+  "grpc-google-cloud-bigtable-v2/pom.xml",
+  "pom.xml",
+  "proto-google-cloud-bigtable-admin-v2/pom.xml",
+  "proto-google-cloud-bigtable-v2/pom.xml"
+ ],
+ "jdk_hints": [],
+ "proto_count": 22,
+ "build_files": 15,
+ "prs": {
+  "checked": 0,
+  "matching": []
+ }
+}
+
+exit 0 seconds 2
