@@ -1,23 +1,39 @@
 {
  "name": "conductor",
- "cold_seconds": 84,
- "cold_exit": 1,
- "warm_clean_seconds": 0,
- "warm_exit": -1,
- "class_dirs": 3,
- "classes": 216,
+ "cold_seconds": 38,
+ "cold_exit": 0,
+ "warm_clean_seconds": 12,
+ "warm_exit": 0,
+ "class_dirs": 7,
+ "classes": 1068,
  "dirs": [
+  {
+   "dir": "grpc/build/classes/java/main",
+   "classes": 616
+  },
   {
    "dir": "annotations/build/classes/java/main",
    "classes": 3
+  },
+  {
+   "dir": "grpc-client/build/classes/java/main",
+   "classes": 5
   },
   {
    "dir": "annotations-processor/build/classes/java/main",
    "classes": 21
   },
   {
+   "dir": "core/build/classes/java/main",
+   "classes": 222
+  },
+  {
    "dir": "common/build/classes/java/main",
    "classes": 192
+  },
+  {
+   "dir": "grpc-server/build/classes/java/main",
+   "classes": 9
   }
  ]
 }
