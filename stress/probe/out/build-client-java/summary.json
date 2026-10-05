@@ -1,0 +1,15 @@
+{
+ "name": "client-java",
+ "cold_seconds": 58,
+ "cold_exit": 0,
+ "warm_clean_seconds": 25,
+ "warm_exit": 0,
+ "class_dirs": 1,
+ "classes": 3219,
+ "dirs": [
+  {
+   "dir": "target/classes",
+   "classes": 3219
+  }
+ ]
+}
