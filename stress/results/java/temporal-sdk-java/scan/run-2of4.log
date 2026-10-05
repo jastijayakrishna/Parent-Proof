@@ -1,6 +1,6 @@
 temporal-sdk-java scan: 20 windows, shard 2/4 has 5
-8093081c91bd 2026-07-17 verifier=None build=None compiler=baseline_fails 15.0s 
-e4863be86cfc 2026-07-29 verifier=None build=None compiler=baseline_fails 11.0s 
-13d59637385d 2026-07-30 verifier=None build=None compiler=baseline_fails 11.2s 
-78685101cb08 2026-08-17 verifier=None build=None compiler=baseline_fails 11.6s 
-46ee8b820cff 2026-09-08 verifier=None build=None compiler=baseline_fails 11.5s 
+8093081c91bd 2026-07-17 verifier=None build=None compiler=baseline_fails 119.0s 
+e4863be86cfc 2026-07-29 verifier=None build=None compiler=baseline_fails 68.7s 
+13d59637385d 2026-07-30 verifier=None build=None compiler=baseline_fails 67.8s 
+78685101cb08 2026-08-17 verifier=GO build=GO compiler=compiles 279.4s 
+46ee8b820cff 2026-09-08 verifier=GO build=GO compiler=compiles 247.1s 
