@@ -1,25 +1,25 @@
-time=2026-10-05T05:58:55.997Z level=INFO msg=cloning repo=p-lnd url=https://github.com/lightningnetwork/lnd.git
-time=2026-10-05T05:58:57.365Z level=INFO msg=cloning repo=c-lnd url=https://github.com/lightninglabs/lndclient.git
-lnd         112cb5f3 GO       source_build=GO      compiler=compiles          173.7s 
-lnd         9b634bfd GO       source_build=GO      compiler=compiles          136.3s 
-lnd         044d260b GO       source_build=GO      compiler=compiles          115.4s 
-lnd         cee8ed62 GO       source_build=GO      compiler=compiles          116.8s 
-lnd         515ceaac GO       source_build=GO      compiler=compiles           25.8s 
-lnd         1f324ebd GO       source_build=GO      compiler=compiles          116.6s 
-lnd         53da78ad GO       source_build=GO      compiler=compiles          124.6s 
-lnd         10dfc9e0 GO       source_build=GO      compiler=compiles          112.3s 
-lnd         b309be58 GO       source_build=GO      compiler=compiles          105.6s 
-lnd         9a6a3a70 GO       source_build=GO      compiler=compiles           53.2s 
-lnd         5ecef3d3 GO       source_build=GO      compiler=compiles            4.2s 
-lnd         14640a50 GO       source_build=GO      compiler=compiles          107.0s 
-lnd         40c64f9d GO       source_build=GO      compiler=compiles           58.6s 
-lnd         f55c0565 GO       source_build=GO      compiler=compiles           48.5s 
-lnd         c4a67b68 GO       source_build=GO      compiler=compiles            7.3s 
-lnd         8909c2fb GO       source_build=GO      compiler=compiles            2.6s 
-lnd         c5733c40 GO       source_build=GO      compiler=compiles            3.4s 
-lnd         dfeb678a GO       source_build=GO      compiler=compiles            1.6s 
-lnd         0aa1d8bd UNKNOWN  source_build=GO      compiler=compiles            2.1s 
-lnd         361cdba0 UNKNOWN  source_build=GO      compiler=compiles            1.6s 
+time=2026-10-05T07:14:21.485Z level=INFO msg=cloning repo=p-lnd url=https://github.com/lightningnetwork/lnd.git
+time=2026-10-05T07:14:23.055Z level=INFO msg=cloning repo=c-lnd url=https://github.com/lightninglabs/lndclient.git
+lnd         112cb5f3 GO       source_build=GO      compiler=compiles          123.8s 
+lnd         9b634bfd GO       source_build=GO      compiler=compiles           92.4s 
+lnd         044d260b GO       source_build=GO      compiler=compiles           78.0s 
+lnd         cee8ed62 GO       source_build=GO      compiler=compiles           80.5s 
+lnd         515ceaac GO       source_build=GO      compiler=compiles           18.4s 
+lnd         1f324ebd GO       source_build=GO      compiler=compiles           80.8s 
+lnd         53da78ad GO       source_build=GO      compiler=compiles           87.1s 
+lnd         10dfc9e0 GO       source_build=GO      compiler=compiles           77.2s 
+lnd         b309be58 GO       source_build=GO      compiler=compiles           74.7s 
+lnd         9a6a3a70 GO       source_build=GO      compiler=compiles           37.4s 
+lnd         5ecef3d3 GO       source_build=GO      compiler=compiles            3.3s 
+lnd         14640a50 GO       source_build=GO      compiler=compiles           74.8s 
+lnd         40c64f9d GO       source_build=GO      compiler=compiles           38.8s 
+lnd         f55c0565 GO       source_build=GO      compiler=compiles           33.5s 
+lnd         c4a67b68 GO       source_build=GO      compiler=compiles            5.1s 
+lnd         8909c2fb GO       source_build=GO      compiler=compiles            1.7s 
+lnd         c5733c40 GO       source_build=GO      compiler=compiles            3.8s 
+lnd         dfeb678a GO       source_build=GO      compiler=compiles            2.0s 
+lnd         0aa1d8bd UNKNOWN  source_build=GO      compiler=compiles            2.3s 
+lnd         361cdba0 UNKNOWN  source_build=GO      compiler=compiles            2.3s 
 lnd           20 decisions  GO  18  NO-GO   0  UNKNOWN   2 (10.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
 TOTAL         20 decisions  GO  18  NO-GO   0  UNKNOWN   2 (10.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
 
@@ -27,5 +27,5 @@ UNKNOWN reasons across all: windows, ecosystems, an example
     2   1  DESCRIPTOR_REFLECTION (e.g. lnd@0aa1d8bdd6a5cbb10561d3a05d178a612663ba54)
     1   1  WHOLE_MESSAGE_FLOW (e.g. lnd@361cdba0dfb6d24530071752578eb270cf8e1592)
 
-20 windows in 21m59s.
+20 windows in 15m21s.
 exit 0
