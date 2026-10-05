@@ -1,0 +1,175 @@
+{
+ "name": "camunda-zeebe",
+ "cold_seconds": 239,
+ "cold_exit": 0,
+ "warm_clean_seconds": 69,
+ "warm_exit": 0,
+ "class_dirs": 41,
+ "classes": 8282,
+ "dirs": [
+  {
+   "dir": "build-tools/target/classes",
+   "classes": 3
+  },
+  {
+   "dir": "cluster/target/classes",
+   "classes": 8
+  },
+  {
+   "dir": "security/security-protocol/target/classes",
+   "classes": 8
+  },
+  {
+   "dir": "security/security-core/target/classes",
+   "classes": 14
+  },
+  {
+   "dir": "service/target/classes",
+   "classes": 171
+  },
+  {
+   "dir": "spring-utils/target/classes",
+   "classes": 16
+  },
+  {
+   "dir": "search/search-client-reader/target/classes",
+   "classes": 51
+  },
+  {
+   "dir": "search/search-client/target/classes",
+   "classes": 38
+  },
+  {
+   "dir": "search/search-domain/target/classes",
+   "classes": 518
+  },
+  {
+   "dir": "document/store/target/classes",
+   "classes": 19
+  },
+  {
+   "dir": "document/api/target/classes",
+   "classes": 19
+  },
+  {
+   "dir": "secret-store/secret-store-api/target/classes",
+   "classes": 27
+  },
+  {
+   "dir": "clients/java/target/classes",
+   "classes": 2125
+  },
+  {
+   "dir": "zeebe/gateway-grpc/target/classes",
+   "classes": 83
+  },
+  {
+   "dir": "zeebe/journal/target/classes",
+   "classes": 86
+  },
+  {
+   "dir": "zeebe/broker-client/target/classes",
+   "classes": 58
+  },
+  {
+   "dir": "zeebe/test-util/target/classes",
+   "classes": 206
+  },
+  {
+   "dir": "zeebe/protocol-test-util/target/classes",
+   "classes": 27
+  },
+  {
+   "dir": "zeebe/logstreams/target/classes",
+   "classes": 107
+  },
+  {
+   "dir": "zeebe/msgpack-core/target/classes",
+   "classes": 12
+  },
+  {
+   "dir": "zeebe/msgpack-value/target/classes",
+   "classes": 33
+  },
+  {
+   "dir": "zeebe/transport/target/classes",
+   "classes": 103
+  },
+  {
+   "dir": "zeebe/atomix/utils/target/classes",
+   "classes": 73
+  },
+  {
+   "dir": "zeebe/atomix/cluster/target/classes",
+   "classes": 511
+  },
+  {
+   "dir": "zeebe/zb-db/target/classes",
+   "classes": 112
+  },
+  {
+   "dir": "zeebe/auth/target/classes",
+   "classes": 3
+  },
+  {
+   "dir": "zeebe/protocol-impl/target/classes",
+   "classes": 169
+  },
+  {
+   "dir": "zeebe/scheduler/target/classes",
+   "classes": 90
+  },
+  {
+   "dir": "zeebe/gateway-protocol-impl/target/classes",
+   "classes": 340
+  },
+  {
+   "dir": "zeebe/snapshot/target/classes",
+   "classes": 71
+  },
+  {
+   "dir": "zeebe/rebalance/target/classes",
+   "classes": 110
+  },
+  {
+   "dir": "zeebe/protocol-asserts/target/classes",
+   "classes": 283
+  },
+  {
+   "dir": "zeebe/util/target/classes",
+   "classes": 141
+  },
+  {
+   "dir": "zeebe/gateway-protocol/target/classes",
+   "classes": 0
+  },
+  {
+   "dir": "zeebe/exporter-api/target/classes",
+   "classes": 11
+  },
+  {
+   "dir": "zeebe/dynamic-config/target/classes",
+   "classes": 777
+  },
+  {
+   "dir": "zeebe/backup/target/classes",
+   "classes": 129
+  },
+  {
+   "dir": "zeebe/protocol/target/classes",
+   "classes": 693
+  },
+  {
+   "dir": "zeebe/gateway/target/classes",
+   "classes": 130
+  },
+  {
+   "dir": "zeebe/bpmn-model/target/classes",
+   "classes": 769
+  },
+  {
+   "dir": "zeebe/stream-platform/target/classes",
+   "classes": 138
+  }
+ ]
+}
