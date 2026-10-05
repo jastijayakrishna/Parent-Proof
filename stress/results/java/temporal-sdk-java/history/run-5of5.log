@@ -1,6 +1,6 @@
 temporal-sdk-java history: 27 windows, shard 5/5 has 5
-c215a78b5502 2023-06-16 verifier=None build=None compiler=baseline_fails 47.8s 
-82d3c93d5e5f 2025-01-06 verifier=None build=None compiler=baseline_fails 27.0s 
-95314a2357cf 2025-05-16 verifier=None build=None compiler=baseline_fails 18.3s 
-dbd648bdce3b 2026-03-10 verifier=None build=None compiler=baseline_fails 17.9s 
-6d09a341c14d 2026-07-21 verifier=None build=None compiler=baseline_fails 17.2s 
+c215a78b5502 2023-06-16 verifier=None build=None compiler=baseline_fails 73.9s 
+82d3c93d5e5f 2025-01-06 verifier=NO_GO build=GO compiler=oracle_error 191.5s 
+95314a2357cf 2025-05-16 verifier=GO build=GO compiler=oracle_error 160.3s 
+dbd648bdce3b 2026-03-10 verifier=NO_GO build=GO compiler=oracle_error 178.4s 
+6d09a341c14d 2026-07-21 verifier=UNKNOWN build=UNKNOWN compiler=compiles 279.4s 
