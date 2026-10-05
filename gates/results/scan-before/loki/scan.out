@@ -1,25 +1,25 @@
-time=2026-10-05T12:39:10.611Z level=INFO msg=cloning repo=p-loki url=https://github.com/grafana/loki.git
-time=2026-10-05T12:39:12.238Z level=INFO msg=cloning repo=c-loki url=https://github.com/grafana/loki.git
-loki        06037114 GO       source_build=GO      compiler=-                  13.8s 
-loki        a09dd003 GO       source_build=GO      compiler=-                   2.1s 
+time=2026-10-05T14:45:19.639Z level=INFO msg=cloning repo=p-loki url=https://github.com/grafana/loki.git
+time=2026-10-05T14:45:21.907Z level=INFO msg=cloning repo=c-loki url=https://github.com/grafana/loki.git
+loki        06037114 GO       source_build=GO      compiler=-                  14.6s 
+loki        a09dd003 GO       source_build=GO      compiler=-                   1.9s 
 loki        c57bb9f4 GO       source_build=GO      compiler=-                   0.0s 
-loki        95dbe7ea GO       source_build=GO      compiler=-                   2.2s 
-loki        b8755531 UNKNOWN  source_build=GO      compiler=-                   2.1s 
-loki        b932494b UNKNOWN  source_build=UNKNOWN compiler=-                   2.0s 
-loki        8eb103be GO       source_build=GO      compiler=-                   1.8s 
-loki        77a72aab GO       source_build=GO      compiler=-                   1.8s 
-loki        1fee025d GO       source_build=GO      compiler=-                   2.0s 
-loki        44cf767d GO       source_build=GO      compiler=-                   2.0s 
+loki        95dbe7ea GO       source_build=GO      compiler=-                   1.8s 
+loki        b8755531 UNKNOWN  source_build=GO      compiler=-                   1.9s 
+loki        b932494b UNKNOWN  source_build=UNKNOWN compiler=-                   2.2s 
+loki        8eb103be GO       source_build=GO      compiler=-                   1.9s 
+loki        77a72aab GO       source_build=GO      compiler=-                   1.9s 
+loki        1fee025d GO       source_build=GO      compiler=-                   1.8s 
+loki        44cf767d GO       source_build=GO      compiler=-                   1.9s 
 loki        022eb19c GO       source_build=GO      compiler=-                   0.0s 
-loki        a4b07b91 GO       source_build=GO      compiler=-                   2.2s 
+loki        a4b07b91 GO       source_build=GO      compiler=-                   2.1s 
 loki        cd2a4246 GO       source_build=GO      compiler=-                   0.0s 
-loki        3969791f UNKNOWN  source_build=GO      compiler=-                   2.1s 
-loki        e7116bab GO       source_build=GO      compiler=-                   1.9s 
-loki        0321e523 GO       source_build=GO      compiler=-                   0.8s 
-loki        265cc8e2 GO       source_build=GO      compiler=-                   4.7s 
-loki        47f6607b GO       source_build=GO      compiler=-                   1.8s 
-loki        5104b439 GO       source_build=GO      compiler=-                   2.0s 
-loki        b723d598 GO       source_build=GO      compiler=-                   1.9s 
+loki        3969791f UNKNOWN  source_build=GO      compiler=-                   2.0s 
+loki        e7116bab GO       source_build=GO      compiler=-                   1.8s 
+loki        0321e523 GO       source_build=GO      compiler=-                   0.4s 
+loki        265cc8e2 GO       source_build=GO      compiler=-                   2.2s 
+loki        47f6607b GO       source_build=GO      compiler=-                   2.1s 
+loki        5104b439 GO       source_build=GO      compiler=-                   2.1s 
+loki        b723d598 GO       source_build=GO      compiler=-                   2.0s 
 loki          20 decisions  GO  17  NO-GO   0  UNKNOWN   3 (15.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
 TOTAL         20 decisions  GO  17  NO-GO   0  UNKNOWN   3 (15.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
 
@@ -27,5 +27,5 @@ UNKNOWN reasons across all: windows, ecosystems, an example
     2   1  CONTRACT_COMPILE_ERROR (e.g. loki@b8755531d70135caccceab01d24a6972f65c3576)
     1   1  NEEDS_REVIEW (e.g. loki@b932494ba836a9f40d01fc9f8af425e453d5eb28)
 
-20 windows in 56s.
+20 windows in 54s.
 exit 0
