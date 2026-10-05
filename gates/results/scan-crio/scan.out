@@ -1,25 +1,25 @@
-time=2026-10-05T12:18:05.926Z level=INFO msg=cloning repo=p-crio url=https://github.com/kubernetes/cri-api.git
-time=2026-10-05T12:18:06.540Z level=INFO msg=cloning repo=c-crio url=https://github.com/cri-o/cri-o.git
-crio        5950389a GO       source_build=GO      compiler=compiles           69.4s 
-crio        d279f3cb GO       source_build=GO      compiler=compiles           10.1s 
-crio        d106c2f6 GO       source_build=GO      compiler=compiles            5.2s 
-crio        47789ac6 GO       source_build=GO      compiler=compiles            4.9s 
-crio        c9d92637 GO       source_build=GO      compiler=compiles            4.8s 
-crio        044b7dee NO_GO    source_build=NO_GO   compiler=compiles            4.8s 
-crio        d3d9c71c NO_GO    source_build=NO_GO   compiler=compiles            4.5s 
-crio        c71d95a3 GO       source_build=GO      compiler=compiles            5.0s 
-crio        2461a679 GO       source_build=GO      compiler=compiles            5.5s 
+time=2026-10-05T12:39:11.141Z level=INFO msg=cloning repo=p-crio url=https://github.com/kubernetes/cri-api.git
+time=2026-10-05T12:39:12.156Z level=INFO msg=cloning repo=c-crio url=https://github.com/cri-o/cri-o.git
+crio        5950389a GO       source_build=GO      compiler=compiles          188.6s 
+crio        d279f3cb GO       source_build=GO      compiler=compiles            9.6s 
+crio        d106c2f6 GO       source_build=GO      compiler=compiles            4.5s 
+crio        47789ac6 GO       source_build=GO      compiler=compiles            5.0s 
+crio        c9d92637 GO       source_build=GO      compiler=compiles            4.6s 
+crio        044b7dee NO_GO    source_build=NO_GO   compiler=compiles            4.4s 
+crio        d3d9c71c NO_GO    source_build=NO_GO   compiler=compiles            4.0s 
+crio        c71d95a3 GO       source_build=GO      compiler=compiles            4.4s 
+crio        2461a679 GO       source_build=GO      compiler=compiles            4.8s 
 crio        bb3131c5 GO       source_build=GO      compiler=compiles            4.7s 
 crio        ce6444f1 GO       source_build=GO      compiler=compiles            4.3s 
-crio        42f1638a GO       source_build=GO      compiler=compiles            2.8s 
-crio        65ec8e48 GO       source_build=GO      compiler=compiles            3.3s 
-crio        077888e1 GO       source_build=GO      compiler=compiles            4.5s 
+crio        42f1638a GO       source_build=GO      compiler=compiles            2.4s 
+crio        65ec8e48 GO       source_build=GO      compiler=compiles            2.9s 
+crio        077888e1 GO       source_build=GO      compiler=compiles            4.4s 
 crio        3cd2df7d UNKNOWN  source_build=UNKNOWN compiler=compiles            4.5s 
-crio        9c7cf2cf UNKNOWN  source_build=UNKNOWN compiler=compiles            6.2s 
-crio        ea06df2a GO       source_build=GO      compiler=compiles            7.3s 
-crio        26564a8e GO       source_build=GO      compiler=compiles            7.1s 
-crio        475a7417 GO       source_build=GO      compiler=compiles            3.6s 
-crio        6477f0b2 GO       source_build=GO      compiler=compiles            6.3s 
+crio        9c7cf2cf UNKNOWN  source_build=UNKNOWN compiler=compiles            6.1s 
+crio        ea06df2a GO       source_build=GO      compiler=compiles            6.8s 
+crio        26564a8e GO       source_build=GO      compiler=compiles            6.6s 
+crio        475a7417 GO       source_build=GO      compiler=compiles            3.1s 
+crio        6477f0b2 GO       source_build=GO      compiler=compiles            5.9s 
 crio          20 decisions  GO  16  NO-GO   2  UNKNOWN   2 (10.0%)  errors 0 | compiler judged  20: agree  18  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 2 | not judged 0
 TOTAL         20 decisions  GO  16  NO-GO   2  UNKNOWN   2 (10.0%)  errors 0 | compiler judged  20: agree  18  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 2 | not judged 0
 
@@ -31,6 +31,6 @@ UNKNOWN reasons across all: windows, ecosystems, an example
   FAILED crio@3cd2df7d59946d6078bf0e77db62369adc6b0ece: unknown_on_safe: OPTION_CHANGED
   FAILED crio@9c7cf2cf4abe1f3e56b6e8a69ba0abb8923833c5: unknown_on_safe: OPTION_CHANGED, UNRESOLVED_MEMBER
 
-20 windows in 2m56s.
+20 windows in 4m49s.
 verifier gate: scan failed: 2 disagreements with the compiler or errors
 exit 1
