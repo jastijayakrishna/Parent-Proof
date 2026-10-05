@@ -1,4 +1,3 @@
-source: jastijayakrishna/Parent, branch probe-experiment, commit d6d10334ec41ad3890c340fb57b58046061af84c
-sha256 (uncompressed linux/amd64): dbe8dc4c2a4a7c27f3010f830e59e4419a19449bc82276b9f68b6ab36a362af2
-built: 2026-10-05T04:45Z
-engine: the probe (experiments/probe Phase 2; built with -X internal/probe.defaultEngine=probe; PARENT_ENGINE=analyzer gives the analyzer)
+source: jastijayakrishna/Parent, branch main, commit bb4d10ef2e9b94d095dee69e666214318526a7a8
+sha256 (uncompressed linux/amd64): f55e2e31c0d61822deeb5bacc36e24bb1d2c8639acda2da655efc8ffd1a5fffb
+built: 2026-10-04T16:26Z
