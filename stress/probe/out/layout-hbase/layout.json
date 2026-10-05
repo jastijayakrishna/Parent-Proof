@@ -1,0 +1,254 @@
+{
+ "name": "hbase",
+ "set": "dev",
+ "consumer": {
+  "repo": "apache/hbase",
+  "commit": "8559faedbdea5309a42439b75627194be184182f"
+ },
+ "head": "8559faedbdea5309a42439b75627194be184182f 2026-10-04T21:59:25+09:00",
+ "default_branch": "origin/master",
+ "history": {
+  "count": 57,
+  "with_proto_changes": 57,
+  "last": [
+   {
+    "commit": "d2a1f191ccbede54e189696bc46a938a207e4e0a",
+    "date": "2024-08-25",
+    "subject": "HBASE-28690 Aborting Active HMaster is not rejecting reportRegionStateTransition if procedure is ini",
+    "files": 2,
+    "protos": 2
+   },
+   {
+    "commit": "5cf9170b8e1d5ac75d4018135b2afbe4803521b0",
+    "date": "2024-09-17",
+    "subject": "HBASE-28770: Support partial results in AggregateImplementation and AsyncAggregationClient (#6167)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "64a49a267c2aeb6136c980e05f1edd8b9274f90b",
+    "date": "2024-09-27",
+    "subject": "HBASE-28645 Add build information to the REST server version endpoint (#6262)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "7e3652041ef0e572e577dd23922c4d7997c1eb05",
+    "date": "2024-10-29",
+    "subject": "HBASE-28726 Revert REST protobuf package to org.apache.hadoop.hbase.rest (#6408)",
+    "files": 11,
+    "protos": 11
+   },
+   {
+    "commit": "c556dde144612aa71524a011e01892316ca15d57",
+    "date": "2024-12-03",
+    "subject": "HBASE-28882 Backup restores are broken if the backup has moved locations (#6294)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "46fcd3c1ec8c17826f8c36186de77d33f4609cab",
+    "date": "2025-03-13",
+    "subject": "HBASE-29169 Removing the legacy 'region_replica_replication' peer will crash region servers while ro",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "fd0803a96b153e5e60504ee54d155ade4deb17cc",
+    "date": "2025-04-03",
+    "subject": "HBASE-29229 Throttles should support specific restrictions for atomic workloads (#6866)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "d1b68abef5aa511c79fd1d1b8d4234e3092c1f7c",
+    "date": "2025-04-23",
+    "subject": "HBASE-29090: Add server-side load metrics to client results (#6623)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "d82a5913955dd3856892b164b40a59c851238641",
+    "date": "2025-06-03",
+    "subject": "HBASE-29231 Throttles should support limits based on handler thread usage time (#7000)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "cb28ebec7a9f9673ccd011204a586601a6646e5e",
+    "date": "2025-06-26",
+    "subject": "HBASE-29387: Reload quotas from hbase:quota table when changes are made (#7091)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "9b2f0bd8fc8b2c03b4026f6798ebd01888160e56",
+    "date": "2025-08-05",
+    "subject": "HBASE-28919 Soft drop for destructive table actions (#7183)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "ffed09d96bbaccdc83e1d7df66d640cf10b2f191",
+    "date": "2025-09-12",
+    "subject": "HBASE-26974 Introduce a LogRollProcedure (#5408)",
+    "files": 5,
+    "protos": 5
+   },
+   {
+    "commit": "c6a0c3b2b7af1253822066ee44fc88c6aff97db8",
+    "date": "2025-09-16",
+    "subject": "Modern backup failures can cause backup system to lock up (#7288)",
+    "files": 2,
+    "protos": 2
+   },
+   {
+    "commit": "7f7b9e6ef298b16768382081c3ab0163d7f15af0",
+    "date": "2025-09-16",
+    "subject": "Revert \"Modern backup failures can cause backup system to lock up (#7288)\" (#7307)",
+    "files": 2,
+    "protos": 2
+   },
+   {
+    "commit": "0f11becf47612de1af5c39fcc26ccb626a0dc310",
+    "date": "2025-09-16",
+    "subject": "HBASE-29448 Modern backup failures can cause backup system to lock up (#7308)",
+    "files": 2,
+    "protos": 2
+   },
+   {
+    "commit": "db25deefcfa8e515ea25ebbca14d092659d52d99",
+    "date": "2025-12-02",
+    "subject": "HBASE-29727 Introduce a String pool for repeating filename, region and cf string fields in BlockCach",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "6e14c22aae2b433d4c173f26c886310b9d2d517f",
+    "date": "2026-01-06",
+    "subject": "HBASE-29782 Expose public Admin API to reopen table regions without moving (#7563)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "b54cb7db6df0dff67e4fe5758a1a904b83e89349",
+    "date": "2026-01-11",
+    "subject": "HBASE-29822 Add API surface and refactoring for key management feature (HBASE-29368) (#7584)",
+    "files": 5,
+    "protos": 5
+   },
+   {
+    "commit": "63c0838bb22554e0f0e8ea936fc24992d4754833",
+    "date": "2026-04-27",
+    "subject": "HBASE-27826 Add FSFT implementations for Virtual links and enable them as part of SplitProcedure (#6",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "01ca956ecf71143085c5fd4a2a118f0e9c1d6ee0",
+    "date": "2026-04-30",
+    "subject": "HBASE-30102 Add metric to account for region data classified as cold by the Time Based Priority logi",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "e2c484d96c1438cca994cdf86f2a412f9b2f9f8c",
+    "date": "2026-05-11",
+    "subject": "HBASE-30134: Improve CacheAwareLoadBalancer to consider low cache ratio when calculating imbalance (",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "9ba5d3e55a3624193e8c4ab13631db058b419546",
+    "date": "2026-05-22",
+    "subject": "HBASE-29081: Add HBase Read Replica Cluster feature (#8044)",
+    "files": 3,
+    "protos": 3
+   },
+   {
+    "commit": "6c84a6037a123c91c4a3ab95a68d6d9b8b3a7d91",
+    "date": "2026-06-22",
+    "subject": "HBASE-29289: Make hbase master ui show cluster client connections info (#8058)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "cb16834dd12c42953b84aaf268767a7fe2586549",
+    "date": "2026-08-12",
+    "subject": "HBASE-30322: Persist all fields of BackupInfo (#8542)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "924863799bde3c8730477945d4286432a3f1de73",
+    "date": "2026-08-31",
+    "subject": "HBASE-28957: Adding support for continuous Backup and Point-in-Time Recovery (#7445)",
+    "files": 1,
+    "protos": 1
+   }
+  ]
+ },
+ "users": [
+  "hbase-assembly-byo-hadoop/pom.xml",
+  "hbase-assembly/pom.xml",
+  "hbase-backup/pom.xml",
+  "hbase-client/pom.xml",
+  "hbase-dev-generate-classpath/pom.xml",
+  "hbase-diagnostics/pom.xml",
+  "hbase-endpoint/pom.xml",
+  "hbase-examples/pom.xml",
+  "hbase-it/pom.xml",
+  "hbase-mapreduce/pom.xml",
+  "hbase-procedure/pom.xml",
+  "hbase-protocol-shaded/pom.xml",
+  "hbase-replication/pom.xml",
+  "hbase-rest/pom.xml",
+  "hbase-server/pom.xml",
+  "hbase-zookeeper/pom.xml",
+  "pom.xml"
+ ],
+ "jdk_hints": [
+  "pom.xml:1020: This value is managed separately for jdk11. See below.",
+  "pom.xml:1035: -Djava.awt.headless=true -Djdk.net.URLClassPath.disableClassPathURLCheck=true",
+  "pom.xml:1044: Keep these options in sync with add_jdk17_jvm_flags() in bin/hbase, except the below ones",
+  "pom.xml:1046: 'java.base/jdk.internal.util.random' is required by the test code",
+  "pom.xml:1051: <hbase-surefire.jdk17.flags>-Dorg.apache.hbase.thirdparty.io.netty.tryReflectionSetAccessible=true",
+  "pom.xml:1052: --add-modules jdk.unsupported",
+  "pom.xml:1057: --add-opens java.base/jdk.internal.ref=ALL-UNNAMED",
+  "pom.xml:1061: --add-exports java.base/jdk.internal.misc=ALL-UNNAMED",
+  "pom.xml:1065: --add-opens java.base/jdk.internal.util.random=ALL-UNNAMED",
+  "pom.xml:1068: --add-opens java.base/java.net=ALL-UNNAMED</hbase-surefire.jdk17.flags>",
+  "pom.xml:1075: <hbase-surefire.jdk18.flags>-Djava.security.manager=allow</hbase-surefire.jdk18.flags>",
+  "pom.xml:1729: <artifactId>bcprov-jdk18on</artifactId>",
+  "pom.xml:1735: <artifactId>bcutil-jdk18on</artifactId>",
+  "pom.xml:1747: <artifactId>bcpkix-jdk18on</artifactId>",
+  "pom.xml:2413: HBase requires at least version ${java.min.version} of the JDK to properly build from source.",
+  "pom.xml:2548: <id>banned-bouncycastle-jdk15on</id>",
+  "pom.xml:2556: <exclude>org.bouncycastle:*-jdk15on</exclude>",
+  "pom.xml:2558: <message>Use org.bouncycastle:*-jdk18on instead</message>",
+  "pom.xml:3088: <!-- JDK8 javadoc requires test scope transitive dependencies due to our custom doclet -->",
+  "pom.xml:3144: <!-- JDK8 javadoc requires test scope transitive dependencies due to our custom doclet -->",
+  "pom.xml:3208: <!-- JDK8 javadoc requires test scope transitive dependencies due to our custom doclet -->",
+  "pom.xml:3271: <!-- JDK8 javadoc requires test scope transitive dependencies due to our custom doclet -->",
+  "pom.xml:3340: <id>build-with-jdk17</id>",
+  "pom.xml:3342: <jdk>[17,)</jdk>",
+  "pom.xml:3345: <maven.compiler.release>${releaseTarget}</maven.compiler.release>",
+  "pom.xml:3346: <argLine>${hbase-surefire.jdk17.flags}",
+  "pom.xml:3368: <additionalJOption>-Jjdk.javadoc/jdk.javadoc.internal.tool=ALL-UNNAMED</additionalJOption>",
+  "pom.xml:3377: <id>build-with-jdk18</id>",
+  "pom.xml:3379: <jdk>[18,)</jdk>",
+  "pom.xml:3382: <argLine>${hbase-surefire.jdk17.flags}"
+ ],
+ "proto_count": 70,
+ "build_files": 55,
+ "prs": {
+  "checked": 49,
+  "matching": [
+   {
+    "n": 8705,
+    "title": "HBASE-30409 Move throttle enabled flag storage from zookeeper to mast\u2026",
+    "updated": "2026-09-30"
+   }
+  ]
+ }
+}
