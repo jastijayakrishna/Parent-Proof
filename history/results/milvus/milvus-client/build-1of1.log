@@ -1,25 +1,25 @@
-time=2026-10-05T05:58:45.403Z level=INFO msg=cloning repo=milvus-proto url=https://github.com/milvus-io/milvus-proto.git
-time=2026-10-05T05:58:47.545Z level=INFO msg=cloning repo=milvus-client url=https://github.com/milvus-io/milvus.git
-time=2026-10-05T05:59:18.783Z level=INFO msg=mined consumer=milvus-client pin_moves=42 to_compile=21
-time=2026-10-05T06:00:31.311Z level=INFO msg=window consumer=milvus-client bump=ef41f80b select=breaking breaking=11 compiler=compiles
-time=2026-10-05T06:00:32.316Z level=INFO msg=window consumer=milvus-client bump=97db7be5 select=breaking breaking=1 compiler=compiles
-time=2026-10-05T06:01:11.566Z level=INFO msg=window consumer=milvus-client bump=83d2729f select=breaking breaking=2 compiler=compiles
-time=2026-10-05T06:01:13.005Z level=INFO msg=window consumer=milvus-client bump=c39db115 select=breaking breaking=3 compiler=compiles
-time=2026-10-05T06:01:41.462Z level=INFO msg=window consumer=milvus-client bump=ce480c3f select=breaking breaking=2 compiler=compiles
-time=2026-10-05T06:01:41.567Z level=INFO msg=window consumer=milvus-client bump=fd45e8bf select=breaking breaking=3 compiler=compiles
-time=2026-10-05T06:02:37.548Z level=INFO msg=window consumer=milvus-client bump=cebe923d select=breaking breaking=3 compiler=compiles
-time=2026-10-05T06:02:37.688Z level=INFO msg=window consumer=milvus-client bump=1e489118 select=breaking breaking=4 compiler=breaks
-time=2026-10-05T06:03:11.315Z level=INFO msg=window consumer=milvus-client bump=d3164e80 select=breaking breaking=6 compiler=compiles
-time=2026-10-05T06:03:23.115Z level=INFO msg=window consumer=milvus-client bump=3f063a29 select=breaking breaking=8 compiler=breaks
-time=2026-10-05T06:03:38.836Z level=INFO msg=window consumer=milvus-client bump=f51de1a8 select=breaking breaking=1 compiler=compiles
-time=2026-10-05T06:03:54.707Z level=INFO msg=window consumer=milvus-client bump=88950587 select=breaking breaking=3 compiler=compiles
-time=2026-10-05T06:04:15.721Z level=INFO msg=window consumer=milvus-client bump=b3890685 select=breaking breaking=3 compiler=compiles
-time=2026-10-05T06:04:45.242Z level=INFO msg=window consumer=milvus-client bump=e87cc36e select=breaking breaking=7 compiler=compiles
-time=2026-10-05T06:04:55.857Z level=INFO msg=window consumer=milvus-client bump=1b9c0b42 select=breaking breaking=3 compiler=compiles
-time=2026-10-05T06:05:21.218Z level=INFO msg=window consumer=milvus-client bump=84e8e141 select=additive breaking=0 compiler=compiles
-time=2026-10-05T06:05:22.149Z level=INFO msg=window consumer=milvus-client bump=1b7562a7 select=additive breaking=0 compiler=compiles
-time=2026-10-05T06:05:38.449Z level=INFO msg=window consumer=milvus-client bump=f32830e0 select=additive breaking=0 compiler=compiles
-time=2026-10-05T06:05:40.372Z level=INFO msg=window consumer=milvus-client bump=51f69f32 select=additive breaking=0 compiler=compiles
-time=2026-10-05T06:05:56.677Z level=INFO msg=window consumer=milvus-client bump=b98b3b16 select=additive breaking=0 compiler=compiles
-time=2026-10-05T06:05:57.209Z level=INFO msg=window consumer=milvus-client bump=c8789513 select=additive breaking=0 compiler=compiles
-time=2026-10-05T06:05:57.209Z level=INFO msg="suite built" suite=milvus windows_added=21
+time=2026-10-05T06:07:34.193Z level=INFO msg=cloning repo=milvus-proto url=https://github.com/milvus-io/milvus-proto.git
+time=2026-10-05T06:07:36.267Z level=INFO msg=cloning repo=milvus-client url=https://github.com/milvus-io/milvus.git
+time=2026-10-05T06:08:00.410Z level=INFO msg=mined consumer=milvus-client pin_moves=42 to_compile=21
+time=2026-10-05T06:09:13.738Z level=INFO msg=window consumer=milvus-client bump=ef41f80b select=breaking breaking=11 compiler=compiles
+time=2026-10-05T06:09:14.652Z level=INFO msg=window consumer=milvus-client bump=97db7be5 select=breaking breaking=1 compiler=compiles
+time=2026-10-05T06:09:54.947Z level=INFO msg=window consumer=milvus-client bump=83d2729f select=breaking breaking=2 compiler=compiles
+time=2026-10-05T06:09:56.031Z level=INFO msg=window consumer=milvus-client bump=c39db115 select=breaking breaking=3 compiler=compiles
+time=2026-10-05T06:10:25.066Z level=INFO msg=window consumer=milvus-client bump=ce480c3f select=breaking breaking=2 compiler=compiles
+time=2026-10-05T06:10:25.584Z level=INFO msg=window consumer=milvus-client bump=fd45e8bf select=breaking breaking=3 compiler=compiles
+time=2026-10-05T06:11:22.548Z level=INFO msg=window consumer=milvus-client bump=1e489118 select=breaking breaking=4 compiler=breaks
+time=2026-10-05T06:11:22.620Z level=INFO msg=window consumer=milvus-client bump=cebe923d select=breaking breaking=3 compiler=compiles
+time=2026-10-05T06:11:56.237Z level=INFO msg=window consumer=milvus-client bump=d3164e80 select=breaking breaking=6 compiler=compiles
+time=2026-10-05T06:12:09.142Z level=INFO msg=window consumer=milvus-client bump=3f063a29 select=breaking breaking=8 compiler=breaks
+time=2026-10-05T06:12:24.913Z level=INFO msg=window consumer=milvus-client bump=f51de1a8 select=breaking breaking=1 compiler=compiles
+time=2026-10-05T06:12:40.717Z level=INFO msg=window consumer=milvus-client bump=88950587 select=breaking breaking=3 compiler=compiles
+time=2026-10-05T06:13:03.027Z level=INFO msg=window consumer=milvus-client bump=b3890685 select=breaking breaking=3 compiler=compiles
+time=2026-10-05T06:13:30.816Z level=INFO msg=window consumer=milvus-client bump=e87cc36e select=breaking breaking=7 compiler=compiles
+time=2026-10-05T06:13:44.756Z level=INFO msg=window consumer=milvus-client bump=1b9c0b42 select=breaking breaking=3 compiler=compiles
+time=2026-10-05T06:14:08.496Z level=INFO msg=window consumer=milvus-client bump=84e8e141 select=additive breaking=0 compiler=compiles
+time=2026-10-05T06:14:08.589Z level=INFO msg=window consumer=milvus-client bump=1b7562a7 select=additive breaking=0 compiler=compiles
+time=2026-10-05T06:14:24.641Z level=INFO msg=window consumer=milvus-client bump=f32830e0 select=additive breaking=0 compiler=compiles
+time=2026-10-05T06:14:28.566Z level=INFO msg=window consumer=milvus-client bump=51f69f32 select=additive breaking=0 compiler=compiles
+time=2026-10-05T06:14:42.977Z level=INFO msg=window consumer=milvus-client bump=b98b3b16 select=additive breaking=0 compiler=compiles
+time=2026-10-05T06:14:44.896Z level=INFO msg=window consumer=milvus-client bump=c8789513 select=additive breaking=0 compiler=compiles
+time=2026-10-05T06:14:44.896Z level=INFO msg="suite built" suite=milvus windows_added=21
