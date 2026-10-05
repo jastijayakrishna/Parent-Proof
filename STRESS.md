@@ -1,6 +1,6 @@
 # Stress test: Go and Java consumers
 
-Updated 2026-10-05 17:42 UTC. Plan and rules: [stress/PREREG.md](stress/PREREG.md).
+Updated 2026-10-05 17:43 UTC. Plan and rules: [stress/PREREG.md](stress/PREREG.md).
 
 Every row is a real contract change of an open-source project never used to tune the verifier, decided by the
 verifier before the project's own compiler judged it (Go: `go build`; Java: the project's Maven or Gradle build).
@@ -9,7 +9,7 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 
 | language | windows | compiler judged | broke the build | caught | missed | false alarm | needs review (build) | errors |
 |---|---|---|---|---|---|---|---|---|
-| Go | 68 | 25 | 2 | 1 | **1** | 0 | 6 (9%) | 0 |
+| Go | 93 | 50 | 4 | 2 | **2** | 0 | 8 (9%) | 0 |
 | Java | 61 | 13 | 5 | 5 | **0** | 0 | 0 (0%) | 0 |
 
 ## Go by project
@@ -18,7 +18,9 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 |---|---|---|---|---|---|---|---|---|
 | argo-cd (scan) | 20 | 0 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
 | cometbft -> cosmos-sdk (history) | 8 | 7 | 2 | 1 | **1** | 0 | 0 (0%) | 0 |
+| cometbft-cosmos-sdk (scan) | 20 | 20 | 2 | 1 | **1** | 0 | 0 (0%) | 0 |
 | csi-provisioner (scan) | 20 | 18 | 0 | 0 | **0** | 0 | 6 (30%) | 0 |
+| csi-spec -> external-provisioner (history) | 5 | 5 | 0 | 0 | **0** | 0 | 2 (40%) | 0 |
 | kubelet-device-plugin (scan) | 20 | 0 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
 
 ## Java by project
@@ -31,16 +33,17 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 | skywalking-java (history) | 6 | 2 | 1 | 1 | **0** | 0 | 0 (0%) | 0 |
 | skywalking-java (scan) | 20 | 0 | 0 | 0 | **0** | 0 | 0 (-) | 0 |
 
-## Missed: 1
+## Missed: 2
 
 - Go cometbft -> cosmos-sdk history v0.39.0-beta.2 -> v0.39.0-beta.2.0.20260217150107-284338bcd3d9: compiler: server/cmt_abci.go:16:9: cannot use cometABCIWrapper{…} (value of struct type cometABCIWrapper) as "github.com/cometbft/cometbft/abci/types".Application value in return statement: cometABCIWrapper does not implement "github.com/cometbft/cometbft/abci/types".Application (missing method InsertTx)
+- Go cometbft-cosmos-sdk scan a95c2d1bb43e: compiler: module github.com/cometbft/cometbft/api@latest found (v1.0.0), but does not contain package github.com/cometbft/cometbft/api/cometbft/abci/v2; module github.com/cometbft/cometbft/api@latest found (v1.0.0), but does not contain package github.com/cometbft/cometbft/api/cometbft/consensus/v2; module gi
 
 ## False alarms: 0
 
 
 ## Needs review, by reason
 
-- Go: DESCRIPTOR_REFLECTION 9, CONTRACT_COMPILE_ERROR 9, OPTION_CHANGED 6, NEEDS_REVIEW 6, WHOLE_MESSAGE_FLOW 2, UNRESOLVED_MEMBER 1
+- Go: DESCRIPTOR_REFLECTION 12, CONTRACT_COMPILE_ERROR 9, OPTION_CHANGED 8, NEEDS_REVIEW 7, WHOLE_MESSAGE_FLOW 4, UNRESOLVED_MEMBER 2
 
 ## Not judged by the compiler, by reason
 
@@ -50,4 +53,4 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 ## Errors: 0
 
 
-## Job minutes: 19 jobs, slowest 6.9 min (stress/results/java/client-java/history/job-1of1.json), 0 over 30 min
+## Job minutes: 20 jobs, slowest 7.0 min (stress/results/go/history/csi-spec/external-provisioner/job-1of1.json), 0 over 30 min
