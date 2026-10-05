@@ -1,0 +1,199 @@
+{
+ "name": "bazel",
+ "set": "holdout",
+ "consumer": {
+  "repo": "bazelbuild/bazel",
+  "commit": "9ed3f23e4c889149f1015c8fa4758c84aaa90bad"
+ },
+ "head": "9ed3f23e4c889149f1015c8fa4758c84aaa90bad 2026-10-05T08:57:27-07:00",
+ "default_branch": "origin/master",
+ "history": {
+  "count": 191,
+  "with_proto_changes": 174,
+  "last": [
+   {
+    "commit": "f286bc12694987700216fe1a0478fc37b2c3a4d7",
+    "date": "2026-03-17",
+    "subject": "Call forceJniLinking before BlazeRuntime.main().",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "e61a426a13d3aec0787ab1eb7cb8694926d403a1",
+    "date": "2026-03-17",
+    "subject": "Support remote cache CDC (https://github.com/bazelbuild/bazel/pull/28437)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "a1b98a65f4144103c85ed9344ca7c956e265eb9f",
+    "date": "2026-03-24",
+    "subject": ".",
+    "files": 2,
+    "protos": 1
+   },
+   {
+    "commit": "5581066ddaee1a197963b5d82d32069e609bc371",
+    "date": "2026-04-03",
+    "subject": "Perform type tagging/checking in BzlLoadFunction instead of BzlCompileFunction",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "7e58b1069395625f84aa29ea25474be42830de55",
+    "date": "2026-04-09",
+    "subject": "docs: explain the output format of flags-as-proto (https://github.com/bazelbuild/bazel/pull/29134)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "5ac85549b03d817aee52b1d851cccf3f23153e10",
+    "date": "2026-04-20",
+    "subject": "Enable streaming of compact, binary, and JSON execution logs to remote storage.",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "35530d45e72d8ce4b5979ebdee1d40f194863ad6",
+    "date": "2026-04-28",
+    "subject": "Add a specific error code for `IOException`s during main repository computation",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "b3126b539ef6ba4a6ebb67db623e25a15b9adf5b",
+    "date": "2026-06-24",
+    "subject": "Add measured peak memory to SpawnMetrics and execution log",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "b7b4dfcfedd2b1a62ec16695f0f2d3acd587e254",
+    "date": "2026-06-28",
+    "subject": "Add invalidation data to downloaded Skycache nodes.",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "65b4adbf6c814fd6bd459e8432cab67042463765",
+    "date": "2026-07-07",
+    "subject": "Log an explicit terminal entry on remote RPC retry exhaustion (https://github.com/bazelbuild/bazel/p",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "3174ba883895f41a1ac524ced1e26ebec83533bc",
+    "date": "2026-07-07",
+    "subject": "Fail fast when rewound tree artifacts are nondeterministic.",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "6a5aec80fd840c5ffa499b24d9e210bbb435ec4f",
+    "date": "2026-07-13",
+    "subject": "ui: update terminal width on resize (https://github.com/bazelbuild/bazel/pull/29750)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "086da6343b2c10d660e238fd4ac4dbab5fa020e0",
+    "date": "2026-07-14",
+    "subject": "Include progress message / action description in aquery proto output formats.",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "3510aded10620dd557521ff0c74c0590e1be145f",
+    "date": "2026-07-22",
+    "subject": "remote: add gRPC service config support (https://github.com/bazelbuild/bazel/pull/29912)",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "56c4403bbb1e0110ee118b3184d6a5475a1a3493",
+    "date": "2026-07-27",
+    "subject": "Redact option headers from BEP command lines.",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "0b40802204bbe77962a24313ec115971838b1df3",
+    "date": "2026-08-19",
+    "subject": "Add `test` and `executable` to `Rule` protobuf message (https://github.com/bazelbuild/bazel/pull/279",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "19553db9b2ffd3f4bbd68696f3615832583eec42",
+    "date": "2026-08-27",
+    "subject": "Add --incompatible_fail_on_unknown_output_groups flag.",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "2161e061cedb0944c144693c2d3f5115d3c5e39f",
+    "date": "2026-08-27",
+    "subject": "Propagate `SerializationException` in `NestedSet` expansion methods.",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "9ed07e33051696b29302015e823ea8f697e7b160",
+    "date": "2026-08-28",
+    "subject": "Propagate errors other than non-existence from FileSystem.is* methods.",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "cb8de5c6bfcf0cee4b3fddebb7e1f4ebf1f6f862",
+    "date": "2026-09-02",
+    "subject": "Propagate errors other than non-existence from FileSystem.exists().",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "657eccb6d40d314caeecb82e952be2d3b8b9b699",
+    "date": "2026-09-02",
+    "subject": "Automated rollback of commit cb8de5c6bfcf0cee4b3fddebb7e1f4ebf1f6f862.",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "40f1c7d30b4b227ff4815d0ae03b2d797fd20462",
+    "date": "2026-09-03",
+    "subject": "Roll forward of https://github.com/bazelbuild/bazel/commit/cb8de5c6bfcf0cee4b3fddebb7e1f4ebf1f6f862:",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "ce2477d7eb436425c4d056c7fe6ff13e258ae267",
+    "date": "2026-09-08",
+    "subject": "Make --experimental_sibling_repository_layout a no-op (https://github.com/bazelbuild/bazel/pull/3058",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "22222ff19adc783a24b8da8772b0ff54e7e40599",
+    "date": "2026-09-17",
+    "subject": "Support --block_for_lock=<duration> for lock acquisition timeouts",
+    "files": 1,
+    "protos": 1
+   },
+   {
+    "commit": "7e63e204eeb502ffe419930ca64b2db60dcf5f50",
+    "date": "2026-09-29",
+    "subject": "Include the repo root directory in `show_repo` output (#31176)",
+    "files": 1,
+    "protos": 1
+   }
+  ]
+ },
+ "users": [],
+ "jdk_hints": [],
+ "proto_count": 51,
+ "build_files": 4,
+ "prs": {
+  "checked": 35,
+  "matching": []
+ }
+}
