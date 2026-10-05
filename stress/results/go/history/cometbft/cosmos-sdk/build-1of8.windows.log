@@ -1,0 +1,2 @@
+time=2026-10-05T17:36:32.801Z level=INFO msg=mined consumer=cosmos-sdk pin_moves=46 to_compile=1
+time=2026-10-05T17:39:19.262Z level=INFO msg=window consumer=cosmos-sdk bump=022c1e91 select=breaking breaking=10 compiler=breaks
