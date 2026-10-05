@@ -1,25 +1,25 @@
-time=2026-10-05T06:00:41.572Z level=INFO msg=cloning repo=p-spire url=https://github.com/spiffe/spire-api-sdk.git
-time=2026-10-05T06:00:42.077Z level=INFO msg=cloning repo=c-spire url=https://github.com/spiffe/spire.git
-spire       adb81b3b GO       source_build=GO      compiler=compiles          230.0s 
-spire       2af565d1 GO       source_build=GO      compiler=compiles            5.4s 
-spire       fb3af7f8 GO       source_build=GO      compiler=compiles            4.5s 
-spire       2eb8736b GO       source_build=GO      compiler=compiles            4.6s 
-spire       da0bb759 UNKNOWN  source_build=UNKNOWN compiler=compiles            4.7s 
-spire       5f39c6d3 GO       source_build=GO      compiler=compiles            5.2s 
-spire       3c6b1447 GO       source_build=GO      compiler=compiles            2.8s 
-spire       8e80ebd8 GO       source_build=GO      compiler=compiles            2.8s 
-spire       c51a5c74 GO       source_build=GO      compiler=compiles            2.6s 
-spire       9701b78b UNKNOWN  source_build=UNKNOWN compiler=compiles            2.7s 
-spire       1594f105 GO       source_build=GO      compiler=compiles            2.6s 
-spire       4cd2aac3 GO       source_build=GO      compiler=compiles            3.8s 
-spire       3fa57378 NO_GO    source_build=NO_GO   compiler=compiles            3.1s 
-spire       9e70b1d3 GO       source_build=GO      compiler=compiles            2.1s 
-spire       a201a66e GO       source_build=GO      compiler=compiles            3.1s 
-spire       2e20525c GO       source_build=GO      compiler=compiles            4.2s 
-spire       54e821e0 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.9s 
-spire       00343b76 GO       source_build=GO      compiler=compiles            2.7s 
-spire       46017233 NO_GO    source_build=NO_GO   compiler=compiles            3.1s 
-spire       b9c7b771 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.9s 
+time=2026-10-05T06:21:14.190Z level=INFO msg=cloning repo=p-spire url=https://github.com/spiffe/spire-api-sdk.git
+time=2026-10-05T06:21:14.916Z level=INFO msg=cloning repo=c-spire url=https://github.com/spiffe/spire.git
+spire       adb81b3b GO       source_build=GO      compiler=compiles          157.5s 
+spire       2af565d1 GO       source_build=GO      compiler=compiles            3.4s 
+spire       fb3af7f8 GO       source_build=GO      compiler=compiles            2.9s 
+spire       2eb8736b GO       source_build=GO      compiler=compiles            3.0s 
+spire       da0bb759 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.2s 
+spire       5f39c6d3 GO       source_build=GO      compiler=compiles            3.3s 
+spire       3c6b1447 GO       source_build=GO      compiler=compiles            1.7s 
+spire       8e80ebd8 GO       source_build=GO      compiler=compiles            1.8s 
+spire       c51a5c74 GO       source_build=GO      compiler=compiles            1.7s 
+spire       9701b78b UNKNOWN  source_build=UNKNOWN compiler=compiles            1.7s 
+spire       1594f105 GO       source_build=GO      compiler=compiles            1.7s 
+spire       4cd2aac3 GO       source_build=GO      compiler=compiles            2.3s 
+spire       3fa57378 NO_GO    source_build=NO_GO   compiler=compiles            1.9s 
+spire       9e70b1d3 GO       source_build=GO      compiler=compiles            1.3s 
+spire       a201a66e GO       source_build=GO      compiler=compiles            2.1s 
+spire       2e20525c GO       source_build=GO      compiler=compiles            3.7s 
+spire       54e821e0 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.6s 
+spire       00343b76 GO       source_build=GO      compiler=compiles            2.0s 
+spire       46017233 NO_GO    source_build=NO_GO   compiler=compiles            2.2s 
+spire       b9c7b771 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.6s 
 spire         20 decisions  GO  14  NO-GO   2  UNKNOWN   4 (20.0%)  errors 0 | compiler judged  20: agree  16  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 4 | not judged 0
 TOTAL         20 decisions  GO  14  NO-GO   2  UNKNOWN   4 (20.0%)  errors 0 | compiler judged  20: agree  16  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 4 | not judged 0
 
@@ -28,5 +28,5 @@ UNKNOWN reasons across all: windows, ecosystems, an example
     1   1  UNRESOLVED_MEMBER (e.g. spire@3fa573780352c587b96e0fe667a80ce97f1112cc)
     1   1  WHOLE_MESSAGE_FLOW (e.g. spire@4601723317a85afed588f0114e85ea3fb62b50bd)
 
-20 windows in 5m1s.
+20 windows in 3m26s.
 exit 0
