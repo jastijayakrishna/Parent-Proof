@@ -1,27 +1,27 @@
-time=2026-10-05T12:16:05.383Z level=INFO msg=cloning repo=p-containerd url=https://github.com/containerd/containerd.git
-time=2026-10-05T12:16:07.410Z level=INFO msg=cloning repo=c-containerd url=https://github.com/containerd/nerdctl.git
+time=2026-10-05T12:39:24.768Z level=INFO msg=cloning repo=p-containerd url=https://github.com/containerd/containerd.git
+time=2026-10-05T12:39:27.365Z level=INFO msg=cloning repo=c-containerd url=https://github.com/containerd/nerdctl.git
 containerd  40f84371 GO       source_build=GO      compiler=-                   0.0s 
-containerd  2ea4ddb3 GO       source_build=GO      compiler=compiles          105.4s 
+containerd  2ea4ddb3 GO       source_build=GO      compiler=compiles           51.8s 
 containerd  52be09ef GO       source_build=GO      compiler=-                   0.0s 
 containerd  65b4eb91 GO       source_build=GO      compiler=-                   0.0s 
-containerd  a7224742 GO       source_build=GO      compiler=compiles            3.4s 
+containerd  a7224742 GO       source_build=GO      compiler=compiles            5.3s 
 containerd  8c4ccd29 GO       source_build=GO      compiler=-                   0.0s 
 containerd  fbbe2067 GO       source_build=GO      compiler=-                   0.0s 
-containerd  7e217685 GO       source_build=GO      compiler=-                   0.5s 
+containerd  7e217685 GO       source_build=GO      compiler=-                   0.6s 
 containerd  78abbfb7 GO       source_build=GO      compiler=-                   0.0s 
-containerd  a452c2e2 GO       source_build=GO      compiler=-                   0.4s 
-containerd  658a1c78 GO       source_build=GO      compiler=-                   0.6s 
-containerd  988f3af0 GO       source_build=GO      compiler=-                   0.4s 
-containerd  ea0ed51e GO       source_build=GO      compiler=-                   0.4s 
+containerd  a452c2e2 GO       source_build=GO      compiler=-                   0.8s 
+containerd  658a1c78 GO       source_build=GO      compiler=-                   0.8s 
+containerd  988f3af0 GO       source_build=GO      compiler=-                   0.6s 
+containerd  ea0ed51e GO       source_build=GO      compiler=-                   0.6s 
 containerd  d763407d GO       source_build=GO      compiler=-                   0.0s 
-containerd  7f10e9eb GO       source_build=GO      compiler=-                   0.3s 
-containerd  ac01ae5c GO       source_build=GO      compiler=-                   0.7s 
+containerd  7f10e9eb GO       source_build=GO      compiler=-                   0.4s 
+containerd  ac01ae5c GO       source_build=GO      compiler=-                   0.9s 
 containerd  efc8e125 GO       source_build=GO      compiler=-                   0.0s 
-containerd  d806373f GO       source_build=GO      compiler=-                   0.7s 
-containerd  74b465dc GO       source_build=GO      compiler=-                   0.4s 
-containerd  2c102c6c GO       source_build=GO      compiler=-                   0.6s 
+containerd  d806373f GO       source_build=GO      compiler=-                   1.0s 
+containerd  74b465dc GO       source_build=GO      compiler=-                   0.6s 
+containerd  2c102c6c GO       source_build=GO      compiler=-                   0.7s 
 containerd    20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   2: agree   2  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 18
 TOTAL         20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   2: agree   2  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 18
 
-20 windows in 1m58s.
+20 windows in 1m9s.
 exit 0
