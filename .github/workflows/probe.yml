@@ -1,0 +1,89 @@
+# On demand: runs the tasks listed in stress/probe/request.txt, one job each
+# (at most 50 minutes), and commits what each printed and wrote to
+# stress/probe/out/<task>/. Projects are cloned here, never on a laptop.
+# A task line is "<id> <cache> <command...>": <cache> names the Maven and
+# Gradle dependency cache it shares (java-<cache>-), or "-" for none; the
+# command runs from the repository root with $OUT set to its output folder.
+name: probe
+on:
+  push:
+    paths:
+      - stress/probe/request.txt
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: probe
+
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      tasks: ${{ steps.t.outputs.tasks }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - id: t
+        run: |
+          tasks=$(grep -vE '^[[:space:]]*(#|$)' stress/probe/request.txt | jq -R -c 'split(" ") | {id: .[0], cache: .[1], cmd: (.[2:] | join(" "))}' | jq -s -c .)
+          echo "$tasks" | jq -r '.[] | "\(.id): \(.cmd)"'
+          echo "tasks=$tasks" >> "$GITHUB_OUTPUT"
+
+  task:
+    needs: plan
+    if: needs.plan.outputs.tasks != '[]'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 55
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        task: ${{ fromJSON(needs.plan.outputs.tasks) }}
+    name: ${{ matrix.task.id }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+      OUT: stress/probe/out/${{ matrix.task.id }}
+      CMD: ${{ matrix.task.cmd }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Restore the dependency caches
+        if: matrix.task.cache != '-'
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: |
+            ~/.m2/repository
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: java-${{ matrix.task.cache }}-${{ github.run_id }}
+          restore-keys: java-${{ matrix.task.cache }}-
+      - name: Run
+        run: |
+          set +e
+          rm -rf "$OUT"; mkdir -p "$OUT"
+          started=$(date +%s)
+          timeout 50m bash -c "$CMD" > "$RUNNER_TEMP/task.out" 2>&1
+          rc=$?
+          { tail -c 60000 "$RUNNER_TEMP/task.out"; echo; echo "exit $rc seconds $(( $(date +%s) - started ))"; } > "$OUT/task.log"
+          tail -20 "$OUT/task.log"
+          echo "::notice title=${{ matrix.task.id }}::exit $rc after $(( $(date +%s) - started )) s"
+      - name: Save the dependency caches
+        if: always() && matrix.task.cache != '-'
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: |
+            ~/.m2/repository
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: java-${{ matrix.task.cache }}-${{ github.run_id }}
+      - name: Commit the output
+        if: always()
+        run: |
+          git config user.name "proto-shadow"
+          git config user.email "proto-shadow@users.noreply.github.com"
+          git add "$OUT"
+          git commit -q -m "Probe ${{ matrix.task.id }} of $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          for i in 1 2 3 4 5 6; do
+            if git pull -q --rebase -X theirs origin main && git push -q; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          exit 1

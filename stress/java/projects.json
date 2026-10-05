@@ -1,0 +1,141 @@
+{
+  "description": "Java consumers of protobuf contracts for the 2026-10 stress test (stress/PREREG.md). Each project is pinned to a commit. `contract` says how the contract reaches the build: a git submodule (provider = the submodule's repository), files a script reads a provider commit from (provider = that repository, pin read with `regex`), or paths of this repository (provider = this repository: vendored copies, generated code checked in, or a contract and its users in one repository). `overlay` are the paths taken from the newer side when the compiler judges a window. `build` compiles the main code of the modules listed in `modules` (all modules when empty), from a clean tree.",
+  "since": "2023-01-01",
+  "projects": [
+    {
+      "name": "temporal-sdk-java",
+      "set": "dev",
+      "consumer": {"repo": "temporalio/sdk-java", "commit": "1af71ba343d7fe4d5c6c97c959cea6b68f178e0e"},
+      "contract": {"submodule": "temporal-serviceclient/src/main/proto", "provider": "temporalio/api", "provider_commit": "05384b58adf17e5d08d75c0df01aa25cba4974cc"},
+      "submodules": ["temporal-serviceclient/src/main/proto", "temporal-serviceclient/src/main/protocloud"],
+      "users": "project\\(['\":]+temporal-serviceclient",
+      "jdk": "17",
+      "build": "./gradlew --no-daemon --console=plain --build-cache classes",
+      "clean": "./gradlew --no-daemon --console=plain clean"
+    },
+    {
+      "name": "camunda-zeebe",
+      "set": "dev",
+      "consumer": {"repo": "camunda/camunda", "commit": "5ed25b7cfa7715ef77efdd332df6fa7b27e6b8b9"},
+      "contract": {"paths": ["zeebe/gateway-protocol/src/main/proto"]},
+      "users": "<artifactId>zeebe-gateway-protocol</artifactId>",
+      "jdk": "21",
+      "build": "./mvnw -B -ntp -T1C -Dquickly -DskipTests compile -pl zeebe/gateway-protocol,zeebe/gateway-protocol-impl,zeebe/gateway-grpc,clients/java -am",
+      "clean": "rm -rf $(find . -name target -type d -prune)"
+    },
+    {
+      "name": "google-cloud-pubsub",
+      "set": "dev",
+      "consumer": {"repo": "googleapis/google-cloud-java", "commit": "70c7439de5a3ae401b8d5833abd06de32c8f7a0a"},
+      "contract": {"paths": ["java-pubsub/proto-google-cloud-pubsub-v1", "java-pubsub/grpc-google-cloud-pubsub-v1"]},
+      "users": "<artifactId>(proto|grpc)-google-cloud-pubsub-v1</artifactId>",
+      "jdk": "17",
+      "build": "mvn -B -ntp -T1C -DskipTests -Dclirr.skip -Denforcer.skip -Dcheckstyle.skip -Dfmt.skip -Danimal.sniffer.skip -Djacoco.skip compile -f java-pubsub/pom.xml",
+      "clean": "rm -rf $(find java-pubsub -name target -type d -prune)"
+    },
+    {
+      "name": "google-cloud-pubsub-history",
+      "set": "dev",
+      "note": "googleapis/java-pubsub before it moved into google-cloud-java (archived 2026-05); its history only.",
+      "consumer": {"repo": "googleapis/java-pubsub", "commit": "ba2b8a32c584e9a263d432beb691ab984e830ffa"},
+      "contract": {"paths": ["proto-google-cloud-pubsub-v1", "grpc-google-cloud-pubsub-v1"]},
+      "users": "<artifactId>(proto|grpc)-google-cloud-pubsub-v1</artifactId>",
+      "jdk": "11",
+      "build": "mvn -B -ntp -T1C -DskipTests -Dclirr.skip -Denforcer.skip -Dcheckstyle.skip -Dfmt.skip -Danimal.sniffer.skip -Djacoco.skip compile",
+      "clean": "rm -rf $(find . -name target -type d -prune)"
+    },
+    {
+      "name": "hbase",
+      "set": "dev",
+      "consumer": {"repo": "apache/hbase", "commit": "8559faedbdea5309a42439b75627194be184182f"},
+      "contract": {"paths": ["hbase-protocol-shaded/src/main/protobuf"]},
+      "users": "<artifactId>hbase-protocol-shaded</artifactId>",
+      "jdk": "17",
+      "build": "mvn -B -ntp -T1C -DskipTests -Denforcer.skip -Dcheckstyle.skip -Dspotbugs.skip -Dspotless.check.skip compile -pl hbase-server -am",
+      "clean": "rm -rf $(find . -name target -type d -prune)"
+    },
+    {
+      "name": "conductor",
+      "set": "dev",
+      "consumer": {"repo": "conductor-oss/conductor", "commit": "ab2de6da6c7b5935e6c6d09da29953b8d4cfe291"},
+      "contract": {"paths": ["grpc/src/main/proto"]},
+      "users": "project\\(['\":]+conductor-grpc['\"]",
+      "jdk": "17",
+      "build": "./gradlew --no-daemon --console=plain --build-cache :conductor-grpc:classes :conductor-grpc-server:classes :conductor-grpc-client:classes",
+      "clean": "./gradlew --no-daemon --console=plain clean"
+    },
+    {
+      "name": "beam",
+      "set": "holdout",
+      "consumer": {"repo": "apache/beam", "commit": "7711c5345ad906fe0d05234c9fcee8add95fc561"},
+      "contract": {"paths": ["model/pipeline/src/main/proto", "model/fn-execution/src/main/proto", "model/job-management/src/main/proto"]},
+      "users": "project\\((path: *)?['\"]:model:(pipeline|fn-execution|job-management)['\"]",
+      "jdk": "17",
+      "build": "./gradlew --no-daemon --console=plain --build-cache :runners:core-java:classes :sdks:java:harness:classes :runners:java-fn-execution:classes",
+      "clean": "./gradlew --no-daemon --console=plain clean"
+    },
+    {
+      "name": "alluxio",
+      "set": "holdout",
+      "consumer": {"repo": "Alluxio/alluxio", "commit": "ca893e832f73eeb315f650fad73104173fecf9f1"},
+      "contract": {"paths": ["core/transport/src/main/proto"]},
+      "users": "<artifactId>alluxio-core-transport</artifactId>",
+      "jdk": "11",
+      "build": "mvn -B -ntp -T1C -DskipTests -Dcheckstyle.skip -Dlicense.skip -Dfindbugs.skip -Dspotbugs.skip -Dmaven.javadoc.skip -Denforcer.skip compile -pl core/server/master -am",
+      "clean": "rm -rf $(find . -name target -type d -prune)"
+    },
+    {
+      "name": "bazel",
+      "set": "holdout",
+      "note": "Builds with Bazel, not Maven or Gradle: the verifier finds no compiled classes. Checked without a build: no window may say Merge.",
+      "consumer": {"repo": "bazelbuild/bazel", "commit": "9ed3f23e4c889149f1015c8fa4758c84aaa90bad"},
+      "contract": {"paths": ["src/main/protobuf"]},
+      "users": "src/main/protobuf",
+      "jdk": "21",
+      "build": "",
+      "clean": ""
+    },
+    {
+      "name": "client-java",
+      "set": "regression",
+      "consumer": {"repo": "tikv/client-java", "commit": "c12047a026058e69db74a95d07a4162ceeeb03ec"},
+      "contract": {"paths": ["dev/proto.sh", "scripts/proto.sh"], "provider": "pingcap/kvproto", "regex": "kvproto_hash=['\"]?([0-9a-f]{40})"},
+      "users": "",
+      "jdk": "8",
+      "prebuild": "if [ -f dev/proto.sh ]; then bash dev/proto.sh; else bash scripts/proto.sh; fi",
+      "build": "mvn -B -ntp -DskipTests -Djacoco.skip -Dspotless.check.skip -Dspotless.apply.skip compile",
+      "clean": "rm -rf target"
+    },
+    {
+      "name": "java-control-plane",
+      "set": "regression",
+      "consumer": {"repo": "envoyproxy/java-control-plane", "commit": "a3ecf70dc5b6698da94201f3a640c33669951f56"},
+      "contract": {"paths": ["api/src/main/proto"]},
+      "users": "<artifactId>api</artifactId>",
+      "jdk": "11",
+      "build": "mvn -B -ntp -T1C -DskipTests -Dcheckstyle.skip compile",
+      "clean": "rm -rf $(find . -name target -type d -prune)"
+    },
+    {
+      "name": "skywalking-java",
+      "set": "regression",
+      "consumer": {"repo": "apache/skywalking-java", "commit": "ea2fb09b0736cbbcc28b66ca57ca6513f6c9284f"},
+      "contract": {"submodule": "apm-protocol/apm-network/src/main/proto", "provider": "apache/skywalking-data-collect-protocol"},
+      "submodules": ["apm-protocol/apm-network/src/main/proto"],
+      "users": "<artifactId>apm-network</artifactId>",
+      "jdk": "17",
+      "build": "./mvnw -B -ntp -T1C -DskipTests -Dcheckstyle.skip -Drat.skip compile -pl apm-sniffer/apm-agent-core -am",
+      "clean": "rm -rf $(find . -name target -type d -prune)"
+    },
+    {
+      "name": "jetcd",
+      "set": "regression",
+      "consumer": {"repo": "etcd-io/jetcd", "commit": "9f509770201e8fba1b7f67340eff086f0d29d976"},
+      "contract": {"paths": ["jetcd-grpc/src/main/proto"]},
+      "users": "project\\(['\":]+jetcd-grpc",
+      "jdk": "17",
+      "build": "./gradlew --no-daemon --console=plain --build-cache classes",
+      "clean": "./gradlew --no-daemon --console=plain clean"
+    }
+  ]
+}
