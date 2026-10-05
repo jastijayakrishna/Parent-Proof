@@ -1,5 +1,5 @@
-Gates of the probe engine (Parent probe-experiment d6d1033, code 0026f9b) requested 2026-10-05T04:45Z
-source: jastijayakrishna/Parent, branch probe-experiment, commit d6d10334 (Phase 2: the probe decides field changes; the analyzer decides other kinds)
-sha256 (uncompressed linux/amd64): dbe8dc4c2a4a7c27f3010f830e59e4419a19449bc82276b9f68b6ab36a362af2
-built: 2026-10-05T04:45Z
-scan: all 17 corpus projects with the compiler, new (the probe) and before (the analyzer, main bb4d10e)
+Gates of the gRPC interceptor fix (Parent fix-grpc-interceptor 7408b1a, go-analyzer v0.19.0) requested 2026-10-05T05:58Z
+source: jastijayakrishna/Parent, branch fix-grpc-interceptor, commit 7408b1a1 (follow the messages gRPC hands to interceptors, stream wrappers and stats handlers)
+sha256 (uncompressed linux/amd64): 19f1076ca7b4bd8ef14fe8f3fd0154c93e1ee8c6a2615cca2d57177de1915681
+built: 2026-10-05T05:58Z
+scan: all 17 corpus projects with the compiler, new (the fix) and before (main bb4d10e)
