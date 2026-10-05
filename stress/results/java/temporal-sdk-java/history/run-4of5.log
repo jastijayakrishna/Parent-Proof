@@ -1,0 +1,6 @@
+temporal-sdk-java history: 27 windows, shard 4/5 has 5
+e354d1ff61e2 2023-05-10 verifier=None build=None compiler=baseline_fails 42.5s 
+92692b406cfc 2024-10-10 verifier=None build=None compiler=baseline_fails 14.7s 
+7a093846fa72 2025-05-06 verifier=None build=None compiler=baseline_fails 20.2s 
+20fb8520cdb7 2026-03-10 verifier=None build=None compiler=baseline_fails 17.6s 
+187421b0e5e1 2026-05-27 verifier=None build=None compiler=baseline_fails 15.0s 
