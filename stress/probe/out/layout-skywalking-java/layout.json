@@ -1,0 +1,50 @@
+{
+ "name": "skywalking-java",
+ "set": "regression",
+ "consumer": {
+  "repo": "apache/skywalking-java",
+  "commit": "ea2fb09b0736cbbcc28b66ca57ca6513f6c9284f"
+ },
+ "head": "ea2fb09b0736cbbcc28b66ca57ca6513f6c9284f 2026-09-27T21:50:46+08:00",
+ "default_branch": "origin/main",
+ "history": {
+  "count": 4,
+  "with_proto_changes": 4,
+  "last": [
+   {
+    "commit": "c15ac3071e42f72a528664631248b9e75d83bbaf",
+    "date": "2023-10-20",
+    "pin": "d4da5699915ee52288f8ff1c954decf6363485bc"
+   },
+   {
+    "commit": "2027a98b1ec28ec24be3b7aac346d11bb3f3ccfe",
+    "date": "2024-10-30",
+    "pin": "bd1f91f7e1cb4de9d9b5ccb71f36ce6b1c7c97f5"
+   },
+   {
+    "commit": "f1da117722e314f01ea8d182a2bce4a79f45f0fb",
+    "date": "2025-08-21",
+    "pin": "16c51358ebcf42629bf4ffdf952253971f20eb25"
+   },
+   {
+    "commit": "f750006020249d29a21cae63ae50da67f182c6ab",
+    "date": "2026-03-01",
+    "pin": "07882d57becb37e341f7fc492c11f9f5a5f311cf"
+   }
+  ]
+ },
+ "users": [],
+ "jdk_hints": [
+  "pom.xml:81: <maven.compiler.source>8</maven.compiler.source>",
+  "pom.xml:82: <maven.compiler.target>8</maven.compiler.target>",
+  "pom.xml:83: <maven.compiler.release>8</maven.compiler.release>",
+  "pom.xml:197: <groupId>org.openjdk.jmh</groupId>",
+  "pom.xml:272: <groupId>org.openjdk.jmh</groupId>"
+ ],
+ "proto_count": 6,
+ "build_files": 520,
+ "provider_prs": {
+  "checked": 0,
+  "matching": []
+ }
+}
