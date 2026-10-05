@@ -43,7 +43,7 @@ was used to tune the verifier.
 | milvus -> milvus-client | v2.3.4-0.20240228061649-a922b16f2a46 -> v2.3.4-0.20240430035521-259ae1d10016 | compiles | Needs review (Needs review) | OPTION_CHANGED, NEEDS_REVIEW |
 | milvus -> milvus-client | v2.3.4-0.20240815123953-6dab6fcd6454 -> v2.3.4-0.20241108105827-266fb751b620 | compiles | Don't merge (Needs review) | OPTION_CHANGED |
 | milvus -> milvus-client | v2.6.4-0.20251013093953-f3e0a710c654 -> v2.6.5-0.20251102105128-d157e5f676d6 | breaks | Needs review (Needs review) | OPTION_CHANGED |
-| milvus -> milvus-client | v2.6.6-0.20251119054300-fcb3986f4af1 -> v2.6.6-0.20251124145901-0b96e4c8af45 | breaks | Don't merge (Don't merge) | WHOLE_MESSAGE_FLOW, NEEDS_REVIEW |
+| milvus -> milvus-client | v2.6.6-0.20251119054300-fcb3986f4af1 -> v2.6.6-0.20251124145901-0b96e4c8af45 | breaks | Don't merge (Don't merge) | NEEDS_REVIEW, WHOLE_MESSAGE_FLOW |
 | milvus -> milvus-client | v2.6.6-0.20260309063517-8b5776d31f2b -> v2.6.6-0.20260323081523-53649783989c | compiles | Needs review (Needs review) | OPTION_CHANGED |
 | milvus -> milvus-sdk-go | v2.3.1 -> v2.3.2 | compiles | Needs review (Needs review) | OPTION_CHANGED |
 | milvus -> milvus-sdk-go | v2.3.3 -> v2.3.4 | compiles | Needs review (Needs review) | OPTION_CHANGED |
