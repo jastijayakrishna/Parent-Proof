@@ -1,11 +1,11 @@
 client-java history: 10 windows, shard 1/1 has 10
-41aeed2679f8 2020-09-07 verifier=GO build=GO compiler=oracle_error 36.1s 
-10d8efbbc451 2021-02-20 verifier=NO_GO build=NO_GO compiler=breaks 53.0s 
-c9507c2fa7b0 2021-03-15 verifier=GO build=GO compiler=compiles 55.1s 
-dde59a38f8a8 2021-03-25 verifier=NO_GO build=NO_GO compiler=breaks 53.5s 
-798244cd9ef1 2021-07-22 verifier=GO build=GO compiler=compiles 56.0s 
-bbe4f9b0c4e0 2021-10-14 verifier=NO_GO build=NO_GO compiler=breaks 56.0s 
-b82276231c8a 2021-10-25 verifier=GO build=GO compiler=compiles 56.5s 
-5dbfe03b2cc0 2021-12-31 verifier=NO_GO build=GO compiler=compiles 59.0s 
-7122903f1dd5 2022-02-10 verifier=GO build=GO compiler=compiles 58.2s 
-9ce52d34017e 2022-06-02 verifier=GO build=GO compiler=compiles 61.1s 
+41aeed2679f8 2020-09-07 verifier=GO build=GO compiler=oracle_error 62.9s 
+10d8efbbc451 2021-02-20 verifier=NO_GO build=NO_GO compiler=breaks 61.9s 
+c9507c2fa7b0 2021-03-15 verifier=GO build=GO compiler=compiles 59.3s 
+dde59a38f8a8 2021-03-25 verifier=NO_GO build=NO_GO compiler=breaks 54.6s 
+798244cd9ef1 2021-07-22 verifier=GO build=GO compiler=compiles 58.4s 
+bbe4f9b0c4e0 2021-10-14 verifier=NO_GO build=NO_GO compiler=breaks 59.2s 
+b82276231c8a 2021-10-25 verifier=GO build=GO compiler=compiles 58.3s 
+5dbfe03b2cc0 2021-12-31 verifier=NO_GO build=GO compiler=compiles 64.0s 
+7122903f1dd5 2022-02-10 verifier=GO build=GO compiler=compiles 59.8s 
+9ce52d34017e 2022-06-02 verifier=GO build=GO compiler=compiles 63.6s 
