@@ -3,3 +3,4 @@ source: jastijayakrishna/Parent, branch main, commit fd5ae271c47bb18b8137bb105a1
 sha256 (uncompressed linux/amd64): 92fa9f95f4abc2ad519ef790c63538a5765803f1443690f533efbdbb4e4455c1
 built: 2026-10-05T12:38Z
 scan: all 17 corpus projects with the compiler, new (fd5ae27) and before (main 7ecca11)
+rerun 2026-10-05T14:43Z: run 37310913010 passed every gate and every scan, but its lnd before-scan could not save: it overlapped the run before, which had just saved the same files. Results now save with this run's files winning a conflict.

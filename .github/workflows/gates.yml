@@ -151,7 +151,7 @@ jobs:
           git add gates/results
           git commit -q -m "Gate $NAME of $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
           for i in 1 2 3 4 5 6; do
-            if git pull -q --rebase origin main && git push -q; then exit 0; fi
+            if git pull -q --rebase -X theirs origin main && git push -q; then exit 0; fi
             git rebase --abort 2>/dev/null || true
             sleep $((i * 5))
           done
@@ -199,7 +199,7 @@ jobs:
           git add gates/results
           git commit -q -m "Scan $ECO ($BUILD) with the compiler of $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
           for i in 1 2 3 4 5 6; do
-            if git pull -q --rebase origin main && git push -q; then exit 0; fi
+            if git pull -q --rebase -X theirs origin main && git push -q; then exit 0; fi
             git rebase --abort 2>/dev/null || true
             sleep $((i * 5))
           done
