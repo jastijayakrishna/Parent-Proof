@@ -1,0 +1,214 @@
+/home/runner/work/Parent-Proof/Parent-Proof/stress/probe/layout.py:130: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  cutoff = (datetime.datetime.utcnow() - datetime.timedelta(days=30)).strftime("%Y-%m-%dT%H:%M:%SZ")
+{
+ "name": "camunda-zeebe",
+ "set": "dev",
+ "consumer": {
+  "repo": "camunda/camunda",
+  "commit": "5ed25b7cfa7715ef77efdd332df6fa7b27e6b8b9"
+ },
+ "head": "5ed25b7cfa7715ef77efdd332df6fa7b27e6b8b9 2026-10-05T16:30:45Z",
+ "default_branch": "origin/main",
+ "history": {
+  "count": 826,
+  "with_proto_changes": 56,
+  "last": [
+   {
+    "commit": "1d2eb4eeb0fe92aabbbf4642648be01b5c3e9df9",
+    "date": "2026-09-02",
+    "subject": "Expose reasoning and cache token metrics through the agent instance REST API (#61638)",
+    "files": 1,
+    "protos": 0
+   },
+   {
+    "commit": "bd4fcdd33540503712b04a4cc0f0192f2e2487db",
+    "date": "2026-09-03",
+    "subject": "feat: orchestrate two-phase partition joins and leaves via dynamic cluster configuration (#61173)",
+    "files": 1,
+    "protos": 0
+   },
+   {
+    "commit": "59136c77946632879e3596eb8d6fb383213ae53d",
+    "date": "2026-09-03",
+    "subject": "fix: resolve create-by-id to the latest active process version (#61817)",
+    "files": 1,
+    "protos": 0
+   },
+   {
+    "commit": "373428baa38af7d77609f9f60ccd52cd28a1f584",
+    "date": "2026-09-03",
+    "subject": "Bound historyItemId length in the schema and reject overlong values (#61766)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "fdd54f1e6861c661babbed09bb76259867e97fcb",
+    "date": "2026-09-03",
+    "subject": "Accept agent instance update with a superseded job lease (#61833)",
+    "files": 1,
+    "protos": 0
+   },
+   {
+    "commit": "5f7d6db03a540f2f64d48063c8aff8f3aa9fd908",
+    "date": "2026-09-04",
+    "subject": "feat: add OR-connected search criteria to identity search endpoints (#61116)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "dde011ac3267889fefc29a6d0c0e6b8ba6c59c0f",
+    "date": "2026-09-07",
+    "subject": "Restrict AGENT_INSTANCE:CREATE history items to CONFIGURATION and USER roles (#61773)",
+    "files": 1,
+    "protos": 0
+   },
+   {
+    "commit": "5dd069ca97afc7aeba690406b3389702c36a53d1",
+    "date": "2026-09-09",
+    "subject": "feat: model job lease token as an opaque engine-minted semantic key (#62461)",
+    "files": 3,
+    "protos": 0
+   },
+   {
+    "commit": "78dfc977d89a69cc619d71bc6c3d05f687058c63",
+    "date": "2026-09-09",
+    "subject": "fix: skip rebalance for partitions in recovering tenants (#61378)",
+    "files": 1,
+    "protos": 0
+   },
+   {
+    "commit": "01986041043c29a842a7daeb9f372d800fb487ef",
+    "date": "2026-09-09",
+    "subject": "feat: model agent-instance and message elementId as the semantic ElementId (#62464)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "8b550898bac0a9c4cbdbcf9e4ccd4231265f7af5",
+    "date": "2026-09-10",
+    "subject": "fix: remove redundant page from required in Job Statistics result schemas (#55914)",
+    "files": 1,
+    "protos": 0
+   },
+   {
+    "commit": "aceb228ded9088275d9853c2dc68763c2f07e0a2",
+    "date": "2026-09-10",
+    "subject": "add upgrade readiness api endpoint (#61876)",
+    "files": 2,
+    "protos": 0
+   },
+   {
+    "commit": "40149d26582b1c3b62daed90e05ae93fecaef105",
+    "date": "2026-09-14",
+    "subject": "fix: ensure all new $or filters are marked as nullable (#62912)",
+    "files": 4,
+    "protos": 0
+   },
+   {
+    "commit": "0f3eed2ab0096b31eb29b8cb7150612559f9aaa7",
+    "date": "2026-09-14",
+    "subject": "feat: add spectral rule to catch required entries redundant with allOf (#62679)",
+    "files": 1,
+    "protos": 0
+   },
+   {
+    "commit": "f2b9a9466ae08048a065defcbbd98a76c4472395",
+    "date": "2026-09-14",
+    "subject": "docs: remove alpha markers from secret resolution endpoints and client (#62808)",
+    "files": 1,
+    "protos": 0
+   },
+   {
+    "commit": "738a6fe6393ffe6af7e3e5faf2af4ce778f4000a",
+    "date": "2026-09-14",
+    "subject": "feat: type lease token by request in generated SDKs via x-present-when (#62777)",
+    "files": 1,
+    "protos": 0
+   },
+   {
+    "commit": "ca99a4930a217975344aa4634e89ddddba00fc6a",
+    "date": "2026-09-15",
+    "subject": "fix: cancel suspended process instances in batch operations (#62660)",
+    "files": 1,
+    "protos": 0
+   },
+   {
+    "commit": "960e5e1c7b5323d60ec7b4ed8b9e3263961aa8cb",
+    "date": "2026-09-15",
+    "subject": "feat: allow filtering role members by username (#62739)",
+    "files": 1,
+    "protos": 0
+   },
+   {
+    "commit": "5ed397e9d54fe43d93d32ba8587acbd76a73e775",
+    "date": "2026-09-16",
+    "subject": "refactor: rename the job lease token to jobLeaseToken across all API surfaces (#63086)",
+    "files": 4,
+    "protos": 1
+   },
+   {
+    "commit": "4f50b5b159d9127aad632bef43154cfedc9b6cb1",
+    "date": "2026-09-21",
+    "subject": "fix: prevent batch operation search from failing on documents without a type (#63685)",
+    "files": 1,
+    "protos": 0
+   },
+   {
+    "commit": "f4f4f54ca235854f93c6c215607549b9c5a47890",
+    "date": "2026-09-24",
+    "subject": "feat: 63384 admin shadcn routes (#63648)",
+    "files": 1,
+    "protos": 0
+   },
+   {
+    "commit": "8f38044570b15b86e8231fbde16f1866f3dd1d32",
+    "date": "2026-09-25",
+    "subject": "docs: correct minimum for page.limit in search-models.yaml (#63677)",
+    "files": 1,
+    "protos": 0
+   },
+   {
+    "commit": "38011cbecb6c0bd5a582363cf855518f75312bfb",
+    "date": "2026-09-29",
+    "subject": "fix: filter incident errorMessage with matchPhrase instead of term (#64075)",
+    "files": 1,
+    "protos": 0
+   },
+   {
+    "commit": "3278bd9a6c6f784ff6d1c6a1f0a3c009cbd28549",
+    "date": "2026-09-30",
+    "subject": "fix: keep batch cancellation within the requested process instance states (#64350)",
+    "files": 1,
+    "protos": 0
+   },
+   {
+    "commit": "6e9d7fd663f14c84f64d50f2bbb123b0d241af2d",
+    "date": "2026-10-01",
+    "subject": "fix: reject cancel of a terminating process instance as INVALID_STATE (#64500)",
+    "files": 1,
+    "protos": 0
+   }
+  ]
+ },
+ "users": [
+  "parent/pom.xml",
+  "zeebe/gateway-protocol-impl/pom.xml",
+  "zeebe/gateway-protocol/pom.xml",
+  "zeebe/gateway-rest/pom.xml"
+ ],
+ "jdk_hints": [],
+ "proto_count": 4,
+ "build_files": 149,
+ "prs": {
+  "checked": 37,
+  "matching": [
+   {
+    "n": 64070,
+    "title": "fix: override state filter in batch modify, migrate, and incident-resolution",
+    "updated": "2026-10-05"
+   }
+  ]
+ }
+}
+
+exit 0 seconds 41
