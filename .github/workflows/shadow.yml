@@ -1,10 +1,12 @@
 # Every hour: find the open pull requests that change a .proto file in
 # the 17 projects of corpus.json, decide each with the pinned verifier, let the
 # Go compiler build the real consumer against it, and commit the records.
+# GitHub delays or drops scheduled runs when busy, so it is asked twice an
+# hour; a pull request whose head already has a prediction is skipped.
 name: shadow
 on:
   schedule:
-    - cron: "23 * * * *"
+    - cron: "23,53 * * * *"
   workflow_dispatch:
     inputs:
       max_prs:
@@ -83,9 +85,10 @@ jobs:
             mv "$f" "predictions/$eco/"
           done
           bash scripts/score.sh > SCOREBOARD.md
+          python3 scripts/front.py
           git config user.name "proto-shadow"
           git config user.email "proto-shadow@users.noreply.github.com"
-          git add predictions SCOREBOARD.md
+          git add predictions SCOREBOARD.md README.md
           git diff --cached --quiet && exit 0
           git commit -q -m "Predictions of $(date -u +%Y-%m-%dT%H:%MZ)"
           git pull -q --rebase origin main

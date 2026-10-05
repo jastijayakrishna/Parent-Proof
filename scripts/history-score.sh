@@ -8,6 +8,8 @@ files=(history/results/*/*/results-*.jsonl)
 
 echo "# History: real upgrades, judged by the compiler"
 echo
+echo "Updated $(date -u '+%Y-%m-%d %H:%M') UTC."
+echo
 echo "Every row is one upgrade a project really made of a contract module it"
 echo "uses, mined from its git history. The Go compiler builds the project's code"
 echo "at that upgrade against the old and the new module. None of these projects"

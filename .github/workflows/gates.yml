@@ -189,7 +189,9 @@ jobs:
           "$RUNNER_TEMP/verifier" gate scan --corpus corpus.json --only "$ECO" --oracle --oss ~/scan/oss --work ~/scan/work --out "$dest/scan.jsonl" > "$RUNNER_TEMP/scan.out" 2>&1
           echo "exit $?" >> "$RUNNER_TEMP/scan.out"
           tail -c 8000 "$RUNNER_TEMP/scan.out" > "$dest/scan.out"
-          head -1 bin/VERSION > "$dest/verifier.txt"
+          version=bin/VERSION
+          if [ "$BUILD" = before ]; then version=bin/VERSION-before; fi
+          head -1 "$version" > "$dest/verifier.txt"
           summary=$(grep -E "decisions|failed|disagree" "$dest/scan.out" | head -3 | tr '\n' ' ' | cut -c1-900)
           echo "::notice title=scan $ECO $BUILD::$summary"
           git config user.name "proto-shadow"

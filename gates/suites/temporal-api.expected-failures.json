@@ -5,5 +5,33 @@
     "reason": "A wrong GO outside the contract: the nexus generator renamed workflowservicenexus.WorkflowService in api-go while the .proto files changed only comments. The verifier checks the protobuf contract, not other generators' code (README, What it cannot see); the Go compiler catches it when the caller upgrades.",
     "approver": "founder",
     "label": "outside the contract"
+  },
+  {
+    "window": "sdk-go@03437bfabb5cd42e41e1e39a526563c414f62f53:b66af7ab522c34ef697aed6c87b7f69b422c9259..db5f593060ee579460e7f4e06d79b5e4f3af2387",
+    "kind": "unknown_on_safe",
+    "reason": "Only the build part is Needs review, and the verdict is Don't merge on the run-time part: the upgrade changes the custom option (temporal.api.protometa.v1.request_header), which a code generator reads to write proxy/request_header.go that sdk-go calls. The verifier does not yet compare the code a generator writes from an option (README, What it cannot see), so it cannot prove the build safe; the Go compiler builds it.",
+    "approver": "founder",
+    "label": "option a generator reads"
+  },
+  {
+    "window": "sdk-go@156715b6ba508d322d41d87de7238a3cbbfad8fe:db5f593060ee579460e7f4e06d79b5e4f3af2387..43e48962c8dfb9fd693ed75419735983ecf5529c",
+    "kind": "unknown_on_safe",
+    "reason": "Only the build part is Needs review, and the verdict is Don't merge on the run-time part: the upgrade changes the custom option (temporal.api.protometa.v1.request_header), which a code generator reads to write proxy/request_header.go that sdk-go calls. The verifier does not yet compare the code a generator writes from an option (README, What it cannot see), so it cannot prove the build safe; the Go compiler builds it.",
+    "approver": "founder",
+    "label": "option a generator reads"
+  },
+  {
+    "window": "sdk-go@5ac3ba833c4bee29356337c6294f0e7443ec63b0:43e48962c8dfb9fd693ed75419735983ecf5529c..67150b14e0509210bf250960bd3278a4509e091c",
+    "kind": "unknown_on_safe",
+    "reason": "Only the build part is Needs review, and the verdict is Don't merge on the run-time part: the upgrade changes the custom option (temporal.api.protometa.v1.request_header), which a code generator reads to write proxy/request_header.go that sdk-go calls. The verifier does not yet compare the code a generator writes from an option (README, What it cannot see), so it cannot prove the build safe; the Go compiler builds it.",
+    "approver": "founder",
+    "label": "option a generator reads"
+  },
+  {
+    "window": "sdk-go@38c6f517a2d52bad2ccee7c1311ec3907638b616:67150b14e0509210bf250960bd3278a4509e091c..3a30adc9e8af7a77f7403153e71e0c1f7299c903",
+    "kind": "unknown_on_safe",
+    "reason": "Only the build part is Needs review, and the verdict is Don't merge on the run-time part: the upgrade changes the custom option (temporal.api.protometa.v1.request_header), which a code generator reads to write proxy/request_header.go that sdk-go calls. The verifier does not yet compare the code a generator writes from an option (README, What it cannot see), so it cannot prove the build safe; the Go compiler builds it.",
+    "approver": "founder",
+    "label": "option a generator reads"
   }
 ]

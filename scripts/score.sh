@@ -8,6 +8,8 @@ files=(predictions/*/*.json)
 {
   echo "# Scoreboard"
   echo
+  echo "Updated $(date -u '+%Y-%m-%d %H:%M') UTC."
+  echo
   echo "Every row is one pull request that changed a .proto file, decided by the"
   echo "verifier before the compiler built the consumer against it."
   echo

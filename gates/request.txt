@@ -1,5 +1,5 @@
-Gates of the gRPC interceptor fix (Parent fix-grpc-interceptor db103ac, go-analyzer v0.20.0) requested 2026-10-05T07:13Z
-source: jastijayakrishna/Parent, branch fix-grpc-interceptor, commit db103acd (interceptors, stream wrappers that hold a stream, stats handlers, ClientConn.Invoke)
-sha256 (uncompressed linux/amd64): f7c9506da4271f0d8a7883653a3d266a69c6ae42179f8d69553311846b037091
-built: 2026-10-05T07:13Z
-scan: all 17 corpus projects with the compiler, new (the fix) and before (main bb4d10e)
+Gates of Parent main fbaf2f8 (go-analyzer v0.20.0, decisions as 7ecca11) requested 2026-10-05T12:15Z
+source: jastijayakrishna/Parent, branch main, commit fbaf2f84a7dc0cb8491f508b905ee0c32108345e (verifier report; the gate takes a compiler-safe window the suite expects to be only UNKNOWN out of the 5% limit: Temporal's 4 option windows, accepted by the founder)
+sha256 (uncompressed linux/amd64): f6af7e520c85e84d0f20557486f9cff054c839735ae3ea5a80449980aaca5c33
+built: 2026-10-05T12:15Z
+scan: all 17 corpus projects with the compiler, new (fbaf2f8) and before (main 7ecca11)

@@ -106,7 +106,8 @@ jobs:
           for i in 1 2 3 4 5 6; do
             git pull -q --rebase origin main || { git rebase --abort 2>/dev/null; sleep 5; continue; }
             bash scripts/history-score.sh > HISTORY.md
-            git add HISTORY.md
+            python3 scripts/front.py
+            git add HISTORY.md README.md
             git diff --cached --quiet && exit 0
             git commit -q -m "HISTORY.md of $(date -u +%Y-%m-%dT%H:%MZ)"
             git push -q && exit 0
