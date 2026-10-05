@@ -317,6 +317,11 @@ def build(p, wt, oracle):
     if "gradlew" in cmd:
         cmd = cmd.replace("--build-cache", "")
         cmd += " --no-build-cache" if oracle else " --build-cache"
+    if re.match(r"\s*(\./mvnw|mvn)\b", cmd):
+        # Plugins that stamp git information into the build read the
+        # repository with JGit, which cannot read the harness's partial
+        # clones; what they write never changes what compiles.
+        cmd += " -Dmaven.gitcommitid.skip=true"
     jh = os.environ.get(f"JAVA_HOME_{p['jdk']}_X64") or os.environ.get("JAVA_HOME", "")
     env = dict(os.environ, JAVA_HOME=jh, PATH=os.path.join(jh, "bin") + os.pathsep + os.environ["PATH"])
     log, secs = "", 0.0
