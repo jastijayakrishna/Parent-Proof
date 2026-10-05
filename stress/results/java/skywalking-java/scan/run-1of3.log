@@ -1,8 +1,8 @@
 skywalking-java scan: 20 windows, shard 1/3 has 7
-dcd16793cf7d 2024-05-09 verifier=None build=None compiler=baseline_fails 23.5s 
-5be4278b70f6 2024-09-20 verifier=None build=None compiler=baseline_fails 12.6s 
-385fb8b0057b 2025-01-07 verifier=None build=None compiler=baseline_fails 11.9s 
-1717f5c753a4 2025-01-21 verifier=None build=None compiler=baseline_fails 12.5s 
-920fe9203bfd 2025-05-14 verifier=None build=None compiler=baseline_fails 12.4s 
-16c51358ebcf 2025-08-12 verifier=None build=None compiler=baseline_fails 12.8s 
-cf9cc443c5e9 2026-01-12 verifier=None build=None compiler=baseline_fails 12.7s 
+dcd16793cf7d 2024-05-09 verifier=None build=None compiler=baseline_fails 21.5s 
+5be4278b70f6 2024-09-20 verifier=None build=None compiler=baseline_fails 17.9s 
+385fb8b0057b 2025-01-07 verifier=GO build=GO compiler=compiles 37.7s 
+1717f5c753a4 2025-01-21 verifier=GO build=GO compiler=compiles 37.1s 
+920fe9203bfd 2025-05-14 verifier=GO build=GO compiler=compiles 36.3s 
+16c51358ebcf 2025-08-12 verifier=GO build=GO compiler=compiles 37.8s 
+cf9cc443c5e9 2026-01-12 verifier=GO build=GO compiler=compiles 38.0s 
