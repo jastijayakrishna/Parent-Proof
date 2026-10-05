@@ -1,15 +1,15 @@
-time=2026-10-04T10:56:39.791Z level=INFO msg=cloning repo=p-cortex url=https://github.com/cortexproject/cortex.git
-time=2026-10-04T10:56:41.268Z level=INFO msg=cloning repo=c-cortex url=https://github.com/cortexproject/cortex.git
-cortex      00c5f76f GO       source_build=GO      compiler=-                  11.0s 
+time=2026-10-05T04:55:37.737Z level=INFO msg=cloning repo=p-cortex url=https://github.com/cortexproject/cortex.git
+time=2026-10-05T04:55:39.273Z level=INFO msg=cloning repo=c-cortex url=https://github.com/cortexproject/cortex.git
+cortex      00c5f76f GO       source_build=GO      compiler=-                  10.8s 
 cortex      bfbeb673 GO       source_build=GO      compiler=-                   0.0s 
-cortex      9dfa8944 UNKNOWN  source_build=UNKNOWN compiler=-                   3.1s 
+cortex      9dfa8944 UNKNOWN  source_build=UNKNOWN compiler=-                   2.4s 
 cortex      94aa45fb GO       source_build=GO      compiler=-                   0.0s 
 cortex      ae029000 GO       source_build=GO      compiler=-                   0.0s 
 cortex      9792d457 GO       source_build=GO      compiler=-                   0.0s 
-cortex      d4e51d56 UNKNOWN  source_build=UNKNOWN compiler=-                   2.7s 
-cortex      17740816 UNKNOWN  source_build=UNKNOWN compiler=-                   1.4s 
-cortex      ac267599 GO       source_build=GO      compiler=-                   0.9s 
-cortex      bf8ae576 GO       source_build=GO      compiler=-                   2.1s 
+cortex      d4e51d56 UNKNOWN  source_build=UNKNOWN compiler=-                   2.6s 
+cortex      17740816 UNKNOWN  source_build=UNKNOWN compiler=-                   1.0s 
+cortex      ac267599 GO       source_build=GO      compiler=-                   1.1s 
+cortex      bf8ae576 GO       source_build=GO      compiler=-                   2.2s 
 cortex      f1b0c35c GO       source_build=GO      compiler=-                   0.7s 
 cortex      9d6ef5cb GO       source_build=GO      compiler=-                   0.7s 
 cortex      316cae0d GO       source_build=GO      compiler=-                   0.0s 
@@ -29,5 +29,5 @@ UNKNOWN reasons across all: windows, ecosystems, an example
     1   1  NEEDS_REVIEW (e.g. cortex@9dfa8944a2d5e138757e22b41829cadcbd01d460)
     1   1  UNRESOLVED_MEMBER (e.g. cortex@d4e51d56f6af944176d6a855d122c898a7eaf5ce)
 
-20 windows in 36s.
+20 windows in 35s.
 exit 0
