@@ -1,9 +1,10 @@
-time=2026-10-05T17:35:53.699Z level=INFO msg=cloning repo=csi-spec url=https://github.com/container-storage-interface/spec.git
-time=2026-10-05T17:35:54.828Z level=INFO msg=cloning repo=external-provisioner url=https://github.com/kubernetes-csi/external-provisioner.git
-time=2026-10-05T17:36:02.203Z level=INFO msg=mined consumer=external-provisioner pin_moves=6 to_compile=5
-time=2026-10-05T17:38:20.491Z level=INFO msg=window consumer=external-provisioner bump=0f8b1662 select=breaking breaking=1 compiler=compiles
-time=2026-10-05T17:38:20.664Z level=INFO msg=window consumer=external-provisioner bump=e2d90af1 select=breaking breaking=17 compiler=compiles
-time=2026-10-05T17:41:18.712Z level=INFO msg=window consumer=external-provisioner bump=ebd63204 select=breaking breaking=6 compiler=compiles
-time=2026-10-05T17:41:19.296Z level=INFO msg=window consumer=external-provisioner bump=964de412 select=breaking breaking=7 compiler=compiles
-time=2026-10-05T17:42:09.289Z level=INFO msg=window consumer=external-provisioner bump=b0225237 select=additive breaking=0 compiler=compiles
-time=2026-10-05T17:42:09.289Z level=INFO msg="suite built" suite=csi-spec windows_added=5
+time=2026-10-05T18:12:04.597Z level=INFO msg=cloning repo=csi-spec url=https://github.com/container-storage-interface/spec.git
+time=2026-10-05T18:12:05.349Z level=INFO msg=cloning repo=external-provisioner url=https://github.com/kubernetes-csi/external-provisioner.git
+time=2026-10-05T18:12:12.592Z level=INFO msg=mined consumer=external-provisioner pin_moves=6 to_compile=6 skipped=map[]
+time=2026-10-05T18:14:25.723Z level=INFO msg=window consumer=external-provisioner bump=e2d90af1 select=breaking breaking=17 compiler=compiles
+time=2026-10-05T18:14:25.742Z level=INFO msg=window consumer=external-provisioner bump=0f8b1662 select=breaking breaking=1 compiler=compiles
+time=2026-10-05T18:17:22.117Z level=INFO msg=window consumer=external-provisioner bump=ebd63204 select=breaking breaking=6 compiler=compiles
+time=2026-10-05T18:17:23.037Z level=INFO msg=window consumer=external-provisioner bump=964de412 select=breaking breaking=7 compiler=compiles
+time=2026-10-05T18:18:54.890Z level=INFO msg=window consumer=external-provisioner bump=b0225237 select=additive breaking=0 compiler=compiles
+time=2026-10-05T18:18:55.595Z level=INFO msg=window consumer=external-provisioner bump=1272a9d1 select=additive breaking=0 compiler=compiles
+time=2026-10-05T18:18:55.595Z level=INFO msg="suite built" suite=csi-spec windows_added=6
