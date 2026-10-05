@@ -1,6 +1,5 @@
-camunda-zeebe history: 56 windows, shard 8/12 has 5
-58ae68767536 2024-12-17 verifier=None build=None compiler=baseline_fails 155.0s 
-4dfe3dc448ac 2025-08-14 verifier=None build=None compiler=baseline_fails 96.5s 
-5066f7398149 2026-02-05 verifier=None build=None compiler=baseline_fails 36.6s 
-3de1e4d472a5 2026-06-19 verifier=None build=None compiler=baseline_fails 99.6s 
-5ed397e9d54f 2026-09-16 verifier=None build=None compiler=baseline_fails 87.6s 
+camunda-zeebe history: 55 windows, shard 8/12 has 4
+54f3bf1eaca1 2024-12-17 verifier=None build=None compiler=baseline_fails 295.2s 
+bae85b685d27 2025-08-21 verifier=None build=None compiler=baseline_fails 186.1s 
+af90dc1d92aa 2026-02-12 verifier=None build=None compiler=baseline_fails 181.7s 
+814ba42f8b87 2026-06-23 verifier=GO build=GO compiler=compiles 310.0s 
