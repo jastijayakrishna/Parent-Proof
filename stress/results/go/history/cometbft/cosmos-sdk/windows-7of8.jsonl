@@ -1,0 +1,1 @@
+{"consumer":"cosmos-sdk","select":"additive","bump":"b8ede3a620421c215ba3f37692311804f9dfbcb2","date":"2023-09-13","old_pin":"v0.38.0-rc3","new_pin":"v0.38.0","old_sha":"6d95fb69d2d63d0a53d8ba4f712c83880a8a30cd","new_sha":"66a5a9da9f7a3306f382eb9142ccb9c9f7997d3f","changes":6,"breaking":0,"oracle":{"outcome":"compiles","build":"linux/amd64 cgo=0 compile-only","packages":229}}
