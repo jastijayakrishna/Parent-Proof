@@ -1,0 +1,83 @@
+{
+ "name": "temporal-sdk-java",
+ "cold_seconds": 204,
+ "cold_exit": 0,
+ "warm_clean_seconds": 17,
+ "warm_exit": 0,
+ "class_dirs": 18,
+ "classes": 5954,
+ "dirs": [
+  {
+   "dir": "temporal-kotlin/build/classes/kotlin/main",
+   "classes": 32
+  },
+  {
+   "dir": "temporal-workflowcheck/build/classes/java/main",
+   "classes": 23
+  },
+  {
+   "dir": "temporal-remote-data-encoder/build/classes/java/main",
+   "classes": 5
+  },
+  {
+   "dir": "contrib/temporal-payload-storage-s3driver-awssdkv2/build/classes/java/main",
+   "classes": 1
+  },
+  {
+   "dir": "contrib/temporal-gcp-cloud-run-id/build/classes/java/main",
+   "classes": 2
+  },
+  {
+   "dir": "contrib/temporal-opentelemetry/build/classes/java/main",
+   "classes": 16
+  },
+  {
+   "dir": "contrib/temporal-spring-ai/build/classes/java/main",
+   "classes": 67
+  },
+  {
+   "dir": "contrib/temporal-workflowstreams/build/classes/java/main",
+   "classes": 36
+  },
+  {
+   "dir": "contrib/temporal-aws-lambda/build/classes/java/main",
+   "classes": 24
+  },
+  {
+   "dir": "contrib/temporal-payload-storage-s3driver/build/classes/java/main",
+   "classes": 9
+  },
+  {
+   "dir": "contrib/temporal-opentracing/build/classes/java/main",
+   "classes": 28
+  },
+  {
+   "dir": "contrib/temporal-gcp-cloud-run-opentelemetry/build/classes/java/main",
+   "classes": 3
+  },
+  {
+   "dir": "temporal-testing/build/classes/java/main",
+   "classes": 67
+  },
+  {
+   "dir": "temporal-sdk/build/classes/java/main",
+   "classes": 1154
+  },
+  {
+   "dir": "temporal-spring-boot-autoconfigure/build/classes/java/main",
+   "classes": 52
+  },
+  {
+   "dir": "temporal-serviceclient/build/classes/java/main",
+   "classes": 4277
+  },
+  {
+   "dir": "temporal-envconfig/build/classes/java/main",
+   "classes": 22
+  },
+  {
+   "dir": "temporal-test-server/build/classes/java/main",
+   "classes": 136
+  }
+ ]
+}

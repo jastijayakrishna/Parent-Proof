@@ -1,0 +1,13 @@
+clone seconds 7
+34M	/home/runner/work/_temp/src-temporal-sdk-java
+openjdk version "17.0.20.1" 2026-08-18
+Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
+cold build exit 0 seconds 204
+stress/probe/build.sh: line 56: stress/probe/out/build-temporal-sdk-java/cold.log: No such file or directory
+BUILD SUCCESSFUL in 3m 23s
+warm clean build exit 0 seconds 17
+stress/probe/build.sh: line 63: stress/probe/out/build-temporal-sdk-java/warm.log: No such file or directory
+class dirs 18, classes 5954
+/dev/root       145G   60G   86G  42% /
+
+exit 0 seconds 242
