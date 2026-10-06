@@ -1,11 +1,11 @@
-time=2026-10-06T04:46:44.122Z level=INFO msg=cloning repo=kubelet url=https://github.com/kubernetes/kubelet.git
-time=2026-10-06T04:46:45.230Z level=INFO msg=cloning repo=k8s-device-plugin url=https://github.com/NVIDIA/k8s-device-plugin.git
-time=2026-10-06T04:46:54.849Z level=INFO msg=mined consumer=k8s-device-plugin pin_moves=17 to_compile=6 skipped=map[]
-time=2026-10-06T04:47:17.821Z level=INFO msg=canary consumer=k8s-device-plugin at=0ee1f792^ outcome=baseline_fails detail="canary: k8s.io/kubelet/pkg/apis/deviceplugin/v1beta1 removed. every package that imports k8s.io/kubelet fails to compile before the bump"
-time=2026-10-06T04:47:19.816Z level=INFO msg=window consumer=k8s-device-plugin bump=0ee1f792 select=additive breaking=0 compiler=baseline_fails
-time=2026-10-06T04:47:37.611Z level=INFO msg=window consumer=k8s-device-plugin bump=43445380 select=breaking breaking=26 compiler=baseline_fails
-time=2026-10-06T04:47:38.076Z level=INFO msg=window consumer=k8s-device-plugin bump=7101d0f8 select=unchanged breaking=0 compiler=baseline_fails
-time=2026-10-06T04:47:53.225Z level=INFO msg=window consumer=k8s-device-plugin bump=7a1f5dab select=unchanged breaking=0 compiler=baseline_fails
-time=2026-10-06T04:47:56.914Z level=INFO msg=window consumer=k8s-device-plugin bump=993fe2a2 select=additive breaking=0 compiler=baseline_fails
-time=2026-10-06T04:48:04.509Z level=INFO msg=window consumer=k8s-device-plugin bump=bf991bb5 select=breaking breaking=11 compiler=baseline_fails
-time=2026-10-06T04:48:04.509Z level=INFO msg="suite built" suite=kubelet windows_added=6
+time=2026-10-06T06:22:16.574Z level=INFO msg=cloning repo=kubelet url=https://github.com/kubernetes/kubelet.git
+time=2026-10-06T06:22:17.350Z level=INFO msg=cloning repo=k8s-device-plugin url=https://github.com/NVIDIA/k8s-device-plugin.git
+time=2026-10-06T06:22:24.942Z level=INFO msg=mined consumer=k8s-device-plugin pin_moves=17 to_compile=6 skipped=map[]
+time=2026-10-06T06:22:44.596Z level=INFO msg=canary consumer=k8s-device-plugin at=0ee1f79287fa1378300524b052cc25b76a3f1082^ outcome=baseline_fails detail="canary: k8s.io/kubelet/pkg/apis/deviceplugin/v1beta1 removed. every package that imports k8s.io/kubelet fails to compile before the bump"
+time=2026-10-06T06:22:46.487Z level=INFO msg=window consumer=k8s-device-plugin bump=0ee1f792 select=additive breaking=0 compiler=baseline_fails
+time=2026-10-06T06:23:00.923Z level=INFO msg=window consumer=k8s-device-plugin bump=43445380 select=breaking breaking=26 compiler=baseline_fails
+time=2026-10-06T06:23:01.067Z level=INFO msg=window consumer=k8s-device-plugin bump=7101d0f8 select=unchanged breaking=0 compiler=baseline_fails
+time=2026-10-06T06:23:13.186Z level=INFO msg=window consumer=k8s-device-plugin bump=7a1f5dab select=unchanged breaking=0 compiler=baseline_fails
+time=2026-10-06T06:23:15.437Z level=INFO msg=window consumer=k8s-device-plugin bump=993fe2a2 select=additive breaking=0 compiler=baseline_fails
+time=2026-10-06T06:23:22.426Z level=INFO msg=window consumer=k8s-device-plugin bump=bf991bb5 select=breaking breaking=11 compiler=baseline_fails
+time=2026-10-06T06:23:22.426Z level=INFO msg="suite built" suite=kubelet windows_added=6
