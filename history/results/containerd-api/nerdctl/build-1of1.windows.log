@@ -1,18 +1,18 @@
-time=2026-10-06T06:03:04.614Z level=INFO msg=skip consumer=nerdctl bump=592c011f old=v1.12.0-beta.0 new=v1.12.0-rc.0 reason=not_sampled
-time=2026-10-06T06:03:04.614Z level=INFO msg=skip consumer=nerdctl bump=c9eaf627 old=v1.8.0 new=v1.9.0-rc.0 reason=not_sampled
-time=2026-10-06T06:03:04.614Z level=INFO msg=skip consumer=nerdctl bump=cea538de old=v1.12.0-rc.0 new=v1.12.0 reason=not_sampled
-time=2026-10-06T06:03:04.614Z level=INFO msg=mined consumer=nerdctl pin_moves=16 to_compile=13 skipped=map[not_sampled:3]
-time=2026-10-06T06:03:50.393Z level=INFO msg=canary consumer=nerdctl at=72c42eaeccafeb884ca42e26f934c9ac9ccdd429 outcome=breaks detail="canary: github.com/containerd/containerd/api/events removed."
-time=2026-10-06T06:04:03.598Z level=INFO msg=window consumer=nerdctl bump=72c42eae select=breaking breaking=184 compiler=bump_side_effect
-time=2026-10-06T06:04:39.669Z level=INFO msg=window consumer=nerdctl bump=7aa8ca9b select=breaking breaking=39 compiler=compiles
-time=2026-10-06T06:04:52.402Z level=INFO msg=window consumer=nerdctl bump=c94d0ccf select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:05:15.594Z level=INFO msg=window consumer=nerdctl bump=b34e0902 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:05:52.257Z level=INFO msg=window consumer=nerdctl bump=43000329 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:06:18.145Z level=INFO msg=window consumer=nerdctl bump=59b5b61b select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:07:00.018Z level=INFO msg=window consumer=nerdctl bump=a01031da select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:07:00.482Z level=INFO msg=window consumer=nerdctl bump=c3dd63fe select=additive breaking=0 compiler=compiles
-time=2026-10-06T06:07:39.571Z level=INFO msg=window consumer=nerdctl bump=69f8f783 select=additive breaking=0 compiler=compiles
-time=2026-10-06T06:08:01.270Z level=INFO msg=window consumer=nerdctl bump=c64d81d4 select=additive breaking=0 compiler=compiles
-time=2026-10-06T06:08:14.005Z level=INFO msg=window consumer=nerdctl bump=673484ac select=additive breaking=0 compiler=compiles
-time=2026-10-06T06:08:40.392Z level=INFO msg=window consumer=nerdctl bump=4e5cc62b select=additive breaking=0 compiler=compiles
-time=2026-10-06T06:08:40.792Z level=INFO msg=window consumer=nerdctl bump=60c8491d select=additive breaking=0 compiler=compiles
+time=2026-10-06T09:32:29.817Z level=INFO msg=skip consumer=nerdctl bump=592c011f old=v1.12.0-beta.0 new=v1.12.0-rc.0 reason=not_sampled
+time=2026-10-06T09:32:29.817Z level=INFO msg=skip consumer=nerdctl bump=c9eaf627 old=v1.8.0 new=v1.9.0-rc.0 reason=not_sampled
+time=2026-10-06T09:32:29.817Z level=INFO msg=skip consumer=nerdctl bump=cea538de old=v1.12.0-rc.0 new=v1.12.0 reason=not_sampled
+time=2026-10-06T09:32:29.817Z level=INFO msg=mined consumer=nerdctl pin_moves=16 to_compile=13 skipped=map[not_sampled:3]
+time=2026-10-06T09:33:13.364Z level=INFO msg=canary consumer=nerdctl at=72c42eaeccafeb884ca42e26f934c9ac9ccdd429 outcome=breaks detail="canary: github.com/containerd/containerd/api/events removed."
+time=2026-10-06T09:33:26.474Z level=INFO msg=window consumer=nerdctl bump=72c42eae select=breaking breaking=184 compiler=bump_side_effect
+time=2026-10-06T09:34:01.582Z level=INFO msg=window consumer=nerdctl bump=7aa8ca9b select=breaking breaking=39 compiler=compiles
+time=2026-10-06T09:34:13.076Z level=INFO msg=window consumer=nerdctl bump=c94d0ccf select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:34:34.988Z level=INFO msg=window consumer=nerdctl bump=b34e0902 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:35:11.904Z level=INFO msg=window consumer=nerdctl bump=43000329 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:35:35.515Z level=INFO msg=window consumer=nerdctl bump=59b5b61b select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:36:14.969Z level=INFO msg=window consumer=nerdctl bump=a01031da select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:36:16.686Z level=INFO msg=window consumer=nerdctl bump=c3dd63fe select=additive breaking=0 compiler=compiles
+time=2026-10-06T09:36:50.079Z level=INFO msg=window consumer=nerdctl bump=69f8f783 select=additive breaking=0 compiler=compiles
+time=2026-10-06T09:37:15.472Z level=INFO msg=window consumer=nerdctl bump=c64d81d4 select=additive breaking=0 compiler=compiles
+time=2026-10-06T09:37:25.647Z level=INFO msg=window consumer=nerdctl bump=673484ac select=additive breaking=0 compiler=compiles
+time=2026-10-06T09:37:52.288Z level=INFO msg=window consumer=nerdctl bump=60c8491d select=additive breaking=0 compiler=compiles
+time=2026-10-06T09:37:52.541Z level=INFO msg=window consumer=nerdctl bump=4e5cc62b select=additive breaking=0 compiler=compiles
