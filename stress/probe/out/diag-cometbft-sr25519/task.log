@@ -1,0 +1,27 @@
+== consumer 561840fa260eb3ba757f83d37fe54091713b1f98, provider 86da0027d878707365c16b124b77892ca5212fe1 -> ab0be101882f1250cd5aad6dfd09a6c2104f8577
+== provider Go files changed: 123, .proto changed: 1
+ crypto/sr25519/batch.go                            |  77 ---
+ crypto/sr25519/bench_test.go                       |  67 ---
+ crypto/sr25519/encoding.go                         |  13 -
+ crypto/sr25519/privkey.go                          | 173 ------
+ crypto/sr25519/pubkey.go                           |  70 ---
+ crypto/sr25519/sr25519_test.go                     |  98 ----
+== consumer files naming sr25519 (not tests):
+x/genutil/client/cli/gentx.go
+crypto/keys/multisig/codec.go
+crypto/codec/amino.go
+crypto/hd/algo.go
+== verify exit 0
+time=2026-10-06T08:54:31.160Z level=INFO msg=decision verdict=GO took=1.474s
+✓ Merge
+
+1 contract file(s) changed, with no change callers can see.
+
+Verified against p@ab0be101 (base 86da0027) and 0 caller commit(s).
+Not checked: callers other than the directories given with --callers
+
+Decision d_aa207373f5272213 · keep it with --out record.json and replay with: verifier replay --file record.json
+VERDICT GO {'generated_code': 'GO', 'runtime': 'GO', 'source_build': 'GO'} go_only None provider_api_error None
+FACTS modules None
+
+exit 0 seconds 30

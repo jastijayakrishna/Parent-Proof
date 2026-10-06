@@ -1,0 +1,933 @@
+{
+  "id": "d_aa207373f5272213",
+  "created_at": "2026-10-06T08:54:29.694962971Z",
+  "organization": "local",
+  "provider": {
+    "owner": "",
+    "repo": "p",
+    "base": "86da0027d878707365c16b124b77892ca5212fe1",
+    "head": "ab0be101882f1250cd5aad6dfd09a6c2104f8577",
+    "contracts": 86
+  },
+  "subject": {
+    "kind": "local"
+  },
+  "contract_files": [
+    "proto/cometbft/types/v1/params.proto"
+  ],
+  "old_contract_digest": "faa20f94b522e700cfa7f8d3f9135044de22a53c5599307b10cc36351a02029d",
+  "new_contract_digest": "faa20f94b522e700cfa7f8d3f9135044de22a53c5599307b10cc36351a02029d",
+  "old_contract": {
+    "files": {
+      "proto/cometbft/types/v1/params.proto": {
+        "path": "proto/cometbft/types/v1/params.proto",
+        "package": "cometbft.types.v1",
+        "syntax": "proto3",
+        "go_package": "github.com/cometbft/cometbft/api/cometbft/types/v1",
+        "imports": [
+          "gogoproto/gogo.proto",
+          "google/protobuf/duration.proto",
+          "google/protobuf/wrappers.proto"
+        ],
+        "messages": [
+          "cometbft.types.v1.ConsensusParams",
+          "cometbft.types.v1.BlockParams",
+          "cometbft.types.v1.EvidenceParams",
+          "cometbft.types.v1.ValidatorParams",
+          "cometbft.types.v1.VersionParams",
+          "cometbft.types.v1.HashedParams",
+          "cometbft.types.v1.SynchronyParams",
+          "cometbft.types.v1.FeatureParams",
+          "cometbft.types.v1.ABCIParams"
+        ],
+        "bundled_imports": [
+          "gogoproto/gogo.proto"
+        ],
+        "bundle": "thirdparty-a61fd41b4cb3",
+        "options": {
+          "#63013": "{a78a0f6b612b56ce}|(gogoproto.equal_all)",
+          "(gogoproto.equal_all)": "true"
+        }
+      }
+    },
+    "messages": {
+      "cometbft.types.v1.ABCIParams": {
+        "full": "cometbft.types.v1.ABCIParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.ABCIParams",
+              "number": 1
+            },
+            "name": "vote_extensions_enable_height",
+            "json_name": "voteExtensionsEnableHeight",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          }
+        }
+      },
+      "cometbft.types.v1.BlockParams": {
+        "full": "cometbft.types.v1.BlockParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.BlockParams",
+              "number": 1
+            },
+            "name": "max_bytes",
+            "json_name": "maxBytes",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          },
+          "2": {
+            "id": {
+              "message": "cometbft.types.v1.BlockParams",
+              "number": 2
+            },
+            "name": "max_gas",
+            "json_name": "maxGas",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          }
+        },
+        "reserved_numbers": [
+          {
+            "start": 3,
+            "end": 4
+          }
+        ]
+      },
+      "cometbft.types.v1.ConsensusParams": {
+        "full": "cometbft.types.v1.ConsensusParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.ConsensusParams",
+              "number": 1
+            },
+            "name": "block",
+            "json_name": "block",
+            "type": "message",
+            "type_name": "cometbft.types.v1.BlockParams",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false
+          },
+          "2": {
+            "id": {
+              "message": "cometbft.types.v1.ConsensusParams",
+              "number": 2
+            },
+            "name": "evidence",
+            "json_name": "evidence",
+            "type": "message",
+            "type_name": "cometbft.types.v1.EvidenceParams",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false
+          },
+          "3": {
+            "id": {
+              "message": "cometbft.types.v1.ConsensusParams",
+              "number": 3
+            },
+            "name": "validator",
+            "json_name": "validator",
+            "type": "message",
+            "type_name": "cometbft.types.v1.ValidatorParams",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false
+          },
+          "4": {
+            "id": {
+              "message": "cometbft.types.v1.ConsensusParams",
+              "number": 4
+            },
+            "name": "version",
+            "json_name": "version",
+            "type": "message",
+            "type_name": "cometbft.types.v1.VersionParams",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false
+          },
+          "5": {
+            "id": {
+              "message": "cometbft.types.v1.ConsensusParams",
+              "number": 5
+            },
+            "name": "abci",
+            "json_name": "abci",
+            "type": "message",
+            "type_name": "cometbft.types.v1.ABCIParams",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false,
+            "deprecated": true
+          },
+          "6": {
+            "id": {
+              "message": "cometbft.types.v1.ConsensusParams",
+              "number": 6
+            },
+            "name": "synchrony",
+            "json_name": "synchrony",
+            "type": "message",
+            "type_name": "cometbft.types.v1.SynchronyParams",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false
+          },
+          "7": {
+            "id": {
+              "message": "cometbft.types.v1.ConsensusParams",
+              "number": 7
+            },
+            "name": "feature",
+            "json_name": "feature",
+            "type": "message",
+            "type_name": "cometbft.types.v1.FeatureParams",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false
+          }
+        }
+      },
+      "cometbft.types.v1.EvidenceParams": {
+        "full": "cometbft.types.v1.EvidenceParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.EvidenceParams",
+              "number": 1
+            },
+            "name": "max_age_num_blocks",
+            "json_name": "maxAgeNumBlocks",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          },
+          "2": {
+            "id": {
+              "message": "cometbft.types.v1.EvidenceParams",
+              "number": 2
+            },
+            "name": "max_age_duration",
+            "json_name": "maxAgeDuration",
+            "type": "message",
+            "type_name": "google.protobuf.Duration",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false,
+            "options": {
+              "#65001": "{4beafe2373e5598c}|(gogoproto.nullable)",
+              "#65011": "{5548c9da9b162838}|(gogoproto.stdduration)",
+              "(gogoproto.nullable)": "false",
+              "(gogoproto.stdduration)": "true"
+            }
+          },
+          "3": {
+            "id": {
+              "message": "cometbft.types.v1.EvidenceParams",
+              "number": 3
+            },
+            "name": "max_bytes",
+            "json_name": "maxBytes",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          }
+        }
+      },
+      "cometbft.types.v1.FeatureParams": {
+        "full": "cometbft.types.v1.FeatureParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.FeatureParams",
+              "number": 1
+            },
+            "name": "vote_extensions_enable_height",
+            "json_name": "voteExtensionsEnableHeight",
+            "type": "message",
+            "type_name": "google.protobuf.Int64Value",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false,
+            "options": {
+              "#65001": "{923edc9b03af7aa5}|(gogoproto.nullable)",
+              "(gogoproto.nullable)": "true"
+            }
+          },
+          "2": {
+            "id": {
+              "message": "cometbft.types.v1.FeatureParams",
+              "number": 2
+            },
+            "name": "pbts_enable_height",
+            "json_name": "pbtsEnableHeight",
+            "type": "message",
+            "type_name": "google.protobuf.Int64Value",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false,
+            "options": {
+              "#65001": "{923edc9b03af7aa5}|(gogoproto.nullable)",
+              "(gogoproto.nullable)": "true"
+            }
+          }
+        }
+      },
+      "cometbft.types.v1.HashedParams": {
+        "full": "cometbft.types.v1.HashedParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.HashedParams",
+              "number": 1
+            },
+            "name": "block_max_bytes",
+            "json_name": "blockMaxBytes",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          },
+          "2": {
+            "id": {
+              "message": "cometbft.types.v1.HashedParams",
+              "number": 2
+            },
+            "name": "block_max_gas",
+            "json_name": "blockMaxGas",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          }
+        }
+      },
+      "cometbft.types.v1.SynchronyParams": {
+        "full": "cometbft.types.v1.SynchronyParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.SynchronyParams",
+              "number": 1
+            },
+            "name": "precision",
+            "json_name": "precision",
+            "type": "message",
+            "type_name": "google.protobuf.Duration",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false,
+            "options": {
+              "#65011": "{5548c9da9b162838}|(gogoproto.stdduration)",
+              "(gogoproto.stdduration)": "true"
+            }
+          },
+          "2": {
+            "id": {
+              "message": "cometbft.types.v1.SynchronyParams",
+              "number": 2
+            },
+            "name": "message_delay",
+            "json_name": "messageDelay",
+            "type": "message",
+            "type_name": "google.protobuf.Duration",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false,
+            "options": {
+              "#65011": "{5548c9da9b162838}|(gogoproto.stdduration)",
+              "(gogoproto.stdduration)": "true"
+            }
+          }
+        }
+      },
+      "cometbft.types.v1.ValidatorParams": {
+        "full": "cometbft.types.v1.ValidatorParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.ValidatorParams",
+              "number": 1
+            },
+            "name": "pub_key_types",
+            "json_name": "pubKeyTypes",
+            "type": "string",
+            "presence": "repeated",
+            "repeated": true,
+            "map": false
+          }
+        },
+        "options": {
+          "#64007": "{a2bbc40f984f24f5}|(gogoproto.populate)",
+          "#64013": "{ec270ef880c4a519}|(gogoproto.equal)",
+          "(gogoproto.equal)": "true",
+          "(gogoproto.populate)": "true"
+        }
+      },
+      "cometbft.types.v1.VersionParams": {
+        "full": "cometbft.types.v1.VersionParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.VersionParams",
+              "number": 1
+            },
+            "name": "app",
+            "json_name": "app",
+            "type": "uint64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          }
+        },
+        "options": {
+          "#64007": "{a2bbc40f984f24f5}|(gogoproto.populate)",
+          "#64013": "{ec270ef880c4a519}|(gogoproto.equal)",
+          "(gogoproto.equal)": "true",
+          "(gogoproto.populate)": "true"
+        }
+      }
+    },
+    "enums": {},
+    "services": {},
+    "lines": {
+      "field:cometbft.types.v1.ABCIParams.#1": 142,
+      "field:cometbft.types.v1.BlockParams.#1": 32,
+      "field:cometbft.types.v1.BlockParams.#2": 36,
+      "field:cometbft.types.v1.ConsensusParams.#1": 15,
+      "field:cometbft.types.v1.ConsensusParams.#2": 16,
+      "field:cometbft.types.v1.ConsensusParams.#3": 17,
+      "field:cometbft.types.v1.ConsensusParams.#4": 18,
+      "field:cometbft.types.v1.ConsensusParams.#5": 19,
+      "field:cometbft.types.v1.ConsensusParams.#6": 20,
+      "field:cometbft.types.v1.ConsensusParams.#7": 21,
+      "field:cometbft.types.v1.EvidenceParams.#1": 47,
+      "field:cometbft.types.v1.EvidenceParams.#2": 55,
+      "field:cometbft.types.v1.EvidenceParams.#3": 61,
+      "field:cometbft.types.v1.FeatureParams.#1": 124,
+      "field:cometbft.types.v1.FeatureParams.#2": 134,
+      "field:cometbft.types.v1.HashedParams.#1": 89,
+      "field:cometbft.types.v1.HashedParams.#2": 90,
+      "field:cometbft.types.v1.SynchronyParams.#1": 102,
+      "field:cometbft.types.v1.SynchronyParams.#2": 106,
+      "field:cometbft.types.v1.ValidatorParams.#1": 71,
+      "field:cometbft.types.v1.VersionParams.#1": 82,
+      "file:proto/cometbft/types/v1/params.proto": 1,
+      "message:cometbft.types.v1.ABCIParams": 138,
+      "message:cometbft.types.v1.BlockParams": 25,
+      "message:cometbft.types.v1.ConsensusParams": 14,
+      "message:cometbft.types.v1.EvidenceParams": 42,
+      "message:cometbft.types.v1.FeatureParams": 111,
+      "message:cometbft.types.v1.HashedParams": 88,
+      "message:cometbft.types.v1.SynchronyParams": 99,
+      "message:cometbft.types.v1.ValidatorParams": 67,
+      "message:cometbft.types.v1.VersionParams": 75
+    }
+  },
+  "new_contract": {
+    "files": {
+      "proto/cometbft/types/v1/params.proto": {
+        "path": "proto/cometbft/types/v1/params.proto",
+        "package": "cometbft.types.v1",
+        "syntax": "proto3",
+        "go_package": "github.com/cometbft/cometbft/api/cometbft/types/v1",
+        "imports": [
+          "gogoproto/gogo.proto",
+          "google/protobuf/duration.proto",
+          "google/protobuf/wrappers.proto"
+        ],
+        "messages": [
+          "cometbft.types.v1.ConsensusParams",
+          "cometbft.types.v1.BlockParams",
+          "cometbft.types.v1.EvidenceParams",
+          "cometbft.types.v1.ValidatorParams",
+          "cometbft.types.v1.VersionParams",
+          "cometbft.types.v1.HashedParams",
+          "cometbft.types.v1.SynchronyParams",
+          "cometbft.types.v1.FeatureParams",
+          "cometbft.types.v1.ABCIParams"
+        ],
+        "bundled_imports": [
+          "gogoproto/gogo.proto"
+        ],
+        "bundle": "thirdparty-a61fd41b4cb3",
+        "options": {
+          "#63013": "{a78a0f6b612b56ce}|(gogoproto.equal_all)",
+          "(gogoproto.equal_all)": "true"
+        }
+      }
+    },
+    "messages": {
+      "cometbft.types.v1.ABCIParams": {
+        "full": "cometbft.types.v1.ABCIParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.ABCIParams",
+              "number": 1
+            },
+            "name": "vote_extensions_enable_height",
+            "json_name": "voteExtensionsEnableHeight",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          }
+        }
+      },
+      "cometbft.types.v1.BlockParams": {
+        "full": "cometbft.types.v1.BlockParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.BlockParams",
+              "number": 1
+            },
+            "name": "max_bytes",
+            "json_name": "maxBytes",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          },
+          "2": {
+            "id": {
+              "message": "cometbft.types.v1.BlockParams",
+              "number": 2
+            },
+            "name": "max_gas",
+            "json_name": "maxGas",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          }
+        },
+        "reserved_numbers": [
+          {
+            "start": 3,
+            "end": 4
+          }
+        ]
+      },
+      "cometbft.types.v1.ConsensusParams": {
+        "full": "cometbft.types.v1.ConsensusParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.ConsensusParams",
+              "number": 1
+            },
+            "name": "block",
+            "json_name": "block",
+            "type": "message",
+            "type_name": "cometbft.types.v1.BlockParams",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false
+          },
+          "2": {
+            "id": {
+              "message": "cometbft.types.v1.ConsensusParams",
+              "number": 2
+            },
+            "name": "evidence",
+            "json_name": "evidence",
+            "type": "message",
+            "type_name": "cometbft.types.v1.EvidenceParams",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false
+          },
+          "3": {
+            "id": {
+              "message": "cometbft.types.v1.ConsensusParams",
+              "number": 3
+            },
+            "name": "validator",
+            "json_name": "validator",
+            "type": "message",
+            "type_name": "cometbft.types.v1.ValidatorParams",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false
+          },
+          "4": {
+            "id": {
+              "message": "cometbft.types.v1.ConsensusParams",
+              "number": 4
+            },
+            "name": "version",
+            "json_name": "version",
+            "type": "message",
+            "type_name": "cometbft.types.v1.VersionParams",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false
+          },
+          "5": {
+            "id": {
+              "message": "cometbft.types.v1.ConsensusParams",
+              "number": 5
+            },
+            "name": "abci",
+            "json_name": "abci",
+            "type": "message",
+            "type_name": "cometbft.types.v1.ABCIParams",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false,
+            "deprecated": true
+          },
+          "6": {
+            "id": {
+              "message": "cometbft.types.v1.ConsensusParams",
+              "number": 6
+            },
+            "name": "synchrony",
+            "json_name": "synchrony",
+            "type": "message",
+            "type_name": "cometbft.types.v1.SynchronyParams",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false
+          },
+          "7": {
+            "id": {
+              "message": "cometbft.types.v1.ConsensusParams",
+              "number": 7
+            },
+            "name": "feature",
+            "json_name": "feature",
+            "type": "message",
+            "type_name": "cometbft.types.v1.FeatureParams",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false
+          }
+        }
+      },
+      "cometbft.types.v1.EvidenceParams": {
+        "full": "cometbft.types.v1.EvidenceParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.EvidenceParams",
+              "number": 1
+            },
+            "name": "max_age_num_blocks",
+            "json_name": "maxAgeNumBlocks",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          },
+          "2": {
+            "id": {
+              "message": "cometbft.types.v1.EvidenceParams",
+              "number": 2
+            },
+            "name": "max_age_duration",
+            "json_name": "maxAgeDuration",
+            "type": "message",
+            "type_name": "google.protobuf.Duration",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false,
+            "options": {
+              "#65001": "{4beafe2373e5598c}|(gogoproto.nullable)",
+              "#65011": "{5548c9da9b162838}|(gogoproto.stdduration)",
+              "(gogoproto.nullable)": "false",
+              "(gogoproto.stdduration)": "true"
+            }
+          },
+          "3": {
+            "id": {
+              "message": "cometbft.types.v1.EvidenceParams",
+              "number": 3
+            },
+            "name": "max_bytes",
+            "json_name": "maxBytes",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          }
+        }
+      },
+      "cometbft.types.v1.FeatureParams": {
+        "full": "cometbft.types.v1.FeatureParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.FeatureParams",
+              "number": 1
+            },
+            "name": "vote_extensions_enable_height",
+            "json_name": "voteExtensionsEnableHeight",
+            "type": "message",
+            "type_name": "google.protobuf.Int64Value",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false,
+            "options": {
+              "#65001": "{923edc9b03af7aa5}|(gogoproto.nullable)",
+              "(gogoproto.nullable)": "true"
+            }
+          },
+          "2": {
+            "id": {
+              "message": "cometbft.types.v1.FeatureParams",
+              "number": 2
+            },
+            "name": "pbts_enable_height",
+            "json_name": "pbtsEnableHeight",
+            "type": "message",
+            "type_name": "google.protobuf.Int64Value",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false,
+            "options": {
+              "#65001": "{923edc9b03af7aa5}|(gogoproto.nullable)",
+              "(gogoproto.nullable)": "true"
+            }
+          }
+        }
+      },
+      "cometbft.types.v1.HashedParams": {
+        "full": "cometbft.types.v1.HashedParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.HashedParams",
+              "number": 1
+            },
+            "name": "block_max_bytes",
+            "json_name": "blockMaxBytes",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          },
+          "2": {
+            "id": {
+              "message": "cometbft.types.v1.HashedParams",
+              "number": 2
+            },
+            "name": "block_max_gas",
+            "json_name": "blockMaxGas",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          }
+        }
+      },
+      "cometbft.types.v1.SynchronyParams": {
+        "full": "cometbft.types.v1.SynchronyParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.SynchronyParams",
+              "number": 1
+            },
+            "name": "precision",
+            "json_name": "precision",
+            "type": "message",
+            "type_name": "google.protobuf.Duration",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false,
+            "options": {
+              "#65011": "{5548c9da9b162838}|(gogoproto.stdduration)",
+              "(gogoproto.stdduration)": "true"
+            }
+          },
+          "2": {
+            "id": {
+              "message": "cometbft.types.v1.SynchronyParams",
+              "number": 2
+            },
+            "name": "message_delay",
+            "json_name": "messageDelay",
+            "type": "message",
+            "type_name": "google.protobuf.Duration",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false,
+            "options": {
+              "#65011": "{5548c9da9b162838}|(gogoproto.stdduration)",
+              "(gogoproto.stdduration)": "true"
+            }
+          }
+        }
+      },
+      "cometbft.types.v1.ValidatorParams": {
+        "full": "cometbft.types.v1.ValidatorParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.ValidatorParams",
+              "number": 1
+            },
+            "name": "pub_key_types",
+            "json_name": "pubKeyTypes",
+            "type": "string",
+            "presence": "repeated",
+            "repeated": true,
+            "map": false
+          }
+        },
+        "options": {
+          "#64007": "{a2bbc40f984f24f5}|(gogoproto.populate)",
+          "#64013": "{ec270ef880c4a519}|(gogoproto.equal)",
+          "(gogoproto.equal)": "true",
+          "(gogoproto.populate)": "true"
+        }
+      },
+      "cometbft.types.v1.VersionParams": {
+        "full": "cometbft.types.v1.VersionParams",
+        "file": "proto/cometbft/types/v1/params.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "cometbft.types.v1.VersionParams",
+              "number": 1
+            },
+            "name": "app",
+            "json_name": "app",
+            "type": "uint64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          }
+        },
+        "options": {
+          "#64007": "{a2bbc40f984f24f5}|(gogoproto.populate)",
+          "#64013": "{ec270ef880c4a519}|(gogoproto.equal)",
+          "(gogoproto.equal)": "true",
+          "(gogoproto.populate)": "true"
+        }
+      }
+    },
+    "enums": {},
+    "services": {},
+    "lines": {
+      "field:cometbft.types.v1.ABCIParams.#1": 148,
+      "field:cometbft.types.v1.BlockParams.#1": 32,
+      "field:cometbft.types.v1.BlockParams.#2": 36,
+      "field:cometbft.types.v1.ConsensusParams.#1": 15,
+      "field:cometbft.types.v1.ConsensusParams.#2": 16,
+      "field:cometbft.types.v1.ConsensusParams.#3": 17,
+      "field:cometbft.types.v1.ConsensusParams.#4": 18,
+      "field:cometbft.types.v1.ConsensusParams.#5": 19,
+      "field:cometbft.types.v1.ConsensusParams.#6": 20,
+      "field:cometbft.types.v1.ConsensusParams.#7": 21,
+      "field:cometbft.types.v1.EvidenceParams.#1": 47,
+      "field:cometbft.types.v1.EvidenceParams.#2": 55,
+      "field:cometbft.types.v1.EvidenceParams.#3": 61,
+      "field:cometbft.types.v1.FeatureParams.#1": 127,
+      "field:cometbft.types.v1.FeatureParams.#2": 140,
+      "field:cometbft.types.v1.HashedParams.#1": 89,
+      "field:cometbft.types.v1.HashedParams.#2": 90,
+      "field:cometbft.types.v1.SynchronyParams.#1": 102,
+      "field:cometbft.types.v1.SynchronyParams.#2": 106,
+      "field:cometbft.types.v1.ValidatorParams.#1": 71,
+      "field:cometbft.types.v1.VersionParams.#1": 82,
+      "file:proto/cometbft/types/v1/params.proto": 1,
+      "message:cometbft.types.v1.ABCIParams": 144,
+      "message:cometbft.types.v1.BlockParams": 25,
+      "message:cometbft.types.v1.ConsensusParams": 14,
+      "message:cometbft.types.v1.EvidenceParams": 42,
+      "message:cometbft.types.v1.FeatureParams": 111,
+      "message:cometbft.types.v1.HashedParams": 88,
+      "message:cometbft.types.v1.SynchronyParams": 99,
+      "message:cometbft.types.v1.ValidatorParams": 67,
+      "message:cometbft.types.v1.VersionParams": 75
+    }
+  },
+  "callers": null,
+  "external_callers_possible": false,
+  "decision": {
+    "verdict": "GO",
+    "aspects": {
+      "generated_code": "GO",
+      "runtime": "GO",
+      "source_build": "GO"
+    },
+    "changes": [],
+    "findings": null,
+    "callers": null,
+    "engine_version": "verdict/v0.14.0",
+    "rules_version": "rules-protobuf/v0.14.0",
+    "callers_checked": 0,
+    "callers_broken": 0,
+    "callers_unknown": 0
+  },
+  "toolchain": {
+    "go": "go1.27.1",
+    "protocompile": "protocompile/v0.14.1",
+    "analyzer": "go-analyzer/v0.24.0",
+    "rule_engine": "verdict/v0.14.0",
+    "rules": "rules-protobuf/v0.14.0",
+    "schema_version": 1,
+    "resolver": "resolver/1+custom-options-lenient/1+provider-suffix/1+buf-workspace/1+module-paths/1+own-prefix/1+go-deps/3+relocated-standard/1+thirdparty-a61fd41b4cb3",
+    "contract_model": "contract-model/5"
+  },
+  "policy": {
+    "conclusion": "success",
+    "mode": "silent",
+    "unknown_as": "warn"
+  },
+  "cache_key": "50cb134fd22711f3786c648ec76e4e4a5ccef5cc702905477f65bba9e7d722ad",
+  "binary": {
+    "revision": "826fc683e1497e7e25f7fc4facb023af8095d0e6",
+    "modified": true,
+    "go": "go1.27.1"
+  },
+  "settings": {},
+  "policy_input": {
+    "config": {
+      "mode": "silent",
+      "unknown_as": "warn",
+      "builds": [
+        {
+          "goos": "linux",
+          "goarch": "amd64"
+        }
+      ],
+      "migration_suggestions": true
+    }
+  }
+}

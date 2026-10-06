@@ -1,0 +1,9 @@
+time=2026-10-06T08:54:31.160Z level=INFO msg=decision verdict=GO took=1.474s
+✓ Merge
+
+1 contract file(s) changed, with no change callers can see.
+
+Verified against p@ab0be101 (base 86da0027) and 0 caller commit(s).
+Not checked: callers other than the directories given with --callers
+
+Decision d_aa207373f5272213 · keep it with --out record.json and replay with: verifier replay --file record.json
