@@ -1,4 +1,4 @@
-# hold-out 2026-10-06: once, on binary ee76650 (stress/HOLDOUT.md)
-set=holdout
+# re-judge 2026-10-06: binary 13510aa (the judge builds an upgrade made by a replace line; decisions as ee76650)
+set=all
 since=2023-01-01
-parts=history,scan
+parts=history
