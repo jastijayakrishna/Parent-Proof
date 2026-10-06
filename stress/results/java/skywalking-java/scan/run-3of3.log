@@ -1,8 +1,8 @@
 skywalking-java scan: 20 windows, shard 3/3 has 6
 canary at 4f3b17e1b0b3: breaks (24 files moved) ['apm-protocol/apm-network/src/main/java/org/apache/skywalking/apm/network/trace/component/command/ProfileTaskCommand.java:21: package org.apache.skywalking.apm.network.common.v3 does not exist']
-4f3b17e1b0b3 2024-09-14 verifier=None build=None compiler=baseline_fails 22.0s 
-bd1f91f7e1cb 2024-10-29 verifier=None build=None compiler=baseline_fails 19.0s 
-04a4704eb437 2025-01-17 verifier=None build=None compiler=baseline_fails 6.1s 
-b5475f28b463 2025-05-12 verifier=GO build=GO compiler=compiles 39.5s 
-6ec6d71168c1 2025-08-06 verifier=GO build=GO compiler=compiles 39.8s 
-050b6eb2941e 2025-12-02 verifier=GO build=GO compiler=compiles 40.8s 
+4f3b17e1b0b3 2024-09-14 verifier=None build=None compiler=baseline_fails 22.9s 
+bd1f91f7e1cb 2024-10-29 verifier=None build=None compiler=baseline_fails 16.7s 
+04a4704eb437 2025-01-17 verifier=None build=None compiler=baseline_fails 5.1s 
+b5475f28b463 2025-05-12 verifier=GO build=GO compiler=compiles 35.8s 
+6ec6d71168c1 2025-08-06 verifier=GO build=GO compiler=compiles 34.2s 
+050b6eb2941e 2025-12-02 verifier=GO build=GO compiler=compiles 35.5s 
