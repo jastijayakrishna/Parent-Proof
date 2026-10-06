@@ -1,6 +1,6 @@
 # Stress test: Go and Java consumers
 
-Updated 2026-10-06 06:39 UTC. Plan and rules: [stress/PREREG.md](stress/PREREG.md).
+Updated 2026-10-06 07:03 UTC. Plan and rules: [stress/PREREG.md](stress/PREREG.md).
 
 Every row is a real contract change of an open-source project never used to tune the verifier, decided by the
 verifier before the project's own compiler judged it (Go: `go build`; Java: the project's Maven or Gradle build).
@@ -10,7 +10,7 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 | language | windows | compiler judged | broke the build | caught | missed | false alarm | needs review (build) | errors |
 |---|---|---|---|---|---|---|---|---|
 | Go | 147 | 81 | 7 | 6 | **1** | 0 | 28 (19%) | 0 |
-| Java | 535 | 172 | 24 | 16 | **7** | 0 | 32 (7%) | 0 |
+| Java | 535 | 172 | 24 | 23 | **0** | 0 | 34 (7%) | 0 |
 
 ## Go by project
 
@@ -36,7 +36,7 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 | conductor (history) | 25 | 0 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
 | google-cloud-pubsub (history) | 19 | 0 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
 | google-cloud-pubsub-history (history) | 248 | 0 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
-| hbase (history) | 57 | 56 | 16 | 9 | **7** | 0 | 3 (5%) | 0 |
+| hbase (history) | 57 | 56 | 16 | 16 | **0** | 0 | 5 (9%) | 0 |
 | java-control-plane (history) | 23 | 23 | 0 | 0 | **0** | 0 | 21 (91%) | 0 |
 | jetcd (history) | 5 | 5 | 1 | 1 | **0** | 0 | 0 (0%) | 0 |
 | skywalking-java (history) | 6 | 6 | 1 | 1 | **0** | 0 | 0 (0%) | 0 |
@@ -44,16 +44,9 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 | temporal-sdk-java (history) | 27 | 19 | 2 | 1 | **0** | 0 | 7 (27%) | 0 |
 | temporal-sdk-java (scan) | 20 | 10 | 0 | 0 | **0** | 0 | 1 (10%) | 0 |
 
-## Missed: 8
+## Missed: 1
 
 - Go cometbft -> cosmos-sdk history v1.0.0-rc1 -> v1.0.0-rc1.0.20240908111210-ab0be101882f (verifier's answer: Merge, build line: Merge): compiler: module github.com/cometbft/cometbft@latest found (v1.0.1), but does not contain package github.com/cometbft/cometbft/crypto/sr25519; module github.com/cometbft/cometbft@latest found (v1.0.1), but does not contain package github.com/cometbft/cometbft/crypto/sr25519; module github.com/cometbft/cometbf
-- Java hbase history ffed09d96bba (verifier's answer: Needs review, build line: Merge): compiler: hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java:454: org.apache.hadoop.hbase.master.MasterRpcServices is not abstract and does not override abstract method rollAllWALWriters(org.apache.hbase.thirdparty.com.google.protobuf.RpcController,org.apache.hadoop
-- Java hbase history 9ba5d3e55a36 (verifier's answer: Needs review, build line: Merge): compiler: hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java:462: org.apache.hadoop.hbase.master.MasterRpcServices is not abstract and does not override abstract method refreshHFiles(org.apache.hbase.thirdparty.com.google.protobuf.RpcController,org.apache.hadoop.hba
-- Java hbase history 91ac8abe5d40 (verifier's answer: Needs review, build line: Merge): compiler: hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java:451: org.apache.hadoop.hbase.master.MasterRpcServices is not abstract and does not override abstract method truncateRegion(org.apache.hbase.thirdparty.com.google.protobuf.RpcController,org.apache.hadoop.hb
-- Java hbase history c6a0c3b2b7af (verifier's answer: Needs review, build line: Merge): compiler: hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java:456: org.apache.hadoop.hbase.master.MasterRpcServices is not abstract and does not override abstract method restoreBackupSystemTable(org.apache.hbase.thirdparty.com.google.protobuf.RpcController,org.apache
-- Java hbase history 7f7b9e6ef298 (verifier's answer: Needs review, build line: Merge): compiler: hbase-client/src/main/java/org/apache/hadoop/hbase/client/RawAsyncHBaseAdmin.java:4656: cannot find symbol
-- Java hbase history 0f11becf4761 (verifier's answer: Needs review, build line: Merge): compiler: hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java:456: org.apache.hadoop.hbase.master.MasterRpcServices is not abstract and does not override abstract method restoreBackupSystemTable(org.apache.hbase.thirdparty.com.google.protobuf.RpcController,org.apache
-- Java hbase history 6e14c22aae2b (verifier's answer: Needs review, build line: Merge): compiler: hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java:457: org.apache.hadoop.hbase.master.MasterRpcServices is not abstract and does not override abstract method reopenTableRegions(org.apache.hbase.thirdparty.com.google.protobuf.RpcController,org.apache.hadoo
 
 ## False alarms: 0
 
@@ -61,7 +54,7 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 ## Needs review, by reason
 
 - Go: DESCRIPTOR_REFLECTION 12, CONTRACT_COMPILE_ERROR 10, OPTION_CHANGED 8, NEEDS_REVIEW 7, GO_API_CHANGED_USED_BY_CALLER 4, WHOLE_MESSAGE_FLOW 4, SECOND_CHECK_DISAGREES 4, UNRESOLVED_MEMBER 2, TYPE_ERROR_HIDES_USES 1
-- Java: OPTION_CHANGED 26, CONTRACT_COMPILE_ERROR 19, NEEDS_REVIEW 10, JAVA_INLINED_CONSTANTS_UNCHECKED 6, DESCRIPTOR_REFLECTION 2, WHOLE_MESSAGE_FLOW 2
+- Java: OPTION_CHANGED 26, NEEDS_REVIEW 12, JAVA_INLINED_CONSTANTS_UNCHECKED 6, CONTRACT_COMPILE_ERROR 2, DESCRIPTOR_REFLECTION 2, WHOLE_MESSAGE_FLOW 2
 
 ## Not judged by the compiler, by reason
 
@@ -71,4 +64,4 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 ## Errors: 0
 
 
-## Job minutes: 72 jobs, slowest 24.1 min (stress/results/java/camunda-zeebe/history/job-6of12.json), 0 over 30 min
+## Job minutes: 72 jobs, slowest 24.3 min (stress/results/java/camunda-zeebe/history/job-7of12.json), 0 over 30 min
