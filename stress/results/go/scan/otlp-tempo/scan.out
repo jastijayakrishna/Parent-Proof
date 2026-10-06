@@ -1,0 +1,27 @@
+time=2026-10-06T10:34:10.245Z level=INFO msg=cloning repo=p-otlp-tempo url=https://github.com/open-telemetry/opentelemetry-proto.git
+time=2026-10-06T10:34:10.653Z level=INFO msg=cloning repo=c-otlp-tempo url=https://github.com/grafana/tempo.git
+otlp-tempo  9bff3f87 GO       source_build=GO      compiler=-                   0.6s 
+otlp-tempo  bb8796bf GO       source_build=GO      compiler=-                   0.3s 
+otlp-tempo  3b93166f GO       source_build=GO      compiler=-                   0.3s 
+otlp-tempo  7c63f7b8 GO       source_build=GO      compiler=-                   0.3s 
+otlp-tempo  d17c0b58 GO       source_build=GO      compiler=-                   0.3s 
+otlp-tempo  7f6408c6 GO       source_build=GO      compiler=-                   9.7s 
+otlp-tempo  c54a8ea0 GO       source_build=GO      compiler=-                   0.3s 
+otlp-tempo  6a9a37f6 GO       source_build=GO      compiler=-                   0.4s 
+otlp-tempo  f0b37596 GO       source_build=GO      compiler=-                   0.3s 
+otlp-tempo  3ca54b66 GO       source_build=GO      compiler=-                   0.3s 
+otlp-tempo  97746452 GO       source_build=GO      compiler=-                   0.8s 
+otlp-tempo  2c8b6336 GO       source_build=GO      compiler=-                   0.8s 
+otlp-tempo  a5f0eac5 GO       source_build=GO      compiler=-                   0.3s 
+otlp-tempo  be43d110 GO       source_build=GO      compiler=-                   0.4s 
+otlp-tempo  60ed56c9 GO       source_build=GO      compiler=-                   0.3s 
+otlp-tempo  e8f13618 GO       source_build=GO      compiler=-                   0.9s 
+otlp-tempo  b77e3d9b GO       source_build=GO      compiler=-                   0.3s 
+otlp-tempo  024778c3 GO       source_build=GO      compiler=-                   0.9s 
+otlp-tempo  da516806 GO       source_build=GO      compiler=-                   0.3s 
+otlp-tempo  9815b344 GO       source_build=GO      compiler=-                   0.3s 
+otlp-tempo    20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+
+20 windows in 23s.
+exit 0 seconds 23
