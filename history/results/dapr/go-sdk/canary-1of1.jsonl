@@ -1,0 +1,1 @@
+{"consumer":"go-sdk","at":"5779353f7ada17b1ce8216a32919e5d84d686960^","shard":"1/1","oracle":{"outcome":"oracle_error","detail":"canary: go mod download github.com/dapr/dapr: module github.com/dapr/dapr: not a known dependency "}}
