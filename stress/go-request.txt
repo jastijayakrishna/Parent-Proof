@@ -1,4 +1,4 @@
-# rerun 2026-10-06: binary ee76650 (a Go code change next to a .proto change no caller sees is checked)
-set=dev
+# hold-out 2026-10-06: once, on binary ee76650 (stress/HOLDOUT.md)
+set=holdout
 since=2023-01-01
 parts=history,scan
