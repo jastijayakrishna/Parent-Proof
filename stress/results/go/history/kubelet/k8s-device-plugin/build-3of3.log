@@ -1,10 +1,10 @@
-time=2026-10-06T04:37:06.908Z level=INFO msg=cloning repo=kubelet url=https://github.com/kubernetes/kubelet.git
-time=2026-10-06T04:37:08.117Z level=INFO msg=cloning repo=k8s-device-plugin url=https://github.com/NVIDIA/k8s-device-plugin.git
-time=2026-10-06T04:37:17.493Z level=INFO msg=mined consumer=k8s-device-plugin pin_moves=17 to_compile=5 skipped=map[]
-time=2026-10-06T04:37:45.286Z level=INFO msg=canary consumer=k8s-device-plugin at=3a43aeb1^ outcome=baseline_fails detail="canary: k8s.io/kubelet/pkg/apis/deviceplugin/v1beta1 removed. every package that imports k8s.io/kubelet fails to compile before the bump"
-time=2026-10-06T04:37:46.626Z level=INFO msg=window consumer=k8s-device-plugin bump=3a43aeb1 select=unchanged breaking=0 compiler=baseline_fails
-time=2026-10-06T04:38:10.066Z level=INFO msg=window consumer=k8s-device-plugin bump=4a7a0ce0 select=unchanged breaking=0 compiler=baseline_fails
-time=2026-10-06T04:38:10.167Z level=INFO msg=window consumer=k8s-device-plugin bump=79c7ae4e select=breaking breaking=63 compiler=baseline_fails
-time=2026-10-06T04:38:29.676Z level=INFO msg=window consumer=k8s-device-plugin bump=bd989996 select=additive breaking=0 compiler=baseline_fails
-time=2026-10-06T04:38:29.702Z level=INFO msg=window consumer=k8s-device-plugin bump=8ec6c0da select=unchanged breaking=0 compiler=baseline_fails
-time=2026-10-06T04:38:29.702Z level=INFO msg="suite built" suite=kubelet windows_added=5
+time=2026-10-06T06:09:49.069Z level=INFO msg=cloning repo=kubelet url=https://github.com/kubernetes/kubelet.git
+time=2026-10-06T06:09:49.734Z level=INFO msg=cloning repo=k8s-device-plugin url=https://github.com/NVIDIA/k8s-device-plugin.git
+time=2026-10-06T06:09:58.382Z level=INFO msg=mined consumer=k8s-device-plugin pin_moves=17 to_compile=5 skipped=map[]
+time=2026-10-06T06:10:27.420Z level=INFO msg=canary consumer=k8s-device-plugin at=3a43aeb1a9fd00dbee12f1142babd00137ccb059^ outcome=baseline_fails detail="canary: k8s.io/kubelet/pkg/apis/deviceplugin/v1beta1 removed. every package that imports k8s.io/kubelet fails to compile before the bump"
+time=2026-10-06T06:10:28.514Z level=INFO msg=window consumer=k8s-device-plugin bump=3a43aeb1 select=unchanged breaking=0 compiler=baseline_fails
+time=2026-10-06T06:10:46.022Z level=INFO msg=window consumer=k8s-device-plugin bump=4a7a0ce0 select=unchanged breaking=0 compiler=baseline_fails
+time=2026-10-06T06:10:46.772Z level=INFO msg=window consumer=k8s-device-plugin bump=79c7ae4e select=breaking breaking=63 compiler=baseline_fails
+time=2026-10-06T06:11:01.383Z level=INFO msg=window consumer=k8s-device-plugin bump=8ec6c0da select=unchanged breaking=0 compiler=baseline_fails
+time=2026-10-06T06:11:01.727Z level=INFO msg=window consumer=k8s-device-plugin bump=bd989996 select=additive breaking=0 compiler=baseline_fails
+time=2026-10-06T06:11:01.727Z level=INFO msg="suite built" suite=kubelet windows_added=5
