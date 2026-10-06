@@ -1,0 +1,6 @@
+time=2026-10-06T10:34:16.693Z level=INFO msg=mined consumer=tempo pin_moves=12 to_compile=4 skipped=map[]
+time=2026-10-06T10:35:54.528Z level=INFO msg=canary consumer=tempo at=3bf3a17934813011815506699b55fd18d7bdf581^ outcome=breaks detail="canary: go.opentelemetry.io/proto/otlp/trace/v1 removed."
+time=2026-10-06T10:36:09.372Z level=INFO msg=window consumer=tempo bump=3bf3a179 select=breaking breaking=33 compiler=compiles
+time=2026-10-06T10:37:27.425Z level=INFO msg=window consumer=tempo bump=a4b03c36 select=breaking breaking=9 compiler=compiles
+time=2026-10-06T10:37:28.816Z level=INFO msg=window consumer=tempo bump=6b7342de select=additive breaking=0 compiler=compiles
+time=2026-10-06T10:38:36.078Z level=INFO msg=window consumer=tempo bump=dbd75055 select=breaking breaking=23 compiler=compiles
