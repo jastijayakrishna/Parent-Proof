@@ -1,3 +1,21 @@
-google-cloud-pubsub history: 2 windows, shard 1/1 has 2
-f07e1a4f8e35 2026-08-27 verifier=None build=None compiler=baseline_fails 84.8s 
-0c703082f187 2026-09-14 verifier=None build=None compiler=baseline_fails 43.4s 
+google-cloud-pubsub history: 19 windows, shard 1/1 has 19
+canary at 32b4eb8e998a: oracle_error (157 files moved) ['']
+32b4eb8e998a 2026-05-22 verifier=None build=None compiler=baseline_fails 24.4s 
+6ce7a4941ef5 2026-06-03 verifier=None build=None compiler=baseline_fails 26.7s 
+05c2a56b2f16 2026-06-13 verifier=GO build=GO compiler=oracle_error 72.1s 
+73c9a0342f91 2026-07-07 verifier=None build=None compiler=baseline_fails 28.6s 
+55ad3142b909 2026-07-07 verifier=GO build=GO compiler=oracle_error 68.9s 
+b7a850434fe0 2026-07-08 verifier=None build=None compiler=baseline_fails 26.8s 
+e3e9d0bc11bc 2026-07-14 verifier=None build=None compiler=baseline_fails 28.4s 
+5c6478cfe19f 2026-07-27 verifier=None build=None compiler=baseline_fails 30.6s 
+c2ce8c17fda3 2026-07-30 verifier=None build=None compiler=baseline_fails 46.6s 
+12cc0537a10c 2026-07-31 verifier=GO build=GO compiler=oracle_error 80.7s 
+8cbbb5635432 2026-08-24 verifier=None build=None compiler=baseline_fails 32.3s 
+dd50e0dcd3cb 2026-08-25 verifier=GO build=GO compiler=oracle_error 80.4s 
+f07e1a4f8e35 2026-08-27 verifier=None build=None compiler=baseline_fails 30.3s 
+0b2991e56b4d 2026-09-04 verifier=None build=None compiler=baseline_fails 32.8s 
+5b769ed3e330 2026-09-09 verifier=GO build=GO compiler=oracle_error 80.2s 
+0c703082f187 2026-09-14 verifier=None build=None compiler=baseline_fails 31.0s 
+76cd7d96cba8 2026-09-23 verifier=None build=None compiler=baseline_fails 30.5s 
+05a998f3368c 2026-09-24 verifier=GO build=GO compiler=oracle_error 82.2s 
+976d5888de51 2026-09-30 verifier=None build=None compiler=baseline_fails 34.0s 
