@@ -1,4 +1,4 @@
-# rerun 2026-10-06: binary 6f9abec
+# rerun 2026-10-06: binary 7ea0886 (second check before every Merge; canaries test the judge; every upgrade judged)
 set=dev
 since=2023-01-01
 parts=history,scan

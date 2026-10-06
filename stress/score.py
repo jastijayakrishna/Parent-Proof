@@ -22,11 +22,24 @@ import os
 WORD = {"GO": "Merge", "NO_GO": "Don't merge", "UNKNOWN": "Needs review", "ERROR": "error", "": "-"}
 
 
+def trusted(compiler, canary_outcome):
+    """A compiler answer counts only when the judge broke on its canary, a
+    change that must break the consumer; otherwise it is 'judge not
+    verified' (the build may not see the contract at all)."""
+    if compiler in ("breaks", "compiles") and canary_outcome != "breaks":
+        return "judge not verified"
+    return compiler
+
+
 def rows_go():
     out = []
     for f in sorted(glob.glob("stress/results/go/history/*/*/results-*.jsonl")):
         parts = f.replace("\\", "/").split("/")
         suite, consumer = parts[-3], parts[-2]
+        canaries = []
+        for cf in glob.glob(os.path.join(os.path.dirname(f), "canary-*.jsonl")):
+            canaries += [json.loads(x)["oracle"]["outcome"] for x in open(cf, encoding="utf-8") if x.strip()]
+        canary = "breaks" if canaries and all(c == "breaks" for c in canaries) else (canaries[0] if canaries else "none")
         for line in open(f, encoding="utf-8"):
             if not line.strip():
                 continue
@@ -35,7 +48,7 @@ def rows_go():
             out.append({"lang": "Go", "project": f"{suite} -> {consumer}", "mode": "history",
                         "id": f"{w.get('old_pin', '')} -> {w.get('new_pin', '')}", "link": "",
                         "verdict": o.get("verdict", "ERROR"), "build": (o.get("aspects") or {}).get("source_build", ""),
-                        "compiler": (w.get("oracle") or {}).get("outcome", "not judged"),
+                        "compiler": trusted((w.get("oracle") or {}).get("outcome", "not judged"), canary),
                         "reasons": o.get("unknown_reasons") or [], "where": (o.get("evidence") or [""])[0],
                         "error": o.get("error", ""), "errors": (w.get("oracle") or {}).get("errors", [])[:3]})
     for f in sorted(glob.glob("stress/results/go/scan/*/scan.jsonl")):
@@ -47,7 +60,8 @@ def rows_go():
             o = r.get("oracle") or {}
             out.append({"lang": "Go", "project": eco, "mode": "scan", "id": r.get("commit", "")[:12], "link": "",
                         "verdict": r.get("verdict", "ERROR"), "build": (r.get("aspects") or {}).get("source_build", ""),
-                        "compiler": o.get("outcome") or "not judged", "reasons": r.get("unknown_reasons") or [],
+                        "compiler": trusted(o.get("outcome") or "not judged", (r.get("canary") or {}).get("outcome", "none")),
+                        "reasons": r.get("unknown_reasons") or [],
                         "where": (r.get("evidence") or [""])[0], "error": r.get("error", ""), "errors": o.get("errors", [])[:3],
                         "unjudged": r.get("unjudged", "")})
     names = set()
@@ -62,7 +76,8 @@ def rows_go():
             o = res.get("oracle") or {}
             out.append({"lang": "Go", "project": pr.get("eco", ""), "mode": "live", "id": f"#{pr.get('n', '')}", "link": pr.get("url", ""),
                         "verdict": res.get("verdict", "ERROR"), "build": (res.get("aspects") or {}).get("source_build", ""),
-                        "compiler": o.get("outcome") or "not judged", "reasons": res.get("unknown_reasons") or [],
+                        "compiler": trusted(o.get("outcome") or "not judged", (res.get("canary") or {}).get("outcome", "none")),
+                        "reasons": res.get("unknown_reasons") or [],
                         "where": (res.get("evidence") or [""])[0], "error": res.get("error", ""), "errors": o.get("errors", [])[:3]})
     return out
 
@@ -71,18 +86,21 @@ def rows_java():
     out = []
     files = sorted(glob.glob("stress/results/java/*/*/results-*.jsonl")) + sorted(glob.glob("stress/results/java-live/*/*.jsonl"))
     for f in files:
+        canary = "none"
         for line in open(f, encoding="utf-8"):
             if not line.strip():
                 continue
             r = json.loads(line)
             if "window" not in r:
+                if "shard" in r:
+                    canary = (r.get("canary") or {}).get("outcome", "none")
                 continue
             w, v, o = r["window"], r.get("verifier") or {}, r.get("oracle") or {}
             pr = w.get("pr") or {}
             out.append({"lang": "Java", "project": w["project"], "mode": w["mode"],
                         "id": (f"#{pr['n']}" if pr else w["id"]), "link": pr.get("url", ""),
                         "verdict": v.get("verdict", "ERROR" if v else ""), "build": (v.get("aspects") or {}).get("source_build", ""),
-                        "compiler": o.get("outcome", "not judged"), "reasons": v.get("unknown_reasons") or [],
+                        "compiler": trusted(o.get("outcome", "not judged"), canary), "reasons": v.get("unknown_reasons") or [],
                         "where": (o.get("errors") or [""])[0] if o.get("outcome") == "breaks" else "",
                         "error": (r.get("harness_error") or v.get("error") or "")[:300],
                         "replay": v.get("replay", ""), "seconds": r.get("seconds", 0)})

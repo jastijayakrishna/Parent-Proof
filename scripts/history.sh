@@ -36,8 +36,11 @@ timeout "${BUILD_TIMEOUT:-200m}" "$bin" suite build --suite "$suite" --oss "$tmp
 echo "suite build exit $?"
 tail -c 6000 "$tmp/build.log" > "out/build-$tag.log"
 # Every window mined and compiled, so a shard cut short shows what it skipped.
-grep -E 'msg=(mined|window|skip) ' "$tmp/build.log" > "out/build-$tag.windows.log" || true
+grep -E 'msg=(mined|window|skip|canary) ' "$tmp/build.log" > "out/build-$tag.windows.log" || true
 cp "$tmp/suite/$SUITE.jsonl" "out/windows-$tag.jsonl" 2>/dev/null || : > "out/windows-$tag.jsonl"
+# The judge's own test (a change that must break the consumer): its answers
+# count only when it broke.
+cp "$tmp/suite/$SUITE.canary.jsonl" "out/canary-$tag.jsonl" 2>/dev/null || true
 echo "windows mined: $(wc -l < "out/windows-$tag.jsonl")"
 
 : > "out/results-$tag.jsonl"

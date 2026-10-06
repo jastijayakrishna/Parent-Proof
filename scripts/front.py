@@ -12,11 +12,31 @@ import re
 REPO = "jastijayakrishna/Parent-Proof"
 
 
+def judged(outcome, canary):
+    """A compiler answer counts only where the judge broke on its canary, a
+    change that must break the project's build; otherwise the build may not
+    see the contract at all."""
+    if outcome in ("breaks", "compiles") and canary != "breaks":
+        return "judge not verified"
+    return outcome
+
+
+def canary_of(results_dir):
+    outcomes = []
+    for cf in glob.glob(os.path.join(results_dir, "canary-*.jsonl")):
+        with open(cf, encoding="utf-8") as f:
+            outcomes += [json.loads(x)["oracle"]["outcome"] for x in f if x.strip()]
+    if outcomes and all(o == "breaks" for o in outcomes):
+        return "breaks"
+    return next((o for o in outcomes if o != "breaks"), "none")
+
+
 def history():
     rows = []
     for path in sorted(glob.glob("history/results/*/*/results-*.jsonl")):
         parts = path.replace("\\", "/").split("/")
         suite, consumer = parts[-3], parts[-2]
+        canary = canary_of(os.path.dirname(path))
         with open(f"history/suites/{suite}.suite.json", encoding="utf-8") as f:
             repo = json.load(f)["consumers"][consumer]["repo"]
         with open(path, encoding="utf-8") as f:
@@ -31,7 +51,7 @@ def history():
                     "change": f"{w.get('old_pin', '')} → {w.get('new_pin', '')}",
                     "date": w.get("date", ""),
                     "build": (o.get("aspects") or {}).get("source_build", ""),
-                    "compiler": (w.get("oracle") or {}).get("outcome", "not judged"),
+                    "compiler": judged((w.get("oracle") or {}).get("outcome", "not judged"), canary),
                     "where": (o.get("evidence") or [""])[0],
                 })
     return rows
@@ -51,7 +71,7 @@ def live():
                 "date": (pr.get("updated") or "")[:10],
                 "verdict": res.get("verdict", ""),
                 "build": (res.get("aspects") or {}).get("source_build", ""),
-                "compiler": (res.get("oracle") or {}).get("outcome", "not judged"),
+                "compiler": judged((res.get("oracle") or {}).get("outcome", "not judged"), (res.get("canary") or {}).get("outcome", "none")),
                 "where": "",
             })
     return rows
@@ -61,7 +81,8 @@ def counts(rows, by_verdict):
     breaks = [r for r in rows if r["compiler"] == "breaks"]
     safe = [r for r in rows if r["compiler"] == "compiles"]
     review = [r for r in rows if (r.get("verdict") == "UNKNOWN" if by_verdict else r["build"] == "UNKNOWN")]
-    return (len(rows), len(breaks), sum(r["build"] == "NO_GO" for r in breaks), sum(r["build"] == "GO" for r in breaks),
+    unverified = sum(r["compiler"] == "judge not verified" for r in rows)
+    return (len(rows), unverified, len(breaks), sum(r["build"] == "NO_GO" for r in breaks), sum(r["build"] == "GO" for r in breaks),
             sum(r["build"] == "NO_GO" for r in safe), len(review))
 
 
@@ -75,8 +96,8 @@ def render(now):
         f"**Updated {now:%Y-%m-%d %H:%M} UTC.** "
         f"[![shadow](https://github.com/{REPO}/actions/workflows/shadow.yml/badge.svg)](https://github.com/{REPO}/actions/workflows/shadow.yml)",
         "",
-        "| | changes | broke the build | caught | missed | false alarms | needs review |",
-        "|---|---|---|---|---|---|---|",
+        "| | changes | judge not verified | broke the build | caught | missed | false alarms | needs review |",
+        "|---|---|---|---|---|---|---|---|",
     ]
     hc, lc = counts(h, False), counts(l, True)
     projects = len({r["what"] for r in h})
@@ -84,7 +105,8 @@ def render(now):
     out.append("| [Open pull requests](SCOREBOARD.md), decided live | " + " | ".join(map(str, lc)) + " |")
     out.append("")
     out.append("**Caught**: it broke the build and the verifier said Don't merge first. **Missed**: the verifier said "
-               "Merge and the compiler says it breaks, the failure that matters most.")
+               "Merge and the compiler says it breaks, the failure that matters most. **Judge not verified**: not counted, "
+               "because a planted break did not fail that project's build, so the compiler's answer proves nothing there.")
     out.append("")
     catches = [r for r in h + l if r["compiler"] == "breaks" and r["build"] == "NO_GO"]
     catches.sort(key=lambda r: r["date"], reverse=True)

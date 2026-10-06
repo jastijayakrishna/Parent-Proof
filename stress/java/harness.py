@@ -148,8 +148,13 @@ def history_windows(p, since):
         w = {"project": p["name"], "mode": "history", "id": sha[:12], "bump": sha, "date": date, "subject": subj[:120],
              "consumer_commit": parent, "provider": provider_repo(p)}
         if kd == "inrepo":
-            changed = git("-C", cdir, "diff", "--name-only", parent, sha, "--", *paths).split("\n")
-            if not any(f.endswith(".proto") for f in changed):
+            # Every commit that changes the contract is a window: its .proto
+            # files, and in a project that checks in the code generated from
+            # them, that code too (a new generator's output); which changes
+            # matter is the compiler's to say. Other files next to them (a
+            # REST spec beside gateway.proto) are not the protobuf contract.
+            changed = contract_files(p, git("-C", cdir, "diff", "--name-only", parent, sha, "--", *paths).split("\n"))
+            if not changed:
                 continue
             # A commit that brings the contract into the repository (moves a
             # library in) changes no contract a build had before it.
@@ -262,6 +267,8 @@ def prepare(p, w, side, wt):
         add, rm = [], []
         for line in [x for x in diff.split("\n") if x.strip()]:
             st, path = line.split("\t", 1)
+            if not contract_files(p, [path]) and not path.endswith(".proto"):
+                continue
             (rm if st.startswith("D") else add).append(path)
         for path in rm:
             try:
@@ -272,6 +279,21 @@ def prepare(p, w, side, wt):
             git("-C", wt, "checkout", w["new"], "--", *add[i:i + 200])
         return {"overlaid": len(add), "removed": len(rm)}
     return {}
+
+
+def contract_files(p, paths):
+    """The files among paths that are the protobuf contract: .proto files,
+    and every file under the contract's paths when the project checks in the
+    code generated from them (contract.generated_code)."""
+    k = p["contract"]
+    out = []
+    for f in paths:
+        f = f.strip()
+        if not f:
+            continue
+        if f.endswith(".proto") or (k.get("generated_code") and any(f == x or f.startswith(x.rstrip("/") + "/") for x in k.get("paths", []))):
+            out.append(f)
+    return out
 
 
 def submodule_url(wt, path):
@@ -321,9 +343,11 @@ def modules(wt):
     return sorted(built), sorted(unbuilt)
 
 
-def build(p, wt, oracle):
+def build(p, wt, oracle, before_build=None):
     """Runs the project's build in wt. The oracle never reuses Gradle's
-    build cache: it compiles everything from source."""
+    build cache: it compiles everything from source. before_build, when set,
+    runs after the project's prebuild step (which may fetch the contract)
+    and before the build."""
     cmd = p["build"]
     if "gradlew" in cmd:
         cmd = cmd.replace("--build-cache", "")
@@ -349,8 +373,77 @@ def build(p, wt, oracle):
         log, secs = out[-LOG_TAIL:], s
         if rc != 0:
             return rc, log, secs
+    if before_build:
+        before_build()
     rc, out, s = sh(cmd, cwd=wt, timeout=int(os.environ.get("BUILD_TIMEOUT", "1500")), env=env)
     return rc, (log + "\n" + out)[-200000:], secs + s
+
+
+# Contracts generated code is compiled from but which come from jars (the
+# protobuf runtime's and Google's common types): the canary leaves them.
+CANARY_KEEP = re.compile(r"(^|/)google/(protobuf|api|rpc|type|longrunning|iam|logging|cloud/common)/")
+
+
+def canary_edit(p, wt):
+    """Moves the contract's Java packages in wt, the canary of the judge
+    (Parent's internal/benchmark/canary.go is the Go one): every contract
+    .proto file's java_package, and where the project checks in the code
+    generated from it, that code's package. A consumer that uses the contract
+    can then no longer compile; a judge that still says compiles cannot see
+    the contract (Conductor's build regenerates its .proto files from Java
+    classes). Returns how many files changed."""
+    k, kd = p["contract"], kind(p)
+    roots = [k["submodule"]] if kd == "submodule" else (k["paths"] if kd == "inrepo" else ["."])
+    changed = 0
+    for r in roots:
+        for dirpath, dirs, files in os.walk(os.path.join(wt, r)):
+            dirs[:] = [d for d in dirs if not d.startswith(".") and d not in ("target", "build", "node_modules")]
+            for f in files:
+                fp = os.path.join(dirpath, f)
+                rel = os.path.relpath(fp, wt).replace(os.sep, "/")
+                if test_code(rel):
+                    continue
+                if f.endswith(".proto") and not CANARY_KEEP.search(rel):
+                    body = open(fp, encoding="utf-8", errors="replace").read()
+                    m = re.search(r'^\s*option\s+java_package\s*=\s*"([^"]+)"\s*;', body, re.M)
+                    if m:
+                        body = body[:m.start(1)] + "parentcanary." + m.group(1) + body[m.end(1):]
+                    else:
+                        pm = re.search(r"^\s*package\s+([\w.]+)\s*;", body, re.M)
+                        if not pm:
+                            continue
+                        body = body[:pm.end()] + '\noption java_package = "parentcanary.' + pm.group(1) + '";' + body[pm.end():]
+                    open(fp, "w", encoding="utf-8").write(body)
+                    changed += 1
+                elif f.endswith(".java") and kd == "inrepo" and k.get("generated_code"):
+                    body = open(fp, encoding="utf-8", errors="replace").read()
+                    new = re.sub(r"^package\s+([\w.]+)\s*;", r"package parentcanary.\1;", body, count=1, flags=re.M)
+                    if new != body:
+                        open(fp, "w", encoding="utf-8").write(new)
+                        changed += 1
+    return changed
+
+
+def canary(p, w):
+    """The judge's test for this job: the consumer's tree of window w with
+    its contract moved (canary_edit), built from clean. Only "breaks" trusts
+    the judge."""
+    wt = os.path.join(WORK, "wt")
+    t0 = time.time()
+    try:
+        prepare(p, w, "old", wt)
+        edited = []
+        rc, log, _ = build(p, wt, oracle=True, before_build=lambda: edited.append(canary_edit(p, wt)))
+        o = judge(rc, log, wt, provider_paths(p))
+        o.pop("log_tail", None)
+        o["edited"] = edited[0] if edited else 0
+        if o["edited"] == 0:
+            o = {"outcome": "oracle_error", "detail": "canary: no contract file to move"}
+    except Exception as e:  # noqa: BLE001 - recorded, never dropped
+        o = {"outcome": "oracle_error", "detail": "canary: " + str(e)[:1000]}
+    o["seconds"] = round(time.time() - t0, 1)
+    o["at"] = w["id"]
+    return o
 
 
 # javac (Maven, Gradle) and kotlinc diagnostics: file, line, message.
@@ -496,8 +589,12 @@ def cmd_run(a):
     i, n = (int(x) for x in a.shard.split("/"))
     mine = [w for j, w in enumerate(ws) if j % n == i - 1]
     print(f"{p['name']} {a.mode}: {len(ws)} windows, shard {a.shard} has {len(mine)}", flush=True)
+    # The judge is tested first; its answers count only if the canary breaks.
+    can = canary(p, mine[0]) if mine and p.get("build") else None
+    if can:
+        print(f"canary at {can['at']}: {can['outcome']} ({can.get('edited', 0)} files moved) {can.get('errors', [''])[:1]}", flush=True)
     with open(a.out, "a", encoding="utf-8") as f:
-        f.write(json.dumps({"shard": a.shard, "windows_total": len(ws), "windows_in_shard": [w["id"] for w in mine]}) + "\n")
+        f.write(json.dumps({"shard": a.shard, "windows_total": len(ws), "windows_in_shard": [w["id"] for w in mine], "canary": can}) + "\n")
         for w in mine:
             r = run_window(p, w, out_dir)
             f.write(json.dumps(r) + "\n")

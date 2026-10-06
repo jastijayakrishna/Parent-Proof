@@ -1,4 +1,4 @@
-# rerun 2026-10-06: binary 6f9abec; harness: real submodules, existing modules only, contracts that existed before, log tails
+# rerun 2026-10-06: binary 7ea0886 (second check before every Merge); harness: a canary tests the judge first, every contract file change is a window
 set=dev,regression
 only=
 modes=history,scan

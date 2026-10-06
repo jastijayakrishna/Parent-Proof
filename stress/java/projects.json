@@ -58,7 +58,8 @@
         "paths": [
           "java-pubsub/proto-google-cloud-pubsub-v1",
           "java-pubsub/grpc-google-cloud-pubsub-v1"
-        ]
+        ],
+        "generated_code": true
       },
       "users": "<artifactId>(proto|grpc)-google-cloud-pubsub-v1</artifactId>",
       "jdk": "17",
@@ -80,14 +81,15 @@
         "paths": [
           "proto-google-cloud-pubsub-v1",
           "grpc-google-cloud-pubsub-v1"
-        ]
+        ],
+        "generated_code": true
       },
       "users": "<artifactId>(proto|grpc)-google-cloud-pubsub-v1</artifactId>",
       "jdk": "11",
       "build": "mvn -B -ntp -T1C -DskipTests -Dclirr.skip -Denforcer.skip -Dcheckstyle.skip -Dfmt.skip -Danimal.sniffer.skip -Djacoco.skip compile",
       "clean": "rm -rf $(find . -name target -type d -prune)",
       "shards": {
-        "history": 2
+        "history": 12
       }
     },
     {
@@ -166,14 +168,15 @@
           "grpc-google-cloud-bigtable-v2",
           "proto-google-cloud-bigtable-admin-v2",
           "grpc-google-cloud-bigtable-admin-v2"
-        ]
+        ],
+        "generated_code": true
       },
       "users": "<artifactId>(proto|grpc)-google-cloud-bigtable-(admin-)?v2</artifactId>",
       "jdk": "11",
       "build": "mvn -B -ntp -T1C -DskipTests -Dclirr.skip -Denforcer.skip -Dcheckstyle.skip -Dfmt.skip -Danimal.sniffer.skip -Djacoco.skip compile -pl google-cloud-bigtable -am",
       "clean": "rm -rf $(find . -name target -type d -prune)",
       "shards": {
-        "history": 4
+        "history": 12
       }
     },
     {

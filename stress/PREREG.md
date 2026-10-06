@@ -148,3 +148,18 @@ the contract is, how often it changed since 2023 (HBase 57, Camunda 56, Beam 56,
 Temporal 27, Conductor 25, java-control-plane 16, SkyWalking 4, jetcd 3, Bazel 174), and cold and clean build times
 on a runner (from 38 s for Conductor to 409 s for Beam). HBase and Alluxio needed `test-compile
 -Dmaven.test.skip=true` (their builds ask for other modules' test jars), Conductor JDK 21.
+
+## Amendments (each before the hold-out ran)
+
+- **2026-10-06, the judge is tested before it judges.** The dev runs found a judge that could not see the contract
+  (Conductor's build regenerates its .proto files from Java classes, so a changed contract never reached javac). From
+  this date every compiler answer counts only if the judge first broke on a canary in the same job: the contract's
+  Java packages moved (Java), the contract package the consumer imports most removed (Go). Windows of a judge whose
+  canary did not break are reported as "judge not verified", not as compiles or breaks. This applies to every later
+  run, the hold-out included, and to the scorers of the history and live predictions too.
+- **2026-10-06, the verifier's diff no longer picks the exam.** Every real upgrade the history mining finds is judged,
+  whether or not the verifier's own diff saw a contract change in it; a Java window is any commit that changes a
+  contract file (and the checked-in code generated from it), not only its .proto files.
+- **2026-10-06, a second check before every Merge.** The verifier gained an independent second check (the generated
+  names a caller's code uses, read from the compiler's view, against both contracts). It can only turn Merge into
+  Needs review; every such change on these windows is reported with its reason.
