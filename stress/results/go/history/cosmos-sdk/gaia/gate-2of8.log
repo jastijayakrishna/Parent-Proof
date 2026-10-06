@@ -1,11 +1,11 @@
-gaia       4d67e48f GO       source_build=GO      compiler=compiles          21.8s replay=true 
-gaia       19a8ea37 UNKNOWN  source_build=UNKNOWN compiler=compiles          46.1s replay=true 
-gaia       830c0111 UNKNOWN  source_build=UNKNOWN compiler=compiles          55.9s replay=true 
-gaia       c3c08fed NO_GO    source_build=NO_GO   compiler=compiles          44.7s replay=true 
-gaia/unchanged         windows=  4 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 4: GO= 1 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=4 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=4
-TOTAL                  windows=  4 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 4: GO= 1 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=4 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=4
+gaia       4d67e48f GO       source_build=GO      compiler=bump_side_effect  13.5s replay=true 
+gaia       19a8ea37 UNKNOWN  source_build=UNKNOWN compiler=compiles          32.9s replay=true 
+gaia       830c0111 UNKNOWN  source_build=UNKNOWN compiler=compiles          33.3s replay=true 
+gaia       c3c08fed NO_GO    source_build=NO_GO   compiler=compiles          25.1s replay=true 
+gaia/unchanged         windows=  4 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 3: GO= 0 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 0, UNKNOWN 0, GO 1) | wire: judged=4 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=4
+TOTAL                  windows=  4 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 3: GO= 0 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 0, UNKNOWN 0, GO 1) | wire: judged=4 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=4
   WITHIN THE UNKNOWN LIMIT gaia@19a8ea375c69..853dbbf3: unknown_on_safe: CONTRACT_COMPILE_ERROR
   WITHIN THE UNKNOWN LIMIT gaia@830c0111a6a9..e265bb9b: unknown_on_safe: CONTRACT_COMPILE_ERROR
 
-4 windows in 1m31s with 2 workers; 0 differ from the baseline.
+4 windows in 58s with 2 workers; 0 differ from the baseline.
 verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
