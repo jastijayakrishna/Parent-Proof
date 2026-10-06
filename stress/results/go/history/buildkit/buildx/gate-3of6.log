@@ -1,24 +1,24 @@
-buildx     17eff25f GO       source_build=GO      compiler=compiles           7.7s replay=true 
-buildx     08998a7e GO       source_build=GO      compiler=compiles           8.5s replay=true 
-buildx     285dd76b UNKNOWN  source_build=UNKNOWN compiler=breaks             6.0s replay=true 
-buildx     39db6159 GO       source_build=GO      compiler=compiles           5.5s replay=true 
-buildx     40fcf992 GO       source_build=GO      compiler=compiles           4.2s replay=true 
-buildx     5723ceef GO       source_build=GO      compiler=compiles           4.1s replay=true 
-buildx     6160c9bc GO       source_build=GO      compiler=compiles           5.0s replay=true 
-buildx     73b05c14 GO       source_build=GO      compiler=compiles           5.0s replay=true 
-buildx     8c741093 GO       source_build=GO      compiler=compiles           0.5s replay=true 
-buildx     ad371e42 GO       source_build=GO      compiler=bump_side_effect   4.6s replay=true 
-buildx     a4a02b07 GO       source_build=GO      compiler=compiles           4.6s replay=true 
-buildx     c1d3955f GO       source_build=GO      compiler=compiles           6.0s replay=true 
-buildx     dab7af61 GO       source_build=GO      compiler=compiles           6.0s replay=true 
-buildx     ea7c8e83 GO       source_build=GO      compiler=compiles           3.9s replay=true 
-buildx     cb378866 GO       source_build=GO      compiler=compiles           4.3s replay=true 
-buildx     e4ee2ca1 GO       source_build=GO      compiler=compiles           3.9s replay=true 
-buildx     efaf9daa UNKNOWN  source_build=UNKNOWN compiler=compiles           4.5s replay=true 
+buildx     17eff25f GO       source_build=GO      compiler=compiles          11.9s replay=true 
+buildx     08998a7e GO       source_build=GO      compiler=compiles          12.8s replay=true 
+buildx     285dd76b UNKNOWN  source_build=UNKNOWN compiler=breaks             8.9s replay=true 
+buildx     39db6159 GO       source_build=GO      compiler=compiles           8.1s replay=true 
+buildx     5723ceef GO       source_build=GO      compiler=compiles           6.1s replay=true 
+buildx     40fcf992 GO       source_build=GO      compiler=compiles           6.4s replay=true 
+buildx     6160c9bc GO       source_build=GO      compiler=compiles           7.4s replay=true 
+buildx     73b05c14 GO       source_build=GO      compiler=compiles           7.8s replay=true 
+buildx     8c741093 GO       source_build=GO      compiler=compiles           0.6s replay=true 
+buildx     ad371e42 GO       source_build=GO      compiler=bump_side_effect   7.2s replay=true 
+buildx     a4a02b07 GO       source_build=GO      compiler=compiles           7.2s replay=true 
+buildx     c1d3955f GO       source_build=GO      compiler=compiles           9.3s replay=true 
+buildx     cb378866 GO       source_build=GO      compiler=compiles           9.4s replay=true 
+buildx     dab7af61 GO       source_build=GO      compiler=compiles           5.7s replay=true 
+buildx     e4ee2ca1 GO       source_build=GO      compiler=compiles           5.9s replay=true 
+buildx     ea7c8e83 GO       source_build=GO      compiler=compiles           6.0s replay=true 
+buildx     efaf9daa UNKNOWN  source_build=UNKNOWN compiler=compiles           6.9s replay=true 
 buildx/unchanged       windows= 17 | breaks= 1: caught= 0 WRONG_GO=0 abstained=1 | compiles=15: GO=14 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 0, UNKNOWN 0, GO 1) | wire: judged=17 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=17
 TOTAL                  windows= 17 | breaks= 1: caught= 0 WRONG_GO=0 abstained=1 | compiles=15: GO=14 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 0, UNKNOWN 0, GO 1) | wire: judged=17 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=17
   FAILED buildx@285dd76b2500..c8fad61a: unknown_on_break: tests/workers/docker-container.go:52:18: assignment mismatch: 2 variables but integration.WriteConfig returns 3 values
   WITHIN THE UNKNOWN LIMIT buildx@efaf9daa21e8..9512a2e1: unknown_on_safe: CONTRACT_COMPILE_ERROR
 
-17 windows in 42s with 2 workers; 0 differ from the baseline.
+17 windows in 1m4s with 2 workers; 0 differ from the baseline.
 verifier gate: release gate failed: 1 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
