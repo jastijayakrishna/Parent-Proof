@@ -4,14 +4,16 @@ A public, timestamped record of how a contract verifier does on real pull
 requests it has never seen.
 
 <!-- live:begin -->
-**Updated 2026-10-06 09:53 UTC.** [![shadow](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml/badge.svg)](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml)
+**Updated 2026-10-06 11:55 UTC.** [![shadow](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml/badge.svg)](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml)
 
 | | changes | judge not verified | broke the build | caught | missed | false alarms | needs review |
 |---|---|---|---|---|---|---|---|
 | [Real upgrades](HISTORY.md), 9 projects' history | 178 | 0 | 24 | 21 | 0 | 1 | 25 |
 | [Open pull requests](SCOREBOARD.md), decided live | 37 | 22 | 0 | 0 | 0 | 0 | 2 |
-| [Stress test](STRESS.md), Go: projects never used to tune it | 149 | 2 | 7 | 6 | 1 | 0 | 28 |
+| [Stress test](STRESS.md), Go: projects never used to tune it | 149 | 2 | 7 | 7 | 0 | 0 | 28 |
+| [Stress test](STRESS.md), Go: hold-out projects, run once | 254 | 0 | 22 | 12 | 0 | 4 | 58 |
 | [Stress test](STRESS.md), Java: projects never used to tune it | 451 | 68 | 19 | 18 | 0 | 0 | 13 |
+| [Stress test](STRESS.md), Java: hold-out projects, run once | 491 | 80 | 2 | 2 | 0 | 1 | 31 |
 | [Stress test](STRESS.md), Java: projects it was tuned on | 84 | 0 | 5 | 5 | 0 | 0 | 21 |
 
 **Caught**: it broke the build and the verifier said Don't merge first. **Missed**: the verifier said Merge and the compiler says it breaks, the failure that matters most. **Judge not verified**: not counted, because a planted break did not fail that project's build, so the compiler's answer proves nothing there.
