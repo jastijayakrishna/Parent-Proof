@@ -1,6 +1,6 @@
 # History: real upgrades, judged by the compiler
 
-Updated 2026-10-06 06:24 UTC.
+Updated 2026-10-06 09:53 UTC.
 
 Every row is one upgrade a project really made of a contract module it
 uses, mined from its git history. The Go compiler builds the project's code
@@ -69,8 +69,8 @@ was used to tune the verifier.
 | milvus -> milvus-sdk-go | v2.3.4-0.20240109020841-d367b5a59df1 -> v2.4.0-rc.1 | compiles | Needs review (Needs review) | OPTION_CHANGED |
 | milvus -> milvus-sdk-go | v2.4.3 -> v2.4.6 | compiles | Needs review (Needs review) | OPTION_CHANGED |
 | otlp -> otel-go | v1.3.1 -> v1.4.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE |
-| otlp -> otel-go | v1.4.0 -> v1.5.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE |
 | otlp -> otel-go | v0.19.0 -> v0.20.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE |
+| otlp -> otel-go | v1.4.0 -> v1.5.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE |
 | otlp -> otel-go | v1.5.0 -> v1.6.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE |
 | otlp -> otel-go | v1.6.0 -> v1.7.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE |
 | otlp -> otel-go | v1.7.1 -> v1.8.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE |
