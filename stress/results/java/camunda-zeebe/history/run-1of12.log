@@ -1,6 +1,7 @@
 camunda-zeebe history: 55 windows, shard 1/12 has 5
-2f19e72257dc 2024-06-04 verifier=None build=None compiler=baseline_fails 155.1s 
-81d11528427a 2025-07-16 verifier=None build=None compiler=baseline_fails 248.0s 
-285be304a9af 2025-12-12 verifier=None build=None compiler=baseline_fails 172.5s 
-25f246586fa3 2026-03-18 verifier=GO build=GO compiler=compiles 230.7s 
-591aee132d69 2026-07-08 verifier=GO build=GO compiler=compiles 269.9s 
+canary at 2f19e72257dc: oracle_error (1 files moved) ['']
+2f19e72257dc 2024-06-04 verifier=None build=None compiler=baseline_fails 5.5s 
+81d11528427a 2025-07-16 verifier=None build=None compiler=baseline_fails 143.4s 
+285be304a9af 2025-12-12 verifier=None build=None compiler=baseline_fails 145.8s 
+25f246586fa3 2026-03-18 verifier=GO build=GO compiler=compiles 225.6s 
+591aee132d69 2026-07-08 verifier=GO build=GO compiler=compiles 269.8s 
