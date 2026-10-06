@@ -1,5 +1,5 @@
 Analyzing c ...
-  c: Go, 339 packages read (10.8s)
+  c: Go, 339 packages read (10.1s)
 ✗ Don't merge
 
 removes enum AggregationTemporality

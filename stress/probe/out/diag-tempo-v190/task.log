@@ -80,12 +80,40 @@ CALLER c tempo-vulture generated: go.opentelemetry.io/collector/pdata/internal/d
    USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 47 oneof_case opentelemetry.proto.common.v1.AnyValue.#4 shipped= True module= 
    USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 53 write opentelemetry.proto.common.v1.AnyValue.#5 shipped= True module= 
 FINDING NO_GO generated_code PROTO_ENUM_REMOVED_USED_BY_CALLER opentelemetry.proto.profiles.v1development.AggregationTemporality | regenerated bindings drop this type; the caller will not compile
-FINDING NO_GO runtime PROTO_ENUM_REMOVED_USED_BY_CALLER opentelemetry.proto.profiles.v1development.AggregationTemporality | caller uses an enum the provider no longer defines
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/aggregation_temporality.go 17 enum_value opentelemetry.proto.profiles.v1development.AggregationTemporality.#0 shipped= False module=  member= 
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/aggregation_temporality.go 19 enum_value opentelemetry.proto.profiles.v1development.AggregationTemporality.#1 shipped= False module=  member= 
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/aggregation_temporality.go 21 enum_value opentelemetry.proto.profiles.v1development.AggregationTemporality.#2 shipped= False module=  member= 
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_valuetype.go 75 read opentelemetry.proto.profiles.v1development.ValueType.#3 shipped= False module=  member= 
 FINDING NO_GO source_build PROTO_ENUM_REMOVED_USED_BY_CALLER opentelemetry.proto.profiles.v1development.AggregationTemporality | caller source references the removed type
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/aggregation_temporality.go 17 enum_value opentelemetry.proto.profiles.v1development.AggregationTemporality.#0 shipped= False module=  member= 
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/aggregation_temporality.go 19 enum_value opentelemetry.proto.profiles.v1development.AggregationTemporality.#1 shipped= False module=  member= 
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/aggregation_temporality.go 21 enum_value opentelemetry.proto.profiles.v1development.AggregationTemporality.#2 shipped= False module=  member= 
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_valuetype.go 75 read opentelemetry.proto.profiles.v1development.ValueType.#3 shipped= False module=  member= 
 FINDING NO_GO generated_code PROTO_FIELD_PRESENCE_CHANGED_REFERENCED_IN_SOURCE opentelemetry.proto.profiles.v1development.Location.#1 | regenerated bindings change the field to or from a pointer type
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_location.go 54 read opentelemetry.proto.profiles.v1development.Location.#1 shipped= False module=  member= 
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_location.go 60 write opentelemetry.proto.profiles.v1development.Location.#1 shipped= False module=  member= 
 FINDING NO_GO source_build PROTO_FIELD_PRESENCE_CHANGED_REFERENCED_IN_SOURCE opentelemetry.proto.profiles.v1development.Location.#1 | caller source uses the field with its old presence shape
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_location.go 54 read opentelemetry.proto.profiles.v1development.Location.#1 shipped= False module=  member= 
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_location.go 60 write opentelemetry.proto.profiles.v1development.Location.#1 shipped= False module=  member= 
 FINDING NO_GO generated_code PROTO_FIELD_RENAMED_REFERENCED_BY_CALLER opentelemetry.proto.profiles.v1development.Location.#3 | regenerated bindings rename the accessor; the caller will not compile until updated
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_location.go 76 write opentelemetry.proto.profiles.v1development.Location.#3 shipped= False module=  member= 
 FINDING NO_GO source_build PROTO_FIELD_RENAMED_REFERENCED_BY_CALLER opentelemetry.proto.profiles.v1development.Location.#3 | caller source references the old field name
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_location.go 76 write opentelemetry.proto.profiles.v1development.Location.#3 shipped= False module=  member= 
 FINDING NO_GO generated_code PROTO_FIELD_RENAMED_REFERENCED_BY_CALLER opentelemetry.proto.profiles.v1development.Location.#4 | regenerated bindings rename the accessor; the caller will not compile until updated
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_location.go 81 write opentelemetry.proto.profiles.v1development.Location.#4 shipped= False module=  member= 
+FINDING NO_GO source_build PROTO_FIELD_RENAMED_REFERENCED_BY_CALLER opentelemetry.proto.profiles.v1development.Location.#4 | caller source references the old field name
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_location.go 81 write opentelemetry.proto.profiles.v1development.Location.#4 shipped= False module=  member= 
+FINDING NO_GO generated_code PROTO_FIELD_TYPE_CHANGED_REFERENCED_IN_SOURCE opentelemetry.proto.profiles.v1development.Location.#4 | regenerated bindings change the Go type of this field
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_location.go 81 write opentelemetry.proto.profiles.v1development.Location.#4 shipped= False module=  member= 
+FINDING NO_GO source_build PROTO_FIELD_TYPE_CHANGED_REFERENCED_IN_SOURCE opentelemetry.proto.profiles.v1development.Location.#4 | caller source uses the field with its old type
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_location.go 81 write opentelemetry.proto.profiles.v1development.Location.#4 shipped= False module=  member= 
+FINDING NO_GO generated_code PROTO_FIELD_TYPE_CHANGED_REFERENCED_IN_SOURCE opentelemetry.proto.profiles.v1development.Profile.#1 | regenerated bindings change the Go type of this field
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go 55 write opentelemetry.proto.profiles.v1development.Profile.#1 shipped= False module=  member= 
+FINDING NO_GO source_build PROTO_FIELD_TYPE_CHANGED_REFERENCED_IN_SOURCE opentelemetry.proto.profiles.v1development.Profile.#1 | caller source uses the field with its old type
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go 55 write opentelemetry.proto.profiles.v1development.Profile.#1 shipped= False module=  member= 
+FINDING NO_GO generated_code PROTO_FIELD_RENAMED_REFERENCED_BY_CALLER opentelemetry.proto.profiles.v1development.Profile.#2 | regenerated bindings rename the accessor; the caller will not compile until updated
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go 60 write opentelemetry.proto.profiles.v1development.Profile.#2 shipped= False module=  member= 
+FINDING NO_GO source_build PROTO_FIELD_RENAMED_REFERENCED_BY_CALLER opentelemetry.proto.profiles.v1development.Profile.#2 | caller source references the old field name
+   EVIDENCE vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go 60 write opentelemetry.proto.profiles.v1development.Profile.#2 shipped= False module=  member= 
 
 exit 0 seconds 26
