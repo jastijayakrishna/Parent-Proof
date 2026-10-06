@@ -1,8 +1,8 @@
 skywalking-java history: 6 windows, shard 1/1 has 6
 canary at 7b160b5fec60: breaks (20 files moved) ['apm-protocol/apm-network/src/main/java/org/apache/skywalking/apm/network/trace/component/command/Serializable.java:21: package org.apache.skywalking.apm.network.common.v3 does not exist']
-7b160b5fec60 2022-01-12 verifier=NO_GO build=NO_GO compiler=breaks 36.6s 
-65032a9b4854 2022-04-18 verifier=GO build=GO compiler=compiles 35.5s 
-c15ac3071e42 2023-10-20 verifier=GO build=GO compiler=compiles 49.1s 
-2027a98b1ec2 2024-10-30 verifier=GO build=GO compiler=compiles 38.7s 
-f1da117722e3 2025-08-21 verifier=GO build=GO compiler=compiles 44.5s 
-f75000602024 2026-03-01 verifier=GO build=GO compiler=compiles 46.6s 
+7b160b5fec60 2022-01-12 verifier=NO_GO build=NO_GO compiler=breaks 31.1s 
+65032a9b4854 2022-04-18 verifier=GO build=GO compiler=compiles 27.3s 
+c15ac3071e42 2023-10-20 verifier=GO build=GO compiler=compiles 40.2s 
+2027a98b1ec2 2024-10-30 verifier=GO build=GO compiler=compiles 28.5s 
+f1da117722e3 2025-08-21 verifier=GO build=GO compiler=compiles 33.4s 
+f75000602024 2026-03-01 verifier=GO build=GO compiler=compiles 43.0s 
