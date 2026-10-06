@@ -1,12 +1,12 @@
-time=2026-10-06T09:49:49.485Z level=INFO msg=skip consumer=cosmos-sdk bump=29f7446e old=v1.0.1 new=v0.38.17 reason=not_forward
-time=2026-10-06T09:49:49.652Z level=INFO msg=skip consumer=cosmos-sdk bump=727faf04 old=v1.0.1 new=v0.38.18 reason=not_forward
-time=2026-10-06T09:49:50.325Z level=INFO msg=skip consumer=cosmos-sdk bump=7dd034dd old=v0.39.0-beta.2.0.20260224200643-e10492fb96af new=v0.39.0-beta.2.0.20260217150107-284338bcd3d9 reason=not_forward
-time=2026-10-06T09:49:50.739Z level=INFO msg=skip consumer=cosmos-sdk bump=6850afc8 old=v0.39.0 new=v0.39.0-rc1.0.20260417162916-9fcf8612cc6c reason=not_forward
-time=2026-10-06T09:49:50.782Z level=INFO msg=skip consumer=cosmos-sdk bump=f58f0401 old=v0.39.3 new=v0.39.0-rc1.0.20260527154549-606b4197148f reason=not_forward
-time=2026-10-06T09:49:50.903Z level=INFO msg=mined consumer=cosmos-sdk pin_moves=46 to_compile=5 skipped=map[not_forward:5]
-time=2026-10-06T09:52:18.943Z level=INFO msg=canary consumer=cosmos-sdk at=21ac4a083a811e543e559233095ac098aa58a38f^ outcome=breaks detail="canary: github.com/cometbft/cometbft/abci/types removed."
-time=2026-10-06T09:54:48.910Z level=INFO msg=window consumer=cosmos-sdk bump=21ac4a08 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T09:57:15.496Z level=INFO msg=window consumer=cosmos-sdk bump=72c71c3f select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T09:57:28.905Z level=INFO msg=window consumer=cosmos-sdk bump=49f75794 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T10:00:45.480Z level=INFO msg=window consumer=cosmos-sdk bump=b8ede3a6 select=additive breaking=0 compiler=compiles
-time=2026-10-06T10:00:47.609Z level=INFO msg=window consumer=cosmos-sdk bump=864de882 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T11:32:57.552Z level=INFO msg=skip consumer=cosmos-sdk bump=29f7446e old=v1.0.1 new=v0.38.17 reason=not_forward
+time=2026-10-06T11:32:57.719Z level=INFO msg=skip consumer=cosmos-sdk bump=727faf04 old=v1.0.1 new=v0.38.18 reason=not_forward
+time=2026-10-06T11:32:58.928Z level=INFO msg=skip consumer=cosmos-sdk bump=7dd034dd old=v0.39.0-beta.2.0.20260224200643-e10492fb96af new=v0.39.0-beta.2.0.20260217150107-284338bcd3d9 reason=not_forward
+time=2026-10-06T11:32:59.333Z level=INFO msg=skip consumer=cosmos-sdk bump=6850afc8 old=v0.39.0 new=v0.39.0-rc1.0.20260417162916-9fcf8612cc6c reason=not_forward
+time=2026-10-06T11:32:59.375Z level=INFO msg=skip consumer=cosmos-sdk bump=f58f0401 old=v0.39.3 new=v0.39.0-rc1.0.20260527154549-606b4197148f reason=not_forward
+time=2026-10-06T11:32:59.493Z level=INFO msg=mined consumer=cosmos-sdk pin_moves=46 to_compile=5 skipped=map[not_forward:5]
+time=2026-10-06T11:35:38.041Z level=INFO msg=canary consumer=cosmos-sdk at=21ac4a083a811e543e559233095ac098aa58a38f^ outcome=breaks detail="canary: github.com/cometbft/cometbft/abci/types removed."
+time=2026-10-06T11:38:10.508Z level=INFO msg=window consumer=cosmos-sdk bump=21ac4a08 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T11:40:44.570Z level=INFO msg=window consumer=cosmos-sdk bump=72c71c3f select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T11:40:45.901Z level=INFO msg=window consumer=cosmos-sdk bump=49f75794 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T11:44:03.771Z level=INFO msg=window consumer=cosmos-sdk bump=b8ede3a6 select=additive breaking=0 compiler=compiles
+time=2026-10-06T11:44:57.768Z level=INFO msg=window consumer=cosmos-sdk bump=864de882 select=unchanged breaking=0 compiler=compiles
