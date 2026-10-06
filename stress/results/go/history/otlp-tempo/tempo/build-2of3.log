@@ -1,10 +1,10 @@
-time=2026-10-06T10:34:10.139Z level=INFO msg=cloning repo=proto-go url=https://github.com/open-telemetry/opentelemetry-proto-go.git
-time=2026-10-06T10:34:11.012Z level=INFO msg=cloning repo=opentelemetry-proto url=https://github.com/open-telemetry/opentelemetry-proto.git
-time=2026-10-06T10:34:11.794Z level=INFO msg=cloning repo=tempo url=https://github.com/grafana/tempo.git
-time=2026-10-06T10:34:24.199Z level=INFO msg=mined consumer=tempo pin_moves=12 to_compile=4 skipped=map[]
-time=2026-10-06T10:37:18.483Z level=INFO msg=canary consumer=tempo at=0c176d16468bbdc0266514bad7d3f4bc3e46a8c5^ outcome=breaks detail="canary: go.opentelemetry.io/proto/otlp/trace/v1 removed."
-time=2026-10-06T10:38:53.659Z level=INFO msg=window consumer=tempo bump=0c176d16 select=additive breaking=0 compiler=compiles
-time=2026-10-06T10:39:32.174Z level=INFO msg=window consumer=tempo bump=671d6293 select=breaking breaking=4 compiler=compiles
-time=2026-10-06T10:40:48.573Z level=INFO msg=window consumer=tempo bump=9e77d6f6 select=additive breaking=0 compiler=compiles
-time=2026-10-06T10:42:12.077Z level=INFO msg=window consumer=tempo bump=dbd1d8d9 select=breaking breaking=55 compiler=compiles
-time=2026-10-06T10:42:12.078Z level=INFO msg="suite built" suite=otlp-tempo windows_added=4
+time=2026-10-06T11:34:48.785Z level=INFO msg=cloning repo=proto-go url=https://github.com/open-telemetry/opentelemetry-proto-go.git
+time=2026-10-06T11:34:49.578Z level=INFO msg=cloning repo=opentelemetry-proto url=https://github.com/open-telemetry/opentelemetry-proto.git
+time=2026-10-06T11:34:50.127Z level=INFO msg=cloning repo=tempo url=https://github.com/grafana/tempo.git
+time=2026-10-06T11:35:31.701Z level=INFO msg=mined consumer=tempo pin_moves=12 to_compile=4 skipped=map[]
+time=2026-10-06T11:38:15.167Z level=INFO msg=canary consumer=tempo at=0c176d16468bbdc0266514bad7d3f4bc3e46a8c5^ outcome=breaks detail="canary: go.opentelemetry.io/proto/otlp/trace/v1 removed."
+time=2026-10-06T11:39:45.563Z level=INFO msg=window consumer=tempo bump=0c176d16 select=additive breaking=0 compiler=compiles
+time=2026-10-06T11:40:28.733Z level=INFO msg=window consumer=tempo bump=671d6293 select=breaking breaking=4 compiler=compiles
+time=2026-10-06T11:41:20.855Z level=INFO msg=window consumer=tempo bump=9e77d6f6 select=additive breaking=0 compiler=compiles
+time=2026-10-06T11:42:44.800Z level=INFO msg=window consumer=tempo bump=dbd1d8d9 select=breaking breaking=55 compiler=compiles
+time=2026-10-06T11:42:44.800Z level=INFO msg="suite built" suite=otlp-tempo windows_added=4
