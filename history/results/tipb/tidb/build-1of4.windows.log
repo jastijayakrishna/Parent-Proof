@@ -1,26 +1,26 @@
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=aa9b6f4c old=v0.0.0-20241008083645-0bcddae67837 new=v0.0.0-20241022082558-0607513e7fa4 reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=31908855 old=v0.0.0-20230802082933-256c189cd860 new=v0.0.0-20230822064221-711da6fede03 reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=89e80e2c old=v0.0.0-20251230094608-1374320b4bd8 new=v0.0.0-20260210113932-1447c9d7e9fe reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=ef30a693 old=v0.0.0-20240116032918-9bb28c43bbfc new=v0.0.0-20240305085524-87f5b80908ab reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=c8732f72 old=v0.0.0-20240703084358-e46e4632bd2b new=v0.0.0-20240823074000-a40c2347786e reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=351445e6 old=v0.0.0-20250331100511-d2c561dad347 new=v0.0.0-20250401143359-775c2379cbc7 reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=16acab0c old=v0.0.0-20230119054146-c6b7a5a1623b new=v0.0.0-20230307101724-df70cb498835 reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=9f419ca6 old=v0.0.0-20260515142222-a4d204a193b4 new=v0.0.0-20260617071407-7c071244534b reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=e70afd2a old=v0.0.0-20250529123214-bb8180a479ec new=v0.0.0-20250605054300-07d1c2a671ee reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=7c5f9d4f old=v0.0.0-20230919054518-dfd7d194838f new=v0.0.0-20240116032918-9bb28c43bbfc reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=efbdeed4 old=v0.0.0-20221123081521-2fb828910813 new=v0.0.0-20230119054146-c6b7a5a1623b reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=9e69f9a5 old=v0.0.0-20250605054300-07d1c2a671ee new=v0.0.0-20250829062436-85a019a5df23 reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=0c2d07d4 old=v0.0.0-20230602100112-acb7942db1ca new=v0.0.0-20230607071926-bda24015c2d6 reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=081643d2 old=v0.0.0-20230307101724-df70cb498835 new=v0.0.0-20230310043643-5362260ee6f7 reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=c34a6b69 old=v0.0.0-20241105053214-f91fdb81a69e new=v0.0.0-20241212101007-246f91188357 reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=57ad8562 old=v0.0.0-20250928030846-9fd33ded6f2c new=v0.0.0-20251230094608-1374320b4bd8 reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=2b9527b9 old=v0.0.0-20260414032333-da912b84de6f new=v0.0.0-20260515142222-a4d204a193b4 reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=91185a15 old=v0.0.0-20230516140330-b3e432c40cb3 new=v0.0.0-20230523034258-1bbc3bbbd369 reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=skip consumer=tidb bump=6f1ffd40 old=v0.0.0-20260210113932-1447c9d7e9fe new=v0.0.0-20260414032333-da912b84de6f reason=not_sampled
-time=2026-10-06T06:03:49.051Z level=INFO msg=mined consumer=tidb pin_moves=36 to_compile=5 skipped=map[not_sampled:19]
-time=2026-10-06T06:07:14.285Z level=INFO msg=canary consumer=tidb at=0cfa66fcf031e1261b3c24e4ac93b5b2c5b7599e^ outcome=breaks detail="canary: github.com/pingcap/tipb/go-tipb removed."
-time=2026-10-06T06:12:15.858Z level=INFO msg=window consumer=tidb bump=4e30d7ba select=additive breaking=0 compiler=compiles
-time=2026-10-06T06:13:28.110Z level=INFO msg=window consumer=tidb bump=0cfa66fc select=breaking breaking=2 compiler=compiles
-time=2026-10-06T06:18:58.441Z level=INFO msg=window consumer=tidb bump=ac6ea64b select=breaking breaking=18 compiler=breaks
-time=2026-10-06T06:20:20.178Z level=INFO msg=window consumer=tidb bump=7aefb084 select=breaking breaking=1 compiler=compiles
-time=2026-10-06T06:22:50.522Z level=INFO msg=window consumer=tidb bump=e838e5e7 select=additive breaking=0 compiler=compiles
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=aa9b6f4c old=v0.0.0-20241008083645-0bcddae67837 new=v0.0.0-20241022082558-0607513e7fa4 reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=31908855 old=v0.0.0-20230802082933-256c189cd860 new=v0.0.0-20230822064221-711da6fede03 reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=89e80e2c old=v0.0.0-20251230094608-1374320b4bd8 new=v0.0.0-20260210113932-1447c9d7e9fe reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=ef30a693 old=v0.0.0-20240116032918-9bb28c43bbfc new=v0.0.0-20240305085524-87f5b80908ab reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=c8732f72 old=v0.0.0-20240703084358-e46e4632bd2b new=v0.0.0-20240823074000-a40c2347786e reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=351445e6 old=v0.0.0-20250331100511-d2c561dad347 new=v0.0.0-20250401143359-775c2379cbc7 reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=16acab0c old=v0.0.0-20230119054146-c6b7a5a1623b new=v0.0.0-20230307101724-df70cb498835 reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=9f419ca6 old=v0.0.0-20260515142222-a4d204a193b4 new=v0.0.0-20260617071407-7c071244534b reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=e70afd2a old=v0.0.0-20250529123214-bb8180a479ec new=v0.0.0-20250605054300-07d1c2a671ee reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=7c5f9d4f old=v0.0.0-20230919054518-dfd7d194838f new=v0.0.0-20240116032918-9bb28c43bbfc reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=efbdeed4 old=v0.0.0-20221123081521-2fb828910813 new=v0.0.0-20230119054146-c6b7a5a1623b reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=9e69f9a5 old=v0.0.0-20250605054300-07d1c2a671ee new=v0.0.0-20250829062436-85a019a5df23 reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=0c2d07d4 old=v0.0.0-20230602100112-acb7942db1ca new=v0.0.0-20230607071926-bda24015c2d6 reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=081643d2 old=v0.0.0-20230307101724-df70cb498835 new=v0.0.0-20230310043643-5362260ee6f7 reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=c34a6b69 old=v0.0.0-20241105053214-f91fdb81a69e new=v0.0.0-20241212101007-246f91188357 reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=57ad8562 old=v0.0.0-20250928030846-9fd33ded6f2c new=v0.0.0-20251230094608-1374320b4bd8 reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=2b9527b9 old=v0.0.0-20260414032333-da912b84de6f new=v0.0.0-20260515142222-a4d204a193b4 reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=91185a15 old=v0.0.0-20230516140330-b3e432c40cb3 new=v0.0.0-20230523034258-1bbc3bbbd369 reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=skip consumer=tidb bump=6f1ffd40 old=v0.0.0-20260210113932-1447c9d7e9fe new=v0.0.0-20260414032333-da912b84de6f reason=not_sampled
+time=2026-10-06T09:33:17.615Z level=INFO msg=mined consumer=tidb pin_moves=36 to_compile=5 skipped=map[not_sampled:19]
+time=2026-10-06T09:36:20.728Z level=INFO msg=canary consumer=tidb at=0cfa66fcf031e1261b3c24e4ac93b5b2c5b7599e^ outcome=breaks detail="canary: github.com/pingcap/tipb/go-tipb removed."
+time=2026-10-06T09:40:28.477Z level=INFO msg=window consumer=tidb bump=4e30d7ba select=additive breaking=0 compiler=compiles
+time=2026-10-06T09:41:47.277Z level=INFO msg=window consumer=tidb bump=0cfa66fc select=breaking breaking=2 compiler=compiles
+time=2026-10-06T09:46:29.180Z level=INFO msg=window consumer=tidb bump=ac6ea64b select=breaking breaking=18 compiler=breaks
+time=2026-10-06T09:47:06.988Z level=INFO msg=window consumer=tidb bump=7aefb084 select=breaking breaking=1 compiler=compiles
+time=2026-10-06T09:49:29.719Z level=INFO msg=window consumer=tidb bump=e838e5e7 select=additive breaking=0 compiler=compiles
