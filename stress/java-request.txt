@@ -1,4 +1,4 @@
-# rerun 2026-10-06: binary 7ea0886 (second check before every Merge); harness: a canary tests the judge first, every contract file change is a window
+# rerun 2026-10-06: binary 826fc68 (relocated protobuf imports resolve; uncompilable contract unknown everywhere; second check strict)
 set=dev,regression
 only=
 modes=history,scan
