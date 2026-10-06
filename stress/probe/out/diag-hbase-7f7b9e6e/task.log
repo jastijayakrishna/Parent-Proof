@@ -1,0 +1,129 @@
+{
+ "window": {
+  "project": "hbase",
+  "mode": "history",
+  "id": "7f7b9e6ef298",
+  "bump": "7f7b9e6ef298b16768382081c3ab0163d7f15af0",
+  "date": "2025-09-16",
+  "subject": "Revert \"Modern backup failures can cause backup system to lock up (#7288)\" (#7307)",
+  "consumer_commit": "c6a0c3b2b7af1253822066ee44fc88c6aff97db8",
+  "provider": "apache/hbase",
+  "old": "c6a0c3b2b7af1253822066ee44fc88c6aff97db8",
+  "new": "7f7b9e6ef298b16768382081c3ab0163d7f15af0"
+ },
+ "started": "2026-10-06T05:40:24Z",
+ "baseline": {
+  "ok": true,
+  "seconds": 65.5
+ },
+ "modules": {
+  "built": [
+   "hbase-annotations",
+   "hbase-asyncfs",
+   "hbase-balancer",
+   "hbase-checkstyle",
+   "hbase-client",
+   "hbase-common",
+   "hbase-hadoop-compat",
+   "hbase-http",
+   "hbase-logging",
+   "hbase-metrics",
+   "hbase-metrics-api",
+   "hbase-procedure",
+   "hbase-protocol-shaded",
+   "hbase-replication",
+   "hbase-resource-bundle",
+   "hbase-server",
+   "hbase-zookeeper"
+  ],
+  "unbuilt": [
+   "hbase-archetypes/hbase-client-project",
+   "hbase-archetypes/hbase-shaded-client-project",
+   "hbase-backup",
+   "hbase-compression/hbase-compression-aircompressor",
+   "hbase-compression/hbase-compression-brotli",
+   "hbase-compression/hbase-compression-lz4",
+   "hbase-compression/hbase-compression-snappy",
+   "hbase-compression/hbase-compression-zstd",
+   "hbase-diagnostics",
+   "hbase-endpoint",
+   "hbase-examples",
+   "hbase-external-blockcache",
+   "hbase-hbtop",
+   "hbase-it",
+   "hbase-mapreduce",
+   "hbase-rest",
+   "hbase-testing-util",
+   "hbase-thrift"
+  ]
+ },
+ "oracle": {
+  "outcome": "breaks",
+  "error_count": 6,
+  "errors": [
+   "hbase-client/src/main/java/org/apache/hadoop/hbase/client/RawAsyncHBaseAdmin.java:4656: cannot find symbol",
+   "hbase-client/src/main/java/org/apache/hadoop/hbase/client/RawAsyncHBaseAdmin.java:4657: cannot find symbol",
+   "hbase-client/src/main/java/org/apache/hadoop/hbase/client/RawAsyncHBaseAdmin.java:4659: cannot find symbol",
+   "hbase-client/src/main/java/org/apache/hadoop/hbase/client/RawAsyncHBaseAdmin.java:4660: cannot find symbol",
+   "hbase-client/src/main/java/org/apache/hadoop/hbase/client/RawAsyncHBaseAdmin.java:4661: invalid method reference",
+   "hbase-client/src/main/java/org/apache/hadoop/hbase/client/RawAsyncHBaseAdmin.java:4662: cannot find symbol"
+  ],
+  "seconds": 38.6,
+  "overlaid": 2,
+  "removed": 0
+ },
+ "seconds": 114.9
+}
+VERDICT UNKNOWN {'generated_code': 'GO', 'runtime': 'UNKNOWN', 'source_build': 'GO'} ['CONTRACT_COMPILE_ERROR']
+CHANGES 0 (java 0)
+FINDINGS 2
+   UNKNOWN runtime CONTRACT_COMPILE_ERROR hbase-protocol-shaded/src/main/protobuf/server/master/Master.proto [] base: server/Procedure.proto:27:8: could not resolve path "org/apache/hbase/thirdparty/google/protobuf/any.proto": file does not exist; head: server/Procedure.proto:27:8: could not resolve path "org/apache/hbase/thirdparty/google/protobuf/any.proto": file does not exist
+   UNKNOWN runtime CONTRACT_COMPILE_ERROR hbase-protocol-shaded/src/main/protobuf/server/master/MasterProcedure.proto [] base: server/Procedure.proto:27:8: could not resolve path "org/apache/hbase/thirdparty/google/protobuf/any.proto": file does not exist; head: server/Procedure.proto:27:8: could not resolve path "org/apache/hbase/thirdparty/google/protobuf/any.proto": file does not exist
+CALLERS [('wt', 'GO', None)]
+FOOTPRINT wt lang=java analyzer=jvm-analyzer/v0.10.0 uses=30816 gaps=1
+   gap JAVA_INLINED_CONSTANTS_UNCHECKED 2 consumer class(es) that use generated code have no source in the source directories (hbase-server/target/classes/org/apache/hadoop/hbase/tmpl/regionserver/RSStatusTmplImpl.class, hbase-server/target
+   implement uses: 125
+     hbase.pb.AdminService implements hbase.pb.AdminService via AdminProtos.AdminService.BlockingInterface False hbase-server/src/main/java/org/apache/hadoop/hbase/HBaseRpcServicesBase.java 98 62
+     hbase.pb.ClientMetaService implements hbase.pb.ClientMetaService via RegistryProtos.ClientMetaService.BlockingInterface False hbase-server/src/main/java/org/apache/hadoop/hbase/HBaseRpcServicesBase.java 98 62
+     hbase.pb.ClientMetaService.GetClusterId overrides getClusterId None hbase-server/src/main/java/org/apache/hadoop/hbase/HBaseRpcServicesBase.java 264 0
+     hbase.pb.ClientMetaService.GetActiveMaster overrides getActiveMaster None hbase-server/src/main/java/org/apache/hadoop/hbase/HBaseRpcServicesBase.java 270 0
+     hbase.pb.ClientMetaService.GetMasters overrides getMasters None hbase-server/src/main/java/org/apache/hadoop/hbase/HBaseRpcServicesBase.java 279 0
+     hbase.pb.ClientMetaService.GetMetaRegionLocations overrides getMetaRegionLocations None hbase-server/src/main/java/org/apache/hadoop/hbase/HBaseRpcServicesBase.java 292 0
+     hbase.pb.ClientMetaService.GetBootstrapNodes overrides getBootstrapNodes None hbase-server/src/main/java/org/apache/hadoop/hbase/HBaseRpcServicesBase.java 301 0
+     hbase.pb.AdminService.UpdateConfiguration overrides updateConfiguration None hbase-server/src/main/java/org/apache/hadoop/hbase/HBaseRpcServicesBase.java 317 0
+     hbase.pb.AdminService.ClearSlowLogsResponses overrides clearSlowLogsResponses None hbase-server/src/main/java/org/apache/hadoop/hbase/HBaseRpcServicesBase.java 330 0
+     hbase.pb.AdminService.GetLogEntries overrides getLogEntries None hbase-server/src/main/java/org/apache/hadoop/hbase/HBaseRpcServicesBase.java 366 0
+     hbase.pb.MultiRowMutationService implements hbase.pb.MultiRowMutationService via MultiRowMutationProtos.MultiRowMutationService False hbase-server/src/main/java/org/apache/hadoop/hbase/coprocessor/MultiRowMutationEndpoint.java 104 12
+     hbase.pb.MultiRowMutationService.MutateRows overrides mutateRows None hbase-server/src/main/java/org/apache/hadoop/hbase/coprocessor/MultiRowMutationEndpoint.java 112 0
+     hbase.pb.AdminService implements hbase.pb.AdminService via AdminProtos.AdminService.BlockingInterface False hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 457 402
+     hbase.pb.ClientMetaService implements hbase.pb.ClientMetaService via RegistryProtos.ClientMetaService.BlockingInterface False hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 457 402
+     hbase.pb.RegionServerStatusService implements hbase.pb.RegionServerStatusService via RegionServerStatusProtos.RegionServerStatusService.BlockingInterface False hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 457 402
+     hbase.pb.RegionServerStatusService.GetLastFlushedSequenceId overrides getLastFlushedSequenceId None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 619 0
+     hbase.pb.RegionServerStatusService.RegionServerReport overrides regionServerReport None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 633 0
+     hbase.pb.RegionServerStatusService.RegionServerStartup overrides regionServerStartup None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 669 0
+     hbase.pb.RegionServerStatusService.ReportRSFatalError overrides reportRSFatalError None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 698 0
+     hbase.pb.RegionServerStatusService.ReportRegionStateTransition overrides reportRegionStateTransition None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 1858 0
+     hbase.pb.RegionServerStatusService.ReportRegionSpaceUse overrides reportRegionSpaceUse None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 2429 0
+     hbase.pb.RegionServerStatusService.ReportProcedureDone overrides reportProcedureDone None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 2569 0
+     hbase.pb.RegionServerStatusService.ReportFileArchival overrides reportFileArchival None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 2608 0
+     hbase.pb.AdminService.GetRegionInfo overrides getRegionInfo None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 2700 0
+     hbase.pb.AdminService.GetLogEntries overrides getLogEntries None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 3411 0
+     hbase.pb.AdminService.GetRegionInfo overrides getRegionInfo None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 3481 0
+     hbase.pb.AdminService.GetStoreFile overrides getStoreFile None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 3507 0
+     hbase.pb.AdminService.GetOnlineRegion overrides getOnlineRegion None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 3513 0
+     hbase.pb.AdminService.OpenRegion overrides openRegion None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 3519 0
+     hbase.pb.AdminService.WarmupRegion overrides warmupRegion None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 3525 0
+     hbase.pb.AdminService.CloseRegion overrides closeRegion None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 3531 0
+     hbase.pb.AdminService.FlushRegion overrides flushRegion None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 3537 0
+     hbase.pb.AdminService.CompactionSwitch overrides compactionSwitch None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 3543 0
+     hbase.pb.AdminService.CompactRegion overrides compactRegion None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 3549 0
+     hbase.pb.AdminService.ReplicateWALEntry overrides replicateWALEntry None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 3555 0
+     hbase.pb.AdminService.Replay overrides replay None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 3561 0
+     hbase.pb.AdminService.RollWALWriter overrides rollWALWriter None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 3567 0
+     hbase.pb.AdminService.GetServerInfo overrides getServerInfo None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 3573 0
+     hbase.pb.AdminService.StopServer overrides stopServer None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 3579 0
+     hbase.pb.AdminService.UpdateFavoredNodes overrides updateFavoredNodes None hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java 3585 0
+   uses of touched symbols: 0
+COMPILER breaks ['hbase-client/src/main/java/org/apache/hadoop/hbase/client/RawAsyncHBaseAdmin.java:4656: cannot find symbol', 'hbase-client/src/main/java/org/apache/hadoop/hbase/client/RawAsyncHBaseAdmin.java:4657: cannot find symbol', 'hbase-client/src/main/java/org/apache/hadoop/hbase/client/RawAsyncHBaseAdmin.java:4659: cannot find symbol', 'hbase-client/src/main/java/org/apache/hadoop/hbase/client/RawAsyncHBaseAdmin.java:4660: cannot find symbol', 'hbase-client/src/main/java/org/apache/hadoop/hbase/client/RawAsyncHBaseAdmin.java:4661: invalid method reference', 'hbase-client/src/main/java/org/apache/hadoop/hbase/client/RawAsyncHBaseAdmin.java:4662: cannot find symbol']
+
+exit 0 seconds 122
