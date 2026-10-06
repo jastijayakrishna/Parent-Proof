@@ -1,13 +1,8 @@
-time=2026-10-05T18:51:25.403Z level=INFO msg=skip consumer=k8s-device-plugin bump=3a43aeb1 old=v0.28.3 new=v0.29.2 reason=no_contract_change
-time=2026-10-05T18:51:25.411Z level=INFO msg=skip consumer=k8s-device-plugin bump=9e324b46 old=v0.29.2 new=v0.29.3 reason=no_contract_change
-time=2026-10-05T18:51:26.611Z level=INFO msg=skip consumer=k8s-device-plugin bump=8ec6c0da old=v0.30.2 new=v0.30.3 reason=no_contract_change
-time=2026-10-05T18:51:27.605Z level=INFO msg=skip consumer=k8s-device-plugin bump=215e5d16 old=v0.31.1 new=v0.31.3 reason=no_contract_change
-time=2026-10-05T18:51:27.670Z level=INFO msg=skip consumer=k8s-device-plugin bump=7a1f5dab old=v0.32.1 new=v0.32.3 reason=no_contract_change
-time=2026-10-05T18:51:27.766Z level=INFO msg=skip consumer=k8s-device-plugin bump=7101d0f8 old=v0.34.1 new=v0.34.2 reason=no_contract_change
-time=2026-10-05T18:51:27.827Z level=INFO msg=skip consumer=k8s-device-plugin bump=4a7a0ce0 old=v0.35.0 new=v0.35.1 reason=no_contract_change
-time=2026-10-05T18:51:27.835Z level=INFO msg=skip consumer=k8s-device-plugin bump=48cf6e4d old=v0.35.1 new=v0.35.2 reason=no_contract_change
-time=2026-10-05T18:51:27.880Z level=INFO msg=skip consumer=k8s-device-plugin bump=c6eb1283 old=v0.36.2 new=v0.36.3 reason=no_contract_change
-time=2026-10-05T18:51:27.880Z level=INFO msg=mined consumer=k8s-device-plugin pin_moves=17 to_compile=3 skipped=map[no_contract_change:9]
-time=2026-10-05T18:52:13.307Z level=INFO msg=window consumer=k8s-device-plugin bump=43445380 select=breaking breaking=26 compiler=baseline_fails
-time=2026-10-05T18:52:13.327Z level=INFO msg=window consumer=k8s-device-plugin bump=88865359 select=breaking breaking=18 compiler=baseline_fails
-time=2026-10-05T18:52:24.890Z level=INFO msg=window consumer=k8s-device-plugin bump=bf991bb5 select=breaking breaking=11 compiler=baseline_fails
+time=2026-10-06T04:43:08.177Z level=INFO msg=mined consumer=k8s-device-plugin pin_moves=17 to_compile=6 skipped=map[]
+time=2026-10-06T04:43:35.787Z level=INFO msg=canary consumer=k8s-device-plugin at=215e5d16^ outcome=baseline_fails detail="canary: k8s.io/kubelet/pkg/apis/deviceplugin/v1beta1 removed. every package that imports k8s.io/kubelet fails to compile before the bump"
+time=2026-10-06T04:43:38.148Z level=INFO msg=window consumer=k8s-device-plugin bump=215e5d16 select=unchanged breaking=0 compiler=baseline_fails
+time=2026-10-06T04:43:57.698Z level=INFO msg=window consumer=k8s-device-plugin bump=48cf6e4d select=unchanged breaking=0 compiler=baseline_fails
+time=2026-10-06T04:44:01.323Z level=INFO msg=window consumer=k8s-device-plugin bump=783fcaac select=additive breaking=0 compiler=baseline_fails
+time=2026-10-06T04:44:14.275Z level=INFO msg=window consumer=k8s-device-plugin bump=88865359 select=breaking breaking=18 compiler=baseline_fails
+time=2026-10-06T04:44:15.875Z level=INFO msg=window consumer=k8s-device-plugin bump=9e324b46 select=unchanged breaking=0 compiler=baseline_fails
+time=2026-10-06T04:44:26.339Z level=INFO msg=window consumer=k8s-device-plugin bump=c6eb1283 select=unchanged breaking=0 compiler=baseline_fails
