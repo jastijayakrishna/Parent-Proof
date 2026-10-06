@@ -1,39 +1,39 @@
-time=2026-10-06T06:05:27.529Z level=INFO msg=cloning repo=cri-api url=https://github.com/kubernetes/cri-api.git
-time=2026-10-06T06:05:28.609Z level=INFO msg=cloning repo=containerd url=https://github.com/containerd/containerd.git
-time=2026-10-06T06:05:51.508Z level=INFO msg=skip consumer=containerd bump=3b976a15 old=v0.32.0-alpha.0 new=v0.31.2 reason=not_forward
-time=2026-10-06T06:05:52.266Z level=INFO msg=skip consumer=containerd bump=2b2195c3 old=v0.27.1 new=v0.28.0-beta.0 reason=not_sampled
-time=2026-10-06T06:05:52.266Z level=INFO msg=skip consumer=containerd bump=97dd9d50 old=v0.30.0-alpha.3 new=v0.30.0 reason=not_sampled
-time=2026-10-06T06:05:52.266Z level=INFO msg=skip consumer=containerd bump=79309361 old=v0.31.3 new=v0.32.2 reason=not_sampled
-time=2026-10-06T06:05:52.266Z level=INFO msg=skip consumer=containerd bump=6c885467 old=v0.35.3 new=v0.36.0-beta.0 reason=not_sampled
-time=2026-10-06T06:05:52.266Z level=INFO msg=skip consumer=containerd bump=dd725fae old=v0.28.2 new=v0.29.1 reason=not_sampled
-time=2026-10-06T06:05:52.266Z level=INFO msg=skip consumer=containerd bump=8b31ac6e old=v0.36.0-beta.0 new=v0.36.0-rc.0 reason=not_sampled
-time=2026-10-06T06:05:52.267Z level=INFO msg=mined consumer=containerd pin_moves=34 to_compile=27 skipped="map[not_forward:1 not_sampled:6]"
-time=2026-10-06T06:06:53.337Z level=INFO msg=canary consumer=containerd at=c77ddf53810eabb7395bf7c6de168e2fe1671737^ outcome=breaks detail="canary: k8s.io/cri-api/pkg/apis/runtime/v1 removed."
-time=2026-10-06T06:07:32.492Z level=INFO msg=window consumer=containerd bump=c77ddf53 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:07:48.185Z level=INFO msg=window consumer=containerd bump=d18f1617 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:08:36.698Z level=INFO msg=window consumer=containerd bump=f90f80d9 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:08:57.908Z level=INFO msg=window consumer=containerd bump=afbb6dad select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:09:42.026Z level=INFO msg=window consumer=containerd bump=c878093c select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:10:11.559Z level=INFO msg=window consumer=containerd bump=566f9f48 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:10:56.929Z level=INFO msg=window consumer=containerd bump=b1cf8692 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:11:18.504Z level=INFO msg=window consumer=containerd bump=865b4195 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:12:02.838Z level=INFO msg=window consumer=containerd bump=e4d3af01 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:12:18.538Z level=INFO msg=window consumer=containerd bump=18e93180 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:13:10.473Z level=INFO msg=window consumer=containerd bump=a4c02b00 select=breaking breaking=11 compiler=breaks
-time=2026-10-06T06:13:31.682Z level=INFO msg=window consumer=containerd bump=64635123 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:14:09.031Z level=INFO msg=window consumer=containerd bump=1aa780fc select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:14:41.278Z level=INFO msg=window consumer=containerd bump=b4848858 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:15:08.498Z level=INFO msg=window consumer=containerd bump=b7ddef22 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:15:36.707Z level=INFO msg=window consumer=containerd bump=95b4fd63 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:16:03.276Z level=INFO msg=window consumer=containerd bump=a3a47d13 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:16:31.155Z level=INFO msg=window consumer=containerd bump=85723784 select=breaking breaking=1 compiler=breaks
-time=2026-10-06T06:17:02.527Z level=INFO msg=window consumer=containerd bump=34fc1fc4 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:17:05.800Z level=INFO msg=window consumer=containerd bump=7e66a3f7 select=breaking breaking=66 compiler=breaks
-time=2026-10-06T06:18:03.216Z level=INFO msg=window consumer=containerd bump=bb12c26a select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:18:22.321Z level=INFO msg=window consumer=containerd bump=6c6eac53 select=additive breaking=0 compiler=compiles
-time=2026-10-06T06:18:48.442Z level=INFO msg=window consumer=containerd bump=8ce402c2 select=additive breaking=0 compiler=compiles
-time=2026-10-06T06:18:48.898Z level=INFO msg=window consumer=containerd bump=7467d819 select=additive breaking=0 compiler=compiles
-time=2026-10-06T06:19:26.132Z level=INFO msg=window consumer=containerd bump=34e9f9b3 select=additive breaking=0 compiler=compiles
-time=2026-10-06T06:20:01.130Z level=INFO msg=window consumer=containerd bump=98ebb3ec select=additive breaking=0 compiler=compiles
-time=2026-10-06T06:20:05.129Z level=INFO msg=window consumer=containerd bump=e393f41d select=additive breaking=0 compiler=breaks
-time=2026-10-06T06:20:05.129Z level=INFO msg="suite built" suite=cri-api windows_added=27
+time=2026-10-06T09:32:16.917Z level=INFO msg=cloning repo=cri-api url=https://github.com/kubernetes/cri-api.git
+time=2026-10-06T09:32:18.592Z level=INFO msg=cloning repo=containerd url=https://github.com/containerd/containerd.git
+time=2026-10-06T09:32:28.916Z level=INFO msg=skip consumer=containerd bump=3b976a15 old=v0.32.0-alpha.0 new=v0.31.2 reason=not_forward
+time=2026-10-06T09:32:29.581Z level=INFO msg=skip consumer=containerd bump=2b2195c3 old=v0.27.1 new=v0.28.0-beta.0 reason=not_sampled
+time=2026-10-06T09:32:29.581Z level=INFO msg=skip consumer=containerd bump=97dd9d50 old=v0.30.0-alpha.3 new=v0.30.0 reason=not_sampled
+time=2026-10-06T09:32:29.581Z level=INFO msg=skip consumer=containerd bump=79309361 old=v0.31.3 new=v0.32.2 reason=not_sampled
+time=2026-10-06T09:32:29.581Z level=INFO msg=skip consumer=containerd bump=6c885467 old=v0.35.3 new=v0.36.0-beta.0 reason=not_sampled
+time=2026-10-06T09:32:29.581Z level=INFO msg=skip consumer=containerd bump=dd725fae old=v0.28.2 new=v0.29.1 reason=not_sampled
+time=2026-10-06T09:32:29.581Z level=INFO msg=skip consumer=containerd bump=8b31ac6e old=v0.36.0-beta.0 new=v0.36.0-rc.0 reason=not_sampled
+time=2026-10-06T09:32:29.581Z level=INFO msg=mined consumer=containerd pin_moves=34 to_compile=27 skipped="map[not_forward:1 not_sampled:6]"
+time=2026-10-06T09:33:22.826Z level=INFO msg=canary consumer=containerd at=c77ddf53810eabb7395bf7c6de168e2fe1671737^ outcome=breaks detail="canary: k8s.io/cri-api/pkg/apis/runtime/v1 removed."
+time=2026-10-06T09:34:01.726Z level=INFO msg=window consumer=containerd bump=c77ddf53 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:34:11.894Z level=INFO msg=window consumer=containerd bump=d18f1617 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:35:03.288Z level=INFO msg=window consumer=containerd bump=f90f80d9 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:35:14.212Z level=INFO msg=window consumer=containerd bump=afbb6dad select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:36:04.084Z level=INFO msg=window consumer=containerd bump=c878093c select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:36:24.174Z level=INFO msg=window consumer=containerd bump=566f9f48 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:37:16.485Z level=INFO msg=window consumer=containerd bump=b1cf8692 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:37:25.918Z level=INFO msg=window consumer=containerd bump=865b4195 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:38:17.039Z level=INFO msg=window consumer=containerd bump=e4d3af01 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:38:22.716Z level=INFO msg=window consumer=containerd bump=18e93180 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:39:27.502Z level=INFO msg=window consumer=containerd bump=a4c02b00 select=breaking breaking=11 compiler=breaks
+time=2026-10-06T09:39:35.040Z level=INFO msg=window consumer=containerd bump=64635123 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:40:27.095Z level=INFO msg=window consumer=containerd bump=1aa780fc select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:40:43.827Z level=INFO msg=window consumer=containerd bump=b4848858 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:41:27.590Z level=INFO msg=window consumer=containerd bump=b7ddef22 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:41:38.340Z level=INFO msg=window consumer=containerd bump=95b4fd63 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:42:21.277Z level=INFO msg=window consumer=containerd bump=a3a47d13 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:42:31.035Z level=INFO msg=window consumer=containerd bump=85723784 select=breaking breaking=1 compiler=breaks
+time=2026-10-06T09:43:16.260Z level=INFO msg=window consumer=containerd bump=7e66a3f7 select=breaking breaking=66 compiler=breaks
+time=2026-10-06T09:43:17.219Z level=INFO msg=window consumer=containerd bump=34fc1fc4 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:44:18.275Z level=INFO msg=window consumer=containerd bump=bb12c26a select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:44:31.531Z level=INFO msg=window consumer=containerd bump=6c6eac53 select=additive breaking=0 compiler=compiles
+time=2026-10-06T09:45:00.120Z level=INFO msg=window consumer=containerd bump=7467d819 select=additive breaking=0 compiler=compiles
+time=2026-10-06T09:45:00.798Z level=INFO msg=window consumer=containerd bump=8ce402c2 select=additive breaking=0 compiler=compiles
+time=2026-10-06T09:45:36.599Z level=INFO msg=window consumer=containerd bump=34e9f9b3 select=additive breaking=0 compiler=compiles
+time=2026-10-06T09:46:15.236Z level=INFO msg=window consumer=containerd bump=98ebb3ec select=additive breaking=0 compiler=compiles
+time=2026-10-06T09:46:16.965Z level=INFO msg=window consumer=containerd bump=e393f41d select=additive breaking=0 compiler=breaks
+time=2026-10-06T09:46:16.965Z level=INFO msg="suite built" suite=cri-api windows_added=27
