@@ -1,6 +1,6 @@
 java-control-plane history: 23 windows, shard 4/6 has 4
 canary at bc48c2889d62: breaks (500 files moved) ['cache/src/main/java/io/envoyproxy/controlplane/cache/StatusInfo.java:3: package io.envoyproxy.envoy.config.core.v3 does not exist']
-bc48c2889d62 2022-04-30 verifier=NO_GO build=UNKNOWN compiler=compiles 118.2s 
-c6e3bf3b568a 2023-05-20 verifier=NO_GO build=UNKNOWN compiler=compiles 117.9s 
-815727d58355 2024-12-15 verifier=NO_GO build=UNKNOWN compiler=compiles 143.2s 
-7a2559ae0a0c 2026-06-29 verifier=GO build=GO compiler=compiles 148.0s 
+bc48c2889d62 2022-04-30 verifier=NO_GO build=UNKNOWN compiler=compiles 119.6s 
+c6e3bf3b568a 2023-05-20 verifier=NO_GO build=UNKNOWN compiler=compiles 119.4s 
+815727d58355 2024-12-15 verifier=NO_GO build=UNKNOWN compiler=compiles 146.0s 
+7a2559ae0a0c 2026-06-29 verifier=GO build=GO compiler=compiles 151.1s 
