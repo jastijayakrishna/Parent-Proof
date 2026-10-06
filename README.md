@@ -4,13 +4,13 @@ A public, timestamped record of how a contract verifier does on real pull
 requests it has never seen.
 
 <!-- live:begin -->
-**Updated 2026-10-06 11:55 UTC.** [![shadow](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml/badge.svg)](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml)
+**Updated 2026-10-06 14:05 UTC.** [![shadow](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml/badge.svg)](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml)
 
 | | changes | judge not verified | broke the build | caught | missed | false alarms | needs review |
 |---|---|---|---|---|---|---|---|
 | [Real upgrades](HISTORY.md), 9 projects' history | 178 | 0 | 24 | 21 | 0 | 1 | 25 |
 | [Open pull requests](SCOREBOARD.md), decided live | 37 | 22 | 0 | 0 | 0 | 0 | 2 |
-| [Stress test](STRESS.md), Go: projects never used to tune it | 149 | 2 | 7 | 7 | 0 | 0 | 28 |
+| [Stress test](STRESS.md), Go: projects never used to tune it | 149 | 2 | 7 | 7 | 0 | 0 | 24 |
 | [Stress test](STRESS.md), Go: hold-out projects, run once | 254 | 0 | 22 | 12 | 0 | 4 | 58 |
 | [Stress test](STRESS.md), Java: projects never used to tune it | 451 | 68 | 19 | 18 | 0 | 0 | 13 |
 | [Stress test](STRESS.md), Java: hold-out projects, run once | 491 | 80 | 2 | 2 | 0 | 1 | 31 |
@@ -32,7 +32,7 @@ requests it has never seen.
 | cri-api → cri-o | [v0.34.1 → v0.35.0-alpha.1](https://github.com/cri-o/cri-o/commit/8beeed1ea9357cd8adb05bbc394eb23a02807ff7) | 2025-10-16 | `vendor/k8s.io/cri-client/pkg/remote_image.go:102` |
 | tipb → tidb | [v0.0.0-20250513092957-b555ca3fc078 → v0.0.0-20250529123214-bb8180a479ec](https://github.com/pingcap/tidb/commit/ac6ea64b370f8736122ca19248c7f824461bc4b6) | 2025-06-04 | `pkg/distsql/request_builder.go:100` |
 | cri-api → containerd | [v0.32.3 → v0.33.0](https://github.com/containerd/containerd/commit/e393f41d2063adb78fa649958ca21b7abe389c8a) | 2025-05-27 | `internal/cri/instrument/instrumented_service.go:51` |
-| lnd → lndclient | [v0.18.5-beta → v0.19.0-beta](https://github.com/lightninglabs/lndclient/commit/50295c0c5027833032d6bf59614b84c3e2321f83) | 2025-05-26 | `github.com/lightningnetwork/lnd@v0.18.5-beta/channeldb/channel.go:1918` |
+| lnd → lndclient | [v0.18.5-beta → v0.19.0-beta](https://github.com/lightninglabs/lndclient/commit/50295c0c5027833032d6bf59614b84c3e2321f83) | 2025-05-26 | `invoices_client.go:392` |
 | cri-api → cri-o | [v0.33.0-beta.0.0.20250313010358-ab383b81657e → v0.33.0-beta.0.0.20250324233632-87ee4e17aba6](https://github.com/cri-o/cri-o/commit/07a1e0ee6c8956d8ffba8d24c2b01c0287ec8e6f) | 2025-04-08 | `cmd/crio/main.go:407` |
 | tipb → tidb | [v0.0.0-20250321085733-a91a8fafd4ed → v0.0.0-20250331100511-d2c561dad347](https://github.com/pingcap/tidb/commit/7232aeab67e14fc757633393515d49da7117de36) | 2025-04-01 | `br/pkg/storage/batch.go:55` |
 | tipb → tidb | [v0.0.0-20241212101007-246f91188357 → v0.0.0-20250321085733-a91a8fafd4ed](https://github.com/pingcap/tidb/commit/ca8a0707ab0605260b8bbce8427190607b3fe6d1) | 2025-03-23 | `pkg/planner/core/plan_to_pb.go:279` |

@@ -1,6 +1,6 @@
 # History: real upgrades, judged by the compiler
 
-Updated 2026-10-06 09:53 UTC.
+Updated 2026-10-06 14:05 UTC.
 
 Every row is one upgrade a project really made of a contract module it
 uses, mined from its git history. The Go compiler builds the project's code
@@ -56,8 +56,8 @@ was used to tune the verifier.
 | dapr -> go-sdk | v1.14.0-rc.2 -> v1.14.0-rc.5 | breaks | Don't merge (Don't merge) | NEEDS_REVIEW |
 | dapr -> go-sdk | v1.15.0-rc.9 -> v1.15.0-rc.17 | breaks | Don't merge (Don't merge) |  |
 | lnd -> lndclient | v0.19.3-beta -> v0.20.0-beta | breaks | Don't merge (Don't merge) | WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION |
-| lnd -> lndclient | v0.20.1-beta -> v0.21.0-beta | breaks | Don't merge (Don't merge) | DESCRIPTOR_REFLECTION, WHOLE_MESSAGE_FLOW |
 | lnd -> lndclient | v0.17.4-beta -> v0.18.4-beta | compiles | Don't merge (Needs review) | GO_API_CHANGED_USED_BY_CALLER |
+| lnd -> lndclient | v0.20.1-beta -> v0.21.0-beta | breaks | Don't merge (Don't merge) | DESCRIPTOR_REFLECTION, WHOLE_MESSAGE_FLOW |
 | lnd -> lndclient | v0.18.5-beta -> v0.19.0-beta | breaks | Don't merge (Don't merge) | GO_API_CHANGED_USED_BY_CALLER |
 | milvus -> milvus-client | v2.3.4-0.20240228061649-a922b16f2a46 -> v2.3.4-0.20240430035521-259ae1d10016 | compiles | Needs review (Needs review) | OPTION_CHANGED, NEEDS_REVIEW |
 | milvus -> milvus-client | v2.3.4-0.20240815123953-6dab6fcd6454 -> v2.3.4-0.20241108105827-266fb751b620 | compiles | Don't merge (Needs review) | OPTION_CHANGED |
@@ -71,13 +71,13 @@ was used to tune the verifier.
 | otlp -> otel-go | v1.3.1 -> v1.4.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE |
 | otlp -> otel-go | v0.19.0 -> v0.20.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE |
 | otlp -> otel-go | v1.4.0 -> v1.5.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE |
-| otlp -> otel-go | v1.5.0 -> v1.6.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE |
+| otlp -> otel-go | v1.5.0 -> v1.6.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE, AMBIENT_GENERATED_UNREAD |
 | otlp -> otel-go | v1.6.0 -> v1.7.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE |
 | otlp -> otel-go | v1.7.1 -> v1.8.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE |
 | otlp -> otel-go | v1.8.0 -> v1.9.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE |
-| otlp -> otel-go | v1.9.0 -> v1.10.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE |
-| otlp -> otel-go | v1.1.0 -> v1.2.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE |
-| otlp -> otel-go | v1.0.0 -> v1.1.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE |
+| otlp -> otel-go | v1.9.0 -> v1.10.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE, AMBIENT_GENERATED_UNREAD |
+| otlp -> otel-go | v1.1.0 -> v1.2.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE, AMBIENT_GENERATED_UNREAD |
+| otlp -> otel-go | v1.0.0 -> v1.1.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE, AMBIENT_GENERATED_UNREAD |
 | tipb -> tidb | v0.0.0-20250513092957-b555ca3fc078 -> v0.0.0-20250529123214-bb8180a479ec | breaks | Don't merge (Don't merge) | WHOLE_MESSAGE_FLOW, NEEDS_REVIEW |
 | tipb -> tidb | v0.0.0-20240823074000-a40c2347786e -> v0.0.0-20240919023442-cf70966bef25 | breaks | Don't merge (Don't merge) | NEEDS_REVIEW, WHOLE_MESSAGE_FLOW |
 | tipb -> tidb | v0.0.0-20230523034258-1bbc3bbbd369 -> v0.0.0-20230602100112-acb7942db1ca | breaks | Don't merge (Don't merge) |  |
