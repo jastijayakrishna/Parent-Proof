@@ -1,7 +1,7 @@
 jetcd history: 5 windows, shard 1/1 has 5
 canary at f25f8dcf8054: breaks (5 files moved) ['jetcd-core/src/main/java/io/etcd/jetcd/support/Requests.java:7: package io.etcd.jetcd.api does not exist']
-f25f8dcf8054 2022-08-20 verifier=NO_GO build=NO_GO compiler=breaks 49.8s 
-e5da670d9958 2022-11-09 verifier=GO build=GO compiler=compiles 71.1s 
-471c5690d02b 2023-09-06 verifier=GO build=GO compiler=compiles 88.2s 
-2e9f41d433d7 2025-11-01 verifier=GO build=GO compiler=compiles 91.7s 
-c5646e9f5046 2025-11-01 verifier=GO build=GO compiler=compiles 55.4s 
+f25f8dcf8054 2022-08-20 verifier=NO_GO build=NO_GO compiler=breaks 53.0s 
+e5da670d9958 2022-11-09 verifier=GO build=GO compiler=compiles 69.9s 
+471c5690d02b 2023-09-06 verifier=GO build=GO compiler=compiles 83.9s 
+2e9f41d433d7 2025-11-01 verifier=GO build=GO compiler=compiles 91.3s 
+c5646e9f5046 2025-11-01 verifier=GO build=GO compiler=compiles 57.3s 
