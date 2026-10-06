@@ -1,12 +1,12 @@
-k8s-device-plugin 4a7a0ce0 GO       source_build=GO      compiler=baseline_fails     1.1s replay=true 
-k8s-device-plugin 3a43aeb1 GO       source_build=GO      compiler=baseline_fails    19.7s replay=true 
-k8s-device-plugin 79c7ae4e NO_GO    source_build=NO_GO   compiler=baseline_fails    19.7s replay=true 
-k8s-device-plugin 8ec6c0da GO       source_build=GO      compiler=baseline_fails     1.2s replay=true 
-k8s-device-plugin bd989996 GO       source_build=GO      compiler=baseline_fails    12.9s replay=true 
+k8s-device-plugin 4a7a0ce0 GO       source_build=GO      compiler=baseline_fails     1.0s replay=true 
+k8s-device-plugin 3a43aeb1 GO       source_build=GO      compiler=baseline_fails    20.1s replay=true 
+k8s-device-plugin 79c7ae4e NO_GO    source_build=NO_GO   compiler=baseline_fails    20.9s replay=true 
+k8s-device-plugin 8ec6c0da GO       source_build=GO      compiler=baseline_fails     2.6s replay=true 
+k8s-device-plugin bd989996 GO       source_build=GO      compiler=baseline_fails    13.3s replay=true 
 k8s-device-plugin/additive windows=  1 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 0, UNKNOWN 0, GO 1) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=1
 k8s-device-plugin/breaking windows=  1 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 1, UNKNOWN 0, GO 0) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=1
 k8s-device-plugin/unchanged windows=  3 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=3 (NO-GO 0, UNKNOWN 0, GO 3) | wire: judged=3 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=3
 TOTAL                  windows=  5 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=5 (NO-GO 1, UNKNOWN 0, GO 4) | wire: judged=5 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=5
 
-5 windows in 33s with 2 workers; 0 differ from the baseline.
+5 windows in 35s with 2 workers; 0 differ from the baseline.
 verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`

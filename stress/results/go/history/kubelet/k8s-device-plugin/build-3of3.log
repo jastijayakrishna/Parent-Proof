@@ -1,10 +1,10 @@
-time=2026-10-06T09:37:34.336Z level=INFO msg=cloning repo=kubelet url=https://github.com/kubernetes/kubelet.git
-time=2026-10-06T09:37:35.194Z level=INFO msg=cloning repo=k8s-device-plugin url=https://github.com/NVIDIA/k8s-device-plugin.git
-time=2026-10-06T09:37:42.551Z level=INFO msg=mined consumer=k8s-device-plugin pin_moves=17 to_compile=5 skipped=map[]
-time=2026-10-06T09:38:09.474Z level=INFO msg=canary consumer=k8s-device-plugin at=3a43aeb1a9fd00dbee12f1142babd00137ccb059^ outcome=baseline_fails detail="canary: k8s.io/kubelet/pkg/apis/deviceplugin/v1beta1 removed. every package that imports k8s.io/kubelet fails to compile before the bump"
-time=2026-10-06T09:38:11.048Z level=INFO msg=window consumer=k8s-device-plugin bump=3a43aeb1 select=unchanged breaking=0 compiler=baseline_fails
-time=2026-10-06T09:38:32.182Z level=INFO msg=window consumer=k8s-device-plugin bump=4a7a0ce0 select=unchanged breaking=0 compiler=baseline_fails
-time=2026-10-06T09:38:32.507Z level=INFO msg=window consumer=k8s-device-plugin bump=79c7ae4e select=breaking breaking=63 compiler=baseline_fails
-time=2026-10-06T09:38:50.105Z level=INFO msg=window consumer=k8s-device-plugin bump=bd989996 select=additive breaking=0 compiler=baseline_fails
-time=2026-10-06T09:38:50.253Z level=INFO msg=window consumer=k8s-device-plugin bump=8ec6c0da select=unchanged breaking=0 compiler=baseline_fails
-time=2026-10-06T09:38:50.253Z level=INFO msg="suite built" suite=kubelet windows_added=5
+time=2026-10-06T11:26:25.028Z level=INFO msg=cloning repo=kubelet url=https://github.com/kubernetes/kubelet.git
+time=2026-10-06T11:26:25.780Z level=INFO msg=cloning repo=k8s-device-plugin url=https://github.com/NVIDIA/k8s-device-plugin.git
+time=2026-10-06T11:26:38.599Z level=INFO msg=mined consumer=k8s-device-plugin pin_moves=17 to_compile=5 skipped=map[]
+time=2026-10-06T11:27:06.840Z level=INFO msg=canary consumer=k8s-device-plugin at=3a43aeb1a9fd00dbee12f1142babd00137ccb059^ outcome=baseline_fails detail="canary: k8s.io/kubelet/pkg/apis/deviceplugin/v1beta1 removed. every package that imports k8s.io/kubelet fails to compile before the bump"
+time=2026-10-06T11:27:08.545Z level=INFO msg=window consumer=k8s-device-plugin bump=3a43aeb1 select=unchanged breaking=0 compiler=baseline_fails
+time=2026-10-06T11:27:31.340Z level=INFO msg=window consumer=k8s-device-plugin bump=4a7a0ce0 select=unchanged breaking=0 compiler=baseline_fails
+time=2026-10-06T11:27:31.399Z level=INFO msg=window consumer=k8s-device-plugin bump=79c7ae4e select=breaking breaking=63 compiler=baseline_fails
+time=2026-10-06T11:27:50.541Z level=INFO msg=window consumer=k8s-device-plugin bump=8ec6c0da select=unchanged breaking=0 compiler=baseline_fails
+time=2026-10-06T11:27:50.568Z level=INFO msg=window consumer=k8s-device-plugin bump=bd989996 select=additive breaking=0 compiler=baseline_fails
+time=2026-10-06T11:27:50.568Z level=INFO msg="suite built" suite=kubelet windows_added=5
