@@ -1,4 +1,4 @@
-# hold-out 2026-10-06: once, on binary ee76650 (stress/HOLDOUT.md)
-set=holdout
+# rerun 2026-10-06: binary fd5238d (fewer false Don't merge)
+set=dev,regression
 only=
 modes=history,scan

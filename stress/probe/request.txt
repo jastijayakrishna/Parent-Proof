@@ -1,2 +1,4 @@
-# Diagnose 2026-10-06 (evidence of the build findings): Tempo hold-out false alarms cite vendored pdata (generated_wrapper_*.go). Which uses, through which generated package, and why are they not shipped?
-diag-tempo-v190 - bash stress/probe/diag-uses.sh https://github.com/open-telemetry/opentelemetry-proto https://github.com/grafana/tempo dbd1d8d90320514903223b7a25c8270b2926a57d^ 8654ab7a5a43ca25fe8046e59dcd6935c3f76de0 a8951735f7801e8adfaec5c0ace9262771cfec6e collector/pdata "$OUT"
+# Check 2026-10-06, binary fd5238d (after the hold-out; diagnostic only, the hold-out record stands): the three hold-out false alarms whose causes were fixed.
+diag-tempo-v190-fixed - bash stress/probe/diag-uses.sh https://github.com/open-telemetry/opentelemetry-proto https://github.com/grafana/tempo dbd1d8d90320514903223b7a25c8270b2926a57d^ 8654ab7a5a43ca25fe8046e59dcd6935c3f76de0 a8951735f7801e8adfaec5c0ace9262771cfec6e collector/pdata "$OUT"
+diag-tempo-v160-fixed - bash stress/probe/diag-uses.sh https://github.com/open-telemetry/opentelemetry-proto https://github.com/grafana/tempo 3bf3a17934813011815506699b55fd18d7bdf581^ 2bd940b2b77c1ab57c27166af21384906da7bb2b be5d58470429d0255ffdd49491f0815a3a63d6ef collector/pdata "$OUT"
+diag-alluxio-fixed alluxio python3 stress/probe/diagnose.py alluxio history dbac084c "$OUT"

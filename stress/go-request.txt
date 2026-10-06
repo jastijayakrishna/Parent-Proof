@@ -1,4 +1,4 @@
-# re-judge 2026-10-06: binary 13510aa (the judge builds an upgrade made by a replace line; decisions as ee76650)
-set=all
+# rerun 2026-10-06: binary fd5238d (fewer false Don't merge)
+set=dev
 since=2023-01-01
-parts=history
+parts=history,scan
