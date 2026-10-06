@@ -1,18 +1,31 @@
-otel-go    0b00bfb1 UNKNOWN  source_build=GO      compiler=compiles           0.5s replay=true 
-otel-go    3ec9a8a3 UNKNOWN  source_build=GO      compiler=compiles           0.5s replay=true 
-otel-go    96fe06df UNKNOWN  source_build=GO      compiler=compiles           0.5s replay=true 
-otel-go    e7ff6a36 UNKNOWN  source_build=GO      compiler=compiles           0.5s replay=true 
-otel-go    801e7712 UNKNOWN  source_build=GO      compiler=compiles           0.4s replay=true 
-otel-go    8c8cd0a9 UNKNOWN  source_build=GO      compiler=compiles           0.4s replay=true 
-otel-go    4438ec3e UNKNOWN  source_build=GO      compiler=compiles           0.3s replay=true 
-otel-go    1d91055e UNKNOWN  source_build=GO      compiler=compiles           0.5s replay=true 
-otel-go    648b40ea UNKNOWN  source_build=GO      compiler=compiles           0.5s replay=true 
+otel-go    fdbcb9ac GO       source_build=GO      compiler=compiles           0.1s replay=true 
+otel-go    3ec9a8a3 UNKNOWN  source_build=UNKNOWN compiler=compiles           0.7s replay=true 
+otel-go    e7ff6a36 UNKNOWN  source_build=UNKNOWN compiler=compiles           1.0s replay=true 
+otel-go    0b00bfb1 UNKNOWN  source_build=UNKNOWN compiler=compiles           0.4s replay=true 
+otel-go    96fe06df UNKNOWN  source_build=UNKNOWN compiler=compiles           0.4s replay=true 
+otel-go    801e7712 UNKNOWN  source_build=UNKNOWN compiler=compiles           0.3s replay=true 
+otel-go    b45359a0 GO       source_build=GO      compiler=compiles           0.2s replay=true 
+otel-go    8c8cd0a9 UNKNOWN  source_build=UNKNOWN compiler=compiles           0.4s replay=true 
+otel-go    4438ec3e UNKNOWN  source_build=UNKNOWN compiler=compiles           0.4s replay=true 
+otel-go    1d91055e UNKNOWN  source_build=UNKNOWN compiler=compiles           0.4s replay=true 
+otel-go    648b40ea UNKNOWN  source_build=UNKNOWN compiler=compiles           0.6s replay=true 
 otel-go    e451d1fa GO       source_build=GO      compiler=compiles           0.4s replay=true 
-otel-go    3f74d774 UNKNOWN  source_build=GO      compiler=compiles           0.3s replay=true 
+otel-go    3f74d774 UNKNOWN  source_build=UNKNOWN compiler=compiles           0.3s replay=true 
 otel-go    59914dc0 GO       source_build=GO      compiler=compiles           0.4s replay=true 
-otel-go/additive       windows=  4 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 4: GO= 4 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=4 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=4
-otel-go/breaking       windows=  8 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 8: GO= 8 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=8 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=8
-TOTAL                  windows= 12 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=12: GO=12 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=12 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=12
+otel-go/additive       windows=  4 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 4: GO= 2 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=4 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=4
+otel-go/breaking       windows=  8 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 8: GO= 0 FALSE_NOGO=0 abstained=8 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=8 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=8
+otel-go/unchanged      windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 2: GO= 2 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
+TOTAL                  windows= 14 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=14: GO= 4 FALSE_NOGO=0 abstained=10 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=14 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=14
+  WITHIN THE UNKNOWN LIMIT otel-go@e7ff6a36dcad..1608f92c: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+  WITHIN THE UNKNOWN LIMIT otel-go@3ec9a8a3cb0e..0adf6aac: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+  WITHIN THE UNKNOWN LIMIT otel-go@0b00bfb10505..2bd940b2: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+  WITHIN THE UNKNOWN LIMIT otel-go@96fe06dff556..be5d5847: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+  WITHIN THE UNKNOWN LIMIT otel-go@801e7712e12a..8654ab7a: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+  WITHIN THE UNKNOWN LIMIT otel-go@8c8cd0a9caa0..c0a98a18: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+  WITHIN THE UNKNOWN LIMIT otel-go@4438ec3ea4cd..a8951735: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+  WITHIN THE UNKNOWN LIMIT otel-go@1d91055e2464..ca839c51: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+  WITHIN THE UNKNOWN LIMIT otel-go@648b40eae158..24d4bc00: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+  WITHIN THE UNKNOWN LIMIT otel-go@3f74d77436a6..4ca4f033: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
 
-12 windows in 3s with 2 workers; 0 differ from the baseline.
+14 windows in 3s with 2 workers; 0 differ from the baseline.
 verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
