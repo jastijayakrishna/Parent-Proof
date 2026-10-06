@@ -1,0 +1,39 @@
+time=2026-10-06T10:34:08.011Z level=INFO msg=cloning repo=p-buildkit-buildx url=https://github.com/moby/buildkit.git
+time=2026-10-06T10:34:09.509Z level=INFO msg=cloning repo=c-buildkit-buildx url=https://github.com/docker/buildx.git
+buildkit-buildx 97a46779 GO       source_build=GO      compiler=compiles          118.5s 
+buildkit-buildx db47e7a4 GO       source_build=GO      compiler=compiles           26.8s 
+buildkit-buildx 30a3c273 UNKNOWN  source_build=UNKNOWN compiler=compiles           22.4s 
+buildkit-buildx ab3f5ff3 GO       source_build=GO      compiler=compiles            6.5s 
+buildkit-buildx 96879c68 GO       source_build=GO      compiler=compiles           14.0s 
+buildkit-buildx 91cc422d NO_GO    source_build=GO      compiler=compiles           22.8s 
+buildkit-buildx c15eb267 GO       source_build=GO      compiler=compiles           17.0s 
+buildkit-buildx 2bdf6abf GO       source_build=GO      compiler=compiles           19.4s 
+buildkit-buildx 32548321 GO       source_build=GO      compiler=compiles           11.0s 
+buildkit-buildx f85c740c GO       source_build=GO      compiler=compiles           18.7s 
+buildkit-buildx 18909899 GO       source_build=GO      compiler=compiles           20.2s 
+buildkit-buildx 5fde446d GO       source_build=GO      compiler=compiles           57.8s 
+buildkit-buildx 65c6c9ed GO       source_build=GO      compiler=compiles           18.0s 
+buildkit-buildx 7f2cbc61 UNKNOWN  source_build=UNKNOWN compiler=compiles           22.5s 
+buildkit-buildx b0ba8232 UNKNOWN  source_build=UNKNOWN compiler=compiles           11.1s 
+buildkit-buildx 9512a2e1 UNKNOWN  source_build=UNKNOWN compiler=compiles           10.9s 
+buildkit-buildx 2999fdcf UNKNOWN  source_build=UNKNOWN compiler=compiles           21.2s 
+buildkit-buildx c2027e19 GO       source_build=GO      compiler=compiles            9.7s 
+buildkit-buildx badc4d97 UNKNOWN  source_build=UNKNOWN compiler=compiles           16.4s 
+buildkit-buildx f79f1a98 UNKNOWN  source_build=UNKNOWN compiler=compiles           10.8s 
+buildkit-buildx   20 decisions  GO  12  NO-GO   1  UNKNOWN   7 (35.0%)  errors 0 | compiler judged  20: agree  13  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 7 | not judged 0
+TOTAL         20 decisions  GO  12  NO-GO   1  UNKNOWN   7 (35.0%)  errors 0 | compiler judged  20: agree  13  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 7 | not judged 0
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    6   1  CONTRACT_COMPILE_ERROR (e.g. buildkit-buildx@7f2cbc61bae3a5395e13da85dd84bbe8611f31e3)
+    1   1  GO_API_CHANGED_USED_BY_CALLER (e.g. buildkit-buildx@30a3c273938bb534f7ad2a350bbd014db970796c)
+  FAILED buildkit-buildx@30a3c273938bb534f7ad2a350bbd014db970796c: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
+  FAILED buildkit-buildx@7f2cbc61bae3a5395e13da85dd84bbe8611f31e3: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED buildkit-buildx@b0ba8232845c994619bfbf761311a04208ed82c5: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED buildkit-buildx@9512a2e1970c0891ad330aab4c945d8cbbb8ffd7: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED buildkit-buildx@2999fdcfaed8118918c9dd676538c488b2b1d1bd: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED buildkit-buildx@badc4d97564351b19108c16a0d03d3043b7f0819: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED buildkit-buildx@f79f1a98c42c73b69839a42969b59bc022404819: unknown_on_safe: CONTRACT_COMPILE_ERROR
+
+20 windows in 8m1s.
+verifier gate: scan failed: 7 disagreements with the compiler or errors
+exit 1 seconds 481
