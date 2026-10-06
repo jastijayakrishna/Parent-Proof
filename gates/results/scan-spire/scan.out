@@ -1,25 +1,25 @@
-time=2026-10-06T04:30:47.222Z level=INFO msg=cloning repo=p-spire url=https://github.com/spiffe/spire-api-sdk.git
-time=2026-10-06T04:30:47.745Z level=INFO msg=cloning repo=c-spire url=https://github.com/spiffe/spire.git
-spire       adb81b3b GO       source_build=GO      compiler=compiles          235.9s 
+time=2026-10-06T06:19:14.456Z level=INFO msg=cloning repo=p-spire url=https://github.com/spiffe/spire-api-sdk.git
+time=2026-10-06T06:19:14.674Z level=INFO msg=cloning repo=c-spire url=https://github.com/spiffe/spire.git
+spire       adb81b3b GO       source_build=GO      compiler=compiles          237.6s 
 spire       2af565d1 GO       source_build=GO      compiler=compiles            5.1s 
 spire       fb3af7f8 GO       source_build=GO      compiler=compiles            4.3s 
-spire       2eb8736b GO       source_build=GO      compiler=compiles            4.4s 
-spire       da0bb759 UNKNOWN  source_build=UNKNOWN compiler=compiles            4.8s 
-spire       5f39c6d3 GO       source_build=GO      compiler=compiles            5.0s 
-spire       3c6b1447 GO       source_build=GO      compiler=compiles            2.6s 
-spire       8e80ebd8 GO       source_build=GO      compiler=compiles            2.6s 
-spire       c51a5c74 GO       source_build=GO      compiler=compiles            2.4s 
-spire       9701b78b UNKNOWN  source_build=UNKNOWN compiler=compiles            2.6s 
-spire       1594f105 GO       source_build=GO      compiler=compiles            2.6s 
-spire       4cd2aac3 GO       source_build=GO      compiler=compiles            3.6s 
-spire       3fa57378 NO_GO    source_build=NO_GO   compiler=compiles            2.9s 
-spire       9e70b1d3 GO       source_build=GO      compiler=compiles            1.9s 
-spire       a201a66e GO       source_build=GO      compiler=compiles            2.8s 
-spire       2e20525c GO       source_build=GO      compiler=compiles            5.7s 
-spire       54e821e0 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.8s 
-spire       00343b76 GO       source_build=GO      compiler=compiles            2.7s 
-spire       46017233 NO_GO    source_build=NO_GO   compiler=compiles            3.0s 
-spire       b9c7b771 UNKNOWN  source_build=UNKNOWN compiler=compiles            5.2s 
+spire       2eb8736b GO       source_build=GO      compiler=compiles            4.3s 
+spire       da0bb759 UNKNOWN  source_build=UNKNOWN compiler=compiles            4.4s 
+spire       5f39c6d3 GO       source_build=GO      compiler=compiles            4.7s 
+spire       3c6b1447 GO       source_build=GO      compiler=compiles            2.4s 
+spire       8e80ebd8 GO       source_build=GO      compiler=compiles            2.4s 
+spire       c51a5c74 GO       source_build=GO      compiler=compiles            2.3s 
+spire       9701b78b UNKNOWN  source_build=UNKNOWN compiler=compiles            2.4s 
+spire       1594f105 GO       source_build=GO      compiler=compiles            2.3s 
+spire       4cd2aac3 GO       source_build=GO      compiler=compiles            3.4s 
+spire       3fa57378 NO_GO    source_build=NO_GO   compiler=compiles            3.1s 
+spire       9e70b1d3 GO       source_build=GO      compiler=compiles            2.1s 
+spire       a201a66e GO       source_build=GO      compiler=compiles            2.6s 
+spire       2e20525c GO       source_build=GO      compiler=compiles            4.0s 
+spire       54e821e0 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.7s 
+spire       00343b76 GO       source_build=GO      compiler=compiles            2.4s 
+spire       46017233 NO_GO    source_build=NO_GO   compiler=compiles            2.9s 
+spire       b9c7b771 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.7s 
 spire         20 decisions  GO  14  NO-GO   2  UNKNOWN   4 (20.0%)  errors 0 | compiler judged  20: agree  16  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 4 | not judged 0
 TOTAL         20 decisions  GO  14  NO-GO   2  UNKNOWN   4 (20.0%)  errors 0 | compiler judged  20: agree  16  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 4 | not judged 0
 
@@ -32,6 +32,6 @@ UNKNOWN reasons across all: windows, ecosystems, an example
   FAILED spire@54e821e0e8265c1ef2bd227029ed4bd360653905: unknown_on_safe: NEEDS_REVIEW
   FAILED spire@b9c7b77109db587e729f91e8526aefba099515e8: unknown_on_safe: NEEDS_REVIEW
 
-20 windows in 5m8s.
+20 windows in 5m2s.
 verifier gate: scan failed: 4 disagreements with the compiler or errors
 exit 1
