@@ -1,34 +1,34 @@
-time=2026-10-06T10:34:04.646Z level=INFO msg=cloning repo=buildkit url=https://github.com/moby/buildkit.git
-time=2026-10-06T10:34:09.567Z level=INFO msg=cloning repo=buildx url=https://github.com/docker/buildx.git
-time=2026-10-06T10:34:15.140Z level=INFO msg=skip consumer=buildx bump=62fbef22 old=v0.11.2 new=v0.11.0-rc3.0.20230216100651-46e4e7e51b01 reason=not_forward
-time=2026-10-06T10:34:17.938Z level=INFO msg=skip consumer=buildx bump=35781a6c old=v0.13.0 new=v0.13.0-rc3.0.20240328152707-25bec7145b39 reason=not_forward
-time=2026-10-06T10:34:18.694Z level=INFO msg=skip consumer=buildx bump=04000db8 old=v0.14.1 new=v0.14.1-0.20240625190127-aaaf86e5470b reason=not_forward
-time=2026-10-06T10:34:19.104Z level=INFO msg=skip consumer=buildx bump=07a85a54 old=v0.15.1 new=v0.15.1-0.20240810140024-664c2b469f19 reason=not_forward
-time=2026-10-06T10:34:19.308Z level=INFO msg=skip consumer=buildx bump=1db8f678 old=v0.16.0 new=v0.16.0-rc2.0.20241002204825-8445ccf1cb0b reason=not_forward
-time=2026-10-06T10:34:21.099Z level=INFO msg=skip consumer=buildx bump=40b9ac1e old=v0.19.0 new=v0.19.0-rc3.0.20250210232655-0e3037c0182e reason=not_forward
-time=2026-10-06T10:34:23.060Z level=INFO msg=skip consumer=buildx bump=e9b6a01a old=v0.23.0 new=v0.23.0-rc1.0.20250618182037-9b91d20367db reason=not_forward
-time=2026-10-06T10:34:23.547Z level=INFO msg=skip consumer=buildx bump=f4787416 old=v0.25.1 new=v0.25.0-rc1.0.20251011181741-9b6f60ac8bf9 reason=not_forward
-time=2026-10-06T10:34:24.052Z level=INFO msg=skip consumer=buildx bump=8037f199 old=v0.26.2 new=v0.26.1-0.20260106154623-ed6dc749ce40 reason=not_forward
-time=2026-10-06T10:34:24.522Z level=INFO msg=skip consumer=buildx bump=53882aec old=v0.27.0 new=v0.27.0-rc2.0.20260210080956-9836771d0c5b reason=not_forward
-time=2026-10-06T10:34:25.420Z level=INFO msg=skip consumer=buildx bump=2fcfce0e old=v0.30.0 new=v0.30.0-rc2.0.20260610003221-41c29fffe299 reason=not_forward
-time=2026-10-06T10:34:27.178Z level=INFO msg=skip consumer=buildx bump=253ba2a5 old=v0.33.0 new=v0.33.0-rc1.0.20260922140836-5427d61296f2 reason=not_forward
-time=2026-10-06T10:34:27.260Z level=INFO msg=mined consumer=buildx pin_moves=116 to_compile=17 skipped=map[not_forward:12]
-time=2026-10-06T10:35:35.827Z level=INFO msg=canary consumer=buildx at=0d708c0bc2422efb7bad7026c7dbfcb84ded51fe^ outcome=breaks detail="canary: github.com/moby/buildkit/solver/errdefs removed."
-time=2026-10-06T10:35:56.880Z level=INFO msg=window consumer=buildx bump=0d708c0b select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T10:37:31.608Z level=INFO msg=window consumer=buildx bump=209f90c1 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T10:38:21.988Z level=INFO msg=window consumer=buildx bump=32e9bfcb select=unchanged breaking=0 compiler=breaks
-time=2026-10-06T10:39:08.649Z level=INFO msg=window consumer=buildx bump=4df89d89 select=unchanged breaking=0 compiler=breaks
-time=2026-10-06T10:39:47.603Z level=INFO msg=window consumer=buildx bump=3dabbc56 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T10:40:22.818Z level=INFO msg=window consumer=buildx bump=5c56e947 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T10:41:35.071Z level=INFO msg=window consumer=buildx bump=6a1cf788 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T10:41:39.188Z level=INFO msg=window consumer=buildx bump=7d35a3b8 select=unchanged breaking=0 compiler=breaks
-time=2026-10-06T10:42:58.944Z level=INFO msg=window consumer=buildx bump=94355517 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T10:43:12.300Z level=INFO msg=window consumer=buildx bump=aa4317bf select=additive breaking=0 compiler=compiles
-time=2026-10-06T10:44:03.626Z level=INFO msg=window consumer=buildx bump=beaebcbf select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T10:44:24.086Z level=INFO msg=window consumer=buildx bump=c887c2c6 select=unchanged breaking=0 compiler=breaks
-time=2026-10-06T10:44:46.258Z level=INFO msg=window consumer=buildx bump=d294232c select=additive breaking=0 compiler=compiles
-time=2026-10-06T10:44:51.527Z level=INFO msg=window consumer=buildx bump=e0c67bfc select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T10:45:40.715Z level=INFO msg=window consumer=buildx bump=ee77cdb1 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T10:45:48.899Z level=INFO msg=window consumer=buildx bump=e6756d95 select=unchanged breaking=0 compiler=breaks
-time=2026-10-06T10:46:26.483Z level=INFO msg=window consumer=buildx bump=f815f4ac select=additive breaking=0 compiler=breaks
-time=2026-10-06T10:46:26.483Z level=INFO msg="suite built" suite=buildkit windows_added=17
+time=2026-10-06T11:34:28.327Z level=INFO msg=cloning repo=buildkit url=https://github.com/moby/buildkit.git
+time=2026-10-06T11:34:32.732Z level=INFO msg=cloning repo=buildx url=https://github.com/docker/buildx.git
+time=2026-10-06T11:34:38.733Z level=INFO msg=skip consumer=buildx bump=62fbef22 old=v0.11.2 new=v0.11.0-rc3.0.20230216100651-46e4e7e51b01 reason=not_forward
+time=2026-10-06T11:34:41.838Z level=INFO msg=skip consumer=buildx bump=35781a6c old=v0.13.0 new=v0.13.0-rc3.0.20240328152707-25bec7145b39 reason=not_forward
+time=2026-10-06T11:34:42.578Z level=INFO msg=skip consumer=buildx bump=04000db8 old=v0.14.1 new=v0.14.1-0.20240625190127-aaaf86e5470b reason=not_forward
+time=2026-10-06T11:34:43.113Z level=INFO msg=skip consumer=buildx bump=07a85a54 old=v0.15.1 new=v0.15.1-0.20240810140024-664c2b469f19 reason=not_forward
+time=2026-10-06T11:34:43.381Z level=INFO msg=skip consumer=buildx bump=1db8f678 old=v0.16.0 new=v0.16.0-rc2.0.20241002204825-8445ccf1cb0b reason=not_forward
+time=2026-10-06T11:34:45.047Z level=INFO msg=skip consumer=buildx bump=40b9ac1e old=v0.19.0 new=v0.19.0-rc3.0.20250210232655-0e3037c0182e reason=not_forward
+time=2026-10-06T11:34:46.993Z level=INFO msg=skip consumer=buildx bump=e9b6a01a old=v0.23.0 new=v0.23.0-rc1.0.20250618182037-9b91d20367db reason=not_forward
+time=2026-10-06T11:34:47.576Z level=INFO msg=skip consumer=buildx bump=f4787416 old=v0.25.1 new=v0.25.0-rc1.0.20251011181741-9b6f60ac8bf9 reason=not_forward
+time=2026-10-06T11:34:48.229Z level=INFO msg=skip consumer=buildx bump=8037f199 old=v0.26.2 new=v0.26.1-0.20260106154623-ed6dc749ce40 reason=not_forward
+time=2026-10-06T11:34:48.704Z level=INFO msg=skip consumer=buildx bump=53882aec old=v0.27.0 new=v0.27.0-rc2.0.20260210080956-9836771d0c5b reason=not_forward
+time=2026-10-06T11:34:49.869Z level=INFO msg=skip consumer=buildx bump=2fcfce0e old=v0.30.0 new=v0.30.0-rc2.0.20260610003221-41c29fffe299 reason=not_forward
+time=2026-10-06T11:34:51.545Z level=INFO msg=skip consumer=buildx bump=253ba2a5 old=v0.33.0 new=v0.33.0-rc1.0.20260922140836-5427d61296f2 reason=not_forward
+time=2026-10-06T11:34:51.652Z level=INFO msg=mined consumer=buildx pin_moves=116 to_compile=17 skipped=map[not_forward:12]
+time=2026-10-06T11:36:14.877Z level=INFO msg=canary consumer=buildx at=0d708c0bc2422efb7bad7026c7dbfcb84ded51fe^ outcome=breaks detail="canary: github.com/moby/buildkit/solver/errdefs removed."
+time=2026-10-06T11:36:42.570Z level=INFO msg=window consumer=buildx bump=0d708c0b select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T11:38:34.675Z level=INFO msg=window consumer=buildx bump=209f90c1 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T11:39:29.171Z level=INFO msg=window consumer=buildx bump=32e9bfcb select=unchanged breaking=0 compiler=breaks
+time=2026-10-06T11:40:22.228Z level=INFO msg=window consumer=buildx bump=4df89d89 select=unchanged breaking=0 compiler=breaks
+time=2026-10-06T11:41:05.413Z level=INFO msg=window consumer=buildx bump=3dabbc56 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T11:41:51.583Z level=INFO msg=window consumer=buildx bump=5c56e947 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T11:43:06.189Z level=INFO msg=window consumer=buildx bump=6a1cf788 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T11:43:16.351Z level=INFO msg=window consumer=buildx bump=7d35a3b8 select=unchanged breaking=0 compiler=breaks
+time=2026-10-06T11:44:46.635Z level=INFO msg=window consumer=buildx bump=94355517 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T11:45:13.997Z level=INFO msg=window consumer=buildx bump=aa4317bf select=additive breaking=0 compiler=compiles
+time=2026-10-06T11:46:12.233Z level=INFO msg=window consumer=buildx bump=beaebcbf select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T11:46:49.744Z level=INFO msg=window consumer=buildx bump=c887c2c6 select=unchanged breaking=0 compiler=breaks
+time=2026-10-06T11:47:11.439Z level=INFO msg=window consumer=buildx bump=d294232c select=additive breaking=0 compiler=compiles
+time=2026-10-06T11:47:29.705Z level=INFO msg=window consumer=buildx bump=e0c67bfc select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T11:48:29.151Z level=INFO msg=window consumer=buildx bump=ee77cdb1 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T11:48:34.434Z level=INFO msg=window consumer=buildx bump=e6756d95 select=unchanged breaking=0 compiler=breaks
+time=2026-10-06T11:49:24.946Z level=INFO msg=window consumer=buildx bump=f815f4ac select=additive breaking=0 compiler=breaks
+time=2026-10-06T11:49:24.946Z level=INFO msg="suite built" suite=buildkit windows_added=17
