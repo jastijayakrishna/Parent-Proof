@@ -1,3 +1,3 @@
-# Diagnose 2026-10-06: what the verifier saw on windows it called Merge while javac broke (binary 6f9abec).
-diag-hbase-20c9e4ba hbase python3 stress/probe/diagnose.py hbase history 20c9e4ba "$OUT"
-diag-camunda-7e28eeef camunda-zeebe python3 stress/probe/diagnose.py camunda-zeebe history 7e28eeef "$OUT"
+# Diagnose 2026-10-06: Go scan windows of binary 7ea0886 that the compiler contradicts, or that the second check turned to Needs review.
+diag-jaeger-ff5989c3 - bash stress/probe/diag-go.sh https://github.com/jaegertracing/jaeger-idl.git https://github.com/jaegertracing/jaeger.git d1a684d22732ac801d790c6fbddb53cd1b7df778 "$OUT" ff5989c394723bab23529fd1ab62a1dcce566d21:73f1a7e0ead8ad09d5c2794117017bc97923a27f 73f1a7e0ead8ad09d5c2794117017bc97923a27f:356924a1d31475ea1c2fa45b0679060b3c4e0edc
+diag-istio-abc03d0e - bash stress/probe/diag-go.sh https://github.com/istio/api.git https://github.com/istio/istio.git dc77dca939012e34458d5bc786026cc7b6568649 "$OUT" abc03d0ea7f383790b922a23901af49484ab0ba0:25d2a4321d56252330de27ee1c1cc934c97e3771
