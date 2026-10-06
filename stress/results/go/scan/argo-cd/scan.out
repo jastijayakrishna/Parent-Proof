@@ -1,25 +1,25 @@
-time=2026-10-06T04:50:20.319Z level=INFO msg=cloning repo=p-argo-cd url=https://github.com/argoproj/argo-cd.git
-time=2026-10-06T04:50:22.165Z level=INFO msg=cloning repo=c-argo-cd url=https://github.com/argoproj/argo-cd.git
-argo-cd     c6760e80 GO       source_build=GO      compiler=-                  27.4s 
-argo-cd     e2a605e0 UNKNOWN  source_build=GO      compiler=-                   1.2s 
-argo-cd     bcb771e2 UNKNOWN  source_build=GO      compiler=-                   2.2s 
-argo-cd     e4470c5f GO       source_build=GO      compiler=-                   1.3s 
-argo-cd     545bcb5e NO_GO    source_build=NO_GO   compiler=-                   1.4s 
-argo-cd     69afa575 GO       source_build=GO      compiler=-                   1.3s 
-argo-cd     80732013 UNKNOWN  source_build=GO      compiler=-                   1.2s 
-argo-cd     4abcbcf1 UNKNOWN  source_build=GO      compiler=-                   1.2s 
-argo-cd     c861e048 UNKNOWN  source_build=GO      compiler=-                   1.2s 
+time=2026-10-06T06:11:33.660Z level=INFO msg=cloning repo=p-argo-cd url=https://github.com/argoproj/argo-cd.git
+time=2026-10-06T06:11:35.557Z level=INFO msg=cloning repo=c-argo-cd url=https://github.com/argoproj/argo-cd.git
+argo-cd     c6760e80 GO       source_build=GO      compiler=-                  32.2s 
+argo-cd     e2a605e0 UNKNOWN  source_build=UNKNOWN compiler=-                   1.8s 
+argo-cd     bcb771e2 UNKNOWN  source_build=UNKNOWN compiler=-                   3.3s 
+argo-cd     e4470c5f GO       source_build=GO      compiler=-                   1.6s 
+argo-cd     545bcb5e NO_GO    source_build=NO_GO   compiler=-                   2.5s 
+argo-cd     69afa575 GO       source_build=GO      compiler=-                   1.9s 
+argo-cd     80732013 UNKNOWN  source_build=UNKNOWN compiler=-                   1.5s 
+argo-cd     4abcbcf1 UNKNOWN  source_build=UNKNOWN compiler=-                   1.6s 
+argo-cd     c861e048 UNKNOWN  source_build=UNKNOWN compiler=-                   2.3s 
 argo-cd     79e12294 GO       source_build=GO      compiler=-                   0.5s 
-argo-cd     619c6424 UNKNOWN  source_build=GO      compiler=-                   1.2s 
-argo-cd     022f9354 GO       source_build=GO      compiler=-                   1.6s 
+argo-cd     619c6424 UNKNOWN  source_build=UNKNOWN compiler=-                   1.2s 
+argo-cd     022f9354 GO       source_build=GO      compiler=-                   1.3s 
 argo-cd     566c6225 GO       source_build=GO      compiler=-                   1.3s 
-argo-cd     f7a7deb8 UNKNOWN  source_build=GO      compiler=-                   1.7s 
+argo-cd     f7a7deb8 UNKNOWN  source_build=UNKNOWN compiler=-                   1.7s 
 argo-cd     bf1591de GO       source_build=GO      compiler=-                   1.3s 
-argo-cd     6d92e177 GO       source_build=GO      compiler=-                   1.3s 
-argo-cd     224b75af UNKNOWN  source_build=GO      compiler=-                   1.7s 
+argo-cd     6d92e177 GO       source_build=GO      compiler=-                   1.4s 
+argo-cd     224b75af UNKNOWN  source_build=UNKNOWN compiler=-                   1.8s 
 argo-cd     c61c1dcf GO       source_build=GO      compiler=-                   0.5s 
 argo-cd     5ec06031 GO       source_build=GO      compiler=-                   1.5s 
-argo-cd     a6c12987 UNKNOWN  source_build=GO      compiler=-                   1.5s 
+argo-cd     a6c12987 UNKNOWN  source_build=UNKNOWN compiler=-                   1.6s 
 argo-cd       20 decisions  GO  10  NO-GO   1  UNKNOWN   9 (45.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
 TOTAL         20 decisions  GO  10  NO-GO   1  UNKNOWN   9 (45.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
 
@@ -28,5 +28,5 @@ UNKNOWN reasons across all: windows, ecosystems, an example
     1   1  UNRESOLVED_MEMBER (e.g. argo-cd@545bcb5eeba8240ffa47299ee9ace8bb54c61dc8)
     1   1  WHOLE_MESSAGE_FLOW (e.g. argo-cd@545bcb5eeba8240ffa47299ee9ace8bb54c61dc8)
 
-20 windows in 1m0s.
-exit 0 seconds 60
+20 windows in 1m11s.
+exit 0 seconds 71
