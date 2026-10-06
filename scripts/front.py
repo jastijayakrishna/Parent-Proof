@@ -5,6 +5,7 @@
 break the verifier called Don't merge before the compiler judged it."""
 import datetime
 import glob
+import importlib.util
 import json
 import os
 import re
@@ -77,6 +78,16 @@ def live():
     return rows
 
 
+def stress():
+    spec = importlib.util.spec_from_file_location("score", "stress/score.py")
+    score = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(score)
+    of, groups = score.sets(), {}
+    for r in score.rows_go() + score.rows_java():
+        groups.setdefault((r["lang"], of.get(r["project"], "dev")), []).append(r)
+    return groups
+
+
 def counts(rows, by_verdict):
     breaks = [r for r in rows if r["compiler"] == "breaks"]
     safe = [r for r in rows if r["compiler"] == "compiles"]
@@ -103,6 +114,9 @@ def render(now):
     projects = len({r["what"] for r in h})
     out.append(f"| [Real upgrades](HISTORY.md), {projects} projects' history | " + " | ".join(map(str, hc)) + " |")
     out.append("| [Open pull requests](SCOREBOARD.md), decided live | " + " | ".join(map(str, lc)) + " |")
+    sets = {"dev": "projects never used to tune it", "holdout": "hold-out projects, run once", "regression": "projects it was tuned on"}
+    for (lang, s), rows in sorted(stress().items()):
+        out.append(f"| [Stress test](STRESS.md), {lang}: {sets.get(s, s)} | " + " | ".join(map(str, counts(rows, False))) + " |")
     out.append("")
     out.append("**Caught**: it broke the build and the verifier said Don't merge first. **Missed**: the verifier said "
                "Merge and the compiler says it breaks, the failure that matters most. **Judge not verified**: not counted, "
