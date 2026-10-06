@@ -1,0 +1,103 @@
+{
+  "pr": {
+    "n": 6100,
+    "head": "76dab581beff24b0691e16df7f6e6e526b467eaa",
+    "base": "65c54ed444bdc051a716a5421df8aa5909af2a8f",
+    "title": "fix(types,state): enforce minimum Block.MaxBytes floor and handle small limits defensively",
+    "url": "https://github.com/cometbft/cometbft/pull/6100",
+    "updated": "2026-10-06T17:44:52Z",
+    "eco": "cometbft-cosmos-sdk",
+    "key": "cometbft-cosmos-sdk-6100-76dab581beff",
+    "provider": "cometbft/cometbft",
+    "consumer": "cosmos/cosmos-sdk",
+    "consumer_sha": "2ad20ad7ca843fbde95c1472ab69f1d3f04e46d4"
+  },
+  "merge_base": "65c54ed444bdc051a716a5421df8aa5909af2a8f",
+  "decided": "65d25f9bd0d4c07f454402a38387e5577dc05152",
+  "started": "2026-10-06T20:29:02Z",
+  "finished": "2026-10-06T20:31:39Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37526460511",
+  "verifier": {
+    "version": "fd5238d protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "bbcc0e4abf3404f5fa65e6676bd352b9a8217f1c87d564a1f6b6f738fd1e1637"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "cometbft-cosmos-sdk",
+      "commit": "65d25f9bd0d4c07f454402a38387e5577dc05152",
+      "parent": "65c54ed444bdc051a716a5421df8aa5909af2a8f",
+      "date": "2026-10-06",
+      "subject": "pull request 6100 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "proto/tendermint/types/params.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 219
+      },
+      "canary": {
+        "outcome": "breaks",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 219,
+        "errors": [
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types",
+          "module github.com/cometbft/cometbft@latest found (v1.0.1, replaced by /tmp/parent-canary-3388300323), but does not contain package github.com/cometbft/cometbft/abci/types"
+        ],
+        "error_count": 211,
+        "failed_packages": [
+          "github.com/cosmos/cosmos-sdk/baseapp",
+          "github.com/cosmos/cosmos-sdk/baseapp/blockexec",
+          "github.com/cosmos/cosmos-sdk/baseapp/config",
+          "github.com/cosmos/cosmos-sdk/baseapp/internal/protocompat",
+          "github.com/cosmos/cosmos-sdk/baseapp/oe",
+          "github.com/cosmos/cosmos-sdk/baseapp/state",
+          "github.com/cosmos/cosmos-sdk/baseapp/testutil",
+          "github.com/cosmos/cosmos-sdk/baseapp/testutil/mock",
+          "github.com/cosmos/cosmos-sdk/baseapp/txnrunner",
+          "github.com/cosmos/cosmos-sdk/client",
+          "github.com/cosmos/cosmos-sdk/client/config",
+          "github.com/cosmos/cosmos-sdk/client/debug",
+          "github.com/cosmos/cosmos-sdk/client/flags",
+          "github.com/cosmos/cosmos-sdk/client/grpc/cmtservice",
+          "github.com/cosmos/cosmos-sdk/client/grpc/node",
+          "github.com/cosmos/cosmos-sdk/client/keys",
+          "github.com/cosmos/cosmos-sdk/client/pruning",
+          "github.com/cosmos/cosmos-sdk/client/rpc",
+          "github.com/cosmos/cosmos-sdk/client/snapshot",
+          "github.com/cosmos/cosmos-sdk/client/tx"
+        ],
+        "detail": "canary: github.com/cometbft/cometbft/abci/types removed."
+      },
+      "seconds": 152.700326482,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-06T20:29:02.237Z level=INFO msg=cloning repo=c-cometbft-cosmos-sdk url=https://github.com/cosmos/cosmos-sdk.git\ncometbft-cosmos-sdk 65d25f9b GO       source_build=GO      compiler=compiles          152.7s \ncometbft-cosmos-sdk    1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 2m37s."
+}
