@@ -1,0 +1,23 @@
+google-cloud-bigtable-history history: 254 windows, shard 10/12 has 21
+canary at be619d757c0b: generated_fails (243 files moved) ['proto-google-cloud-bigtable-v2/src/main/java/com/google/bigtable/v2/MutateRowRequest.java:238: cannot access com.google.bigtable.v2.MutationOrBuilder']
+be619d757c0b 2023-02-06 verifier=GO build=GO compiler=oracle_error 18.7s 
+1cd41d6c5906 2023-03-21 verifier=GO build=GO compiler=oracle_error 19.8s 
+7e5c646031de 2023-05-01 verifier=GO build=GO compiler=compiles 28.3s 
+f4f2e2ebac53 2023-06-27 verifier=GO build=GO compiler=compiles 96.1s 
+9bc65d182365 2023-08-09 verifier=GO build=GO compiler=oracle_error 19.4s 
+15cd4868ff80 2023-09-26 verifier=GO build=GO compiler=compiles 43.7s 
+4943485fd518 2023-11-10 verifier=GO build=GO compiler=oracle_error 26.2s 
+4c6b11a3db5a 2024-02-12 verifier=GO build=GO compiler=oracle_error 33.4s 
+189ef7f8f32d 2024-03-27 verifier=GO build=GO compiler=oracle_error 22.1s 
+24d80820c8b1 2024-05-22 verifier=GO build=GO compiler=oracle_error 28.8s 
+715b7d0e7dc9 2024-08-06 verifier=GO build=GO compiler=oracle_error 41.9s 
+da6a4668c363 2024-10-03 verifier=GO build=GO compiler=oracle_error 24.9s 
+b7d1a75a2321 2024-12-04 verifier=GO build=GO compiler=oracle_error 35.4s 
+5a2530fb09a2 2025-02-28 verifier=GO build=GO compiler=oracle_error 35.6s 
+1ecc26762567 2025-03-25 verifier=GO build=GO compiler=oracle_error 20.2s 
+4d5a48fcee31 2025-05-16 verifier=GO build=GO compiler=oracle_error 42.4s 
+e219c3874876 2025-07-30 verifier=GO build=GO compiler=compiles 36.1s 
+f546838fc08f 2025-09-25 verifier=GO build=GO compiler=oracle_error 44.4s 
+6c5f635d4990 2025-12-12 verifier=GO build=GO compiler=oracle_error 36.4s 
+8d75343b01f3 2026-03-02 verifier=GO build=GO compiler=oracle_error 38.4s 
+f91e0e5cff6a 2026-04-14 verifier=GO build=GO compiler=oracle_error 28.0s 
