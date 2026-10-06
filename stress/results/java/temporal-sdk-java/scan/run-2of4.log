@@ -1,7 +1,7 @@
 temporal-sdk-java scan: 20 windows, shard 2/4 has 5
 canary at 8093081c91bd: breaks (55 files moved) ['temporal-serviceclient/src/main/java/io/temporal/serviceclient/SystemInfoInterceptor.java:5: package io.temporal.api.workflowservice.v1 does not exist']
-8093081c91bd 2026-07-17 verifier=None build=None compiler=baseline_fails 55.6s 
-e4863be86cfc 2026-07-29 verifier=None build=None compiler=baseline_fails 55.1s 
-13d59637385d 2026-07-30 verifier=None build=None compiler=baseline_fails 55.5s 
-78685101cb08 2026-08-17 verifier=GO build=GO compiler=compiles 203.5s 
-46ee8b820cff 2026-09-08 verifier=GO build=GO compiler=compiles 206.2s 
+8093081c91bd 2026-07-17 verifier=None build=None compiler=baseline_fails 80.3s 
+e4863be86cfc 2026-07-29 verifier=None build=None compiler=baseline_fails 73.8s 
+13d59637385d 2026-07-30 verifier=None build=None compiler=baseline_fails 71.8s 
+78685101cb08 2026-08-17 verifier=GO build=GO compiler=compiles 296.5s 
+46ee8b820cff 2026-09-08 verifier=GO build=GO compiler=compiles 265.4s 
