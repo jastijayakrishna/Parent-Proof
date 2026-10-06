@@ -1,14 +1,14 @@
 conductor history: 25 windows, shard 2/2 has 12
 canary at e60b0e6ef2f5: oracle_error (24 files moved) ['']
-e60b0e6ef2f5 2023-12-22 verifier=None build=None compiler=baseline_fails 2.4s 
-c67b2eb256e9 2024-11-27 verifier=GO build=GO compiler=compiles 90.4s 
-894c7dc136ad 2025-04-29 verifier=GO build=GO compiler=compiles 43.6s 
-72a06a4c7bc9 2025-07-25 verifier=GO build=GO compiler=compiles 58.6s 
-b9f50bbcc6ed 2025-11-24 verifier=GO build=GO compiler=compiles 47.1s 
-0c723f7aa4f8 2026-02-03 verifier=GO build=GO compiler=compiles 92.4s 
-d1dc16a618b3 2026-03-12 verifier=GO build=GO compiler=compiles 56.3s 
-ccc822a8dc3b 2026-03-25 verifier=GO build=GO compiler=compiles 48.7s 
-6456b564fad2 2026-04-21 verifier=GO build=GO compiler=compiles 49.0s 
-538c4505ec7e 2026-07-09 verifier=GO build=GO compiler=compiles 45.8s 
-80156f58ffc1 2026-07-17 verifier=GO build=GO compiler=compiles 44.6s 
-53eb2d918d10 2026-07-30 verifier=GO build=GO compiler=compiles 43.8s 
+e60b0e6ef2f5 2023-12-22 verifier=None build=None compiler=baseline_fails 3.3s 
+c67b2eb256e9 2024-11-27 verifier=GO build=GO compiler=compiles 102.7s 
+894c7dc136ad 2025-04-29 verifier=GO build=GO compiler=compiles 59.4s 
+72a06a4c7bc9 2025-07-25 verifier=GO build=GO compiler=compiles 74.2s 
+b9f50bbcc6ed 2025-11-24 verifier=GO build=GO compiler=compiles 60.3s 
+0c723f7aa4f8 2026-02-03 verifier=GO build=GO compiler=compiles 109.1s 
+d1dc16a618b3 2026-03-12 verifier=GO build=GO compiler=compiles 71.3s 
+ccc822a8dc3b 2026-03-25 verifier=GO build=GO compiler=compiles 65.6s 
+6456b564fad2 2026-04-21 verifier=GO build=GO compiler=compiles 61.4s 
+538c4505ec7e 2026-07-09 verifier=GO build=GO compiler=compiles 62.6s 
+80156f58ffc1 2026-07-17 verifier=GO build=GO compiler=compiles 59.0s 
+53eb2d918d10 2026-07-30 verifier=GO build=GO compiler=compiles 58.7s 
