@@ -1,0 +1,103 @@
+== abc03d0ea7f383790b922a23901af49484ab0ba0 (base 25d2a4321d56252330de27ee1c1cc934c97e3771): exit 3
+VERDICT NO_GO {'generated_code': 'NO_GO', 'runtime': 'NO_GO', 'source_build': 'NO_GO'} ['WHOLE_MESSAGE_FLOW', 'DESCRIPTOR_REFLECTION']
+CHANGE FIELD_TYPE_CHANGED {'kind': 'field', 'name': 'istio.networking.v1alpha3.ZoneAwareLoadBalancerSetting.#4'} {'type': 'google.protobuf.UInt64Value'} {'type': 'google.protobuf.UInt32Value'}
+FINDING NO_GO runtime PROTO_FIELD_TYPE_CHANGED_USED_BY_CALLER | the field's wire encoding changed; old and new binaries will misparse each other's messages
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:206 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:233 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/fake/fake_destinationrule.gen.go:149 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/fake/fake_destinationrule.gen.go:172 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1alpha3/destinationrule.gen.go:206 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1alpha3/destinationrule.gen.go:233 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1alpha3/fake/fake_destinationrule.gen.go:149 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1alpha3/fake/fake_destinationrule.gen.go:172 whole_flow  encoder
+FINDING NO_GO runtime PROTO_FIELD_TYPE_CHANGED_USED_BY_CALLER | the field's wire encoding changed; old and new binaries will misparse each other's messages
+    cni/pkg/install/kubeconfig.go:100 whole_flow  encoder
+    cni/pkg/install/kubeconfig.go:100 whole_flow  encoder
+    cni/pkg/install/kubeconfig.go:100 whole_flow  encoder
+    cni/pkg/install/kubeconfig.go:117 whole_flow  encoder
+    cni/pkg/install/kubeconfig.go:117 whole_flow  encoder
+    cni/pkg/install/kubeconfig.go:117 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:206 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:233 whole_flow  encoder
+FINDING NO_GO generated_code PROTO_FIELD_TYPE_CHANGED_REFERENCED_IN_SOURCE | regenerated bindings change the Go type of this field
+    pilot/pkg/networking/core/loadbalancer/loadbalancer.go:208 read  getter
+    pilot/pkg/networking/core/loadbalancer/loadbalancer.go:218 read  getter
+FINDING NO_GO source_build PROTO_FIELD_TYPE_CHANGED_REFERENCED_IN_SOURCE | caller source uses the field with its old type
+    pilot/pkg/networking/core/loadbalancer/loadbalancer.go:208 read  getter
+    pilot/pkg/networking/core/loadbalancer/loadbalancer.go:218 read  getter
+FINDING NO_GO runtime PROTO_FIELD_TYPE_CHANGED_USED_BY_CALLER | the field's wire encoding changed; old and new binaries will misparse each other's messages
+    cni/pkg/install/kubeconfig.go:100 whole_flow  encoder
+    cni/pkg/install/kubeconfig.go:100 whole_flow  encoder
+    cni/pkg/install/kubeconfig.go:100 whole_flow  encoder
+    cni/pkg/install/kubeconfig.go:117 whole_flow  encoder
+    cni/pkg/install/kubeconfig.go:117 whole_flow  encoder
+    cni/pkg/install/kubeconfig.go:117 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:206 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:233 whole_flow  encoder
+FINDING NO_GO runtime PROTO_FIELD_TYPE_CHANGED_USED_BY_CALLER | the field's wire encoding changed; old and new binaries will misparse each other's messages
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:206 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:233 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/fake/fake_destinationrule.gen.go:149 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/fake/fake_destinationrule.gen.go:172 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1alpha3/destinationrule.gen.go:206 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1alpha3/destinationrule.gen.go:233 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1alpha3/fake/fake_destinationrule.gen.go:149 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1alpha3/fake/fake_destinationrule.gen.go:172 whole_flow  encoder
+FINDING NO_GO generated_code PROTO_FIELD_TYPE_CHANGED_REFERENCED_IN_SOURCE | regenerated bindings change the Go type of this field
+    pilot/pkg/networking/core/loadbalancer/loadbalancer.go:208 read  getter
+    pilot/pkg/networking/core/loadbalancer/loadbalancer.go:218 read  getter
+FINDING NO_GO source_build PROTO_FIELD_TYPE_CHANGED_REFERENCED_IN_SOURCE | caller source uses the field with its old type
+    pilot/pkg/networking/core/loadbalancer/loadbalancer.go:208 read  getter
+    pilot/pkg/networking/core/loadbalancer/loadbalancer.go:218 read  getter
+FINDING NO_GO runtime PROTO_FIELD_TYPE_CHANGED_USED_BY_CALLER | the field's wire encoding changed; old and new binaries will misparse each other's messages
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:206 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:233 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/fake/fake_destinationrule.gen.go:149 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/fake/fake_destinationrule.gen.go:172 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1alpha3/destinationrule.gen.go:206 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1alpha3/destinationrule.gen.go:233 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1alpha3/fake/fake_destinationrule.gen.go:149 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1alpha3/fake/fake_destinationrule.gen.go:172 whole_flow  encoder
+FINDING NO_GO generated_code PROTO_FIELD_TYPE_CHANGED_REFERENCED_IN_SOURCE | regenerated bindings change the Go type of this field
+    pilot/pkg/networking/core/loadbalancer/loadbalancer.go:208 read  getter
+    pilot/pkg/networking/core/loadbalancer/loadbalancer.go:218 read  getter
+FINDING NO_GO source_build PROTO_FIELD_TYPE_CHANGED_REFERENCED_IN_SOURCE | caller source uses the field with its old type
+    pilot/pkg/networking/core/loadbalancer/loadbalancer.go:208 read  getter
+    pilot/pkg/networking/core/loadbalancer/loadbalancer.go:218 read  getter
+FINDING NO_GO runtime PROTO_FIELD_TYPE_CHANGED_USED_BY_CALLER | the field's wire encoding changed; old and new binaries will misparse each other's messages
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:206 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:233 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/fake/fake_destinationrule.gen.go:149 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/fake/fake_destinationrule.gen.go:172 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1alpha3/destinationrule.gen.go:206 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1alpha3/destinationrule.gen.go:233 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1alpha3/fake/fake_destinationrule.gen.go:149 whole_flow  encoder
+    istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1alpha3/fake/fake_destinationrule.gen.go:172 whole_flow  encoder
+FINDING NO_GO runtime PROTO_FIELD_TYPE_CHANGED_USED_BY_CALLER | the field's wire encoding changed; old and new binaries will misparse each other's messages
+    pkg/config/conversion.go:32 whole_flow  encoder
+    pkg/config/conversion.go:32 whole_flow  encoder
+    pkg/config/conversion.go:32 whole_flow  encoder
+    pkg/config/model.go:390 whole_flow  encoder
+    pkg/config/model.go:390 whole_flow  encoder
+    pkg/config/model.go:390 whole_flow  encoder
+FINDING UNKNOWN runtime PROTO_WHOLE_MESSAGE_FLOW_UNVERIFIABLE | the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven
+    k8s.io/apimachinery@v0.36.1/pkg/util/managedfields/extract.go:58 whole_flow  unknown sink
+    k8s.io/apimachinery@v0.36.1/pkg/util/managedfields/extract.go:58 whole_flow  unknown sink
+    k8s.io/apimachinery@v0.36.1/pkg/util/managedfields/extract.go:58 whole_flow  unknown sink
+    k8s.io/apimachinery@v0.36.1/pkg/util/managedfields/extract.go:105 whole_flow  unknown sink
+    k8s.io/apimachinery@v0.36.1/pkg/util/managedfields/extract.go:105 whole_flow  unknown sink
+    k8s.io/apimachinery@v0.36.1/pkg/util/managedfields/extract.go:105 whole_flow  unknown sink
+    k8s.io/apimachinery@v0.36.1/pkg/util/managedfields/internal/buildmanagerinfo.go:51 whole_flow  unknown sink
+    k8s.io/apimachinery@v0.36.1/pkg/util/managedfields/internal/buildmanagerinfo.go:51 whole_flow  unknown sink
+FINDING UNKNOWN runtime PROTO_FILE_DESCRIPTOR_REFLECTED | the caller holds the descriptor of the file that defines the changed element, so it can reach the element by reflection; whether it depends on it cannot be proven
+    github.com/google/cel-go@v0.28.1/cel/options.go:430 reflect  registry lookup
+FINDING UNKNOWN runtime PROTO_FILE_DESCRIPTOR_REFLECTED | the caller holds the descriptor of the file that defines the changed element, so it can reach the element by reflection; whether it depends on it cannot be proven
+    github.com/google/cel-go@v0.28.1/cel/options.go:430 reflect  registry lookup
+FINDING UNKNOWN runtime PROTO_FILE_DESCRIPTOR_REFLECTED | the caller holds the descriptor of the file that defines the changed element, so it can reach the element by reflection; whether it depends on it cannot be proven
+    github.com/google/cel-go@v0.28.1/cel/options.go:430 reflect  registry lookup
+FINDING UNKNOWN runtime PROTO_FILE_DESCRIPTOR_REFLECTED | the caller holds the descriptor of the file that defines the changed element, so it can reach the element by reflection; whether it depends on it cannot be proven
+    github.com/google/cel-go@v0.28.1/cel/options.go:430 reflect  registry lookup
+FINDING UNKNOWN runtime PROTO_FILE_DESCRIPTOR_REFLECTED | the caller holds the descriptor of the file that defines the changed element, so it can reach the element by reflection; whether it depends on it cannot be proven
+    github.com/google/cel-go@v0.28.1/cel/options.go:430 reflect  registry lookup
+
+exit 0 seconds 50

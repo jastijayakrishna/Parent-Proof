@@ -1,0 +1,39 @@
+Analyzing c ...
+  c: Go, 715 packages read (27.7s)
+✗ Don't merge
+
+changes ZoneAwareLoadBalancerSetting.min_cluster_size (#4) from google.protobuf.UInt64Value to google.protobuf.UInt32Value
+
+7 of 18 deploy units break (c) · 1 need review (c) · 10 proved safe (c)
+
+Breaks:
+- c (7 of 18 units: helm-values-proto, install-cni, istio (library), istio-cni, istioctl and 2 more) @ dc77dca9
+  Why: the field's wire encoding changed; old and new binaries will misparse each other's messages [PROTO_FIELD_TYPE_CHANGED_USED_BY_CALLER]
+  Why: regenerated bindings change the Go type of this field [PROTO_FIELD_TYPE_CHANGED_REFERENCED_IN_SOURCE]
+  - cni/pkg/install/kubeconfig.go:100  (whole message escapes to yaml.Marshal)
+      fullYaml, err := yaml.Marshal(lcfg)
+  - cni/pkg/install/kubeconfig.go:117  (whole message escapes to yaml.Marshal)
+      redacted, err := yaml.Marshal(lrcfg)
+  - istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:206  (whole message escapes to json.Marshal)
+  - istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:233  (whole message escapes to json.Marshal)
+  - istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/fake/fake_destinationrule.gen.go:149  (whole message escapes to json.Marshal)
+  - istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/fake/fake_destinationrule.gen.go:172  (whole message escapes to json.Marshal)
+  - … 30 more location(s)
+
+Not proved:
+- c (generate_cert) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at k8s.io/apimachinery@v0.36.1/pkg/util/managedfields/extract.go:58
+  - Fix: The whole message reaches k8s.io/apimachinery/pkg/api/meta.Accessor at k8s.io/apimachinery@v0.36.1/pkg/util/managedfields/extract.go:58, k8s.io/apimachinery@v0.36.1/pkg/util/managedfields/extract.go:105, k8s.io/apimachinery@v0.36.1/pkg/util/managedfields/internal/buildmanagerinfo.go:51, k8s.io/apimachinery@v0.36.1/pkg/util/managedfields/internal/buildmanagerinfo.go:60, k8s.io/apimachinery@v0.36.1/pkg/util/managedfields/internal/capmanagers.go:48 and 95 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (5 of 18 units: install-cni, istio (library), istioctl, pilot-discovery and tools) — the caller holds the descriptor of the file that defines the changed element, so it can reach the element by reflection; whether it depends on it cannot be proven at github.com/google/cel-go@v0.28.1/cel/options.go:430
+
+Old and new running together (both deploy orders): breaks
+Rebuilding callers with the new contract: breaks
+
+How to ship this safely:
+1. Do not change ZoneAwareLoadBalancerSetting.min_cluster_size (#4) in place: add a new field with a new number, write both, move c (7 of 18 units: helm-values-proto, install-cni, istio (library), istio-cni, istioctl and 2 more) to the new field (cni/pkg/install/kubeconfig.go:100, cni/pkg/install/kubeconfig.go:117, pilot/pkg/config/kube/crd/conversion.go:105, +15 more), then reserve the old number.
+2. Upgrade istio.io/client-go and k8s.io/cli-runtime in c (7 of 18 units: helm-values-proto, install-cni, istio (library), istio-cni, istioctl and 2 more) to versions built against the new contract and deploy that before this change lands; the break is inside istio.io/client-go and k8s.io/cli-runtime, at istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:206, istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:233, istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/fake/fake_destinationrule.gen.go:149, +10 more.
+Deploy order: no order is safe while old and new binaries run side by side; make the change additive first.
+
+Verified against p@abc03d0e (base 25d2a432) and 1 caller commit(s).
+Not checked: callers other than the directories given with --callers
+
+Decision d_572ae2a4caaa8588 · keep it with --out record.json and replay with: verifier replay --file record.json
