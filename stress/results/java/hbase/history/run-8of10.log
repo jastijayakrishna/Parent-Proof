@@ -1,7 +1,7 @@
 hbase history: 57 windows, shard 8/10 has 5
 canary at 7c74f9e8c590: breaks (65 files moved) ['hbase-protocol-shaded/src/main/java/org/apache/hadoop/hbase/util/ForeignExceptionUtil.java:27: package org.apache.hadoop.hbase.shaded.protobuf.generated.ErrorHandlingProtos does not exist']
-7c74f9e8c590 2023-05-15 verifier=NO_GO build=UNKNOWN compiler=compiles 116.2s 
-fa4c8960e587 2023-11-01 verifier=NO_GO build=NO_GO compiler=breaks 119.8s 
-a5748a227ff7 2024-03-10 verifier=GO build=GO compiler=compiles 124.1s 
-46fcd3c1ec8c 2025-03-13 verifier=UNKNOWN build=GO compiler=compiles 122.5s 
-db25deefcfa8 2025-12-02 verifier=GO build=GO compiler=compiles 129.2s 
+7c74f9e8c590 2023-05-15 verifier=NO_GO build=UNKNOWN compiler=compiles 106.8s 
+fa4c8960e587 2023-11-01 verifier=NO_GO build=NO_GO compiler=breaks 107.4s 
+a5748a227ff7 2024-03-10 verifier=GO build=GO compiler=compiles 109.1s 
+46fcd3c1ec8c 2025-03-13 verifier=UNKNOWN build=GO compiler=compiles 114.4s 
+db25deefcfa8 2025-12-02 verifier=GO build=GO compiler=compiles 115.6s 
