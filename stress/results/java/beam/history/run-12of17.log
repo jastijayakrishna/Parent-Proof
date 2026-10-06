@@ -1,0 +1,3 @@
+beam history: 56 windows, shard 12/17 has 3
+canary at f337c74b828c: oracle_error (11 files moved) ['']
+f337c74b828c 2023-12-01 verifier=GO build=GO compiler=compiles 734.9s 
