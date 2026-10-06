@@ -107,6 +107,17 @@ def rows_java():
     return out
 
 
+def sets():
+    s = {}
+    for h in json.load(open("stress/go-plan.json"))["history"]:
+        s[f"{h['suite']} -> {h['consumer']}"] = h["set"]
+    for e in json.load(open("stress/corpus.json"))["ecosystems"]:
+        s[e["name"]] = e.get("set", "dev")
+    for v in json.load(open("stress/java/projects.json"))["projects"]:
+        s[v["name"]] = v.get("set", "dev")
+    return s
+
+
 def score(rows):
     judged = [r for r in rows if r["compiler"] in ("breaks", "compiles")]
     breaks = [r for r in judged if r["compiler"] == "breaks"]
@@ -150,7 +161,12 @@ def main():
     print("For the build, **missed** means the verifier said Merge and the compiler says the change breaks the code, the")
     print("failure that matters most; **false alarm** means it said Don't merge and the code compiles.")
     print()
-    for line in table([("Go", go), ("Java", java)], "language"):
+    of = sets()
+    groups = collections.OrderedDict()
+    for lang, rows in (("Go", go), ("Java", java)):
+        for r in rows:
+            groups.setdefault(f"{lang} {of.get(r['project'], 'dev')}", []).append(r)
+    for line in table(sorted(groups.items()), "language, set"):
         print(line)
     print()
     for lang, rows in (("Go", go), ("Java", java)):

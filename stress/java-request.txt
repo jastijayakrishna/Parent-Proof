@@ -1,4 +1,4 @@
-# rerun 2026-10-06: binary 826fc68 (relocated protobuf imports resolve; uncompilable contract unknown everywhere; second check strict)
+# rerun 2026-10-06: binary ee76650 (a Go code change next to a .proto change no caller sees is checked)
 set=dev,regression
 only=
 modes=history,scan
