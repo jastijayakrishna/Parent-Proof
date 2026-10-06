@@ -10,9 +10,9 @@ work=$RUNNER_TEMP/diag
 mkdir -p "$work" "$out"
 git clone -q "$p" "$work/p"
 git clone -q "$c" "$work/c" && git -C "$work/c" checkout -q "$crev"
-"$RUNNER_TEMP/verifier" verify --repo "$work/p" --base "$base" --head "$head" --callers "$work/c" --out "$out/rec.json" > "$out/verify.txt" 2>&1
+"$RUNNER_TEMP/verifier" verify --repo "$work/p" --base "$base" --head "$head" --callers "$work/c" --out "$work/rec.json" > "$out/verify.txt" 2>&1
 echo "== verify exit $?"
-python3 - "$out/rec.json" "$pat" <<'PY'
+python3 - "$work/rec.json" "$pat" <<'PY'
 import json, sys
 rec = json.load(open(sys.argv[1])); pat = sys.argv[2]
 d = rec["decision"]
