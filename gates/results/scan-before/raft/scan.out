@@ -1,25 +1,25 @@
-time=2026-10-06T04:51:51.190Z level=INFO msg=cloning repo=p-raft url=https://github.com/etcd-io/raft.git
-time=2026-10-06T04:51:51.464Z level=INFO msg=cloning repo=c-raft url=https://github.com/etcd-io/etcd.git
-raft        6a6292ca UNKNOWN  source_build=UNKNOWN compiler=compiles           33.6s 
+time=2026-10-06T06:02:51.632Z level=INFO msg=cloning repo=p-raft url=https://github.com/etcd-io/raft.git
+time=2026-10-06T06:02:52.468Z level=INFO msg=cloning repo=c-raft url=https://github.com/etcd-io/etcd.git
+raft        6a6292ca UNKNOWN  source_build=UNKNOWN compiler=compiles           31.8s 
 raft        f74985a9 UNKNOWN  source_build=UNKNOWN compiler=compiles            1.2s 
-raft        b16b7774 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.6s 
-raft        86363cdf NO_GO    source_build=NO_GO   compiler=compiles            2.4s 
-raft        704f1727 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.6s 
-raft        a690062a NO_GO    source_build=NO_GO   compiler=compiles            2.5s 
-raft        771b0932 NO_GO    source_build=NO_GO   compiler=compiles            2.5s 
-raft        5968cae6 NO_GO    source_build=NO_GO   compiler=compiles            2.4s 
-raft        b7794c1f NO_GO    source_build=NO_GO   compiler=compiles            2.5s 
-raft        e2530f38 NO_GO    source_build=NO_GO   compiler=compiles            2.2s 
-raft        be0b19b0 NO_GO    source_build=NO_GO   compiler=compiles            2.0s 
-raft        04c89da8 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.0s 
-raft        11594660 NO_GO    source_build=GO      compiler=compiles            2.8s 
-raft        09c91d8d NO_GO    source_build=GO      compiler=compiles            2.5s 
-raft        35cb355a NO_GO    source_build=GO      compiler=compiles            2.1s 
-raft        ffe5efcf GO       source_build=GO      compiler=compiles            2.6s 
-raft        478fe7eb GO       source_build=GO      compiler=compiles            1.2s 
-raft        55e6a837 NO_GO    source_build=NO_GO   compiler=compiles            1.2s 
-raft        8ece7ae2 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.1s 
-raft        bb816797 UNKNOWN  source_build=GO      compiler=compiles            2.7s 
+raft        b16b7774 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.0s 
+raft        86363cdf NO_GO    source_build=NO_GO   compiler=compiles            2.6s 
+raft        704f1727 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.8s 
+raft        a690062a NO_GO    source_build=NO_GO   compiler=compiles            2.7s 
+raft        771b0932 NO_GO    source_build=NO_GO   compiler=compiles            2.6s 
+raft        5968cae6 NO_GO    source_build=NO_GO   compiler=compiles            2.6s 
+raft        b7794c1f NO_GO    source_build=NO_GO   compiler=compiles            2.7s 
+raft        e2530f38 NO_GO    source_build=NO_GO   compiler=compiles            2.5s 
+raft        be0b19b0 NO_GO    source_build=NO_GO   compiler=compiles            1.8s 
+raft        04c89da8 UNKNOWN  source_build=UNKNOWN compiler=compiles            1.8s 
+raft        11594660 NO_GO    source_build=GO      compiler=compiles            3.8s 
+raft        09c91d8d NO_GO    source_build=GO      compiler=compiles            3.4s 
+raft        35cb355a NO_GO    source_build=GO      compiler=compiles            2.6s 
+raft        ffe5efcf GO       source_build=GO      compiler=compiles            5.2s 
+raft        478fe7eb GO       source_build=GO      compiler=compiles            1.6s 
+raft        55e6a837 NO_GO    source_build=NO_GO   compiler=compiles            1.3s 
+raft        8ece7ae2 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.7s 
+raft        bb816797 UNKNOWN  source_build=GO      compiler=compiles            3.2s 
 raft          20 decisions  GO   2  NO-GO  11  UNKNOWN   7 (35.0%)  errors 0 | compiler judged  20: agree  14  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 6 | not judged 0
 TOTAL         20 decisions  GO   2  NO-GO  11  UNKNOWN   7 (35.0%)  errors 0 | compiler judged  20: agree  14  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 6 | not judged 0
 
@@ -36,6 +36,6 @@ UNKNOWN reasons across all: windows, ecosystems, an example
   FAILED raft@04c89da8809ad88465d62931fd88411cd41cc1f2: unknown_on_safe: OPTION_CHANGED
   FAILED raft@8ece7ae210fdfff394a60285a7388537e2662cdf: unknown_on_safe: OPTION_CHANGED, UNRESOLVED_MEMBER
 
-20 windows in 1m18s.
+20 windows in 1m27s.
 verifier gate: scan failed: 6 disagreements with the compiler or errors
 exit 1
