@@ -58,6 +58,7 @@ jobs:
         run: |
           set +e
           rm -rf "$OUT"; mkdir -p "$OUT"
+          gunzip -c bin/verifier-linux-amd64.gz > "$RUNNER_TEMP/verifier" && chmod +x "$RUNNER_TEMP/verifier"
           started=$(date +%s)
           timeout 50m bash -c "$CMD" > "$RUNNER_TEMP/task.out" 2>&1
           rc=$?

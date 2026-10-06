@@ -1,4 +1,3 @@
-# Round 3 (2026-10-05): Camunda with every module that uses the generated gRPC code; Google bigtable (hold-out). No verifier runs.
-build-camunda-zeebe camunda-zeebe bash stress/probe/build.sh camunda-zeebe "$OUT"
-layout-google-cloud-bigtable-history - python3 stress/probe/layout.py google-cloud-bigtable-history "$OUT"
-build-google-cloud-bigtable-history google-cloud-bigtable-history bash stress/probe/build.sh google-cloud-bigtable-history "$OUT"
+# Diagnose 2026-10-06: what the verifier saw on windows it called Merge while javac broke (binary 6f9abec).
+diag-hbase-20c9e4ba hbase python3 stress/probe/diagnose.py hbase history 20c9e4ba "$OUT"
+diag-camunda-7e28eeef camunda-zeebe python3 stress/probe/diagnose.py camunda-zeebe history 7e28eeef "$OUT"
