@@ -1,0 +1,224 @@
+{
+ "window": {
+  "project": "camunda-zeebe",
+  "mode": "history",
+  "id": "7e28eeef5fab",
+  "bump": "7e28eeef5fabc1842fbf6e6854699a13b9e37517",
+  "date": "2026-06-29",
+  "subject": "propagate business ID from process instance to jobs (#55963)",
+  "consumer_commit": "f3184afb1747ad90fc8ea6049ca54791ec166fe8",
+  "provider": "camunda/camunda",
+  "old": "f3184afb1747ad90fc8ea6049ca54791ec166fe8",
+  "new": "7e28eeef5fabc1842fbf6e6854699a13b9e37517"
+ },
+ "started": "2026-10-06T03:12:13Z",
+ "baseline": {
+  "ok": true,
+  "seconds": 280.1
+ },
+ "modules": {
+  "built": [
+   "authentication",
+   "build-tools",
+   "clients/java",
+   "configuration-api",
+   "document/api",
+   "document/store",
+   "gateways/gateway-mapping-http",
+   "gateways/gateway-model",
+   "search/search-client",
+   "search/search-client-query-transformer",
+   "search/search-client-reader",
+   "search/search-domain",
+   "security/security-core",
+   "security/security-protocol",
+   "security/security-validation",
+   "service",
+   "spring-utils",
+   "webapps-schema",
+   "zeebe/atomix/cluster",
+   "zeebe/atomix/utils",
+   "zeebe/auth",
+   "zeebe/backup",
+   "zeebe/bpmn-model",
+   "zeebe/broker-client",
+   "zeebe/dynamic-config",
+   "zeebe/exporter-api",
+   "zeebe/gateway",
+   "zeebe/gateway-grpc",
+   "zeebe/gateway-protocol",
+   "zeebe/gateway-protocol-impl",
+   "zeebe/gateway-rest",
+   "zeebe/journal",
+   "zeebe/logstreams",
+   "zeebe/msgpack-core",
+   "zeebe/msgpack-value",
+   "zeebe/protocol",
+   "zeebe/protocol-asserts",
+   "zeebe/protocol-impl",
+   "zeebe/protocol-test-util",
+   "zeebe/scheduler",
+   "zeebe/snapshot",
+   "zeebe/stream-platform",
+   "zeebe/test-util",
+   "zeebe/transport",
+   "zeebe/util",
+   "zeebe/zb-db"
+  ],
+  "unbuilt": [
+   "clients/camunda-spring-boot-3-starter",
+   "clients/camunda-spring-boot-starter",
+   "clients/camunda-spring-boot-starter-virtual-threads",
+   "configuration",
+   "db/rdbms",
+   "db/rdbms-schema",
+   "debug-cli",
+   "dist",
+   "gateways/gateway-mcp",
+   "load-tests/load-tester",
+   "microbenchmarks",
+   "operate/common",
+   "operate/data-generator",
+   "operate/webapp",
+   "optimize/backend",
+   "optimize/upgrade",
+   "optimize/util/optimize-commons",
+   "qa/testcontainer",
+   "qa/util",
+   "schema-manager",
+   "search/search-client-connect",
+   "search/search-client-elasticsearch",
+   "search/search-client-opensearch",
+   "search/search-client-plugin",
+   "search/search-test-utils",
+   "security/security-services",
+   "tasklist/common",
+   "tasklist/data-generator",
+   "tasklist/qa/util",
+   "tasklist/webapp",
+   "testing/camunda-process-test-coverage",
+   "testing/camunda-process-test-example",
+   "testing/camunda-process-test-java",
+   "testing/camunda-process-test-json-test-cases",
+   "testing/camunda-process-test-langchain4j",
+   "testing/camunda-process-test-spring",
+   "webapp/server",
+   "webapps-backup",
+   "webapps-common",
+   "zeebe/backup-stores/azure",
+   "zeebe/backup-stores/common",
+   "zeebe/backup-stores/filesystem",
+   "zeebe/backup-stores/gcs",
+   "zeebe/backup-stores/s3",
+   "zeebe/broker",
+   "zeebe/dmn",
+   "zeebe/dynamic-node-id-provider",
+   "zeebe/engine",
+   "zeebe/exporter-common",
+   "zeebe/exporter-filter",
+   "zeebe/exporter-test",
+   "zeebe/exporters/analytics-exporter",
+   "zeebe/exporters/app-integrations-exporter",
+   "zeebe/exporters/camunda-exporter",
+   "zeebe/exporters/elasticsearch-exporter",
+   "zeebe/exporters/opensearch-exporter",
+   "zeebe/exporters/rdbms-exporter",
+   "zeebe/expression-language",
+   "zeebe/feel",
+   "zeebe/feel-tagged-parameters",
+   "zeebe/protocol-jackson",
+   "zeebe/qa/util",
+   "zeebe/restore"
+  ]
+ },
+ "oracle": {
+  "outcome": "breaks",
+  "error_count": 2,
+  "errors": [
+   "gateways/gateway-mapping-http/src/main/java/io/camunda/gateway/mapping/http/ResponseMapper.java:236: cannot find symbol",
+   "gateways/gateway-mapping-http/src/main/java/io/camunda/gateway/mapping/http/search/SearchQueryResponseMapper.java:926: cannot find symbol"
+  ],
+  "seconds": 70.4,
+  "overlaid": 2,
+  "removed": 0
+ },
+ "seconds": 379.2
+}
+VERDICT GO {'generated_code': 'GO', 'runtime': 'GO', 'source_build': 'GO'} []
+CHANGES 1 (java 0)
+   FIELD_ADDED field gateway_protocol.ActivatedJob.#20 zeebe/gateway-protocol/src/main/proto/gateway.proto
+FINDINGS 0
+CALLERS [('wt', 'GO', None)]
+FOOTPRINT wt lang=java analyzer=jvm-analyzer/v0.9.0 uses=3065 gaps=0
+   implement uses: 27
+     gateway_protocol.Gateway type reference None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 11 0
+     gateway_protocol.Gateway type reference None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 60 0
+     gateway_protocol.Gateway implements gateway_protocol.Gateway via GatewayGrpc.GatewayImplBase True zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 63 46
+     gateway_protocol.Gateway server base class constructed None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 63 0
+     gateway_protocol.Gateway.ActivateJobs overrides activateJobs None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 71 0
+     gateway_protocol.Gateway.StreamActivatedJobs overrides streamActivatedJobs None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 79 0
+     gateway_protocol.Gateway.CancelProcessInstance overrides cancelProcessInstance None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 87 0
+     gateway_protocol.Gateway.CompleteJob overrides completeJob None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 95 0
+     gateway_protocol.Gateway.CreateProcessInstance overrides createProcessInstance None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 103 0
+     gateway_protocol.Gateway.CreateProcessInstanceWithResult overrides createProcessInstanceWithResult None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 111 0
+     gateway_protocol.Gateway.EvaluateDecision overrides evaluateDecision None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 119 0
+     gateway_protocol.Gateway.DeployProcess overrides deployProcess None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 127 0
+     gateway_protocol.Gateway.DeployResource overrides deployResource None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 135 0
+     gateway_protocol.Gateway.FailJob overrides failJob None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 142 0
+     gateway_protocol.Gateway.ThrowError overrides throwError None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 148 0
+     gateway_protocol.Gateway.PublishMessage overrides publishMessage None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 156 0
+     gateway_protocol.Gateway.ResolveIncident overrides resolveIncident None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 164 0
+     gateway_protocol.Gateway.SetVariables overrides setVariables None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 172 0
+     gateway_protocol.Gateway.Topology overrides topology None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 179 0
+     gateway_protocol.Gateway.UpdateJobRetries overrides updateJobRetries None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 186 0
+     gateway_protocol.Gateway.ModifyProcessInstance overrides modifyProcessInstance None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 194 0
+     gateway_protocol.Gateway.MigrateProcessInstance overrides migrateProcessInstance None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 202 0
+     gateway_protocol.Gateway.UpdateJobTimeout overrides updateJobTimeout None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 210 0
+     gateway_protocol.Gateway.UpdateJobPriority overrides updateJobPriority None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 218 0
+     gateway_protocol.Gateway.DeleteResource overrides deleteResource None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 226 0
+     gateway_protocol.Gateway.BroadcastSignal overrides broadcastSignal None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 234 0
+     gateway_protocol.Gateway.EvaluateConditional overrides evaluateConditional None zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 242 0
+   uses of touched symbols: 89
+     message_type gateway_protocol.ActivatedJob clients/java/src/main/java/io/camunda/client/impl/command/StreamJobsCommandImpl.java 98 source
+     message_type gateway_protocol.ActivatedJob clients/java/src/main/java/io/camunda/client/impl/command/StreamJobsCommandImpl.java 111 source
+     message_type gateway_protocol.ActivatedJob clients/java/src/main/java/io/camunda/client/impl/command/StreamJobsCommandImpl.java 180 source
+     message_type gateway_protocol.ActivatedJob clients/java/src/main/java/io/camunda/client/impl/response/ActivateJobsResponseImpl.java 38 local variable
+     message_type gateway_protocol.ActivatedJob clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 65 source
+     read gateway_protocol.ActivatedJob.#1 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 68 getter
+     read gateway_protocol.ActivatedJob.#2 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 69 getter
+     read gateway_protocol.ActivatedJob.#9 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 73 getter
+     read gateway_protocol.ActivatedJob.#10 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 76 getter
+     read gateway_protocol.ActivatedJob.#11 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 77 getter
+     read gateway_protocol.ActivatedJob.#19 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 78 getter
+     read gateway_protocol.ActivatedJob.#12 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 79 getter
+     read gateway_protocol.ActivatedJob.#13 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 80 getter
+     read gateway_protocol.ActivatedJob.#3 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 81 getter
+     read gateway_protocol.ActivatedJob.#4 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 82 getter
+     read gateway_protocol.ActivatedJob.#5 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 83 getter
+     read gateway_protocol.ActivatedJob.#6 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 84 getter
+     read gateway_protocol.ActivatedJob.#7 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 85 getter
+     read gateway_protocol.ActivatedJob.#8 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 86 getter
+     read gateway_protocol.ActivatedJob.#14 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 87 getter
+     has gateway_protocol.ActivatedJob.#15 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 88 
+     read gateway_protocol.ActivatedJob.#15 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 88 getter
+     read gateway_protocol.ActivatedJob.#16 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 89 getter
+     read gateway_protocol.ActivatedJob.#17 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 90 getter
+     read gateway_protocol.ActivatedJob.#18 clients/java/src/main/java/io/camunda/client/impl/response/ActivatedJobImpl.java 91 
+     message_type gateway_protocol.ActivatedJob zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/EndpointManager.java 28 import
+     message_type gateway_protocol.ActivatedJob zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/EndpointManager.java 206 source
+     message_type gateway_protocol.ActivatedJob zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 14 import
+     message_type gateway_protocol.ActivatedJob zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/GatewayGrpcService.java 78 source
+     message_type gateway_protocol.ActivatedJob zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/ResponseMapper.java 20 import
+     message_type gateway_protocol.ActivatedJob zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/ResponseMapper.java 344 source
+     message_type gateway_protocol.ActivatedJob zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/ResponseMapper.java 345 source
+     message_type gateway_protocol.ActivatedJob zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/ResponseMapper.java 350 source
+     message_type gateway_protocol.ActivatedJob zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/ResponseMapper.java 370 cast
+     message_type gateway_protocol.ActivatedJob zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/ResponseMapper.java 377 source
+     message_type gateway_protocol.ActivatedJob zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/ResponseMapper.java 385 source
+     construct gateway_protocol.ActivatedJob zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/ResponseMapper.java 387 
+     message_type gateway_protocol.ActivatedJob zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/ResponseMapper.java 387 source
+     message_type gateway_protocol.ActivatedJob zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/ResponseMapper.java 387 static member newBuilder
+     write gateway_protocol.ActivatedJob.#1 zeebe/gateway-grpc/src/main/java/io/camunda/zeebe/gateway/ResponseMapper.java 388 
+COMPILER breaks ['gateways/gateway-mapping-http/src/main/java/io/camunda/gateway/mapping/http/ResponseMapper.java:236: cannot find symbol', 'gateways/gateway-mapping-http/src/main/java/io/camunda/gateway/mapping/http/search/SearchQueryResponseMapper.java:926: cannot find symbol']
+
+exit 0 seconds 401
