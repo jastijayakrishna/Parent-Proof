@@ -1,6 +1,6 @@
 # Stress test: Go and Java consumers
 
-Updated 2026-10-06 14:19 UTC. Plan and rules: [stress/PREREG.md](stress/PREREG.md).
+Updated 2026-10-06 14:48 UTC. Plan and rules: [stress/PREREG.md](stress/PREREG.md).
 
 Every row is a real contract change of an open-source project never used to tune the verifier, decided by the
 verifier before the project's own compiler judged it (Go: `go build`; Java: the project's Maven or Gradle build).
@@ -11,7 +11,7 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 |---|---|---|---|---|---|---|---|---|
 | Go dev | 149 | 81 | 7 | 7 | **0** | 0 | 24 (16%) | 0 |
 | Go holdout | 254 | 204 | 22 | 12 | **0** | 4 | 58 (23%) | 0 |
-| Java dev | 451 | 97 | 19 | 18 | **0** | 0 | 13 (3%) | 0 |
+| Java dev | 450 | 86 | 17 | 16 | **0** | 0 | 13 (3%) | 0 |
 | Java holdout | 491 | 27 | 2 | 2 | **0** | 1 | 31 (10%) | 174 |
 | Java regression | 84 | 75 | 5 | 5 | **0** | 0 | 21 (27%) | 0 |
 
@@ -45,14 +45,14 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 | alluxio (history) | 27 | 27 | 2 | 2 | **0** | 1 | 5 (19%) | 0 |
 | bazel (history) | 174 | 0 | 0 | 0 | **0** | 0 | 0 (-) | 174 |
 | beam (history) | 36 | 0 | 0 | 0 | **0** | 0 | 12 (40%) | 0 |
-| camunda-zeebe (history) | 55 | 12 | 1 | 1 | **0** | 0 | 0 (0%) | 0 |
+| camunda-zeebe (history) | 54 | 10 | 1 | 1 | **0** | 0 | 0 (0%) | 0 |
 | client-java (history) | 10 | 9 | 3 | 3 | **0** | 0 | 0 (0%) | 0 |
 | client-java (scan) | 20 | 20 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
 | conductor (history) | 25 | 0 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
 | google-cloud-bigtable-history (history) | 254 | 0 | 0 | 0 | **0** | 0 | 14 (6%) | 0 |
 | google-cloud-pubsub (history) | 19 | 0 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
 | google-cloud-pubsub-history (history) | 248 | 0 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
-| hbase (history) | 57 | 56 | 16 | 16 | **0** | 0 | 5 (9%) | 0 |
+| hbase (history) | 57 | 47 | 14 | 14 | **0** | 0 | 5 (10%) | 0 |
 | java-control-plane (history) | 23 | 23 | 0 | 0 | **0** | 0 | 21 (91%) | 0 |
 | jetcd (history) | 5 | 5 | 1 | 1 | **0** | 0 | 0 (0%) | 0 |
 | skywalking-java (history) | 6 | 6 | 1 | 1 | **0** | 0 | 0 (0%) | 0 |
@@ -74,12 +74,12 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 ## Needs review, by reason
 
 - Go: CONTRACT_COMPILE_ERROR 41, GO_API_CHANGED_USED_BY_CALLER 28, DESCRIPTOR_REFLECTION 21, OPTION_CHANGED 16, NEEDS_REVIEW 14, SECOND_CHECK_DISAGREES 6, WHOLE_MESSAGE_FLOW 4, UNRESOLVED_MEMBER 3, TYPE_ERROR_HIDES_USES 3
-- Java: CONTRACT_COMPILE_ERROR 28, OPTION_CHANGED 26, NEEDS_REVIEW 17, JAVA_INLINED_CONSTANTS_UNCHECKED 6, JAVA_DYNAMIC_CODE 5, DESCRIPTOR_REFLECTION 2, WHOLE_MESSAGE_FLOW 2
+- Java: CONTRACT_COMPILE_ERROR 28, OPTION_CHANGED 26, NEEDS_REVIEW 16, JAVA_INLINED_CONSTANTS_UNCHECKED 6, JAVA_DYNAMIC_CODE 5, DESCRIPTOR_REFLECTION 2, WHOLE_MESSAGE_FLOW 2
 
 ## Not judged by the compiler, by reason
 
 - Go: not judged 66, baseline_fails 39, bump_side_effect 8, oracle_error 3, judge not verified 2
-- Java: oracle_error 431, not_built 174, judge not verified 148, baseline_fails 74
+- Java: oracle_error 431, not_built 174, judge not verified 151, baseline_fails 81
 
 ## Errors: 174
 
@@ -204,4 +204,4 @@ verifier verify: nothing was analyzed: fix the inputs above
 verifier verify: nothing was analyzed: fix the inputs above
 
 
-## Job minutes: 128 jobs, slowest 40.0 min (stress/results/java/beam/history/job-9of17.json), 15 over 30 min
+## Job minutes: 128 jobs, slowest 40.0 min (stress/results/java/camunda-zeebe/history/job-8of12.json), 16 over 30 min
