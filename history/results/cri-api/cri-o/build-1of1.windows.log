@@ -1,5 +1,3 @@
-time=2026-10-06T04:30:49.561Z level=INFO msg=cloning repo=cri-api url=https://github.com/kubernetes/cri-api.git
-time=2026-10-06T04:30:50.543Z level=INFO msg=cloning repo=cri-o url=https://github.com/cri-o/cri-o.git
 time=2026-10-06T04:31:06.448Z level=INFO msg=skip consumer=cri-o bump=bdcf72ff old=v0.32.3 new=v0.33.0-beta.0.0.20250313010358-ab383b81657e reason=not_sampled
 time=2026-10-06T04:31:06.448Z level=INFO msg=skip consumer=cri-o bump=b865f003 old=v0.29.2 new=v0.30.0-alpha.2.0.20240217224521-840a52e4cd66 reason=not_sampled
 time=2026-10-06T04:31:06.448Z level=INFO msg=skip consumer=cri-o bump=ba02be89 old=v0.30.0-alpha.2.0.20240217224521-840a52e4cd66 new=v0.30.0 reason=not_sampled
@@ -39,4 +37,3 @@ time=2026-10-06T04:47:33.466Z level=INFO msg=window consumer=cri-o bump=07a1e0ee
 time=2026-10-06T04:47:37.729Z level=INFO msg=window consumer=cri-o bump=64de36a6 select=additive breaking=0 compiler=compiles
 time=2026-10-06T04:48:07.686Z level=INFO msg=window consumer=cri-o bump=043cae7b select=additive breaking=0 compiler=compiles
 time=2026-10-06T04:48:08.797Z level=INFO msg=window consumer=cri-o bump=86effcdc select=additive breaking=0 compiler=compiles
-time=2026-10-06T04:48:08.797Z level=INFO msg="suite built" suite=cri-api windows_added=33
