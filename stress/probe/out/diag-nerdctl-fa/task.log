@@ -1,0 +1,480 @@
+1 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares docker.WithFetchRefreshToken, which the caller uses; the caller will not compile
+    pkg/cmd/login/login.go:178 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares config.ConfigureHosts, which the caller uses; the caller will not compile
+    pkg/cmd/image/push.go:148 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares config.HostOptions.AuthorizerOpts, which the caller uses; the caller will not compile
+    pkg/cmd/login/login.go:178 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares rootfs.CreateDiff, which the caller uses; the caller will not compile
+    pkg/imgutil/commit/commit.go:317 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares opts.WithNamespaceCgroupDeletion, which the caller uses; the caller will not compile
+    pkg/cmd/namespace/namespace_linux.go:27 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares restart.CountLabel, which the caller uses; the caller will not compile
+    pkg/inspecttypes/dockercompat/dockercompat.go:236 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares restart.ExplicitlyStoppedLabel, which the caller uses; the caller will not compile
+    pkg/containerutil/containerutil.go:124 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares restart.NewPolicy, which the caller uses; the caller will not compile
+    pkg/cmd/container/run_restart.go:61 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares restart.PolicyLabel, which the caller uses; the caller will not compile
+    pkg/containerutil/containerutil.go:259 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares restart.Reconcile, which the caller uses; the caller will not compile
+    cmd/nerdctl/compose_ps.go:372 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares restart.StatusLabel, which the caller uses; the caller will not compile
+    cmd/nerdctl/compose_ps.go:372 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares restart.WithLogURIString, which the caller uses; the caller will not compile
+    pkg/cmd/container/run_restart.go:71 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares restart.WithPolicy, which the caller uses; the caller will not compile
+    pkg/cmd/container/run_restart.go:69 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares restart.WithStatus, which the caller uses; the caller will not compile
+    pkg/cmd/container/run_restart.go:69 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares introspection.Service, which the caller uses; the caller will not compile
+    pkg/infoutil/infoutil.go:102 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares introspection.Service.Plugins, which the caller uses; the caller will not compile
+    pkg/cmd/container/run_restart.go:35 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares introspection.Service.Server, which the caller uses; the caller will not compile
+    pkg/infoutil/infoutil.go:46 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Info, which the caller uses; the caller will not compile
+    pkg/containerdutil/snapshotter.go:30 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Info.Labels, which the caller uses (in github.com/containerd/accelerated-container-image@v1.1.4, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/accelerated-container-image to a version that matches
+    github.com/containerd/accelerated-container-image@v1.1.4/pkg/convertor/convertor.go:480 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Info.Name, which the caller uses; the caller will not compile
+    cmd/nerdctl/image_history.go:129 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Info.Parent, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:385 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Opt, which the caller uses (in github.com/containerd/accelerated-container-image@v1.1.4, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/accelerated-container-image to a version that matches
+    github.com/containerd/accelerated-container-image@v1.1.4/pkg/convertor/convertor.go:503 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Snapshotter, which the caller uses (containerdutil.snapshotterWithCache is used as it); the caller will not compile
+    pkg/containerdutil/snapshotter.go:28 go_api  used as this interface
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Snapshotter, which the caller uses (in github.com/containerd/accelerated-container-image@v1.1.4, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/accelerated-container-image to a version that matches
+    github.com/containerd/accelerated-container-image@v1.1.4/pkg/convertor/convertor.go:221 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Snapshotter, which the caller uses; the caller will not compile
+    cmd/nerdctl/compose_images.go:124 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Snapshotter.Commit, which the caller uses (in github.com/containerd/accelerated-container-image@v1.1.4, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/accelerated-container-image to a version that matches
+    github.com/containerd/accelerated-container-image@v1.1.4/pkg/convertor/convertor.go:651 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Snapshotter.Commit, which the caller uses; the caller will not compile
+    pkg/imgutil/commit/commit.go:370 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Snapshotter.Mounts, which the caller uses; the caller will not compile
+    cmd/nerdctl/container_diff.go:129 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Snapshotter.Prepare, which the caller uses (in github.com/containerd/accelerated-container-image@v1.1.4, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/accelerated-container-image to a version that matches
+    github.com/containerd/accelerated-container-image@v1.1.4/pkg/convertor/convertor.go:511 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Snapshotter.Prepare, which the caller uses; the caller will not compile
+    pkg/imgutil/commit/commit.go:351 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Snapshotter.Remove, which the caller uses (in github.com/containerd/accelerated-container-image@v1.1.4, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/accelerated-container-image to a version that matches
+    github.com/containerd/accelerated-container-image@v1.1.4/pkg/convertor/convertor.go:516 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Snapshotter.Remove, which the caller uses; the caller will not compile
+    cmd/nerdctl/container_diff.go:172 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Snapshotter.Stat, which the caller uses (in github.com/containerd/accelerated-container-image@v1.1.4, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/accelerated-container-image to a version that matches
+    github.com/containerd/accelerated-container-image@v1.1.4/pkg/convertor/convertor.go:474 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Snapshotter.Stat, which the caller uses; the caller will not compile
+    cmd/nerdctl/image_history.go:120 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Snapshotter.Usage, which the caller uses; the caller will not compile
+    cmd/nerdctl/image_history.go:124 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Snapshotter.View, which the caller uses; the caller will not compile
+    cmd/nerdctl/container_diff.go:168 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Usage, which the caller uses; the caller will not compile
+    pkg/containerdutil/snapshotter.go:31 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Usage.Inodes, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:397 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Usage.Size, which the caller uses; the caller will not compile
+    cmd/nerdctl/image_history.go:128 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.WithLabels, which the caller uses (in github.com/containerd/accelerated-container-image@v1.1.4, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/accelerated-container-image to a version that matches
+    github.com/containerd/accelerated-container-image@v1.1.4/pkg/convertor/convertor.go:504 go_api
+FINDING NO_GO runtime PROTO_MESSAGE_REMOVED_USED_BY_CALLER | caller uses a message the provider no longer defines
+    github.com/containerd/containerd@v1.7.20/task.go:714 message_type
+    github.com/containerd/containerd@v1.7.20/task.go:714 read
+    github.com/containerd/containerd@v1.7.20/task_opts.go:118 construct
+    github.com/containerd/containerd@v1.7.20/task_opts.go:118 message_type
+    github.com/containerd/containerd@v1.7.20/task_opts.go:120 message_type
+    github.com/containerd/containerd@v1.7.20/task_opts.go:124 write
+FINDING NO_GO runtime PROTO_MESSAGE_REMOVED_USED_BY_CALLER | caller uses a message the provider no longer defines
+    github.com/containerd/containerd@v1.7.20/task_opts.go:144 construct
+    github.com/containerd/containerd@v1.7.20/task_opts.go:144 message_type
+    github.com/containerd/containerd@v1.7.20/task_opts.go:146 message_type
+    github.com/containerd/containerd@v1.7.20/task_opts.go:150 write
+    github.com/containerd/containerd@v1.7.20/task_opts_unix.go:43 construct
+    github.com/containerd/containerd@v1.7.20/task_opts_unix.go:43 message_type
+    github.com/containerd/containerd@v1.7.20/task_opts_unix.go:45 message_type
+    github.com/containerd/containerd@v1.7.20/task_opts_unix.go:49 write
+FINDING NO_GO generated_code PROTO_TYPE_MOVED_GO_PACKAGE_REFERENCED | regenerated bindings put this type in a different Go package; code that names it will not compile
+    pkg/cmd/container/run_runtime.go:35 message_type
+    pkg/cmd/container/run_runtime.go:35 message_type
+FINDING NO_GO source_build PROTO_TYPE_MOVED_GO_PACKAGE_REFERENCED | caller source names the type through its old Go package
+    pkg/cmd/container/run_runtime.go:35 message_type
+    pkg/cmd/container/run_runtime.go:35 message_type
+FINDING NO_GO generated_code PROTO_MESSAGE_REMOVED_USED_BY_CALLER | regenerated bindings drop this type; the caller will not compile
+    github.com/containerd/containerd@v1.7.20/events.go:66 construct
+    github.com/containerd/containerd@v1.7.20/events.go:66 message_type
+    github.com/containerd/containerd@v1.7.20/events.go:67 write
+    github.com/containerd/containerd@v1.7.20/events.go:68 write
+    github.com/containerd/containerd@v1.7.20/events.go:69 write
+    github.com/containerd/containerd@v1.7.20/events.go:70 write
+    github.com/containerd/containerd@v1.7.20/events.go:109 read
+    github.com/containerd/containerd@v1.7.20/events.go:110 read
+FINDING NO_GO runtime PROTO_MESSAGE_REMOVED_USED_BY_CALLER | caller uses a message the provider no longer defines
+    github.com/containerd/containerd@v1.7.20/events.go:66 construct
+    github.com/containerd/containerd@v1.7.20/events.go:66 message_type
+    github.com/containerd/containerd@v1.7.20/events.go:67 write
+    github.com/containerd/containerd@v1.7.20/events.go:68 write
+    github.com/containerd/containerd@v1.7.20/events.go:69 write
+    github.com/containerd/containerd@v1.7.20/events.go:70 write
+    github.com/containerd/containerd@v1.7.20/events.go:88 call  rpc response
+    github.com/containerd/containerd@v1.7.20/events.go:109 read
+FINDING NO_GO source_build PROTO_MESSAGE_REMOVED_USED_BY_CALLER | caller source references the removed type
+    github.com/containerd/containerd@v1.7.20/events.go:66 construct
+    github.com/containerd/containerd@v1.7.20/events.go:66 message_type
+    github.com/containerd/containerd@v1.7.20/events.go:67 write
+    github.com/containerd/containerd@v1.7.20/events.go:68 write
+    github.com/containerd/containerd@v1.7.20/events.go:69 write
+    github.com/containerd/containerd@v1.7.20/events.go:70 write
+    github.com/containerd/containerd@v1.7.20/events.go:109 read
+    github.com/containerd/containerd@v1.7.20/events.go:110 read
+FINDING NO_GO generated_code PROTO_RPC_SIGNATURE_CHANGED_REFERENCED_IN_SOURCE | regenerated stubs change the method signature
+    github.com/containerd/containerd@v1.7.20/events.go:88 call
+FINDING NO_GO source_build PROTO_RPC_SIGNATURE_CHANGED_REFERENCED_IN_SOURCE | caller source uses the old method signature
+    github.com/containerd/containerd@v1.7.20/events.go:88 call
+FINDING NO_GO runtime PROTO_RPC_SIGNATURE_CHANGED_USED_BY_CALLER | request or response shape of an rpc the caller uses changed; old and new binaries exchange incompatible messages
+    github.com/containerd/containerd@v1.7.20/events.go:88 call
+FINDING NO_GO generated_code PROTO_FIELD_TYPE_CHANGED_REFERENCED_IN_SOURCE | regenerated bindings change the Go type of this field
+    github.com/containerd/containerd@v1.7.20/events.go:66 write
+FINDING NO_GO source_build PROTO_FIELD_TYPE_CHANGED_REFERENCED_IN_SOURCE | caller source uses the field with its old type
+    github.com/containerd/containerd@v1.7.20/events.go:66 write
+FINDING NO_GO runtime PROTO_FIELD_TYPE_CHANGED_USED_BY_CALLER | the field's wire encoding changed; old and new binaries will misparse each other's messages
+    github.com/containerd/containerd@v1.7.20/events.go:66 write
+FINDING NO_GO runtime PROTO_FILE_REMOVED_USED_BY_CALLER | caller depends on a contract file that was deleted
+    github.com/containerd/containerd@v1.7.20/task.go:714 message_type
+    github.com/containerd/containerd@v1.7.20/task.go:714 read
+    github.com/containerd/containerd@v1.7.20/task_opts.go:118 construct
+    github.com/containerd/containerd@v1.7.20/task_opts.go:118 message_type
+    github.com/containerd/containerd@v1.7.20/task_opts.go:120 message_type
+    github.com/containerd/containerd@v1.7.20/task_opts.go:124 write
+    github.com/containerd/containerd@v1.7.20/task_opts.go:144 construct
+    github.com/containerd/containerd@v1.7.20/task_opts.go:144 message_type
+FINDING NO_GO runtime PROTO_FILE_REMOVED_USED_BY_CALLER | caller depends on a contract file that was deleted
+    github.com/containerd/containerd@v1.7.20/container.go:333 construct
+    github.com/containerd/containerd@v1.7.20/container.go:333 message_type
+    github.com/containerd/containerd@v1.7.20/container.go:334 write
+    github.com/containerd/containerd@v1.7.20/container.go:335 write
+    github.com/containerd/containerd@v1.7.20/container.go:336 write
+    github.com/containerd/containerd@v1.7.20/container.go:337 write
+    github.com/containerd/containerd@v1.7.20/container.go:338 write
+    github.com/containerd/containerd@v1.7.20/container.go:339 write
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Client, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/client.go:60 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Client, which the caller uses; the caller will not compile
+    pkg/idutil/imagewalker/imagewalker.go:42 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Client.ContentStore, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/client.go:78 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Client.ContentStore, which the caller uses; the caller will not compile
+    pkg/imgutil/pull/pull.go:59 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Client.Fetch, which the caller uses; the caller will not compile
+    pkg/imgutil/pull/pull.go:92 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Client.ImageService, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/client.go:70 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Client.ImageService, which the caller uses; the caller will not compile
+    pkg/idutil/imagewalker/imagewalker.go:60 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Client.IntrospectionService, which the caller uses; the caller will not compile
+    pkg/infoutil/infoutil.go:41 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Client.Pull, which the caller uses; the caller will not compile
+    pkg/imgutil/pull/pull.go:88 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Client.Version, which the caller uses; the caller will not compile
+    pkg/infoutil/infoutil.go:65 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Client.VersionService, which the caller uses; the caller will not compile
+    pkg/infoutil/infoutil.go:50 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Client.WithLease, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:196 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.DefaultSnapshotter, which the caller uses; the caller will not compile
+    pkg/config/config.go:52 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Image, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:48 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Image.Config, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:256 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Image.ContentStore, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:263 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Image.IsUnpacked, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:80 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Image.RootFS, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:412 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Image.Target, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:279 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Image.Unpack, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:81 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.NewContainerOpts, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/client.go:68 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.NewImage, which the caller uses; the caller will not compile
+    pkg/imgutil/filtering.go:191 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.NewImageWithPlatform, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:66 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Paused, which the caller uses; the caller will not compile
+    pkg/inspecttypes/dockercompat/dockercompat.go:289 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.RemoteContext, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/client.go:60 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.RemoteContext.UnpackOpts, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/client.go:61 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.RemoteOpt, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/client.go:59 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.RemoteOpt, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:205 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Running, which the caller uses; the caller will not compile
+    pkg/inspecttypes/dockercompat/dockercompat.go:235 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Status, which the caller uses; the caller will not compile
+    pkg/inspecttypes/dockercompat/dockercompat.go:386 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Status.ExitStatus, which the caller uses; the caller will not compile
+    pkg/inspecttypes/dockercompat/dockercompat.go:291 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Status.ExitTime, which the caller uses; the caller will not compile
+    pkg/inspecttypes/dockercompat/dockercompat.go:298 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Status.Status, which the caller uses; the caller will not compile
+    pkg/inspecttypes/dockercompat/dockercompat.go:288 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Stopped, which the caller uses; the caller will not compile
+    pkg/inspecttypes/dockercompat/dockercompat.go:388 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.UnpackConfig, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/client.go:52 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.UnpackConfig.ApplyOpts, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/client.go:53 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.UnpackOpt, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/client.go:51 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.UnpackOpt, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:228 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Version.Revision, which the caller uses; the caller will not compile
+    pkg/infoutil/infoutil.go:140 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.Version.Version, which the caller uses; the caller will not compile
+    pkg/infoutil/infoutil.go:97 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.WithImageHandler, which the caller uses; the caller will not compile
+    pkg/imgutil/pull/pull.go:75 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.WithImageHandlerWrapper, which the caller uses; the caller will not compile
+    pkg/imgutil/snapshotter.go:91 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.WithPlatformMatcher, which the caller uses; the caller will not compile
+    pkg/imgutil/pull/pull.go:78 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.WithPullSnapshotter, which the caller uses; the caller will not compile
+    pkg/imgutil/snapshotter.go:92 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.WithPullUnpack, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:227 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.WithResolver, which the caller uses; the caller will not compile
+    pkg/imgutil/pull/pull.go:74 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.WithSchema1Conversion, which the caller uses; the caller will not compile
+    pkg/imgutil/pull/pull.go:77 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containerd.WithUnpackOpts, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:228 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containers.Container, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/client.go:69 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containers.Container, which the caller uses; the caller will not compile
+    pkg/inspecttypes/native/container.go:29 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containers.Container.CreatedAt, which the caller uses; the caller will not compile
+    pkg/inspecttypes/dockercompat/dockercompat.go:228 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containers.Container.ID, which the caller uses; the caller will not compile
+    pkg/inspecttypes/dockercompat/dockercompat.go:227 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containers.Container.Image, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/client.go:70 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containers.Container.Image, which the caller uses; the caller will not compile
+    pkg/inspecttypes/dockercompat/dockercompat.go:229 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containers.Container.Labels, which the caller uses; the caller will not compile
+    pkg/inspecttypes/dockercompat/dockercompat.go:230 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares containers.Container.Snapshotter, which the caller uses; the caller will not compile
+    pkg/inspecttypes/dockercompat/dockercompat.go:231 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares content.CopyReader, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:257 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares content.Ingester, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:250 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares content.OpenWriter, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:251 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares content.Provider.ReaderAt, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:197 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares content.ReadBlob, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:367 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares content.ReadBlob, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:263 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares content.ReaderAt, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:82 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares content.Status.Offset, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:266 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares content.Store, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:190 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares content.WithLabels, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:356 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares content.WithRef, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:251 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares content.WriteBlob, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:226 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares content.Writer.Commit, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:266 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares content.Writer.Digest, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:272 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares content.Writer.Status, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:261 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares defaults.DefaultAddress, which the caller uses; the caller will not compile
+    pkg/config/config.go:50 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares diff.ApplyConfig, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/client.go:36 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares diff.ApplyConfig.ProcessorPayloads, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/payload.go:32 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares diff.ApplyOpt, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/client.go:35 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares errdefs.IsAlreadyExists, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:267 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares errdefs.IsNotFound, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/client.go:71 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.Children, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:277 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.Handler, which the caller uses; the caller will not compile
+    pkg/imgutil/snapshotter.go:77 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.Handler.Handle, which the caller uses; the caller will not compile
+    pkg/snapshotterutil/socisource.go:68 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.HandlerFunc, which the caller uses; the caller will not compile
+    pkg/imgutil/pull/pull.go:64 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.Image, which the caller uses; the caller will not compile
+    pkg/idutil/imagewalker/imagewalker.go:32 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.Image.CreatedAt, which the caller uses; the caller will not compile
+    pkg/imgutil/filtering.go:113 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.Image.Labels, which the caller uses; the caller will not compile
+    pkg/inspecttypes/dockercompat/dockercompat.go:326 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.Image.Name, which the caller uses; the caller will not compile
+    pkg/imgutil/filtering.go:141 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.Image.Target, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/client.go:78 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.Image.Target, which the caller uses; the caller will not compile
+    pkg/idutil/imagewalker/imagewalker.go:70 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.IsIndexType, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:280 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.IsLayerType, which the caller uses; the caller will not compile
+    pkg/snapshotterutil/socisource.go:76 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.IsManifestType, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:299 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.MediaTypeDockerSchema1Manifest, which the caller uses; the caller will not compile
+    pkg/imgutil/pull/pull.go:65 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.MediaTypeDockerSchema2Config, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:292 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.MediaTypeDockerSchema2Config, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:261 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.MediaTypeDockerSchema2Layer, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:112 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.MediaTypeDockerSchema2LayerForeign, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:319 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.MediaTypeDockerSchema2LayerForeignGzip, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:319 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.MediaTypeDockerSchema2LayerGzip, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:110 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.MediaTypeDockerSchema2Manifest, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:458 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.MediaTypeDockerSchema2Manifest, which the caller uses; the caller will not compile
+    pkg/snapshotterutil/socisource.go:73 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.MediaTypeDockerSchema2ManifestList, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:456 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.Store.Get, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/client.go:70 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares images.Store.List, which the caller uses; the caller will not compile
+    pkg/idutil/imagewalker/imagewalker.go:60 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares converter.ConvertFunc, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:476 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares labels.Validate, which the caller uses; the caller will not compile
+    pkg/snapshotterutil/socisource.go:97 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares namespaces.Default, which the caller uses; the caller will not compile
+    pkg/config/config.go:51 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares seccomp.IsEnabled, which the caller uses (in github.com/docker/docker@v27.1.1+incompatible, a module the caller builds); the caller will not compile until it upgrades github.com/docker/docker to a version that matches
+    github.com/docker/docker@v27.1.1+incompatible/pkg/sysinfo/sysinfo_linux.go:292 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshotters.AppendInfoHandlerWrapper, which the caller uses; the caller will not compile
+    pkg/imgutil/snapshotter.go:85 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshotters.TargetImageLayersLabel, which the caller uses; the caller will not compile
+    pkg/snapshotterutil/socisource.go:84 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares userns.RunningInUserNS, which the caller uses (in github.com/docker/docker@v27.1.1+incompatible, a module the caller builds); the caller will not compile until it upgrades github.com/docker/docker to a version that matches
+    github.com/docker/docker@v27.1.1+incompatible/pkg/sysinfo/cgroup2_linux.go:144 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares platforms.DefaultSpec, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:57 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares platforms.NewMatcher, which the caller uses (in github.com/containerd/imgcrypt@v1.1.11, a module the caller builds); the caller will not compile until it upgrades github.com/containerd/imgcrypt to a version that matches
+    github.com/containerd/imgcrypt@v1.1.11/images/encryption/encryption.go:55 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares plugin.RuntimeRuncV2, which the caller uses; the caller will not compile
+    pkg/defaults/defaults_linux.go:34 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares types.Empty, which the caller uses; the caller will not compile
+    pkg/infoutil/infoutil.go:46 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares remotes.Resolver, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:195 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares remotes.Resolver.Resolve, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:186 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares restart.CountLabel, which the caller uses; the caller will not compile
+    pkg/inspecttypes/dockercompat/dockercompat.go:236 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares restart.Reconcile, which the caller uses; the caller will not compile
+    pkg/inspecttypes/dockercompat/dockercompat.go:389 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares restart.StatusLabel, which the caller uses; the caller will not compile
+    pkg/inspecttypes/dockercompat/dockercompat.go:235 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares introspection.Service, which the caller uses; the caller will not compile
+    pkg/infoutil/infoutil.go:102 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares introspection.Service.Plugins, which the caller uses; the caller will not compile
+    pkg/infoutil/infoutil.go:42 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares introspection.Service.Server, which the caller uses; the caller will not compile
+    pkg/infoutil/infoutil.go:46 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Info, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:384 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Info.Parent, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:385 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Snapshotter, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:381 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Snapshotter.Stat, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:400 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Snapshotter.Usage, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:387 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Usage, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:381 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Usage.Inodes, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:397 go_api
+FINDING NO_GO source_build GO_API_REMOVED_USED_BY_CALLER | the provider's Go code no longer declares snapshots.Usage.Size, which the caller uses; the caller will not compile
+    pkg/imgutil/imgutil.go:396 go_api
+FINDING NO_GO runtime PROTO_MESSAGE_REMOVED_USED_BY_CALLER | caller uses a message the provider no longer defines
+    github.com/containerd/containerd@v1.7.20/task.go:714 message_type
+    github.com/containerd/containerd@v1.7.20/task.go:714 read
+    github.com/containerd/containerd@v1.7.20/task_opts.go:118 construct
+    github.com/containerd/containerd@v1.7.20/task_opts.go:118 message_type
+    github.com/containerd/containerd@v1.7.20/task_opts.go:120 message_type
+    github.com/containerd/containerd@v1.7.20/task_opts.go:124 write
+FINDING NO_GO runtime PROTO_MESSAGE_REMOVED_USED_BY_CALLER | caller uses a message the provider no longer defines
+    github.com/containerd/containerd@v1.7.20/task_opts.go:144 construct
+    github.com/containerd/containerd@v1.7.20/task_opts.go:144 message_type
+    github.com/containerd/containerd@v1.7.20/task_opts.go:146 message_type
+    github.com/containerd/containerd@v1.7.20/task_opts.go:150 write
+    github.com/containerd/containerd@v1.7.20/task_opts_unix.go:43 construct
+    github.com/containerd/containerd@v1.7.20/task_opts_unix.go:43 message_type
+    github.com/containerd/containerd@v1.7.20/task_opts_unix.go:45 message_type
+    github.com/containerd/containerd@v1.7.20/task_opts_unix.go:49 write
+FINDING NO_GO generated_code PROTO_MESSAGE_REMOVED_USED_BY_CALLER | regenerated bindings drop this type; the caller will not compile
+    github.com/containerd/containerd@v1.7.20/events.go:66 construct
+    github.com/containerd/containerd@v1.7.20/events.go:66 message_type
+    github.com/containerd/containerd@v1.7.20/events.go:67 write
+    github.com/containerd/containerd@v1.7.20/events.go:68 write
+    github.com/containerd/containerd@v1.7.20/events.go:69 write
+    github.com/containerd/containerd@v1.7.20/events.go:70 write
+    github.com/containerd/containerd@v1.7.20/events.go:109 read
+    github.com/containerd/containerd@v1.7.20/events.go:110 read
+FINDING NO_GO runtime PROTO_MESSAGE_REMOVED_USED_BY_CALLER | caller uses a message the provider no longer defines
+    github.com/containerd/containerd@v1.7.20/events.go:66 construct
+    github.com/containerd/containerd@v1.7.20/events.go:66 message_type
+    github.com/containerd/containerd@v1.7.20/events.go:67 write
+    github.com/containerd/containerd@v1.7.20/events.go:68 write
+    github.com/containerd/containerd@v1.7.20/events.go:69 write
+    github.com/containerd/containerd@v1.7.20/events.go:70 write
+    github.com/containerd/containerd@v1.7.20/events.go:88 call  rpc response
+    github.com/containerd/containerd@v1.7.20/events.go:109 read
+FINDING NO_GO source_build PROTO_MESSAGE_REMOVED_USED_BY_CALLER | caller source references the removed type
+    github.com/containerd/containerd@v1.7.20/events.go:66 construct
+    github.com/containerd/containerd@v1.7.20/events.go:66 message_type
+    github.com/containerd/containerd@v1.7.20/events.go:67 write
+    github.com/containerd/containerd@v1.7.20/events.go:68 write
+    github.com/containerd/containerd@v1.7.20/events.go:69 write
+    github.com/containerd/containerd@v1.7.20/events.go:70 write
+    github.com/containerd/containerd@v1.7.20/events.go:109 read
+    github.com/containerd/containerd@v1.7.20/events.go:110 read
+FINDING NO_GO generated_code PROTO_RPC_SIGNATURE_CHANGED_REFERENCED_IN_SOURCE | regenerated stubs change the method signature
+    github.com/containerd/containerd@v1.7.20/events.go:88 call
+FINDING NO_GO source_build PROTO_RPC_SIGNATURE_CHANGED_REFERENCED_IN_SOURCE | caller source uses the old method signature
+    github.com/containerd/containerd@v1.7.20/events.go:88 call
+FINDING NO_GO runtime PROTO_RPC_SIGNATURE_CHANGED_USED_BY_CALLER | request or response shape of an rpc the caller uses changed; old and new binaries exchange incompatible messages
+    github.com/containerd/containerd@v1.7.20/events.go:88 call
+FINDING UNKNOWN runtime PROTO_WHOLE_MESSAGE_FLOW_UNVERIFIABLE | the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven
+    github.com/containerd/containerd@v1.7.20/container.go:286 whole_flow  unknown sink
+    pkg/cmd/container/run_runtime.go:55 whole_flow  unknown sink
+FINDING UNKNOWN source_build PROTO_RPC_ADDED_IMPLEMENTATION_NEEDS_REVIEW | the implementation already declares a method named PluginInfo or its forward compatibility could not be determined; its signature must be checked
+    github.com/containerd/containerd@v1.7.20/services/introspection/service.go:59 implement  implements IntrospectionClient; declares every method itself
+    github.com/containerd/containerd@v1.7.20/services/introspection/service.go:73 implement  implements IntrospectionServer; forward-compatible via embedded UnimplementedIntrospectionServer
+FINDING UNKNOWN runtime PROTO_WHOLE_MESSAGE_FLOW_UNVERIFIABLE | the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven
+    github.com/containerd/containerd@v1.7.20/container.go:286 whole_flow  unknown sink
+FINDING UNKNOWN source_build PROTO_RPC_ADDED_IMPLEMENTATION_NEEDS_REVIEW | the implementation already declares a method named PluginInfo or its forward compatibility could not be determined; its signature must be checked
+    github.com/containerd/containerd@v1.7.20/services/introspection/service.go:59 implement  implements IntrospectionClient; declares every method itself
+    github.com/containerd/containerd@v1.7.20/services/introspection/service.go:73 implement  implements IntrospectionServer; forward-compatible via embedded UnimplementedIntrospectionServer
+
+exit 0 seconds 22

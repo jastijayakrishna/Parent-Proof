@@ -1,0 +1,86 @@
+Analyzing c ...
+  c: Go, 85 packages read (11.9s)
+✗ Don't merge
+
+changes ForwardRequest.envelope (#1) from containerd.services.events.v1.Envelope to containerd.types.Envelope
+deletes runtime/linux/runctypes/runc.proto
+deletes runtime/v2/runc/options/oci.proto
+removes message CheckpointOptions
+removes message CreateOptions
+moves Options from runtime/v2/runc/options/oci.proto to api/types/runc/options/oci.proto, changing its generated Go package from github.com/containerd/containerd/runtime/v2/runc/options;options to github.com/containerd/containerd/api/types/runc/options;options
+removes message Envelope
+changes response of Events.Subscribe from Envelope to Envelope
+
+2 of 2 deploy units break (c) · 0 need review · 0 proved safe
+
+Breaks:
+- c (all 2 units: nerdctl and nerdctl (library)) @ 7b2d5046
+  Why: regenerated bindings change the Go type of this field [PROTO_FIELD_TYPE_CHANGED_REFERENCED_IN_SOURCE]
+  Why: the field's wire encoding changed; old and new binaries will misparse each other's messages [PROTO_FIELD_TYPE_CHANGED_USED_BY_CALLER]
+  Why: regenerated bindings drop this type; the caller will not compile [PROTO_FILE_REMOVED_USED_BY_CALLER]
+  Why: … and 5 more reason(s); see the full evidence
+  - cmd/nerdctl/completion.go:41
+      imageList, err := client.ImageService().List(ctx, "")
+  - cmd/nerdctl/completion.go:48
+      candidates = append(candidates, img.Name)
+  - cmd/nerdctl/completion.go:53
+      func shellCompleteContainerNames(cmd *cobra.Command, filterFunc func(containerd.ProcessStatus) bool) ([]string, cobra...
+  - cmd/nerdctl/completion.go:63
+      containers, err := client.Containers(ctx)
+  - cmd/nerdctl/completion.go:67
+      getStatus := func(c containerd.Container) containerd.ProcessStatus {
+  - cmd/nerdctl/completion.go:70
+      task, err := c.Task(ctx2, nil)
+  - … 562 more location(s)
+
+Old and new running together (both deploy orders): breaks
+Rebuilding callers with the new contract: breaks
+
+How to ship this safely:
+1. Upgrade github.com/containerd/containerd in c (all 2 units: nerdctl and nerdctl (library)) to a version built against the new contract and deploy that before this change lands; the break is inside github.com/containerd/containerd, at github.com/containerd/containerd@v1.7.20/events.go:66.
+2. Upgrade github.com/containerd/containerd in c (all 2 units: nerdctl and nerdctl (library)) to a version built against the new contract and deploy that before this change lands; the break is inside github.com/containerd/containerd, at github.com/containerd/containerd@v1.7.20/task.go:714, github.com/containerd/containerd@v1.7.20/task_opts.go:118, github.com/containerd/containerd@v1.7.20/task_opts.go:120, +20 more.
+3. Keep runtime/v2/runc/options/oci.proto until c (all 2 units: nerdctl and nerdctl (library)) stop using it (pkg/cmd/container/run_runtime.go:27, pkg/cmd/container/run_runtime.go:35, pkg/cmd/container/run_runtime.go:39, +1 more).
+4. Upgrade github.com/containerd/containerd in c (all 2 units: nerdctl and nerdctl (library)) to a version built against the new contract and deploy that before this change lands; the break is inside github.com/containerd/containerd, at github.com/containerd/containerd@v1.7.20/container.go:333, github.com/containerd/containerd@v1.7.20/container.go:334, github.com/containerd/containerd@v1.7.20/container.go:335, +33 more.
+5. Upgrade github.com/containerd/containerd in c (all 2 units: nerdctl and nerdctl (library)) to a version built against the new contract and deploy that before this change lands; the break is inside github.com/containerd/containerd, at github.com/containerd/containerd@v1.7.20/task.go:714, github.com/containerd/containerd@v1.7.20/task_opts.go:118, github.com/containerd/containerd@v1.7.20/task_opts.go:120, +1 more.
+6. Upgrade github.com/containerd/containerd in c (all 2 units: nerdctl and nerdctl (library)) to a version built against the new contract and deploy that before this change lands; the break is inside github.com/containerd/containerd, at github.com/containerd/containerd@v1.7.20/task_opts.go:144, github.com/containerd/containerd@v1.7.20/task_opts.go:146, github.com/containerd/containerd@v1.7.20/task_opts.go:150, +16 more.
+7. Publish Options under the new package alongside the old one, move c (nerdctl) (pkg/cmd/container/run_runtime.go:35), then retire the old one.
+8. Upgrade github.com/containerd/containerd in c (all 2 units: nerdctl and nerdctl (library)) to a version built against the new contract and deploy that before this change lands; the break is inside github.com/containerd/containerd, at github.com/containerd/containerd@v1.7.20/events.go:109, github.com/containerd/containerd@v1.7.20/events.go:110, github.com/containerd/containerd@v1.7.20/events.go:111, +7 more.
+9. Upgrade github.com/containerd/containerd in c (all 2 units: nerdctl and nerdctl (library)) to a version built against the new contract and deploy that before this change lands; the break is inside github.com/containerd/containerd, at github.com/containerd/containerd@v1.7.20/events.go:88.
+Deploy order: no order is safe while old and new binaries run side by side; make the change additive first.
+
+Breaking in general, safe for your callers:
+- changes ForwardRequest.envelope (#1) from containerd.services.events.ttrpc.v1.Envelope to containerd.types.Envelope: a wire, json, source break in general; no checked deploy unit uses it
+- deletes pkg/runtimeoptions/v1/api.proto: a source break in general; no checked deploy unit uses it
+- deletes runtime/v1/shim/v1/shim.proto: a source break in general; no checked deploy unit uses it
+- removes message ProcessDetails: a source break in general; no checked deploy unit uses it
+- removes message RuncOptions: a source break in general; no checked deploy unit uses it
+- moves CheckpointOptions from runtime/v2/runc/options/oci.proto to api/types/runc/options/oci.proto, changing its generated Go package from github.com/containerd/containerd/runtime/v2/runc/options;options to github.com/containerd/containerd/api/types/runc/options;options: a source break in general; used by 2 checked deploy unit(s), none in a way this change breaks
+- moves ProcessDetails from runtime/v2/runc/options/oci.proto to api/types/runc/options/oci.proto, changing its generated Go package from github.com/containerd/containerd/runtime/v2/runc/options;options to github.com/containerd/containerd/api/types/runc/options;options: a source break in general; no checked deploy unit uses it
+- removes message CheckpointTaskRequest: a source break in general; no checked deploy unit uses it
+- removes message CloseIORequest: a source break in general; no checked deploy unit uses it
+- removes message CreateTaskRequest: a source break in general; no checked deploy unit uses it
+- removes message CreateTaskResponse: a source break in general; no checked deploy unit uses it
+- removes message DeleteProcessRequest: a source break in general; no checked deploy unit uses it
+- removes message DeleteResponse: a source break in general; no checked deploy unit uses it
+- removes message ExecProcessRequest: a source break in general; no checked deploy unit uses it
+- removes message ExecProcessResponse: a source break in general; no checked deploy unit uses it
+- removes message KillRequest: a source break in general; no checked deploy unit uses it
+- removes message ListPidsRequest: a source break in general; no checked deploy unit uses it
+- removes message ListPidsResponse: a source break in general; no checked deploy unit uses it
+- removes message ResizePtyRequest: a source break in general; no checked deploy unit uses it
+- removes message ShimInfoResponse: a source break in general; no checked deploy unit uses it
+- removes message StartRequest: a source break in general; no checked deploy unit uses it
+- removes message StartResponse: a source break in general; no checked deploy unit uses it
+- removes message StateRequest: a source break in general; no checked deploy unit uses it
+- removes message StateResponse: a source break in general; no checked deploy unit uses it
+- removes message UpdateTaskRequest: a source break in general; no checked deploy unit uses it
+- removes message WaitRequest: a source break in general; no checked deploy unit uses it
+- removes message WaitResponse: a source break in general; no checked deploy unit uses it
+- removes message Envelope: a source break in general; no checked deploy unit uses it
+- moves Options from pkg/runtimeoptions/v1/api.proto to api/types/runtimeoptions/v1/api.proto, changing its generated Go package from github.com/containerd/containerd/pkg/runtimeoptions/v1;runtimeoptions_v1 to github.com/containerd/containerd/api/types/runtimeoptions/v1;runtimeoptions: a source break in general; no checked deploy unit uses it
+- removes service Shim: a wire, source break in general; no checked deploy unit uses it
+
+Verified against p@080d35b9 (base b600181a) and 1 caller commit(s).
+Not checked: callers other than the directories given with --callers
+
+Decision d_197332b7c6eb7f47 · keep it with --out record.json and replay with: verifier replay --file record.json
