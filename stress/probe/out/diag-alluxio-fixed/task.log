@@ -1,0 +1,187 @@
+{
+ "window": {
+  "project": "alluxio",
+  "mode": "history",
+  "id": "dbac084c1e1d",
+  "bump": "dbac084c1e1d89c1e9253da036746e2df9e1ef14",
+  "date": "2023-04-24",
+  "subject": "Improve proxy register functionality and command",
+  "consumer_commit": "4ad6185ab23a7cf151e4289eb7e11b34f87f2d91",
+  "provider": "Alluxio/alluxio",
+  "old": "4ad6185ab23a7cf151e4289eb7e11b34f87f2d91",
+  "new": "dbac084c1e1d89c1e9253da036746e2df9e1ef14"
+ },
+ "started": "2026-10-06T13:43:45Z",
+ "baseline": {
+  "ok": true,
+  "seconds": 43.0
+ },
+ "modules": {
+  "built": [
+   "core/client/fs",
+   "core/common",
+   "core/server/common",
+   "core/server/master",
+   "core/transport",
+   "job/client",
+   "job/common",
+   "underfs/local",
+   "underfs/s3a"
+  ],
+  "unbuilt": [
+   "core/client/hdfs",
+   "core/client/hdfs3",
+   "core/server/proxy",
+   "core/server/worker",
+   "examples",
+   "integration/fuse",
+   "integration/jnifuse/fs",
+   "integration/tools/hms",
+   "integration/tools/validation",
+   "job/server",
+   "logserver",
+   "microbench",
+   "minicluster",
+   "shell",
+   "stress/common",
+   "stress/shell",
+   "table/base",
+   "table/client",
+   "table/server/common",
+   "table/server/master",
+   "table/server/underdb/glue",
+   "table/server/underdb/hive",
+   "table/shell",
+   "tests",
+   "underfs/abfs",
+   "underfs/adl",
+   "underfs/cephfs",
+   "underfs/cephfs-hadoop",
+   "underfs/cos",
+   "underfs/cosn",
+   "underfs/gcs",
+   "underfs/hdfs",
+   "underfs/kodo",
+   "underfs/obs",
+   "underfs/oss",
+   "underfs/ozone",
+   "underfs/swift",
+   "underfs/wasb",
+   "underfs/web"
+  ]
+ },
+ "oracle": {
+  "outcome": "compiles",
+  "log_tail": "lugin (use -X to see details)\n[INFO] Reflections took 99 ms to scan 164 urls, producing 4 keys and 4 values \n[INFO] Reflections took 56 ms to scan 164 urls, producing 4 keys and 4 values \n[INFO] Reflections took 54 ms to scan 164 urls, producing 4 keys and 4 values \n[INFO] Reflections took 55 ms to scan 164 urls, producing 4 keys and 4 values \n[INFO] Reflections took 520 ms to scan 14 urls, producing 1667 keys and 8320 values \n[INFO] Writing doc to /home/runner/work/_temp/java-stress/wt/generated/master/index.html...\n[INFO] Done!\n[INFO] \n[INFO] --- resources:2.7:testResources (default-testResources) @ alluxio-core-server-master ---\n[INFO] Not copying test resources\n[INFO] \n[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ alluxio-core-server-master ---\n[INFO] Not compiling test sources\n[INFO] ------------------------------------------------------------------------\n[INFO] Reactor Summary for Alluxio Parent 2.10.0-SNAPSHOT:\n[INFO] \n[INFO] Alluxio Parent ..................................... SUCCESS [  2.022 s]\n[INFO] Alluxio Core ....................................... SUCCESS [  0.150 s]\n[INFO] Alluxio Core - Transport ........................... SUCCESS [ 17.688 s]\n[INFO] Alluxio Core - Common Utilities .................... SUCCESS [  3.462 s]\n[INFO] Alluxio Under File System .......................... SUCCESS [  0.162 s]\n[INFO] Alluxio Under File System - Local FS ............... SUCCESS [  0.502 s]\n[INFO] Alluxio Core - Client .............................. SUCCESS [  0.061 s]\n[INFO] Alluxio Core - Client - File System ................ SUCCESS [  1.390 s]\n[INFO] Alluxio Job Service ................................ SUCCESS [  0.139 s]\n[INFO] Alluxio Job Service - Common Utilities ............. SUCCESS [  0.390 s]\n[INFO] Alluxio Job Service - Client ....................... SUCCESS [  0.232 s]\n[INFO] Alluxio Core - Server .............................. SUCCESS [  0.068 s]\n[INFO] Alluxio Core - Server - Common Utilities ........... SUCCESS [  1.803 s]\n[INFO] Alluxio Under File System - S3 ..................... SUCCESS [  0.588 s]\n[INFO] Alluxio Core - Server - Master ..................... SUCCESS [  4.332 s]\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD SUCCESS\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  30.848 s (Wall Clock)\n[INFO] Finished at: 2026-10-06T13:45:08Z\n[INFO] ------------------------------------------------------------------------\n",
+  "seconds": 32.2,
+  "overlaid": 4,
+  "removed": 0
+ },
+ "seconds": 83.2
+}
+VERDICT NO_GO {'generated_code': 'GO', 'runtime': 'NO_GO', 'source_build': 'GO'} ['NEEDS_REVIEW']
+CHANGES 14 (java 0)
+   FIELD_TYPE_CHANGED field alluxio.grpc.block.RegisterWorkerPOptions.#2 core/transport/src/main/proto/grpc/block_master.proto
+   FIELD_TYPE_CHANGED field alluxio.grpc.block.WorkerInfo.#10 core/transport/src/main/proto/grpc/block_master.proto
+   MESSAGE_REMOVED message alluxio.grpc.block.BuildVersion core/transport/src/main/proto/grpc/block_master.proto
+   ENUM_VALUE_ADDED enum_value alluxio.grpc.version.ServiceType.#18 core/transport/src/main/proto/grpc/version.proto
+   MESSAGE_ADDED message alluxio.grpc.BuildVersion core/transport/src/main/proto/grpc/common.proto
+   MESSAGE_ADDED message alluxio.grpc.meta.ListProxyStatusPOptions core/transport/src/main/proto/grpc/meta_master.proto
+   MESSAGE_ADDED message alluxio.grpc.meta.ListProxyStatusPRequest core/transport/src/main/proto/grpc/meta_master.proto
+   MESSAGE_ADDED message alluxio.grpc.meta.ListProxyStatusPResponse core/transport/src/main/proto/grpc/meta_master.proto
+   MESSAGE_ADDED message alluxio.grpc.meta.ProxyHeartbeatPOptions core/transport/src/main/proto/grpc/meta_master.proto
+   MESSAGE_ADDED message alluxio.grpc.meta.ProxyHeartbeatPRequest core/transport/src/main/proto/grpc/meta_master.proto
+   MESSAGE_ADDED message alluxio.grpc.meta.ProxyHeartbeatPResponse core/transport/src/main/proto/grpc/meta_master.proto
+   MESSAGE_ADDED message alluxio.grpc.meta.ProxyStatus core/transport/src/main/proto/grpc/meta_master.proto
+   RPC_ADDED rpc alluxio.grpc.meta.MetaMasterClientService.ListProxyStatus core/transport/src/main/proto/grpc/meta_master.proto
+   SERVICE_ADDED service alluxio.grpc.meta.MetaMasterProxyService core/transport/src/main/proto/grpc/meta_master.proto
+FINDINGS 2
+   NO_GO runtime PROTO_MESSAGE_REMOVED_USED_BY_CALLER alluxio.grpc.block.BuildVersion ['core/common/src/main/java/alluxio/grpc/GrpcUtils.java:331', 'core/common/src/main/java/alluxio/grpc/GrpcUtils.java:332', 'core/common/src/main/java/alluxio/grpc/GrpcUtils.java:611'] caller uses a message the provider no longer defines
+   UNKNOWN runtime PROTO_CLOSED_ENUM_VALUE_ADDED alluxio.grpc.version.ServiceType.#18 ['core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java:27', 'core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java:91', 'core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java:92'] closed enum: old callers drop the unknown value into unknown fields; a human must decide
+CALLERS [('wt', 'NO_GO', ['NEEDS_REVIEW'])]
+FOOTPRINT wt lang=java analyzer=jvm-analyzer/v0.10.0 uses=14181 gaps=0
+   implement uses: 123
+     alluxio.grpc.version.ServiceVersionClientService type reference None core/common/src/main/java/alluxio/grpc/ServiceVersionClientServiceHandler.java 32 0
+     alluxio.grpc.version.ServiceVersionClientService implements alluxio.grpc.version.ServiceVersionClientService via ServiceVersionClientServiceGrpc.ServiceVersionClientServiceImplBase True core/common/src/main/java/alluxio/grpc/ServiceVersionClientServiceHandler.java 45 2
+     alluxio.grpc.version.ServiceVersionClientService server base class constructed None core/common/src/main/java/alluxio/grpc/ServiceVersionClientServiceHandler.java 45 0
+     alluxio.grpc.version.ServiceVersionClientService.getServiceVersion overrides getServiceVersion None core/common/src/main/java/alluxio/grpc/ServiceVersionClientServiceHandler.java 55 0
+     alluxio.grpc.sasl.SaslAuthenticationService type reference None core/common/src/main/java/alluxio/security/authentication/DefaultAuthenticationServer.java 48 0
+     alluxio.grpc.sasl.SaslAuthenticationService implements alluxio.grpc.sasl.SaslAuthenticationService via SaslAuthenticationServiceGrpc.SaslAuthenticationServiceImplBase True core/common/src/main/java/alluxio/security/authentication/DefaultAuthenticationServer.java 50 16
+     alluxio.grpc.sasl.SaslAuthenticationService server base class constructed None core/common/src/main/java/alluxio/security/authentication/DefaultAuthenticationServer.java 72 0
+     alluxio.grpc.sasl.SaslAuthenticationService.authenticate overrides authenticate None core/common/src/main/java/alluxio/security/authentication/DefaultAuthenticationServer.java 89 0
+     alluxio.grpc.meta.RaftJournalService implements alluxio.grpc.meta.RaftJournalService via RaftJournalServiceGrpc.RaftJournalServiceImplBase True core/server/common/src/main/java/alluxio/master/journal/raft/RaftJournalServiceHandler.java 46 4
+     alluxio.grpc.meta.RaftJournalService type reference None core/server/common/src/main/java/alluxio/master/journal/raft/RaftJournalServiceHandler.java 46 0
+     alluxio.grpc.meta.RaftJournalService server base class constructed None core/server/common/src/main/java/alluxio/master/journal/raft/RaftJournalServiceHandler.java 57 0
+     alluxio.grpc.meta.RaftJournalService.RequestLatestSnapshotInfo overrides requestLatestSnapshotInfo None core/server/common/src/main/java/alluxio/master/journal/raft/RaftJournalServiceHandler.java 74 0
+     alluxio.grpc.meta.RaftJournalService.RequestLatestSnapshotData overrides requestLatestSnapshotData None core/server/common/src/main/java/alluxio/master/journal/raft/RaftJournalServiceHandler.java 98 0
+     alluxio.grpc.messaging.MessagingService type reference None core/server/common/src/main/java/alluxio/master/transport/GrpcMessagingServiceClientHandler.java 33 0
+     alluxio.grpc.messaging.MessagingService implements alluxio.grpc.messaging.MessagingService via MessagingServiceGrpc.MessagingServiceImplBase True core/server/common/src/main/java/alluxio/master/transport/GrpcMessagingServiceClientHandler.java 34 2
+     alluxio.grpc.messaging.MessagingService server base class constructed None core/server/common/src/main/java/alluxio/master/transport/GrpcMessagingServiceClientHandler.java 57 0
+     alluxio.grpc.messaging.MessagingService.connect overrides connect None core/server/common/src/main/java/alluxio/master/transport/GrpcMessagingServiceClientHandler.java 75 0
+     alluxio.grpc.block.BlockMasterClientService type reference None core/server/master/src/main/java/alluxio/master/block/BlockMasterClientServiceHandler.java 56 0
+     alluxio.grpc.block.BlockMasterClientService implements alluxio.grpc.block.BlockMasterClientService via BlockMasterClientServiceGrpc.BlockMasterClientServiceImplBase True core/server/master/src/main/java/alluxio/master/block/BlockMasterClientServiceHandler.java 57 18
+     alluxio.grpc.block.BlockMasterClientService server base class constructed None core/server/master/src/main/java/alluxio/master/block/BlockMasterClientServiceHandler.java 66 0
+     alluxio.grpc.block.BlockMasterClientService.GetBlockInfo overrides getBlockInfo None core/server/master/src/main/java/alluxio/master/block/BlockMasterClientServiceHandler.java 74 0
+     alluxio.grpc.block.BlockMasterClientService.GetBlockMasterInfo overrides getBlockMasterInfo None core/server/master/src/main/java/alluxio/master/block/BlockMasterClientServiceHandler.java 85 0
+     alluxio.grpc.block.BlockMasterClientService.GetCapacityBytes overrides getCapacityBytes None core/server/master/src/main/java/alluxio/master/block/BlockMasterClientServiceHandler.java 126 0
+     alluxio.grpc.block.BlockMasterClientService.GetUsedBytes overrides getUsedBytes None core/server/master/src/main/java/alluxio/master/block/BlockMasterClientServiceHandler.java 135 0
+     alluxio.grpc.block.BlockMasterClientService.GetWorkerInfoList overrides getWorkerInfoList None core/server/master/src/main/java/alluxio/master/block/BlockMasterClientServiceHandler.java 143 0
+     alluxio.grpc.block.BlockMasterClientService.RemoveDecommissionedWorker overrides removeDecommissionedWorker None core/server/master/src/main/java/alluxio/master/block/BlockMasterClientServiceHandler.java 153 0
+     alluxio.grpc.block.BlockMasterClientService.GetWorkerReport overrides getWorkerReport None core/server/master/src/main/java/alluxio/master/block/BlockMasterClientServiceHandler.java 174 0
+     alluxio.grpc.block.BlockMasterClientService.GetWorkerLostStorage overrides getWorkerLostStorage None core/server/master/src/main/java/alluxio/master/block/BlockMasterClientServiceHandler.java 184 0
+     alluxio.grpc.block.BlockMasterClientService.DecommissionWorker overrides decommissionWorker None core/server/master/src/main/java/alluxio/master/block/BlockMasterClientServiceHandler.java 193 0
+     alluxio.grpc.block.BlockMasterWorkerService type reference None core/server/master/src/main/java/alluxio/master/block/BlockMasterWorkerServiceHandler.java 53 0
+     alluxio.grpc.block.BlockMasterWorkerService implements alluxio.grpc.block.BlockMasterWorkerService via BlockMasterWorkerServiceGrpc.BlockMasterWorkerServiceImplBase True core/server/master/src/main/java/alluxio/master/block/BlockMasterWorkerServiceHandler.java 54 18
+     alluxio.grpc.block.BlockMasterWorkerService server base class constructed None core/server/master/src/main/java/alluxio/master/block/BlockMasterWorkerServiceHandler.java 63 0
+     alluxio.grpc.block.BlockMasterWorkerService.BlockHeartbeat overrides blockHeartbeat None core/server/master/src/main/java/alluxio/master/block/BlockMasterWorkerServiceHandler.java 71 0
+     alluxio.grpc.block.BlockMasterWorkerService.CommitBlock overrides commitBlock None core/server/master/src/main/java/alluxio/master/block/BlockMasterWorkerServiceHandler.java 102 0
+     alluxio.grpc.block.BlockMasterWorkerService.CommitBlockInUfs overrides commitBlockInUfs None core/server/master/src/main/java/alluxio/master/block/BlockMasterWorkerServiceHandler.java 120 0
+     alluxio.grpc.block.BlockMasterWorkerService.GetWorkerId overrides getWorkerId None core/server/master/src/main/java/alluxio/master/block/BlockMasterWorkerServiceHandler.java 130 0
+     alluxio.grpc.block.BlockMasterWorkerService.RequestRegisterLease overrides requestRegisterLease None core/server/master/src/main/java/alluxio/master/block/BlockMasterWorkerServiceHandler.java 138 0
+     alluxio.grpc.block.BlockMasterWorkerService.RegisterWorker overrides registerWorker None core/server/master/src/main/java/alluxio/master/block/BlockMasterWorkerServiceHandler.java 146 0
+     alluxio.grpc.block.BlockMasterWorkerService.RegisterWorkerStream overrides registerWorkerStream None core/server/master/src/main/java/alluxio/master/block/BlockMasterWorkerServiceHandler.java 192 0
+     alluxio.grpc.block.BlockMasterWorkerService.NotifyWorkerId overrides notifyWorkerId None core/server/master/src/main/java/alluxio/master/block/BlockMasterWorkerServiceHandler.java 228 0
+   uses of touched symbols: 11823
+     message_type alluxio.grpc.block.DecommissionWorkerPOptions core/client/fs/src/main/java/alluxio/client/block/BlockMasterClient.java 17 import
+     message_type alluxio.grpc.block.WorkerLostStorageInfo core/client/fs/src/main/java/alluxio/client/block/BlockMasterClient.java 18 import
+     message_type alluxio.grpc.block.WorkerLostStorageInfo core/client/fs/src/main/java/alluxio/client/block/BlockMasterClient.java 80 source
+     message_type alluxio.grpc.block.DecommissionWorkerPOptions core/client/fs/src/main/java/alluxio/client/block/BlockMasterClient.java 115 source
+     message_type alluxio.grpc.block.BlockMasterClientService core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 17 import
+     message_type alluxio.grpc.block.DecommissionWorkerPOptions core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 18 import
+     message_type alluxio.grpc.block.GetBlockInfoPRequest core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 19 import
+     message_type alluxio.grpc.block.GetBlockMasterInfoPOptions core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 20 import
+     message_type alluxio.grpc.block.GetCapacityBytesPOptions core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 21 import
+     message_type alluxio.grpc.block.GetUsedBytesPOptions core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 22 import
+     message_type alluxio.grpc.block.GetWorkerInfoListPOptions core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 23 import
+     message_type alluxio.grpc.block.GetWorkerLostStoragePOptions core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 24 import
+     message_type alluxio.grpc.block.RemoveDecommissionedWorkerPOptions core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 26 import
+     message_type alluxio.grpc.version.ServiceType core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 27 import
+     message_type alluxio.grpc.block.WorkerLostStorageInfo core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 28 import
+     call alluxio.grpc.block.BlockMasterClientService core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 56 type reference
+     message_type alluxio.grpc.version.ServiceType core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 91 source
+     enum_value alluxio.grpc.version.ServiceType.#4 core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 92 
+     message_type alluxio.grpc.version.ServiceType core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 92 source
+     message_type alluxio.grpc.version.ServiceType core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 92 static member BLOCK_MASTER_CLIENT_SERVICE
+     call alluxio.grpc.block.BlockMasterClientService core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 107 client constructed
+     message_type alluxio.grpc.block.BlockMasterClientService core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 107 source
+     message_type alluxio.grpc.block.BlockMasterClientService core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 107 type reference
+     message_type alluxio.grpc.block.WorkerInfo core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 114 cast
+     message_type alluxio.grpc.block.WorkerInfo core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 114 source
+     call alluxio.grpc.block.BlockMasterClientService.GetWorkerInfoList core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 115 
+     construct alluxio.grpc.block.GetWorkerInfoListPOptions core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 115 
+     message_type alluxio.grpc.block.GetWorkerInfoListPOptions core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 115 source
+     message_type alluxio.grpc.block.GetWorkerInfoListPOptions core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 115 static member getDefaultInstance
+     read alluxio.grpc.block.GetWorkerInfoListPResponse.#1 core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 116 
+     call alluxio.grpc.block.BlockMasterClientService.RemoveDecommissionedWorker core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 125 
+     message_type alluxio.grpc.block.RemoveDecommissionedWorkerPOptions core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 125 source
+     construct alluxio.grpc.block.RemoveDecommissionedWorkerPOptions core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 126 
+     construct alluxio.grpc.block.RemoveDecommissionedWorkerPOptions core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 126 
+     message_type alluxio.grpc.block.RemoveDecommissionedWorkerPOptions core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 126 static member newBuilder
+     write alluxio.grpc.block.RemoveDecommissionedWorkerPOptions.#1 core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 126 
+     call alluxio.grpc.block.BlockMasterClientService.GetWorkerReport core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 135 
+     message_type alluxio.grpc.block.WorkerInfo core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 135 cast
+     message_type alluxio.grpc.block.WorkerInfo core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 135 source
+     read alluxio.grpc.block.GetWorkerInfoListPResponse.#1 core/client/fs/src/main/java/alluxio/client/block/RetryHandlingBlockMasterClient.java 136 
+COMPILER compiles []
+
+exit 0 seconds 86
