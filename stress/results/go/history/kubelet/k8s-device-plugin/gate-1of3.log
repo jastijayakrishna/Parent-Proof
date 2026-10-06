@@ -1,9 +1,13 @@
-k8s-device-plugin 0ee1f792 GO       source_build=GO      compiler=baseline_fails    18.6s replay=true 
-k8s-device-plugin 79c7ae4e NO_GO    source_build=NO_GO   compiler=baseline_fails    20.1s replay=true 
-k8s-device-plugin bd989996 GO       source_build=GO      compiler=baseline_fails    13.3s replay=true 
-k8s-device-plugin/additive windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=2 (NO-GO 0, UNKNOWN 0, GO 2) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
-k8s-device-plugin/breaking windows=  1 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 1, UNKNOWN 0, GO 0) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=1
-TOTAL                  windows=  3 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=3 (NO-GO 1, UNKNOWN 0, GO 2) | wire: judged=3 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=3
+k8s-device-plugin 0ee1f792 GO       source_build=GO      compiler=baseline_fails    15.9s replay=true 
+k8s-device-plugin 43445380 GO       source_build=GO      compiler=baseline_fails    17.2s replay=true 
+k8s-device-plugin 7101d0f8 GO       source_build=GO      compiler=baseline_fails     1.4s replay=true 
+k8s-device-plugin 7a1f5dab GO       source_build=GO      compiler=baseline_fails     1.3s replay=true 
+k8s-device-plugin 993fe2a2 UNKNOWN  source_build=UNKNOWN compiler=baseline_fails     6.5s replay=true 
+k8s-device-plugin bf991bb5 NO_GO    source_build=NO_GO   compiler=baseline_fails     5.2s replay=true 
+k8s-device-plugin/additive windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=2 (NO-GO 0, UNKNOWN 1, GO 1) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
+k8s-device-plugin/breaking windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=2 (NO-GO 1, UNKNOWN 0, GO 1) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
+k8s-device-plugin/unchanged windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=2 (NO-GO 0, UNKNOWN 0, GO 2) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
+TOTAL                  windows=  6 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=6 (NO-GO 1, UNKNOWN 1, GO 4) | wire: judged=6 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=6
 
-3 windows in 32s with 2 workers; 0 differ from the baseline.
+6 windows in 24s with 2 workers; 0 differ from the baseline.
 verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
