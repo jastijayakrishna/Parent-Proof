@@ -7,11 +7,7 @@ tidb/breaking          windows= 49 | breaks=22: caught=22 WRONG_GO=0 abstained=0
 TOTAL                  windows=152 | breaks=49: caught=49 WRONG_GO=0 abstained=0 | compiles=97: GO=95 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 7) | unavailable=6 (NO-GO 2, UNKNOWN 4, GO 0) | wire: judged=152 broken=26 RUNTIME_WRONG_GO=0 confirmed=21 unconfirmed=18 | errors=0 | replayed=152
   WITHIN THE UNKNOWN LIMIT client-go@00eeab450c8c..62eb316d: unknown_on_safe: WHOLE_MESSAGE_FLOW, OPTION_CHANGED
   WITHIN THE UNKNOWN LIMIT client-go@57c12f7c64f6..aa9c2d20: unknown_on_safe: NEEDS_REVIEW
-  DIFFERS FROM BASELINE client-go@7edd63c5d416..f42e582b: expected UNKNOWN (generated_code GO, runtime UNKNOWN, source_build GO; UNKNOWN: GENERATED_BINDINGS_UNAVAILABLE, PACKAGE_LOAD_ERROR), got UNKNOWN (generated_code UNKNOWN, runtime UNKNOWN, source_build UNKNOWN; UNKNOWN: GENERATED_BINDINGS_UNAVAILABLE, PACKAGE_LOAD_ERROR)
-  DIFFERS FROM BASELINE tidb@de56ea67e45a..7e329e0c: expected UNKNOWN (generated_code GO, runtime UNKNOWN, source_build GO; UNKNOWN: DEPENDENCY_UNAVAILABLE), got UNKNOWN (generated_code UNKNOWN, runtime UNKNOWN, source_build UNKNOWN; UNKNOWN: DEPENDENCY_UNAVAILABLE)
-  DIFFERS FROM BASELINE tidb@f7dc9157e215..7f2fc73e: expected UNKNOWN (generated_code GO, runtime UNKNOWN, source_build GO; UNKNOWN: DEPENDENCY_UNAVAILABLE), got UNKNOWN (generated_code UNKNOWN, runtime UNKNOWN, source_build UNKNOWN; UNKNOWN: DEPENDENCY_UNAVAILABLE)
-  DIFFERS FROM BASELINE tidb@f9d85418ed13..798d2765: expected UNKNOWN (generated_code GO, runtime UNKNOWN, source_build GO; UNKNOWN: CALLER_UNRESOLVED), got UNKNOWN (generated_code UNKNOWN, runtime UNKNOWN, source_build UNKNOWN; UNKNOWN: CALLER_UNRESOLVED)
 
-152 windows merged; verifier b21264dd87e456f8867b7729489dc2de8d0ba230310ae52cb5bc21eb4ef99f80; slowest window 1.6 minutes; 4 differ from the baseline.
-verifier gate: release gate failed: 4 windows differ from the baseline (record intended changes with `verifier gate baseline` and a reason for each)
-exit 1
+152 windows merged; verifier 22a3fe265ce122532f51b0682524334656e18efbdb8e6d8e024ca6ba5f6682c6; slowest window 1.2 minutes; 0 differ from the baseline.
+Release gate passed.
+exit 0
