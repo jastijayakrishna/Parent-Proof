@@ -1,6 +1,6 @@
 # Stress test: Go and Java consumers
 
-Updated 2026-10-06 11:37 UTC. Plan and rules: [stress/PREREG.md](stress/PREREG.md).
+Updated 2026-10-06 11:52 UTC. Plan and rules: [stress/PREREG.md](stress/PREREG.md).
 
 Every row is a real contract change of an open-source project never used to tune the verifier, decided by the
 verifier before the project's own compiler judged it (Go: `go build`; Java: the project's Maven or Gradle build).
@@ -10,7 +10,7 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 | language, set | windows | compiler judged | broke the build | caught | missed | false alarm | needs review (build) | errors |
 |---|---|---|---|---|---|---|---|---|
 | Go dev | 149 | 82 | 7 | 7 | **0** | 0 | 28 (19%) | 0 |
-| Go holdout | 254 | 205 | 20 | 12 | **0** | 4 | 58 (23%) | 0 |
+| Go holdout | 254 | 204 | 22 | 12 | **0** | 4 | 58 (23%) | 0 |
 | Java dev | 451 | 97 | 19 | 18 | **0** | 0 | 13 (3%) | 0 |
 | Java holdout | 491 | 27 | 2 | 2 | **0** | 1 | 31 (10%) | 174 |
 | Java regression | 84 | 75 | 5 | 5 | **0** | 0 | 21 (27%) | 0 |
@@ -25,7 +25,7 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 | buildkit-buildx (scan) | 20 | 20 | 0 | 0 | **0** | 0 | 7 (35%) | 0 |
 | cometbft -> cosmos-sdk (history) | 41 | 40 | 6 | 6 | **0** | 0 | 3 (7%) | 0 |
 | cometbft-cosmos-sdk (scan) | 20 | 19 | 1 | 1 | **0** | 0 | 3 (15%) | 0 |
-| cosmos-sdk -> gaia (history) | 32 | 29 | 1 | 1 | **0** | 2 | 10 (31%) | 0 |
+| cosmos-sdk -> gaia (history) | 32 | 28 | 3 | 1 | **0** | 2 | 10 (31%) | 0 |
 | cosmos-sdk-gaia (scan) | 20 | 18 | 0 | 0 | **0** | 0 | 14 (70%) | 0 |
 | csi-attacher (scan) | 20 | 17 | 0 | 0 | **0** | 0 | 7 (35%) | 0 |
 | csi-provisioner (live) | 2 | 0 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
@@ -78,7 +78,7 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 
 ## Not judged by the compiler, by reason
 
-- Go: not judged 66, baseline_fails 39, bump_side_effect 7, oracle_error 2, judge not verified 2
+- Go: not judged 66, baseline_fails 39, bump_side_effect 8, oracle_error 2, judge not verified 2
 - Java: oracle_error 431, not_built 174, judge not verified 148, baseline_fails 74
 
 ## Errors: 174
