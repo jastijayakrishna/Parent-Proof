@@ -1,3 +1,3 @@
-source: jastijayakrishna/Parent, branch main, commit 7ea08866f5380ef51e7624434d2da8d9cb03d473
-7ea0886 protocompile/v0.14.1 verdict/v0.11.0 go-analyzer/v0.22.0
-b21264dd87e456f8867b7729489dc2de8d0ba230310ae52cb5bc21eb4ef99f80
+source: jastijayakrishna/Parent, branch main, commit 826fc683e1497e7e25f7fc4facb023af8095d0e6
+826fc68 protocompile/v0.14.1 verdict/v0.14.0 go-analyzer/v0.24.0
+22a3fe265ce122532f51b0682524334656e18efbdb8e6d8e024ca6ba5f6682c6
