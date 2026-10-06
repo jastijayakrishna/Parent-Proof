@@ -1,18 +1,18 @@
-time=2026-10-06T09:32:21.580Z level=INFO msg=skip consumer=milvus-sdk-go bump=1e03ea4a old=v2.3.4 new=v2.3.4-0.20240109020841-d367b5a59df1 reason=not_forward
-time=2026-10-06T09:32:21.819Z level=INFO msg=skip consumer=milvus-sdk-go bump=9358ff5b old=v2.4.0 new=v2.3.4-0.20240430025921-135167be0694 reason=not_forward
-time=2026-10-06T09:32:22.180Z level=INFO msg=skip consumer=milvus-sdk-go bump=8008f14f old=v2.4.10-0.20240819025435-512e3b98866a new=v2.3.4-0.20240909041258-8f8ca67816cd reason=not_forward
-time=2026-10-06T09:32:22.555Z level=INFO msg=mined consumer=milvus-sdk-go pin_moves=16 to_compile=13 skipped=map[not_forward:3]
-time=2026-10-06T09:32:53.485Z level=INFO msg=canary consumer=milvus-sdk-go at=1c766f8704caa935ce4a5379cb13a43920d681f7^ outcome=breaks detail="canary: github.com/milvus-io/milvus-proto/go-api/v2/commonpb removed."
-time=2026-10-06T09:32:59.412Z level=INFO msg=window consumer=milvus-sdk-go bump=1c766f87 select=breaking breaking=3 compiler=compiles
-time=2026-10-06T09:33:04.404Z level=INFO msg=window consumer=milvus-sdk-go bump=18efb15d select=breaking breaking=2 compiler=compiles
-time=2026-10-06T09:33:08.128Z level=INFO msg=window consumer=milvus-sdk-go bump=17be3e56 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T09:33:12.467Z level=INFO msg=window consumer=milvus-sdk-go bump=abdee170 select=breaking breaking=7 compiler=compiles
-time=2026-10-06T09:33:17.074Z level=INFO msg=window consumer=milvus-sdk-go bump=00e74ab2 select=breaking breaking=1 compiler=compiles
-time=2026-10-06T09:33:21.782Z level=INFO msg=window consumer=milvus-sdk-go bump=6810978b select=breaking breaking=7 compiler=compiles
-time=2026-10-06T09:33:26.761Z level=INFO msg=window consumer=milvus-sdk-go bump=95550a5c select=breaking breaking=2 compiler=compiles
-time=2026-10-06T09:33:30.849Z level=INFO msg=window consumer=milvus-sdk-go bump=71ec76e9 select=breaking breaking=1 compiler=compiles
-time=2026-10-06T09:33:43.697Z level=INFO msg=window consumer=milvus-sdk-go bump=0c339b63 select=additive breaking=0 compiler=compiles
-time=2026-10-06T09:33:43.735Z level=INFO msg=window consumer=milvus-sdk-go bump=3d596ff9 select=additive breaking=0 compiler=compiles
-time=2026-10-06T09:33:49.000Z level=INFO msg=window consumer=milvus-sdk-go bump=a9bab450 select=additive breaking=0 compiler=compiles
-time=2026-10-06T09:33:54.868Z level=INFO msg=window consumer=milvus-sdk-go bump=3f8c3728 select=additive breaking=0 compiler=compiles
-time=2026-10-06T09:33:58.296Z level=INFO msg=window consumer=milvus-sdk-go bump=5a960e98 select=additive breaking=0 compiler=compiles
+time=2026-10-06T13:42:17.080Z level=INFO msg=skip consumer=milvus-sdk-go bump=1e03ea4a old=v2.3.4 new=v2.3.4-0.20240109020841-d367b5a59df1 reason=not_forward
+time=2026-10-06T13:42:17.319Z level=INFO msg=skip consumer=milvus-sdk-go bump=9358ff5b old=v2.4.0 new=v2.3.4-0.20240430025921-135167be0694 reason=not_forward
+time=2026-10-06T13:42:17.696Z level=INFO msg=skip consumer=milvus-sdk-go bump=8008f14f old=v2.4.10-0.20240819025435-512e3b98866a new=v2.3.4-0.20240909041258-8f8ca67816cd reason=not_forward
+time=2026-10-06T13:42:18.056Z level=INFO msg=mined consumer=milvus-sdk-go pin_moves=16 to_compile=13 skipped=map[not_forward:3]
+time=2026-10-06T13:42:43.964Z level=INFO msg=canary consumer=milvus-sdk-go at=1c766f8704caa935ce4a5379cb13a43920d681f7^ outcome=breaks detail="canary: github.com/milvus-io/milvus-proto/go-api/v2/commonpb removed."
+time=2026-10-06T13:42:49.652Z level=INFO msg=window consumer=milvus-sdk-go bump=1c766f87 select=breaking breaking=3 compiler=compiles
+time=2026-10-06T13:42:54.755Z level=INFO msg=window consumer=milvus-sdk-go bump=18efb15d select=breaking breaking=2 compiler=compiles
+time=2026-10-06T13:42:58.150Z level=INFO msg=window consumer=milvus-sdk-go bump=17be3e56 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T13:43:02.661Z level=INFO msg=window consumer=milvus-sdk-go bump=abdee170 select=breaking breaking=7 compiler=compiles
+time=2026-10-06T13:43:06.808Z level=INFO msg=window consumer=milvus-sdk-go bump=00e74ab2 select=breaking breaking=1 compiler=compiles
+time=2026-10-06T13:43:11.184Z level=INFO msg=window consumer=milvus-sdk-go bump=6810978b select=breaking breaking=7 compiler=compiles
+time=2026-10-06T13:43:16.358Z level=INFO msg=window consumer=milvus-sdk-go bump=95550a5c select=breaking breaking=2 compiler=compiles
+time=2026-10-06T13:43:20.790Z level=INFO msg=window consumer=milvus-sdk-go bump=71ec76e9 select=breaking breaking=1 compiler=compiles
+time=2026-10-06T13:43:32.340Z level=INFO msg=window consumer=milvus-sdk-go bump=0c339b63 select=additive breaking=0 compiler=compiles
+time=2026-10-06T13:43:33.303Z level=INFO msg=window consumer=milvus-sdk-go bump=3d596ff9 select=additive breaking=0 compiler=compiles
+time=2026-10-06T13:43:39.338Z level=INFO msg=window consumer=milvus-sdk-go bump=a9bab450 select=additive breaking=0 compiler=compiles
+time=2026-10-06T13:43:44.511Z level=INFO msg=window consumer=milvus-sdk-go bump=3f8c3728 select=additive breaking=0 compiler=compiles
+time=2026-10-06T13:43:47.950Z level=INFO msg=window consumer=milvus-sdk-go bump=5a960e98 select=additive breaking=0 compiler=compiles
