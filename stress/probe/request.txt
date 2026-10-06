@@ -1,3 +1,2 @@
-# Diagnose 2026-10-06: HBase windows binary 7ea0886 answered Needs review with the build line Merge, while javac breaks: why its contract does not compile.
-diag-hbase-ffed09d9 hbase python3 stress/probe/diagnose.py hbase history ffed09d9 "$OUT"
-diag-hbase-7f7b9e6e hbase python3 stress/probe/diagnose.py hbase history 7f7b9e6e "$OUT"
+# Diagnose 2026-10-06: cometbft -> cosmos-sdk window v1.0.0-rc1 -> ab0be101 is Merge with no evidence while go build breaks: cometbft removed crypto/sr25519, which cosmos-sdk imports. What did the provider Go API check see?
+diag-cometbft-sr25519 - bash stress/probe/diag-goapi.sh https://github.com/cometbft/cometbft https://github.com/cosmos/cosmos-sdk d275c67d6daf5171b203884bfe48f6639574c89f^ 86da0027d878707365c16b124b77892ca5212fe1 ab0be101882f1250cd5aad6dfd09a6c2104f8577 sr25519 "$OUT"
