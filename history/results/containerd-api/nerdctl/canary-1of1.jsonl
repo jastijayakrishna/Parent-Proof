@@ -1,0 +1,1 @@
+{"consumer":"nerdctl","at":"72c42eaeccafeb884ca42e26f934c9ac9ccdd429^","shard":"1/1","oracle":{"outcome":"oracle_error","detail":"canary: go mod download github.com/containerd/containerd/api: module github.com/containerd/containerd/api: not a known dependency "}}
