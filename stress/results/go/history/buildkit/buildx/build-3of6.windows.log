@@ -1,0 +1,31 @@
+time=2026-10-06T10:34:16.423Z level=INFO msg=skip consumer=buildx bump=62fbef22 old=v0.11.2 new=v0.11.0-rc3.0.20230216100651-46e4e7e51b01 reason=not_forward
+time=2026-10-06T10:34:19.453Z level=INFO msg=skip consumer=buildx bump=35781a6c old=v0.13.0 new=v0.13.0-rc3.0.20240328152707-25bec7145b39 reason=not_forward
+time=2026-10-06T10:34:20.623Z level=INFO msg=skip consumer=buildx bump=04000db8 old=v0.14.1 new=v0.14.1-0.20240625190127-aaaf86e5470b reason=not_forward
+time=2026-10-06T10:34:20.972Z level=INFO msg=skip consumer=buildx bump=07a85a54 old=v0.15.1 new=v0.15.1-0.20240810140024-664c2b469f19 reason=not_forward
+time=2026-10-06T10:34:21.147Z level=INFO msg=skip consumer=buildx bump=1db8f678 old=v0.16.0 new=v0.16.0-rc2.0.20241002204825-8445ccf1cb0b reason=not_forward
+time=2026-10-06T10:34:23.846Z level=INFO msg=skip consumer=buildx bump=40b9ac1e old=v0.19.0 new=v0.19.0-rc3.0.20250210232655-0e3037c0182e reason=not_forward
+time=2026-10-06T10:34:26.147Z level=INFO msg=skip consumer=buildx bump=e9b6a01a old=v0.23.0 new=v0.23.0-rc1.0.20250618182037-9b91d20367db reason=not_forward
+time=2026-10-06T10:34:26.515Z level=INFO msg=skip consumer=buildx bump=f4787416 old=v0.25.1 new=v0.25.0-rc1.0.20251011181741-9b6f60ac8bf9 reason=not_forward
+time=2026-10-06T10:34:26.927Z level=INFO msg=skip consumer=buildx bump=8037f199 old=v0.26.2 new=v0.26.1-0.20260106154623-ed6dc749ce40 reason=not_forward
+time=2026-10-06T10:34:27.484Z level=INFO msg=skip consumer=buildx bump=53882aec old=v0.27.0 new=v0.27.0-rc2.0.20260210080956-9836771d0c5b reason=not_forward
+time=2026-10-06T10:34:28.245Z level=INFO msg=skip consumer=buildx bump=2fcfce0e old=v0.30.0 new=v0.30.0-rc2.0.20260610003221-41c29fffe299 reason=not_forward
+time=2026-10-06T10:34:30.310Z level=INFO msg=skip consumer=buildx bump=253ba2a5 old=v0.33.0 new=v0.33.0-rc1.0.20260922140836-5427d61296f2 reason=not_forward
+time=2026-10-06T10:34:30.406Z level=INFO msg=mined consumer=buildx pin_moves=116 to_compile=17 skipped=map[not_forward:12]
+time=2026-10-06T10:35:41.821Z level=INFO msg=canary consumer=buildx at=08998a7e901acb7fe66881b1c1d3fa916734e480^ outcome=breaks detail="canary: github.com/moby/buildkit/solver/errdefs removed."
+time=2026-10-06T10:36:19.161Z level=INFO msg=window consumer=buildx bump=08998a7e select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T10:37:33.867Z level=INFO msg=window consumer=buildx bump=17eff25f select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T10:38:01.834Z level=INFO msg=window consumer=buildx bump=285dd76b select=unchanged breaking=0 compiler=breaks
+time=2026-10-06T10:38:35.473Z level=INFO msg=window consumer=buildx bump=39db6159 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T10:38:37.010Z level=INFO msg=window consumer=buildx bump=40fcf992 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T10:39:24.632Z level=INFO msg=window consumer=buildx bump=5723ceef select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T10:39:36.679Z level=INFO msg=window consumer=buildx bump=6160c9bc select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T10:40:52.785Z level=INFO msg=window consumer=buildx bump=73b05c14 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T10:40:54.572Z level=INFO msg=window consumer=buildx bump=8c741093 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T10:41:46.400Z level=INFO msg=window consumer=buildx bump=ad371e42 select=unchanged breaking=0 compiler=bump_side_effect
+time=2026-10-06T10:42:11.183Z level=INFO msg=window consumer=buildx bump=a4a02b07 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T10:42:47.231Z level=INFO msg=window consumer=buildx bump=c1d3955f select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T10:43:44.374Z level=INFO msg=window consumer=buildx bump=dab7af61 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T10:43:44.482Z level=INFO msg=window consumer=buildx bump=cb378866 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T10:44:14.476Z level=INFO msg=window consumer=buildx bump=ea7c8e83 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T10:44:14.702Z level=INFO msg=window consumer=buildx bump=e4ee2ca1 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T10:45:07.440Z level=INFO msg=window consumer=buildx bump=efaf9daa select=unchanged breaking=0 compiler=compiles
