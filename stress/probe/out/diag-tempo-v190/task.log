@@ -1,0 +1,91 @@
+== verify exit 3
+VERDICT NO_GO {'generated_code': 'NO_GO', 'runtime': 'NO_GO', 'source_build': 'NO_GO'}
+CALLER c docsgen generated: go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/logs/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/metrics/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/profiles/v1development@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/trace/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/pro
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 15 import opentelemetry/proto/common/v1/common.proto shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 23 construct opentelemetry.proto.common.v1.AnyValue shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 23 message_type opentelemetry.proto.common.v1.AnyValue shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 29 write opentelemetry.proto.common.v1.AnyValue.#1 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 29 oneof_case opentelemetry.proto.common.v1.AnyValue.#1 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 35 write opentelemetry.proto.common.v1.AnyValue.#2 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 35 oneof_case opentelemetry.proto.common.v1.AnyValue.#2 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 41 write opentelemetry.proto.common.v1.AnyValue.#3 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 41 oneof_case opentelemetry.proto.common.v1.AnyValue.#3 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 47 write opentelemetry.proto.common.v1.AnyValue.#4 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 47 oneof_case opentelemetry.proto.common.v1.AnyValue.#4 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 53 write opentelemetry.proto.common.v1.AnyValue.#5 shipped= True module= 
+CALLER c parquetquerygen generated: go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/logs/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/metrics/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/profiles/v1development@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/trace/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/pro
+CALLER c tempo generated: go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/logs/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/metrics/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/profiles/v1development@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/trace/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/pro
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 15 import opentelemetry/proto/common/v1/common.proto shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 23 construct opentelemetry.proto.common.v1.AnyValue shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 23 message_type opentelemetry.proto.common.v1.AnyValue shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 29 write opentelemetry.proto.common.v1.AnyValue.#1 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 29 oneof_case opentelemetry.proto.common.v1.AnyValue.#1 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 35 write opentelemetry.proto.common.v1.AnyValue.#2 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 35 oneof_case opentelemetry.proto.common.v1.AnyValue.#2 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 41 write opentelemetry.proto.common.v1.AnyValue.#3 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 41 oneof_case opentelemetry.proto.common.v1.AnyValue.#3 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 47 write opentelemetry.proto.common.v1.AnyValue.#4 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 47 oneof_case opentelemetry.proto.common.v1.AnyValue.#4 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 53 write opentelemetry.proto.common.v1.AnyValue.#5 shipped= True module= 
+CALLER c tempo (library) generated: go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/logs/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/metrics/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/profiles/v1development@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/trace/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/pro
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 15 import opentelemetry/proto/common/v1/common.proto shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 23 construct opentelemetry.proto.common.v1.AnyValue shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 23 message_type opentelemetry.proto.common.v1.AnyValue shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 29 write opentelemetry.proto.common.v1.AnyValue.#1 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 29 oneof_case opentelemetry.proto.common.v1.AnyValue.#1 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 35 write opentelemetry.proto.common.v1.AnyValue.#2 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 35 oneof_case opentelemetry.proto.common.v1.AnyValue.#2 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 41 write opentelemetry.proto.common.v1.AnyValue.#3 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 41 oneof_case opentelemetry.proto.common.v1.AnyValue.#3 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 47 write opentelemetry.proto.common.v1.AnyValue.#4 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 47 oneof_case opentelemetry.proto.common.v1.AnyValue.#4 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 53 write opentelemetry.proto.common.v1.AnyValue.#5 shipped= True module= 
+CALLER c tempo-cli generated: go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/logs/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/metrics/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/profiles/v1development@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/trace/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/pro
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 15 import opentelemetry/proto/common/v1/common.proto shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 23 construct opentelemetry.proto.common.v1.AnyValue shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 23 message_type opentelemetry.proto.common.v1.AnyValue shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 29 write opentelemetry.proto.common.v1.AnyValue.#1 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 29 oneof_case opentelemetry.proto.common.v1.AnyValue.#1 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 35 write opentelemetry.proto.common.v1.AnyValue.#2 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 35 oneof_case opentelemetry.proto.common.v1.AnyValue.#2 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 41 write opentelemetry.proto.common.v1.AnyValue.#3 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 41 oneof_case opentelemetry.proto.common.v1.AnyValue.#3 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 47 write opentelemetry.proto.common.v1.AnyValue.#4 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 47 oneof_case opentelemetry.proto.common.v1.AnyValue.#4 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 53 write opentelemetry.proto.common.v1.AnyValue.#5 shipped= True module= 
+CALLER c tempo-query generated: go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/logs/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/metrics/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/profiles/v1development@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/trace/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/pro
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 15 import opentelemetry/proto/common/v1/common.proto shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 23 construct opentelemetry.proto.common.v1.AnyValue shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 23 message_type opentelemetry.proto.common.v1.AnyValue shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 29 write opentelemetry.proto.common.v1.AnyValue.#1 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 29 oneof_case opentelemetry.proto.common.v1.AnyValue.#1 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 35 write opentelemetry.proto.common.v1.AnyValue.#2 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 35 oneof_case opentelemetry.proto.common.v1.AnyValue.#2 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 41 write opentelemetry.proto.common.v1.AnyValue.#3 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 41 oneof_case opentelemetry.proto.common.v1.AnyValue.#3 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 47 write opentelemetry.proto.common.v1.AnyValue.#4 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 47 oneof_case opentelemetry.proto.common.v1.AnyValue.#4 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 53 write opentelemetry.proto.common.v1.AnyValue.#5 shipped= True module= 
+CALLER c tempo-vulture generated: go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/logs/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/metrics/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/profiles/v1development@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/protogen/collector/trace/v1@v1.44.0 protoc-gen-go=- protoc-gen-go-grpc=- protoc=-; go.opentelemetry.io/collector/pdata/internal/data/pro
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 15 import opentelemetry/proto/common/v1/common.proto shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 23 construct opentelemetry.proto.common.v1.AnyValue shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 23 message_type opentelemetry.proto.common.v1.AnyValue shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 29 write opentelemetry.proto.common.v1.AnyValue.#1 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 29 oneof_case opentelemetry.proto.common.v1.AnyValue.#1 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 35 write opentelemetry.proto.common.v1.AnyValue.#2 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 35 oneof_case opentelemetry.proto.common.v1.AnyValue.#2 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 41 write opentelemetry.proto.common.v1.AnyValue.#3 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 41 oneof_case opentelemetry.proto.common.v1.AnyValue.#3 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 47 write opentelemetry.proto.common.v1.AnyValue.#4 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 47 oneof_case opentelemetry.proto.common.v1.AnyValue.#4 shipped= True module= 
+   USE vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_anyvalue.go 53 write opentelemetry.proto.common.v1.AnyValue.#5 shipped= True module= 
+FINDING NO_GO generated_code PROTO_ENUM_REMOVED_USED_BY_CALLER opentelemetry.proto.profiles.v1development.AggregationTemporality | regenerated bindings drop this type; the caller will not compile
+FINDING NO_GO runtime PROTO_ENUM_REMOVED_USED_BY_CALLER opentelemetry.proto.profiles.v1development.AggregationTemporality | caller uses an enum the provider no longer defines
+FINDING NO_GO source_build PROTO_ENUM_REMOVED_USED_BY_CALLER opentelemetry.proto.profiles.v1development.AggregationTemporality | caller source references the removed type
+FINDING NO_GO generated_code PROTO_FIELD_PRESENCE_CHANGED_REFERENCED_IN_SOURCE opentelemetry.proto.profiles.v1development.Location.#1 | regenerated bindings change the field to or from a pointer type
+FINDING NO_GO source_build PROTO_FIELD_PRESENCE_CHANGED_REFERENCED_IN_SOURCE opentelemetry.proto.profiles.v1development.Location.#1 | caller source uses the field with its old presence shape
+FINDING NO_GO generated_code PROTO_FIELD_RENAMED_REFERENCED_BY_CALLER opentelemetry.proto.profiles.v1development.Location.#3 | regenerated bindings rename the accessor; the caller will not compile until updated
+FINDING NO_GO source_build PROTO_FIELD_RENAMED_REFERENCED_BY_CALLER opentelemetry.proto.profiles.v1development.Location.#3 | caller source references the old field name
+FINDING NO_GO generated_code PROTO_FIELD_RENAMED_REFERENCED_BY_CALLER opentelemetry.proto.profiles.v1development.Location.#4 | regenerated bindings rename the accessor; the caller will not compile until updated
+
+exit 0 seconds 26

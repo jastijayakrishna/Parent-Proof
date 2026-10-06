@@ -1,0 +1,124 @@
+Analyzing c ...
+  c: Go, 339 packages read (10.8s)
+✗ Don't merge
+
+removes enum AggregationTemporality
+changes presence of Location.mapping_index (#1) from explicit to implicit
+renames Location.line (#3) to lines
+changes JSON name of Location.line (#3) from line to lines
+renames Location.is_folded (#4) to attribute_indices
+changes Location.is_folded (#4) from bool to repeated int32
+changes JSON name of Location.is_folded (#4) from isFolded to attributeIndices
+makes Profile.sample_type (#1) a single value
+moves Profile.profile_id from #10 to #7
+moves Profile.dropped_attributes_count from #11 to #8
+moves Profile.original_payload_format from #12 to #9
+renames Profile.sample (#2) to samples
+changes JSON name of Profile.sample (#2) from sample to samples
+renames Profile.location_indices (#3) to time_unix_nano
+changes Profile.location_indices (#3) from repeated int32 to fixed64
+changes JSON name of Profile.location_indices (#3) from locationIndices to timeUnixNano
+renames Profile.time_nanos (#4) to duration_nano
+changes Profile.time_nanos (#4) from int64 to uint64
+changes JSON name of Profile.time_nanos (#4) from timeNanos to durationNano
+renames Profile.duration_nanos (#5) to period_type
+changes Profile.duration_nanos (#5) from int64 to opentelemetry.proto.profiles.v1development.ValueType
+changes presence of Profile.duration_nanos (#5) from implicit to explicit
+changes JSON name of Profile.duration_nanos (#5) from durationNanos to periodType
+moves Profile.period_type from #6 to #5
+moves Profile.period from #7 to #6
+renames Profile.comment_strindices (#8) to dropped_attributes_count
+changes Profile.comment_strindices (#8) from repeated int32 to uint32
+changes JSON name of Profile.comment_strindices (#8) from commentStrindices to droppedAttributesCount
+renames Profile.default_sample_type_index (#9) to original_payload_format
+changes Profile.default_sample_type_index (#9) from int32 to string
+changes JSON name of Profile.default_sample_type_index (#9) from defaultSampleTypeIndex to originalPayloadFormat
+changes ProfilesDictionary.attribute_table (#6) from repeated opentelemetry.proto.common.v1.KeyValue to repeated opentelemetry.proto.profiles.v1development.KeyValueAndUnit
+renames ProfilesDictionary.attribute_units (#7) to stack_table
+changes ProfilesDictionary.attribute_units (#7) from repeated opentelemetry.proto.profiles.v1development.AttributeUnit to repeated opentelemetry.proto.profiles.v1development.Stack
+changes JSON name of ProfilesDictionary.attribute_units (#7) from attributeUnits to stackTable
+renames Sample.locations_start_index (#1) to stack_index
+changes JSON name of Sample.locations_start_index (#1) from locationsStartIndex to stackIndex
+renames Sample.locations_length (#2) to values
+changes Sample.locations_length (#2) from int32 to repeated int64
+changes JSON name of Sample.locations_length (#2) from locationsLength to values
+renames Sample.value (#3) to attribute_indices
+changes Sample.value (#3) from repeated int64 to repeated int32
+changes JSON name of Sample.value (#3) from value to attributeIndices
+moves Sample.attribute_indices from #4 to #3
+moves Sample.link_index from #5 to #4
+removes ValueType.aggregation_temporality (#3)
+
+6 of 7 deploy units break (c) · 0 need review · 1 proved safe (c)
+
+Breaks:
+- c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) @ c68c8ba8
+  Why: regenerated bindings drop this type; the caller will not compile [PROTO_ENUM_REMOVED_USED_BY_CALLER]
+  Why: regenerated bindings change the field to or from a pointer type [PROTO_FIELD_PRESENCE_CHANGED_REFERENCED_IN_SOURCE]
+  Why: regenerated bindings rename the accessor; the caller will not compile until updated [PROTO_FIELD_RENAMED_REFERENCED_BY_CALLER]
+  Why: … and 6 more reason(s); see the full evidence
+  - vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_location.go:100
+      dest.WriteInt32(orig.AttributeIndices[i])
+  - vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_location.go:123
+      orig.AttributeIndices = append(orig.AttributeIndices, iter.ReadInt32())
+  - vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_location.go:146
+      if len(orig.AttributeIndices) > 0 {
+  - vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_location.go:148
+      for _, e := range orig.AttributeIndices {
+  - vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_location.go:177
+      l = len(orig.AttributeIndices)
+  - vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_location.go:181
+      pos = proto.EncodeVarint(buf, pos, uint64(orig.AttributeIndices[i]))
+  - … 233 more location(s)
+
+Old and new running together (both deploy orders): breaks
+Rebuilding callers with the new contract: breaks
+
+How to ship this safely:
+1. Keep AggregationTemporality until c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) stop using it (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_valuetype.go:112, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_valuetype.go:113, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_valuetype.go:132, +12 more).
+2. Changing presence of Location.mapping_index (#1) changes its generated Go type; update c (5 of 7 units: docsgen, tempo, tempo (library), tempo-cli and tempo-vulture) (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_location.go:54, vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_location.go:60) when regenerating, and keep reads of unset values correct.
+3. Renaming Location.line (#3) changes the generated accessor; update c (5 of 7 units: docsgen, tempo, tempo (library), tempo-cli and tempo-vulture) (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_location.go:76) in the same change that regenerates their bindings, or keep the old name.
+4. Renaming Location.is_folded (#4) changes the generated accessor; update c (5 of 7 units: docsgen, tempo, tempo (library), tempo-cli and tempo-vulture) (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_location.go:81) in the same change that regenerates their bindings, or keep the old name.
+5. Do not change Location.is_folded (#4) in place: add a new field with a new number, write both, move c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) to the new field (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_location.go:100, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_location.go:123, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_location.go:146, +11 more), then reserve the old number.
+6. Do not change Profile.profile_id (#10) in place: add a new field with a new number, write both, move c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) to the new field (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:141, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:143, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:193, +8 more), then reserve the old number.
+7. When Profile.profile_id (#10) is finally removed, add `reserved 10; reserved "profile_id";` to Profile.
+8. Do not change Profile.dropped_attributes_count (#11) in place: add a new field with a new number, write both, move c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) to the new field (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:146, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:148, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:195, +8 more), then reserve the old number.
+9. When Profile.dropped_attributes_count (#11) is finally removed, add `reserved 11; reserved "dropped_attributes_count";` to Profile.
+10. Do not change Profile.original_payload_format (#12) in place: add a new field with a new number, write both, move c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) to the new field (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:150, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:153, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:154, +11 more), then reserve the old number.
+11. When Profile.original_payload_format (#12) is finally removed, add `reserved 12; reserved "original_payload_format";` to Profile.
+12. Do not change Profile.sample_type (#1) in place: add a new field with a new number, write both, move c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) to the new field (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:168, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:211, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:263, +6 more), then reserve the old number.
+13. Renaming Profile.sample (#2) changes the generated accessor; update c (5 of 7 units: docsgen, tempo, tempo (library), tempo-cli and tempo-vulture) (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:60) in the same change that regenerates their bindings, or keep the old name.
+14. Renaming Profile.location_indices (#3) changes the generated accessor; update c (5 of 7 units: docsgen, tempo, tempo (library), tempo-cli and tempo-vulture) (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:65, vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:71) in the same change that regenerates their bindings, or keep the old name.
+15. Do not change Profile.location_indices (#3) in place: add a new field with a new number, write both, move c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) to the new field (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:109, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:111, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:176, +8 more), then reserve the old number.
+16. Renaming Profile.time_nanos (#4) changes the generated accessor; update c (5 of 7 units: docsgen, tempo, tempo (library), tempo-cli and tempo-vulture) (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:76, vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:82) in the same change that regenerates their bindings, or keep the old name.
+17. Changing presence of Profile.duration_nanos (#5) changes its generated Go type; update c (5 of 7 units: docsgen, tempo, tempo (library), tempo-cli and tempo-vulture) (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:87) when regenerating, and keep reads of unset values correct.
+18. Renaming Profile.duration_nanos (#5) changes the generated accessor; update c (5 of 7 units: docsgen, tempo, tempo (library), tempo-cli and tempo-vulture) (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:87) in the same change that regenerates their bindings, or keep the old name.
+19. Do not change Profile.duration_nanos (#5) in place: add a new field with a new number, write both, move c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) to the new field (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:118, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:180, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:223, +6 more), then reserve the old number.
+20. Do not change Profile.period_type (#6) in place: add a new field with a new number, write both, move c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) to the new field (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:119, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:121, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:182, +9 more), then reserve the old number.
+21. When Profile.period_type (#6) is finally removed, add `reserved 6; reserved "period_type";` to Profile.
+22. Do not change Profile.period (#7) in place: add a new field with a new number, write both, move c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) to the new field (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:123, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:126, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:127, +11 more), then reserve the old number.
+23. When Profile.period (#7) is finally removed, add `reserved 7; reserved "period";` to Profile.
+24. Renaming Profile.comment_strindices (#8) changes the generated accessor; update c (5 of 7 units: docsgen, tempo, tempo (library), tempo-cli and tempo-vulture) (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:108, vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:114) in the same change that regenerates their bindings, or keep the old name.
+25. Do not change Profile.comment_strindices (#8) in place: add a new field with a new number, write both, move c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) to the new field (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:133, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:135, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:189, +8 more), then reserve the old number.
+26. Renaming Profile.default_sample_type_index (#9) changes the generated accessor; update c (5 of 7 units: docsgen, tempo, tempo (library), tempo-cli and tempo-vulture) (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:119, vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:125) in the same change that regenerates their bindings, or keep the old name.
+27. Do not change Profile.default_sample_type_index (#9) in place: add a new field with a new number, write both, move c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) to the new field (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:137, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:139, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profile.go:191, +9 more), then reserve the old number.
+28. Do not change ProfilesDictionary.attribute_table (#6) in place: add a new field with a new number, write both, move c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) to the new field (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profilesdictionary.go:147, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profilesdictionary.go:150, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profilesdictionary.go:151, +14 more), then reserve the old number.
+29. Renaming ProfilesDictionary.attribute_units (#7) changes the generated accessor; update c (5 of 7 units: docsgen, tempo, tempo (library), tempo-cli and tempo-vulture) (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profilesdictionary.go:84) in the same change that regenerates their bindings, or keep the old name.
+30. Do not change ProfilesDictionary.attribute_units (#7) in place: add a new field with a new number, write both, move c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) to the new field (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profilesdictionary.go:157, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profilesdictionary.go:160, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_profilesdictionary.go:161, +14 more), then reserve the old number.
+31. Renaming Sample.locations_start_index (#1) changes the generated accessor; update c (5 of 7 units: docsgen, tempo, tempo (library), tempo-cli and tempo-vulture) (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_sample.go:54, vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_sample.go:60) in the same change that regenerates their bindings, or keep the old name.
+32. Renaming Sample.locations_length (#2) changes the generated accessor; update c (5 of 7 units: docsgen, tempo, tempo (library), tempo-cli and tempo-vulture) (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_sample.go:65) in the same change that regenerates their bindings, or keep the old name.
+33. Do not change Sample.locations_length (#2) in place: add a new field with a new number, write both, move c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) to the new field (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_sample.go:124, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_sample.go:152, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_sample.go:154, +11 more), then reserve the old number.
+34. Renaming Sample.value (#3) changes the generated accessor; update c (5 of 7 units: docsgen, tempo, tempo (library), tempo-cli and tempo-vulture) (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_sample.go:70) in the same change that regenerates their bindings, or keep the old name.
+35. Do not change Sample.value (#3) in place: add a new field with a new number, write both, move c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) to the new field (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_sample.go:129, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_sample.go:159, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_sample.go:161, +11 more), then reserve the old number.
+36. Do not change Sample.attribute_indices (#4) in place: add a new field with a new number, write both, move c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) to the new field (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_sample.go:101, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_sample.go:133, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_sample.go:166, +9 more), then reserve the old number.
+37. When Sample.attribute_indices (#4) is finally removed, add `reserved 4; reserved "attribute_indices";` to Sample.
+38. Do not change Sample.link_index (#5) in place: add a new field with a new number, write both, move c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) to the new field (vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_sample.go:103, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_sample.go:106, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_sample.go:107, +11 more), then reserve the old number.
+39. When Sample.link_index (#5) is finally removed, add `reserved 5; reserved "link_index";` to Sample.
+40. Keep ValueType.aggregation_temporality (#3) until c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) stop using it: vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_valuetype.go:112, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_valuetype.go:113, vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_valuetype.go:132, +9 more. Remove it only after those callers are deployed.
+41. When ValueType.aggregation_temporality (#3) is finally removed, add `reserved 3; reserved "aggregation_temporality";` to ValueType.
+Deploy order: no order is safe while old and new binaries run side by side; make the change additive first.
+
+Verified against p@a8951735 (base 8654ab7a) and 1 caller commit(s).
+Not checked: callers other than the directories given with --callers
+
+Decision d_88e7ba6954d80214 · keep it with --out record.json and replay with: verifier replay --file record.json
