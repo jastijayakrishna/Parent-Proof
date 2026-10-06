@@ -65,6 +65,13 @@ jobs:
           dest="stress/results/java/$P/$MODE"
           mkdir -p "$dest"
           rm -f "$dest/results-$tag.jsonl"
+          # A run with another number of shards left files this run does
+          # not write: they are another run's and would be counted twice.
+          total=${SHARD#*/}
+          for f in "$dest"/results-*of*.jsonl "$dest"/job-*of*.json "$dest"/run-*of*.log; do
+            [ -e "$f" ] || continue
+            case "$f" in *of"$total".jsonl|*of"$total".json|*of"$total".log) ;; *) rm -f "$f" ;; esac
+          done
           started=$(date +%s)
           set +e
           timeout 40m python3 stress/java/harness.py run "$P" "$MODE" --shard "$SHARD" --out "$dest/results-$tag.jsonl" 2>&1 | tee "$RUNNER_TEMP/run.log"

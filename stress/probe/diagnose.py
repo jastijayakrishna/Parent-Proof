@@ -34,7 +34,7 @@ for c in (changes + java_changes)[:40]:
 print("FINDINGS", len(d.get("findings") or []))
 for f in (d.get("findings") or [])[:30]:
     ev = [f"{(u.get('location') or {}).get('file')}:{(u.get('location') or {}).get('line')}" for u in (f.get("evidence") or [])[:3]]
-    print("  ", f.get("outcome"), f.get("aspect"), f.get("rule"), (f.get("symbol") or {}).get("name"), ev, (f.get("detail") or "")[:160])
+    print("  ", f.get("outcome"), f.get("aspect"), f.get("rule"), (f.get("symbol") or {}).get("name"), ev, (f.get("detail") or "")[:2000 if f.get("rule") == "CONTRACT_COMPILE_ERROR" else 160])
 print("CALLERS", [(c.get("caller", {}).get("deploy_unit"), c.get("outcome"), c.get("reasons")) for c in d.get("callers") or []])
 touched = set()
 for c in changes + java_changes:
