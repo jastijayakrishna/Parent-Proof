@@ -1,25 +1,25 @@
-time=2026-10-06T04:40:52.725Z level=INFO msg=cloning repo=p-cometbft-cosmos-sdk url=https://github.com/cometbft/cometbft.git
-time=2026-10-06T04:40:53.757Z level=INFO msg=cloning repo=c-cometbft-cosmos-sdk url=https://github.com/cosmos/cosmos-sdk.git
-cometbft-cosmos-sdk 1c55dd4f GO       source_build=GO      compiler=compiles          152.2s 
-cometbft-cosmos-sdk 606b4197 GO       source_build=GO      compiler=compiles           29.7s 
-cometbft-cosmos-sdk 4590e7ac GO       source_build=GO      compiler=compiles           21.4s 
-cometbft-cosmos-sdk 766ab925 UNKNOWN  source_build=UNKNOWN compiler=compiles           12.3s 
-cometbft-cosmos-sdk b7819277 NO_GO    source_build=NO_GO   compiler=breaks             18.5s 
-cometbft-cosmos-sdk 2581fbfa GO       source_build=GO      compiler=compiles           14.0s 
-cometbft-cosmos-sdk 5a0f1b27 GO       source_build=GO      compiler=compiles           12.0s 
-cometbft-cosmos-sdk f833026c UNKNOWN  source_build=UNKNOWN compiler=compiles           16.5s 
-cometbft-cosmos-sdk 3d60256a GO       source_build=GO      compiler=compiles           13.8s 
-cometbft-cosmos-sdk 9d637273 GO       source_build=GO      compiler=compiles            3.3s 
-cometbft-cosmos-sdk 6f172be3 GO       source_build=GO      compiler=compiles           12.9s 
-cometbft-cosmos-sdk 4ec0d897 GO       source_build=GO      compiler=compiles           16.3s 
-cometbft-cosmos-sdk 14f8ac72 UNKNOWN  source_build=UNKNOWN compiler=compiles           48.1s 
-cometbft-cosmos-sdk d95e35aa GO       source_build=GO      compiler=compiles           14.9s 
-cometbft-cosmos-sdk a95c2d1b GO       source_build=GO      compiler=bump_side_effect    8.1s 
-cometbft-cosmos-sdk 354d4dbf GO       source_build=GO      compiler=compiles            9.4s 
-cometbft-cosmos-sdk 00e34367 GO       source_build=GO      compiler=compiles            9.6s 
-cometbft-cosmos-sdk 8e875cb7 GO       source_build=GO      compiler=compiles            5.2s 
-cometbft-cosmos-sdk 4212c701 GO       source_build=GO      compiler=compiles            5.3s 
-cometbft-cosmos-sdk 6ccb0817 GO       source_build=GO      compiler=compiles            3.8s 
+time=2026-10-06T06:18:01.077Z level=INFO msg=cloning repo=p-cometbft-cosmos-sdk url=https://github.com/cometbft/cometbft.git
+time=2026-10-06T06:18:02.356Z level=INFO msg=cloning repo=c-cometbft-cosmos-sdk url=https://github.com/cosmos/cosmos-sdk.git
+cometbft-cosmos-sdk 1c55dd4f GO       source_build=GO      compiler=compiles          111.0s 
+cometbft-cosmos-sdk 606b4197 GO       source_build=GO      compiler=compiles           19.5s 
+cometbft-cosmos-sdk 4590e7ac GO       source_build=GO      compiler=compiles           13.9s 
+cometbft-cosmos-sdk 766ab925 UNKNOWN  source_build=UNKNOWN compiler=compiles            9.0s 
+cometbft-cosmos-sdk b7819277 NO_GO    source_build=NO_GO   compiler=breaks             12.9s 
+cometbft-cosmos-sdk 2581fbfa GO       source_build=GO      compiler=compiles            9.8s 
+cometbft-cosmos-sdk 5a0f1b27 GO       source_build=GO      compiler=compiles            7.3s 
+cometbft-cosmos-sdk f833026c UNKNOWN  source_build=UNKNOWN compiler=compiles           12.1s 
+cometbft-cosmos-sdk 3d60256a GO       source_build=GO      compiler=compiles            9.2s 
+cometbft-cosmos-sdk 9d637273 GO       source_build=GO      compiler=compiles            2.3s 
+cometbft-cosmos-sdk 6f172be3 GO       source_build=GO      compiler=compiles            9.1s 
+cometbft-cosmos-sdk 4ec0d897 GO       source_build=GO      compiler=compiles           10.1s 
+cometbft-cosmos-sdk 14f8ac72 UNKNOWN  source_build=UNKNOWN compiler=compiles           42.0s 
+cometbft-cosmos-sdk d95e35aa GO       source_build=GO      compiler=compiles           16.3s 
+cometbft-cosmos-sdk a95c2d1b GO       source_build=GO      compiler=bump_side_effect    6.3s 
+cometbft-cosmos-sdk 354d4dbf GO       source_build=GO      compiler=compiles            7.7s 
+cometbft-cosmos-sdk 00e34367 GO       source_build=GO      compiler=compiles            9.3s 
+cometbft-cosmos-sdk 8e875cb7 GO       source_build=GO      compiler=compiles            4.2s 
+cometbft-cosmos-sdk 4212c701 GO       source_build=GO      compiler=compiles            4.5s 
+cometbft-cosmos-sdk 6ccb0817 GO       source_build=GO      compiler=compiles            2.8s 
 cometbft-cosmos-sdk   20 decisions  GO  16  NO-GO   1  UNKNOWN   3 (15.0%)  errors 0 | compiler judged  19: agree  16  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 3 | not judged 1
 TOTAL         20 decisions  GO  16  NO-GO   1  UNKNOWN   3 (15.0%)  errors 0 | compiler judged  19: agree  16  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 3 | not judged 1
 
@@ -32,6 +32,6 @@ UNKNOWN reasons across all: windows, ecosystems, an example
   FAILED cometbft-cosmos-sdk@f833026c47baad204e124f85cdf804b88648eac7: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
   FAILED cometbft-cosmos-sdk@14f8ac7262ef84c042d06bbd7a35e58594421f85: unknown_on_safe: WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION, UNRESOLVED_MEMBER
 
-20 windows in 7m12s.
+20 windows in 5m24s.
 verifier gate: scan failed: 3 disagreements with the compiler or errors
-exit 1 seconds 432
+exit 1 seconds 324
