@@ -1,25 +1,25 @@
-time=2026-10-06T09:58:18.018Z level=INFO msg=cloning repo=p-etcd url=https://github.com/etcd-io/etcd.git
-time=2026-10-06T09:58:19.921Z level=INFO msg=cloning repo=c-etcd url=https://github.com/etcd-io/etcd.git
-etcd        d098a8b5 GO       source_build=GO      compiler=compiles           47.2s 
-etcd        ee374bdc GO       source_build=GO      compiler=compiles            7.7s 
-etcd        84e612f3 UNKNOWN  source_build=UNKNOWN compiler=compiles            8.4s 
-etcd        ff2e00f5 GO       source_build=GO      compiler=-                   3.2s 
+time=2026-10-06T13:45:39.679Z level=INFO msg=cloning repo=p-etcd url=https://github.com/etcd-io/etcd.git
+time=2026-10-06T13:45:40.929Z level=INFO msg=cloning repo=c-etcd url=https://github.com/etcd-io/etcd.git
+etcd        d098a8b5 GO       source_build=GO      compiler=compiles           47.1s 
+etcd        ee374bdc GO       source_build=GO      compiler=compiles            7.4s 
+etcd        84e612f3 UNKNOWN  source_build=UNKNOWN compiler=compiles           10.5s 
+etcd        ff2e00f5 GO       source_build=GO      compiler=-                   3.1s 
 etcd        c4e53cdd UNKNOWN  source_build=UNKNOWN compiler=-                   1.5s 
 etcd        74f54e6f GO       source_build=GO      compiler=-                   1.8s 
 etcd        c2251842 NO_GO    source_build=NO_GO   compiler=-                   1.2s 
 etcd        121e8a3d UNKNOWN  source_build=UNKNOWN compiler=-                   1.2s 
-etcd        55035cab UNKNOWN  source_build=UNKNOWN compiler=-                   2.3s 
+etcd        55035cab UNKNOWN  source_build=UNKNOWN compiler=-                   2.2s 
 etcd        75932ca1 UNKNOWN  source_build=UNKNOWN compiler=-                   1.9s 
-etcd        b428dc25 NO_GO    source_build=NO_GO   compiler=-                   1.4s 
-etcd        073d46a5 UNKNOWN  source_build=GO      compiler=compiles            7.5s 
-etcd        c501d6bf GO       source_build=GO      compiler=compiles            9.1s 
+etcd        b428dc25 NO_GO    source_build=NO_GO   compiler=-                   1.7s 
+etcd        073d46a5 UNKNOWN  source_build=GO      compiler=compiles            8.1s 
+etcd        c501d6bf GO       source_build=GO      compiler=compiles            9.0s 
 etcd        f5409c42 GO       source_build=GO      compiler=-                   3.3s 
-etcd        022b9b22 GO       source_build=GO      compiler=compiles            6.9s 
-etcd        97c63c9f GO       source_build=GO      compiler=compiles            7.3s 
-etcd        9d57554c GO       source_build=GO      compiler=compiles            3.5s 
-etcd        2eca68e3 GO       source_build=GO      compiler=compiles            7.4s 
-etcd        63fe0f28 GO       source_build=GO      compiler=compiles            5.5s 
-etcd        4155d8bb GO       source_build=GO      compiler=compiles           12.4s 
+etcd        022b9b22 GO       source_build=GO      compiler=compiles            6.7s 
+etcd        97c63c9f GO       source_build=GO      compiler=compiles            6.7s 
+etcd        9d57554c GO       source_build=GO      compiler=compiles            3.4s 
+etcd        2eca68e3 GO       source_build=GO      compiler=compiles            7.8s 
+etcd        63fe0f28 GO       source_build=GO      compiler=compiles            6.0s 
+etcd        4155d8bb GO       source_build=GO      compiler=compiles            8.2s 
 etcd          20 decisions  GO  12  NO-GO   2  UNKNOWN   6 (30.0%)  errors 0 | compiler judged  11: agree  10  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 1 | not judged 9
 TOTAL         20 decisions  GO  12  NO-GO   2  UNKNOWN   6 (30.0%)  errors 0 | compiler judged  11: agree  10  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 1 | not judged 9
 
@@ -30,6 +30,6 @@ UNKNOWN reasons across all: windows, ecosystems, an example
     1   1  WHOLE_MESSAGE_FLOW (e.g. etcd@073d46a558de734e5e86ff2f84cd2f54f990f75d)
   FAILED etcd@84e612f39b82d1c8ee3f884a59e3f973209d8fbc: unknown_on_safe: NEEDS_REVIEW
 
-20 windows in 2m25s.
+20 windows in 2m22s.
 verifier gate: scan failed: 1 disagreements with the compiler or errors
 exit 1
