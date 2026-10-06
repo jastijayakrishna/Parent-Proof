@@ -1,2 +1,2 @@
-# Diagnose 2026-10-06: cometbft -> cosmos-sdk window v1.0.0-rc1 -> ab0be101 is Merge with no evidence while go build breaks: cometbft removed crypto/sr25519, which cosmos-sdk imports. What did the provider Go API check see?
-diag-cometbft-sr25519 - bash stress/probe/diag-goapi.sh https://github.com/cometbft/cometbft https://github.com/cosmos/cosmos-sdk d275c67d6daf5171b203884bfe48f6639574c89f^ 86da0027d878707365c16b124b77892ca5212fe1 ab0be101882f1250cd5aad6dfd09a6c2104f8577 sr25519 "$OUT"
+# Diagnose 2026-10-06: containerd-api -> nerdctl v1.7.19 -> v1.8.0-rc.2 is Don't merge (build) while go build compiles and the canary broke. Which findings, on what?
+diag-nerdctl-fa - bash stress/probe/diag-go.sh https://github.com/containerd/containerd https://github.com/containerd/nerdctl 7aa8ca9b65e90d22bf0faac77cbe528a0462630e^ "$OUT" 080d35b9ea94c78232c454f1d4e7250566a8bd7d:b600181a9324222b5f84c702b13250390bfdf746
