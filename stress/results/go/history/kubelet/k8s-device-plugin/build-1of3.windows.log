@@ -1,8 +1,8 @@
-time=2026-10-06T09:44:25.674Z level=INFO msg=mined consumer=k8s-device-plugin pin_moves=17 to_compile=6 skipped=map[]
-time=2026-10-06T09:44:46.409Z level=INFO msg=canary consumer=k8s-device-plugin at=0ee1f79287fa1378300524b052cc25b76a3f1082^ outcome=baseline_fails detail="canary: k8s.io/kubelet/pkg/apis/deviceplugin/v1beta1 removed. every package that imports k8s.io/kubelet fails to compile before the bump"
-time=2026-10-06T09:44:48.745Z level=INFO msg=window consumer=k8s-device-plugin bump=0ee1f792 select=additive breaking=0 compiler=baseline_fails
-time=2026-10-06T09:45:04.710Z level=INFO msg=window consumer=k8s-device-plugin bump=7101d0f8 select=unchanged breaking=0 compiler=baseline_fails
-time=2026-10-06T09:45:04.735Z level=INFO msg=window consumer=k8s-device-plugin bump=43445380 select=breaking breaking=26 compiler=baseline_fails
-time=2026-10-06T09:45:19.372Z level=INFO msg=window consumer=k8s-device-plugin bump=7a1f5dab select=unchanged breaking=0 compiler=baseline_fails
-time=2026-10-06T09:45:21.563Z level=INFO msg=window consumer=k8s-device-plugin bump=993fe2a2 select=additive breaking=0 compiler=baseline_fails
-time=2026-10-06T09:45:28.453Z level=INFO msg=window consumer=k8s-device-plugin bump=bf991bb5 select=breaking breaking=11 compiler=baseline_fails
+time=2026-10-06T11:19:09.602Z level=INFO msg=mined consumer=k8s-device-plugin pin_moves=17 to_compile=6 skipped=map[]
+time=2026-10-06T11:19:35.606Z level=INFO msg=canary consumer=k8s-device-plugin at=0ee1f79287fa1378300524b052cc25b76a3f1082^ outcome=baseline_fails detail="canary: k8s.io/kubelet/pkg/apis/deviceplugin/v1beta1 removed. every package that imports k8s.io/kubelet fails to compile before the bump"
+time=2026-10-06T11:19:37.989Z level=INFO msg=window consumer=k8s-device-plugin bump=0ee1f792 select=additive breaking=0 compiler=baseline_fails
+time=2026-10-06T11:19:57.832Z level=INFO msg=window consumer=k8s-device-plugin bump=43445380 select=breaking breaking=26 compiler=baseline_fails
+time=2026-10-06T11:19:58.281Z level=INFO msg=window consumer=k8s-device-plugin bump=7101d0f8 select=unchanged breaking=0 compiler=baseline_fails
+time=2026-10-06T11:20:16.064Z level=INFO msg=window consumer=k8s-device-plugin bump=7a1f5dab select=unchanged breaking=0 compiler=baseline_fails
+time=2026-10-06T11:20:19.140Z level=INFO msg=window consumer=k8s-device-plugin bump=993fe2a2 select=additive breaking=0 compiler=baseline_fails
+time=2026-10-06T11:20:27.527Z level=INFO msg=window consumer=k8s-device-plugin bump=bf991bb5 select=breaking breaking=11 compiler=baseline_fails
