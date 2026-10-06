@@ -1,5 +1,6 @@
 java-control-plane history: 23 windows, shard 2/6 has 4
-9fa595ca8151 2022-02-04 verifier=NO_GO build=UNKNOWN compiler=compiles 124.4s 
-d6a3d34c2c4f 2023-01-19 verifier=NO_GO build=UNKNOWN compiler=compiles 89.5s 
-f889ce612472 2024-04-24 verifier=NO_GO build=UNKNOWN compiler=compiles 103.5s 
-51a818dbbbdf 2026-01-15 verifier=NO_GO build=UNKNOWN compiler=compiles 114.7s 
+canary at 9fa595ca8151: breaks (577 files moved) ['cache/src/main/java/io/envoyproxy/controlplane/cache/StatusInfo.java:3: package io.envoyproxy.envoy.config.core.v3 does not exist']
+9fa595ca8151 2022-02-04 verifier=NO_GO build=UNKNOWN compiler=compiles 103.0s 
+d6a3d34c2c4f 2023-01-19 verifier=NO_GO build=UNKNOWN compiler=compiles 92.1s 
+f889ce612472 2024-04-24 verifier=NO_GO build=UNKNOWN compiler=compiles 104.3s 
+51a818dbbbdf 2026-01-15 verifier=NO_GO build=UNKNOWN compiler=compiles 114.9s 
