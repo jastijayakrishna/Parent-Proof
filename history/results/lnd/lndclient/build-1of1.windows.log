@@ -1,16 +1,16 @@
-time=2026-10-06T09:32:25.677Z level=INFO msg=skip consumer=lndclient bump=8ddc90c2 old=v0.19.0-beta.rc5.0.20250905045430-9d74ec47701c new=v0.19.0-beta reason=not_forward
-time=2026-10-06T09:32:26.662Z level=INFO msg=skip consumer=lndclient bump=2afdacdb old=v0.19.0-beta new=v0.19.3-beta reason=not_sampled
-time=2026-10-06T09:32:26.662Z level=INFO msg=skip consumer=lndclient bump=91c7c019 old=v0.15.5-beta new=v0.16.0-beta reason=not_sampled
-time=2026-10-06T09:32:26.662Z level=INFO msg=skip consumer=lndclient bump=09c54915 old=v0.21.0-beta new=v0.21.0-beta.rc2.0.20260630214209-40c64f9db30d reason=not_sampled
-time=2026-10-06T09:32:26.662Z level=INFO msg=mined consumer=lndclient pin_moves=14 to_compile=10 skipped="map[not_forward:1 not_sampled:3]"
-time=2026-10-06T09:34:33.435Z level=INFO msg=canary consumer=lndclient at=548fa9bcb526423eb1bf185e3d0610d464196f32^ outcome=breaks detail="canary: github.com/lightningnetwork/lnd/lnrpc removed."
-time=2026-10-06T09:35:23.985Z level=INFO msg=window consumer=lndclient bump=548fa9bc select=breaking breaking=1 compiler=bump_side_effect
-time=2026-10-06T09:36:55.583Z level=INFO msg=window consumer=lndclient bump=793e683c select=breaking breaking=1 compiler=breaks
-time=2026-10-06T09:38:27.413Z level=INFO msg=window consumer=lndclient bump=f4831327 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T09:39:33.328Z level=INFO msg=window consumer=lndclient bump=d7e9e25f select=additive breaking=0 compiler=bump_side_effect
-time=2026-10-06T09:40:38.569Z level=INFO msg=window consumer=lndclient bump=f3260ef3 select=breaking breaking=16 compiler=breaks
-time=2026-10-06T09:41:24.727Z level=INFO msg=window consumer=lndclient bump=b9eb2fdd select=additive breaking=0 compiler=compiles
-time=2026-10-06T09:41:33.978Z level=INFO msg=window consumer=lndclient bump=50295c0c select=additive breaking=0 compiler=breaks
-time=2026-10-06T09:42:07.606Z level=INFO msg=window consumer=lndclient bump=1274ede4 select=additive breaking=0 compiler=compiles
-time=2026-10-06T09:42:18.365Z level=INFO msg=window consumer=lndclient bump=6bc4df00 select=additive breaking=0 compiler=compiles
-time=2026-10-06T09:42:53.125Z level=INFO msg=window consumer=lndclient bump=84cb4819 select=additive breaking=0 compiler=compiles
+time=2026-10-06T13:42:24.650Z level=INFO msg=skip consumer=lndclient bump=8ddc90c2 old=v0.19.0-beta.rc5.0.20250905045430-9d74ec47701c new=v0.19.0-beta reason=not_forward
+time=2026-10-06T13:42:25.702Z level=INFO msg=skip consumer=lndclient bump=2afdacdb old=v0.19.0-beta new=v0.19.3-beta reason=not_sampled
+time=2026-10-06T13:42:25.702Z level=INFO msg=skip consumer=lndclient bump=91c7c019 old=v0.15.5-beta new=v0.16.0-beta reason=not_sampled
+time=2026-10-06T13:42:25.702Z level=INFO msg=skip consumer=lndclient bump=09c54915 old=v0.21.0-beta new=v0.21.0-beta.rc2.0.20260630214209-40c64f9db30d reason=not_sampled
+time=2026-10-06T13:42:25.702Z level=INFO msg=mined consumer=lndclient pin_moves=14 to_compile=10 skipped="map[not_forward:1 not_sampled:3]"
+time=2026-10-06T13:44:36.362Z level=INFO msg=canary consumer=lndclient at=548fa9bcb526423eb1bf185e3d0610d464196f32^ outcome=breaks detail="canary: github.com/lightningnetwork/lnd/lnrpc removed."
+time=2026-10-06T13:45:29.680Z level=INFO msg=window consumer=lndclient bump=548fa9bc select=breaking breaking=1 compiler=bump_side_effect
+time=2026-10-06T13:47:06.772Z level=INFO msg=window consumer=lndclient bump=793e683c select=breaking breaking=1 compiler=breaks
+time=2026-10-06T13:48:42.824Z level=INFO msg=window consumer=lndclient bump=f4831327 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T13:49:51.720Z level=INFO msg=window consumer=lndclient bump=d7e9e25f select=additive breaking=0 compiler=bump_side_effect
+time=2026-10-06T13:50:59.566Z level=INFO msg=window consumer=lndclient bump=f3260ef3 select=breaking breaking=16 compiler=breaks
+time=2026-10-06T13:51:46.267Z level=INFO msg=window consumer=lndclient bump=b9eb2fdd select=additive breaking=0 compiler=compiles
+time=2026-10-06T13:51:58.781Z level=INFO msg=window consumer=lndclient bump=50295c0c select=additive breaking=0 compiler=breaks
+time=2026-10-06T13:52:33.081Z level=INFO msg=window consumer=lndclient bump=1274ede4 select=additive breaking=0 compiler=compiles
+time=2026-10-06T13:52:41.597Z level=INFO msg=window consumer=lndclient bump=6bc4df00 select=additive breaking=0 compiler=compiles
+time=2026-10-06T13:53:19.630Z level=INFO msg=window consumer=lndclient bump=84cb4819 select=additive breaking=0 compiler=compiles
