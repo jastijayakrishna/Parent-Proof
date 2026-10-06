@@ -1,16 +1,16 @@
-time=2026-10-06T11:33:23.427Z level=INFO msg=cloning repo=cometbft url=https://github.com/cometbft/cometbft.git
-time=2026-10-06T11:33:28.961Z level=INFO msg=cloning repo=cosmos-sdk url=https://github.com/cosmos/cosmos-sdk.git
-time=2026-10-06T11:33:53.359Z level=INFO msg=skip consumer=cosmos-sdk bump=29f7446e old=v1.0.1 new=v0.38.17 reason=not_forward
-time=2026-10-06T11:33:53.524Z level=INFO msg=skip consumer=cosmos-sdk bump=727faf04 old=v1.0.1 new=v0.38.18 reason=not_forward
-time=2026-10-06T11:33:54.152Z level=INFO msg=skip consumer=cosmos-sdk bump=7dd034dd old=v0.39.0-beta.2.0.20260224200643-e10492fb96af new=v0.39.0-beta.2.0.20260217150107-284338bcd3d9 reason=not_forward
-time=2026-10-06T11:33:54.555Z level=INFO msg=skip consumer=cosmos-sdk bump=6850afc8 old=v0.39.0 new=v0.39.0-rc1.0.20260417162916-9fcf8612cc6c reason=not_forward
-time=2026-10-06T11:33:54.596Z level=INFO msg=skip consumer=cosmos-sdk bump=f58f0401 old=v0.39.3 new=v0.39.0-rc1.0.20260527154549-606b4197148f reason=not_forward
-time=2026-10-06T11:33:54.714Z level=INFO msg=mined consumer=cosmos-sdk pin_moves=46 to_compile=6 skipped=map[not_forward:5]
-time=2026-10-06T11:36:22.977Z level=INFO msg=canary consumer=cosmos-sdk at=022c1e91daab872ccdec3de794c7b8a5bbaf6e8b^ outcome=breaks detail="canary: github.com/cometbft/cometbft/abci/types removed."
-time=2026-10-06T11:37:56.804Z level=INFO msg=window consumer=cosmos-sdk bump=022c1e91 select=breaking breaking=10 compiler=breaks
-time=2026-10-06T11:38:24.753Z level=INFO msg=window consumer=cosmos-sdk bump=41c8529f select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T11:40:50.987Z level=INFO msg=window consumer=cosmos-sdk bump=84c64b20 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T11:41:22.589Z level=INFO msg=window consumer=cosmos-sdk bump=6c7bddd1 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T11:43:15.269Z level=INFO msg=window consumer=cosmos-sdk bump=b71d0894 select=breaking breaking=30 compiler=breaks
-time=2026-10-06T11:45:18.392Z level=INFO msg=window consumer=cosmos-sdk bump=ebb7a461 select=additive breaking=0 compiler=compiles
-time=2026-10-06T11:45:18.393Z level=INFO msg="suite built" suite=cometbft windows_added=6
+time=2026-10-06T13:59:51.530Z level=INFO msg=cloning repo=cometbft url=https://github.com/cometbft/cometbft.git
+time=2026-10-06T13:59:58.211Z level=INFO msg=cloning repo=cosmos-sdk url=https://github.com/cosmos/cosmos-sdk.git
+time=2026-10-06T14:00:22.995Z level=INFO msg=skip consumer=cosmos-sdk bump=29f7446e old=v1.0.1 new=v0.38.17 reason=not_forward
+time=2026-10-06T14:00:23.159Z level=INFO msg=skip consumer=cosmos-sdk bump=727faf04 old=v1.0.1 new=v0.38.18 reason=not_forward
+time=2026-10-06T14:00:23.744Z level=INFO msg=skip consumer=cosmos-sdk bump=7dd034dd old=v0.39.0-beta.2.0.20260224200643-e10492fb96af new=v0.39.0-beta.2.0.20260217150107-284338bcd3d9 reason=not_forward
+time=2026-10-06T14:00:24.163Z level=INFO msg=skip consumer=cosmos-sdk bump=6850afc8 old=v0.39.0 new=v0.39.0-rc1.0.20260417162916-9fcf8612cc6c reason=not_forward
+time=2026-10-06T14:00:24.206Z level=INFO msg=skip consumer=cosmos-sdk bump=f58f0401 old=v0.39.3 new=v0.39.0-rc1.0.20260527154549-606b4197148f reason=not_forward
+time=2026-10-06T14:00:24.330Z level=INFO msg=mined consumer=cosmos-sdk pin_moves=46 to_compile=6 skipped=map[not_forward:5]
+time=2026-10-06T14:02:58.480Z level=INFO msg=canary consumer=cosmos-sdk at=022c1e91daab872ccdec3de794c7b8a5bbaf6e8b^ outcome=breaks detail="canary: github.com/cometbft/cometbft/abci/types removed."
+time=2026-10-06T14:04:35.569Z level=INFO msg=window consumer=cosmos-sdk bump=022c1e91 select=breaking breaking=10 compiler=breaks
+time=2026-10-06T14:05:06.773Z level=INFO msg=window consumer=cosmos-sdk bump=41c8529f select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T14:07:33.365Z level=INFO msg=window consumer=cosmos-sdk bump=84c64b20 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T14:08:08.476Z level=INFO msg=window consumer=cosmos-sdk bump=6c7bddd1 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T14:10:01.619Z level=INFO msg=window consumer=cosmos-sdk bump=b71d0894 select=breaking breaking=30 compiler=breaks
+time=2026-10-06T14:12:11.407Z level=INFO msg=window consumer=cosmos-sdk bump=ebb7a461 select=additive breaking=0 compiler=compiles
+time=2026-10-06T14:12:11.408Z level=INFO msg="suite built" suite=cometbft windows_added=6
