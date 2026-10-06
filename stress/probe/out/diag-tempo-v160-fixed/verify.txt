@@ -1,0 +1,151 @@
+Analyzing c ...
+  c: Go, 332 packages read (10.1s)
+✗ Don't merge
+
+renames Profile.string_table (#10) to profile_id
+changes Profile.string_table (#10) from repeated string to bytes
+changes JSON name of Profile.string_table (#10) from stringTable to profileId
+moves Profile.time_nanos from #11 to #4
+moves Profile.duration_nanos from #12 to #5
+moves Profile.period_type from #13 to #6
+moves Profile.period from #14 to #7
+moves Profile.comment_strindices from #15 to #8
+removes Profile.default_sample_type_strindex (#16)
+moves Profile.profile_id from #17 to #10
+moves Profile.dropped_attributes_count from #19 to #11
+moves Profile.original_payload_format from #20 to #12
+moves Profile.original_payload from #21 to #13
+moves Profile.attribute_indices from #22 to #14
+renames Profile.mapping_table (#3) to location_indices
+changes Profile.mapping_table (#3) from repeated opentelemetry.proto.profiles.v1development.Mapping to repeated int32
+changes JSON name of Profile.mapping_table (#3) from mappingTable to locationIndices
+renames Profile.location_table (#4) to time_nanos
+changes Profile.location_table (#4) from repeated opentelemetry.proto.profiles.v1development.Location to int64
+changes JSON name of Profile.location_table (#4) from locationTable to timeNanos
+moves Profile.location_indices from #5 to #3
+renames Profile.function_table (#6) to period_type
+changes Profile.function_table (#6) from repeated opentelemetry.proto.profiles.v1development.Function to opentelemetry.proto.profiles.v1development.ValueType
+changes JSON name of Profile.function_table (#6) from functionTable to periodType
+renames Profile.attribute_table (#7) to period
+changes Profile.attribute_table (#7) from repeated opentelemetry.proto.common.v1.KeyValue to int64
+changes JSON name of Profile.attribute_table (#7) from attributeTable to period
+renames Profile.attribute_units (#8) to comment_strindices
+changes Profile.attribute_units (#8) from repeated opentelemetry.proto.profiles.v1development.AttributeUnit to repeated int32
+changes JSON name of Profile.attribute_units (#8) from attributeUnits to commentStrindices
+renames Profile.link_table (#9) to default_sample_type_index
+changes Profile.link_table (#9) from repeated opentelemetry.proto.profiles.v1development.Link to int32
+changes JSON name of Profile.link_table (#9) from linkTable to defaultSampleTypeIndex
+
+4 of 7 deploy units break (c) · 3 need review (c) · 0 proved safe
+
+Breaks:
+- c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) @ 2ef94efe
+  Why: caller encodes or decodes this message with the protobuf JSON mapping; the field's JSON key changed [PROTO_FIELD_JSON_NAME_CHANGED_JSON_CALLER]
+  Why: the field's wire encoding changed; old and new binaries will misparse each other's messages [PROTO_FIELD_TYPE_CHANGED_USED_BY_CALLER]
+  Why: the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data [PROTO_FIELD_RENUMBERED_USED_BY_CALLER]
+  Why: … and 2 more reason(s); see the full evidence
+  - vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:101
+      return pcommon.StringSlice(internal.NewStringSlice(&ms.orig.StringTable, ms.state))
+  - vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:106
+      return pcommon.Timestamp(ms.orig.TimeNanos)
+  - vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:112
+      ms.orig.TimeNanos = int64(v)
+  - vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:117
+      return pcommon.Timestamp(ms.orig.DurationNanos)
+  - vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:123
+      ms.orig.DurationNanos = int64(v)
+  - vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:128
+      return pcommon.Timestamp(ms.orig.TimeNanos)
+  - … 33 more location(s)
+
+Not proved:
+- c (all 7 units: docsgen, parquetquerygen, tempo, tempo (library), tempo-cli and 2 more) — the contract's Go code is generated into a module the analysis reads as shared code (VERIFIER_AMBIENT_MODULES), so what the caller does with it is not read
+  - Fix: Check by hand what c does with the changed elements, or run the verifier with VERIFIER_AMBIENT_MODULES listing the shared modules without this contract's module, so its code is read like any contract's.
+- c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-cli/cmd-rewrite-blocks.go:82
+  - Fix: The whole message reaches github.com/go-kit/log.Logger.Log at cmd/tempo-cli/cmd-rewrite-blocks.go:82, cmd/tempo-cli/cmd-rewrite-blocks.go:94, cmd/tempo-cli/cmd-rewrite-blocks.go:214, cmd/tempo-cli/main.go:105, cmd/tempo-query/tempo/plugin.go:378 and 558 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-cli/cmd-rewrite-blocks.go:82
+  - Fix: The whole message reaches github.com/go-kit/log.Logger.Log at cmd/tempo-cli/cmd-rewrite-blocks.go:82, cmd/tempo-cli/cmd-rewrite-blocks.go:94, cmd/tempo-cli/cmd-rewrite-blocks.go:214, cmd/tempo-cli/main.go:105, cmd/tempo-query/tempo/plugin.go:378 and 558 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-cli/cmd-rewrite-blocks.go:82
+  - Fix: The whole message reaches github.com/go-kit/log.Logger.Log at cmd/tempo-cli/cmd-rewrite-blocks.go:82, cmd/tempo-cli/cmd-rewrite-blocks.go:94, cmd/tempo-cli/cmd-rewrite-blocks.go:214, cmd/tempo-cli/main.go:105, cmd/tempo-query/tempo/plugin.go:378 and 558 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-cli/cmd-rewrite-blocks.go:82
+  - Fix: The whole message reaches github.com/go-kit/log.Logger.Log at cmd/tempo-cli/cmd-rewrite-blocks.go:82, cmd/tempo-cli/cmd-rewrite-blocks.go:94, cmd/tempo-cli/cmd-rewrite-blocks.go:214, cmd/tempo-cli/main.go:105, cmd/tempo-query/tempo/plugin.go:378 and 558 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-cli/cmd-rewrite-blocks.go:82
+  - Fix: The whole message reaches github.com/go-kit/log.Logger.Log at cmd/tempo-cli/cmd-rewrite-blocks.go:82, cmd/tempo-cli/cmd-rewrite-blocks.go:94, cmd/tempo-cli/cmd-rewrite-blocks.go:214, cmd/tempo-cli/main.go:105, cmd/tempo-query/tempo/plugin.go:378 and 558 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-cli/cmd-rewrite-blocks.go:82
+  - Fix: The whole message reaches github.com/go-kit/log.Logger.Log at cmd/tempo-cli/cmd-rewrite-blocks.go:82, cmd/tempo-cli/cmd-rewrite-blocks.go:94, cmd/tempo-cli/cmd-rewrite-blocks.go:214, cmd/tempo-cli/main.go:105, cmd/tempo-query/tempo/plugin.go:378 and 558 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (6 of 7 units: docsgen, tempo, tempo (library), tempo-cli, tempo-query and 1 more) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-cli/cmd-rewrite-blocks.go:82
+  - Fix: The whole message reaches github.com/go-kit/log.Logger.Log at cmd/tempo-cli/cmd-rewrite-blocks.go:82, cmd/tempo-cli/cmd-rewrite-blocks.go:94, cmd/tempo-cli/cmd-rewrite-blocks.go:214, cmd/tempo-cli/main.go:105, cmd/tempo-query/tempo/plugin.go:378 and 558 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (2 of 7 units: tempo-query and tempo-vulture) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-query/tempo/plugin.go:378
+  - Fix: The whole message reaches go.opentelemetry.io/otel/trace.Span.RecordError at cmd/tempo-query/tempo/plugin.go:378, pkg/cache/cache.go:56, pkg/cache/memcached.go:107, pkg/cache/memcached.go:141, pkg/cache/memcached.go:143 and 121 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (2 of 7 units: tempo-query and tempo-vulture) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-query/tempo/plugin.go:378
+  - Fix: The whole message reaches go.opentelemetry.io/otel/trace.Span.RecordError at cmd/tempo-query/tempo/plugin.go:378, pkg/cache/cache.go:56, pkg/cache/memcached.go:107, pkg/cache/memcached.go:141, pkg/cache/memcached.go:143 and 121 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (2 of 7 units: tempo-query and tempo-vulture) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-query/tempo/plugin.go:378
+  - Fix: The whole message reaches go.opentelemetry.io/otel/trace.Span.RecordError at cmd/tempo-query/tempo/plugin.go:378, pkg/cache/cache.go:56, pkg/cache/memcached.go:107, pkg/cache/memcached.go:141, pkg/cache/memcached.go:143 and 121 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (2 of 7 units: tempo-query and tempo-vulture) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-query/tempo/plugin.go:378
+  - Fix: The whole message reaches go.opentelemetry.io/otel/trace.Span.RecordError at cmd/tempo-query/tempo/plugin.go:378, pkg/cache/cache.go:56, pkg/cache/memcached.go:107, pkg/cache/memcached.go:141, pkg/cache/memcached.go:143 and 121 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (2 of 7 units: tempo-query and tempo-vulture) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-query/tempo/plugin.go:378
+  - Fix: The whole message reaches go.opentelemetry.io/otel/trace.Span.RecordError at cmd/tempo-query/tempo/plugin.go:378, pkg/cache/cache.go:56, pkg/cache/memcached.go:107, pkg/cache/memcached.go:141, pkg/cache/memcached.go:143 and 121 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (2 of 7 units: tempo-query and tempo-vulture) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-query/tempo/plugin.go:378
+  - Fix: The whole message reaches go.opentelemetry.io/otel/trace.Span.RecordError at cmd/tempo-query/tempo/plugin.go:378, pkg/cache/cache.go:56, pkg/cache/memcached.go:107, pkg/cache/memcached.go:141, pkg/cache/memcached.go:143 and 121 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (2 of 7 units: tempo-query and tempo-vulture) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-query/tempo/plugin.go:378
+  - Fix: The whole message reaches go.opentelemetry.io/otel/trace.Span.RecordError at cmd/tempo-query/tempo/plugin.go:378, pkg/cache/cache.go:56, pkg/cache/memcached.go:107, pkg/cache/memcached.go:141, pkg/cache/memcached.go:143 and 121 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (2 of 7 units: tempo-query and tempo-vulture) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-query/tempo/plugin.go:378
+  - Fix: The whole message reaches go.opentelemetry.io/otel/trace.Span.RecordError at cmd/tempo-query/tempo/plugin.go:378, pkg/cache/cache.go:56, pkg/cache/memcached.go:107, pkg/cache/memcached.go:141, pkg/cache/memcached.go:143 and 121 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (2 of 7 units: tempo-query and tempo-vulture) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-query/tempo/plugin.go:378
+  - Fix: The whole message reaches go.opentelemetry.io/otel/trace.Span.RecordError at cmd/tempo-query/tempo/plugin.go:378, pkg/cache/cache.go:56, pkg/cache/memcached.go:107, pkg/cache/memcached.go:141, pkg/cache/memcached.go:143 and 121 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (2 of 7 units: tempo-query and tempo-vulture) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-query/tempo/plugin.go:378
+  - Fix: The whole message reaches go.opentelemetry.io/otel/trace.Span.RecordError at cmd/tempo-query/tempo/plugin.go:378, pkg/cache/cache.go:56, pkg/cache/memcached.go:107, pkg/cache/memcached.go:141, pkg/cache/memcached.go:143 and 121 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (2 of 7 units: tempo-query and tempo-vulture) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-query/tempo/plugin.go:378
+  - Fix: The whole message reaches go.opentelemetry.io/otel/trace.Span.RecordError at cmd/tempo-query/tempo/plugin.go:378, pkg/cache/cache.go:56, pkg/cache/memcached.go:107, pkg/cache/memcached.go:141, pkg/cache/memcached.go:143 and 121 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- c (2 of 7 units: tempo-query and tempo-vulture) — the whole message reaches a sink this analyzer cannot see into (an unknown library, an interface value, or reflection); whether that sink depends on the changed element cannot be proven at cmd/tempo-query/tempo/plugin.go:378
+  - Fix: The whole message reaches go.opentelemetry.io/otel/trace.Span.RecordError at cmd/tempo-query/tempo/plugin.go:378, pkg/cache/cache.go:56, pkg/cache/memcached.go:107, pkg/cache/memcached.go:141, pkg/cache/memcached.go:143 and 121 more. Confirm that code does not depend on the changed element, or stop passing the whole message there.
+- … 28 more line(s); see the full evidence
+
+Old and new running together (both deploy orders): breaks
+Rebuilding callers with the new contract: not proved
+
+How to ship this safely:
+1. Keep the JSON name of Profile.string_table (#10): c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) exchange it as JSON (vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, vendor/go.opentelemetry.io/collector/pdata/pprofile/pprofileotlp/request.go:61).
+2. Do not change Profile.string_table (#10) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:101, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, vendor/go.opentelemetry.io/collector/pdata/pprofile/pprofileotlp/request.go:61), then reserve the old number.
+3. Do not change Profile.time_nanos (#11) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:106, vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:112, vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:128, +4 more), then reserve the old number.
+4. When Profile.time_nanos (#11) is finally removed, add `reserved 11; reserved "time_nanos";` to Profile.
+5. Do not change Profile.duration_nanos (#12) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:117, vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:123, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:158, +2 more), then reserve the old number.
+6. When Profile.duration_nanos (#12) is finally removed, add `reserved 12; reserved "duration_nanos";` to Profile.
+7. Do not change Profile.period_type (#13) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:139, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, vendor/go.opentelemetry.io/collector/pdata/pprofile/pprofileotlp/request.go:61), then reserve the old number.
+8. When Profile.period_type (#13) is finally removed, add `reserved 13; reserved "period_type";` to Profile.
+9. Do not change Profile.period (#14) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:144, vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:150, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:162, +2 more), then reserve the old number.
+10. When Profile.period (#14) is finally removed, add `reserved 14; reserved "period";` to Profile.
+11. Do not change Profile.comment_strindices (#15) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:155, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, vendor/go.opentelemetry.io/collector/pdata/pprofile/pprofileotlp/request.go:61), then reserve the old number.
+12. When Profile.comment_strindices (#15) is finally removed, add `reserved 15; reserved "comment_strindices";` to Profile.
+13. Keep Profile.default_sample_type_strindex (#16) until c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) stop using it: vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:160, vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:166, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:169. Remove it only after those callers are deployed.
+14. When Profile.default_sample_type_strindex (#16) is finally removed, add `reserved 16; reserved "default_sample_type_strindex";` to Profile.
+15. Do not change Profile.profile_id (#17) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:171, vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:177, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:102, +2 more), then reserve the old number.
+16. When Profile.profile_id (#17) is finally removed, add `reserved 17; reserved "profile_id";` to Profile.
+17. Do not change Profile.dropped_attributes_count (#19) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:187, vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:193, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:176, +2 more), then reserve the old number.
+18. When Profile.dropped_attributes_count (#19) is finally removed, add `reserved 19; reserved "dropped_attributes_count";` to Profile.
+19. Do not change Profile.original_payload_format (#20) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:198, vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:204, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:178, +2 more), then reserve the old number.
+20. When Profile.original_payload_format (#20) is finally removed, add `reserved 20; reserved "original_payload_format";` to Profile.
+21. Do not change Profile.original_payload (#21) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:209, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:180, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, +1 more), then reserve the old number.
+22. When Profile.original_payload (#21) is finally removed, add `reserved 21; reserved "original_payload";` to Profile.
+23. Do not change Profile.attribute_indices (#22) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:182, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, vendor/go.opentelemetry.io/collector/pdata/pprofile/pprofileotlp/request.go:61), then reserve the old number.
+24. When Profile.attribute_indices (#22) is finally removed, add `reserved 22; reserved "attribute_indices";` to Profile.
+25. Keep the JSON name of Profile.mapping_table (#3): c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) exchange it as JSON (vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, vendor/go.opentelemetry.io/collector/pdata/pprofile/pprofileotlp/request.go:61).
+26. Do not change Profile.mapping_table (#3) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:66, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, vendor/go.opentelemetry.io/collector/pdata/pprofile/pprofileotlp/request.go:61), then reserve the old number.
+27. Keep the JSON name of Profile.location_table (#4): c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) exchange it as JSON (vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, vendor/go.opentelemetry.io/collector/pdata/pprofile/pprofileotlp/request.go:61).
+28. Do not change Profile.location_table (#4) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:71, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, vendor/go.opentelemetry.io/collector/pdata/pprofile/pprofileotlp/request.go:61), then reserve the old number.
+29. Do not change Profile.location_indices (#5) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:76, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, vendor/go.opentelemetry.io/collector/pdata/pprofile/pprofileotlp/request.go:61), then reserve the old number.
+30. When Profile.location_indices (#5) is finally removed, add `reserved 5; reserved "location_indices";` to Profile.
+31. Keep the JSON name of Profile.function_table (#6): c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) exchange it as JSON (vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, vendor/go.opentelemetry.io/collector/pdata/pprofile/pprofileotlp/request.go:61).
+32. Do not change Profile.function_table (#6) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:81, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, vendor/go.opentelemetry.io/collector/pdata/pprofile/pprofileotlp/request.go:61), then reserve the old number.
+33. Keep the JSON name of Profile.attribute_table (#7): c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) exchange it as JSON (vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, vendor/go.opentelemetry.io/collector/pdata/pprofile/pprofileotlp/request.go:61).
+34. Do not change Profile.attribute_table (#7) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:86, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:137, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, +1 more), then reserve the old number.
+35. Keep the JSON name of Profile.attribute_units (#8): c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) exchange it as JSON (vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, vendor/go.opentelemetry.io/collector/pdata/pprofile/pprofileotlp/request.go:61).
+36. Do not change Profile.attribute_units (#8) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:91, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, vendor/go.opentelemetry.io/collector/pdata/pprofile/pprofileotlp/request.go:61), then reserve the old number.
+37. Keep the JSON name of Profile.link_table (#9): c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) exchange it as JSON (vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, vendor/go.opentelemetry.io/collector/pdata/pprofile/pprofileotlp/request.go:61).
+38. Do not change Profile.link_table (#9) in place: add a new field with a new number, write both, move c (4 of 7 units: docsgen, tempo, tempo (library) and tempo-cli) to the new field (vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:96, vendor/go.opentelemetry.io/collector/pdata/pprofile/json.go:25, vendor/go.opentelemetry.io/collector/pdata/pprofile/pprofileotlp/request.go:61), then reserve the old number.
+Deploy order: no order is safe while old and new binaries run side by side; make the change additive first.
+
+Verified against p@be5d5847 (base 2bd940b2) and 1 caller commit(s).
+Not checked: callers other than the directories given with --callers
+
+Decision d_f000c49a8a986d6e · keep it with --out record.json and replay with: verifier replay --file record.json
