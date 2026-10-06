@@ -1,12 +1,12 @@
 client-java scan: 20 windows, shard 1/2 has 10
 canary at daa7c864b473: breaks (51 files moved) ['src/main/java/org/tikv/common/meta/TiTableInfo.java:26: package com.pingcap.tidb.tipb does not exist']
-daa7c864b473 2026-05-14 verifier=GO build=GO compiler=compiles 77.8s 
-b7a415182b4f 2026-06-02 verifier=GO build=GO compiler=compiles 77.9s 
-1e6ff1c80df2 2026-06-02 verifier=GO build=GO compiler=compiles 80.5s 
-a15c348f8713 2026-06-11 verifier=GO build=GO compiler=compiles 78.2s 
-22607720b19a 2026-07-16 verifier=GO build=GO compiler=compiles 77.2s 
-7022f46937bc 2026-07-24 verifier=GO build=GO compiler=compiles 79.3s 
-543bb79c8a8a 2026-08-10 verifier=GO build=GO compiler=compiles 78.5s 
-9327469bb3ce 2026-08-20 verifier=GO build=GO compiler=compiles 80.3s 
-107095f1d250 2026-09-03 verifier=GO build=GO compiler=compiles 77.4s 
-d80b6c5e7821 2026-09-18 verifier=GO build=GO compiler=compiles 83.0s 
+daa7c864b473 2026-05-14 verifier=GO build=GO compiler=compiles 82.1s 
+b7a415182b4f 2026-06-02 verifier=GO build=GO compiler=compiles 81.9s 
+1e6ff1c80df2 2026-06-02 verifier=GO build=GO compiler=compiles 83.1s 
+a15c348f8713 2026-06-11 verifier=GO build=GO compiler=compiles 82.2s 
+22607720b19a 2026-07-16 verifier=GO build=GO compiler=compiles 86.3s 
+7022f46937bc 2026-07-24 verifier=GO build=GO compiler=compiles 86.7s 
+543bb79c8a8a 2026-08-10 verifier=GO build=GO compiler=compiles 86.6s 
+9327469bb3ce 2026-08-20 verifier=GO build=GO compiler=compiles 85.1s 
+107095f1d250 2026-09-03 verifier=GO build=GO compiler=compiles 83.9s 
+d80b6c5e7821 2026-09-18 verifier=GO build=GO compiler=compiles 84.1s 
