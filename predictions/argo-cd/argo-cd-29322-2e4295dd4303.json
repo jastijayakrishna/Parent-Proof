@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 29322,
+    "head": "2e4295dd43036e2b79d431287a60c875f3478aa1",
+    "base": "94564eba18592d1bc2fc20e64415c9214203a5d4",
+    "title": "feat(appset): add metrics for appset to measure rollout durations for progressive sync",
+    "url": "https://github.com/argoproj/argo-cd/pull/29322",
+    "updated": "2026-10-06T03:30:34Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-29322-2e4295dd4303",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "2e4295dd43036e2b79d431287a60c875f3478aa1"
+  },
+  "merge_base": "94564eba18592d1bc2fc20e64415c9214203a5d4",
+  "decided": "36132616979d32bc1b1dc166f9615a9dede04f2e",
+  "started": "2026-10-06T08:17:19Z",
+  "finished": "2026-10-06T08:17:50Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37434786242",
+  "verifier": {
+    "version": "826fc68 protocompile/v0.14.1 verdict/v0.14.0 go-analyzer/v0.24.0",
+    "sha256": "22a3fe265ce122532f51b0682524334656e18efbdb8e6d8e024ca6ba5f6682c6"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "36132616979d32bc1b1dc166f9615a9dede04f2e",
+      "parent": "94564eba18592d1bc2fc20e64415c9214203a5d4",
+      "date": "2026-10-06",
+      "subject": "pull request 29322 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "pkg/apis/application/v1alpha1/generated.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 26.233222058,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     36132616 GO       source_build=GO      compiler=-                  26.2s \nargo-cd        1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 31s."
+}

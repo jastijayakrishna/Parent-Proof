@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-06 01:48 UTC.
+Updated 2026-10-06 08:18 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,13 +11,15 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 35 | 31 | 2 | 2 | 22 | 22 | 0 | 0 |
+| 37 | 33 | 2 | 2 | 22 | 22 | 0 | 0 |
 
 ## Every pull request
 
 | project | pull request | verifier | for the build | compiler | needs review because |
 |---|---|---|---|---|---|
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Merge | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#29322](https://github.com/argoproj/argo-cd/pull/29322) feat(appset): add metrics for appset to measure rollout durations for progressive sync | Merge | Merge | not judged |  |
+| argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | csi-provisioner | [#603](https://github.com/container-storage-interface/spec/pull/603) Add ControllerGetNodeInfo RPC (alpha) | Merge | Merge | compiles |  |
 | csi-provisioner | [#613](https://github.com/container-storage-interface/spec/pull/613) Add reason to ControllerUnpublishVolumeRequest | Merge | Merge | compiles |  |
 | dapr | [#9974](https://github.com/dapr/dapr/pull/9974) feat: search and vector blocks | Merge | Merge | compiles |  |
