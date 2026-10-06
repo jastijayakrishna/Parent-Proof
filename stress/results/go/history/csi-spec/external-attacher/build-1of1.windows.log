@@ -1,8 +1,8 @@
-time=2026-10-06T10:37:16.654Z level=INFO msg=mined consumer=external-attacher pin_moves=6 to_compile=6 skipped=map[]
-time=2026-10-06T10:38:19.245Z level=INFO msg=canary consumer=external-attacher at=ed7a208aeea0262e6f22e21002ea7295afb98556^ outcome=breaks detail="canary: github.com/container-storage-interface/spec/lib/go/csi removed."
-time=2026-10-06T10:38:24.181Z level=INFO msg=window consumer=external-attacher bump=ed7a208a select=breaking breaking=1 compiler=compiles
-time=2026-10-06T10:39:47.159Z level=INFO msg=window consumer=external-attacher bump=69bcfba4 select=breaking breaking=17 compiler=compiles
-time=2026-10-06T10:40:57.460Z level=INFO msg=window consumer=external-attacher bump=02cfc0f6 select=breaking breaking=7 compiler=compiles
-time=2026-10-06T10:42:16.631Z level=INFO msg=window consumer=external-attacher bump=11ff374a select=breaking breaking=6 compiler=compiles
-time=2026-10-06T10:42:17.321Z level=INFO msg=window consumer=external-attacher bump=582bc3ee select=additive breaking=0 compiler=compiles
-time=2026-10-06T10:42:58.089Z level=INFO msg=window consumer=external-attacher bump=34beee3e select=additive breaking=0 compiler=compiles
+time=2026-10-06T11:19:49.317Z level=INFO msg=mined consumer=external-attacher pin_moves=6 to_compile=6 skipped=map[]
+time=2026-10-06T11:20:43.384Z level=INFO msg=canary consumer=external-attacher at=ed7a208aeea0262e6f22e21002ea7295afb98556^ outcome=breaks detail="canary: github.com/container-storage-interface/spec/lib/go/csi removed."
+time=2026-10-06T11:20:47.441Z level=INFO msg=window consumer=external-attacher bump=ed7a208a select=breaking breaking=1 compiler=compiles
+time=2026-10-06T11:21:58.083Z level=INFO msg=window consumer=external-attacher bump=69bcfba4 select=breaking breaking=17 compiler=compiles
+time=2026-10-06T11:22:58.827Z level=INFO msg=window consumer=external-attacher bump=02cfc0f6 select=breaking breaking=7 compiler=compiles
+time=2026-10-06T11:24:08.073Z level=INFO msg=window consumer=external-attacher bump=11ff374a select=breaking breaking=6 compiler=compiles
+time=2026-10-06T11:24:08.559Z level=INFO msg=window consumer=external-attacher bump=582bc3ee select=additive breaking=0 compiler=compiles
+time=2026-10-06T11:24:44.375Z level=INFO msg=window consumer=external-attacher bump=34beee3e select=additive breaking=0 compiler=compiles
