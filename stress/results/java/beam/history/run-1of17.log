@@ -1,0 +1,6 @@
+beam history: 56 windows, shard 1/17 has 4
+canary at b497cc4a98ad: oracle_error (11 files moved) ['']
+b497cc4a98ad 2023-01-25 verifier=None build=None compiler=baseline_fails 19.3s 
+37609ba70fab 2024-04-22 verifier=GO build=GO compiler=compiles 658.9s 
+332fe03b7280 2025-03-20 verifier=GO build=GO compiler=compiles 660.4s 
+f1d9c3e122e2 2026-07-22 verifier=GO build=GO compiler=compiles 776.9s 
