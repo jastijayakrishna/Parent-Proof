@@ -1,20 +1,20 @@
-time=2026-10-06T06:02:46.064Z level=INFO msg=cloning repo=proto-go url=https://github.com/open-telemetry/opentelemetry-proto-go.git
-time=2026-10-06T06:02:47.102Z level=INFO msg=cloning repo=opentelemetry-proto url=https://github.com/open-telemetry/opentelemetry-proto.git
-time=2026-10-06T06:02:47.999Z level=INFO msg=cloning repo=otel-go url=https://github.com/open-telemetry/opentelemetry-go.git
-time=2026-10-06T06:02:52.554Z level=INFO msg=mined consumer=otel-go pin_moves=14 to_compile=14 skipped=map[]
-time=2026-10-06T06:03:13.108Z level=INFO msg=canary consumer=otel-go at=e7ff6a36dcad42a0e9fd7858ff7c98711b96831b^ outcome=breaks detail="canary: go.opentelemetry.io/proto/otlp/trace/v1 removed."
-time=2026-10-06T06:03:20.625Z level=INFO msg=window consumer=otel-go bump=e7ff6a36 select=breaking breaking=4 compiler=compiles
-time=2026-10-06T06:03:24.706Z level=INFO msg=window consumer=otel-go bump=fdbcb9ac select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:03:26.723Z level=INFO msg=window consumer=otel-go bump=3ec9a8a3 select=breaking breaking=23 compiler=compiles
-time=2026-10-06T06:03:30.681Z level=INFO msg=window consumer=otel-go bump=0b00bfb1 select=breaking breaking=2 compiler=compiles
-time=2026-10-06T06:03:32.077Z level=INFO msg=window consumer=otel-go bump=96fe06df select=breaking breaking=33 compiler=compiles
-time=2026-10-06T06:03:34.248Z level=INFO msg=window consumer=otel-go bump=801e7712 select=breaking breaking=9 compiler=compiles
-time=2026-10-06T06:03:35.594Z level=INFO msg=window consumer=otel-go bump=b45359a0 select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T06:03:40.950Z level=INFO msg=window consumer=otel-go bump=8c8cd0a9 select=breaking breaking=47 compiler=compiles
-time=2026-10-06T06:03:41.746Z level=INFO msg=window consumer=otel-go bump=4438ec3e select=breaking breaking=14 compiler=compiles
-time=2026-10-06T06:03:47.242Z level=INFO msg=window consumer=otel-go bump=1d91055e select=breaking breaking=3 compiler=compiles
-time=2026-10-06T06:03:47.471Z level=INFO msg=window consumer=otel-go bump=648b40ea select=additive breaking=0 compiler=compiles
-time=2026-10-06T06:03:52.558Z level=INFO msg=window consumer=otel-go bump=e451d1fa select=additive breaking=0 compiler=compiles
-time=2026-10-06T06:03:52.794Z level=INFO msg=window consumer=otel-go bump=3f74d774 select=additive breaking=0 compiler=compiles
-time=2026-10-06T06:03:55.326Z level=INFO msg=window consumer=otel-go bump=59914dc0 select=additive breaking=0 compiler=compiles
-time=2026-10-06T06:03:55.326Z level=INFO msg="suite built" suite=otlp windows_added=14
+time=2026-10-06T09:32:16.121Z level=INFO msg=cloning repo=proto-go url=https://github.com/open-telemetry/opentelemetry-proto-go.git
+time=2026-10-06T09:32:17.112Z level=INFO msg=cloning repo=opentelemetry-proto url=https://github.com/open-telemetry/opentelemetry-proto.git
+time=2026-10-06T09:32:18.037Z level=INFO msg=cloning repo=otel-go url=https://github.com/open-telemetry/opentelemetry-go.git
+time=2026-10-06T09:32:22.765Z level=INFO msg=mined consumer=otel-go pin_moves=14 to_compile=14 skipped=map[]
+time=2026-10-06T09:32:43.122Z level=INFO msg=canary consumer=otel-go at=e7ff6a36dcad42a0e9fd7858ff7c98711b96831b^ outcome=breaks detail="canary: go.opentelemetry.io/proto/otlp/trace/v1 removed."
+time=2026-10-06T09:32:50.708Z level=INFO msg=window consumer=otel-go bump=e7ff6a36 select=breaking breaking=4 compiler=compiles
+time=2026-10-06T09:32:54.552Z level=INFO msg=window consumer=otel-go bump=fdbcb9ac select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:32:56.898Z level=INFO msg=window consumer=otel-go bump=3ec9a8a3 select=breaking breaking=23 compiler=compiles
+time=2026-10-06T09:33:00.530Z level=INFO msg=window consumer=otel-go bump=0b00bfb1 select=breaking breaking=2 compiler=compiles
+time=2026-10-06T09:33:02.883Z level=INFO msg=window consumer=otel-go bump=96fe06df select=breaking breaking=33 compiler=compiles
+time=2026-10-06T09:33:04.057Z level=INFO msg=window consumer=otel-go bump=801e7712 select=breaking breaking=9 compiler=compiles
+time=2026-10-06T09:33:07.013Z level=INFO msg=window consumer=otel-go bump=b45359a0 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T09:33:11.286Z level=INFO msg=window consumer=otel-go bump=8c8cd0a9 select=breaking breaking=47 compiler=compiles
+time=2026-10-06T09:33:13.122Z level=INFO msg=window consumer=otel-go bump=4438ec3e select=breaking breaking=14 compiler=compiles
+time=2026-10-06T09:33:17.917Z level=INFO msg=window consumer=otel-go bump=1d91055e select=breaking breaking=3 compiler=compiles
+time=2026-10-06T09:33:19.048Z level=INFO msg=window consumer=otel-go bump=648b40ea select=additive breaking=0 compiler=compiles
+time=2026-10-06T09:33:23.361Z level=INFO msg=window consumer=otel-go bump=e451d1fa select=additive breaking=0 compiler=compiles
+time=2026-10-06T09:33:24.057Z level=INFO msg=window consumer=otel-go bump=3f74d774 select=additive breaking=0 compiler=compiles
+time=2026-10-06T09:33:26.270Z level=INFO msg=window consumer=otel-go bump=59914dc0 select=additive breaking=0 compiler=compiles
+time=2026-10-06T09:33:26.270Z level=INFO msg="suite built" suite=otlp windows_added=14
