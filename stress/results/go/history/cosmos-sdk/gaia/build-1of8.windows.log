@@ -1,0 +1,6 @@
+time=2026-10-06T10:35:18.657Z level=INFO msg=mined consumer=gaia pin_moves=32 to_compile=4 skipped=map[]
+time=2026-10-06T10:36:50.001Z level=INFO msg=canary consumer=gaia at=082f5fe8de5cf1be459877f7c9872b17fa1fe815^ outcome=breaks detail="canary: github.com/cosmos/cosmos-sdk/types removed."
+time=2026-10-06T10:36:54.155Z level=INFO msg=window consumer=gaia bump=082f5fe8 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T10:37:44.792Z level=INFO msg=window consumer=gaia bump=49965d1f select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T10:38:40.981Z level=INFO msg=window consumer=gaia bump=7cf15248 select=unchanged breaking=0 compiler=compiles
+time=2026-10-06T10:38:53.543Z level=INFO msg=window consumer=gaia bump=b8127cc8 select=unchanged breaking=0 compiler=compiles
