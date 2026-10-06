@@ -1,6 +1,6 @@
 # Stress test: Go and Java consumers
 
-Updated 2026-10-06 10:11 UTC. Plan and rules: [stress/PREREG.md](stress/PREREG.md).
+Updated 2026-10-06 10:31 UTC. Plan and rules: [stress/PREREG.md](stress/PREREG.md).
 
 Every row is a real contract change of an open-source project never used to tune the verifier, decided by the
 verifier before the project's own compiler judged it (Go: `go build`; Java: the project's Maven or Gradle build).
@@ -64,4 +64,4 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 ## Errors: 0
 
 
-## Job minutes: 72 jobs, slowest 24.3 min (stress/results/java/camunda-zeebe/history/job-7of12.json), 0 over 30 min
+## Job minutes: 72 jobs, slowest 27.4 min (stress/results/java/camunda-zeebe/history/job-7of12.json), 0 over 30 min
