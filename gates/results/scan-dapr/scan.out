@@ -1,27 +1,27 @@
-time=2026-10-06T04:35:55.403Z level=INFO msg=cloning repo=p-dapr url=https://github.com/dapr/dapr.git
-time=2026-10-06T04:35:56.750Z level=INFO msg=cloning repo=c-dapr url=https://github.com/dapr/go-sdk.git
-dapr        3d9dbe6e GO       source_build=GO      compiler=compiles           22.7s 
-dapr        e2030a5f GO       source_build=GO      compiler=compiles            6.1s 
-dapr        19e9dbd4 GO       source_build=GO      compiler=compiles            2.7s 
-dapr        cd72c15f GO       source_build=GO      compiler=compiles            5.7s 
-dapr        8fd31d16 GO       source_build=GO      compiler=compiles            4.7s 
-dapr        df9137ce GO       source_build=GO      compiler=compiles            6.2s 
-dapr        a86c03bd GO       source_build=GO      compiler=compiles            2.7s 
-dapr        d16e4ded GO       source_build=GO      compiler=compiles            2.0s 
-dapr        6d8290ef GO       source_build=GO      compiler=compiles            2.2s 
-dapr        88a04ddb GO       source_build=GO      compiler=compiles            3.3s 
-dapr        1ebb8588 GO       source_build=GO      compiler=compiles            1.5s 
-dapr        1b4bef84 GO       source_build=GO      compiler=compiles            2.2s 
-dapr        39c1ef7f GO       source_build=GO      compiler=compiles            2.6s 
-dapr        c581fa82 GO       source_build=GO      compiler=compiles            2.8s 
-dapr        c8463fcc GO       source_build=GO      compiler=compiles            2.8s 
-dapr        5da1cdbf GO       source_build=GO      compiler=compiles            1.4s 
-dapr        f2d61989 GO       source_build=GO      compiler=compiles            1.2s 
-dapr        60cd667f GO       source_build=GO      compiler=compiles            2.9s 
-dapr        c9db84ed GO       source_build=GO      compiler=compiles            2.4s 
-dapr        d4c6ba52 GO       source_build=GO      compiler=compiles            0.9s 
-dapr          20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
-TOTAL         20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
+time=2026-10-06T06:02:46.859Z level=INFO msg=cloning repo=p-dapr url=https://github.com/dapr/dapr.git
+time=2026-10-06T06:02:48.731Z level=INFO msg=cloning repo=c-dapr url=https://github.com/dapr/go-sdk.git
+dapr        3d9dbe6e GO       source_build=GO      compiler=compiles           28.4s 
+dapr        e2030a5f GO       source_build=GO      compiler=compiles            7.9s 
+dapr        19e9dbd4 GO       source_build=GO      compiler=compiles            4.0s 
+dapr        cd72c15f GO       source_build=GO      compiler=compiles            7.6s 
+dapr        8fd31d16 GO       source_build=GO      compiler=compiles            5.4s 
+dapr        df9137ce GO       source_build=GO      compiler=compiles            8.2s 
+dapr        a86c03bd GO       source_build=GO      compiler=compiles            3.1s 
+dapr        d16e4ded GO       source_build=GO      compiler=compiles            3.7s 
+dapr        6d8290ef GO       source_build=GO      compiler=compiles            2.9s 
+dapr        88a04ddb GO       source_build=GO      compiler=compiles            3.6s 
+dapr        1ebb8588 GO       source_build=GO      compiler=-                   0.9s 
+dapr        1b4bef84 GO       source_build=GO      compiler=compiles            3.7s 
+dapr        39c1ef7f GO       source_build=GO      compiler=compiles            3.3s 
+dapr        c581fa82 GO       source_build=GO      compiler=compiles            3.5s 
+dapr        c8463fcc GO       source_build=GO      compiler=compiles            3.6s 
+dapr        5da1cdbf GO       source_build=GO      compiler=compiles            2.3s 
+dapr        f2d61989 GO       source_build=GO      compiler=compiles            1.7s 
+dapr        60cd667f GO       source_build=GO      compiler=compiles            4.1s 
+dapr        c9db84ed GO       source_build=GO      compiler=compiles            4.0s 
+dapr        d4c6ba52 GO       source_build=GO      compiler=compiles            1.8s 
+dapr          20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  19: agree  19  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1
+TOTAL         20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  19: agree  19  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1
 
-20 windows in 1m21s.
+20 windows in 1m47s.
 exit 0
