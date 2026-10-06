@@ -1,12 +1,12 @@
 client-java history: 10 windows, shard 1/1 has 10
 canary at 41aeed2679f8: breaks (27 files moved) ['src/main/java/org/tikv/common/TiConfiguration.java:25: package org.tikv.kvproto.Kvrpcpb does not exist']
-41aeed2679f8 2020-09-07 verifier=GO build=GO compiler=oracle_error 37.6s 
-10d8efbbc451 2021-02-20 verifier=NO_GO build=NO_GO compiler=breaks 62.8s 
-c9507c2fa7b0 2021-03-15 verifier=GO build=GO compiler=compiles 59.3s 
-dde59a38f8a8 2021-03-25 verifier=NO_GO build=NO_GO compiler=breaks 57.7s 
-798244cd9ef1 2021-07-22 verifier=GO build=GO compiler=compiles 60.7s 
-bbe4f9b0c4e0 2021-10-14 verifier=NO_GO build=NO_GO compiler=breaks 60.7s 
-b82276231c8a 2021-10-25 verifier=GO build=GO compiler=compiles 63.3s 
-5dbfe03b2cc0 2021-12-31 verifier=NO_GO build=GO compiler=compiles 63.4s 
-7122903f1dd5 2022-02-10 verifier=GO build=GO compiler=compiles 65.0s 
-9ce52d34017e 2022-06-02 verifier=GO build=GO compiler=compiles 68.2s 
+41aeed2679f8 2020-09-07 verifier=GO build=GO compiler=oracle_error 34.3s 
+10d8efbbc451 2021-02-20 verifier=NO_GO build=NO_GO compiler=breaks 55.4s 
+c9507c2fa7b0 2021-03-15 verifier=GO build=GO compiler=compiles 51.8s 
+dde59a38f8a8 2021-03-25 verifier=NO_GO build=NO_GO compiler=breaks 49.4s 
+798244cd9ef1 2021-07-22 verifier=GO build=GO compiler=compiles 50.6s 
+bbe4f9b0c4e0 2021-10-14 verifier=NO_GO build=NO_GO compiler=breaks 49.7s 
+b82276231c8a 2021-10-25 verifier=GO build=GO compiler=compiles 51.2s 
+5dbfe03b2cc0 2021-12-31 verifier=NO_GO build=GO compiler=compiles 55.7s 
+7122903f1dd5 2022-02-10 verifier=GO build=GO compiler=compiles 50.9s 
+9ce52d34017e 2022-06-02 verifier=GO build=GO compiler=compiles 56.0s 
