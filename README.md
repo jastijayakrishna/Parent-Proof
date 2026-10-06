@@ -4,12 +4,12 @@ A public, timestamped record of how a contract verifier does on real pull
 requests it has never seen.
 
 <!-- live:begin -->
-**Updated 2026-10-05 12:16 UTC.** [![shadow](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml/badge.svg)](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml)
+**Updated 2026-10-06 01:48 UTC.** [![shadow](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml/badge.svg)](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml)
 
 | | changes | broke the build | caught | missed | false alarms | needs review |
 |---|---|---|---|---|---|---|
 | [Real upgrades](HISTORY.md), 9 projects' history | 104 | 15 | 14 | 0 | 0 | 10 |
-| [Open pull requests](SCOREBOARD.md), decided live | 24 | 0 | 0 | 0 | 0 | 1 |
+| [Open pull requests](SCOREBOARD.md), decided live | 35 | 0 | 0 | 0 | 0 | 2 |
 
 **Caught**: it broke the build and the verifier said Don't merge first. **Missed**: the verifier said Merge and the compiler says it breaks, the failure that matters most.
 

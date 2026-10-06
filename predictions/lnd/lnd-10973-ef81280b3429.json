@@ -1,0 +1,52 @@
+{
+  "pr": {
+    "n": 10973,
+    "head": "ef81280b34290638764a7cbb86161af8d3e98cbb",
+    "base": "6f65644448ad9e0b4b6312c28d63498a0d16ee9f",
+    "title": "multi: expose peer address sources and offline peers in ListPeers",
+    "url": "https://github.com/lightningnetwork/lnd/pull/10973",
+    "updated": "2026-10-05T22:58:08Z",
+    "eco": "lnd",
+    "key": "lnd-10973-ef81280b3429",
+    "provider": "lightningnetwork/lnd",
+    "consumer": "lightninglabs/lndclient",
+    "consumer_sha": "5c1b59d36c94ab2b520515f6b75d270c401166c8"
+  },
+  "merge_base": "6f65644448ad9e0b4b6312c28d63498a0d16ee9f",
+  "decided": "251267b6d4a3bed54a6f7c31d6c365554e522efa",
+  "started": "2026-10-06T01:42:10Z",
+  "finished": "2026-10-06T01:45:04Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37399866349",
+  "verifier": {
+    "version": "6f9abec protocompile/v0.14.1 verdict/v0.10.0 go-analyzer/v0.21.0",
+    "sha256": "a6749b5a4792c3b5709ab5cefbcdef0967b4c64dd9cfc9cb1cf37f1354e2b3f0"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "lnd",
+      "commit": "251267b6d4a3bed54a6f7c31d6c365554e522efa",
+      "parent": "6f65644448ad9e0b4b6312c28d63498a0d16ee9f",
+      "date": "2026-10-06",
+      "subject": "pull request 10973 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "lnrpc/lightning.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 10
+      },
+      "seconds": 171.481097257,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-06T01:42:10.757Z level=INFO msg=cloning repo=c-lnd url=https://github.com/lightninglabs/lndclient.git\nlnd         251267b6 GO       source_build=GO      compiler=compiles          171.5s \nlnd            1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 2m53s."
+}

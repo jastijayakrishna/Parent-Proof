@@ -1,0 +1,52 @@
+{
+  "pr": {
+    "n": 3722,
+    "head": "ce3730eda1915d08a4dddce4278ea10a1a4e1624",
+    "base": "409e35b9212797a9d4a05b952da9e2b7a7eb4152",
+    "title": "feat(tracing): add otel always_on sampler",
+    "url": "https://github.com/istio/api/pull/3722",
+    "updated": "2026-10-05T09:03:18Z",
+    "eco": "istio",
+    "key": "istio-3722-ce3730eda191",
+    "provider": "istio/api",
+    "consumer": "istio/istio",
+    "consumer_sha": "5e61118429bccb08465326038836b3cb7058454a"
+  },
+  "merge_base": "409e35b9212797a9d4a05b952da9e2b7a7eb4152",
+  "decided": "6d871247fa9ba6cbc877c521bc321f2450d88f7d",
+  "started": "2026-10-06T01:42:09Z",
+  "finished": "2026-10-06T01:47:56Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37399866349",
+  "verifier": {
+    "version": "6f9abec protocompile/v0.14.1 verdict/v0.10.0 go-analyzer/v0.21.0",
+    "sha256": "a6749b5a4792c3b5709ab5cefbcdef0967b4c64dd9cfc9cb1cf37f1354e2b3f0"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "istio",
+      "commit": "6d871247fa9ba6cbc877c521bc321f2450d88f7d",
+      "parent": "409e35b9212797a9d4a05b952da9e2b7a7eb4152",
+      "date": "2026-10-06",
+      "subject": "pull request 3722 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "mesh/v1alpha1/config.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 316
+      },
+      "seconds": 341.572786731,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-06T01:42:09.238Z level=INFO msg=cloning repo=c-istio url=https://github.com/istio/istio.git\nistio       6d871247 GO       source_build=GO      compiler=compiles          341.6s \nistio          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 5m47s."
+}

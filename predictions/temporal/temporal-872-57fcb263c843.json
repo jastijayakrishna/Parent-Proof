@@ -1,0 +1,56 @@
+{
+  "pr": {
+    "n": 872,
+    "head": "57fcb263c843c0ff46d455c3344915473ab8e1d9",
+    "base": "05384b58adf17e5d08d75c0df01aa25cba4974cc",
+    "title": "Klassenq/nexus per endpoint encryption",
+    "url": "https://github.com/temporalio/api/pull/872",
+    "updated": "2026-10-05T22:51:12Z",
+    "eco": "temporal",
+    "key": "temporal-872-57fcb263c843",
+    "provider": "temporalio/api",
+    "consumer": "temporalio/sdk-go",
+    "consumer_sha": "eb55785e0796b279b8548c44dd5d45c156da8914"
+  },
+  "merge_base": "05384b58adf17e5d08d75c0df01aa25cba4974cc",
+  "decided": "8963b921ac2829ea546aed32458b9482bc121365",
+  "started": "2026-10-06T01:42:11Z",
+  "finished": "2026-10-06T01:42:19Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37399866349",
+  "verifier": {
+    "version": "6f9abec protocompile/v0.14.1 verdict/v0.10.0 go-analyzer/v0.21.0",
+    "sha256": "a6749b5a4792c3b5709ab5cefbcdef0967b4c64dd9cfc9cb1cf37f1354e2b3f0"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "temporal",
+      "commit": "8963b921ac2829ea546aed32458b9482bc121365",
+      "parent": "05384b58adf17e5d08d75c0df01aa25cba4974cc",
+      "date": "2026-10-06",
+      "subject": "pull request 872 as one change",
+      "verdict": "NO_GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "NO_GO",
+        "source_build": "GO"
+      },
+      "evidence": [
+        "internal/common/serializer/serializer.go:89"
+      ],
+      "evidence_count": 1,
+      "changed": [
+        "temporal/api/activity/v1/message.proto",
+        "temporal/api/history/v1/message.proto",
+        "temporal/api/nexus/v1/message.proto",
+        "temporal/api/update/v1/message.proto",
+        "temporal/api/workflow/v1/message.proto",
+        "temporal/api/workflowservice/v1/request_response.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 6.431348069,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-06T01:42:11.085Z level=INFO msg=cloning repo=c-temporal url=https://github.com/temporalio/sdk-go.git\ntemporal    8963b921 NO_GO    source_build=GO      compiler=-                   6.4s \ntemporal       1 decisions  GO   0  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 9s."
+}

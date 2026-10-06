@@ -1,0 +1,52 @@
+{
+  "pr": {
+    "n": 10411,
+    "head": "47bfffe50861701bea1d6ae7e8a9adca36a3b845",
+    "base": "f2963ce1fd195dc66fed71229c214443fbcda494",
+    "title": "aliasmgr: Allow persisting manually added alias scids",
+    "url": "https://github.com/lightningnetwork/lnd/pull/10411",
+    "updated": "2026-10-05T12:22:34Z",
+    "eco": "lnd",
+    "key": "lnd-10411-47bfffe50861",
+    "provider": "lightningnetwork/lnd",
+    "consumer": "lightninglabs/lndclient",
+    "consumer_sha": "5c1b59d36c94ab2b520515f6b75d270c401166c8"
+  },
+  "merge_base": "f2963ce1fd195dc66fed71229c214443fbcda494",
+  "decided": "16914990b94e1a13634f732548163c1da6e74363",
+  "started": "2026-10-06T01:42:13Z",
+  "finished": "2026-10-06T01:44:31Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37399866349",
+  "verifier": {
+    "version": "6f9abec protocompile/v0.14.1 verdict/v0.10.0 go-analyzer/v0.21.0",
+    "sha256": "a6749b5a4792c3b5709ab5cefbcdef0967b4c64dd9cfc9cb1cf37f1354e2b3f0"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "lnd",
+      "commit": "16914990b94e1a13634f732548163c1da6e74363",
+      "parent": "f2963ce1fd195dc66fed71229c214443fbcda494",
+      "date": "2026-10-06",
+      "subject": "pull request 10411 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "lnrpc/routerrpc/router.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 10
+      },
+      "seconds": 135.753165747,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-06T01:42:13.560Z level=INFO msg=cloning repo=c-lnd url=https://github.com/lightninglabs/lndclient.git\nlnd         16914990 GO       source_build=GO      compiler=compiles          135.8s \nlnd            1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 2m18s."
+}

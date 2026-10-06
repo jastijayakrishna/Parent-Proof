@@ -1,0 +1,56 @@
+{
+  "pr": {
+    "n": 10735,
+    "head": "88a700e8b14892a5307628336ea8ba8f1a187ec9",
+    "base": "52a90411805e1e0fd9d0c4bd22d2c2d80d37cc3d",
+    "title": "Freebie onion message slot and per-peer stats in ListPeers",
+    "url": "https://github.com/lightningnetwork/lnd/pull/10735",
+    "updated": "2026-10-05T13:38:36Z",
+    "eco": "lnd",
+    "key": "lnd-10735-88a700e8b148",
+    "provider": "lightningnetwork/lnd",
+    "consumer": "lightninglabs/lndclient",
+    "consumer_sha": "5c1b59d36c94ab2b520515f6b75d270c401166c8"
+  },
+  "merge_base": "52a90411805e1e0fd9d0c4bd22d2c2d80d37cc3d",
+  "decided": "368d626cf28815c6d425a71bf81431e4f70d7eaf",
+  "started": "2026-10-06T01:42:11Z",
+  "finished": "2026-10-06T01:43:14Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37399866349",
+  "verifier": {
+    "version": "6f9abec protocompile/v0.14.1 verdict/v0.10.0 go-analyzer/v0.21.0",
+    "sha256": "a6749b5a4792c3b5709ab5cefbcdef0967b4c64dd9cfc9cb1cf37f1354e2b3f0"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "lnd",
+      "commit": "368d626cf28815c6d425a71bf81431e4f70d7eaf",
+      "parent": "52a90411805e1e0fd9d0c4bd22d2c2d80d37cc3d",
+      "date": "2026-10-06",
+      "subject": "pull request 10735 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "lnrpc/lightning.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 9,
+        "excluded": 1,
+        "excluded_dirs": [
+          "."
+        ]
+      },
+      "seconds": 61.469934102,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-06T01:42:11.647Z level=INFO msg=cloning repo=c-lnd url=https://github.com/lightninglabs/lndclient.git\nlnd         368d626c GO       source_build=GO      compiler=compiles           61.5s \nlnd            1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 1m3s."
+}

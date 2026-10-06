@@ -1,0 +1,54 @@
+{
+  "pr": {
+    "n": 9974,
+    "head": "134057580d3e6c5cfd1b918f5a8cb8ec29cc2cfa",
+    "base": "ece6ec75e84c2a4802ba781ff2ef157770814ca4",
+    "title": "feat: search and vector blocks",
+    "url": "https://github.com/dapr/dapr/pull/9974",
+    "updated": "2026-10-05T16:57:13Z",
+    "eco": "dapr",
+    "key": "dapr-9974-134057580d3e",
+    "provider": "dapr/dapr",
+    "consumer": "dapr/go-sdk",
+    "consumer_sha": "e06de5352014bd6ab1106ddf7666083c44a12c27"
+  },
+  "merge_base": "ece6ec75e84c2a4802ba781ff2ef157770814ca4",
+  "decided": "9e557b28ac3ba3f99113ba982289ccc371c1cb3a",
+  "started": "2026-10-06T01:42:13Z",
+  "finished": "2026-10-06T01:42:44Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37399866349",
+  "verifier": {
+    "version": "6f9abec protocompile/v0.14.1 verdict/v0.10.0 go-analyzer/v0.21.0",
+    "sha256": "a6749b5a4792c3b5709ab5cefbcdef0967b4c64dd9cfc9cb1cf37f1354e2b3f0"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "dapr",
+      "commit": "9e557b28ac3ba3f99113ba982289ccc371c1cb3a",
+      "parent": "ece6ec75e84c2a4802ba781ff2ef157770814ca4",
+      "date": "2026-10-06",
+      "subject": "pull request 9974 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "dapr/proto/runtime/v1/dapr.proto",
+        "dapr/proto/runtime/v1/search.proto",
+        "dapr/proto/runtime/v1/vector.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 6
+      },
+      "seconds": 28.939974757,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-06T01:42:13.988Z level=INFO msg=cloning repo=c-dapr url=https://github.com/dapr/go-sdk.git\ndapr        9e557b28 GO       source_build=GO      compiler=compiles           28.9s \ndapr           1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 31s."
+}

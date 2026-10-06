@@ -1,0 +1,53 @@
+{
+  "pr": {
+    "n": 9888,
+    "head": "e00e1de4fe3ebdd0c98c5017ef80f1101dc9417a",
+    "base": "404f2c27abbb911839a24186f6f1047c399ebb10",
+    "title": "Attributable failures",
+    "url": "https://github.com/lightningnetwork/lnd/pull/9888",
+    "updated": "2026-10-05T20:19:32Z",
+    "eco": "lnd",
+    "key": "lnd-9888-e00e1de4fe3e",
+    "provider": "lightningnetwork/lnd",
+    "consumer": "lightninglabs/lndclient",
+    "consumer_sha": "5c1b59d36c94ab2b520515f6b75d270c401166c8"
+  },
+  "merge_base": "404f2c27abbb911839a24186f6f1047c399ebb10",
+  "decided": "1df8bfafc4ef2e585224be3319d2f109d409bde7",
+  "started": "2026-10-06T01:42:17Z",
+  "finished": "2026-10-06T01:44:07Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37399866349",
+  "verifier": {
+    "version": "6f9abec protocompile/v0.14.1 verdict/v0.10.0 go-analyzer/v0.21.0",
+    "sha256": "a6749b5a4792c3b5709ab5cefbcdef0967b4c64dd9cfc9cb1cf37f1354e2b3f0"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "lnd",
+      "commit": "1df8bfafc4ef2e585224be3319d2f109d409bde7",
+      "parent": "404f2c27abbb911839a24186f6f1047c399ebb10",
+      "date": "2026-10-06",
+      "subject": "pull request 9888 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "lnrpc/lightning.proto"
+      ],
+      "oracle": {
+        "outcome": "bump_side_effect",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 10,
+        "detail": "# github.com/lightningnetwork/lnd/htlcswitch/hop\n../../work/trees/lnd/head/htlcswitch/hop/error_encryptor.go:60:27: undefined: sphinx.NewAttrErrorStructure\n../../work/trees/lnd/head/htlcswitch/hop/error_encryptor.go:219:9: not enough return values\n\thave ([]byte)\n\twant (lnwire.OpaqueReason, []byte, error)\n../../work/trees/lnd/head/htlcswitch/hop/error_encryptor.go:219:39: too many arguments in call"
+      },
+      "seconds": 109.781009351,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-06T01:42:17.114Z level=INFO msg=cloning repo=c-lnd url=https://github.com/lightninglabs/lndclient.git\nlnd         1df8bfaf GO       source_build=GO      compiler=bump_side_effect  109.8s \nlnd            1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 1m51s."
+}
