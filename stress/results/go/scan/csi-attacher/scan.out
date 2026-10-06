@@ -1,0 +1,42 @@
+time=2026-10-06T10:34:10.270Z level=INFO msg=cloning repo=p-csi-attacher url=https://github.com/container-storage-interface/spec.git
+time=2026-10-06T10:34:10.622Z level=INFO msg=cloning repo=c-csi-attacher url=https://github.com/kubernetes-csi/external-attacher.git
+csi-attacher 25b3f102 GO       source_build=GO      compiler=compiles          121.3s 
+csi-attacher 5334f340 GO       source_build=GO      compiler=compiles            5.1s 
+csi-attacher 8e06851c GO       source_build=GO      compiler=-                   0.4s 
+csi-attacher 6f801196 GO       source_build=GO      compiler=compiles            5.4s 
+csi-attacher 72e2e56b NO_GO    source_build=GO      compiler=baseline_fails      1.6s 
+csi-attacher 0c337900 NO_GO    source_build=GO      compiler=bump_side_effect    3.4s 
+csi-attacher 91b25fc4 UNKNOWN  source_build=UNKNOWN compiler=compiles            5.6s 
+csi-attacher a539b4f9 GO       source_build=GO      compiler=compiles            5.4s 
+csi-attacher f6b6d53d UNKNOWN  source_build=UNKNOWN compiler=compiles            5.0s 
+csi-attacher 26967731 GO       source_build=GO      compiler=compiles            5.3s 
+csi-attacher abf6346b UNKNOWN  source_build=UNKNOWN compiler=compiles            5.1s 
+csi-attacher c918b7f6 GO       source_build=GO      compiler=compiles            5.0s 
+csi-attacher 3e57adf7 GO       source_build=GO      compiler=compiles            3.9s 
+csi-attacher 6eaead6d GO       source_build=GO      compiler=compiles            2.4s 
+csi-attacher c6f94f66 GO       source_build=GO      compiler=compiles            3.6s 
+csi-attacher 3084acc9 UNKNOWN  source_build=UNKNOWN compiler=compiles            5.1s 
+csi-attacher 47a0fa4c GO       source_build=GO      compiler=compiles            3.4s 
+csi-attacher 77897809 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.3s 
+csi-attacher d9ee9b8b UNKNOWN  source_build=UNKNOWN compiler=compiles            2.4s 
+csi-attacher 62c6bbb6 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.3s 
+csi-attacher   20 decisions  GO  11  NO-GO   2  UNKNOWN   7 (35.0%)  errors 0 | compiler judged  17: agree  10  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 7 | not judged 3
+TOTAL         20 decisions  GO  11  NO-GO   2  UNKNOWN   7 (35.0%)  errors 0 | compiler judged  17: agree  10  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 7 | not judged 3
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    9   1  DESCRIPTOR_REFLECTION (e.g. csi-attacher@72e2e56b8db0c12479a3d317ef1a677f8c23ca88)
+    6   1  NEEDS_REVIEW (e.g. csi-attacher@91b25fc4ba3b2c3f869e9fc4d6e37776416d46b8)
+    6   1  OPTION_CHANGED (e.g. csi-attacher@91b25fc4ba3b2c3f869e9fc4d6e37776416d46b8)
+    2   1  WHOLE_MESSAGE_FLOW (e.g. csi-attacher@72e2e56b8db0c12479a3d317ef1a677f8c23ca88)
+    1   1  SECOND_CHECK_DISAGREES (e.g. csi-attacher@abf6346bb13d6323f4a0a792226778dc82c974ec)
+  FAILED csi-attacher@91b25fc4ba3b2c3f869e9fc4d6e37776416d46b8: unknown_on_safe: OPTION_CHANGED, NEEDS_REVIEW, DESCRIPTOR_REFLECTION
+  FAILED csi-attacher@f6b6d53db606c651d975edf0ff3d0c9f5cd4fa35: unknown_on_safe: OPTION_CHANGED, NEEDS_REVIEW, DESCRIPTOR_REFLECTION
+  FAILED csi-attacher@abf6346bb13d6323f4a0a792226778dc82c974ec: unknown_on_safe: DESCRIPTOR_REFLECTION, SECOND_CHECK_DISAGREES
+  FAILED csi-attacher@3084acc963c34a3a341fb5ae490c35cc5c3baeb1: unknown_on_safe: OPTION_CHANGED, NEEDS_REVIEW, DESCRIPTOR_REFLECTION
+  FAILED csi-attacher@778978094f6babbc5c0f6c7332557e3fc9dd98a5: unknown_on_safe: OPTION_CHANGED, NEEDS_REVIEW, DESCRIPTOR_REFLECTION
+  FAILED csi-attacher@d9ee9b8bfac7f1868f0fc092edd690eb330cedb3: unknown_on_safe: OPTION_CHANGED, NEEDS_REVIEW, DESCRIPTOR_REFLECTION
+  FAILED csi-attacher@62c6bbb6bd2094c9e72bc28e9d0829bc5e713178: unknown_on_safe: OPTION_CHANGED, DESCRIPTOR_REFLECTION, NEEDS_REVIEW
+
+20 windows in 3m19s.
+verifier gate: scan failed: 7 disagreements with the compiler or errors
+exit 1 seconds 199
