@@ -29,7 +29,10 @@ for c in rec.get("callers") or []:
 seen = 0
 for f in d.get("findings") or []:
     ev = [e for e in (f.get("evidence") or []) if pat in (e.get("location") or {}).get("file", "")]
-    if ev and seen < 8:
+    if ev and seen < 14 and f.get("aspect") != "runtime":
         seen += 1
         print("FINDING", f.get("outcome"), f.get("aspect"), f.get("rule"), (f.get("symbol") or {}).get("name"), "|", (f.get("detail") or "")[:200])
+        for e in ev[:4]:
+            loc = e.get("location") or {}
+            print("   EVIDENCE", loc.get("file"), loc.get("line"), e.get("kind"), (e.get("symbol") or {}).get("name"), "shipped=", e.get("shipped", False), "module=", e.get("module", ""), "member=", e.get("member", ""))
 PY

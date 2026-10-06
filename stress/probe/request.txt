@@ -1,2 +1,2 @@
-# Diagnose 2026-10-06 (again; the record is too large to commit): Tempo hold-out false alarms cite vendored pdata (generated_wrapper_*.go). Which uses, through which generated package, and why are they not shipped?
+# Diagnose 2026-10-06 (evidence of the build findings): Tempo hold-out false alarms cite vendored pdata (generated_wrapper_*.go). Which uses, through which generated package, and why are they not shipped?
 diag-tempo-v190 - bash stress/probe/diag-uses.sh https://github.com/open-telemetry/opentelemetry-proto https://github.com/grafana/tempo dbd1d8d90320514903223b7a25c8270b2926a57d^ 8654ab7a5a43ca25fe8046e59dcd6935c3f76de0 a8951735f7801e8adfaec5c0ace9262771cfec6e collector/pdata "$OUT"
