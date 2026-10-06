@@ -1,6 +1,7 @@
 camunda-zeebe history: 55 windows, shard 6/12 has 5
-5cfc8e040739 2024-11-13 verifier=None build=None compiler=baseline_fails 334.9s 
-cbcac7fa8895 2025-08-11 verifier=None build=None compiler=baseline_fails 239.8s 
-26e7f635d533 2026-01-20 verifier=None build=None compiler=baseline_fails 107.4s 
-6fcdafd024e1 2026-06-02 verifier=GO build=GO compiler=breaks 299.1s 
-406bb599a5b8 2026-08-13 verifier=GO build=GO compiler=compiles 427.7s 
+canary at 5cfc8e040739: breaks (1 files moved) ['clients/java/src/main/java/io/camunda/zeebe/client/impl/ZeebeClientImpl.java:150: package io.camunda.zeebe.gateway.protocol does not exist']
+5cfc8e040739 2024-11-13 verifier=None build=None compiler=baseline_fails 35.0s 
+cbcac7fa8895 2025-08-11 verifier=None build=None compiler=baseline_fails 166.1s 
+26e7f635d533 2026-01-20 verifier=None build=None compiler=baseline_fails 94.8s 
+6fcdafd024e1 2026-06-02 verifier=GO build=GO compiler=compiles 193.4s 
+406bb599a5b8 2026-08-13 verifier=GO build=GO compiler=compiles 447.2s 
