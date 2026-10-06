@@ -1,0 +1,43 @@
+Analyzing c ...
+  c: Go, unchanged since the last run (100ms)
+✗ Don't merge
+
+moves FindSpansResponse.next_page_token from #3 to #4
+moves FindTraceIDsResponse.next_page_token from #2 to #3
+moves FindTraceSummariesResponse.next_page_token from #2 to #3
+moves Pagination.page_token from #2 to #3
+
+4 of 11 deploy units break (c) · 0 need review · 7 proved safe (c)
+
+Breaks:
+- c (4 of 11 units: jaeger, jaeger (library), jaeger-e2e and remote-storage) @ d1a684d2
+  Why: the field's Go type changes from string to bytes under the same name [PROTO_FIELD_RENUMBERED_TYPE_CHANGED]
+  Why: the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data [PROTO_FIELD_RENUMBERED_USED_BY_CALLER]
+  - internal/storage/v2/grpc/handler.go:158
+      if err := srv.Send(&storage.FindSpansResponse{Spans: &data, NextPageToken: string(chunk.NextPageToken)}); err != nil {
+  - internal/storage/v2/grpc/handler.go:184
+      PageToken: tracestore.PageToken(wire.GetPagination().GetPageToken()),
+  - internal/storage/v2/grpc/handler.go:226
+      NextPageToken: string(chunk.NextPageToken),
+  - internal/storage/v2/grpc/handler.go:266
+      NextPageToken: nextPageToken,
+  - internal/storage/v2/grpc/handler.go:377
+      PageToken: tracestore.PageToken(pagination.GetPageToken()),
+  - internal/storage/v2/grpc/tracereader.go:200
+      NextPageToken: tracestore.PageToken(resp.GetNextPageToken()),
+  - … 4 more location(s)
+
+Old and new running together (both deploy orders): breaks
+Rebuilding callers with the new contract: breaks
+
+How to ship this safely:
+1. Do not change FindSpansResponse.next_page_token (#3) in place: add a new field with a new number, write both, move c (4 of 11 units: jaeger, jaeger (library), jaeger-e2e and remote-storage) to the new field (internal/storage/v2/grpc/handler.go:158, internal/storage/v2/grpc/tracereader.go:232), then reserve the old number.
+2. Do not change FindTraceIDsResponse.next_page_token (#2) in place: add a new field with a new number, write both, move c (4 of 11 units: jaeger, jaeger (library), jaeger-e2e and remote-storage) to the new field (internal/storage/v2/grpc/handler.go:266, internal/storage/v2/grpc/tracereader.go:200), then reserve the old number.
+3. Do not change FindTraceSummariesResponse.next_page_token (#2) in place: add a new field with a new number, write both, move c (4 of 11 units: jaeger, jaeger (library), jaeger-e2e and remote-storage) to the new field (internal/storage/v2/grpc/handler.go:226, internal/storage/v2/grpc/tracereader.go:284), then reserve the old number.
+4. Do not change Pagination.page_token (#2) in place: add a new field with a new number, write both, move c (4 of 11 units: jaeger, jaeger (library), jaeger-e2e and remote-storage) to the new field (internal/storage/v2/grpc/handler.go:184, internal/storage/v2/grpc/handler.go:377, internal/storage/v2/grpc/tracereader.go:246, +1 more), then reserve the old number.
+Deploy order: no order is safe while old and new binaries run side by side; make the change additive first.
+
+Verified against p@73f1a7e0 (base 356924a1) and 1 caller commit(s).
+Not checked: callers other than the directories given with --callers
+
+Decision d_59e92e7ef0537961 · keep it with --out record.json and replay with: verifier replay --file record.json

@@ -1,0 +1,218 @@
+== ff5989c394723bab23529fd1ab62a1dcce566d21 (base 73f1a7e0ead8ad09d5c2794117017bc97923a27f): exit 3
+VERDICT UNKNOWN {'generated_code': 'GO', 'runtime': 'GO', 'source_build': 'UNKNOWN'} ['SECOND_CHECK_DISAGREES']
+CHANGE FIELD_RENUMBERED {'kind': 'field', 'name': 'jaeger.storage.v2.FindSpansResponse.#4'} {'number': '4', 'type': 'bytes'} {'number': '3', 'type': 'string'}
+CHANGE FIELD_RENUMBERED {'kind': 'field', 'name': 'jaeger.storage.v2.FindTraceIDsResponse.#3'} {'number': '3', 'type': 'bytes'} {'number': '2', 'type': 'string'}
+CHANGE FIELD_RENUMBERED {'kind': 'field', 'name': 'jaeger.storage.v2.FindTraceSummariesResponse.#3'} {'number': '3', 'type': 'bytes'} {'number': '2', 'type': 'string'}
+CHANGE FIELD_RENUMBERED {'kind': 'field', 'name': 'jaeger.storage.v2.Pagination.#3'} {'number': '3', 'type': 'bytes'} {'number': '2', 'type': 'string'}
+CHANGE RESERVED_REMOVED {'kind': 'message', 'name': 'jaeger.storage.v2.FindSpansResponse'} {'reserved': '3'} None
+CHANGE RESERVED_REMOVED {'kind': 'message', 'name': 'jaeger.storage.v2.FindTraceIDsResponse'} {'reserved': '2'} None
+CHANGE RESERVED_REMOVED {'kind': 'message', 'name': 'jaeger.storage.v2.FindTraceSummariesResponse'} {'reserved': '2'} None
+CHANGE RESERVED_REMOVED {'kind': 'message', 'name': 'jaeger.storage.v2.Pagination'} {'reserved': '2'} None
+FINDING UNKNOWN source_build SECOND_CHECK_DISAGREES | an independent second check of the code finds that v2.FindSpansResponse.NextPageToken changes type from []byte to string (c/jaeger, internal/storage/v2/grpc/handler.go:158), where the full analysis found no break; 7 names in all
+    internal/storage/v2/grpc/handler.go:158 named v2.FindSpansResponse.NextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/tracereader.go:200 named v2.FindTraceIDsResponse.GetNextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/handler.go:266 named v2.FindTraceIDsResponse.NextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/tracereader.go:284 named v2.FindTraceSummariesResponse.GetNextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/handler.go:226 named v2.FindTraceSummariesResponse.NextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/handler.go:184 named v2.Pagination.GetPageToken changes type from []byte to string
+    internal/storage/v2/grpc/tracereader.go:246 named v2.Pagination.PageToken changes type from []byte to string
+FINDING UNKNOWN source_build SECOND_CHECK_DISAGREES | an independent second check of the code finds that v2.FindSpansResponse.NextPageToken changes type from []byte to string (c/jaeger (library), internal/storage/v2/grpc/handler.go:158), where the full analysis found no break; 7 names in all
+    internal/storage/v2/grpc/handler.go:158 named v2.FindSpansResponse.NextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/tracereader.go:200 named v2.FindTraceIDsResponse.GetNextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/handler.go:266 named v2.FindTraceIDsResponse.NextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/tracereader.go:284 named v2.FindTraceSummariesResponse.GetNextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/handler.go:226 named v2.FindTraceSummariesResponse.NextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/handler.go:184 named v2.Pagination.GetPageToken changes type from []byte to string
+    internal/storage/v2/grpc/tracereader.go:246 named v2.Pagination.PageToken changes type from []byte to string
+FINDING UNKNOWN source_build SECOND_CHECK_DISAGREES | an independent second check of the code finds that v2.FindSpansResponse.NextPageToken changes type from []byte to string (c/jaeger-e2e, internal/storage/v2/grpc/handler.go:158), where the full analysis found no break; 7 names in all
+    internal/storage/v2/grpc/handler.go:158 named v2.FindSpansResponse.NextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/tracereader.go:200 named v2.FindTraceIDsResponse.GetNextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/handler.go:266 named v2.FindTraceIDsResponse.NextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/tracereader.go:284 named v2.FindTraceSummariesResponse.GetNextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/handler.go:226 named v2.FindTraceSummariesResponse.NextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/handler.go:184 named v2.Pagination.GetPageToken changes type from []byte to string
+    internal/storage/v2/grpc/tracereader.go:246 named v2.Pagination.PageToken changes type from []byte to string
+FINDING UNKNOWN source_build SECOND_CHECK_DISAGREES | an independent second check of the code finds that v2.FindSpansResponse.NextPageToken changes type from []byte to string (c/remote-storage, internal/storage/v2/grpc/handler.go:158), where the full analysis found no break; 7 names in all
+    internal/storage/v2/grpc/handler.go:158 named v2.FindSpansResponse.NextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/tracereader.go:200 named v2.FindTraceIDsResponse.GetNextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/handler.go:266 named v2.FindTraceIDsResponse.NextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/tracereader.go:284 named v2.FindTraceSummariesResponse.GetNextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/handler.go:226 named v2.FindTraceSummariesResponse.NextPageToken changes type from []byte to string
+    internal/storage/v2/grpc/handler.go:184 named v2.Pagination.GetPageToken changes type from []byte to string
+    internal/storage/v2/grpc/tracereader.go:246 named v2.Pagination.PageToken changes type from []byte to string
+== 73f1a7e0ead8ad09d5c2794117017bc97923a27f (base 356924a1d31475ea1c2fa45b0679060b3c4e0edc): exit 3
+VERDICT NO_GO {'generated_code': 'NO_GO', 'runtime': 'NO_GO', 'source_build': 'NO_GO'} None
+CHANGE FIELD_RENUMBERED {'kind': 'field', 'name': 'jaeger.storage.v2.FindSpansResponse.#3'} {'number': '3', 'type': 'string'} {'number': '4', 'type': 'bytes'}
+CHANGE FIELD_RENUMBERED {'kind': 'field', 'name': 'jaeger.storage.v2.FindTraceIDsResponse.#2'} {'number': '2', 'type': 'string'} {'number': '3', 'type': 'bytes'}
+CHANGE FIELD_RENUMBERED {'kind': 'field', 'name': 'jaeger.storage.v2.FindTraceSummariesResponse.#2'} {'number': '2', 'type': 'string'} {'number': '3', 'type': 'bytes'}
+CHANGE FIELD_RENUMBERED {'kind': 'field', 'name': 'jaeger.storage.v2.Pagination.#2'} {'number': '2', 'type': 'string'} {'number': '3', 'type': 'bytes'}
+FINDING NO_GO generated_code PROTO_FIELD_RENUMBERED_TYPE_CHANGED | the field's Go type changes from string to bytes under the same name
+    internal/storage/v2/grpc/handler.go:158 write
+    internal/storage/v2/grpc/tracereader.go:232 read
+FINDING NO_GO source_build PROTO_FIELD_RENUMBERED_TYPE_CHANGED | caller source uses the field with its old type
+    internal/storage/v2/grpc/handler.go:158 write
+    internal/storage/v2/grpc/tracereader.go:232 read
+FINDING NO_GO runtime PROTO_FIELD_RENUMBERED_USED_BY_CALLER | the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data
+    internal/storage/v2/grpc/handler.go:158 write
+    internal/storage/v2/grpc/tracereader.go:232 read
+FINDING NO_GO generated_code PROTO_FIELD_RENUMBERED_TYPE_CHANGED | the field's Go type changes from string to bytes under the same name
+    internal/storage/v2/grpc/handler.go:266 write
+    internal/storage/v2/grpc/tracereader.go:200 read  getter
+FINDING NO_GO source_build PROTO_FIELD_RENUMBERED_TYPE_CHANGED | caller source uses the field with its old type
+    internal/storage/v2/grpc/handler.go:266 write
+    internal/storage/v2/grpc/tracereader.go:200 read  getter
+FINDING NO_GO runtime PROTO_FIELD_RENUMBERED_USED_BY_CALLER | the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data
+    internal/storage/v2/grpc/handler.go:266 write
+    internal/storage/v2/grpc/tracereader.go:200 read  getter
+FINDING NO_GO generated_code PROTO_FIELD_RENUMBERED_TYPE_CHANGED | the field's Go type changes from string to bytes under the same name
+    internal/storage/v2/grpc/handler.go:226 write
+    internal/storage/v2/grpc/tracereader.go:284 read  getter
+FINDING NO_GO source_build PROTO_FIELD_RENUMBERED_TYPE_CHANGED | caller source uses the field with its old type
+    internal/storage/v2/grpc/handler.go:226 write
+    internal/storage/v2/grpc/tracereader.go:284 read  getter
+FINDING NO_GO runtime PROTO_FIELD_RENUMBERED_USED_BY_CALLER | the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data
+    internal/storage/v2/grpc/handler.go:226 write
+    internal/storage/v2/grpc/tracereader.go:284 read  getter
+FINDING NO_GO generated_code PROTO_FIELD_RENUMBERED_TYPE_CHANGED | the field's Go type changes from string to bytes under the same name
+    internal/storage/v2/grpc/handler.go:184 read  getter
+    internal/storage/v2/grpc/handler.go:377 read  getter
+    internal/storage/v2/grpc/tracereader.go:246 write
+    internal/storage/v2/grpc/tracereader.go:351 write
+FINDING NO_GO source_build PROTO_FIELD_RENUMBERED_TYPE_CHANGED | caller source uses the field with its old type
+    internal/storage/v2/grpc/handler.go:184 read  getter
+    internal/storage/v2/grpc/handler.go:377 read  getter
+    internal/storage/v2/grpc/tracereader.go:246 write
+    internal/storage/v2/grpc/tracereader.go:351 write
+FINDING NO_GO runtime PROTO_FIELD_RENUMBERED_USED_BY_CALLER | the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data
+    internal/storage/v2/grpc/handler.go:184 read  getter
+    internal/storage/v2/grpc/handler.go:377 read  getter
+    internal/storage/v2/grpc/tracereader.go:246 write
+    internal/storage/v2/grpc/tracereader.go:351 write
+FINDING NO_GO generated_code PROTO_FIELD_RENUMBERED_TYPE_CHANGED | the field's Go type changes from string to bytes under the same name
+    internal/storage/v2/grpc/handler.go:158 write
+    internal/storage/v2/grpc/tracereader.go:232 read
+FINDING NO_GO source_build PROTO_FIELD_RENUMBERED_TYPE_CHANGED | caller source uses the field with its old type
+    internal/storage/v2/grpc/handler.go:158 write
+    internal/storage/v2/grpc/tracereader.go:232 read
+FINDING NO_GO runtime PROTO_FIELD_RENUMBERED_USED_BY_CALLER | the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data
+    internal/storage/v2/grpc/handler.go:158 write
+    internal/storage/v2/grpc/tracereader.go:232 read
+FINDING NO_GO generated_code PROTO_FIELD_RENUMBERED_TYPE_CHANGED | the field's Go type changes from string to bytes under the same name
+    internal/storage/v2/grpc/handler.go:266 write
+    internal/storage/v2/grpc/tracereader.go:200 read  getter
+FINDING NO_GO source_build PROTO_FIELD_RENUMBERED_TYPE_CHANGED | caller source uses the field with its old type
+    internal/storage/v2/grpc/handler.go:266 write
+    internal/storage/v2/grpc/tracereader.go:200 read  getter
+FINDING NO_GO runtime PROTO_FIELD_RENUMBERED_USED_BY_CALLER | the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data
+    internal/storage/v2/grpc/handler.go:266 write
+    internal/storage/v2/grpc/tracereader.go:200 read  getter
+FINDING NO_GO generated_code PROTO_FIELD_RENUMBERED_TYPE_CHANGED | the field's Go type changes from string to bytes under the same name
+    internal/storage/v2/grpc/handler.go:226 write
+    internal/storage/v2/grpc/tracereader.go:284 read  getter
+FINDING NO_GO source_build PROTO_FIELD_RENUMBERED_TYPE_CHANGED | caller source uses the field with its old type
+    internal/storage/v2/grpc/handler.go:226 write
+    internal/storage/v2/grpc/tracereader.go:284 read  getter
+FINDING NO_GO runtime PROTO_FIELD_RENUMBERED_USED_BY_CALLER | the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data
+    internal/storage/v2/grpc/handler.go:226 write
+    internal/storage/v2/grpc/tracereader.go:284 read  getter
+FINDING NO_GO generated_code PROTO_FIELD_RENUMBERED_TYPE_CHANGED | the field's Go type changes from string to bytes under the same name
+    internal/storage/v2/grpc/handler.go:184 read  getter
+    internal/storage/v2/grpc/handler.go:377 read  getter
+    internal/storage/v2/grpc/tracereader.go:246 write
+    internal/storage/v2/grpc/tracereader.go:351 write
+FINDING NO_GO source_build PROTO_FIELD_RENUMBERED_TYPE_CHANGED | caller source uses the field with its old type
+    internal/storage/v2/grpc/handler.go:184 read  getter
+    internal/storage/v2/grpc/handler.go:377 read  getter
+    internal/storage/v2/grpc/tracereader.go:246 write
+    internal/storage/v2/grpc/tracereader.go:351 write
+FINDING NO_GO runtime PROTO_FIELD_RENUMBERED_USED_BY_CALLER | the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data
+    internal/storage/v2/grpc/handler.go:184 read  getter
+    internal/storage/v2/grpc/handler.go:377 read  getter
+    internal/storage/v2/grpc/tracereader.go:246 write
+    internal/storage/v2/grpc/tracereader.go:351 write
+FINDING NO_GO generated_code PROTO_FIELD_RENUMBERED_TYPE_CHANGED | the field's Go type changes from string to bytes under the same name
+    internal/storage/v2/grpc/handler.go:158 write
+    internal/storage/v2/grpc/tracereader.go:232 read
+FINDING NO_GO source_build PROTO_FIELD_RENUMBERED_TYPE_CHANGED | caller source uses the field with its old type
+    internal/storage/v2/grpc/handler.go:158 write
+    internal/storage/v2/grpc/tracereader.go:232 read
+FINDING NO_GO runtime PROTO_FIELD_RENUMBERED_USED_BY_CALLER | the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data
+    internal/storage/v2/grpc/handler.go:158 write
+    internal/storage/v2/grpc/tracereader.go:232 read
+FINDING NO_GO generated_code PROTO_FIELD_RENUMBERED_TYPE_CHANGED | the field's Go type changes from string to bytes under the same name
+    internal/storage/v2/grpc/handler.go:266 write
+    internal/storage/v2/grpc/tracereader.go:200 read  getter
+FINDING NO_GO source_build PROTO_FIELD_RENUMBERED_TYPE_CHANGED | caller source uses the field with its old type
+    internal/storage/v2/grpc/handler.go:266 write
+    internal/storage/v2/grpc/tracereader.go:200 read  getter
+FINDING NO_GO runtime PROTO_FIELD_RENUMBERED_USED_BY_CALLER | the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data
+    internal/storage/v2/grpc/handler.go:266 write
+    internal/storage/v2/grpc/tracereader.go:200 read  getter
+FINDING NO_GO generated_code PROTO_FIELD_RENUMBERED_TYPE_CHANGED | the field's Go type changes from string to bytes under the same name
+    internal/storage/v2/grpc/handler.go:226 write
+    internal/storage/v2/grpc/tracereader.go:284 read  getter
+FINDING NO_GO source_build PROTO_FIELD_RENUMBERED_TYPE_CHANGED | caller source uses the field with its old type
+    internal/storage/v2/grpc/handler.go:226 write
+    internal/storage/v2/grpc/tracereader.go:284 read  getter
+FINDING NO_GO runtime PROTO_FIELD_RENUMBERED_USED_BY_CALLER | the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data
+    internal/storage/v2/grpc/handler.go:226 write
+    internal/storage/v2/grpc/tracereader.go:284 read  getter
+FINDING NO_GO generated_code PROTO_FIELD_RENUMBERED_TYPE_CHANGED | the field's Go type changes from string to bytes under the same name
+    internal/storage/v2/grpc/handler.go:184 read  getter
+    internal/storage/v2/grpc/handler.go:377 read  getter
+    internal/storage/v2/grpc/tracereader.go:246 write
+    internal/storage/v2/grpc/tracereader.go:351 write
+FINDING NO_GO source_build PROTO_FIELD_RENUMBERED_TYPE_CHANGED | caller source uses the field with its old type
+    internal/storage/v2/grpc/handler.go:184 read  getter
+    internal/storage/v2/grpc/handler.go:377 read  getter
+    internal/storage/v2/grpc/tracereader.go:246 write
+    internal/storage/v2/grpc/tracereader.go:351 write
+FINDING NO_GO runtime PROTO_FIELD_RENUMBERED_USED_BY_CALLER | the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data
+    internal/storage/v2/grpc/handler.go:184 read  getter
+    internal/storage/v2/grpc/handler.go:377 read  getter
+    internal/storage/v2/grpc/tracereader.go:246 write
+    internal/storage/v2/grpc/tracereader.go:351 write
+FINDING NO_GO generated_code PROTO_FIELD_RENUMBERED_TYPE_CHANGED | the field's Go type changes from string to bytes under the same name
+    internal/storage/v2/grpc/handler.go:158 write
+    internal/storage/v2/grpc/tracereader.go:232 read
+FINDING NO_GO source_build PROTO_FIELD_RENUMBERED_TYPE_CHANGED | caller source uses the field with its old type
+    internal/storage/v2/grpc/handler.go:158 write
+    internal/storage/v2/grpc/tracereader.go:232 read
+FINDING NO_GO runtime PROTO_FIELD_RENUMBERED_USED_BY_CALLER | the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data
+    internal/storage/v2/grpc/handler.go:158 write
+    internal/storage/v2/grpc/tracereader.go:232 read
+FINDING NO_GO generated_code PROTO_FIELD_RENUMBERED_TYPE_CHANGED | the field's Go type changes from string to bytes under the same name
+    internal/storage/v2/grpc/handler.go:266 write
+    internal/storage/v2/grpc/tracereader.go:200 read  getter
+FINDING NO_GO source_build PROTO_FIELD_RENUMBERED_TYPE_CHANGED | caller source uses the field with its old type
+    internal/storage/v2/grpc/handler.go:266 write
+    internal/storage/v2/grpc/tracereader.go:200 read  getter
+FINDING NO_GO runtime PROTO_FIELD_RENUMBERED_USED_BY_CALLER | the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data
+    internal/storage/v2/grpc/handler.go:266 write
+    internal/storage/v2/grpc/tracereader.go:200 read  getter
+FINDING NO_GO generated_code PROTO_FIELD_RENUMBERED_TYPE_CHANGED | the field's Go type changes from string to bytes under the same name
+    internal/storage/v2/grpc/handler.go:226 write
+    internal/storage/v2/grpc/tracereader.go:284 read  getter
+FINDING NO_GO source_build PROTO_FIELD_RENUMBERED_TYPE_CHANGED | caller source uses the field with its old type
+    internal/storage/v2/grpc/handler.go:226 write
+    internal/storage/v2/grpc/tracereader.go:284 read  getter
+FINDING NO_GO runtime PROTO_FIELD_RENUMBERED_USED_BY_CALLER | the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data
+    internal/storage/v2/grpc/handler.go:226 write
+    internal/storage/v2/grpc/tracereader.go:284 read  getter
+FINDING NO_GO generated_code PROTO_FIELD_RENUMBERED_TYPE_CHANGED | the field's Go type changes from string to bytes under the same name
+    internal/storage/v2/grpc/handler.go:184 read  getter
+    internal/storage/v2/grpc/handler.go:377 read  getter
+    internal/storage/v2/grpc/tracereader.go:246 write
+    internal/storage/v2/grpc/tracereader.go:351 write
+FINDING NO_GO source_build PROTO_FIELD_RENUMBERED_TYPE_CHANGED | caller source uses the field with its old type
+    internal/storage/v2/grpc/handler.go:184 read  getter
+    internal/storage/v2/grpc/handler.go:377 read  getter
+    internal/storage/v2/grpc/tracereader.go:246 write
+    internal/storage/v2/grpc/tracereader.go:351 write
+FINDING NO_GO runtime PROTO_FIELD_RENUMBERED_USED_BY_CALLER | the field keeps its name but moves to a new wire number; old and new binaries write and read different tags for the same data
+    internal/storage/v2/grpc/handler.go:184 read  getter
+    internal/storage/v2/grpc/handler.go:377 read  getter
+    internal/storage/v2/grpc/tracereader.go:246 write
+    internal/storage/v2/grpc/tracereader.go:351 write
+
+exit 0 seconds 24

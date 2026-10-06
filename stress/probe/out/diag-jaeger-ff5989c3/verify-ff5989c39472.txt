@@ -1,0 +1,32 @@
+Analyzing c ...
+  c: Go, 180 packages read (19.4s)
+⚠ Needs review
+
+7 of 11 deploy units proved safe (c); 4 could not be checked (c), so it does not say Merge.
+
+- c (jaeger) — an independent second check of the code finds that v2.FindSpansResponse.NextPageToken changes type from []byte to string (c/jaeger, internal/storage/v2/grpc/handler.go:158), where the full analysis found no break; 7 names in all at internal/storage/v2/grpc/handler.go:158
+  - Fix: Build the caller against the regenerated code and look at the names at internal/storage/v2/grpc/handler.go:158, internal/storage/v2/grpc/tracereader.go:200, internal/storage/v2/grpc/handler.go:266, internal/storage/v2/grpc/tracereader.go:284, internal/storage/v2/grpc/handler.go:226 and 2 more. If it compiles, the change is safe for it; if not, keep the old names (deprecate instead of removing or renaming) until the caller is updated, and report the decision so the analysis learns it.
+- c (jaeger (library)) — an independent second check of the code finds that v2.FindSpansResponse.NextPageToken changes type from []byte to string (c/jaeger (library), internal/storage/v2/grpc/handler.go:158), where the full analysis found no break; 7 names in all at internal/storage/v2/grpc/handler.go:158
+  - Fix: Build the caller against the regenerated code and look at the names at internal/storage/v2/grpc/handler.go:158, internal/storage/v2/grpc/tracereader.go:200, internal/storage/v2/grpc/handler.go:266, internal/storage/v2/grpc/tracereader.go:284, internal/storage/v2/grpc/handler.go:226 and 2 more. If it compiles, the change is safe for it; if not, keep the old names (deprecate instead of removing or renaming) until the caller is updated, and report the decision so the analysis learns it.
+- c (jaeger-e2e) — an independent second check of the code finds that v2.FindSpansResponse.NextPageToken changes type from []byte to string (c/jaeger-e2e, internal/storage/v2/grpc/handler.go:158), where the full analysis found no break; 7 names in all at internal/storage/v2/grpc/handler.go:158
+  - Fix: Build the caller against the regenerated code and look at the names at internal/storage/v2/grpc/handler.go:158, internal/storage/v2/grpc/tracereader.go:200, internal/storage/v2/grpc/handler.go:266, internal/storage/v2/grpc/tracereader.go:284, internal/storage/v2/grpc/handler.go:226 and 2 more. If it compiles, the change is safe for it; if not, keep the old names (deprecate instead of removing or renaming) until the caller is updated, and report the decision so the analysis learns it.
+- c (remote-storage) — an independent second check of the code finds that v2.FindSpansResponse.NextPageToken changes type from []byte to string (c/remote-storage, internal/storage/v2/grpc/handler.go:158), where the full analysis found no break; 7 names in all at internal/storage/v2/grpc/handler.go:158
+  - Fix: Build the caller against the regenerated code and look at the names at internal/storage/v2/grpc/handler.go:158, internal/storage/v2/grpc/tracereader.go:200, internal/storage/v2/grpc/handler.go:266, internal/storage/v2/grpc/tracereader.go:284, internal/storage/v2/grpc/handler.go:226 and 2 more. If it compiles, the change is safe for it; if not, keep the old names (deprecate instead of removing or renaming) until the caller is updated, and report the decision so the analysis learns it.
+
+Old and new running together (either deploy order): safe
+Rebuilding callers with the new contract: not proved
+
+Breaking in general, safe for your callers:
+- moves FindSpansResponse.next_page_token from #4 to #3: a wire break in general; no checked deploy unit uses it
+- moves FindTraceIDsResponse.next_page_token from #3 to #2: a wire break in general; no checked deploy unit uses it
+- moves FindTraceSummariesResponse.next_page_token from #3 to #2: a wire break in general; no checked deploy unit uses it
+- moves Pagination.page_token from #3 to #2: a wire break in general; no checked deploy unit uses it
+- removes reservation of 3 in FindSpansResponse; the number can be reused with a different meaning: a semantics break in general; used by 4 checked deploy unit(s), none in a way this change breaks
+- removes reservation of 2 in FindTraceIDsResponse; the number can be reused with a different meaning: a semantics break in general; used by 4 checked deploy unit(s), none in a way this change breaks
+- removes reservation of 2 in FindTraceSummariesResponse; the number can be reused with a different meaning: a semantics break in general; used by 4 checked deploy unit(s), none in a way this change breaks
+- removes reservation of 2 in Pagination; the number can be reused with a different meaning: a semantics break in general; used by 4 checked deploy unit(s), none in a way this change breaks
+
+Verified against p@ff5989c3 (base 73f1a7e0) and 1 caller commit(s).
+Not checked: callers other than the directories given with --callers
+
+Decision d_b55d83449f9e2052 · keep it with --out record.json and replay with: verifier replay --file record.json
