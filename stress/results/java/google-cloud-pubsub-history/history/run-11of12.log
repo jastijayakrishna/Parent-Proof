@@ -1,0 +1,22 @@
+google-cloud-pubsub-history history: 248 windows, shard 11/12 has 20
+canary at 94fa8ab97061: generated_fails (140 files moved) ['proto-google-cloud-pubsub-v1/src/main/java/com/google/pubsub/v1/StreamingPullResponseOrBuilder.java:35: cannot access com.google.pubsub.v1.ReceivedMessage']
+94fa8ab97061 2023-02-23 verifier=GO build=GO compiler=oracle_error 15.9s 
+ba58170b7965 2023-04-17 verifier=GO build=GO compiler=oracle_error 15.5s 
+aee42274521c 2023-06-23 verifier=GO build=GO compiler=oracle_error 10.1s 
+462746cfbf9b 2023-07-26 verifier=GO build=GO compiler=compiles 17.0s 
+629ed33b3d21 2023-09-18 verifier=GO build=GO compiler=oracle_error 16.9s 
+d2d8bb02a07b 2023-10-18 verifier=GO build=GO compiler=oracle_error 10.3s 
+b85621deac38 2023-11-30 verifier=GO build=GO compiler=oracle_error 14.5s 
+f801667535e3 2024-02-09 verifier=GO build=GO compiler=oracle_error 15.6s 
+316706d9674f 2024-03-10 verifier=GO build=GO compiler=oracle_error 17.4s 
+157ba65d7a7e 2024-04-25 verifier=GO build=GO compiler=oracle_error 16.0s 
+45e8deb8b4f4 2024-05-23 verifier=GO build=GO compiler=oracle_error 10.2s 
+34a9bd8f5df3 2024-08-01 verifier=GO build=GO compiler=oracle_error 15.0s 
+97d529293e1a 2024-09-30 verifier=GO build=GO compiler=oracle_error 14.0s 
+34704b0df3fa 2024-12-12 verifier=GO build=GO compiler=oracle_error 18.2s 
+76b2a3dc1f00 2025-03-14 verifier=GO build=GO compiler=compiles 20.2s 
+3ce0bd6dbd6b 2025-05-06 verifier=GO build=GO compiler=oracle_error 13.1s 
+025e54f3678e 2025-07-14 verifier=GO build=GO compiler=oracle_error 18.3s 
+f195b94080f0 2025-10-06 verifier=GO build=GO compiler=oracle_error 11.9s 
+d164024249fc 2025-12-22 verifier=GO build=GO compiler=oracle_error 18.2s 
+d263eeff08e1 2026-02-26 verifier=GO build=GO compiler=oracle_error 19.1s 
