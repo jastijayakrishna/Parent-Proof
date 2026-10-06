@@ -1,21 +1,21 @@
-buildx     22074cd4 GO       source_build=GO      compiler=compiles           1.0s replay=true 
-buildx     010e4c8d NO_GO    source_build=NO_GO   compiler=breaks             7.5s replay=true 
-buildx     1300882b UNKNOWN  source_build=UNKNOWN compiler=compiles           7.4s replay=true 
-buildx     3808fba7 GO       source_build=GO      compiler=compiles           7.4s replay=true 
-buildx     40ef3446 GO       source_build=GO      compiler=compiles           7.3s replay=true 
-buildx     606e9d1f UNKNOWN  source_build=UNKNOWN compiler=compiles           7.6s replay=true 
-buildx     4e15a5ac GO       source_build=GO      compiler=compiles           7.1s replay=true 
-buildx     70536fc8 UNKNOWN  source_build=UNKNOWN compiler=compiles           5.4s replay=true 
-buildx     83c30c6c GO       source_build=GO      compiler=compiles           5.3s replay=true 
+buildx     22074cd4 GO       source_build=GO      compiler=compiles           0.9s replay=true 
+buildx     010e4c8d NO_GO    source_build=NO_GO   compiler=breaks            10.5s replay=true 
+buildx     1300882b UNKNOWN  source_build=UNKNOWN compiler=compiles          10.5s replay=true 
+buildx     3808fba7 GO       source_build=GO      compiler=compiles           9.1s replay=true 
+buildx     40ef3446 GO       source_build=GO      compiler=compiles           9.2s replay=true 
+buildx     606e9d1f UNKNOWN  source_build=UNKNOWN compiler=compiles          10.1s replay=true 
+buildx     4e15a5ac GO       source_build=GO      compiler=compiles           9.4s replay=true 
+buildx     70536fc8 UNKNOWN  source_build=UNKNOWN compiler=compiles           6.9s replay=true 
+buildx     83c30c6c GO       source_build=GO      compiler=compiles           6.9s replay=true 
 buildx     ac30b249 GO       source_build=GO      compiler=compiles           0.5s replay=true 
-buildx     a1150734 GO       source_build=GO      compiler=compiles           0.5s replay=true 
-buildx     c9b2da6b GO       source_build=GO      compiler=compiles           5.2s replay=true 
-buildx     c07bc083 UNKNOWN  source_build=UNKNOWN compiler=breaks             5.6s replay=true 
-buildx     d3ff70ac NO_GO    source_build=NO_GO   compiler=breaks             6.4s replay=true 
-buildx     e2534c77 GO       source_build=GO      compiler=compiles           6.8s replay=true 
-buildx     e98e8f6a GO       source_build=GO      compiler=compiles           3.7s replay=true 
-buildx     fa392a2d GO       source_build=GO      compiler=compiles           0.5s replay=true 
-buildx     ef2dabd5 GO       source_build=GO      compiler=compiles           3.9s replay=true 
+buildx     a1150734 GO       source_build=GO      compiler=compiles           0.7s replay=true 
+buildx     c07bc083 UNKNOWN  source_build=UNKNOWN compiler=breaks             7.2s replay=true 
+buildx     c9b2da6b GO       source_build=GO      compiler=compiles           7.3s replay=true 
+buildx     d3ff70ac NO_GO    source_build=NO_GO   compiler=breaks             8.2s replay=true 
+buildx     e2534c77 GO       source_build=GO      compiler=compiles           8.6s replay=true 
+buildx     e98e8f6a GO       source_build=GO      compiler=compiles           4.8s replay=true 
+buildx     fa392a2d GO       source_build=GO      compiler=compiles           0.7s replay=true 
+buildx     ef2dabd5 GO       source_build=GO      compiler=compiles           5.3s replay=true 
 buildx/additive        windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 2: GO= 1 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
 buildx/breaking        windows=  1 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=1
 buildx/unchanged       windows= 15 | breaks= 2: caught= 1 WRONG_GO=0 abstained=1 | compiles=13: GO=11 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=15 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=15
@@ -25,5 +25,5 @@ TOTAL                  windows= 18 | breaks= 3: caught= 2 WRONG_GO=0 abstained=1
   WITHIN THE UNKNOWN LIMIT buildx@70536fc89082..7ea9fa1c: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
   FAILED buildx@c07bc08336cf..eece108c: unknown_on_break: tests/bake.go:2278:54: not enough arguments in call to contentutil.ProviderFromRef | tests/bake.go:2339:53: not enough arguments in call to contentutil.ProviderFromRef | tests/bake.go:2431:53: not enough arguments in call to contentutil.ProviderFromRef
 
-18 windows in 45s with 2 workers; 0 differ from the baseline.
+18 windows in 59s with 2 workers; 0 differ from the baseline.
 verifier gate: release gate failed: 1 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
