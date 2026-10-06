@@ -1,0 +1,30 @@
+time=2026-10-06T10:34:06.890Z level=INFO msg=cloning repo=p-vitess url=https://github.com/vitessio/vitess.git
+time=2026-10-06T10:34:10.520Z level=INFO msg=cloning repo=c-vitess url=https://github.com/vitessio/vitess.git
+vitess      a240ed6c GO       source_build=GO      compiler=-                  21.7s 
+vitess      4689ec4d GO       source_build=GO      compiler=-                   3.3s 
+vitess      e7ea4792 GO       source_build=GO      compiler=-                   3.1s 
+vitess      2265cacb GO       source_build=GO      compiler=-                   3.0s 
+vitess      01a25a7d NO_GO    source_build=GO      compiler=-                   3.2s 
+vitess      25b34575 GO       source_build=GO      compiler=-                   3.1s 
+vitess      18dc5a3c GO       source_build=GO      compiler=-                   3.3s 
+vitess      4425351c GO       source_build=GO      compiler=-                   3.4s 
+vitess      43fb69ff GO       source_build=GO      compiler=-                   3.1s 
+vitess      e2e08e89 GO       source_build=GO      compiler=-                   3.2s 
+vitess      638053b1 NO_GO    source_build=NO_GO   compiler=-                   3.2s 
+vitess      0c4cf11d NO_GO    source_build=UNKNOWN compiler=-                   3.5s 
+vitess      3da1db26 GO       source_build=GO      compiler=-                   3.1s 
+vitess      bc7bb3c3 GO       source_build=GO      compiler=-                   3.1s 
+vitess      9a3646f7 GO       source_build=GO      compiler=-                   3.0s 
+vitess      a610566b GO       source_build=GO      compiler=-                   3.1s 
+vitess      8f5a43e4 GO       source_build=GO      compiler=-                   3.1s 
+vitess      422379fa NO_GO    source_build=GO      compiler=-                   3.1s 
+vitess      ae0234a8 GO       source_build=GO      compiler=-                   3.1s 
+vitess      aae08bec GO       source_build=GO      compiler=-                   3.1s 
+vitess        20 decisions  GO  16  NO-GO   4  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO  16  NO-GO   4  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    1   1  UNRESOLVED_MEMBER (e.g. vitess@0c4cf11d8cbb358dd795838ee6767aa6d2ea0ac3)
+
+20 windows in 1m34s.
+exit 0 seconds 95
