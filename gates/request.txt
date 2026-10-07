@@ -1,3 +1,3 @@
-Gates of Parent branch apply-patches-2026-10-06 8001b6f (Patches 0001-0005 on main fd5238d: oneof and presence changes see Go reflection and templates; a caller's tests and the strings that name a field are uses; fix texts; report counts version skew; suite extended) requested 2026-10-07T06:20Z
-source: jastijayakrishna/Parent, branch apply-patches-2026-10-06, commit 8001b6f519de3f8be8e5c57d50d3bcdafe8eef50 sha256 (uncompressed linux/amd64): a29940d69d4747fab4e0c4d5434315a8b3772335115d22fceddf2f4f19629149 built: 2026-10-07T06:16Z 
-scan: all 17 corpus projects with the compiler, new (8001b6f) and before (fd5238d)
+Gates of Parent branch patches-without-0002 f1004d7 (Patches 0001, 0003, 0004, 0005 on main fd5238d, without 0002: oneof and presence changes see Go reflection and templates; fix texts solve the build constraint; report counts version skew; suite extended) requested 2026-10-07T07:13Z
+source: jastijayakrishna/Parent, branch patches-without-0002, commit f1004d7ac027a01d49b3d7fe96a64458b7c520f4 sha256 (uncompressed linux/amd64): 8ad6a3b4bdc7aff26f1d71772a50df4728f8261d6687d533e85cc4b103cfd276 built: 2026-10-07T07:11Z 
+scan: all 17 corpus projects with the compiler, new (f1004d7) and before (fd5238d)
