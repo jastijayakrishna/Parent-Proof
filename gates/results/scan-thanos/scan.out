@@ -1,34 +1,34 @@
-time=2026-10-06T13:47:08.574Z level=INFO msg=cloning repo=p-thanos url=https://github.com/thanos-io/thanos.git
-time=2026-10-06T13:47:10.604Z level=INFO msg=cloning repo=c-thanos url=https://github.com/thanos-io/thanos.git
-thanos      9fe2d4c9 GO       source_build=GO      compiler=-                  19.6s 
-thanos      2f83caaa GO       source_build=GO      compiler=-                   0.9s 
-thanos      ac3df121 GO       source_build=GO      compiler=-                   0.8s 
-thanos      c14df1d9 GO       source_build=GO      compiler=-                   0.8s 
-thanos      a463eb15 NO_GO    source_build=UNKNOWN compiler=-                   0.8s 
-thanos      51094534 GO       source_build=GO      compiler=-                   0.8s 
-thanos      27bf8fad NO_GO    source_build=UNKNOWN compiler=-                   0.4s 
-thanos      cdca5483 NO_GO    source_build=NO_GO   compiler=-                   1.0s 
-thanos      569a32ac GO       source_build=GO      compiler=-                   0.8s 
-thanos      802f43f3 NO_GO    source_build=GO      compiler=-                   1.1s 
-thanos      23063063 GO       source_build=GO      compiler=-                   0.7s 
-thanos      38129bbb GO       source_build=GO      compiler=-                   0.7s 
-thanos      6a45d754 GO       source_build=GO      compiler=-                   0.4s 
-thanos      d05e90ae NO_GO    source_build=GO      compiler=-                   0.7s 
-thanos      be442a51 GO       source_build=GO      compiler=-                   0.8s 
-thanos      20900389 GO       source_build=GO      compiler=-                   0.7s 
-thanos      e2f6ca34 GO       source_build=GO      compiler=-                   0.7s 
-thanos      1bdcc655 GO       source_build=GO      compiler=-                   0.7s 
-thanos      328385ac GO       source_build=GO      compiler=-                   0.7s 
-thanos      bcd20a3b NO_GO    source_build=NO_GO   compiler=-                   1.4s 
-thanos        20 decisions  GO  14  NO-GO   6  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
-TOTAL         20 decisions  GO  14  NO-GO   6  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+time=2026-10-07T06:30:14.216Z level=INFO msg=cloning repo=p-thanos url=https://github.com/thanos-io/thanos.git
+time=2026-10-07T06:30:14.976Z level=INFO msg=cloning repo=c-thanos url=https://github.com/thanos-io/thanos.git
+thanos      9fe2d4c9 GO       source_build=GO      compiler=-                  24.1s 
+thanos      2f83caaa GO       source_build=GO      compiler=-                   4.1s 
+thanos      ac3df121 GO       source_build=GO      compiler=-                   3.9s 
+thanos      c14df1d9 UNKNOWN  source_build=UNKNOWN compiler=-                   3.8s 
+thanos      a463eb15 NO_GO    source_build=UNKNOWN compiler=-                   3.9s 
+thanos      51094534 GO       source_build=GO      compiler=-                   4.0s 
+thanos      27bf8fad NO_GO    source_build=UNKNOWN compiler=-                   3.8s 
+thanos      cdca5483 NO_GO    source_build=NO_GO   compiler=-                   3.9s 
+thanos      569a32ac GO       source_build=GO      compiler=-                   3.7s 
+thanos      802f43f3 NO_GO    source_build=UNKNOWN compiler=-                   4.1s 
+thanos      23063063 GO       source_build=GO      compiler=-                   4.0s 
+thanos      38129bbb GO       source_build=GO      compiler=-                   4.2s 
+thanos      6a45d754 GO       source_build=GO      compiler=-                   3.6s 
+thanos      d05e90ae NO_GO    source_build=GO      compiler=-                   3.9s 
+thanos      be442a51 GO       source_build=GO      compiler=-                   4.0s 
+thanos      20900389 GO       source_build=GO      compiler=-                   4.0s 
+thanos      e2f6ca34 GO       source_build=GO      compiler=-                   3.9s 
+thanos      1bdcc655 GO       source_build=GO      compiler=-                   3.8s 
+thanos      328385ac GO       source_build=GO      compiler=-                   4.0s 
+thanos      bcd20a3b NO_GO    source_build=NO_GO   compiler=-                   4.7s 
+thanos        20 decisions  GO  13  NO-GO   6  UNKNOWN   1 ( 5.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO  13  NO-GO   6  UNKNOWN   1 ( 5.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
 
 UNKNOWN reasons across all: windows, ecosystems, an example
+    6   1  UNRESOLVED_MEMBER (e.g. thanos@c14df1d901410b630273a17c08913bd1272ce46c)
     3   1  NEEDS_REVIEW (e.g. thanos@a463eb15dd222a346a1c00dd41e8ca496a053f60)
     1   1  CONTRACT_COMPILE_ERROR (e.g. thanos@bcd20a3b88eaf29bb337b78fec7e1fe36d06f048)
     1   1  OPTION_CHANGED (e.g. thanos@bcd20a3b88eaf29bb337b78fec7e1fe36d06f048)
-    1   1  UNRESOLVED_MEMBER (e.g. thanos@bcd20a3b88eaf29bb337b78fec7e1fe36d06f048)
     1   1  WHOLE_MESSAGE_FLOW (e.g. thanos@cdca5483752e1635d249fbb1271978262775dc1b)
 
-20 windows in 41s.
+20 windows in 1m43s.
 exit 0
