@@ -1,35 +1,36 @@
-time=2026-10-06T14:14:49.073Z level=INFO msg=cloning repo=p-jaeger url=https://github.com/jaegertracing/jaeger-idl.git
-time=2026-10-06T14:14:49.589Z level=INFO msg=cloning repo=c-jaeger url=https://github.com/jaegertracing/jaeger.git
-jaeger      9a0cb931 UNKNOWN  source_build=UNKNOWN compiler=-                  25.3s 
-jaeger      ff5989c3 UNKNOWN  source_build=UNKNOWN compiler=-                   0.6s 
-jaeger      73f1a7e0 NO_GO    source_build=NO_GO   compiler=-                   0.4s 
-jaeger      356924a1 UNKNOWN  source_build=UNKNOWN compiler=-                   0.6s 
-jaeger      f139f38e UNKNOWN  source_build=UNKNOWN compiler=-                   0.7s 
-jaeger      abb01bed GO       source_build=GO      compiler=compiles          125.4s 
-jaeger      5dc95515 GO       source_build=GO      compiler=compiles            3.8s 
-jaeger      688ca632 UNKNOWN  source_build=UNKNOWN compiler=-                   1.6s 
-jaeger      000e4dae UNKNOWN  source_build=UNKNOWN compiler=compiles            4.2s 
-jaeger      34a718e6 GO       source_build=GO      compiler=-                   0.6s 
-jaeger      e29dc8de GO       source_build=GO      compiler=-                   0.3s 
-jaeger      0daa7197 GO       source_build=GO      compiler=-                   0.5s 
-jaeger      8c84d890 GO       source_build=GO      compiler=-                   0.5s 
-jaeger      c8e34fd5 GO       source_build=GO      compiler=compiles            2.2s 
-jaeger      c4f36bae NO_GO    source_build=NO_GO   compiler=-                   0.5s 
-jaeger      6e4b0e8b GO       source_build=GO      compiler=-                   0.5s 
-jaeger      12c61a97 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.5s 
-jaeger      1c6ba04c GO       source_build=GO      compiler=-                   0.7s 
-jaeger      e7551686 GO       source_build=GO      compiler=compiles            2.5s 
-jaeger      ac6612b8 GO       source_build=GO      compiler=-                   0.5s 
-jaeger        20 decisions  GO  11  NO-GO   2  UNKNOWN   7 (35.0%)  errors 0 | compiler judged   6: agree   4  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 2 | not judged 14
-TOTAL         20 decisions  GO  11  NO-GO   2  UNKNOWN   7 (35.0%)  errors 0 | compiler judged   6: agree   4  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 2 | not judged 14
+time=2026-10-07T06:28:53.993Z level=INFO msg=cloning repo=p-jaeger url=https://github.com/jaegertracing/jaeger-idl.git
+time=2026-10-07T06:28:54.190Z level=INFO msg=cloning repo=c-jaeger url=https://github.com/jaegertracing/jaeger.git
+jaeger      9a0cb931 UNKNOWN  source_build=UNKNOWN compiler=-                  19.9s 
+jaeger      ff5989c3 UNKNOWN  source_build=UNKNOWN compiler=-                   1.4s 
+jaeger      73f1a7e0 NO_GO    source_build=NO_GO   compiler=-                   1.3s 
+jaeger      356924a1 UNKNOWN  source_build=UNKNOWN compiler=-                   1.6s 
+jaeger      f139f38e UNKNOWN  source_build=UNKNOWN compiler=-                   1.4s 
+jaeger      abb01bed GO       source_build=GO      compiler=compiles          171.9s 
+jaeger      5dc95515 GO       source_build=GO      compiler=compiles            5.1s 
+jaeger      688ca632 UNKNOWN  source_build=UNKNOWN compiler=-                   1.4s 
+jaeger      000e4dae UNKNOWN  source_build=UNKNOWN compiler=compiles            5.2s 
+jaeger      34a718e6 GO       source_build=GO      compiler=-                   1.4s 
+jaeger      e29dc8de GO       source_build=GO      compiler=-                   1.2s 
+jaeger      0daa7197 UNKNOWN  source_build=UNKNOWN compiler=-                   1.3s 
+jaeger      8c84d890 UNKNOWN  source_build=UNKNOWN compiler=-                   1.4s 
+jaeger      c8e34fd5 GO       source_build=GO      compiler=compiles            3.4s 
+jaeger      c4f36bae NO_GO    source_build=NO_GO   compiler=-                   1.3s 
+jaeger      6e4b0e8b UNKNOWN  source_build=UNKNOWN compiler=-                   1.2s 
+jaeger      12c61a97 UNKNOWN  source_build=UNKNOWN compiler=compiles            4.5s 
+jaeger      1c6ba04c UNKNOWN  source_build=UNKNOWN compiler=-                   1.3s 
+jaeger      e7551686 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.4s 
+jaeger      ac6612b8 GO       source_build=GO      compiler=-                   0.2s 
+jaeger        20 decisions  GO   6  NO-GO   2  UNKNOWN  12 (60.0%)  errors 0 | compiler judged   6: agree   3  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 3 | not judged 14
+TOTAL         20 decisions  GO   6  NO-GO   2  UNKNOWN  12 (60.0%)  errors 0 | compiler judged   6: agree   3  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 3 | not judged 14
 
 UNKNOWN reasons across all: windows, ecosystems, an example
+   11   1  UNRESOLVED_MEMBER (e.g. jaeger@ff5989c394723bab23529fd1ab62a1dcce566d21)
     5   1  CONTRACT_COMPILE_ERROR (e.g. jaeger@9a0cb93198793bde6f52088c18b59542e9aac3ef)
     1   1  OPTION_CHANGED (e.g. jaeger@12c61a97e21e24379ad7520fda7d7770b2264154)
-    1   1  SECOND_CHECK_DISAGREES (e.g. jaeger@ff5989c394723bab23529fd1ab62a1dcce566d21)
-  FAILED jaeger@000e4daeaf0bb3c6e8ef39de46becaf48e789d07: unknown_on_safe: CONTRACT_COMPILE_ERROR
-  FAILED jaeger@12c61a97e21e24379ad7520fda7d7770b2264154: unknown_on_safe: OPTION_CHANGED
+  FAILED jaeger@000e4daeaf0bb3c6e8ef39de46becaf48e789d07: unknown_on_safe: CONTRACT_COMPILE_ERROR, UNRESOLVED_MEMBER
+  FAILED jaeger@12c61a97e21e24379ad7520fda7d7770b2264154: unknown_on_safe: UNRESOLVED_MEMBER, OPTION_CHANGED
+  FAILED jaeger@e755168693aee061797cfdf1220095db915f4e25: unknown_on_safe: UNRESOLVED_MEMBER
 
-20 windows in 2m58s.
-verifier gate: scan failed: 2 disagreements with the compiler or errors
+20 windows in 3m51s.
+verifier gate: scan failed: 3 disagreements with the compiler or errors
 exit 1
