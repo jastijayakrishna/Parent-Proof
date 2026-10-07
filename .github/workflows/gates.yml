@@ -94,7 +94,9 @@ jobs:
       - name: Gate
         run: |
           gunzip -c bin/verifier-linux-amd64.gz > "$RUNNER_TEMP/verifier" && chmod +x "$RUNNER_TEMP/verifier"
-          "$RUNNER_TEMP/verifier" gate --suite "$SUITE" --shard "$SHARD" --oss ~/gate/oss --work ~/gate/work --out "$RUNNER_TEMP/results.jsonl"
+          # gates/args.txt: extra flags for the new binary (e.g. --via-usage).
+          extra=$(cat gates/args.txt 2>/dev/null || true)
+          "$RUNNER_TEMP/verifier" gate --suite "$SUITE" --shard "$SHARD" --oss ~/gate/oss --work ~/gate/work --out "$RUNNER_TEMP/results.jsonl" $extra
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         if: always()
         with:
@@ -186,7 +188,9 @@ jobs:
           if [ "$BUILD" = before ]; then bin=bin/verifier-before-linux-amd64.gz; dest="gates/results/scan-before/$ECO"; fi
           gunzip -c "$bin" > "$RUNNER_TEMP/verifier" && chmod +x "$RUNNER_TEMP/verifier"
           mkdir -p "$dest"
-          "$RUNNER_TEMP/verifier" gate scan --corpus corpus.json --only "$ECO" --oracle --oss ~/scan/oss --work ~/scan/work --out "$dest/scan.jsonl" > "$RUNNER_TEMP/scan.out" 2>&1
+          extra=""
+          if [ "$BUILD" = new ]; then extra=$(cat gates/args.txt 2>/dev/null || true); fi
+          "$RUNNER_TEMP/verifier" gate scan --corpus corpus.json --only "$ECO" --oracle --oss ~/scan/oss --work ~/scan/work --out "$dest/scan.jsonl" $extra > "$RUNNER_TEMP/scan.out" 2>&1
           echo "exit $?" >> "$RUNNER_TEMP/scan.out"
           tail -c 8000 "$RUNNER_TEMP/scan.out" > "$dest/scan.out"
           version=bin/VERSION
