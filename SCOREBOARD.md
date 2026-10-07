@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-07 00:18 UTC.
+Updated 2026-10-07 06:19 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 49 | 43 | 3 | 3 | 29 | 28 | 0 | 0 |
+| 51 | 45 | 3 | 3 | 31 | 30 | 0 | 0 |
 
 ## Every pull request
 
@@ -44,6 +44,8 @@ verifier before the compiler built the consumer against it.
 | lnd | [#10411](https://github.com/lightningnetwork/lnd/pull/10411) aliasmgr: Allow persisting manually added alias scids | Merge | Merge | compiles |  |
 | lnd | [#10504](https://github.com/lightningnetwork/lnd/pull/10504) lnwallet/btcwallet: support taproot script path fee estimation in FundPSBT | Merge | Merge | compiles |  |
 | lnd | [#10670](https://github.com/lightningnetwork/lnd/pull/10670) Add raw transaction hex to `pendingsweeps` response | Merge | Merge | compiles |  |
+| lnd | [#10670](https://github.com/lightningnetwork/lnd/pull/10670) Add raw transaction hex to `pendingsweeps` response | Merge | Merge | compiles |  |
+| lnd | [#10685](https://github.com/lightningnetwork/lnd/pull/10685) Update AddHoldInvoice to add support for optional preimage/hash generation | Merge | Merge | compiles |  |
 | lnd | [#10735](https://github.com/lightningnetwork/lnd/pull/10735) Freebie onion message slot and per-peer stats in ListPeers | Merge | Merge | compiles |  |
 | lnd | [#10744](https://github.com/lightningnetwork/lnd/pull/10744) lnrpc: add scid filter to ListChannels RPC and lncli | Merge | Merge | compiles |  |
 | lnd | [#10889](https://github.com/lightningnetwork/lnd/pull/10889) Remove deprecated fee rate option --sat_per_byte | Merge | Merge | compiles |  |
