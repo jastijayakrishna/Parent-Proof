@@ -1,33 +1,40 @@
-time=2026-10-06T13:42:07.438Z level=INFO msg=cloning repo=p-istio url=https://github.com/istio/api.git
-time=2026-10-06T13:42:07.814Z level=INFO msg=cloning repo=c-istio url=https://github.com/istio/istio.git
-istio       e0d275e5 GO       source_build=GO      compiler=compiles          369.0s 
-istio       73ebf9ce GO       source_build=GO      compiler=compiles          104.3s 
-istio       bfea1c8d GO       source_build=GO      compiler=compiles           35.9s 
-istio       f7ae8c4f GO       source_build=GO      compiler=compiles           35.8s 
-istio       5803fb6a GO       source_build=GO      compiler=compiles           34.9s 
-istio       abc03d0e NO_GO    source_build=NO_GO   compiler=compiles           34.9s 
-istio       25d2a432 GO       source_build=GO      compiler=compiles           35.4s 
-istio       694749c7 GO       source_build=GO      compiler=compiles           35.2s 
-istio       e6999310 GO       source_build=GO      compiler=compiles           32.1s 
-istio       13c4afd2 GO       source_build=GO      compiler=compiles           16.1s 
-istio       b8f8791d GO       source_build=GO      compiler=compiles           18.4s 
-istio       c9bb2b80 GO       source_build=GO      compiler=compiles           26.9s 
-istio       0ec93118 GO       source_build=GO      compiler=compiles           25.8s 
-istio       7d09c228 GO       source_build=GO      compiler=compiles           26.5s 
-istio       a5e37fdd NO_GO    source_build=NO_GO   compiler=compiles           18.6s 
-istio       55674782 GO       source_build=GO      compiler=compiles           11.3s 
-istio       ac56ebb2 GO       source_build=GO      compiler=compiles           17.3s 
-istio       e4be915e GO       source_build=GO      compiler=compiles           17.4s 
-istio       fd30c191 NO_GO    source_build=GO      compiler=compiles           11.6s 
-istio       28b8d466 GO       source_build=GO      compiler=compiles           17.7s 
-istio         20 decisions  GO  17  NO-GO   3  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  20: agree  19  WRONG_GO 0  FALSE_NOGO 1  UNKNOWN 0 | not judged 0
-TOTAL         20 decisions  GO  17  NO-GO   3  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  20: agree  19  WRONG_GO 0  FALSE_NOGO 1  UNKNOWN 0 | not judged 0
+time=2026-10-07T06:29:56.824Z level=INFO msg=cloning repo=p-istio url=https://github.com/istio/api.git
+time=2026-10-07T06:29:57.149Z level=INFO msg=cloning repo=c-istio url=https://github.com/istio/istio.git
+istio       e0d275e5 GO       source_build=GO      compiler=compiles          391.6s 
+istio       73ebf9ce GO       source_build=GO      compiler=compiles          137.4s 
+istio       bfea1c8d GO       source_build=GO      compiler=compiles           66.8s 
+istio       f7ae8c4f GO       source_build=GO      compiler=compiles           66.4s 
+istio       5803fb6a GO       source_build=GO      compiler=compiles           66.9s 
+istio       abc03d0e NO_GO    source_build=NO_GO   compiler=compiles           65.2s 
+istio       25d2a432 UNKNOWN  source_build=UNKNOWN compiler=compiles           75.1s 
+istio       694749c7 GO       source_build=GO      compiler=compiles           67.9s 
+istio       e6999310 GO       source_build=GO      compiler=compiles           60.2s 
+istio       13c4afd2 GO       source_build=GO      compiler=compiles           44.1s 
+istio       b8f8791d GO       source_build=GO      compiler=compiles           46.7s 
+istio       c9bb2b80 UNKNOWN  source_build=UNKNOWN compiler=compiles           59.0s 
+istio       0ec93118 GO       source_build=GO      compiler=compiles           58.0s 
+istio       7d09c228 GO       source_build=GO      compiler=compiles           58.5s 
+istio       a5e37fdd NO_GO    source_build=NO_GO   compiler=compiles           51.5s 
+istio       55674782 UNKNOWN  source_build=UNKNOWN compiler=compiles           49.1s 
+istio       ac56ebb2 GO       source_build=GO      compiler=compiles           49.9s 
+istio       e4be915e UNKNOWN  source_build=UNKNOWN compiler=compiles           46.0s 
+istio       fd30c191 NO_GO    source_build=UNKNOWN compiler=compiles           41.3s 
+istio       28b8d466 UNKNOWN  source_build=UNKNOWN compiler=compiles           52.3s 
+istio         20 decisions  GO  12  NO-GO   3  UNKNOWN   5 (25.0%)  errors 0 | compiler judged  20: agree  13  WRONG_GO 0  FALSE_NOGO 1  UNKNOWN 6 | not judged 0
+TOTAL         20 decisions  GO  12  NO-GO   3  UNKNOWN   5 (25.0%)  errors 0 | compiler judged  20: agree  13  WRONG_GO 0  FALSE_NOGO 1  UNKNOWN 6 | not judged 0
 
 UNKNOWN reasons across all: windows, ecosystems, an example
+    8   1  UNRESOLVED_MEMBER (e.g. istio@abc03d0ea7f383790b922a23901af49484ab0ba0)
     3   1  DESCRIPTOR_REFLECTION (e.g. istio@abc03d0ea7f383790b922a23901af49484ab0ba0)
     3   1  WHOLE_MESSAGE_FLOW (e.g. istio@abc03d0ea7f383790b922a23901af49484ab0ba0)
   FAILED istio@abc03d0ea7f383790b922a23901af49484ab0ba0: false_nogo: cni/pkg/install/kubeconfig.go:100, cni/pkg/install/kubeconfig.go:117, istio.io/client-go@v1.31.0-alpha.1.0.20260928195457-15cb8ceac95b/pkg/clientset/versioned/typed/networking/v1/destinationrule.gen.go:206
+  FAILED istio@25d2a4321d56252330de27ee1c1cc934c97e3771: unknown_on_safe: UNRESOLVED_MEMBER
+  FAILED istio@c9bb2b80566ecbafa8bb9769b681c81d92e58c6b: unknown_on_safe: UNRESOLVED_MEMBER
+  FAILED istio@5567478286a81c87fa6d76fe1eb0eade307fb142: unknown_on_safe: UNRESOLVED_MEMBER
+  FAILED istio@e4be915e5d4c273716da1524b7faa99495bbe990: unknown_on_safe: UNRESOLVED_MEMBER
+  FAILED istio@fd30c191fe393654398b89e883cbb9c4978f6313: unknown_on_safe: WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION, UNRESOLVED_MEMBER
+  FAILED istio@28b8d466cf257493602fdccb35ce7e15c63221f6: unknown_on_safe: UNRESOLVED_MEMBER
 
-20 windows in 15m30s.
-verifier gate: scan failed: 1 disagreements with the compiler or errors
+20 windows in 25m59s.
+verifier gate: scan failed: 7 disagreements with the compiler or errors
 exit 1
