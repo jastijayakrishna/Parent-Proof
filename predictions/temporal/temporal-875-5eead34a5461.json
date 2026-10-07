@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 875,
+    "head": "5eead34a54619be6fb73219a26715ac93238a7b2",
+    "base": "bb2d987ac90a70fbf59cea15229c396473b1b877",
+    "title": "Add region_id to ComputeConfigScalingGroup",
+    "url": "https://github.com/temporalio/api/pull/875",
+    "updated": "2026-10-07T19:58:12Z",
+    "eco": "temporal",
+    "key": "temporal-875-5eead34a5461",
+    "provider": "temporalio/api",
+    "consumer": "temporalio/sdk-go",
+    "consumer_sha": "33404d20e714e349c9384a02fb2fa8c818f325bf"
+  },
+  "merge_base": "bb2d987ac90a70fbf59cea15229c396473b1b877",
+  "decided": "29401df4b7ad2bd72734c618f8a0e73fde6987f3",
+  "started": "2026-10-07T23:56:53Z",
+  "finished": "2026-10-07T23:57:03Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37704873208",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "temporal",
+      "commit": "29401df4b7ad2bd72734c618f8a0e73fde6987f3",
+      "parent": "bb2d987ac90a70fbf59cea15229c396473b1b877",
+      "date": "2026-10-07",
+      "subject": "pull request 875 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "temporal/api/compute/v1/config.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 7.22109499,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-07T23:56:53.678Z level=INFO msg=cloning repo=c-temporal url=https://github.com/temporalio/sdk-go.git\ntemporal    29401df4 GO       source_build=GO      compiler=-                   7.2s \ntemporal       1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 10s."
+}

@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-07 19:44 UTC.
+Updated 2026-10-07 23:58 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,12 +11,13 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 57 | 50 | 3 | 4 | 34 | 33 | 0 | 0 |
+| 60 | 52 | 3 | 5 | 35 | 34 | 0 | 0 |
 
 ## Every pull request
 
 | project | pull request | verifier | for the build | compiler | needs review because |
 |---|---|---|---|---|---|
+| argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Merge | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29322](https://github.com/argoproj/argo-cd/pull/29322) feat(appset): add metrics for appset to measure rollout durations for progressive sync | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
@@ -41,6 +42,7 @@ verifier before the compiler built the consumer against it.
 | jaeger | [#231](https://github.com/jaegertracing/jaeger-idl/pull/231) feat(expression): Add phrase and fulltext text-search operators | Needs review | Needs review | compiles | OPTION_CHANGED |
 | lnd | [#9457](https://github.com/lightningnetwork/lnd/pull/9457) routerrpc: add option PreventSubsequentPayment to TrackPaymentV2 | Merge | Merge | compiles |  |
 | lnd | [#9888](https://github.com/lightningnetwork/lnd/pull/9888) Attributable failures | Merge | Merge | bump_side_effect |  |
+| lnd | [#9907](https://github.com/lightningnetwork/lnd/pull/9907)   routing: add mission control namespace support to SendPaymentV2 | Merge | Merge | compiles |  |
 | lnd | [#10067](https://github.com/lightningnetwork/lnd/pull/10067) Fees: add fractional sat/vB support (lncli) and sats_per_kw (RPC) | Merge | Merge | compiles |  |
 | lnd | [#10316](https://github.com/lightningnetwork/lnd/pull/10316) Invoice rpc metadata support | Merge | Merge | compiles |  |
 | lnd | [#10411](https://github.com/lightningnetwork/lnd/pull/10411) aliasmgr: Allow persisting manually added alias scids | Merge | Merge | compiles |  |
@@ -66,6 +68,7 @@ verifier before the compiler built the consumer against it.
 | temporal | [#872](https://github.com/temporalio/api/pull/872) Klassenq/nexus per endpoint encryption | Don't merge | Merge | not judged |  |
 | temporal | [#873](https://github.com/temporalio/api/pull/873) Preserve reset request IDs in workflow history | Don't merge | Merge | not judged |  |
 | temporal | [#874](https://github.com/temporalio/api/pull/874) Add ExportedExecutions type for export | Merge | Merge | not judged |  |
+| temporal | [#875](https://github.com/temporalio/api/pull/875) Add region_id to ComputeConfigScalingGroup | Merge | Merge | not judged |  |
 | temporal | [#875](https://github.com/temporalio/api/pull/875) Add region_id to ComputeConfigScalingGroup | Merge | Merge | not judged |  |
 | temporal | [#875](https://github.com/temporalio/api/pull/875) Add region_id to ComputeConfigScalingGroup | Merge | Merge | not judged |  |
 | temporal | [#876](https://github.com/temporalio/api/pull/876) Add eager standalone activity start API | Merge | Merge | not judged |  |

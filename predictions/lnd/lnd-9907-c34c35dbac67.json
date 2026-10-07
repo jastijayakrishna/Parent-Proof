@@ -1,0 +1,66 @@
+{
+  "pr": {
+    "n": 9907,
+    "head": "c34c35dbac675b67434c587d9484ba0fc26667b9",
+    "base": "fc906f2a65518606f9a3100e5005b3241d73f35d",
+    "title": "  routing: add mission control namespace support to SendPaymentV2",
+    "url": "https://github.com/lightningnetwork/lnd/pull/9907",
+    "updated": "2026-10-07T23:01:36Z",
+    "eco": "lnd",
+    "key": "lnd-9907-c34c35dbac67",
+    "provider": "lightningnetwork/lnd",
+    "consumer": "lightninglabs/lndclient",
+    "consumer_sha": "5c1b59d36c94ab2b520515f6b75d270c401166c8"
+  },
+  "merge_base": "fc906f2a65518606f9a3100e5005b3241d73f35d",
+  "decided": "adabab34b7039c81aec2ac78bda72196deaac0e6",
+  "started": "2026-10-07T23:56:59Z",
+  "finished": "2026-10-07T23:58:06Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37704873208",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "lnd",
+      "commit": "adabab34b7039c81aec2ac78bda72196deaac0e6",
+      "parent": "fc906f2a65518606f9a3100e5005b3241d73f35d",
+      "date": "2026-10-07",
+      "subject": "pull request 9907 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "lnrpc/routerrpc/router.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 9,
+        "excluded": 1,
+        "excluded_dirs": [
+          "."
+        ]
+      },
+      "canary": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 9,
+        "excluded": 1,
+        "excluded_dirs": [
+          "."
+        ],
+        "detail": "canary: github.com/lightningnetwork/lnd/lnrpc removed."
+      },
+      "seconds": 65.618912509,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-07T23:56:59.327Z level=INFO msg=cloning repo=c-lnd url=https://github.com/lightninglabs/lndclient.git\nlnd         adabab34 GO       source_build=GO      compiler=compiles           65.6s \nlnd            1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 1m7s."
+}
