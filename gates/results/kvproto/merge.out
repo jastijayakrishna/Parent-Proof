@@ -11,6 +11,6 @@ TOTAL                  windows=152 | breaks=49: caught=49 WRONG_GO=0 abstained=0
   DIFFERS FROM BASELINE tidb@f7dc9157e215..7f2fc73e: expected UNKNOWN (generated_code UNKNOWN, runtime UNKNOWN, source_build UNKNOWN; UNKNOWN: DEPENDENCY_UNAVAILABLE), got UNKNOWN (generated_code UNKNOWN, runtime UNKNOWN, source_build UNKNOWN; UNKNOWN: USAGE_ANALYSIS_FAILED)
   DIFFERS FROM BASELINE tidb@f9d85418ed13..798d2765: expected UNKNOWN (generated_code UNKNOWN, runtime UNKNOWN, source_build UNKNOWN; UNKNOWN: CALLER_UNRESOLVED), got UNKNOWN (generated_code UNKNOWN, runtime UNKNOWN, source_build UNKNOWN; UNKNOWN: USAGE_ANALYSIS_FAILED)
 
-152 windows merged; verifier 6d78c5ff864d8bdb2d1203407bf17d7ff32545233200b3eba2e7a5e59928f8c7; slowest window 0.9 minutes; 3 differ from the baseline.
+152 windows merged; verifier d9bd18e18ee34bc8e9621688aae1e8f90515bace23029f60db3094b2db477cea; slowest window 1.0 minutes; 3 differ from the baseline.
 verifier gate: release gate failed: 3 windows differ from the baseline (record intended changes with `verifier gate baseline` and a reason for each)
 exit 1
