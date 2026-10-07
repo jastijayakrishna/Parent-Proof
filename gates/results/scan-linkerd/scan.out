@@ -1,27 +1,34 @@
-time=2026-10-06T13:44:40.225Z level=INFO msg=cloning repo=p-linkerd url=https://github.com/linkerd/linkerd2-proxy-api.git
-time=2026-10-06T13:44:41.109Z level=INFO msg=cloning repo=c-linkerd url=https://github.com/linkerd/linkerd2.git
+time=2026-10-07T06:28:57.962Z level=INFO msg=cloning repo=p-linkerd url=https://github.com/linkerd/linkerd2-proxy-api.git
+time=2026-10-07T06:28:58.736Z level=INFO msg=cloning repo=c-linkerd url=https://github.com/linkerd/linkerd2.git
 linkerd     fcb86cee GO       source_build=GO      compiler=compiles          146.5s 
-linkerd     7c584d4e GO       source_build=GO      compiler=compiles            9.5s 
-linkerd     9d153796 GO       source_build=GO      compiler=compiles           24.1s 
-linkerd     2be6843a GO       source_build=GO      compiler=compiles            4.2s 
-linkerd     2a2290ce GO       source_build=GO      compiler=compiles            2.9s 
-linkerd     c5648ae2 GO       source_build=GO      compiler=compiles            8.8s 
-linkerd     7c5fd84d GO       source_build=GO      compiler=compiles            8.8s 
-linkerd     c9914c25 GO       source_build=GO      compiler=compiles            2.8s 
-linkerd     a7387637 GO       source_build=GO      compiler=compiles            6.7s 
-linkerd     f07d4b61 GO       source_build=GO      compiler=compiles            6.6s 
-linkerd     2da43c5d GO       source_build=GO      compiler=compiles            3.4s 
-linkerd     7c82fb17 GO       source_build=GO      compiler=-                   0.5s 
-linkerd     f1598b46 GO       source_build=GO      compiler=compiles            3.3s 
-linkerd     58c52427 GO       source_build=GO      compiler=compiles            2.5s 
-linkerd     ad750d83 GO       source_build=GO      compiler=compiles            2.5s 
-linkerd     afca924a GO       source_build=GO      compiler=compiles            2.4s 
-linkerd     afd13fc7 GO       source_build=GO      compiler=compiles            2.3s 
-linkerd     9efe50fd GO       source_build=GO      compiler=compiles           16.3s 
-linkerd     b2f7219b GO       source_build=GO      compiler=compiles           10.0s 
-linkerd     9762c9f8 GO       source_build=GO      compiler=compiles            3.1s 
-linkerd       20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  19: agree  19  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1
-TOTAL         20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  19: agree  19  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1
+linkerd     7c584d4e GO       source_build=GO      compiler=compiles            9.8s 
+linkerd     9d153796 GO       source_build=GO      compiler=compiles           23.8s 
+linkerd     2be6843a GO       source_build=GO      compiler=compiles            4.8s 
+linkerd     2a2290ce GO       source_build=GO      compiler=compiles            3.4s 
+linkerd     c5648ae2 GO       source_build=GO      compiler=compiles            9.3s 
+linkerd     7c5fd84d GO       source_build=GO      compiler=compiles            8.7s 
+linkerd     c9914c25 GO       source_build=GO      compiler=compiles            3.3s 
+linkerd     a7387637 GO       source_build=GO      compiler=compiles            7.1s 
+linkerd     f07d4b61 UNKNOWN  source_build=UNKNOWN compiler=compiles            7.1s 
+linkerd     2da43c5d UNKNOWN  source_build=UNKNOWN compiler=compiles            3.8s 
+linkerd     7c82fb17 GO       source_build=GO      compiler=-                   0.4s 
+linkerd     f1598b46 GO       source_build=GO      compiler=compiles            3.8s 
+linkerd     58c52427 GO       source_build=GO      compiler=compiles            2.9s 
+linkerd     ad750d83 GO       source_build=GO      compiler=compiles            3.1s 
+linkerd     afca924a GO       source_build=GO      compiler=compiles            2.7s 
+linkerd     afd13fc7 GO       source_build=GO      compiler=compiles            2.8s 
+linkerd     9efe50fd GO       source_build=GO      compiler=compiles           15.1s 
+linkerd     b2f7219b UNKNOWN  source_build=UNKNOWN compiler=compiles           10.3s 
+linkerd     9762c9f8 GO       source_build=GO      compiler=compiles            3.6s 
+linkerd       20 decisions  GO  17  NO-GO   0  UNKNOWN   3 (15.0%)  errors 0 | compiler judged  19: agree  16  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 3 | not judged 1
+TOTAL         20 decisions  GO  17  NO-GO   0  UNKNOWN   3 (15.0%)  errors 0 | compiler judged  19: agree  16  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 3 | not judged 1
 
-20 windows in 4m32s.
-exit 0
+UNKNOWN reasons across all: windows, ecosystems, an example
+    3   1  UNRESOLVED_MEMBER (e.g. linkerd@f07d4b6166c79bfaba3b67fa76968f268469d65d)
+  FAILED linkerd@f07d4b6166c79bfaba3b67fa76968f268469d65d: unknown_on_safe: UNRESOLVED_MEMBER
+  FAILED linkerd@2da43c5d0237549f17480285dad8895e7e4737d2: unknown_on_safe: UNRESOLVED_MEMBER
+  FAILED linkerd@b2f7219bbbd49449cac25fec013410663b4619d4: unknown_on_safe: UNRESOLVED_MEMBER
+
+20 windows in 4m39s.
+verifier gate: scan failed: 3 disagreements with the compiler or errors
+exit 1
