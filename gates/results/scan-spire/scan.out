@@ -1,37 +1,39 @@
-time=2026-10-06T13:42:09.771Z level=INFO msg=cloning repo=p-spire url=https://github.com/spiffe/spire-api-sdk.git
-time=2026-10-06T13:42:10.243Z level=INFO msg=cloning repo=c-spire url=https://github.com/spiffe/spire.git
-spire       adb81b3b GO       source_build=GO      compiler=compiles          166.6s 
-spire       2af565d1 GO       source_build=GO      compiler=compiles            3.6s 
-spire       fb3af7f8 GO       source_build=GO      compiler=compiles            3.2s 
-spire       2eb8736b GO       source_build=GO      compiler=compiles            3.3s 
-spire       da0bb759 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.2s 
-spire       5f39c6d3 GO       source_build=GO      compiler=compiles            3.6s 
-spire       3c6b1447 GO       source_build=GO      compiler=compiles            2.1s 
-spire       8e80ebd8 GO       source_build=GO      compiler=compiles            1.8s 
-spire       c51a5c74 GO       source_build=GO      compiler=compiles            1.8s 
-spire       9701b78b UNKNOWN  source_build=UNKNOWN compiler=compiles            2.4s 
-spire       1594f105 GO       source_build=GO      compiler=compiles            1.8s 
-spire       4cd2aac3 GO       source_build=GO      compiler=compiles            2.6s 
-spire       3fa57378 NO_GO    source_build=NO_GO   compiler=compiles            2.0s 
-spire       9e70b1d3 GO       source_build=GO      compiler=compiles            1.4s 
-spire       a201a66e GO       source_build=GO      compiler=compiles            2.0s 
-spire       2e20525c GO       source_build=GO      compiler=compiles            5.5s 
-spire       54e821e0 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.7s 
-spire       00343b76 GO       source_build=GO      compiler=compiles            2.3s 
-spire       46017233 NO_GO    source_build=NO_GO   compiler=compiles            2.3s 
-spire       b9c7b771 UNKNOWN  source_build=UNKNOWN compiler=compiles            4.1s 
-spire         20 decisions  GO  14  NO-GO   2  UNKNOWN   4 (20.0%)  errors 0 | compiler judged  20: agree  16  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 4 | not judged 0
-TOTAL         20 decisions  GO  14  NO-GO   2  UNKNOWN   4 (20.0%)  errors 0 | compiler judged  20: agree  16  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 4 | not judged 0
+time=2026-10-07T06:28:54.422Z level=INFO msg=cloning repo=p-spire url=https://github.com/spiffe/spire-api-sdk.git
+time=2026-10-07T06:28:54.594Z level=INFO msg=cloning repo=c-spire url=https://github.com/spiffe/spire.git
+spire       adb81b3b GO       source_build=GO      compiler=compiles          236.3s 
+spire       2af565d1 UNKNOWN  source_build=UNKNOWN compiler=compiles            7.7s 
+spire       fb3af7f8 GO       source_build=GO      compiler=compiles            6.7s 
+spire       2eb8736b GO       source_build=GO      compiler=compiles            6.8s 
+spire       da0bb759 UNKNOWN  source_build=UNKNOWN compiler=compiles            6.9s 
+spire       5f39c6d3 GO       source_build=GO      compiler=compiles            6.9s 
+spire       3c6b1447 GO       source_build=GO      compiler=compiles            5.0s 
+spire       8e80ebd8 GO       source_build=GO      compiler=compiles            4.8s 
+spire       c51a5c74 GO       source_build=GO      compiler=compiles            4.7s 
+spire       9701b78b UNKNOWN  source_build=UNKNOWN compiler=compiles            4.8s 
+spire       1594f105 GO       source_build=GO      compiler=compiles            4.7s 
+spire       4cd2aac3 GO       source_build=GO      compiler=compiles            5.7s 
+spire       3fa57378 NO_GO    source_build=NO_GO   compiler=compiles            5.5s 
+spire       9e70b1d3 GO       source_build=GO      compiler=compiles            4.4s 
+spire       a201a66e UNKNOWN  source_build=UNKNOWN compiler=compiles            5.0s 
+spire       2e20525c GO       source_build=GO      compiler=compiles            6.2s 
+spire       54e821e0 UNKNOWN  source_build=UNKNOWN compiler=compiles            6.0s 
+spire       00343b76 GO       source_build=GO      compiler=compiles            5.0s 
+spire       46017233 NO_GO    source_build=NO_GO   compiler=compiles            5.1s 
+spire       b9c7b771 UNKNOWN  source_build=UNKNOWN compiler=compiles            5.9s 
+spire         20 decisions  GO  12  NO-GO   2  UNKNOWN   6 (30.0%)  errors 0 | compiler judged  20: agree  14  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 6 | not judged 0
+TOTAL         20 decisions  GO  12  NO-GO   2  UNKNOWN   6 (30.0%)  errors 0 | compiler judged  20: agree  14  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 6 | not judged 0
 
 UNKNOWN reasons across all: windows, ecosystems, an example
+    8   1  UNRESOLVED_MEMBER (e.g. spire@2af565d19c73d45221ad9897d214bcf74be537e6)
     4   1  NEEDS_REVIEW (e.g. spire@da0bb759415ab2bf2ccd6e99f38ddd37637afce7)
-    1   1  UNRESOLVED_MEMBER (e.g. spire@3fa573780352c587b96e0fe667a80ce97f1112cc)
     1   1  WHOLE_MESSAGE_FLOW (e.g. spire@4601723317a85afed588f0114e85ea3fb62b50bd)
-  FAILED spire@da0bb759415ab2bf2ccd6e99f38ddd37637afce7: unknown_on_safe: NEEDS_REVIEW
-  FAILED spire@9701b78b4c3c2e22d866220ba16eb9e8da6eea96: unknown_on_safe: NEEDS_REVIEW
-  FAILED spire@54e821e0e8265c1ef2bd227029ed4bd360653905: unknown_on_safe: NEEDS_REVIEW
-  FAILED spire@b9c7b77109db587e729f91e8526aefba099515e8: unknown_on_safe: NEEDS_REVIEW
+  FAILED spire@2af565d19c73d45221ad9897d214bcf74be537e6: unknown_on_safe: UNRESOLVED_MEMBER
+  FAILED spire@da0bb759415ab2bf2ccd6e99f38ddd37637afce7: unknown_on_safe: NEEDS_REVIEW, UNRESOLVED_MEMBER
+  FAILED spire@9701b78b4c3c2e22d866220ba16eb9e8da6eea96: unknown_on_safe: NEEDS_REVIEW, UNRESOLVED_MEMBER
+  FAILED spire@a201a66e82131c98fbfb70df108fab9f1b5014fe: unknown_on_safe: UNRESOLVED_MEMBER
+  FAILED spire@54e821e0e8265c1ef2bd227029ed4bd360653905: unknown_on_safe: UNRESOLVED_MEMBER, NEEDS_REVIEW
+  FAILED spire@b9c7b77109db587e729f91e8526aefba099515e8: unknown_on_safe: UNRESOLVED_MEMBER, NEEDS_REVIEW
 
-20 windows in 3m42s.
-verifier gate: scan failed: 4 disagreements with the compiler or errors
+20 windows in 5m46s.
+verifier gate: scan failed: 6 disagreements with the compiler or errors
 exit 1
