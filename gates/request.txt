@@ -1,3 +1,3 @@
-Gates of Parent branch usage-records db0e78e THROUGH USAGE RECORDS (--via-usage): every window decided from the consumer's usage records, published into a fresh store as its CI would; must equal the baseline (suites) and the before binary's normal decisions (scan) requested 2026-10-07T13:40Z
-source: jastijayakrishna/Parent, branch usage-records, commit db0e78e355125230b7d8eddbd22d329175b0333f sha256 (uncompressed linux/amd64): 6d78c5ff864d8bdb2d1203407bf17d7ff32545233200b3eba2e7a5e59928f8c7 built: 2026-10-07T13:36Z 
-scan: all 17 corpus projects with the compiler, new (db0e78e, --via-usage) and before (f1004d7, normal = main 02eb789 code)
+Gates of Parent branch usage-records 9b632d6 THROUGH USAGE RECORDS (--via-usage), every record decided whole (no skipping): must equal the baseline (suites) and the before binary's normal decisions (scan) requested 2026-10-07T13:47Z
+source: jastijayakrishna/Parent, branch usage-records, commit 9b632d675e52adb2bb48b6eb8c2df237edc6fde7 sha256 (uncompressed linux/amd64): d9bd18e18ee34bc8e9621688aae1e8f90515bace23029f60db3094b2db477cea built: 2026-10-07T13:47Z 
+scan: all 17 corpus projects with the compiler, new (9b632d6, --via-usage) and before (f1004d7, normal = main 02eb789 code)
