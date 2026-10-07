@@ -1,27 +1,27 @@
-time=2026-10-07T13:39:01.068Z level=INFO msg=cloning repo=p-consul url=https://github.com/hashicorp/consul.git
-time=2026-10-07T13:39:03.338Z level=INFO msg=cloning repo=c-consul url=https://github.com/hashicorp/consul-dataplane.git
-consul      668c7586 GO       source_build=GO      compiler=-                   9.9s 
-consul      1fde5839 GO       source_build=GO      compiler=-                   0.6s 
-consul      9ef2b8e0 GO       source_build=GO      compiler=-                   0.4s 
-consul      28ae8145 GO       source_build=GO      compiler=-                   0.4s 
-consul      3db1bb7d GO       source_build=GO      compiler=-                   0.3s 
-consul      31a91624 GO       source_build=GO      compiler=-                   0.4s 
-consul      6aaebf2d GO       source_build=GO      compiler=-                   0.4s 
-consul      f11866ea GO       source_build=GO      compiler=-                   0.4s 
-consul      a3b721be GO       source_build=GO      compiler=-                   0.4s 
-consul      4d996d1b GO       source_build=GO      compiler=-                   0.4s 
-consul      8af3adec GO       source_build=GO      compiler=-                   0.4s 
-consul      f1f68f35 GO       source_build=GO      compiler=-                   0.5s 
-consul      57e08666 GO       source_build=GO      compiler=-                   0.4s 
-consul      25e8c070 GO       source_build=GO      compiler=-                   0.4s 
-consul      c035ddbe GO       source_build=GO      compiler=-                   0.4s 
-consul      e4277643 GO       source_build=GO      compiler=-                   0.4s 
-consul      7ee7c79b GO       source_build=GO      compiler=-                   0.4s 
-consul      57fdfe12 GO       source_build=GO      compiler=-                   0.4s 
-consul      5a6283bd GO       source_build=GO      compiler=-                   0.4s 
-consul      b3fa6c40 GO       source_build=GO      compiler=-                   0.4s 
+time=2026-10-07T14:06:07.940Z level=INFO msg=cloning repo=p-consul url=https://github.com/hashicorp/consul.git
+time=2026-10-07T14:06:11.553Z level=INFO msg=cloning repo=c-consul url=https://github.com/hashicorp/consul-dataplane.git
+consul      668c7586 GO       source_build=GO      compiler=-                   6.4s 
+consul      1fde5839 GO       source_build=GO      compiler=-                   0.8s 
+consul      9ef2b8e0 GO       source_build=GO      compiler=-                   0.5s 
+consul      28ae8145 GO       source_build=GO      compiler=-                   0.5s 
+consul      3db1bb7d GO       source_build=GO      compiler=-                   0.5s 
+consul      31a91624 GO       source_build=GO      compiler=-                   0.5s 
+consul      6aaebf2d GO       source_build=GO      compiler=-                   0.5s 
+consul      f11866ea GO       source_build=GO      compiler=-                   0.5s 
+consul      a3b721be GO       source_build=GO      compiler=-                   0.5s 
+consul      4d996d1b GO       source_build=GO      compiler=-                   0.5s 
+consul      8af3adec GO       source_build=GO      compiler=-                   0.5s 
+consul      f1f68f35 GO       source_build=GO      compiler=-                   0.7s 
+consul      57e08666 GO       source_build=GO      compiler=-                   0.5s 
+consul      25e8c070 GO       source_build=GO      compiler=-                   0.5s 
+consul      c035ddbe GO       source_build=GO      compiler=-                   0.5s 
+consul      e4277643 GO       source_build=GO      compiler=-                   0.5s 
+consul      7ee7c79b GO       source_build=GO      compiler=-                   0.5s 
+consul      57fdfe12 GO       source_build=GO      compiler=-                   0.5s 
+consul      5a6283bd GO       source_build=GO      compiler=-                   0.5s 
+consul      b3fa6c40 GO       source_build=GO      compiler=-                   0.5s 
 consul        20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
 TOTAL         20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
 
-20 windows in 22s.
+20 windows in 24s.
 exit 0
