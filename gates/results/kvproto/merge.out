@@ -1,2 +1,14 @@
-verifier gate: cannot merge: 17 windows have no result (tidb@6e6b553e15c3..586cff11, tidb@5775995ea17c..51120697, tidb@38a7c6220ea6..25f1909b, tidb@f0575a847b87..a7c51106, tidb@bd3a036c9229..68d0eebd)
+client-go/additive     windows= 12 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=12: GO=12 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=12 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=12
+client-go/breaking     windows= 26 | breaks= 8: caught= 8 WRONG_GO=0 abstained=0 | compiles=17: GO=15 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 1) | unavailable=1 (NO-GO 0, UNKNOWN 1, GO 0) | wire: judged=26 broken=4 RUNTIME_WRONG_GO=0 confirmed=4 unconfirmed=5 | errors=0 | replayed=26
+pd/additive            windows= 12 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles=11: GO=11 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=12 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=12
+pd/breaking            windows= 41 | breaks=18: caught=18 WRONG_GO=0 abstained=0 | compiles=21: GO=21 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 4) | unavailable=2 (NO-GO 2, UNKNOWN 0, GO 0) | wire: judged=41 broken=9 RUNTIME_WRONG_GO=0 confirmed=7 unconfirmed=7 | errors=0 | replayed=41
+tidb/additive          windows= 12 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=12: GO=12 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=12 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=12
+tidb/breaking          windows= 49 | breaks=22: caught=22 WRONG_GO=0 abstained=0 | compiles=24: GO=24 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 2) | unavailable=3 (NO-GO 0, UNKNOWN 3, GO 0) | wire: judged=49 broken=13 RUNTIME_WRONG_GO=0 confirmed=10 unconfirmed=6 | errors=0 | replayed=49
+TOTAL                  windows=152 | breaks=49: caught=49 WRONG_GO=0 abstained=0 | compiles=97: GO=95 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 7) | unavailable=6 (NO-GO 2, UNKNOWN 4, GO 0) | wire: judged=152 broken=26 RUNTIME_WRONG_GO=0 confirmed=21 unconfirmed=18 | errors=0 | replayed=152
+  WITHIN THE UNKNOWN LIMIT client-go@00eeab450c8c..62eb316d: unknown_on_safe: WHOLE_MESSAGE_FLOW, OPTION_CHANGED
+  WITHIN THE UNKNOWN LIMIT client-go@57c12f7c64f6..aa9c2d20: unknown_on_safe: NEEDS_REVIEW
+  DIFFERS FROM BASELINE pd@e61f727708f6..059694ae: expected NO_GO (generated_code NO_GO, runtime UNKNOWN, source_build NO_GO; UNKNOWN: NEEDS_REVIEW), got NO_GO (generated_code NO_GO, runtime UNKNOWN, source_build NO_GO; UNKNOWN: NEEDS_REVIEW, WHOLE_MESSAGE_FLOW)
+
+152 windows merged; verifier 8ad6a3b4bdc7aff26f1d71772a50df4728f8261d6687d533e85cc4b103cfd276; slowest window 1.7 minutes; 1 differ from the baseline.
+verifier gate: release gate failed: 1 windows differ from the baseline (record intended changes with `verifier gate baseline` and a reason for each)
 exit 1
