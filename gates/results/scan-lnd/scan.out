@@ -1,25 +1,25 @@
-time=2026-10-07T07:44:54.686Z level=INFO msg=cloning repo=p-lnd url=https://github.com/lightningnetwork/lnd.git
-time=2026-10-07T07:44:57.157Z level=INFO msg=cloning repo=c-lnd url=https://github.com/lightninglabs/lndclient.git
-lnd         112cb5f3 GO       source_build=GO      compiler=compiles          231.9s 
-lnd         9b634bfd GO       source_build=GO      compiler=compiles          134.2s 
-lnd         044d260b GO       source_build=GO      compiler=compiles          102.8s 
-lnd         cee8ed62 GO       source_build=GO      compiler=compiles          114.1s 
-lnd         515ceaac GO       source_build=GO      compiler=compiles           25.8s 
-lnd         1f324ebd GO       source_build=GO      compiler=compiles          116.3s 
-lnd         53da78ad GO       source_build=GO      compiler=compiles          128.7s 
-lnd         10dfc9e0 GO       source_build=GO      compiler=compiles          107.6s 
-lnd         b309be58 GO       source_build=GO      compiler=compiles          102.1s 
-lnd         9a6a3a70 GO       source_build=GO      compiler=compiles           52.1s 
+time=2026-10-07T13:38:20.681Z level=INFO msg=cloning repo=p-lnd url=https://github.com/lightningnetwork/lnd.git
+time=2026-10-07T13:38:22.336Z level=INFO msg=cloning repo=c-lnd url=https://github.com/lightninglabs/lndclient.git
+lnd         112cb5f3 GO       source_build=GO      compiler=compiles          232.8s 
+lnd         9b634bfd GO       source_build=GO      compiler=compiles          138.5s 
+lnd         044d260b GO       source_build=GO      compiler=compiles          106.1s 
+lnd         cee8ed62 GO       source_build=GO      compiler=compiles          118.3s 
+lnd         515ceaac GO       source_build=GO      compiler=compiles           26.9s 
+lnd         1f324ebd GO       source_build=GO      compiler=compiles          120.4s 
+lnd         53da78ad GO       source_build=GO      compiler=compiles          131.7s 
+lnd         10dfc9e0 GO       source_build=GO      compiler=compiles          111.4s 
+lnd         b309be58 GO       source_build=GO      compiler=compiles          105.1s 
+lnd         9a6a3a70 GO       source_build=GO      compiler=compiles           53.7s 
 lnd         5ecef3d3 GO       source_build=GO      compiler=compiles            5.9s 
-lnd         14640a50 GO       source_build=GO      compiler=compiles          107.8s 
-lnd         40c64f9d GO       source_build=GO      compiler=compiles           57.9s 
-lnd         f55c0565 GO       source_build=GO      compiler=compiles           65.5s 
-lnd         c4a67b68 GO       source_build=GO      compiler=compiles            8.3s 
-lnd         8909c2fb GO       source_build=GO      compiler=compiles           46.2s 
-lnd         c5733c40 GO       source_build=GO      compiler=compiles           16.7s 
-lnd         dfeb678a GO       source_build=GO      compiler=compiles            6.2s 
-lnd         0aa1d8bd UNKNOWN  source_build=GO      compiler=compiles           13.4s 
-lnd         361cdba0 UNKNOWN  source_build=GO      compiler=compiles            4.3s 
+lnd         14640a50 GO       source_build=GO      compiler=compiles          106.4s 
+lnd         40c64f9d GO       source_build=GO      compiler=compiles           58.7s 
+lnd         f55c0565 GO       source_build=GO      compiler=compiles           69.3s 
+lnd         c4a67b68 GO       source_build=GO      compiler=compiles            8.9s 
+lnd         8909c2fb GO       source_build=GO      compiler=compiles           49.2s 
+lnd         c5733c40 GO       source_build=GO      compiler=compiles           16.1s 
+lnd         dfeb678a GO       source_build=GO      compiler=compiles            5.7s 
+lnd         0aa1d8bd UNKNOWN  source_build=GO      compiler=compiles           15.4s 
+lnd         361cdba0 UNKNOWN  source_build=GO      compiler=compiles            5.2s 
 lnd           20 decisions  GO  18  NO-GO   0  UNKNOWN   2 (10.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
 TOTAL         20 decisions  GO  18  NO-GO   0  UNKNOWN   2 (10.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
 
@@ -27,5 +27,5 @@ UNKNOWN reasons across all: windows, ecosystems, an example
     2   1  DESCRIPTOR_REFLECTION (e.g. lnd@0aa1d8bdd6a5cbb10561d3a05d178a612663ba54)
     1   1  WHOLE_MESSAGE_FLOW (e.g. lnd@361cdba0dfb6d24530071752578eb270cf8e1592)
 
-20 windows in 24m12s.
+20 windows in 24m48s.
 exit 0
