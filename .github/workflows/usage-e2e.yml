@@ -1,7 +1,8 @@
 # Usage records end to end, with GitHub's real OIDC signing: this run
 # publishes the billing fixture's records, signed by this run, to a branch of
 # this repository (the usage store), decides a contract change from them with
-# the keys GitHub publishes, then tampers with one record and decides again.
+# the keys GitHub publishes, then attacks them (usage-e2e/run.sh): every case
+# must give its verdict and reason, none may say Merge.
 # Runs when usage-e2e/request.txt changes. Results go to usage-e2e/results/.
 name: usage-e2e
 on:
@@ -24,53 +25,21 @@ jobs:
         with:
           go-version: stable
           cache: false
-      - name: Publish signed records, decide from them, tamper, decide again
+      - name: Publish signed records, decide from them, attack them
         env:
           VERIFIER_USAGE_TOKEN: ${{ github.token }}
-          STORE: https://github.com/${{ github.repository }}.git
-          REPO: github.com/${{ github.repository }}
         run: |
-          set -u
           v="$RUNNER_TEMP/verifier"
           gunzip -c bin/verifier-linux-amd64.gz > "$v" && chmod +x "$v"
-          out="usage-e2e/results"; rm -rf "$out"; mkdir -p "$out"
+          out=usage-e2e/results
+          set +e
+          E2E_TMP="$RUNNER_TEMP/e2e" bash usage-e2e/run.sh "$v" "$out" github
+          status=$?
+          set -e
           head -1 bin/VERSION > "$out/verifier.txt"
+          echo "::notice title=usage-e2e::$(cat "$out/result.txt")"
           git config --global user.name e2e; git config --global user.email e2e@parent.invalid
-          branch="usage/$REPO"
-
-          # The service: the billing fixture as a repository of its own.
-          svc="$RUNNER_TEMP/billing"; cp -r usage-e2e/billing "$svc"
-          (cd "$svc" && git init -q -b main && git add -A && git commit -q -m billing)
-          commit=$(cd "$svc" && git rev-parse HEAD)
-          "$v" usage publish --store "$STORE" --dir "$svc" --repo "$REPO" --commit "$commit" --ref "$GITHUB_REF" > "$out/publish.out" 2>&1
-          echo "exit $?" >> "$out/publish.out"
-
-          # The provider: payments.proto, then the removal of amount_cents, which billing reads.
-          prov="$RUNNER_TEMP/payments-protos"; mkdir -p "$prov/proto/payments/v1"
-          cp usage-e2e/provider/payments.proto "$prov/proto/payments/v1/"
-          (cd "$prov" && git init -q -b main && git add -A && git commit -q -m contract && \
-            sed -i '/int64 amount_cents = 7;/d' proto/payments/v1/payments.proto && git commit -q -am "remove amount_cents")
-          "$v" verify --repo "$prov" --base HEAD~1 --usage "$STORE" > "$out/verify-signed.out" 2>&1
-          echo "exit $?" >> "$out/verify-signed.out"
-
-          # Tamper with one record and decide again: never Merge.
-          t="$RUNNER_TEMP/tamper"; git clone -q --depth 1 --branch "$branch" "https://x-access-token:${VERIFIER_USAGE_TOKEN}@github.com/${{ github.repository }}.git" "$t"
-          rec=$(ls "$t"/records/*.json.gz | head -1); printf 'x' >> "$rec"
-          (cd "$t" && git commit -q -am "tamper" && git push -q origin "HEAD:$branch")
-          "$v" verify --repo "$prov" --base HEAD~1 --usage "$STORE" > "$out/verify-tampered.out" 2>&1
-          echo "exit $?" >> "$out/verify-tampered.out"
-
-          # Leave no store behind.
-          git push -q "https://x-access-token:${VERIFIER_USAGE_TOKEN}@github.com/${{ github.repository }}.git" --delete "$branch" || true
-
-          # The verdicts this run must give.
-          ok=true
-          grep -q '^exit 0' "$out/publish.out" && grep -q 'signed by this CI run' "$out/publish.out" || ok=false
-          grep -q '^exit 3' "$out/verify-signed.out" && grep -q "Don't merge" "$out/verify-signed.out" && grep -q 'Checked 1 service' "$out/verify-signed.out" || ok=false
-          grep -q '^exit 3' "$out/verify-tampered.out" && grep -q 'USAGE_DIGEST_MISMATCH' "$out/verify-tampered.out" || ok=false
-          echo "passed: $ok" > "$out/result.txt"
-          echo "::notice title=usage-e2e::passed=$ok"
           git add usage-e2e/results
           git commit -q -m "usage-e2e of $(date -u +%Y-%m-%dT%H:%MZ)" || true
           for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q && break; sleep $((i * 5)); done
-          $ok
+          exit $status

@@ -1,1 +1,1 @@
-usage-e2e of Parent branch usage-records 7ef2634: publish signed with this run's OIDC token, decide, tamper, decide (requested 2026-10-07T14:17Z)
+usage-e2e of Parent branch usage-records 6954063: publish signed with this run's OIDC token, decide, then attack the records 18 ways (usage-e2e/run.sh); every case its exact verdict and reason, none Merge (requested 2026-10-07T14:50Z)
