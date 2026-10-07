@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package payments.v1;
+
+option go_package = "example.com/billing/gen/paymentsv1;paymentsv1";
+
+message Charge {
+  string id = 1;
+  PaymentStatus status = 4;
+  oneof method {
+    string card = 5;
+    string bank = 6;
+  }
+  int64 amount_cents = 7;
+  repeated string tags = 8;
+  Money total = 9;
+  reserved 20;
+}
+
+message Money {
+  string currency = 1;
+  int64 units = 2;
+}
+
+enum PaymentStatus {
+  PAYMENT_STATUS_UNSPECIFIED = 0;
+  PAID = 1;
+  REFUNDED = 2;
+}
+
+message GetChargeRequest {
+  string id = 1;
+}
+
+service Payments {
+  rpc GetCharge(GetChargeRequest) returns (Charge);
+  rpc Watch(GetChargeRequest) returns (stream Charge);
+}

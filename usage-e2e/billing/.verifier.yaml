@@ -1,0 +1,10 @@
+mode: silent
+unknown_as: warn
+deploy_units:
+  - name: billing-worker
+    main: ./cmd/billing-worker
+  - name: refund-job
+    main: ./cmd/refund-job
+builds:
+  - goos: linux
+    goarch: amd64
