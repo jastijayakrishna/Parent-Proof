@@ -1,27 +1,27 @@
-time=2026-10-07T06:29:02.672Z level=INFO msg=cloning repo=p-containerd url=https://github.com/containerd/containerd.git
-time=2026-10-07T06:29:04.853Z level=INFO msg=cloning repo=c-containerd url=https://github.com/containerd/nerdctl.git
-containerd  40f84371 GO       source_build=GO      compiler=-                  19.2s 
-containerd  2ea4ddb3 GO       source_build=GO      compiler=compiles           36.2s 
-containerd  52be09ef GO       source_build=GO      compiler=-                   2.7s 
-containerd  65b4eb91 GO       source_build=GO      compiler=-                   1.7s 
-containerd  a7224742 GO       source_build=GO      compiler=compiles            4.8s 
-containerd  8c4ccd29 GO       source_build=GO      compiler=-                   2.6s 
-containerd  fbbe2067 GO       source_build=GO      compiler=-                   2.4s 
-containerd  7e217685 GO       source_build=GO      compiler=-                   1.4s 
-containerd  78abbfb7 GO       source_build=GO      compiler=-                   1.5s 
-containerd  a452c2e2 GO       source_build=GO      compiler=-                   1.2s 
-containerd  658a1c78 GO       source_build=GO      compiler=-                   2.4s 
-containerd  988f3af0 GO       source_build=GO      compiler=-                   2.2s 
-containerd  ea0ed51e GO       source_build=GO      compiler=-                   2.0s 
-containerd  d763407d GO       source_build=GO      compiler=-                   1.2s 
+time=2026-10-07T07:24:51.357Z level=INFO msg=cloning repo=p-containerd url=https://github.com/containerd/containerd.git
+time=2026-10-07T07:24:52.943Z level=INFO msg=cloning repo=c-containerd url=https://github.com/containerd/nerdctl.git
+containerd  40f84371 GO       source_build=GO      compiler=-                  19.3s 
+containerd  2ea4ddb3 GO       source_build=GO      compiler=compiles           47.1s 
+containerd  52be09ef GO       source_build=GO      compiler=-                   3.0s 
+containerd  65b4eb91 GO       source_build=GO      compiler=-                   1.9s 
+containerd  a7224742 GO       source_build=GO      compiler=compiles            5.4s 
+containerd  8c4ccd29 GO       source_build=GO      compiler=-                   2.8s 
+containerd  fbbe2067 GO       source_build=GO      compiler=-                   4.4s 
+containerd  7e217685 GO       source_build=GO      compiler=-                   1.9s 
+containerd  78abbfb7 GO       source_build=GO      compiler=-                   2.2s 
+containerd  a452c2e2 GO       source_build=GO      compiler=-                   1.4s 
+containerd  658a1c78 GO       source_build=GO      compiler=-                   2.9s 
+containerd  988f3af0 GO       source_build=GO      compiler=-                   2.8s 
+containerd  ea0ed51e GO       source_build=GO      compiler=-                   2.4s 
+containerd  d763407d GO       source_build=GO      compiler=-                   1.4s 
 containerd  7f10e9eb GO       source_build=GO      compiler=-                   0.4s 
-containerd  ac01ae5c GO       source_build=GO      compiler=-                   3.9s 
-containerd  efc8e125 GO       source_build=GO      compiler=-                   1.8s 
-containerd  d806373f GO       source_build=GO      compiler=-                   3.4s 
-containerd  74b465dc GO       source_build=GO      compiler=-                   1.6s 
-containerd  2c102c6c GO       source_build=GO      compiler=-                   1.6s 
+containerd  ac01ae5c GO       source_build=GO      compiler=-                   4.1s 
+containerd  efc8e125 GO       source_build=GO      compiler=-                   2.3s 
+containerd  d806373f GO       source_build=GO      compiler=-                   5.2s 
+containerd  74b465dc GO       source_build=GO      compiler=-                   1.9s 
+containerd  2c102c6c GO       source_build=GO      compiler=-                   2.0s 
 containerd    20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
 TOTAL         20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
 
-20 windows in 1m37s.
+20 windows in 1m57s.
 exit 0
