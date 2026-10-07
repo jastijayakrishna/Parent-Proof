@@ -1,0 +1,908 @@
+{
+  "id": "d_db33627ba9d2a45a",
+  "created_at": "2026-10-07T14:51:49.064504081Z",
+  "organization": "local",
+  "provider": {
+    "owner": "",
+    "repo": "payments-protos",
+    "base": "38a0076ce59c7f0414fb3b5988035514232ccb1d",
+    "head": "34357774a9d7bf5092fe7314aafdc12f5f3567a4",
+    "contracts": 1
+  },
+  "subject": {
+    "kind": "local"
+  },
+  "contract_files": [
+    "proto/payments/v1/payments.proto"
+  ],
+  "old_contract_digest": "842e4d70b0d094889f10082780ba98a6ebc581488120f4a04ea90d0269d1b25c",
+  "new_contract_digest": "7974c7cd7e32e57f9d6525055b6a289fa61a3a936b5722c8c20fdad0d1399e22",
+  "old_contract": {
+    "files": {
+      "proto/payments/v1/payments.proto": {
+        "path": "proto/payments/v1/payments.proto",
+        "package": "payments.v1",
+        "syntax": "proto3",
+        "go_package": "example.com/billing/gen/paymentsv1;paymentsv1",
+        "messages": [
+          "payments.v1.Charge",
+          "payments.v1.Money",
+          "payments.v1.GetChargeRequest"
+        ],
+        "enums": [
+          "payments.v1.PaymentStatus"
+        ],
+        "services": [
+          "payments.v1.Payments"
+        ]
+      }
+    },
+    "messages": {
+      "payments.v1.Charge": {
+        "full": "payments.v1.Charge",
+        "file": "proto/payments/v1/payments.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 1
+            },
+            "name": "id",
+            "json_name": "id",
+            "type": "string",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          },
+          "4": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 4
+            },
+            "name": "status",
+            "json_name": "status",
+            "type": "enum",
+            "type_name": "payments.v1.PaymentStatus",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          },
+          "5": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 5
+            },
+            "name": "card",
+            "json_name": "card",
+            "type": "string",
+            "presence": "oneof",
+            "oneof": "method",
+            "repeated": false,
+            "map": false
+          },
+          "6": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 6
+            },
+            "name": "bank",
+            "json_name": "bank",
+            "type": "string",
+            "presence": "oneof",
+            "oneof": "method",
+            "repeated": false,
+            "map": false
+          },
+          "7": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 7
+            },
+            "name": "amount_cents",
+            "json_name": "amountCents",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          },
+          "8": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 8
+            },
+            "name": "tags",
+            "json_name": "tags",
+            "type": "string",
+            "presence": "repeated",
+            "repeated": true,
+            "map": false
+          },
+          "9": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 9
+            },
+            "name": "total",
+            "json_name": "total",
+            "type": "message",
+            "type_name": "payments.v1.Money",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false
+          }
+        },
+        "oneofs": [
+          "method"
+        ],
+        "reserved_numbers": [
+          {
+            "start": 20,
+            "end": 21
+          }
+        ]
+      },
+      "payments.v1.GetChargeRequest": {
+        "full": "payments.v1.GetChargeRequest",
+        "file": "proto/payments/v1/payments.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "payments.v1.GetChargeRequest",
+              "number": 1
+            },
+            "name": "id",
+            "json_name": "id",
+            "type": "string",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          }
+        }
+      },
+      "payments.v1.Money": {
+        "full": "payments.v1.Money",
+        "file": "proto/payments/v1/payments.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "payments.v1.Money",
+              "number": 1
+            },
+            "name": "currency",
+            "json_name": "currency",
+            "type": "string",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          },
+          "2": {
+            "id": {
+              "message": "payments.v1.Money",
+              "number": 2
+            },
+            "name": "units",
+            "json_name": "units",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          }
+        }
+      }
+    },
+    "enums": {
+      "payments.v1.PaymentStatus": {
+        "full": "payments.v1.PaymentStatus",
+        "file": "proto/payments/v1/payments.proto",
+        "values": [
+          {
+            "name": "PAYMENT_STATUS_UNSPECIFIED",
+            "number": 0
+          },
+          {
+            "name": "PAID",
+            "number": 1
+          },
+          {
+            "name": "REFUNDED",
+            "number": 2
+          }
+        ],
+        "open": true
+      }
+    },
+    "services": {
+      "payments.v1.Payments": {
+        "full": "payments.v1.Payments",
+        "file": "proto/payments/v1/payments.proto",
+        "methods": {
+          "GetCharge": {
+            "service": "payments.v1.Payments",
+            "name": "GetCharge",
+            "input": "payments.v1.GetChargeRequest",
+            "output": "payments.v1.Charge",
+            "client_streaming": false,
+            "server_streaming": false
+          },
+          "Watch": {
+            "service": "payments.v1.Payments",
+            "name": "Watch",
+            "input": "payments.v1.GetChargeRequest",
+            "output": "payments.v1.Charge",
+            "client_streaming": false,
+            "server_streaming": true
+          }
+        }
+      }
+    },
+    "lines": {
+      "enum:payments.v1.PaymentStatus": 25,
+      "enum_value:payments.v1.PaymentStatus.#0": 26,
+      "enum_value:payments.v1.PaymentStatus.#1": 27,
+      "enum_value:payments.v1.PaymentStatus.#2": 28,
+      "field:payments.v1.Charge.#1": 8,
+      "field:payments.v1.Charge.#4": 9,
+      "field:payments.v1.Charge.#5": 11,
+      "field:payments.v1.Charge.#6": 12,
+      "field:payments.v1.Charge.#7": 14,
+      "field:payments.v1.Charge.#8": 15,
+      "field:payments.v1.Charge.#9": 16,
+      "field:payments.v1.GetChargeRequest.#1": 32,
+      "field:payments.v1.Money.#1": 21,
+      "field:payments.v1.Money.#2": 22,
+      "file:proto/payments/v1/payments.proto": 1,
+      "message:payments.v1.Charge": 7,
+      "message:payments.v1.GetChargeRequest": 31,
+      "message:payments.v1.Money": 20,
+      "rpc:payments.v1.Payments.GetCharge": 36,
+      "rpc:payments.v1.Payments.Watch": 37,
+      "service:payments.v1.Payments": 35
+    }
+  },
+  "new_contract": {
+    "files": {
+      "proto/payments/v1/payments.proto": {
+        "path": "proto/payments/v1/payments.proto",
+        "package": "payments.v1",
+        "syntax": "proto3",
+        "go_package": "example.com/billing/gen/paymentsv1;paymentsv1",
+        "messages": [
+          "payments.v1.Charge",
+          "payments.v1.Money",
+          "payments.v1.GetChargeRequest"
+        ],
+        "enums": [
+          "payments.v1.PaymentStatus"
+        ],
+        "services": [
+          "payments.v1.Payments"
+        ]
+      }
+    },
+    "messages": {
+      "payments.v1.Charge": {
+        "full": "payments.v1.Charge",
+        "file": "proto/payments/v1/payments.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 1
+            },
+            "name": "id",
+            "json_name": "id",
+            "type": "string",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          },
+          "4": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 4
+            },
+            "name": "status",
+            "json_name": "status",
+            "type": "enum",
+            "type_name": "payments.v1.PaymentStatus",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          },
+          "5": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 5
+            },
+            "name": "card",
+            "json_name": "card",
+            "type": "string",
+            "presence": "oneof",
+            "oneof": "method",
+            "repeated": false,
+            "map": false
+          },
+          "6": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 6
+            },
+            "name": "bank",
+            "json_name": "bank",
+            "type": "string",
+            "presence": "oneof",
+            "oneof": "method",
+            "repeated": false,
+            "map": false
+          },
+          "8": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 8
+            },
+            "name": "tags",
+            "json_name": "tags",
+            "type": "string",
+            "presence": "repeated",
+            "repeated": true,
+            "map": false
+          },
+          "9": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 9
+            },
+            "name": "total",
+            "json_name": "total",
+            "type": "message",
+            "type_name": "payments.v1.Money",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false
+          }
+        },
+        "oneofs": [
+          "method"
+        ],
+        "reserved_numbers": [
+          {
+            "start": 20,
+            "end": 21
+          }
+        ]
+      },
+      "payments.v1.GetChargeRequest": {
+        "full": "payments.v1.GetChargeRequest",
+        "file": "proto/payments/v1/payments.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "payments.v1.GetChargeRequest",
+              "number": 1
+            },
+            "name": "id",
+            "json_name": "id",
+            "type": "string",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          }
+        }
+      },
+      "payments.v1.Money": {
+        "full": "payments.v1.Money",
+        "file": "proto/payments/v1/payments.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "payments.v1.Money",
+              "number": 1
+            },
+            "name": "currency",
+            "json_name": "currency",
+            "type": "string",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          },
+          "2": {
+            "id": {
+              "message": "payments.v1.Money",
+              "number": 2
+            },
+            "name": "units",
+            "json_name": "units",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          }
+        }
+      }
+    },
+    "enums": {
+      "payments.v1.PaymentStatus": {
+        "full": "payments.v1.PaymentStatus",
+        "file": "proto/payments/v1/payments.proto",
+        "values": [
+          {
+            "name": "PAYMENT_STATUS_UNSPECIFIED",
+            "number": 0
+          },
+          {
+            "name": "PAID",
+            "number": 1
+          },
+          {
+            "name": "REFUNDED",
+            "number": 2
+          }
+        ],
+        "open": true
+      }
+    },
+    "services": {
+      "payments.v1.Payments": {
+        "full": "payments.v1.Payments",
+        "file": "proto/payments/v1/payments.proto",
+        "methods": {
+          "GetCharge": {
+            "service": "payments.v1.Payments",
+            "name": "GetCharge",
+            "input": "payments.v1.GetChargeRequest",
+            "output": "payments.v1.Charge",
+            "client_streaming": false,
+            "server_streaming": false
+          },
+          "Watch": {
+            "service": "payments.v1.Payments",
+            "name": "Watch",
+            "input": "payments.v1.GetChargeRequest",
+            "output": "payments.v1.Charge",
+            "client_streaming": false,
+            "server_streaming": true
+          }
+        }
+      }
+    },
+    "lines": {
+      "enum:payments.v1.PaymentStatus": 24,
+      "enum_value:payments.v1.PaymentStatus.#0": 25,
+      "enum_value:payments.v1.PaymentStatus.#1": 26,
+      "enum_value:payments.v1.PaymentStatus.#2": 27,
+      "field:payments.v1.Charge.#1": 8,
+      "field:payments.v1.Charge.#4": 9,
+      "field:payments.v1.Charge.#5": 11,
+      "field:payments.v1.Charge.#6": 12,
+      "field:payments.v1.Charge.#8": 14,
+      "field:payments.v1.Charge.#9": 15,
+      "field:payments.v1.GetChargeRequest.#1": 31,
+      "field:payments.v1.Money.#1": 20,
+      "field:payments.v1.Money.#2": 21,
+      "file:proto/payments/v1/payments.proto": 1,
+      "message:payments.v1.Charge": 7,
+      "message:payments.v1.GetChargeRequest": 30,
+      "message:payments.v1.Money": 19,
+      "rpc:payments.v1.Payments.GetCharge": 35,
+      "rpc:payments.v1.Payments.Watch": 36,
+      "service:payments.v1.Payments": 34
+    }
+  },
+  "context_contract_digest": "842e4d70b0d094889f10082780ba98a6ebc581488120f4a04ea90d0269d1b25c",
+  "context_contract": {
+    "files": {
+      "proto/payments/v1/payments.proto": {
+        "path": "proto/payments/v1/payments.proto",
+        "package": "payments.v1",
+        "syntax": "proto3",
+        "go_package": "example.com/billing/gen/paymentsv1;paymentsv1",
+        "messages": [
+          "payments.v1.Charge",
+          "payments.v1.Money",
+          "payments.v1.GetChargeRequest"
+        ],
+        "enums": [
+          "payments.v1.PaymentStatus"
+        ],
+        "services": [
+          "payments.v1.Payments"
+        ]
+      }
+    },
+    "messages": {
+      "payments.v1.Charge": {
+        "full": "payments.v1.Charge",
+        "file": "proto/payments/v1/payments.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 1
+            },
+            "name": "id",
+            "json_name": "id",
+            "type": "string",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          },
+          "4": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 4
+            },
+            "name": "status",
+            "json_name": "status",
+            "type": "enum",
+            "type_name": "payments.v1.PaymentStatus",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          },
+          "5": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 5
+            },
+            "name": "card",
+            "json_name": "card",
+            "type": "string",
+            "presence": "oneof",
+            "oneof": "method",
+            "repeated": false,
+            "map": false
+          },
+          "6": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 6
+            },
+            "name": "bank",
+            "json_name": "bank",
+            "type": "string",
+            "presence": "oneof",
+            "oneof": "method",
+            "repeated": false,
+            "map": false
+          },
+          "7": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 7
+            },
+            "name": "amount_cents",
+            "json_name": "amountCents",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          },
+          "8": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 8
+            },
+            "name": "tags",
+            "json_name": "tags",
+            "type": "string",
+            "presence": "repeated",
+            "repeated": true,
+            "map": false
+          },
+          "9": {
+            "id": {
+              "message": "payments.v1.Charge",
+              "number": 9
+            },
+            "name": "total",
+            "json_name": "total",
+            "type": "message",
+            "type_name": "payments.v1.Money",
+            "presence": "explicit",
+            "repeated": false,
+            "map": false
+          }
+        },
+        "oneofs": [
+          "method"
+        ],
+        "reserved_numbers": [
+          {
+            "start": 20,
+            "end": 21
+          }
+        ]
+      },
+      "payments.v1.GetChargeRequest": {
+        "full": "payments.v1.GetChargeRequest",
+        "file": "proto/payments/v1/payments.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "payments.v1.GetChargeRequest",
+              "number": 1
+            },
+            "name": "id",
+            "json_name": "id",
+            "type": "string",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          }
+        }
+      },
+      "payments.v1.Money": {
+        "full": "payments.v1.Money",
+        "file": "proto/payments/v1/payments.proto",
+        "fields": {
+          "1": {
+            "id": {
+              "message": "payments.v1.Money",
+              "number": 1
+            },
+            "name": "currency",
+            "json_name": "currency",
+            "type": "string",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          },
+          "2": {
+            "id": {
+              "message": "payments.v1.Money",
+              "number": 2
+            },
+            "name": "units",
+            "json_name": "units",
+            "type": "int64",
+            "presence": "implicit",
+            "repeated": false,
+            "map": false
+          }
+        }
+      }
+    },
+    "enums": {
+      "payments.v1.PaymentStatus": {
+        "full": "payments.v1.PaymentStatus",
+        "file": "proto/payments/v1/payments.proto",
+        "values": [
+          {
+            "name": "PAYMENT_STATUS_UNSPECIFIED",
+            "number": 0
+          },
+          {
+            "name": "PAID",
+            "number": 1
+          },
+          {
+            "name": "REFUNDED",
+            "number": 2
+          }
+        ],
+        "open": true
+      }
+    },
+    "services": {
+      "payments.v1.Payments": {
+        "full": "payments.v1.Payments",
+        "file": "proto/payments/v1/payments.proto",
+        "methods": {
+          "GetCharge": {
+            "service": "payments.v1.Payments",
+            "name": "GetCharge",
+            "input": "payments.v1.GetChargeRequest",
+            "output": "payments.v1.Charge",
+            "client_streaming": false,
+            "server_streaming": false
+          },
+          "Watch": {
+            "service": "payments.v1.Payments",
+            "name": "Watch",
+            "input": "payments.v1.GetChargeRequest",
+            "output": "payments.v1.Charge",
+            "client_streaming": false,
+            "server_streaming": true
+          }
+        }
+      }
+    },
+    "lines": {
+      "enum:payments.v1.PaymentStatus": 25,
+      "enum_value:payments.v1.PaymentStatus.#0": 26,
+      "enum_value:payments.v1.PaymentStatus.#1": 27,
+      "enum_value:payments.v1.PaymentStatus.#2": 28,
+      "field:payments.v1.Charge.#1": 8,
+      "field:payments.v1.Charge.#4": 9,
+      "field:payments.v1.Charge.#5": 11,
+      "field:payments.v1.Charge.#6": 12,
+      "field:payments.v1.Charge.#7": 14,
+      "field:payments.v1.Charge.#8": 15,
+      "field:payments.v1.Charge.#9": 16,
+      "field:payments.v1.GetChargeRequest.#1": 32,
+      "field:payments.v1.Money.#1": 21,
+      "field:payments.v1.Money.#2": 22,
+      "file:proto/payments/v1/payments.proto": 1,
+      "message:payments.v1.Charge": 7,
+      "message:payments.v1.GetChargeRequest": 31,
+      "message:payments.v1.Money": 20,
+      "rpc:payments.v1.Payments.GetCharge": 36,
+      "rpc:payments.v1.Payments.Watch": 37,
+      "service:payments.v1.Payments": 35
+    }
+  },
+  "callers": null,
+  "missing_callers": [
+    {
+      "caller": {
+        "repo": "jastijayakrishna/Parent-Proof",
+        "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+        "deploy_unit": "billing-worker",
+        "language": "go"
+      },
+      "reason": "USAGE_SIGNATURE_INVALID",
+      "detail": "signed by workflow \"jastijayakrishna/Parent-Proof/.github/workflows/usage-e2e.yml@refs/heads/main\", not \"jastijayakrishna/Parent-Proof/.github/workflows/gates.yml\""
+    },
+    {
+      "caller": {
+        "repo": "jastijayakrishna/Parent-Proof",
+        "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+        "deploy_unit": "refund-job",
+        "language": "go"
+      },
+      "reason": "USAGE_SIGNATURE_INVALID",
+      "detail": "signed by workflow \"jastijayakrishna/Parent-Proof/.github/workflows/usage-e2e.yml@refs/heads/main\", not \"jastijayakrishna/Parent-Proof/.github/workflows/gates.yml\""
+    }
+  ],
+  "external_callers_possible": false,
+  "decision": {
+    "verdict": "UNKNOWN",
+    "aspects": {
+      "generated_code": "UNKNOWN",
+      "runtime": "UNKNOWN",
+      "source_build": "UNKNOWN"
+    },
+    "changes": [
+      {
+        "kind": "FIELD_REMOVED",
+        "symbol": {
+          "kind": "field",
+          "name": "payments.v1.Charge.#7"
+        },
+        "file": "proto/payments/v1/payments.proto",
+        "summary": "removes Charge.amount_cents (#7)",
+        "additive": false,
+        "old": {
+          "name": "amount_cents",
+          "type": "int64"
+        },
+        "affects": [
+          {
+            "kind": "field",
+            "name": "payments.v1.Charge.#7"
+          }
+        ]
+      }
+    ],
+    "findings": [
+      {
+        "rule": "CALLER_USAGE_SIGNATURE_INVALID",
+        "outcome": "UNKNOWN",
+        "aspect": "runtime",
+        "symbol": {
+          "kind": "",
+          "name": ""
+        },
+        "caller": {
+          "repo": "jastijayakrishna/Parent-Proof",
+          "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+          "deploy_unit": "billing-worker",
+          "language": "go"
+        },
+        "reason": "USAGE_SIGNATURE_INVALID",
+        "detail": "signed by workflow \"jastijayakrishna/Parent-Proof/.github/workflows/usage-e2e.yml@refs/heads/main\", not \"jastijayakrishna/Parent-Proof/.github/workflows/gates.yml\"",
+        "fix": "jastijayakrishna/Parent-Proof's usage records do not carry a valid signature from its own CI (signed by workflow \"jastijayakrishna/Parent-Proof/.github/workflows/usage-e2e.yml@refs/heads/main\", not \"jastijayakrishna/Parent-Proof/.github/workflows/gates.yml\"). Run `verifier usage publish` again in jastijayakrishna/Parent-Proof's CI; if it persists, check who else writes to the usage store."
+      },
+      {
+        "rule": "CALLER_USAGE_SIGNATURE_INVALID",
+        "outcome": "UNKNOWN",
+        "aspect": "runtime",
+        "symbol": {
+          "kind": "",
+          "name": ""
+        },
+        "caller": {
+          "repo": "jastijayakrishna/Parent-Proof",
+          "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+          "deploy_unit": "refund-job",
+          "language": "go"
+        },
+        "reason": "USAGE_SIGNATURE_INVALID",
+        "detail": "signed by workflow \"jastijayakrishna/Parent-Proof/.github/workflows/usage-e2e.yml@refs/heads/main\", not \"jastijayakrishna/Parent-Proof/.github/workflows/gates.yml\"",
+        "fix": "jastijayakrishna/Parent-Proof's usage records do not carry a valid signature from its own CI (signed by workflow \"jastijayakrishna/Parent-Proof/.github/workflows/usage-e2e.yml@refs/heads/main\", not \"jastijayakrishna/Parent-Proof/.github/workflows/gates.yml\"). Run `verifier usage publish` again in jastijayakrishna/Parent-Proof's CI; if it persists, check who else writes to the usage store."
+      }
+    ],
+    "callers": [
+      {
+        "caller": {
+          "repo": "jastijayakrishna/Parent-Proof",
+          "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+          "deploy_unit": "billing-worker",
+          "language": "go"
+        },
+        "outcome": "UNKNOWN",
+        "findings": 1,
+        "reasons": [
+          "USAGE_SIGNATURE_INVALID"
+        ]
+      },
+      {
+        "caller": {
+          "repo": "jastijayakrishna/Parent-Proof",
+          "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+          "deploy_unit": "refund-job",
+          "language": "go"
+        },
+        "outcome": "UNKNOWN",
+        "findings": 1,
+        "reasons": [
+          "USAGE_SIGNATURE_INVALID"
+        ]
+      }
+    ],
+    "unknown_reasons": [
+      "USAGE_SIGNATURE_INVALID"
+    ],
+    "engine_version": "verdict/v0.15.0",
+    "rules_version": "rules-protobuf/v0.15.0",
+    "callers_checked": 2,
+    "callers_broken": 0,
+    "callers_unknown": 2
+  },
+  "toolchain": {
+    "go": "go1.27.1",
+    "protocompile": "protocompile/v0.14.1",
+    "analyzer": "go-analyzer/v0.25.0",
+    "rule_engine": "verdict/v0.15.0",
+    "rules": "rules-protobuf/v0.15.0",
+    "schema_version": 1,
+    "resolver": "resolver/1+custom-options-lenient/1+provider-suffix/1+buf-workspace/1+module-paths/1+own-prefix/1+go-deps/3+relocated-standard/1+thirdparty-a61fd41b4cb3",
+    "contract_model": "contract-model/5"
+  },
+  "policy": {
+    "conclusion": "neutral",
+    "mode": "silent",
+    "unknown_as": "warn"
+  },
+  "cache_key": "d4cbe8b64755af469dfc7e1c051b8c1b57bfea6ea0a93d561fe486160fb11c74",
+  "binary": {
+    "revision": "69540630b02b08b77058d0cb3f8763fbc403500f",
+    "go": "go1.27.1"
+  },
+  "settings": {},
+  "policy_input": {
+    "config": {
+      "mode": "silent",
+      "unknown_as": "warn",
+      "builds": [
+        {
+          "goos": "linux",
+          "goarch": "amd64"
+        }
+      ],
+      "migration_suggestions": true
+    }
+  },
+  "usage": {
+    "store": "https://github.com/jastijayakrishna/Parent-Proof.git",
+    "version": "usage-store/v1.2.0",
+    "services": [
+      {
+        "service": "jastijayakrishna/Parent-Proof",
+        "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+        "index_sha256": "72147a5b8108d3c3b05fde7494bfb970b4edd682e92ccfd65322d0f210d98d83",
+        "problem": "USAGE_SIGNATURE_INVALID"
+      }
+    ]
+  }
+}

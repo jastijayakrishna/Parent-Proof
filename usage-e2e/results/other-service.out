@@ -1,0 +1,18 @@
+⚠ Needs review
+
+0 of 2 deploy units proved safe; 2 could not be checked (acme/other), so it does not say Merge.
+
+- acme/other (all 2 units: billing-worker and refund-job) — its branch is github.com/acme/other's, its index says github.com/jastijayakrishna/Parent-Proof
+  - Fix: acme/other's usage records do not carry a valid signature from its own CI (its branch is github.com/acme/other's, its index says github.com/jastijayakrishna/Parent-Proof). Run `verifier usage publish` again in acme/other's CI; if it persists, check who else writes to the usage store.
+
+Old and new running together (either deploy order): not proved
+Rebuilding callers with the new contract: not proved
+
+Breaking in general, safe for your callers:
+- removes Charge.amount_cents (#7): a wire, json, source break in general; no checked deploy unit uses it
+
+Verified against payments-protos@34357774 (base 38a0076c) and 0 caller commit(s).
+Checked 1 service(s) from the usage store /home/runner/work/_temp/e2e/s-other-service.git. Only services that publish usage records are checked.
+
+Decision d_4a79e16103f3e1aa · keep it with --out record.json and replay with: verifier replay --file record.json
+exit 3

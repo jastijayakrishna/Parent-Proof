@@ -1,0 +1,20 @@
+⚠ Needs review
+
+0 of 1 deploy units proved safe; 1 could not be checked (https://github.com/jastijayakrishna/Parent-Proof-no-such-store.git), so it does not say Merge.
+
+- https://github.com/jastijayakrishna/Parent-Proof-no-such-store.git — gitstore: git fetch: exit status 128: remote: Repository not found.
+fatal: repository 'https://github.com/jastijayakrishna/Parent-Proof-no-such-store.git/' not found
+  - Fix: The usage store https://github.com/jastijayakrishna/Parent-Proof-no-such-store.git could not be read (gitstore: git fetch: exit status 128: remote: Repository not found.
+fatal: repository 'https://github.com/jastijayakrishna/Parent-Proof-no-such-store.git/' not found), so no service's use of this contract is known. Check the store given to --usage and that VERIFIER_USAGE_TOKEN can read it (contents: read on that repository), then run the check again.
+
+Old and new running together (either deploy order): not proved
+Rebuilding callers with the new contract: not proved
+
+Breaking in general, safe for your callers:
+- removes Charge.amount_cents (#7): a wire, json, source break in general; no checked deploy unit uses it
+
+Verified against payments-protos@34357774 (base 38a0076c) and 0 caller commit(s).
+Checked 0 service(s) from the usage store https://github.com/jastijayakrishna/Parent-Proof-no-such-store.git. Only services that publish usage records are checked.
+
+Decision d_cbc88d8aa848c443 · keep it with --out record.json and replay with: verifier replay --file record.json
+exit 3

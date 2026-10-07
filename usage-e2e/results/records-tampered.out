@@ -1,0 +1,20 @@
+⚠ Needs review
+
+0 of 2 deploy units proved safe; 2 could not be checked (jastijayakrishna/Parent-Proof), so it does not say Merge.
+
+- jastijayakrishna/Parent-Proof (billing-worker) — the record of billing-worker@linux-amd64 is not the one its index names
+  - Fix: A usage record of jastijayakrishna/Parent-Proof is not the one its signed index names (the record of billing-worker@linux-amd64 is not the one its index names). Run `verifier usage publish` again in jastijayakrishna/Parent-Proof's CI.
+- jastijayakrishna/Parent-Proof (refund-job) — the record of refund-job@linux-amd64 is not the one its index names
+  - Fix: A usage record of jastijayakrishna/Parent-Proof is not the one its signed index names (the record of refund-job@linux-amd64 is not the one its index names). Run `verifier usage publish` again in jastijayakrishna/Parent-Proof's CI.
+
+Old and new running together (either deploy order): not proved
+Rebuilding callers with the new contract: not proved
+
+Breaking in general, safe for your callers:
+- removes Charge.amount_cents (#7): a wire, json, source break in general; no checked deploy unit uses it
+
+Verified against payments-protos@34357774 (base 38a0076c) and 0 caller commit(s).
+Checked 1 service(s) from the usage store /home/runner/work/_temp/e2e/s-records-tampered.git. Only services that publish usage records are checked.
+
+Decision d_f80f6cde5618ca90 · keep it with --out record.json and replay with: verifier replay --file record.json
+exit 3

@@ -1,0 +1,18 @@
+⚠ Needs review
+
+0 of 2 deploy units proved safe; 2 could not be checked (jastijayakrishna/Parent-Proof), so it does not say Merge.
+
+- jastijayakrishna/Parent-Proof (all 2 units: billing-worker and refund-job) — the issuer's keys could not be read: Get "https://issuer.invalid/.well-known/openid-configuration": dial tcp: lookup issuer.invalid on 127.0.0.53:53: no such host
+  - Fix: jastijayakrishna/Parent-Proof's usage records do not carry a valid signature from its own CI (the issuer's keys could not be read: Get "https://issuer.invalid/.well-known/openid-configuration": dial tcp: lookup issuer.invalid on 127.0.0.53:53: no such host). Run `verifier usage publish` again in jastijayakrishna/Parent-Proof's CI; if it persists, check who else writes to the usage store.
+
+Old and new running together (either deploy order): not proved
+Rebuilding callers with the new contract: not proved
+
+Breaking in general, safe for your callers:
+- removes Charge.amount_cents (#7): a wire, json, source break in general; no checked deploy unit uses it
+
+Verified against payments-protos@34357774 (base 38a0076c) and 0 caller commit(s).
+Checked 1 service(s) from the usage store https://github.com/jastijayakrishna/Parent-Proof.git. Only services that publish usage records are checked.
+
+Decision d_26628fca6869ef2d · keep it with --out record.json and replay with: verifier replay --file record.json
+exit 3

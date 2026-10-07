@@ -1,0 +1,20 @@
+publish            true  Published the usage of github.com/jastijayakrishna/Parent-Proof at c522a594 to h
+publish-older      true  Not published: https://github.com/jastijayakrishna/Parent-Proof.git already hold
+signed             true  NO_GO -
+signed-scope       true  Checked 1 service(s)
+pinned             true  NO_GO -
+pinned-ref         true  NO_GO -
+pin-other          true  UNKNOWN USAGE_SIGNATURE_INVALID
+pin-sibling        true  UNKNOWN USAGE_SIGNATURE_INVALID
+pin-prefix         true  UNKNOWN USAGE_SIGNATURE_INVALID
+issuer-down        true  UNKNOWN USAGE_SIGNATURE_INVALID
+expired            true  UNKNOWN USAGE_RECORD_EXPIRED
+unreachable        true  UNKNOWN USAGE_STORE_UNREACHABLE
+unsigned           true  UNKNOWN USAGE_RECORD_UNSIGNED
+other-service      true  UNKNOWN USAGE_SIGNATURE_INVALID
+record-tampered    true  NO_GO USAGE_DIGEST_MISMATCH
+records-tampered   true  UNKNOWN USAGE_DIGEST_MISMATCH
+record-deleted     true  NO_GO USAGE_DIGEST_MISMATCH
+index-edited       true  UNKNOWN USAGE_SIGNATURE_INVALID
+pr-replay          true  UNKNOWN USAGE_SIGNATURE_INVALID
+store-tampered     true  NO_GO USAGE_DIGEST_MISMATCH

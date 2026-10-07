@@ -1,0 +1,18 @@
+⚠ Needs review
+
+0 of 2 deploy units proved safe; 2 could not be checked (jastijayakrishna/Parent-Proof), so it does not say Merge.
+
+- jastijayakrishna/Parent-Proof (all 2 units: billing-worker and refund-job) — published 2026-10-07T14:51:42Z (0s ago), older than 1s
+  - Fix: jastijayakrishna/Parent-Proof's usage records are too old (published 2026-10-07T14:51:42Z (0s ago), older than 1s): its CI has not published since. Run `verifier usage publish` on its default branch; set up as documented, it runs on every push.
+
+Old and new running together (either deploy order): not proved
+Rebuilding callers with the new contract: not proved
+
+Breaking in general, safe for your callers:
+- removes Charge.amount_cents (#7): a wire, json, source break in general; no checked deploy unit uses it
+
+Verified against payments-protos@34357774 (base 38a0076c) and 0 caller commit(s).
+Checked 1 service(s) from the usage store https://github.com/jastijayakrishna/Parent-Proof.git. Only services that publish usage records are checked.
+
+Decision d_dbcd0d82b38b59f6 · keep it with --out record.json and replay with: verifier replay --file record.json
+exit 3

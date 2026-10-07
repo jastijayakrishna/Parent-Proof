@@ -1,0 +1,5 @@
+time=2026-10-07T14:51:42.143Z level=INFO msg="caller analyzed" caller=billing mode=cold meta_reused=false packages=3 reused=0 analyzed=3 list=292ms load=662ms walk=1ms took=972ms checked=327 imported=319
+Published the usage of github.com/jastijayakrishna/Parent-Proof at c522a594 to https://github.com/jastijayakrishna/Parent-Proof.git (usage/github.com/jastijayakrishna/Parent-Proof), signed by this CI run.
+  billing-worker@linux-amd64: 26 uses of 1 contract files
+  refund-job@linux-amd64: 13 uses of 1 contract files
+exit 0

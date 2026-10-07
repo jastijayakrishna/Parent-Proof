@@ -1,0 +1,26 @@
+✗ Don't merge
+
+removes Charge.amount_cents (#7)
+
+2 of 2 deploy units break (jastijayakrishna/Parent-Proof) · 0 need review · 0 proved safe
+
+Breaks:
+- jastijayakrishna/Parent-Proof (all 2 units: billing-worker and refund-job) @ c522a594
+  Why: caller reads a field the new provider no longer sends; it will silently receive the default value [PROTO_FIELD_REMOVED_READ_BY_CALLER]
+  Why: regenerated bindings no longer define this field; the caller will not compile [PROTO_FIELD_REMOVED_REFERENCED_IN_SOURCE]
+  - cmd/refund-job/main.go:17
+  - internal/ledger/ledger.go:21
+
+Old and new running together (new provider → old callers): breaks
+Rebuilding callers with the new contract: breaks
+
+How to ship this safely:
+1. Keep Charge.amount_cents (#7) until jastijayakrishna/Parent-Proof (all 2 units: billing-worker and refund-job) stop using it: cmd/refund-job/main.go:17, internal/ledger/ledger.go:21. Remove it only after those callers are deployed.
+2. When Charge.amount_cents (#7) is finally removed, add `reserved 7; reserved "amount_cents";` to Charge.
+Deploy order: ship and deploy the caller changes first, then merge and deploy this provider change.
+
+Verified against payments-protos@34357774 (base 38a0076c) and 1 caller commit(s).
+Checked 1 service(s) from the usage store https://github.com/jastijayakrishna/Parent-Proof.git. Only services that publish usage records are checked.
+
+Decision d_ba99f9fd736bece2 · keep it with --out record.json and replay with: verifier replay --file record.json
+exit 3

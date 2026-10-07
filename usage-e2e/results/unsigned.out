@@ -1,0 +1,18 @@
+⚠ Needs review
+
+0 of 2 deploy units proved safe; 2 could not be checked (jastijayakrishna/Parent-Proof), so it does not say Merge.
+
+- jastijayakrishna/Parent-Proof (all 2 units: billing-worker and refund-job) — its index has no signature (index.jwt)
+  - Fix: jastijayakrishna/Parent-Proof's usage records are not signed, so nothing shows they come from its own CI. Give its publish job `permissions: id-token: write`, so `verifier usage publish` signs them, or check with --unsigned for a trial.
+
+Old and new running together (either deploy order): not proved
+Rebuilding callers with the new contract: not proved
+
+Breaking in general, safe for your callers:
+- removes Charge.amount_cents (#7): a wire, json, source break in general; no checked deploy unit uses it
+
+Verified against payments-protos@34357774 (base 38a0076c) and 0 caller commit(s).
+Checked 1 service(s) from the usage store /home/runner/work/_temp/e2e/s-unsigned.git. Only services that publish usage records are checked.
+
+Decision d_47da5984f1446cf4 · keep it with --out record.json and replay with: verifier replay --file record.json
+exit 3
