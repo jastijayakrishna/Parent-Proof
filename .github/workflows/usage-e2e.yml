@@ -41,5 +41,5 @@ jobs:
           git config --global user.name e2e; git config --global user.email e2e@parent.invalid
           git add usage-e2e/results
           git commit -q -m "usage-e2e of $(date -u +%Y-%m-%dT%H:%MZ)" || true
-          for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q && break; sleep $((i * 5)); done
+          for i in 1 2 3 4 5 6 7 8 9 10 11 12; do git pull -q --rebase origin main && git push -q && break; s=$((i * 10)); [ "$s" -gt 60 ] && s=60; sleep "$s"; done
           exit $status
