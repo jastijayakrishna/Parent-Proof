@@ -1,0 +1,106 @@
+{
+  "pr": {
+    "n": 231,
+    "head": "0734d738552cc4cbf50b3b5530923412c5e4f5c1",
+    "base": "9a0cb93198793bde6f52088c18b59542e9aac3ef",
+    "title": "feat(expression): Add phrase and fulltext text-search operators",
+    "url": "https://github.com/jaegertracing/jaeger-idl/pull/231",
+    "updated": "2026-10-06T23:24:19Z",
+    "eco": "jaeger",
+    "key": "jaeger-231-0734d738552c",
+    "provider": "jaegertracing/jaeger-idl",
+    "consumer": "jaegertracing/jaeger",
+    "consumer_sha": "0ff4261cacacaab7c35addab105936b79183c34e"
+  },
+  "merge_base": "9a0cb93198793bde6f52088c18b59542e9aac3ef",
+  "decided": "6853bd749949c882c076a4f337c6c43d4c70c4b0",
+  "started": "2026-10-07T00:14:59Z",
+  "finished": "2026-10-07T00:18:15Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37550747861",
+  "verifier": {
+    "version": "fd5238d protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "bbcc0e4abf3404f5fa65e6676bd352b9a8217f1c87d564a1f6b6f738fd1e1637"
+  },
+  "exit": 1,
+  "results": [
+    {
+      "ecosystem": "jaeger",
+      "commit": "6853bd749949c882c076a4f337c6c43d4c70c4b0",
+      "parent": "9a0cb93198793bde6f52088c18b59542e9aac3ef",
+      "date": "2026-10-07",
+      "subject": "pull request 231 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "OPTION_CHANGED"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "proto/expression/v1/expression.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 130
+      },
+      "canary": {
+        "outcome": "breaks",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 130,
+        "errors": [
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1",
+          "module github.com/jaegertracing/jaeger-idl@latest found (v0.13.2, replaced by /tmp/parent-canary-2260898838), but does not contain package github.com/jaegertracing/jaeger-idl/model/v1"
+        ],
+        "error_count": 117,
+        "failed_packages": [
+          "github.com/jaegertracing/jaeger/cmd/anonymizer",
+          "github.com/jaegertracing/jaeger/cmd/anonymizer/app/anonymizer",
+          "github.com/jaegertracing/jaeger/cmd/anonymizer/app/query",
+          "github.com/jaegertracing/jaeger/cmd/anonymizer/app/writer",
+          "github.com/jaegertracing/jaeger/cmd/es-index-cleaner",
+          "github.com/jaegertracing/jaeger/cmd/es-index-cleaner/app",
+          "github.com/jaegertracing/jaeger/cmd/es-rollover",
+          "github.com/jaegertracing/jaeger/cmd/es-rollover/app",
+          "github.com/jaegertracing/jaeger/cmd/es-rollover/app/init",
+          "github.com/jaegertracing/jaeger/cmd/es-rollover/app/lookback",
+          "github.com/jaegertracing/jaeger/cmd/es-rollover/app/rollover",
+          "github.com/jaegertracing/jaeger/cmd/esmapping-generator",
+          "github.com/jaegertracing/jaeger/cmd/internal/storageconfig",
+          "github.com/jaegertracing/jaeger/cmd/jaeger",
+          "github.com/jaegertracing/jaeger/cmd/jaeger/components/connector/storageexporter",
+          "github.com/jaegertracing/jaeger/cmd/jaeger/components/exporter/storageexporter",
+          "github.com/jaegertracing/jaeger/cmd/jaeger/components/extension/jaegerquery",
+          "github.com/jaegertracing/jaeger/cmd/jaeger/components/extension/jaegerstorage",
+          "github.com/jaegertracing/jaeger/cmd/jaeger/components/extension/remotesampling",
+          "github.com/jaegertracing/jaeger/cmd/jaeger/components/extension/remotestorage"
+        ],
+        "detail": "canary: github.com/jaegertracing/jaeger-idl/model/v1 removed."
+      },
+      "seconds": 193.242289912,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-07T00:14:59.963Z level=INFO msg=cloning repo=c-jaeger url=https://github.com/jaegertracing/jaeger.git\njaeger      6853bd74 UNKNOWN  source_build=UNKNOWN compiler=compiles          193.2s \njaeger         1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   1: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 1 | not judged 0\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   1: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 1 | not judged 0\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  OPTION_CHANGED (e.g. jaeger@6853bd749949c882c076a4f337c6c43d4c70c4b0)\n  FAILED jaeger@6853bd749949c882c076a4f337c6c43d4c70c4b0: unknown_on_safe: OPTION_CHANGED\n\n1 windows in 3m15s.\nverifier gate: scan failed: 1 disagreements with the compiler or errors"
+}
