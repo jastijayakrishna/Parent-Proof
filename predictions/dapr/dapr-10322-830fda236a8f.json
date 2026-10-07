@@ -1,0 +1,75 @@
+{
+  "pr": {
+    "n": 10322,
+    "head": "830fda236a8fcf9a7ca07dfcac4f6a8868a85c37",
+    "base": "52b222688c31c326e1698f69ec5a4ebc34b7f759",
+    "title": "Feat/conversation max tokens",
+    "url": "https://github.com/dapr/dapr/pull/10322",
+    "updated": "2026-10-07T11:19:09Z",
+    "eco": "dapr",
+    "key": "dapr-10322-830fda236a8f",
+    "provider": "dapr/dapr",
+    "consumer": "dapr/go-sdk",
+    "consumer_sha": "e06de5352014bd6ab1106ddf7666083c44a12c27"
+  },
+  "merge_base": "52b222688c31c326e1698f69ec5a4ebc34b7f759",
+  "decided": "f7ea73bc6f9eb845e904bc82964d2eb355736e64",
+  "started": "2026-10-07T13:43:23Z",
+  "finished": "2026-10-07T13:43:52Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37630179476",
+  "verifier": {
+    "version": "db0e78e protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "6d78c5ff864d8bdb2d1203407bf17d7ff32545233200b3eba2e7a5e59928f8c7"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "dapr",
+      "commit": "f7ea73bc6f9eb845e904bc82964d2eb355736e64",
+      "parent": "52b222688c31c326e1698f69ec5a4ebc34b7f759",
+      "date": "2026-10-07",
+      "subject": "pull request 10322 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "dapr/proto/runtime/v1/ai.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 6
+      },
+      "canary": {
+        "outcome": "breaks",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 6,
+        "errors": [
+          "module github.com/dapr/dapr@latest found (v1.18.4, replaced by /tmp/parent-canary-188818373), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.18.4, replaced by /tmp/parent-canary-188818373), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.18.4, replaced by /tmp/parent-canary-188818373), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.18.4, replaced by /tmp/parent-canary-188818373), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.18.4, replaced by /tmp/parent-canary-188818373), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.18.4, replaced by /tmp/parent-canary-188818373), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1"
+        ],
+        "error_count": 6,
+        "failed_packages": [
+          "github.com/dapr/go-sdk/actor/manager",
+          "github.com/dapr/go-sdk/actor/runtime",
+          "github.com/dapr/go-sdk/actor/state",
+          "github.com/dapr/go-sdk/client",
+          "github.com/dapr/go-sdk/service/grpc",
+          "github.com/dapr/go-sdk/service/http"
+        ],
+        "detail": "canary: github.com/dapr/dapr/pkg/proto/common/v1 removed."
+      },
+      "seconds": 27.272125428,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-07T13:43:23.750Z level=INFO msg=cloning repo=c-dapr url=https://github.com/dapr/go-sdk.git\ndapr        f7ea73bc GO       source_build=GO      compiler=compiles           27.3s \ndapr           1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 29s."
+}

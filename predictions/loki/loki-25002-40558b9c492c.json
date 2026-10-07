@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 25002,
+    "head": "40558b9c492c9a753195b61a6bb95bf54e9e7575",
+    "base": "4218c8cebca9cd2e78affd5e0aaa2c240c11b8e7",
+    "title": "feat(logql): Log stream-first and timestamp-first query counts in query stats",
+    "url": "https://github.com/grafana/loki/pull/25002",
+    "updated": "2026-10-07T13:40:25Z",
+    "eco": "loki",
+    "key": "loki-25002-40558b9c492c",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "40558b9c492c9a753195b61a6bb95bf54e9e7575"
+  },
+  "merge_base": "70c8757398d7b9ee81283a65a4da9278bb506f08",
+  "decided": "345a8d875002aebb0650edf5b85d423c4d25a7e5",
+  "started": "2026-10-07T13:43:54Z",
+  "finished": "2026-10-07T13:44:15Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37630179476",
+  "verifier": {
+    "version": "db0e78e protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "6d78c5ff864d8bdb2d1203407bf17d7ff32545233200b3eba2e7a5e59928f8c7"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "345a8d875002aebb0650edf5b85d423c4d25a7e5",
+      "parent": "70c8757398d7b9ee81283a65a4da9278bb506f08",
+      "date": "2026-10-07",
+      "subject": "pull request 25002 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "pkg/logqlmodel/stats/stats.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: pkg/logqlmodel/stats/stats.proto",
+      "seconds": 15.487974385,
+      "total": 1
+    }
+  ],
+  "log": "loki        345a8d87 GO       source_build=GO      compiler=-                  15.5s \nloki           1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 21s."
+}
