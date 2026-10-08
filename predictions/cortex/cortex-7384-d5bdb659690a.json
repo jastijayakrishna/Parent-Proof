@@ -1,0 +1,54 @@
+{
+  "pr": {
+    "n": 7384,
+    "head": "d5bdb659690a3811a349c227f3e33de6a59bb408",
+    "base": "6fac9f4b447543a94c744a42f6867526d3a70b40",
+    "title": "Add per-tenant cardinality API endpoint",
+    "url": "https://github.com/cortexproject/cortex/pull/7384",
+    "updated": "2026-10-08T17:57:44Z",
+    "eco": "cortex",
+    "key": "cortex-7384-d5bdb659690a",
+    "provider": "cortexproject/cortex",
+    "consumer": "cortexproject/cortex",
+    "consumer_sha": "d5bdb659690a3811a349c227f3e33de6a59bb408"
+  },
+  "merge_base": "6fac9f4b447543a94c744a42f6867526d3a70b40",
+  "decided": "aa17d8c5e26c0f186d3e7d9fe31abab2f2027ebc",
+  "started": "2026-10-08T19:40:15Z",
+  "finished": "2026-10-08T19:40:32Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37833314221",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "cortex",
+      "commit": "aa17d8c5e26c0f186d3e7d9fe31abab2f2027ebc",
+      "parent": "6fac9f4b447543a94c744a42f6867526d3a70b40",
+      "date": "2026-10-08",
+      "subject": "pull request 7384 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "CONTRACT_COMPILE_ERROR",
+        "NEEDS_REVIEW"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "pkg/cortexpb/cardinality.proto",
+        "pkg/ingester/client/ingester.proto",
+        "pkg/storegateway/storegatewaypb/gateway.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 11.752549398,
+      "total": 1
+    }
+  ],
+  "log": "cortex      aa17d8c5 UNKNOWN  source_build=UNKNOWN compiler=-                  11.8s \ncortex         1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  CONTRACT_COMPILE_ERROR (e.g. cortex@aa17d8c5e26c0f186d3e7d9fe31abab2f2027ebc)\n    1   1  NEEDS_REVIEW (e.g. cortex@aa17d8c5e26c0f186d3e7d9fe31abab2f2027ebc)\n\n1 windows in 17s."
+}

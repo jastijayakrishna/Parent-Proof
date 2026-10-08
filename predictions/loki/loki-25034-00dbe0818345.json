@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 25034,
+    "head": "00dbe0818345d7455662ceaedb8fe883fcb7cb69",
+    "base": "c434fe99d7336c902b5db58c7d4cbb77ad938078",
+    "title": "feat(querier): Add object-store and section resolution metrics to data-object queries",
+    "url": "https://github.com/grafana/loki/pull/25034",
+    "updated": "2026-10-08T16:24:27Z",
+    "eco": "loki",
+    "key": "loki-25034-00dbe0818345",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "00dbe0818345d7455662ceaedb8fe883fcb7cb69"
+  },
+  "merge_base": "6abd850bc3e82fc7e7357a156b0989ccfcc6f6e0",
+  "decided": "fbf997062cc58fddb0e19b06b560d546a7c51906",
+  "started": "2026-10-08T19:40:19Z",
+  "finished": "2026-10-08T19:40:39Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37833314221",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "fbf997062cc58fddb0e19b06b560d546a7c51906",
+      "parent": "6abd850bc3e82fc7e7357a156b0989ccfcc6f6e0",
+      "date": "2026-10-08",
+      "subject": "pull request 25034 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "pkg/logqlmodel/stats/stats.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: pkg/logqlmodel/stats/stats.proto",
+      "seconds": 14.742999597,
+      "total": 1
+    }
+  ],
+  "log": "loki        fbf99706 GO       source_build=GO      compiler=-                  14.7s \nloki           1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 20s."
+}
