@@ -1,0 +1,52 @@
+{
+  "pr": {
+    "n": 29926,
+    "head": "ac8437231f1e765e54f01373e31014d6c271fca4",
+    "base": "26900c21d56ce5ade39043530db047941f9cd7a1",
+    "title": "feat: allow rollback while auto-sync is enabled",
+    "url": "https://github.com/argoproj/argo-cd/pull/29926",
+    "updated": "2026-10-08T06:21:25Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-29926-ac8437231f1e",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "ac8437231f1e765e54f01373e31014d6c271fca4"
+  },
+  "merge_base": "963f7fda16f64710ecfafd7b1f92fe3485786530",
+  "decided": "c8affce95070e43d2f1cbb90c60037313cc08b91",
+  "started": "2026-10-08T06:23:51Z",
+  "finished": "2026-10-08T06:24:22Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37737138185",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "c8affce95070e43d2f1cbb90c60037313cc08b91",
+      "parent": "963f7fda16f64710ecfafd7b1f92fe3485786530",
+      "date": "2026-10-08",
+      "subject": "pull request 29926 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "CONTRACT_COMPILE_ERROR"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "pkg/apis/application/v1alpha1/generated.proto",
+        "server/settings/settings.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 28.326647757,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     c8affce9 UNKNOWN  source_build=UNKNOWN compiler=-                  28.3s \nargo-cd        1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  CONTRACT_COMPILE_ERROR (e.g. argo-cd@c8affce95070e43d2f1cbb90c60037313cc08b91)\n\n1 windows in 31s."
+}
