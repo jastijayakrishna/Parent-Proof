@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-08 06:27 UTC.
+Updated 2026-10-08 13:58 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,13 +11,15 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 63 | 54 | 3 | 6 | 36 | 35 | 0 | 0 |
+| 68 | 58 | 3 | 7 | 38 | 37 | 0 | 0 |
 
 ## Every pull request
 
 | project | pull request | verifier | for the build | compiler | needs review because |
 |---|---|---|---|---|---|
 | argo-cd | [#24756](https://github.com/argoproj/argo-cd/pull/24756) feat: add paramPrefix to git generator to namespace data included from files (#18048) | Merge | Merge | not judged |  |
+| argo-cd | [#25416](https://github.com/argoproj/argo-cd/pull/25416) feat(repo-server): partial-clone | Merge | Merge | not judged |  |
+| argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Merge | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29322](https://github.com/argoproj/argo-cd/pull/29322) feat(appset): add metrics for appset to measure rollout durations for progressive sync | Merge | Merge | not judged |  |
@@ -48,12 +50,14 @@ verifier before the compiler built the consumer against it.
 | lnd | [#10067](https://github.com/lightningnetwork/lnd/pull/10067) Fees: add fractional sat/vB support (lncli) and sats_per_kw (RPC) | Merge | Merge | compiles |  |
 | lnd | [#10316](https://github.com/lightningnetwork/lnd/pull/10316) Invoice rpc metadata support | Merge | Merge | compiles |  |
 | lnd | [#10411](https://github.com/lightningnetwork/lnd/pull/10411) aliasmgr: Allow persisting manually added alias scids | Merge | Merge | compiles |  |
+| lnd | [#10425](https://github.com/lightningnetwork/lnd/pull/10425) RBF Coop Close using sat/kw instead of sat/vb | Merge | Merge | compiles |  |
 | lnd | [#10504](https://github.com/lightningnetwork/lnd/pull/10504) lnwallet/btcwallet: support taproot script path fee estimation in FundPSBT | Merge | Merge | compiles |  |
 | lnd | [#10670](https://github.com/lightningnetwork/lnd/pull/10670) Add raw transaction hex to `pendingsweeps` response | Merge | Merge | compiles |  |
 | lnd | [#10670](https://github.com/lightningnetwork/lnd/pull/10670) Add raw transaction hex to `pendingsweeps` response | Merge | Merge | compiles |  |
 | lnd | [#10685](https://github.com/lightningnetwork/lnd/pull/10685) Update AddHoldInvoice to add support for optional preimage/hash generation | Merge | Merge | compiles |  |
 | lnd | [#10735](https://github.com/lightningnetwork/lnd/pull/10735) Freebie onion message slot and per-peer stats in ListPeers | Merge | Merge | compiles |  |
 | lnd | [#10744](https://github.com/lightningnetwork/lnd/pull/10744) lnrpc: add scid filter to ListChannels RPC and lncli | Merge | Merge | compiles |  |
+| lnd | [#10798](https://github.com/lightningnetwork/lnd/pull/10798) Add BIP-0322 message signing to `SignMessageWithAddr` RPC | Merge | Merge | compiles |  |
 | lnd | [#10889](https://github.com/lightningnetwork/lnd/pull/10889) Remove deprecated fee rate option --sat_per_byte | Merge | Merge | compiles |  |
 | lnd | [#10943](https://github.com/lightningnetwork/lnd/pull/10943) lnrpc/chainrpc: surface re-org depth and Done over the chain notifier | Merge | Merge | compiles |  |
 | lnd | [#10973](https://github.com/lightningnetwork/lnd/pull/10973) multi: expose peer address sources and offline peers in ListPeers | Merge | Merge | compiles |  |
@@ -65,6 +69,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#24991](https://github.com/grafana/loki/pull/24991) feat(logline): Report Logline query stats on the metrics.go line | Merge | Merge | not judged |  |
 | loki | [#25002](https://github.com/grafana/loki/pull/25002) feat(logql): Log stream-first and timestamp-first query counts in query stats | Merge | Merge | not judged |  |
 | loki | [#25006](https://github.com/grafana/loki/pull/25006) feat(pattern-ingester): Add a gRPC method that accepts InternalPushRequest  | Needs review | Needs review | not judged | NEEDS_REVIEW |
+| loki | [#25024](https://github.com/grafana/loki/pull/25024) feat(dataobj-compactor): Add an IndexFilter compaction task | Merge | Merge | not judged |  |
 | temporal | [#856](https://github.com/temporalio/api/pull/856) vts: add time skipping to schedules | Merge | Merge | not judged |  |
 | temporal | [#871](https://github.com/temporalio/api/pull/871) Clarify namespace poller group snapshots | Merge | Merge | not judged |  |
 | temporal | [#872](https://github.com/temporalio/api/pull/872) Klassenq/nexus per endpoint encryption | Don't merge | Merge | not judged |  |
