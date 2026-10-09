@@ -1,0 +1,66 @@
+{
+  "pr": {
+    "n": 25082,
+    "head": "89ec8cfdde5d4ccdbe2b9aee97de2f6fd5d23bde",
+    "base": "2c0d74ea9d0bdb30e338143b13f245318703ec0e",
+    "title": "feat(logline): Report Logline stats and outcome in data.stats.logline",
+    "url": "https://github.com/grafana/loki/pull/25082",
+    "updated": "2026-10-09T22:33:44Z",
+    "eco": "loki",
+    "key": "loki-25082-89ec8cfdde5d",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "89ec8cfdde5d4ccdbe2b9aee97de2f6fd5d23bde"
+  },
+  "merge_base": "2c0d74ea9d0bdb30e338143b13f245318703ec0e",
+  "decided": "93bf932e44182afab6a9319dd815e1667c3e3bc8",
+  "started": "2026-10-09T23:41:37Z",
+  "finished": "2026-10-09T23:41:55Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/38005407749",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "93bf932e44182afab6a9319dd815e1667c3e3bc8",
+      "parent": "2c0d74ea9d0bdb30e338143b13f245318703ec0e",
+      "date": "2026-10-09",
+      "subject": "pull request 25082 as one change",
+      "verdict": "NO_GO",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "NO_GO",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "UNRESOLVED_MEMBER"
+      ],
+      "evidence": [
+        "integration/client/client.go:523",
+        "integration/client/client.go:651",
+        "pkg/canary/reader/reader.go:307",
+        "pkg/canary/reader/reader.go:399",
+        "pkg/logcli/client/client.go:238",
+        "pkg/logcli/client/client.go:321",
+        "pkg/loghttp/query.go:390",
+        "pkg/querytee/goldfish/stats_extractor.go:31",
+        "pkg/ruler/evaluator_remote.go:294",
+        "pkg/util/marshal/legacy/marshal.go:33",
+        "pkg/util/marshal/marshal.go:165",
+        "pkg/util/marshal/query.go:325",
+        "tools/querycomparator/compare.go:238"
+      ],
+      "evidence_count": 13,
+      "changed": [
+        "pkg/logqlmodel/stats/stats.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: pkg/logqlmodel/stats/stats.proto",
+      "seconds": 13.681907619,
+      "total": 1
+    }
+  ],
+  "log": "loki        93bf932e NO_GO    source_build=UNKNOWN compiler=-                  13.7s \nloki           1 decisions  GO   0  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  UNRESOLVED_MEMBER (e.g. loki@93bf932e44182afab6a9319dd815e1667c3e3bc8)\n\n1 windows in 18s."
+}

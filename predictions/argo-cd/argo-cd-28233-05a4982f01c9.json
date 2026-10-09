@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 28233,
+    "head": "05a4982f01c9ff8bc57b2ef81996497e7eca020a",
+    "base": "7f7a9dcf24b467f184e6194649977913028c6528",
+    "title": "feat: disambiguate local users from SSO users in RBAC with strict mode",
+    "url": "https://github.com/argoproj/argo-cd/pull/28233",
+    "updated": "2026-10-09T22:47:58Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-28233-05a4982f01c9",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "05a4982f01c9ff8bc57b2ef81996497e7eca020a"
+  },
+  "merge_base": "7f7a9dcf24b467f184e6194649977913028c6528",
+  "decided": "69d59cedbaf90af115f1be464f838dbb921a44b2",
+  "started": "2026-10-09T23:41:40Z",
+  "finished": "2026-10-09T23:42:26Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/38005407749",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "69d59cedbaf90af115f1be464f838dbb921a44b2",
+      "parent": "7f7a9dcf24b467f184e6194649977913028c6528",
+      "date": "2026-10-09",
+      "subject": "pull request 28233 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "server/session/session.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 41.710993573,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     69d59ced GO       source_build=GO      compiler=-                  41.7s \nargo-cd        1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 45s."
+}
