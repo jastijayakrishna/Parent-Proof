@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-08 19:40 UTC.
+Updated 2026-10-09 00:04 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 74 | 63 | 3 | 8 | 39 | 38 | 0 | 0 |
+| 75 | 64 | 3 | 8 | 40 | 39 | 0 | 0 |
 
 ## Every pull request
 
@@ -36,6 +36,7 @@ verifier before the compiler built the consumer against it.
 | dapr | [#10367](https://github.com/dapr/dapr/pull/10367) Binary storebuilding block support | Merge | Merge | compiles |  |
 | dapr | [#10367](https://github.com/dapr/dapr/pull/10367) Binary storebuilding block support | Merge | Merge | compiles |  |
 | dapr | [#10536](https://github.com/dapr/dapr/pull/10536) Actors: send Dapr-Reentrancy-Id on reminder and timer callbacks | Merge | Merge | compiles |  |
+| dapr | [#10682](https://github.com/dapr/dapr/pull/10682) Security: Scheduler accepted actor reminders targeting another app's internal workflow actors | Merge | Merge | compiles |  |
 | dapr | [#10682](https://github.com/dapr/dapr/pull/10682) Security: Scheduler accepted actor reminders targeting another app's internal workflow actors | Merge | Merge | compiles |  |
 | istio | [#3722](https://github.com/istio/api/pull/3722) feat(tracing): add otel always_on sampler | Merge | Merge | compiles |  |
 | istio | [#3787](https://github.com/istio/api/pull/3787)  add cert_signer_namespace_map field to MeshConfig for namespace-scoped CSR signer authorization | Merge | Merge | compiles |  |
