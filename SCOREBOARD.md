@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-09 13:59 UTC.
+Updated 2026-10-09 19:38 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 79 | 68 | 3 | 8 | 42 | 41 | 0 | 0 |
+| 81 | 70 | 3 | 8 | 42 | 41 | 0 | 0 |
 
 ## Every pull request
 
@@ -24,6 +24,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Merge | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29322](https://github.com/argoproj/argo-cd/pull/29322) feat(appset): add metrics for appset to measure rollout durations for progressive sync | Merge | Merge | not judged |  |
 | argo-cd | [#29926](https://github.com/argoproj/argo-cd/pull/29926) feat: allow rollback while auto-sync is enabled | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | cometbft-cosmos-sdk | [#6100](https://github.com/cometbft/cometbft/pull/6100) fix(types,state): enforce minimum Block.MaxBytes floor and handle small limits defensively | Merge | Merge | compiles |  |
@@ -78,6 +79,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25024](https://github.com/grafana/loki/pull/25024) feat(dataobj-compactor): Add an IndexFilter compaction task | Merge | Merge | not judged |  |
 | loki | [#25027](https://github.com/grafana/loki/pull/25027) feat(dataobj-compactor): Keep unmerged runs by filtering the source index | Merge | Merge | not judged |  |
 | loki | [#25034](https://github.com/grafana/loki/pull/25034) feat(querier): Add object-store and section resolution metrics to data-object queries | Merge | Merge | not judged |  |
+| loki | [#25077](https://github.com/grafana/loki/pull/25077) fix(logline): Recompute effective concurrency across parallel hint lookups | Merge | Merge | not judged |  |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |
 | temporal | [#856](https://github.com/temporalio/api/pull/856) vts: add time skipping to schedules | Merge | Merge | not judged |  |
 | temporal | [#856](https://github.com/temporalio/api/pull/856) vts: add time skipping to schedules | Merge | Merge | not judged |  |

@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 25077,
+    "head": "06d4fb72bfdecbd905eb9757b575791e934cbde0",
+    "base": "eecd9922d07c6b27e9513520ad79c91c1c40d2cc",
+    "title": "fix(logline): Recompute effective concurrency across parallel hint lookups",
+    "url": "https://github.com/grafana/loki/pull/25077",
+    "updated": "2026-10-09T19:12:53Z",
+    "eco": "loki",
+    "key": "loki-25077-06d4fb72bfde",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "06d4fb72bfdecbd905eb9757b575791e934cbde0"
+  },
+  "merge_base": "eecd9922d07c6b27e9513520ad79c91c1c40d2cc",
+  "decided": "cdeb9b4929911af2033818972a06e90b06f3f01f",
+  "started": "2026-10-09T19:37:45Z",
+  "finished": "2026-10-09T19:38:09Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37981243933",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "cdeb9b4929911af2033818972a06e90b06f3f01f",
+      "parent": "eecd9922d07c6b27e9513520ad79c91c1c40d2cc",
+      "date": "2026-10-09",
+      "subject": "pull request 25077 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "pkg/logproto/logproto.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: pkg/logproto/logproto.proto",
+      "seconds": 18.790990845,
+      "total": 1
+    }
+  ],
+  "log": "loki        cdeb9b49 GO       source_build=GO      compiler=-                  18.8s \nloki           1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 24s."
+}
