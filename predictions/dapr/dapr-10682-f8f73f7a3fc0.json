@@ -1,0 +1,75 @@
+{
+  "pr": {
+    "n": 10682,
+    "head": "f8f73f7a3fc05f0518e84c62b287a12dddae0fbd",
+    "base": "ff053f73a59362d3fa6321aab9c9a29081412801",
+    "title": "Security: Scheduler accepted actor reminders targeting another app's internal workflow actors",
+    "url": "https://github.com/dapr/dapr/pull/10682",
+    "updated": "2026-10-09T13:44:22Z",
+    "eco": "dapr",
+    "key": "dapr-10682-f8f73f7a3fc0",
+    "provider": "dapr/dapr",
+    "consumer": "dapr/go-sdk",
+    "consumer_sha": "e06de5352014bd6ab1106ddf7666083c44a12c27"
+  },
+  "merge_base": "ff053f73a59362d3fa6321aab9c9a29081412801",
+  "decided": "ea7826feee0a24e859220d6b3636220dc770c865",
+  "started": "2026-10-09T13:58:58Z",
+  "finished": "2026-10-09T13:59:37Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/37940429731",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "dapr",
+      "commit": "ea7826feee0a24e859220d6b3636220dc770c865",
+      "parent": "ff053f73a59362d3fa6321aab9c9a29081412801",
+      "date": "2026-10-09",
+      "subject": "pull request 10682 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "dapr/proto/internals/v1/reminders.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 6
+      },
+      "canary": {
+        "outcome": "breaks",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 6,
+        "errors": [
+          "module github.com/dapr/dapr@latest found (v1.18.5, replaced by /tmp/parent-canary-325221167), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.18.5, replaced by /tmp/parent-canary-325221167), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.18.5, replaced by /tmp/parent-canary-325221167), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.18.5, replaced by /tmp/parent-canary-325221167), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.18.5, replaced by /tmp/parent-canary-325221167), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.18.5, replaced by /tmp/parent-canary-325221167), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1"
+        ],
+        "error_count": 6,
+        "failed_packages": [
+          "github.com/dapr/go-sdk/actor/manager",
+          "github.com/dapr/go-sdk/actor/runtime",
+          "github.com/dapr/go-sdk/actor/state",
+          "github.com/dapr/go-sdk/client",
+          "github.com/dapr/go-sdk/service/grpc",
+          "github.com/dapr/go-sdk/service/http"
+        ],
+        "detail": "canary: github.com/dapr/dapr/pkg/proto/common/v1 removed."
+      },
+      "seconds": 36.894775192,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-09T13:58:58.761Z level=INFO msg=cloning repo=c-dapr url=https://github.com/dapr/go-sdk.git\ndapr        ea7826fe GO       source_build=GO      compiler=compiles           36.9s \ndapr           1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 39s."
+}
