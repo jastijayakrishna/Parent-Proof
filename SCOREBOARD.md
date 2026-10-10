@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-10 03:07 UTC.
+Updated 2026-10-10 10:09 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 85 | 73 | 4 | 8 | 43 | 42 | 0 | 0 |
+| 87 | 74 | 4 | 9 | 44 | 43 | 0 | 0 |
 
 ## Every pull request
 
@@ -24,6 +24,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Merge | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29322](https://github.com/argoproj/argo-cd/pull/29322) feat(appset): add metrics for appset to measure rollout durations for progressive sync | Merge | Merge | not judged |  |
+| argo-cd | [#29926](https://github.com/argoproj/argo-cd/pull/29926) feat: allow rollback while auto-sync is enabled | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29926](https://github.com/argoproj/argo-cd/pull/29926) feat: allow rollback while auto-sync is enabled | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
@@ -42,6 +43,7 @@ verifier before the compiler built the consumer against it.
 | dapr | [#10682](https://github.com/dapr/dapr/pull/10682) Security: Scheduler accepted actor reminders targeting another app's internal workflow actors | Merge | Merge | compiles |  |
 | dapr | [#10682](https://github.com/dapr/dapr/pull/10682) Security: Scheduler accepted actor reminders targeting another app's internal workflow actors | Merge | Merge | compiles |  |
 | dapr | [#10682](https://github.com/dapr/dapr/pull/10682) Security: Scheduler accepted actor reminders targeting another app's internal workflow actors | Merge | Merge | compiles |  |
+| dapr | [#10717](https://github.com/dapr/dapr/pull/10717) jobs: allow overriding the app route a triggered job is delivered on | Merge | Merge | compiles |  |
 | istio | [#3722](https://github.com/istio/api/pull/3722) feat(tracing): add otel always_on sampler | Merge | Merge | compiles |  |
 | istio | [#3787](https://github.com/istio/api/pull/3787)  add cert_signer_namespace_map field to MeshConfig for namespace-scoped CSR signer authorization | Merge | Merge | compiles |  |
 | istio | [#3791](https://github.com/istio/api/pull/3791) docs: use camelCase prefixRewrite in HTTPRedirect example | Merge | Merge | compiles |  |

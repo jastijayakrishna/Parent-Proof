@@ -4,13 +4,13 @@ A public, timestamped record of how a contract verifier does on real pull
 requests it has never seen.
 
 <!-- live:begin -->
-**Updated 2026-10-10 03:07 UTC.** [![shadow](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml/badge.svg)](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml)
+**Updated 2026-10-10 10:09 UTC.** [![shadow](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml/badge.svg)](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml)
 
 | | changes | judge not verified | broke the build | caught | missed | false alarms | needs review |
 |---|---|---|---|---|---|---|---|
 | [Real upgrades](HISTORY.md), 9 projects' history | 178 | 0 | 24 | 21 | 0 | 1 | 25 |
-| [Open pull requests](SCOREBOARD.md), decided live | 85 | 25 | 0 | 0 | 0 | 0 | 8 |
-| [Stress test](STRESS.md), Go: projects never used to tune it | 158 | 2 | 7 | 7 | 0 | 0 | 27 |
+| [Open pull requests](SCOREBOARD.md), decided live | 87 | 25 | 0 | 0 | 0 | 0 | 9 |
+| [Stress test](STRESS.md), Go: projects never used to tune it | 159 | 2 | 7 | 7 | 0 | 0 | 28 |
 | [Stress test](STRESS.md), Go: hold-out projects, run once | 254 | 0 | 22 | 12 | 0 | 4 | 58 |
 | [Stress test](STRESS.md), Java: projects never used to tune it | 450 | 71 | 17 | 16 | 0 | 0 | 13 |
 | [Stress test](STRESS.md), Java: hold-out projects, run once | 491 | 80 | 2 | 2 | 0 | 1 | 31 |

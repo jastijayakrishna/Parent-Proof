@@ -1,0 +1,77 @@
+{
+  "pr": {
+    "n": 10717,
+    "head": "fc2df4dcd98da4e323aeb7454cfde3b2a4273d6c",
+    "base": "cc0cdbef96ef68ce6e788b0f4d739aed9a0889d6",
+    "title": "jobs: allow overriding the app route a triggered job is delivered on",
+    "url": "https://github.com/dapr/dapr/pull/10717",
+    "updated": "2026-10-10T06:57:39Z",
+    "eco": "dapr",
+    "key": "dapr-10717-fc2df4dcd98d",
+    "provider": "dapr/dapr",
+    "consumer": "dapr/go-sdk",
+    "consumer_sha": "e06de5352014bd6ab1106ddf7666083c44a12c27"
+  },
+  "merge_base": "cc0cdbef96ef68ce6e788b0f4d739aed9a0889d6",
+  "decided": "83e259a74e2c8af623ae49d6f61cd1b5f2bb7955",
+  "started": "2026-10-10T10:08:25Z",
+  "finished": "2026-10-10T10:09:03Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/38043380310",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "dapr",
+      "commit": "83e259a74e2c8af623ae49d6f61cd1b5f2bb7955",
+      "parent": "cc0cdbef96ef68ce6e788b0f4d739aed9a0889d6",
+      "date": "2026-10-10",
+      "subject": "pull request 10717 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "dapr/proto/internals/v1/jobs.proto",
+        "dapr/proto/runtime/v1/jobs.proto",
+        "dapr/proto/scheduler/v1/scheduler.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 6
+      },
+      "canary": {
+        "outcome": "breaks",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 6,
+        "errors": [
+          "module github.com/dapr/dapr@latest found (v1.18.16, replaced by /tmp/parent-canary-1071064715), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.18.16, replaced by /tmp/parent-canary-1071064715), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.18.16, replaced by /tmp/parent-canary-1071064715), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.18.16, replaced by /tmp/parent-canary-1071064715), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.18.16, replaced by /tmp/parent-canary-1071064715), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.18.16, replaced by /tmp/parent-canary-1071064715), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1"
+        ],
+        "error_count": 6,
+        "failed_packages": [
+          "github.com/dapr/go-sdk/actor/manager",
+          "github.com/dapr/go-sdk/actor/runtime",
+          "github.com/dapr/go-sdk/actor/state",
+          "github.com/dapr/go-sdk/client",
+          "github.com/dapr/go-sdk/service/grpc",
+          "github.com/dapr/go-sdk/service/http"
+        ],
+        "detail": "canary: github.com/dapr/dapr/pkg/proto/common/v1 removed."
+      },
+      "seconds": 37.435227235,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-10T10:08:25.937Z level=INFO msg=cloning repo=c-dapr url=https://github.com/dapr/go-sdk.git\ndapr        83e259a7 GO       source_build=GO      compiler=compiles           37.4s \ndapr           1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 38s."
+}
