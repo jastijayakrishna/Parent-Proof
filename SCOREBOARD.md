@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-12 00:06 UTC.
+Updated 2026-10-12 06:19 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 90 | 76 | 4 | 10 | 45 | 44 | 0 | 0 |
+| 92 | 78 | 4 | 10 | 47 | 46 | 0 | 0 |
 
 ## Every pull request
 
@@ -38,6 +38,7 @@ verifier before the compiler built the consumer against it.
 | dapr | [#9974](https://github.com/dapr/dapr/pull/9974) feat: search and vector blocks | Merge | Merge | compiles |  |
 | dapr | [#10322](https://github.com/dapr/dapr/pull/10322) Feat/conversation max tokens | Merge | Merge | compiles |  |
 | dapr | [#10322](https://github.com/dapr/dapr/pull/10322) Feat/conversation max tokens | Merge | Merge | compiles |  |
+| dapr | [#10367](https://github.com/dapr/dapr/pull/10367) Binary storebuilding block support | Merge | Merge | compiles |  |
 | dapr | [#10367](https://github.com/dapr/dapr/pull/10367) Binary storebuilding block support | Merge | Merge | compiles |  |
 | dapr | [#10367](https://github.com/dapr/dapr/pull/10367) Binary storebuilding block support | Merge | Merge | compiles |  |
 | dapr | [#10367](https://github.com/dapr/dapr/pull/10367) Binary storebuilding block support | Merge | Merge | compiles |  |
@@ -72,6 +73,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#10735](https://github.com/lightningnetwork/lnd/pull/10735) Freebie onion message slot and per-peer stats in ListPeers | Merge | Merge | compiles |  |
 | lnd | [#10744](https://github.com/lightningnetwork/lnd/pull/10744) lnrpc: add scid filter to ListChannels RPC and lncli | Merge | Merge | compiles |  |
 | lnd | [#10798](https://github.com/lightningnetwork/lnd/pull/10798) Add BIP-0322 message signing to `SignMessageWithAddr` RPC | Merge | Merge | compiles |  |
+| lnd | [#10807](https://github.com/lightningnetwork/lnd/pull/10807) chainntnfs: add a pkscript notifier stream | Merge | Merge | compiles |  |
 | lnd | [#10889](https://github.com/lightningnetwork/lnd/pull/10889) Remove deprecated fee rate option --sat_per_byte | Merge | Merge | compiles |  |
 | lnd | [#10943](https://github.com/lightningnetwork/lnd/pull/10943) lnrpc/chainrpc: surface re-org depth and Done over the chain notifier | Merge | Merge | compiles |  |
 | lnd | [#10973](https://github.com/lightningnetwork/lnd/pull/10973) multi: expose peer address sources and offline peers in ListPeers | Merge | Merge | compiles |  |

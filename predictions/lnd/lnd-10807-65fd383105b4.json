@@ -1,0 +1,72 @@
+{
+  "pr": {
+    "n": 10807,
+    "head": "65fd383105b44065e3b8b0ff6a767d883ba19995",
+    "base": "e9a8b3f9c8f96610204672e4f93c8f8b030a444e",
+    "title": "chainntnfs: add a pkscript notifier stream",
+    "url": "https://github.com/lightningnetwork/lnd/pull/10807",
+    "updated": "2026-10-12T04:47:52Z",
+    "eco": "lnd",
+    "key": "lnd-10807-65fd383105b4",
+    "provider": "lightningnetwork/lnd",
+    "consumer": "lightninglabs/lndclient",
+    "consumer_sha": "5c1b59d36c94ab2b520515f6b75d270c401166c8"
+  },
+  "merge_base": "e9a8b3f9c8f96610204672e4f93c8f8b030a444e",
+  "decided": "94bb75446f5d6e3b938b0f58e36331191c41ae66",
+  "started": "2026-10-12T06:15:21Z",
+  "finished": "2026-10-12T06:19:06Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/38211451412",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "lnd",
+      "commit": "94bb75446f5d6e3b938b0f58e36331191c41ae66",
+      "parent": "e9a8b3f9c8f96610204672e4f93c8f8b030a444e",
+      "date": "2026-10-12",
+      "subject": "pull request 10807 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "lnrpc/chainrpc/chainnotifier.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 10
+      },
+      "canary": {
+        "outcome": "breaks",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 10,
+        "errors": [
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-1327204009), but does not contain package github.com/lightningnetwork/lnd/lnrpc/verrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-1327204009), but does not contain package github.com/lightningnetwork/lnd/lnrpc/walletrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-1327204009), but does not contain package github.com/lightningnetwork/lnd/lnrpc/wtclientrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-1327204009), but does not contain package github.com/lightningnetwork/lnd/lnrpc/chainrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-1327204009), but does not contain package github.com/lightningnetwork/lnd/lnrpc/invoicesrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-1327204009), but does not contain package github.com/lightningnetwork/lnd/lnrpc/routerrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-1327204009), but does not contain package github.com/lightningnetwork/lnd/lnrpc/signrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-1327204009), but does not contain package github.com/lightningnetwork/lnd/lnrpc"
+        ],
+        "error_count": 8,
+        "failed_packages": [
+          "github.com/lightninglabs/lndclient"
+        ],
+        "detail": "canary: github.com/lightningnetwork/lnd/lnrpc removed."
+      },
+      "seconds": 223.598752067,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-12T06:15:21.607Z level=INFO msg=cloning repo=c-lnd url=https://github.com/lightninglabs/lndclient.git\nlnd         94bb7544 GO       source_build=GO      compiler=compiles          223.6s \nlnd            1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 3m45s."
+}
