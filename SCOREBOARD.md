@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-12 06:19 UTC.
+Updated 2026-10-12 15:52 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 92 | 78 | 4 | 10 | 47 | 46 | 0 | 0 |
+| 94 | 79 | 4 | 11 | 48 | 47 | 0 | 0 |
 
 ## Every pull request
 
@@ -19,6 +19,7 @@ verifier before the compiler built the consumer against it.
 |---|---|---|---|---|---|
 | argo-cd | [#24756](https://github.com/argoproj/argo-cd/pull/24756) feat: add paramPrefix to git generator to namespace data included from files (#18048) | Merge | Merge | not judged |  |
 | argo-cd | [#25416](https://github.com/argoproj/argo-cd/pull/25416) feat(repo-server): partial-clone | Merge | Merge | not judged |  |
+| argo-cd | [#27458](https://github.com/argoproj/argo-cd/pull/27458) feat: add sso.auto-login option to skip SSO login button click | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#28233](https://github.com/argoproj/argo-cd/pull/28233) feat: disambiguate local users from SSO users in RBAC with strict mode | Merge | Merge | not judged |  |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -38,6 +39,7 @@ verifier before the compiler built the consumer against it.
 | dapr | [#9974](https://github.com/dapr/dapr/pull/9974) feat: search and vector blocks | Merge | Merge | compiles |  |
 | dapr | [#10322](https://github.com/dapr/dapr/pull/10322) Feat/conversation max tokens | Merge | Merge | compiles |  |
 | dapr | [#10322](https://github.com/dapr/dapr/pull/10322) Feat/conversation max tokens | Merge | Merge | compiles |  |
+| dapr | [#10367](https://github.com/dapr/dapr/pull/10367) Binary storebuilding block support | Merge | Merge | compiles |  |
 | dapr | [#10367](https://github.com/dapr/dapr/pull/10367) Binary storebuilding block support | Merge | Merge | compiles |  |
 | dapr | [#10367](https://github.com/dapr/dapr/pull/10367) Binary storebuilding block support | Merge | Merge | compiles |  |
 | dapr | [#10367](https://github.com/dapr/dapr/pull/10367) Binary storebuilding block support | Merge | Merge | compiles |  |
