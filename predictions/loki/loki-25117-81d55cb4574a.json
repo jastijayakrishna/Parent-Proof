@@ -1,0 +1,52 @@
+{
+  "pr": {
+    "n": 25117,
+    "head": "81d55cb4574a8b41dd7030468172852db39c9d11",
+    "base": "b09a6a43116259fd2ddd533a201041a74e8c0dc4",
+    "title": "feat(dataobj): Decide data object routing in the query-frontend",
+    "url": "https://github.com/grafana/loki/pull/25117",
+    "updated": "2026-10-12T17:02:52Z",
+    "eco": "loki",
+    "key": "loki-25117-81d55cb4574a",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "81d55cb4574a8b41dd7030468172852db39c9d11"
+  },
+  "merge_base": "b09a6a43116259fd2ddd533a201041a74e8c0dc4",
+  "decided": "990950df38ef75f9676a69e8bf86dcf9a611744b",
+  "started": "2026-10-12T22:41:15Z",
+  "finished": "2026-10-12T22:41:39Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/38317772906",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "990950df38ef75f9676a69e8bf86dcf9a611744b",
+      "parent": "b09a6a43116259fd2ddd533a201041a74e8c0dc4",
+      "date": "2026-10-12",
+      "subject": "pull request 25117 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "CONTRACT_COMPILE_ERROR"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "pkg/logproto/logproto.proto",
+        "pkg/querier/queryrange/queryrange.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: pkg/logproto/logproto.proto",
+      "seconds": 18.1841214,
+      "total": 1
+    }
+  ],
+  "log": "loki        990950df UNKNOWN  source_build=UNKNOWN compiler=-                  18.2s \nloki           1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  CONTRACT_COMPILE_ERROR (e.g. loki@990950df38ef75f9676a69e8bf86dcf9a611744b)\n\n1 windows in 24s."
+}
