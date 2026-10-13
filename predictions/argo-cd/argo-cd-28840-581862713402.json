@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 28840,
+    "head": "5818627134022561eb6d5b0a746ab0f2e1c90147",
+    "base": "6c7e6de0f2b8849318995ba6690c28ec50277ed6",
+    "title": "feat(SyncWindow): CRD for sync window",
+    "url": "https://github.com/argoproj/argo-cd/pull/28840",
+    "updated": "2026-10-13T06:57:42Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-28840-581862713402",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "5818627134022561eb6d5b0a746ab0f2e1c90147"
+  },
+  "merge_base": "b7f5cd4a23e9fddb2a73f8cbe6d0ef3c79e5082c",
+  "decided": "be4b9345c3d87a932c2009c91b93b0bae1eebeed",
+  "started": "2026-10-13T10:52:02Z",
+  "finished": "2026-10-13T10:52:36Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/38385988899",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "be4b9345c3d87a932c2009c91b93b0bae1eebeed",
+      "parent": "b7f5cd4a23e9fddb2a73f8cbe6d0ef3c79e5082c",
+      "date": "2026-10-13",
+      "subject": "pull request 28840 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "pkg/apis/application/v1alpha1/generated.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 30.291633348,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     be4b9345 GO       source_build=GO      compiler=-                  30.3s \nargo-cd        1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 34s."
+}
