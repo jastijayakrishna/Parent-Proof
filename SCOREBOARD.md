@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-14 06:25 UTC.
+Updated 2026-10-14 12:14 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 109 | 91 | 4 | 14 | 52 | 51 | 0 | 0 |
+| 112 | 94 | 4 | 14 | 53 | 52 | 0 | 0 |
 
 ## Every pull request
 
@@ -37,6 +37,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
+| argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30132](https://github.com/argoproj/argo-cd/pull/30132) fix(hydrator): point README clone command at dry source repo (#29197) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | cometbft-cosmos-sdk | [#6100](https://github.com/cometbft/cometbft/pull/6100) fix(types,state): enforce minimum Block.MaxBytes floor and handle small limits defensively | Merge | Merge | compiles |  |
@@ -46,6 +47,7 @@ verifier before the compiler built the consumer against it.
 | dapr | [#9974](https://github.com/dapr/dapr/pull/9974) feat: search and vector blocks | Merge | Merge | compiles |  |
 | dapr | [#10322](https://github.com/dapr/dapr/pull/10322) Feat/conversation max tokens | Merge | Merge | compiles |  |
 | dapr | [#10322](https://github.com/dapr/dapr/pull/10322) Feat/conversation max tokens | Merge | Merge | compiles |  |
+| dapr | [#10367](https://github.com/dapr/dapr/pull/10367) Binary storebuilding block support | Merge | Merge | compiles |  |
 | dapr | [#10367](https://github.com/dapr/dapr/pull/10367) Binary storebuilding block support | Merge | Merge | compiles |  |
 | dapr | [#10367](https://github.com/dapr/dapr/pull/10367) Binary storebuilding block support | Merge | Merge | compiles |  |
 | dapr | [#10367](https://github.com/dapr/dapr/pull/10367) Binary storebuilding block support | Merge | Merge | compiles |  |
@@ -107,6 +109,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25117](https://github.com/grafana/loki/pull/25117) feat(dataobj): Decide data object routing in the query-frontend | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#25117](https://github.com/grafana/loki/pull/25117) feat(dataobj): Decide data object routing in the query-frontend | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |
+| temporal | [#856](https://github.com/temporalio/api/pull/856) vts: add time skipping to schedules | Merge | Merge | not judged |  |
 | temporal | [#856](https://github.com/temporalio/api/pull/856) vts: add time skipping to schedules | Merge | Merge | not judged |  |
 | temporal | [#856](https://github.com/temporalio/api/pull/856) vts: add time skipping to schedules | Merge | Merge | not judged |  |
 | temporal | [#856](https://github.com/temporalio/api/pull/856) vts: add time skipping to schedules | Merge | Merge | not judged |  |
