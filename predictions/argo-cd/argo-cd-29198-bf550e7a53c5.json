@@ -1,0 +1,51 @@
+{
+  "pr": {
+    "n": 29198,
+    "head": "bf550e7a53c5c9095721c4d7b0dbcccf3e5ac708",
+    "base": "f5d79d2100d626d2a80acfa9f7f86ac820b1132e",
+    "title": "feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta)",
+    "url": "https://github.com/argoproj/argo-cd/pull/29198",
+    "updated": "2026-10-14T17:12:55Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-29198-bf550e7a53c5",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "bf550e7a53c5c9095721c4d7b0dbcccf3e5ac708"
+  },
+  "merge_base": "f5d79d2100d626d2a80acfa9f7f86ac820b1132e",
+  "decided": "576be5ce3b68130c77aba1170a87f516d6ef577e",
+  "started": "2026-10-14T17:26:41Z",
+  "finished": "2026-10-14T17:27:26Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/38606190852",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "576be5ce3b68130c77aba1170a87f516d6ef577e",
+      "parent": "f5d79d2100d626d2a80acfa9f7f86ac820b1132e",
+      "date": "2026-10-14",
+      "subject": "pull request 29198 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "CONTRACT_COMPILE_ERROR"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "server/settings/settings.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 40.853601662,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     576be5ce UNKNOWN  source_build=UNKNOWN compiler=-                  40.9s \nargo-cd        1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  CONTRACT_COMPILE_ERROR (e.g. argo-cd@576be5ce3b68130c77aba1170a87f516d6ef577e)\n\n1 windows in 45s."
+}

@@ -1,0 +1,52 @@
+{
+  "pr": {
+    "n": 29236,
+    "head": "c290cf6abb98907b37b15e9de0bf35c507d05898",
+    "base": "55aa4441306a80fde012e99a4cf16491d1486dda",
+    "title": "feat: add seal signing inspection command",
+    "url": "https://github.com/argoproj/argo-cd/pull/29236",
+    "updated": "2026-10-14T13:55:46Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-29236-c290cf6abb98",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "c290cf6abb98907b37b15e9de0bf35c507d05898"
+  },
+  "merge_base": "55aa4441306a80fde012e99a4cf16491d1486dda",
+  "decided": "7acf80eccb5b6ea784b59ecaf4ed799c5cb15857",
+  "started": "2026-10-14T17:26:40Z",
+  "finished": "2026-10-14T17:27:30Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/38606190852",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "7acf80eccb5b6ea784b59ecaf4ed799c5cb15857",
+      "parent": "55aa4441306a80fde012e99a4cf16491d1486dda",
+      "date": "2026-10-14",
+      "subject": "pull request 29236 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "CONTRACT_COMPILE_ERROR"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "reposerver/repository/repository.proto",
+        "server/application/application.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 45.693194666,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     7acf80ec UNKNOWN  source_build=UNKNOWN compiler=-                  45.7s \nargo-cd        1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  CONTRACT_COMPILE_ERROR (e.g. argo-cd@7acf80eccb5b6ea784b59ecaf4ed799c5cb15857)\n\n1 windows in 49s."
+}
