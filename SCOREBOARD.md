@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-14 01:21 UTC.
+Updated 2026-10-14 06:25 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 107 | 89 | 4 | 14 | 51 | 50 | 0 | 0 |
+| 109 | 91 | 4 | 14 | 52 | 51 | 0 | 0 |
 
 ## Every pull request
 
@@ -78,6 +78,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#10411](https://github.com/lightningnetwork/lnd/pull/10411) aliasmgr: Allow persisting manually added alias scids | Merge | Merge | compiles |  |
 | lnd | [#10425](https://github.com/lightningnetwork/lnd/pull/10425) RBF Coop Close using sat/kw instead of sat/vb | Merge | Merge | compiles |  |
 | lnd | [#10504](https://github.com/lightningnetwork/lnd/pull/10504) lnwallet/btcwallet: support taproot script path fee estimation in FundPSBT | Merge | Merge | compiles |  |
+| lnd | [#10624](https://github.com/lightningnetwork/lnd/pull/10624) multi: expose local and remote spendable balance in listchannels | Merge | Merge | compiles |  |
 | lnd | [#10670](https://github.com/lightningnetwork/lnd/pull/10670) Add raw transaction hex to `pendingsweeps` response | Merge | Merge | compiles |  |
 | lnd | [#10670](https://github.com/lightningnetwork/lnd/pull/10670) Add raw transaction hex to `pendingsweeps` response | Merge | Merge | compiles |  |
 | lnd | [#10685](https://github.com/lightningnetwork/lnd/pull/10685) Update AddHoldInvoice to add support for optional preimage/hash generation | Merge | Merge | compiles |  |
@@ -106,6 +107,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25117](https://github.com/grafana/loki/pull/25117) feat(dataobj): Decide data object routing in the query-frontend | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#25117](https://github.com/grafana/loki/pull/25117) feat(dataobj): Decide data object routing in the query-frontend | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |
+| temporal | [#856](https://github.com/temporalio/api/pull/856) vts: add time skipping to schedules | Merge | Merge | not judged |  |
 | temporal | [#856](https://github.com/temporalio/api/pull/856) vts: add time skipping to schedules | Merge | Merge | not judged |  |
 | temporal | [#856](https://github.com/temporalio/api/pull/856) vts: add time skipping to schedules | Merge | Merge | not judged |  |
 | temporal | [#856](https://github.com/temporalio/api/pull/856) vts: add time skipping to schedules | Merge | Merge | not judged |  |
