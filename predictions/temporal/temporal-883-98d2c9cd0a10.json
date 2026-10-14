@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 883,
+    "head": "98d2c9cd0a105f12c9a56453e71d9fd1ef8e9732",
+    "base": "c66cdb77f7cd5467c8766ffd973a6de9d24c638e",
+    "title": "Adding PropagatedNexusSerializationContext to UpdateWorkflow apis",
+    "url": "https://github.com/temporalio/api/pull/883",
+    "updated": "2026-10-14T20:44:24Z",
+    "eco": "temporal",
+    "key": "temporal-883-98d2c9cd0a10",
+    "provider": "temporalio/api",
+    "consumer": "temporalio/sdk-go",
+    "consumer_sha": "2dbb35e53c978457b461e0d8187ea9111f172b64"
+  },
+  "merge_base": "c66cdb77f7cd5467c8766ffd973a6de9d24c638e",
+  "decided": "ef1204dc3ce77b048c4666b087ad322e69e441b3",
+  "started": "2026-10-14T21:06:03Z",
+  "finished": "2026-10-14T21:06:15Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/38637084177",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "temporal",
+      "commit": "ef1204dc3ce77b048c4666b087ad322e69e441b3",
+      "parent": "c66cdb77f7cd5467c8766ffd973a6de9d24c638e",
+      "date": "2026-10-14",
+      "subject": "pull request 883 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "temporal/api/workflowservice/v1/request_response.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 10.933521502,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-14T21:06:03.340Z level=INFO msg=cloning repo=c-temporal url=https://github.com/temporalio/sdk-go.git\ntemporal    ef1204dc GO       source_build=GO      compiler=-                  10.9s \ntemporal       1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 13s."
+}
