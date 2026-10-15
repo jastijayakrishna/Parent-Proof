@@ -1,0 +1,49 @@
+{
+  "pr": {
+    "n": 882,
+    "head": "90864190cfc31db999732164134b2c3ebfc677b7",
+    "base": "0faa16797848e2a035fe459cc614b617f1f417df",
+    "title": "ACT-1185: Expose standalone activity principals in Describe API",
+    "url": "https://github.com/temporalio/api/pull/882",
+    "updated": "2026-10-15T18:14:45Z",
+    "eco": "temporal",
+    "key": "temporal-882-90864190cfc3",
+    "provider": "temporalio/api",
+    "consumer": "temporalio/sdk-go",
+    "consumer_sha": "a0c0102ac3292aadeefb51578d340d463441e85f"
+  },
+  "merge_base": "0faa16797848e2a035fe459cc614b617f1f417df",
+  "decided": "40f48706978196b915a3dcd6a2cf7c4020a711f3",
+  "started": "2026-10-15T19:19:52Z",
+  "finished": "2026-10-15T19:20:02Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/38792567677",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "temporal",
+      "commit": "40f48706978196b915a3dcd6a2cf7c4020a711f3",
+      "parent": "0faa16797848e2a035fe459cc614b617f1f417df",
+      "date": "2026-10-15",
+      "subject": "pull request 882 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "temporal/api/activity/v1/message.proto",
+        "temporal/api/common/v1/message.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 8.984483287,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-15T19:19:52.889Z level=INFO msg=cloning repo=c-temporal url=https://github.com/temporalio/sdk-go.git\ntemporal    40f48706 GO       source_build=GO      compiler=-                   9.0s \ntemporal       1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 10s."
+}

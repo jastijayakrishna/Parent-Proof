@@ -1,0 +1,51 @@
+{
+  "pr": {
+    "n": 29105,
+    "head": "80b9fa9de0b3d1d3026763290984752611d3fa8f",
+    "base": "a2bd9e8cda9e91498b9b896db9961350bac01f22",
+    "title": "feat: expose health check code in UI (#7773)",
+    "url": "https://github.com/argoproj/argo-cd/pull/29105",
+    "updated": "2026-10-15T16:03:08Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-29105-80b9fa9de0b3",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "80b9fa9de0b3d1d3026763290984752611d3fa8f"
+  },
+  "merge_base": "a2bd9e8cda9e91498b9b896db9961350bac01f22",
+  "decided": "42444591a6b1066af6ade2ee802fc199160e5f61",
+  "started": "2026-10-15T19:19:55Z",
+  "finished": "2026-10-15T19:20:33Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/38792567677",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "42444591a6b1066af6ade2ee802fc199160e5f61",
+      "parent": "a2bd9e8cda9e91498b9b896db9961350bac01f22",
+      "date": "2026-10-15",
+      "subject": "pull request 29105 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "CONTRACT_COMPILE_ERROR"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "server/application/application.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 34.739736757,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     42444591 UNKNOWN  source_build=UNKNOWN compiler=-                  34.7s \nargo-cd        1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  CONTRACT_COMPILE_ERROR (e.g. argo-cd@42444591a6b1066af6ade2ee802fc199160e5f61)\n\n1 windows in 38s."
+}
