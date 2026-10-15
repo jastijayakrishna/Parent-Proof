@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-15 04:57 UTC.
+Updated 2026-10-15 15:13 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 122 | 101 | 4 | 17 | 57 | 56 | 0 | 0 |
+| 123 | 101 | 4 | 18 | 57 | 56 | 0 | 0 |
 
 ## Every pull request
 
@@ -23,6 +23,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#28233](https://github.com/argoproj/argo-cd/pull/28233) feat: disambiguate local users from SSO users in RBAC with strict mode | Merge | Merge | not judged |  |
 | argo-cd | [#28233](https://github.com/argoproj/argo-cd/pull/28233) feat: disambiguate local users from SSO users in RBAC with strict mode | Merge | Merge | not judged |  |
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
+| argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
