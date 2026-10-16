@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 30244,
+    "head": "315295afe2b1c9a004386bc7f7dcde3fa63292a9",
+    "base": "2a78031ddbdd9e26cee81f84dc47f152fc23e5c8",
+    "title": "feat: add enableDNS flag for Helm (#17596)",
+    "url": "https://github.com/argoproj/argo-cd/pull/30244",
+    "updated": "2026-10-16T16:11:52Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-30244-315295afe2b1",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "315295afe2b1c9a004386bc7f7dcde3fa63292a9"
+  },
+  "merge_base": "8833e45aafa555c5320319fdb71833d4df81549f",
+  "decided": "0ad7c3882c8c9c146ba5521e3df1f6b5e8fb9b21",
+  "started": "2026-10-16T18:54:46Z",
+  "finished": "2026-10-16T18:55:21Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/38950580210",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "0ad7c3882c8c9c146ba5521e3df1f6b5e8fb9b21",
+      "parent": "8833e45aafa555c5320319fdb71833d4df81549f",
+      "date": "2026-10-16",
+      "subject": "pull request 30244 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "pkg/apis/application/v1alpha1/generated.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 32.879346933,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     0ad7c388 GO       source_build=GO      compiler=-                  32.9s \nargo-cd        1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 36s."
+}

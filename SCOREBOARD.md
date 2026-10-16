@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-16 15:06 UTC.
+Updated 2026-10-16 18:55 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 130 | 105 | 4 | 21 | 58 | 57 | 0 | 0 |
+| 133 | 107 | 4 | 22 | 58 | 57 | 0 | 0 |
 
 ## Every pull request
 
@@ -48,6 +48,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30132](https://github.com/argoproj/argo-cd/pull/30132) fix(hydrator): point README clone command at dry source repo (#29197) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#30244](https://github.com/argoproj/argo-cd/pull/30244) feat: add enableDNS flag for Helm (#17596) | Merge | Merge | not judged |  |
 | cometbft-cosmos-sdk | [#6100](https://github.com/cometbft/cometbft/pull/6100) fix(types,state): enforce minimum Block.MaxBytes floor and handle small limits defensively | Merge | Merge | compiles |  |
 | cortex | [#7384](https://github.com/cortexproject/cortex/pull/7384) Add per-tenant cardinality API endpoint | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, NEEDS_REVIEW |
 | csi-provisioner | [#603](https://github.com/container-storage-interface/spec/pull/603) Add ControllerGetNodeInfo RPC (alpha) | Merge | Merge | compiles |  |
@@ -122,6 +123,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25117](https://github.com/grafana/loki/pull/25117) feat(dataobj): Decide data object routing in the query-frontend | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#25117](https://github.com/grafana/loki/pull/25117) feat(dataobj): Decide data object routing in the query-frontend | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#25208](https://github.com/grafana/loki/pull/25208) fix(storage): Remove propagate_chunk_fetch_errors flag. Part 1 | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
+| loki | [#25259](https://github.com/grafana/loki/pull/25259) perf(logline): Run pass-through intervals without waiting for the hint lookup | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |
 | temporal | [#856](https://github.com/temporalio/api/pull/856) vts: add time skipping to schedules | Merge | Merge | not judged |  |
 | temporal | [#856](https://github.com/temporalio/api/pull/856) vts: add time skipping to schedules | Merge | Merge | not judged |  |
@@ -143,6 +145,7 @@ verifier before the compiler built the consumer against it.
 | temporal | [#877](https://github.com/temporalio/api/pull/877) Add resource id annotation for standalone Nexus operations | Needs review | Needs review | not judged | OPTION_CHANGED, DESCRIPTOR_REFLECTION |
 | temporal | [#878](https://github.com/temporalio/api/pull/878) Deprecate BatchOperationResetActivities.reset_attempts | Merge | Merge | not judged |  |
 | temporal | [#880](https://github.com/temporalio/api/pull/880) Add Graal AOT and Kotlin worker runtimes | Merge | Merge | not judged |  |
+| temporal | [#882](https://github.com/temporalio/api/pull/882) ACT-1185: Expose standalone activity principals in Describe API | Merge | Merge | not judged |  |
 | temporal | [#882](https://github.com/temporalio/api/pull/882) ACT-1185: Expose standalone activity principals in Describe API | Merge | Merge | not judged |  |
 | temporal | [#882](https://github.com/temporalio/api/pull/882) ACT-1185: Expose standalone activity principals in Describe API | Merge | Merge | not judged |  |
 | temporal | [#882](https://github.com/temporalio/api/pull/882) ACT-1185: Expose standalone activity principals in Describe API | Merge | Merge | not judged |  |
