@@ -1,0 +1,103 @@
+{
+  "pr": {
+    "n": 102,
+    "head": "e509cbbe3ae7ab20d63202fed526a3cf878dd738",
+    "base": "38b883fcd6d18458a390865489834dc2437334f9",
+    "title": "Add unauthenticated server Version GetVersion API",
+    "url": "https://github.com/spiffe/spire-api-sdk/pull/102",
+    "updated": "2026-10-17T21:13:18Z",
+    "eco": "spire",
+    "key": "spire-102-e509cbbe3ae7",
+    "provider": "spiffe/spire-api-sdk",
+    "consumer": "spiffe/spire",
+    "consumer_sha": "59f9ccd35f587c2ab1dee0460ffe81b32721bb82"
+  },
+  "merge_base": "38b883fcd6d18458a390865489834dc2437334f9",
+  "decided": "3e180d474f37449682b254ebd16938f2bac22f67",
+  "started": "2026-10-17T21:35:32Z",
+  "finished": "2026-10-17T21:38:58Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/39071425383",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "spire",
+      "commit": "3e180d474f37449682b254ebd16938f2bac22f67",
+      "parent": "38b883fcd6d18458a390865489834dc2437334f9",
+      "date": "2026-10-17",
+      "subject": "pull request 102 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "proto/spire/api/server/version/v1/version.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 232
+      },
+      "canary": {
+        "outcome": "breaks",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 232,
+        "errors": [
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types",
+          "module github.com/spiffe/spire-api-sdk@latest found (v1.15.3, replaced by /tmp/parent-canary-816625906), but does not contain package github.com/spiffe/spire-api-sdk/proto/spire/api/types"
+        ],
+        "error_count": 230,
+        "failed_packages": [
+          "github.com/spiffe/spire/cmd/spire-agent",
+          "github.com/spiffe/spire/cmd/spire-agent/cli",
+          "github.com/spiffe/spire/cmd/spire-agent/cli/api",
+          "github.com/spiffe/spire/cmd/spire-agent/cli/common",
+          "github.com/spiffe/spire/cmd/spire-agent/cli/debug",
+          "github.com/spiffe/spire/cmd/spire-agent/cli/healthcheck",
+          "github.com/spiffe/spire/cmd/spire-agent/cli/logger",
+          "github.com/spiffe/spire/cmd/spire-agent/cli/run",
+          "github.com/spiffe/spire/cmd/spire-agent/cli/validate",
+          "github.com/spiffe/spire/cmd/spire-agent/util",
+          "github.com/spiffe/spire/cmd/spire-server",
+          "github.com/spiffe/spire/cmd/spire-server/cli",
+          "github.com/spiffe/spire/cmd/spire-server/cli/agent",
+          "github.com/spiffe/spire/cmd/spire-server/cli/bundle",
+          "github.com/spiffe/spire/cmd/spire-server/cli/debug",
+          "github.com/spiffe/spire/cmd/spire-server/cli/entry",
+          "github.com/spiffe/spire/cmd/spire-server/cli/federation",
+          "github.com/spiffe/spire/cmd/spire-server/cli/healthcheck",
+          "github.com/spiffe/spire/cmd/spire-server/cli/jwt",
+          "github.com/spiffe/spire/cmd/spire-server/cli/localauthority/jwt"
+        ],
+        "detail": "canary: github.com/spiffe/spire-api-sdk/proto/spire/api/types removed."
+      },
+      "seconds": 203.389904673,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-17T21:35:32.176Z level=INFO msg=cloning repo=c-spire url=https://github.com/spiffe/spire.git\nspire       3e180d47 GO       source_build=GO      compiler=compiles          203.4s \nspire          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 3m26s."
+}
