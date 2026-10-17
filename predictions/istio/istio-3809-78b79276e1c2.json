@@ -1,0 +1,103 @@
+{
+  "pr": {
+    "n": 3809,
+    "head": "78b79276e1c2570c15a1efc7b888e076ad26b47d",
+    "base": "84d6aa6381e41b5396898f1c02be75b4896c24d8",
+    "title": "document case-insensitive method matching in authorizationpolicy",
+    "url": "https://github.com/istio/api/pull/3809",
+    "updated": "2026-10-16T22:00:40Z",
+    "eco": "istio",
+    "key": "istio-3809-78b79276e1c2",
+    "provider": "istio/api",
+    "consumer": "istio/istio",
+    "consumer_sha": "54ac6ecc52bec0cf39e91a0cd6f729e29422e534"
+  },
+  "merge_base": "84d6aa6381e41b5396898f1c02be75b4896c24d8",
+  "decided": "d3c054265af8b73533bb4becea2ae4b6179209ea",
+  "started": "2026-10-17T00:39:41Z",
+  "finished": "2026-10-17T00:46:01Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/38987193498",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "istio",
+      "commit": "d3c054265af8b73533bb4becea2ae4b6179209ea",
+      "parent": "84d6aa6381e41b5396898f1c02be75b4896c24d8",
+      "date": "2026-10-17",
+      "subject": "pull request 3809 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "security/v1beta1/authorization_policy.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 317
+      },
+      "canary": {
+        "outcome": "breaks",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 317,
+        "errors": [
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1",
+          "module istio.io/api@latest found (v1.31.2, replaced by /tmp/parent-canary-2548923079), but does not contain package istio.io/api/mesh/v1alpha1"
+        ],
+        "error_count": 267,
+        "failed_packages": [
+          "istio.io/istio/cni/cmd/install-cni",
+          "istio.io/istio/cni/cmd/istio-cni",
+          "istio.io/istio/cni/pkg/cmd",
+          "istio.io/istio/cni/pkg/install",
+          "istio.io/istio/cni/pkg/nodeagent",
+          "istio.io/istio/cni/pkg/plugin",
+          "istio.io/istio/cni/pkg/repair",
+          "istio.io/istio/cni/test",
+          "istio.io/istio/istioctl/cmd",
+          "istio.io/istio/istioctl/cmd/istioctl",
+          "istio.io/istio/istioctl/pkg/admin",
+          "istio.io/istio/istioctl/pkg/analyze",
+          "istio.io/istio/istioctl/pkg/authz",
+          "istio.io/istio/istioctl/pkg/checkinject",
+          "istio.io/istio/istioctl/pkg/cli",
+          "istio.io/istio/istioctl/pkg/completion",
+          "istio.io/istio/istioctl/pkg/dashboard",
+          "istio.io/istio/istioctl/pkg/describe",
+          "istio.io/istio/istioctl/pkg/injector",
+          "istio.io/istio/istioctl/pkg/install/k8sversion"
+        ],
+        "detail": "canary: istio.io/api/mesh/v1alpha1 removed."
+      },
+      "seconds": 373.099049713,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-17T00:39:41.488Z level=INFO msg=cloning repo=c-istio url=https://github.com/istio/istio.git\nistio       d3c05426 GO       source_build=GO      compiler=compiles          373.1s \nistio          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 6m20s."
+}

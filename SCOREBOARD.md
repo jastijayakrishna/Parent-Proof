@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-16 18:55 UTC.
+Updated 2026-10-17 00:46 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 133 | 107 | 4 | 22 | 58 | 57 | 0 | 0 |
+| 135 | 108 | 4 | 23 | 59 | 58 | 0 | 0 |
 
 ## Every pull request
 
@@ -84,6 +84,7 @@ verifier before the compiler built the consumer against it.
 | istio | [#3798](https://github.com/istio/api/pull/3798) docs: clarify maxConnections applies to HTTP/2 | Merge | Merge | compiles |  |
 | istio | [#3799](https://github.com/istio/api/pull/3799) Allow 63-character WorkloadEntry port names | Merge | Merge | compiles |  |
 | istio | [#3801](https://github.com/istio/api/pull/3801) feat: add `presence: IGNORED` and `failedStatusInMetadata` to JWTRule | Merge | Merge | compiles |  |
+| istio | [#3809](https://github.com/istio/api/pull/3809) document case-insensitive method matching in authorizationpolicy | Merge | Merge | compiles |  |
 | jaeger | [#231](https://github.com/jaegertracing/jaeger-idl/pull/231) feat(expression): Add phrase and fulltext text-search operators | Needs review | Needs review | compiles | OPTION_CHANGED |
 | lnd | [#9457](https://github.com/lightningnetwork/lnd/pull/9457) routerrpc: add option PreventSubsequentPayment to TrackPaymentV2 | Merge | Merge | compiles |  |
 | lnd | [#9888](https://github.com/lightningnetwork/lnd/pull/9888) Attributable failures | Merge | Merge | bump_side_effect |  |
@@ -123,6 +124,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25117](https://github.com/grafana/loki/pull/25117) feat(dataobj): Decide data object routing in the query-frontend | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#25117](https://github.com/grafana/loki/pull/25117) feat(dataobj): Decide data object routing in the query-frontend | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#25208](https://github.com/grafana/loki/pull/25208) fix(storage): Remove propagate_chunk_fetch_errors flag. Part 1 | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
+| loki | [#25259](https://github.com/grafana/loki/pull/25259) perf(logline): Run pass-through intervals without waiting for the hint lookup | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25259](https://github.com/grafana/loki/pull/25259) perf(logline): Run pass-through intervals without waiting for the hint lookup | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |
 | temporal | [#856](https://github.com/temporalio/api/pull/856) vts: add time skipping to schedules | Merge | Merge | not judged |  |
