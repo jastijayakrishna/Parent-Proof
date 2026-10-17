@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-17 00:46 UTC.
+Updated 2026-10-17 09:41 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 135 | 108 | 4 | 23 | 59 | 58 | 0 | 0 |
+| 136 | 109 | 4 | 23 | 60 | 59 | 0 | 0 |
 
 ## Every pull request
 
@@ -85,6 +85,7 @@ verifier before the compiler built the consumer against it.
 | istio | [#3799](https://github.com/istio/api/pull/3799) Allow 63-character WorkloadEntry port names | Merge | Merge | compiles |  |
 | istio | [#3801](https://github.com/istio/api/pull/3801) feat: add `presence: IGNORED` and `failedStatusInMetadata` to JWTRule | Merge | Merge | compiles |  |
 | istio | [#3809](https://github.com/istio/api/pull/3809) document case-insensitive method matching in authorizationpolicy | Merge | Merge | compiles |  |
+| istio | [#3810](https://github.com/istio/api/pull/3810) fix wasm docs | Merge | Merge | compiles |  |
 | jaeger | [#231](https://github.com/jaegertracing/jaeger-idl/pull/231) feat(expression): Add phrase and fulltext text-search operators | Needs review | Needs review | compiles | OPTION_CHANGED |
 | lnd | [#9457](https://github.com/lightningnetwork/lnd/pull/9457) routerrpc: add option PreventSubsequentPayment to TrackPaymentV2 | Merge | Merge | compiles |  |
 | lnd | [#9888](https://github.com/lightningnetwork/lnd/pull/9888) Attributable failures | Merge | Merge | bump_side_effect |  |
