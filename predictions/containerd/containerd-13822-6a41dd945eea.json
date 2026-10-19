@@ -1,0 +1,51 @@
+{
+  "pr": {
+    "n": 13822,
+    "head": "6a41dd945eea92bb687ce901478686ebdc17815f",
+    "base": "3acdcb579b3a91709c5a353fd30d643c25f05fcc",
+    "title": "cri: implement pod-level checkpoint/restore (KEP-5823)",
+    "url": "https://github.com/containerd/containerd/pull/13822",
+    "updated": "2026-10-19T16:57:38Z",
+    "eco": "containerd",
+    "key": "containerd-13822-6a41dd945eea",
+    "provider": "containerd/containerd",
+    "consumer": "containerd/nerdctl",
+    "consumer_sha": "0fc66d2ebf04e83a935e3e623f30c06b770d41e8"
+  },
+  "merge_base": "3acdcb579b3a91709c5a353fd30d643c25f05fcc",
+  "decided": "c25c675c9c9a3907adbf8d3677502c45cd9276bc",
+  "started": "2026-10-19T20:48:35Z",
+  "finished": "2026-10-19T20:49:11Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/39322078025",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "containerd",
+      "commit": "c25c675c9c9a3907adbf8d3677502c45cd9276bc",
+      "parent": "3acdcb579b3a91709c5a353fd30d643c25f05fcc",
+      "date": "2026-10-19",
+      "subject": "pull request 13822 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "api/runtime/sandbox/v1/sandbox.proto",
+        "api/services/sandbox/v1/sandbox.proto",
+        "vendor/github.com/containerd/containerd/api/runtime/sandbox/v1/sandbox.proto",
+        "vendor/github.com/containerd/containerd/api/services/sandbox/v1/sandbox.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/runtime/sandbox/v1/sandbox.proto",
+      "seconds": 34.550593335,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-19T20:48:35.598Z level=INFO msg=cloning repo=c-containerd url=https://github.com/containerd/nerdctl.git\ncontainerd  c25c675c GO       source_build=GO      compiler=-                  34.6s \ncontainerd     1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 36s."
+}
