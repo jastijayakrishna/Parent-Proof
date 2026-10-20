@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-20 00:07 UTC.
+Updated 2026-10-20 10:19 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 147 | 120 | 4 | 23 | 67 | 66 | 0 | 0 |
+| 148 | 121 | 4 | 23 | 68 | 67 | 0 | 0 |
 
 ## Every pull request
 
@@ -121,6 +121,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#11327](https://github.com/lightningnetwork/lnd/pull/11327) lnrpc: make forwarding package counts optional | Merge | Merge | compiles |  |
 | lnd | [#11365](https://github.com/lightningnetwork/lnd/pull/11365) multi: add reverse ordering to listchaintxns | Merge | Merge | compiles |  |
 | lnd | [#11365](https://github.com/lightningnetwork/lnd/pull/11365) multi: add reverse ordering to listchaintxns | Merge | Merge | compiles |  |
+| lnd | [#11374](https://github.com/lightningnetwork/lnd/pull/11374) bolt12handler+devrpc: dispatch invoice requests and add CreateOffer | Merge | Merge | compiles |  |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
 | loki | [#24991](https://github.com/grafana/loki/pull/24991) feat(logline): Report Logline query stats on the metrics.go line | Merge | Merge | not judged |  |
