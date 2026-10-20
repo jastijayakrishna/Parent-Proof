@@ -1,0 +1,55 @@
+{
+  "pr": {
+    "n": 890,
+    "head": "9ab57a107939060c8d85d601eb5808efb9b3554d",
+    "base": "0b837ae7ceefbe4569254e793b96bbf2dd8ed877",
+    "title": "marking time skipping API experimental",
+    "url": "https://github.com/temporalio/api/pull/890",
+    "updated": "2026-10-20T20:57:48Z",
+    "eco": "temporal",
+    "key": "temporal-890-9ab57a107939",
+    "provider": "temporalio/api",
+    "consumer": "temporalio/sdk-go",
+    "consumer_sha": "10beba7b1782adfadb54ba58736b7c7c97f24757"
+  },
+  "merge_base": "0b837ae7ceefbe4569254e793b96bbf2dd8ed877",
+  "decided": "e94d5fb6fab805b175f2cfd100b6cb90428c5627",
+  "started": "2026-10-20T22:47:39Z",
+  "finished": "2026-10-20T22:47:41Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/39510353338",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "temporal",
+      "commit": "e94d5fb6fab805b175f2cfd100b6cb90428c5627",
+      "parent": "0b837ae7ceefbe4569254e793b96bbf2dd8ed877",
+      "date": "2026-10-20",
+      "subject": "pull request 890 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "temporal/api/common/v1/message.proto",
+        "temporal/api/enums/v1/event_type.proto",
+        "temporal/api/enums/v1/time_skipping.proto",
+        "temporal/api/history/v1/message.proto",
+        "temporal/api/schedule/v1/message.proto",
+        "temporal/api/workflow/v1/message.proto",
+        "temporal/api/workflowservice/v1/request_response.proto",
+        "temporal/api/workflowservice/v1/service.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 0.77398416,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-20T22:47:39.378Z level=INFO msg=cloning repo=c-temporal url=https://github.com/temporalio/sdk-go.git\ntemporal    e94d5fb6 GO       source_build=GO      compiler=-                   0.8s \ntemporal       1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 2s."
+}

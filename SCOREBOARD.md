@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-20 19:30 UTC.
+Updated 2026-10-20 22:48 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 155 | 125 | 5 | 25 | 71 | 70 | 0 | 0 |
+| 159 | 129 | 5 | 25 | 71 | 70 | 0 | 0 |
 
 ## Every pull request
 
@@ -145,6 +145,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25436](https://github.com/grafana/loki/pull/25436) refactor(compactor): Delete sort object task | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | spire | [#102](https://github.com/spiffe/spire-api-sdk/pull/102) Add unauthenticated server Version GetVersion API | Merge | Merge | compiles |  |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |
+| temporal | [#827](https://github.com/temporalio/api/pull/827) Add RESOURCE_EXHAUSTED_CAUSE_CALLER_RPS_LIMIT resource-exhausted cause | Merge | Merge | not judged |  |
 | temporal | [#856](https://github.com/temporalio/api/pull/856) vts: add time skipping to schedules | Merge | Merge | not judged |  |
 | temporal | [#856](https://github.com/temporalio/api/pull/856) vts: add time skipping to schedules | Merge | Merge | not judged |  |
 | temporal | [#856](https://github.com/temporalio/api/pull/856) vts: add time skipping to schedules | Merge | Merge | not judged |  |
@@ -172,3 +173,6 @@ verifier before the compiler built the consumer against it.
 | temporal | [#883](https://github.com/temporalio/api/pull/883) Adding PropagatedNexusSerializationContext to UpdateWorkflow apis | Merge | Merge | not judged |  |
 | temporal | [#884](https://github.com/temporalio/api/pull/884) Add activity async handoff API definitions | Don't merge | Merge | not judged |  |
 | temporal | [#886](https://github.com/temporalio/api/pull/886) Document current activity attempt start time | Merge | Merge | not judged |  |
+| temporal | [#886](https://github.com/temporalio/api/pull/886) Document current activity attempt start time | Merge | Merge | not judged |  |
+| temporal | [#887](https://github.com/temporalio/api/pull/887) Add PollerScalingInfo to poll requests | Merge | Merge | not judged |  |
+| temporal | [#890](https://github.com/temporalio/api/pull/890) marking time skipping API experimental | Merge | Merge | not judged |  |
