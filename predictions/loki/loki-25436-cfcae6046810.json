@@ -1,0 +1,52 @@
+{
+  "pr": {
+    "n": 25436,
+    "head": "cfcae6046810c56280396a64c9d0991cfd6e3868",
+    "base": "07203ad14177282e1e6874970f82df33cb5c37f0",
+    "title": "refactor(compactor): Delete sort object task",
+    "url": "https://github.com/grafana/loki/pull/25436",
+    "updated": "2026-10-20T17:23:54Z",
+    "eco": "loki",
+    "key": "loki-25436-cfcae6046810",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "cfcae6046810c56280396a64c9d0991cfd6e3868"
+  },
+  "merge_base": "4c2cfd3f94155a4b16ce5d119f891715e7e8c5d5",
+  "decided": "053e2c5b03937b032a67e90d928dbd8fee14511a",
+  "started": "2026-10-20T19:26:55Z",
+  "finished": "2026-10-20T19:28:05Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/39483185894",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "053e2c5b03937b032a67e90d928dbd8fee14511a",
+      "parent": "4c2cfd3f94155a4b16ce5d119f891715e7e8c5d5",
+      "date": "2026-10-20",
+      "subject": "pull request 25436 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "TOOLCHAIN_TOO_OLD"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "pkg/dataobj/compaction/v2/proto/compactionv2.proto",
+        "pkg/engine/internal/proto/physicalpb/physicalpb.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: pkg/dataobj/compaction/v2/proto/compactionv2.proto",
+      "seconds": 63.399096431,
+      "total": 1
+    }
+  ],
+  "log": "loki        053e2c5b UNKNOWN  source_build=UNKNOWN compiler=-                  63.4s \nloki           1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  TOOLCHAIN_TOO_OLD (e.g. loki@053e2c5b03937b032a67e90d928dbd8fee14511a)\n\n1 windows in 1m10s."
+}
