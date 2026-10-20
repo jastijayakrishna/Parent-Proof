@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-20 10:19 UTC.
+Updated 2026-10-20 15:22 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 148 | 121 | 4 | 23 | 68 | 67 | 0 | 0 |
+| 151 | 123 | 4 | 24 | 70 | 69 | 0 | 0 |
 
 ## Every pull request
 
@@ -23,6 +23,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#28233](https://github.com/argoproj/argo-cd/pull/28233) feat: disambiguate local users from SSO users in RBAC with strict mode | Merge | Merge | not judged |  |
 | argo-cd | [#28233](https://github.com/argoproj/argo-cd/pull/28233) feat: disambiguate local users from SSO users in RBAC with strict mode | Merge | Merge | not judged |  |
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
+| argo-cd | [#28908](https://github.com/argoproj/argo-cd/pull/28908) fix: base auto-sync change detection on the last synced revision (#27875, #21692) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29105](https://github.com/argoproj/argo-cd/pull/29105) feat: expose health check code in UI (#7773) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -81,6 +82,7 @@ verifier before the compiler built the consumer against it.
 | dapr | [#10682](https://github.com/dapr/dapr/pull/10682) Security: Scheduler accepted actor reminders targeting another app's internal workflow actors | Merge | Merge | compiles |  |
 | dapr | [#10717](https://github.com/dapr/dapr/pull/10717) jobs: allow overriding the app route a triggered job is delivered on | Merge | Merge | compiles |  |
 | dapr | [#10771](https://github.com/dapr/dapr/pull/10771) [Backport release-1.19] Binary store building block support | Merge | Merge | compiles |  |
+| dapr | [#10866](https://github.com/dapr/dapr/pull/10866) [Backport release-1.19] feat: search and vector blocks | Merge | Merge | compiles |  |
 | istio | [#3722](https://github.com/istio/api/pull/3722) feat(tracing): add otel always_on sampler | Merge | Merge | compiles |  |
 | istio | [#3787](https://github.com/istio/api/pull/3787)  add cert_signer_namespace_map field to MeshConfig for namespace-scoped CSR signer authorization | Merge | Merge | compiles |  |
 | istio | [#3791](https://github.com/istio/api/pull/3791) docs: use camelCase prefixRewrite in HTTPRedirect example | Merge | Merge | compiles |  |
@@ -119,6 +121,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#10993](https://github.com/lightningnetwork/lnd/pull/10993) walletrpc: return the master key birthday from ListAccounts | Merge | Merge | compiles |  |
 | lnd | [#11095](https://github.com/lightningnetwork/lnd/pull/11095) keychain+walletrpc: add DeriveAndStoreKey | Merge | Merge | compiles |  |
 | lnd | [#11327](https://github.com/lightningnetwork/lnd/pull/11327) lnrpc: make forwarding package counts optional | Merge | Merge | compiles |  |
+| lnd | [#11365](https://github.com/lightningnetwork/lnd/pull/11365) multi: add reverse ordering to listchaintxns | Merge | Merge | compiles |  |
 | lnd | [#11365](https://github.com/lightningnetwork/lnd/pull/11365) multi: add reverse ordering to listchaintxns | Merge | Merge | compiles |  |
 | lnd | [#11365](https://github.com/lightningnetwork/lnd/pull/11365) multi: add reverse ordering to listchaintxns | Merge | Merge | compiles |  |
 | lnd | [#11374](https://github.com/lightningnetwork/lnd/pull/11374) bolt12handler+devrpc: dispatch invoice requests and add CreateOffer | Merge | Merge | compiles |  |
