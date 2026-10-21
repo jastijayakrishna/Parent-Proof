@@ -1,0 +1,19 @@
+time=2026-10-21T09:07:02.471Z level=INFO msg=cloning repo=bb-storage url=https://github.com/buildbarn/bb-storage.git
+time=2026-10-21T09:07:03.303Z level=INFO msg=cloning repo=bb-browser url=https://github.com/buildbarn/bb-browser.git
+time=2026-10-21T09:07:06.726Z level=INFO msg=mined consumer=bb-browser pin_moves=27 to_compile=14 skipped=map[]
+time=2026-10-21T09:07:53.951Z level=INFO msg=canary consumer=bb-browser at=013765a5fde1f24b057bb4834a83c8452f5416cb^ outcome=breaks detail="canary: github.com/buildbarn/bb-storage/pkg/proto/auth removed."
+time=2026-10-21T09:07:56.095Z level=INFO msg=window consumer=bb-browser bump=013765a5 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:09:41.020Z level=INFO msg=window consumer=bb-browser bump=1731858d select=additive breaking=0 compiler=breaks
+time=2026-10-21T09:09:56.534Z level=INFO msg=window consumer=bb-browser bump=423d039d select=additive breaking=0 compiler=bump_side_effect
+time=2026-10-21T09:10:46.164Z level=INFO msg=window consumer=bb-browser bump=4d897223 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:10:48.965Z level=INFO msg=window consumer=bb-browser bump=55c13808 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:10:51.184Z level=INFO msg=window consumer=bb-browser bump=68e67027 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:11:54.396Z level=INFO msg=window consumer=bb-browser bump=8d647cd2 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:12:30.071Z level=INFO msg=window consumer=bb-browser bump=823deb2f select=additive breaking=0 compiler=breaks
+time=2026-10-21T09:12:44.796Z level=INFO msg=window consumer=bb-browser bump=af89e4bc select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T09:14:01.625Z level=INFO msg=window consumer=bb-browser bump=b82789fb select=breaking breaking=1 compiler=compiles
+time=2026-10-21T09:15:19.726Z level=INFO msg=window consumer=bb-browser bump=e5acd046 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:24.298Z level=INFO msg=window consumer=bb-browser bump=cef29fb0 select=breaking breaking=16 compiler=breaks
+time=2026-10-21T09:15:39.729Z level=INFO msg=window consumer=bb-browser bump=fc78080f select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:16:39.231Z level=INFO msg=window consumer=bb-browser bump=ef9eacb9 select=breaking breaking=3 compiler=breaks
+time=2026-10-21T09:16:39.231Z level=INFO msg="suite built" suite=bb-storage windows_added=14

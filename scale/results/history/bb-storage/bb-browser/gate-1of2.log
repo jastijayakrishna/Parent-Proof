@@ -1,0 +1,24 @@
+bb-browser 013765a5 GO       source_build=GO      compiler=compiles          13.3s replay=true 
+bb-browser 1731858d UNKNOWN  source_build=UNKNOWN compiler=breaks            26.1s replay=true 
+bb-browser 4d897223 GO       source_build=GO      compiler=compiles           0.8s replay=true 
+bb-browser 55c13808 GO       source_build=GO      compiler=compiles           0.7s replay=true 
+bb-browser 423d039d NO_GO    source_build=NO_GO   compiler=bump_side_effect  17.4s replay=true 
+bb-browser 68e67027 GO       source_build=GO      compiler=compiles           7.8s replay=true 
+bb-browser 8d647cd2 GO       source_build=GO      compiler=compiles           5.6s replay=true 
+bb-browser af89e4bc NO_GO    source_build=NO_GO   compiler=breaks            18.4s replay=true 
+bb-browser 823deb2f GO       source_build=GO      compiler=breaks            20.1s replay=true 
+bb-browser e5acd046 GO       source_build=GO      compiler=compiles          10.4s replay=true 
+bb-browser b82789fb NO_GO    source_build=GO      compiler=compiles          15.3s replay=true 
+bb-browser fc78080f GO       source_build=GO      compiler=compiles           0.3s replay=true 
+bb-browser cef29fb0 NO_GO    source_build=UNKNOWN compiler=breaks            20.4s replay=true 
+bb-browser ef9eacb9 NO_GO    source_build=NO_GO   compiler=breaks            17.6s replay=true 
+bb-browser/additive    windows=  4 | breaks= 2: caught= 0 WRONG_GO=1 abstained=1 | compiles= 1: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 1, UNKNOWN 0, GO 0) | wire: judged=4 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=4
+bb-browser/breaking    windows=  3 | breaks= 2: caught= 1 WRONG_GO=0 abstained=1 | compiles= 1: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 1) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=3 broken=2 RUNTIME_WRONG_GO=0 confirmed=2 unconfirmed=1 | errors=0 | replayed=3
+bb-browser/unchanged   windows=  7 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles= 6: GO= 6 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=7 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=7
+TOTAL                  windows= 14 | breaks= 5: caught= 2 WRONG_GO=1 abstained=2 | compiles= 8: GO= 8 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 1) | unavailable=1 (NO-GO 1, UNKNOWN 0, GO 0) | wire: judged=14 broken=2 RUNTIME_WRONG_GO=0 confirmed=2 unconfirmed=1 | errors=0 | replayed=14
+  FAILED bb-browser@1731858db193..dc342e17: unknown_on_break: cmd/bb_browser/main.go:83:4: not enough arguments in call to blobstore_configuration.NewCASAndACBlobAccessFromConfiguration
+  FAILED bb-browser@823deb2f4b07..5bae5844: wrong_go: /home/runner/go/pkg/mod/github.com/buildbarn/bb-remote-execution@v0.0.0-20250812083130-5b4f5a6879e1/pkg/clock/suspendable_clock.go:42:18: cannot use (*SuspendableClock)(nil) (value of type *SuspendableClock) as "github.com/buildbarn/bb-storage/pkg/clock".Clock value in variable declaration: *SuspendableClock does not implement "github.com/buildbarn/bb-storage/pkg/clock".Clock (missing method NewTicker)
+  FAILED bb-browser@cef29fb08873..7bb781bd: unknown_on_break: cmd/bb_browser/main.go:72:71: not enough arguments in call to global.ApplyConfiguration | cmd/bb_browser/main.go:88:97: not enough arguments in call to authorizerFactory.NewAuthorizerFromConfiguration
+
+14 windows in 1m28s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 3 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
