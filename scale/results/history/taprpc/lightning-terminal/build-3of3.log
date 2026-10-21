@@ -1,0 +1,9 @@
+time=2026-10-21T08:34:29.885Z level=INFO msg=cloning repo=taproot-assets-taprpc url=https://github.com/lightninglabs/taproot-assets.git
+time=2026-10-21T08:34:33.504Z level=INFO msg=cloning repo=lightning-terminal url=https://github.com/lightninglabs/lightning-terminal.git
+time=2026-10-21T08:34:37.344Z level=INFO msg=mined consumer=lightning-terminal pin_moves=14 to_compile=4 skipped=map[]
+time=2026-10-21T08:37:30.848Z level=INFO msg=canary consumer=lightning-terminal at=2db38f72fcbf1fd149b8d5dcdd127f7a8c0b755e^ outcome=bump_side_effect detail="canary: github.com/lightninglabs/taproot-assets/taprpc removed. module github.com/lightninglabs/taproot-assets/taprpc@latest found (v1.3.3, replaced by /tmp/parent-canary-1087217878), but does not contain package github.com/lightninglabs/taproot-assets/taprpc"
+time=2026-10-21T08:39:22.876Z level=INFO msg=window consumer=lightning-terminal bump=2db38f72 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:44:00.739Z level=INFO msg=window consumer=lightning-terminal bump=a0915a30 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:45:31.973Z level=INFO msg=window consumer=lightning-terminal bump=5f6dbc78 select=additive breaking=0 compiler=breaks
+time=2026-10-21T08:46:33.442Z level=INFO msg=window consumer=lightning-terminal bump=e3a85892 select=breaking breaking=4 compiler=breaks
+time=2026-10-21T08:46:33.442Z level=INFO msg="suite built" suite=taprpc windows_added=4
