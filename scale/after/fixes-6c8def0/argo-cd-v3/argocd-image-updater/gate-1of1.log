@@ -1,0 +1,33 @@
+time=2026-10-21T11:46:53.778Z level=INFO msg=cloning repo=argo-cd url=https://github.com/argoproj/argo-cd.git
+time=2026-10-21T11:47:16.391Z level=INFO msg=cloning repo=argocd-image-updater url=https://github.com/argoproj-labs/argocd-image-updater.git
+argocd-image-updater 0038e4a8 GO       source_build=GO      compiler=compiles          34.8s replay=true 
+argocd-image-updater 142dff8f GO       source_build=GO      compiler=compiles          35.7s replay=true 
+argocd-image-updater 2dd38e6f GO       source_build=GO      compiler=compiles          16.1s replay=true 
+argocd-image-updater 29d992f0 UNKNOWN  source_build=UNKNOWN compiler=bump_side_effect  18.3s replay=true 
+argocd-image-updater 316f6622 UNKNOWN  source_build=UNKNOWN compiler=compiles          13.2s replay=true 
+argocd-image-updater 32e03138 GO       source_build=GO      compiler=compiles          13.4s replay=true 
+argocd-image-updater 4631cb6e UNKNOWN  source_build=UNKNOWN compiler=bump_side_effect  11.6s replay=true 
+argocd-image-updater 4c5ca610 NO_GO    source_build=NO_GO   compiler=bump_side_effect  25.3s replay=true 
+argocd-image-updater 60bcb6c2 UNKNOWN  source_build=UNKNOWN compiler=bump_side_effect  16.8s replay=true 
+argocd-image-updater 8f164063 GO       source_build=GO      compiler=compiles          21.3s replay=true 
+argocd-image-updater 91eb1c26 UNKNOWN  source_build=UNKNOWN compiler=compiles          20.1s replay=true 
+argocd-image-updater 9b61d461 GO       source_build=GO      compiler=compiles          11.4s replay=true 
+argocd-image-updater 967a1c85 GO       source_build=GO      compiler=compiles          12.9s replay=true 
+argocd-image-updater aaf4bcee GO       source_build=GO      compiler=compiles          13.7s replay=true 
+argocd-image-updater bb991de9 NO_GO    source_build=NO_GO   compiler=compiles          16.5s replay=true 
+argocd-image-updater cc48a329 GO       source_build=GO      compiler=compiles          10.9s replay=true 
+argocd-image-updater c99dfca2 GO       source_build=GO      compiler=compiles          15.5s replay=true 
+argocd-image-updater d1b29fe8 GO       source_build=GO      compiler=compiles          13.0s replay=true 
+argocd-image-updater e7f08a37 GO       source_build=GO      compiler=compiles          12.6s replay=true 
+argocd-image-updater fe5df120 GO       source_build=GO      compiler=compiles          11.4s replay=true 
+argocd-image-updater/additive windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=2 (NO-GO 0, UNKNOWN 2, GO 0) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
+argocd-image-updater/breaking windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 1: GO= 0 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 1, UNKNOWN 0, GO 0) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
+argocd-image-updater/unchanged windows= 16 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=15: GO=13 FALSE_NOGO=1 abstained=1 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 0, UNKNOWN 1, GO 0) | wire: judged=16 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=16
+TOTAL                  windows= 20 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=16: GO=13 FALSE_NOGO=1 abstained=2 (runtime-only NO-GO 0) | unavailable=4 (NO-GO 1, UNKNOWN 3, GO 0) | wire: judged=20 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=20
+  WITHIN THE UNKNOWN LIMIT argocd-image-updater@316f66222547..fd6b7d5b: unknown_on_safe: CONTRACT_COMPILE_ERROR, WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION
+  WITHIN THE UNKNOWN LIMIT argocd-image-updater@91eb1c26d3ad..109ca7ca: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED argocd-image-updater@bb991de95169..443415b5: false_nogo: github.com/argoproj/argo-cd/v3@v3.4.3/util/kube/kubectl.go:33
+
+20 windows in 2m58s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 1 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 203
