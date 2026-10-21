@@ -1,4 +1,4 @@
 # Scale test (scale/PREREG.md): one wave of upgrades per push
-wave=2
+wave=3
 parts=history
 only=
