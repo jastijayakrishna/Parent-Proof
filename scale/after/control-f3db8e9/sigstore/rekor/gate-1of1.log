@@ -1,0 +1,24 @@
+time=2026-10-21T11:50:46.097Z level=INFO msg=cloning repo=protobuf-specs url=https://github.com/sigstore/protobuf-specs.git
+time=2026-10-21T11:50:46.770Z level=INFO msg=cloning repo=rekor url=https://github.com/sigstore/rekor.git
+rekor      4e052352 GO       source_build=GO      compiler=compiles          19.5s replay=true 
+rekor      1082f485 GO       source_build=GO      compiler=compiles          21.0s replay=true 
+rekor      78c8c42c GO       source_build=GO      compiler=compiles          14.8s replay=true 
+rekor      726559c1 UNKNOWN  source_build=GO      compiler=compiles          17.3s replay=true 
+rekor      802db4d8 GO       source_build=GO      compiler=compiles          16.6s replay=true 
+rekor      8f8fb19d UNKNOWN  source_build=GO      compiler=compiles          16.0s replay=true 
+rekor      90ca4b45 UNKNOWN  source_build=GO      compiler=compiles          10.9s replay=true 
+rekor      92cf4d5d GO       source_build=GO      compiler=compiles          10.5s replay=true 
+rekor      9c4a7630 GO       source_build=GO      compiler=compiles           7.7s replay=true 
+rekor      a305f3b3 GO       source_build=GO      compiler=compiles          14.9s replay=true 
+rekor      b3bd1de0 GO       source_build=GO      compiler=compiles          10.0s replay=true 
+rekor      fa871214 UNKNOWN  source_build=UNKNOWN compiler=compiles           7.5s replay=true 
+rekor      d702f84e GO       source_build=GO      compiler=compiles          11.3s replay=true 
+rekor/additive         windows=  3 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 3: GO= 3 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=3 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=3
+rekor/breaking         windows=  7 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 7: GO= 7 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=7 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=7
+rekor/unchanged        windows=  3 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 3: GO= 2 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=3 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=3
+TOTAL                  windows= 13 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=13: GO=12 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=13 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=13
+  WITHIN THE UNKNOWN LIMIT rekor@fa8712143722..eede12ff: unknown_on_safe: CONTRACT_COMPILE_ERROR
+
+13 windows in 1m29s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 91
