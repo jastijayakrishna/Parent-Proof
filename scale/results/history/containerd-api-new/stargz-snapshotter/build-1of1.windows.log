@@ -1,0 +1,7 @@
+time=2026-10-21T08:52:22.688Z level=INFO msg=mined consumer=stargz-snapshotter pin_moves=5 to_compile=5 skipped=map[]
+time=2026-10-21T08:52:31.816Z level=INFO msg=canary consumer=stargz-snapshotter at=fe111ee126f2b0d36dbf360cff290132ca9e863f outcome=oracle_error detail="canary: no package of the consumer imports a package of github.com/containerd/containerd/api directly"
+time=2026-10-21T08:54:30.501Z level=INFO msg=window consumer=stargz-snapshotter bump=fe111ee1 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:54:31.050Z level=INFO msg=window consumer=stargz-snapshotter bump=e9c84ab6 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:55:57.337Z level=INFO msg=window consumer=stargz-snapshotter bump=75e7cd38 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:56:02.708Z level=INFO msg=window consumer=stargz-snapshotter bump=2c940ad4 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:57:05.744Z level=INFO msg=window consumer=stargz-snapshotter bump=9c1dc3ff select=additive breaking=0 compiler=breaks
