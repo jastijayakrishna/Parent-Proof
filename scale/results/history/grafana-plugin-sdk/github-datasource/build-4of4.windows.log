@@ -1,0 +1,12 @@
+time=2026-10-21T09:12:21.852Z level=INFO msg=mined consumer=github-datasource pin_moves=40 to_compile=10 skipped=map[]
+time=2026-10-21T09:13:13.521Z level=INFO msg=canary consumer=github-datasource at=124fcb607c9316debfe9c560e61913d5d6dbf865^ outcome=breaks detail="canary: github.com/grafana/grafana-plugin-sdk-go/backend removed."
+time=2026-10-21T09:13:42.918Z level=INFO msg=window consumer=github-datasource bump=124fcb60 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:28.347Z level=INFO msg=window consumer=github-datasource bump=4452e594 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:36.880Z level=INFO msg=window consumer=github-datasource bump=359d78bc select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:57.159Z level=INFO msg=window consumer=github-datasource bump=9119fd2a select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:46.562Z level=INFO msg=window consumer=github-datasource bump=a1f99783 select=breaking breaking=16 compiler=compiles
+time=2026-10-21T09:15:59.012Z level=INFO msg=window consumer=github-datasource bump=6afb05c3 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:16:45.534Z level=INFO msg=window consumer=github-datasource bump=c03f95e4 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:17:04.485Z level=INFO msg=window consumer=github-datasource bump=b224e462 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:17:26.749Z level=INFO msg=window consumer=github-datasource bump=df778426 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:17:47.251Z level=INFO msg=window consumer=github-datasource bump=ff65daa4 select=unchanged breaking=0 compiler=compiles
