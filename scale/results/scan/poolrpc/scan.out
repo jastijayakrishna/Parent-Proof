@@ -1,0 +1,27 @@
+time=2026-10-21T09:21:25.334Z level=INFO msg=cloning repo=p-poolrpc url=https://github.com/lightninglabs/pool.git
+time=2026-10-21T09:21:26.253Z level=INFO msg=cloning repo=c-poolrpc url=https://github.com/lightninglabs/lightning-terminal.git
+poolrpc     d000a6b7 GO       source_build=GO      compiler=-                  34.7s 
+poolrpc     1b1d0b69 GO       source_build=GO      compiler=baseline_fails    170.4s 
+poolrpc     cd632058 GO       source_build=GO      compiler=baseline_fails      3.7s 
+poolrpc     e6b45a76 GO       source_build=GO      compiler=-                   1.4s 
+poolrpc     b2a5c14e GO       source_build=GO      compiler=-                   1.7s 
+poolrpc     091d8f57 GO       source_build=GO      compiler=-                   1.7s 
+poolrpc     f82b5759 GO       source_build=GO      compiler=baseline_fails      3.7s 
+poolrpc     b4b21da1 GO       source_build=GO      compiler=-                   1.4s 
+poolrpc     a63985d6 GO       source_build=GO      compiler=baseline_fails      4.1s 
+poolrpc     1ef87fe3 GO       source_build=GO      compiler=-                   1.3s 
+poolrpc     758aa8e2 NO_GO    source_build=GO      compiler=-                   2.2s 
+poolrpc     73612159 GO       source_build=GO      compiler=-                   1.3s 
+poolrpc     c85f2175 GO       source_build=GO      compiler=baseline_fails      2.6s 
+poolrpc     34d03652 GO       source_build=GO      compiler=baseline_fails      3.0s 
+poolrpc     9e36c749 GO       source_build=GO      compiler=baseline_fails      2.9s 
+poolrpc     cb538981 GO       source_build=GO      compiler=-                   0.9s 
+poolrpc     70719b68 GO       source_build=GO      compiler=-                   1.0s 
+poolrpc     7f2f4818 GO       source_build=GO      compiler=baseline_fails      3.2s 
+poolrpc     b1848de6 GO       source_build=GO      compiler=baseline_fails      3.5s 
+poolrpc     2b3b29e3 GO       source_build=GO      compiler=-                   1.5s 
+poolrpc       20 decisions  GO  19  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO  19  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+
+20 windows in 4m10s.
+exit 0 seconds 250
