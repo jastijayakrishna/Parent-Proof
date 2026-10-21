@@ -1,9 +1,9 @@
-time=2026-10-06T11:24:20.999Z level=INFO msg=cloning repo=cosmos-sdk url=https://github.com/cosmos/cosmos-sdk.git
-time=2026-10-06T11:24:37.035Z level=INFO msg=cloning repo=gaia url=https://github.com/cosmos/gaia.git
-time=2026-10-06T11:25:28.536Z level=INFO msg=mined consumer=gaia pin_moves=32 to_compile=4 skipped=map[]
-time=2026-10-06T11:26:31.409Z level=INFO msg=canary consumer=gaia at=345b75db786446dbcc4b3ad0e1b65c465fcf4b0e^ outcome=breaks detail="canary: github.com/cosmos/cosmos-sdk/types removed."
-time=2026-10-06T11:27:24.430Z level=INFO msg=window consumer=gaia bump=345b75db select=unchanged breaking=0 compiler=bump_side_effect
-time=2026-10-06T11:28:52.419Z level=INFO msg=window consumer=gaia bump=558be632 select=breaking breaking=80 compiler=compiles
-time=2026-10-06T11:29:04.752Z level=INFO msg=window consumer=gaia bump=96b246b9 select=breaking breaking=55 compiler=oracle_error
-time=2026-10-06T11:30:25.263Z level=INFO msg=window consumer=gaia bump=d483577c select=unchanged breaking=0 compiler=compiles
-time=2026-10-06T11:30:25.263Z level=INFO msg="suite built" suite=cosmos-sdk windows_added=4
+time=2026-10-21T08:04:42.394Z level=INFO msg=cloning repo=cosmos-sdk url=https://github.com/cosmos/cosmos-sdk.git
+time=2026-10-21T08:05:02.132Z level=INFO msg=cloning repo=gaia url=https://github.com/cosmos/gaia.git
+time=2026-10-21T08:05:51.772Z level=INFO msg=mined consumer=gaia pin_moves=32 to_compile=4 skipped=map[]
+time=2026-10-21T08:07:11.142Z level=INFO msg=canary consumer=gaia at=345b75db786446dbcc4b3ad0e1b65c465fcf4b0e^ outcome=breaks detail="canary: github.com/cosmos/cosmos-sdk/types removed."
+time=2026-10-21T08:08:26.244Z level=INFO msg=window consumer=gaia bump=345b75db select=unchanged breaking=0 compiler=bump_side_effect
+time=2026-10-21T08:09:30.206Z level=INFO msg=window consumer=gaia bump=558be632 select=breaking breaking=80 compiler=compiles
+time=2026-10-21T08:09:53.772Z level=INFO msg=window consumer=gaia bump=96b246b9 select=breaking breaking=55 compiler=oracle_error
+time=2026-10-21T08:11:10.445Z level=INFO msg=window consumer=gaia bump=d483577c select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:11:10.445Z level=INFO msg="suite built" suite=cosmos-sdk windows_added=4
