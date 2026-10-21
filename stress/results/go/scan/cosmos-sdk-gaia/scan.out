@@ -1,25 +1,25 @@
-time=2026-10-06T10:34:06.971Z level=INFO msg=cloning repo=p-cosmos-sdk-gaia url=https://github.com/cosmos/cosmos-sdk.git
-time=2026-10-06T10:34:09.432Z level=INFO msg=cloning repo=c-cosmos-sdk-gaia url=https://github.com/cosmos/gaia.git
-cosmos-sdk-gaia 081b5f3b UNKNOWN  source_build=UNKNOWN compiler=-                  71.0s 
-cosmos-sdk-gaia 1834f4cc UNKNOWN  source_build=UNKNOWN compiler=compiles          191.0s 
-cosmos-sdk-gaia f9f3bfb0 UNKNOWN  source_build=UNKNOWN compiler=compiles          122.8s 
-cosmos-sdk-gaia a158c24b UNKNOWN  source_build=UNKNOWN compiler=compiles           96.0s 
-cosmos-sdk-gaia 28c50a4a UNKNOWN  source_build=UNKNOWN compiler=compiles          100.4s 
-cosmos-sdk-gaia d68d169a UNKNOWN  source_build=UNKNOWN compiler=compiles          128.1s 
-cosmos-sdk-gaia 49be51a9 UNKNOWN  source_build=UNKNOWN compiler=compiles          107.6s 
-cosmos-sdk-gaia 9539caae GO       source_build=GO      compiler=compiles          107.3s 
-cosmos-sdk-gaia c4ae99c4 UNKNOWN  source_build=UNKNOWN compiler=compiles           94.5s 
-cosmos-sdk-gaia 84eab8b4 GO       source_build=GO      compiler=compiles           88.7s 
-cosmos-sdk-gaia 2f09f3af UNKNOWN  source_build=UNKNOWN compiler=compiles           93.9s 
-cosmos-sdk-gaia 351d704c UNKNOWN  source_build=UNKNOWN compiler=compiles           97.4s 
-cosmos-sdk-gaia 7f7c41e4 UNKNOWN  source_build=UNKNOWN compiler=compiles           23.8s 
+time=2026-10-21T08:01:44.881Z level=INFO msg=cloning repo=p-cosmos-sdk-gaia url=https://github.com/cosmos/cosmos-sdk.git
+time=2026-10-21T08:01:47.485Z level=INFO msg=cloning repo=c-cosmos-sdk-gaia url=https://github.com/cosmos/gaia.git
+cosmos-sdk-gaia 081b5f3b UNKNOWN  source_build=UNKNOWN compiler=-                 111.0s 
+cosmos-sdk-gaia 1834f4cc UNKNOWN  source_build=UNKNOWN compiler=compiles          197.4s 
+cosmos-sdk-gaia f9f3bfb0 UNKNOWN  source_build=UNKNOWN compiler=compiles          123.1s 
+cosmos-sdk-gaia a158c24b UNKNOWN  source_build=UNKNOWN compiler=compiles           95.8s 
+cosmos-sdk-gaia 28c50a4a UNKNOWN  source_build=UNKNOWN compiler=compiles          105.3s 
+cosmos-sdk-gaia d68d169a UNKNOWN  source_build=UNKNOWN compiler=compiles          130.5s 
+cosmos-sdk-gaia 49be51a9 UNKNOWN  source_build=UNKNOWN compiler=compiles          111.2s 
+cosmos-sdk-gaia 9539caae GO       source_build=GO      compiler=compiles          112.7s 
+cosmos-sdk-gaia c4ae99c4 UNKNOWN  source_build=UNKNOWN compiler=compiles           94.4s 
+cosmos-sdk-gaia 84eab8b4 GO       source_build=GO      compiler=compiles           89.3s 
+cosmos-sdk-gaia 2f09f3af UNKNOWN  source_build=UNKNOWN compiler=compiles           93.6s 
+cosmos-sdk-gaia 351d704c UNKNOWN  source_build=UNKNOWN compiler=compiles           97.1s 
+cosmos-sdk-gaia 7f7c41e4 UNKNOWN  source_build=UNKNOWN compiler=compiles           24.6s 
 cosmos-sdk-gaia ff779eca GO       source_build=GO      compiler=compiles           18.4s 
-cosmos-sdk-gaia 1fda5b61 UNKNOWN  source_build=UNKNOWN compiler=bump_side_effect   65.4s 
-cosmos-sdk-gaia 2a338e03 UNKNOWN  source_build=UNKNOWN compiler=compiles          100.3s 
-cosmos-sdk-gaia 13b450a2 GO       source_build=GO      compiler=compiles           57.2s 
-cosmos-sdk-gaia 4f9882b5 GO       source_build=GO      compiler=compiles           99.6s 
-cosmos-sdk-gaia edafb06a GO       source_build=GO      compiler=compiles           56.7s 
-cosmos-sdk-gaia a5f463a9 UNKNOWN  source_build=UNKNOWN compiler=compiles           99.2s 
+cosmos-sdk-gaia 1fda5b61 UNKNOWN  source_build=UNKNOWN compiler=bump_side_effect   63.5s 
+cosmos-sdk-gaia 2a338e03 UNKNOWN  source_build=UNKNOWN compiler=compiles           98.9s 
+cosmos-sdk-gaia 13b450a2 GO       source_build=GO      compiler=compiles           54.2s 
+cosmos-sdk-gaia 4f9882b5 GO       source_build=GO      compiler=compiles          100.0s 
+cosmos-sdk-gaia edafb06a GO       source_build=GO      compiler=compiles           54.5s 
+cosmos-sdk-gaia a5f463a9 UNKNOWN  source_build=UNKNOWN compiler=compiles           94.2s 
 cosmos-sdk-gaia   20 decisions  GO   6  NO-GO   0  UNKNOWN  14 (70.0%)  errors 0 | compiler judged  18: agree   6  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 12 | not judged 2
 TOTAL         20 decisions  GO   6  NO-GO   0  UNKNOWN  14 (70.0%)  errors 0 | compiler judged  18: agree   6  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 12 | not judged 2
 
@@ -41,6 +41,6 @@ UNKNOWN reasons across all: windows, ecosystems, an example
   FAILED cosmos-sdk-gaia@2a338e032c582386f1c8c32a5b2803752f8b53fc: unknown_on_safe: DESCRIPTOR_REFLECTION, TYPE_ERROR_HIDES_USES
   FAILED cosmos-sdk-gaia@a5f463a96583180cf11a2b20a888e7f1f692b9a5: unknown_on_safe: CONTRACT_COMPILE_ERROR
 
-20 windows in 30m24s.
+20 windows in 31m15s.
 verifier gate: scan failed: 12 disagreements with the compiler or errors
-exit 1 seconds 1824
+exit 1 seconds 1875
