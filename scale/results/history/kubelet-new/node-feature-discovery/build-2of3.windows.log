@@ -1,0 +1,9 @@
+time=2026-10-21T08:31:19.155Z level=INFO msg=mined consumer=node-feature-discovery pin_moves=30 to_compile=10 skipped=map[]
+time=2026-10-21T08:33:48.690Z level=INFO msg=canary consumer=node-feature-discovery at=0e22b71dc749176945e568439de2bfec4f6ab35d^ outcome=breaks detail="canary: k8s.io/kubelet/pkg/apis/podresources/v1 removed."
+time=2026-10-21T08:34:09.716Z level=INFO msg=window consumer=node-feature-discovery bump=0e22b71d select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:36:16.022Z level=INFO msg=window consumer=node-feature-discovery bump=285f4253 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:38:11.594Z level=INFO msg=window consumer=node-feature-discovery bump=198eb2b5 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:39:15.976Z level=INFO msg=window consumer=node-feature-discovery bump=4ae762ac select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:42:48.457Z level=INFO msg=window consumer=node-feature-discovery bump=553b2699 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:45:25.942Z level=INFO msg=window consumer=node-feature-discovery bump=871da8ec select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:45:54.644Z level=INFO msg=window consumer=node-feature-discovery bump=b09a4544 select=unchanged breaking=0 compiler=compiles
