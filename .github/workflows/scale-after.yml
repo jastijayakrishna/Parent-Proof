@@ -1,0 +1,80 @@
+# After the scale test (not part of its pre-registered count): decide the
+# scale test's recorded upgrades again with another binary, the compiler's
+# answers frozen as recorded (scripts/decide.sh). Started by a push of
+# scale/after/request.txt: bin=FILE (a gzipped binary under bin/), label=NAME
+# (results go to scale/after/NAME/), only=a,b (suites or consumers; empty:
+# every pair of scale/plan.json), diag=SUITE:CONSUMER (also decide a
+# scale/diag suite's windows).
+name: scale-after
+on:
+  push:
+    paths:
+      - scale/after/request.txt
+  workflow_dispatch:
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      jobs: ${{ steps.p.outputs.jobs }}
+      bin: ${{ steps.p.outputs.bin }}
+      label: ${{ steps.p.outputs.label }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - id: p
+        run: |
+          r=scale/after/request.txt
+          bin=$(sed -n 's/^bin=//p' $r); label=$(sed -n 's/^label=//p' $r)
+          only=$(sed -n 's/^only=//p' $r | tr -d ' '); diag=$(sed -n 's/^diag=//p' $r | tr -d ' ')
+          jobs=$(jq -c --arg only "$only" '[.history[] | select(.suite as $s | .consumer as $c | $only == "" or (($only | split(",")) | (index($s) != null or index($c) != null)))
+            | {suite: .suite, consumer: .consumer, diag: false}]' scale/plan.json)
+          if [ -n "$diag" ]; then
+            jobs=$(echo "$jobs" | jq -c --arg d "$diag" '. + [($d | split(",")[] | split(":") | {suite: .[0], consumer: .[1], diag: true})]')
+          fi
+          echo "jobs: $(echo "$jobs" | jq length)"
+          { echo "jobs=$jobs"; echo "bin=$bin"; echo "label=$label"; } >> "$GITHUB_OUTPUT"
+
+  decide:
+    needs: plan
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        job: ${{ fromJSON(needs.plan.outputs.jobs) }}
+    name: "decide ${{ matrix.job.suite }} -> ${{ matrix.job.consumer }}"
+    env:
+      GOTOOLCHAIN: auto
+      SUITE: ${{ matrix.job.suite }}
+      CONSUMER: ${{ matrix.job.consumer }}
+      BIN_FILE: ${{ needs.plan.outputs.bin }}
+      LABEL: ${{ needs.plan.outputs.label }}
+      DIAG: ${{ matrix.job.diag }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: stable
+          cache: false
+      - run: echo "::remove-matcher owner=go::"
+      - name: Decide again and commit
+        run: |
+          if [ "$DIAG" = true ]; then
+            export SUITE_DIR=scale/diag/suites WINDOWS=scale/diag/suites/$SUITE.jsonl SRC=scale/results/history/durabletask/dapr
+          fi
+          export DEST="scale/after/$LABEL/$SUITE/$CONSUMER"
+          bash scripts/decide.sh
+          git config user.name "proto-shadow"
+          git config user.email "proto-shadow@users.noreply.github.com"
+          git add scale/after
+          git commit -q -m "Scale after ($LABEL): $SUITE -> $CONSUMER" || exit 0
+          for i in $(seq 1 20); do
+            if git pull -q --rebase -X theirs origin main && git push -q; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          exit 1
