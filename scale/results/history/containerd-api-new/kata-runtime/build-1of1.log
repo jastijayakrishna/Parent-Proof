@@ -1,0 +1,7 @@
+time=2026-10-21T08:37:13.523Z level=INFO msg=cloning repo=containerd-api url=https://github.com/containerd/containerd.git
+time=2026-10-21T08:37:20.893Z level=INFO msg=cloning repo=kata-runtime url=https://github.com/kata-containers/kata-containers.git
+time=2026-10-21T08:37:27.975Z level=INFO msg=mined consumer=kata-runtime pin_moves=2 to_compile=2 skipped=map[]
+time=2026-10-21T08:38:07.083Z level=INFO msg=canary consumer=kata-runtime at=a6e5d28a15af4a11260312fdc9c33088c9f7a6ac outcome=compiles detail="canary: github.com/containerd/containerd/api/events removed."
+time=2026-10-21T08:38:30.502Z level=INFO msg=window consumer=kata-runtime bump=a6e5d28a select=breaking breaking=202 compiler=bump_side_effect
+time=2026-10-21T08:38:37.964Z level=INFO msg=window consumer=kata-runtime bump=fab82858 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:38:37.964Z level=INFO msg="suite built" suite=containerd-api-new windows_added=2
