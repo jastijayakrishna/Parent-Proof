@@ -1,0 +1,48 @@
+time=2026-10-21T11:55:15.331Z level=INFO msg=cloning repo=pulumi-v3 url=https://github.com/pulumi/pulumi.git
+time=2026-10-21T11:55:32.919Z level=INFO msg=cloning repo=pulumi-yaml url=https://github.com/pulumi/pulumi-yaml.git
+pulumi-yaml 0b86aae8 GO       source_build=GO      compiler=compiles          26.4s replay=true 
+pulumi-yaml 01864128 NO_GO    source_build=NO_GO   compiler=breaks            27.4s replay=true 
+pulumi-yaml 0fe531ad NO_GO    source_build=NO_GO   compiler=breaks            13.6s replay=true 
+pulumi-yaml 0cfa994e GO       source_build=GO      compiler=compiles          16.3s replay=true 
+pulumi-yaml 10a01981 GO       source_build=GO      compiler=compiles          11.2s replay=true 
+pulumi-yaml 10abde30 NO_GO    source_build=NO_GO   compiler=breaks            11.1s replay=true 
+pulumi-yaml 12d71d52 NO_GO    source_build=NO_GO   compiler=breaks            10.8s replay=true 
+pulumi-yaml 2925101e GO       source_build=GO      compiler=compiles          10.0s replay=true 
+pulumi-yaml 2a08a840 GO       source_build=GO      compiler=compiles           6.8s replay=true 
+pulumi-yaml 2fb599d0 NO_GO    source_build=NO_GO   compiler=breaks             8.2s replay=true 
+pulumi-yaml 353b12dc NO_GO    source_build=NO_GO   compiler=breaks            10.8s replay=true 
+pulumi-yaml 3b0fda25 NO_GO    source_build=NO_GO   compiler=breaks            11.0s replay=true 
+pulumi-yaml 4784ba54 GO       source_build=GO      compiler=compiles           8.3s replay=true 
+pulumi-yaml 4acf69c5 GO       source_build=GO      compiler=compiles           6.3s replay=true 
+pulumi-yaml 76697756 GO       source_build=GO      compiler=compiles           7.1s replay=true 
+pulumi-yaml 7809596c GO       source_build=GO      compiler=compiles           8.4s replay=true 
+pulumi-yaml 817e8ded NO_GO    source_build=NO_GO   compiler=breaks             8.7s replay=true 
+pulumi-yaml 8265a7a3 NO_GO    source_build=NO_GO   compiler=breaks             7.8s replay=true 
+pulumi-yaml 92365104 GO       source_build=GO      compiler=compiles           7.1s replay=true 
+pulumi-yaml 95779b21 GO       source_build=GO      compiler=compiles           6.9s replay=true 
+pulumi-yaml 9bf66fb8 GO       source_build=GO      compiler=compiles           6.7s replay=true 
+pulumi-yaml 981cb774 GO       source_build=GO      compiler=compiles           8.7s replay=true 
+pulumi-yaml 9c7ca418 GO       source_build=GO      compiler=compiles           8.8s replay=true 
+pulumi-yaml 9cac7ca6 GO       source_build=GO      compiler=compiles           8.4s replay=true 
+pulumi-yaml 9cd39487 GO       source_build=GO      compiler=compiles           7.0s replay=true 
+pulumi-yaml b9be28f7 GO       source_build=GO      compiler=compiles           8.9s replay=true 
+pulumi-yaml c522eece GO       source_build=GO      compiler=compiles           8.9s replay=true 
+pulumi-yaml c7d487a9 GO       source_build=GO      compiler=compiles           6.7s replay=true 
+pulumi-yaml dd3af85a NO_GO    source_build=NO_GO   compiler=breaks             7.3s replay=true 
+pulumi-yaml d3b7f3ce GO       source_build=GO      compiler=compiles           8.9s replay=true 
+pulumi-yaml dde3dbee NO_GO    source_build=NO_GO   compiler=breaks             8.4s replay=true 
+pulumi-yaml de455163 NO_GO    source_build=NO_GO   compiler=breaks             7.9s replay=true 
+pulumi-yaml de658844 GO       source_build=GO      compiler=compiles           7.0s replay=true 
+pulumi-yaml e9403210 GO       source_build=GO      compiler=compiles           8.9s replay=true 
+pulumi-yaml efc7b02d NO_GO    source_build=NO_GO   compiler=breaks             7.6s replay=true 
+pulumi-yaml f02d4f25 GO       source_build=GO      compiler=compiles           6.3s replay=true 
+pulumi-yaml f47b0777 GO       source_build=GO      compiler=compiles           8.8s replay=true 
+pulumi-yaml ff8a2cd7 GO       source_build=GO      compiler=compiles           8.9s replay=true 
+pulumi-yaml/additive   windows= 16 | breaks= 7: caught= 7 WRONG_GO=0 abstained=0 | compiles= 9: GO= 9 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=16 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=16
+pulumi-yaml/breaking   windows=  3 | breaks= 3: caught= 3 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=3 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=2 | errors=0 | replayed=3
+pulumi-yaml/unchanged  windows= 19 | breaks= 3: caught= 3 WRONG_GO=0 abstained=0 | compiles=16: GO=16 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=19 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=19
+TOTAL                  windows= 38 | breaks=13: caught=13 WRONG_GO=0 abstained=0 | compiles=25: GO=25 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=38 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=2 | errors=0 | replayed=38
+
+38 windows in 3m5s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 204
