@@ -1,0 +1,28 @@
+terraform-plugin-mux 19dddc72 GO       source_build=GO      compiler=compiles           5.0s replay=true 
+terraform-plugin-mux 2d33d1e1 GO       source_build=GO      compiler=compiles           5.0s replay=true 
+terraform-plugin-mux 50b5ca2a GO       source_build=GO      compiler=compiles           0.2s replay=true 
+terraform-plugin-mux 36bf5f53 UNKNOWN  source_build=UNKNOWN compiler=compiles           1.2s replay=true 
+terraform-plugin-mux 72c576af UNKNOWN  source_build=UNKNOWN compiler=compiles           1.2s replay=true 
+terraform-plugin-mux 8150271e GO       source_build=GO      compiler=compiles           0.9s replay=true 
+terraform-plugin-mux 93c5ace5 UNKNOWN  source_build=UNKNOWN compiler=breaks             0.9s replay=true 
+terraform-plugin-mux 9a3752c9 GO       source_build=GO      compiler=compiles           0.4s replay=true 
+terraform-plugin-mux 8c4e3879 UNKNOWN  source_build=UNKNOWN compiler=compiles           0.5s replay=true 
+terraform-plugin-mux ba534763 UNKNOWN  source_build=UNKNOWN compiler=compiles           0.6s replay=true 
+terraform-plugin-mux fc494c18 GO       source_build=GO      compiler=compiles           0.5s replay=true 
+terraform-plugin-mux fe8079b6 UNKNOWN  source_build=UNKNOWN compiler=breaks             0.2s replay=true 
+terraform-plugin-mux a8efb0b8 GO       source_build=GO      compiler=compiles           1.6s replay=true 
+terraform-plugin-mux e62d24c7 UNKNOWN  source_build=UNKNOWN compiler=compiles           0.9s replay=true 
+terraform-plugin-mux/additive windows=  5 | breaks= 1: caught= 0 WRONG_GO=0 abstained=1 | compiles= 4: GO= 0 FALSE_NOGO=0 abstained=4 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=5 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=5
+terraform-plugin-mux/breaking windows=  2 | breaks= 1: caught= 0 WRONG_GO=0 abstained=1 | compiles= 1: GO= 0 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
+terraform-plugin-mux/unchanged windows=  7 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 7: GO= 7 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=7 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=7
+TOTAL                  windows= 14 | breaks= 2: caught= 0 WRONG_GO=0 abstained=2 | compiles=12: GO= 7 FALSE_NOGO=0 abstained=5 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=14 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=14
+  WITHIN THE UNKNOWN LIMIT terraform-plugin-mux@36bf5f536f9e..3cebe39d: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+  WITHIN THE UNKNOWN LIMIT terraform-plugin-mux@72c576af7741..7a04181e: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+  FAILED terraform-plugin-mux@93c5ace530fc..09a1181b: unknown_on_break: internal/tf5testserver/tf5testserver.go:14:34: cannot use &TestServer{} (value of type *TestServer) as tfprotov5.ProviderServer value in variable declaration: *TestServer does not implement tfprotov5.ProviderServer (missing method GenerateResourceConfig) | internal/tf5testserver/tf5testserver.go:80:9: cannot use s (variable of type *TestServer) as tfprotov5.ProviderServer value in return statement: *TestServer does not implement tfprotov5.ProviderServer (missing method GenerateResourceConfig) | internal/tf6testserver/tf6testserver.go:14:34: cannot use &TestServer{} (value of type *TestServer) as tfprotov6.ProviderServer value in variable declaration: *TestServer does not implement tfprotov6.ProviderServer (missing method GenerateResourceConfig)
+  WITHIN THE UNKNOWN LIMIT terraform-plugin-mux@8c4e387986cf..bd1819d2: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+  WITHIN THE UNKNOWN LIMIT terraform-plugin-mux@ba534763859e..e33a5336: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+  FAILED terraform-plugin-mux@fe8079b634a4..255a89cd: unknown_on_break: internal/tf5testserver/tf5testserver.go:12:34: cannot use &TestServer{} (value of type *TestServer) as tfprotov5.ProviderServer value in variable declaration: *TestServer does not implement tfprotov5.ProviderServer (missing method GetMetadata) | internal/tf5testserver/tf5testserver.go:45:9: cannot use s (variable of type *TestServer) as tfprotov5.ProviderServer value in return statement: *TestServer does not implement tfprotov5.ProviderServer (missing method GetMetadata) | internal/tf6testserver/tf6testserver.go:12:34: cannot use &TestServer{} (value of type *TestServer) as tfprotov6.ProviderServer value in variable declaration: *TestServer does not implement tfprotov6.ProviderServer (missing method GetMetadata)
+  WITHIN THE UNKNOWN LIMIT terraform-plugin-mux@e62d24c776ef..a106af9a: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+
+14 windows in 10s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 2 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
