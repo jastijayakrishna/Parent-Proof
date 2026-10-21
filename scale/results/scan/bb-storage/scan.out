@@ -1,0 +1,47 @@
+time=2026-10-21T09:24:01.648Z level=INFO msg=cloning repo=p-bb-storage url=https://github.com/buildbarn/bb-storage.git
+time=2026-10-21T09:24:03.113Z level=INFO msg=cloning repo=c-bb-storage url=https://github.com/buildbarn/bb-remote-execution.git
+bb-storage  8f5499bc UNKNOWN  source_build=UNKNOWN compiler=compiles           50.6s 
+bb-storage  677f49d4 UNKNOWN  source_build=UNKNOWN compiler=compiles            4.9s 
+bb-storage  d825f0c4 UNKNOWN  source_build=UNKNOWN compiler=compiles            6.2s 
+bb-storage  b4bd7983 GO       source_build=GO      compiler=compiles            5.0s 
+bb-storage  f48c18e9 UNKNOWN  source_build=UNKNOWN compiler=compiles            6.6s 
+bb-storage  f62d21c7 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.1s 
+bb-storage  5b5db75d UNKNOWN  source_build=UNKNOWN compiler=compiles            4.7s 
+bb-storage  51e1a679 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.5s 
+bb-storage  9d57c374 GO       source_build=GO      compiler=-                   0.3s 
+bb-storage  7ca8e392 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.4s 
+bb-storage  3c0eb5f6 UNKNOWN  source_build=UNKNOWN compiler=compiles            5.1s 
+bb-storage  267d6195 UNKNOWN  source_build=UNKNOWN compiler=compiles            4.1s 
+bb-storage  7d1ca2fb UNKNOWN  source_build=UNKNOWN compiler=compiles            4.2s 
+bb-storage  a3f0c77a UNKNOWN  source_build=UNKNOWN compiler=compiles            6.4s 
+bb-storage  6e314df8 GO       source_build=GO      compiler=-                   0.3s 
+bb-storage  5bae5844 UNKNOWN  source_build=UNKNOWN compiler=compiles            5.2s 
+bb-storage  61b785be GO       source_build=GO      compiler=compiles            2.6s 
+bb-storage  03f721aa UNKNOWN  source_build=UNKNOWN compiler=compiles            4.6s 
+bb-storage  a73d9605 UNKNOWN  source_build=UNKNOWN compiler=compiles            5.4s 
+bb-storage  985dacd5 GO       source_build=GO      compiler=-                   0.3s 
+bb-storage    20 decisions  GO   5  NO-GO   0  UNKNOWN  15 (75.0%)  errors 0 | compiler judged  17: agree   2  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 15 | not judged 3
+TOTAL         20 decisions  GO   5  NO-GO   0  UNKNOWN  15 (75.0%)  errors 0 | compiler judged  17: agree   2  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 15 | not judged 3
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+   13   1  TOOLCHAIN_TOO_OLD (e.g. bb-storage@8f5499bc70ffc9a133432837fd475d62703008d8)
+    2   1  CONTRACT_COMPILE_ERROR (e.g. bb-storage@f48c18e95728c9274d06d52d9c41120fd9e34b48)
+  FAILED bb-storage@8f5499bc70ffc9a133432837fd475d62703008d8: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED bb-storage@677f49d41847194598d27ff90a3ca9b00d86a4ff: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED bb-storage@d825f0c474db8974e3325ab044b1716881b777bb: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED bb-storage@f48c18e95728c9274d06d52d9c41120fd9e34b48: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED bb-storage@f62d21c785f14e47af523673ed2827206b3d5161: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED bb-storage@5b5db75d620841b08c02f04f817652d4ebc949ce: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED bb-storage@51e1a67922e22d65445f43aa809636cb481644f3: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED bb-storage@7ca8e392c0fb11182f44af9ffe87a255f17f6c6a: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED bb-storage@3c0eb5f6f1bae8f0af2cdc66e67ce43eaaa82ebd: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED bb-storage@267d6195655f548609a004b35e9d72ae947c7947: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED bb-storage@7d1ca2fb9d2c4c282e256709672cdd9c40e4790d: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED bb-storage@a3f0c77a996f0801a875a604c22608d94f06c910: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED bb-storage@5bae58446505a87d0f3249a5d97accb9b47f3c88: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED bb-storage@03f721aa0976b265f0ba1141da155b8f9a7bfd6e: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED bb-storage@a73d96059b0f211267391994ddf391c29c0d5b4e: unknown_on_safe: TOOLCHAIN_TOO_OLD
+
+20 windows in 2m9s.
+verifier gate: scan failed: 15 disagreements with the compiler or errors
+exit 1 seconds 129
