@@ -1,0 +1,8 @@
+time=2026-10-21T09:13:56.570Z level=INFO msg=mined consumer=rekor-tiles pin_moves=6 to_compile=6 skipped=map[]
+time=2026-10-21T09:15:03.121Z level=INFO msg=canary consumer=rekor-tiles at=38109148db2f23235f4ab3a38fa2902b439909d8^ outcome=breaks detail="canary: github.com/sigstore/protobuf-specs/gen/pb-go/rekor/v1 removed."
+time=2026-10-21T09:15:06.794Z level=INFO msg=window consumer=rekor-tiles bump=38109148 select=breaking breaking=7 compiler=compiles
+time=2026-10-21T09:16:01.117Z level=INFO msg=window consumer=rekor-tiles bump=b2931c4a select=breaking breaking=3 compiler=compiles
+time=2026-10-21T09:16:20.966Z level=INFO msg=window consumer=rekor-tiles bump=497e5d69 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:16:40.400Z level=INFO msg=window consumer=rekor-tiles bump=faad78a8 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:18:15.147Z level=INFO msg=window consumer=rekor-tiles bump=f9f26f9f select=breaking breaking=7 compiler=compiles
+time=2026-10-21T09:18:27.858Z level=INFO msg=window consumer=rekor-tiles bump=d7fa58c9 select=additive breaking=0 compiler=compiles
