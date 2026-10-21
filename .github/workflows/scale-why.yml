@@ -1,0 +1,55 @@
+# Diagnostics (not scored): decide each line of scale/diag/why.txt again with
+# `verifier verify` and commit what explains the answer (scripts/why.sh).
+name: scale-why
+on:
+  push:
+    paths:
+      - scale/diag/why.txt
+  workflow_dispatch:
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      lines: ${{ steps.p.outputs.lines }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - id: p
+        run: |
+          n=$(grep -cv '^#' scale/diag/why.txt)
+          echo "lines=$(jq -cn --argjson n "$n" '[range(1; $n + 1)]')" >> "$GITHUB_OUTPUT"
+
+  why:
+    needs: plan
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        line: ${{ fromJSON(needs.plan.outputs.lines) }}
+    env:
+      GOTOOLCHAIN: auto
+      LINE: ${{ matrix.line }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: stable
+          cache: false
+      - run: echo "::remove-matcher owner=go::"
+      - name: Decide again and commit the explanation
+        run: |
+          timeout 25m bash scripts/why.sh
+          git config user.name "proto-shadow"
+          git config user.email "proto-shadow@users.noreply.github.com"
+          git add scale/diag/why
+          git commit -q -m "Scale diagnostic: why line $LINE" || exit 0
+          for i in $(seq 1 20); do
+            if git pull -q --rebase -X theirs origin main && git push -q; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          exit 1
