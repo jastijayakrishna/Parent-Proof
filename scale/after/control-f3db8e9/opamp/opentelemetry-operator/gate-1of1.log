@@ -1,0 +1,18 @@
+time=2026-10-21T11:55:03.075Z level=INFO msg=cloning repo=opamp-spec url=https://github.com/open-telemetry/opamp-spec.git
+time=2026-10-21T11:55:03.425Z level=INFO msg=cloning repo=opentelemetry-operator url=https://github.com/open-telemetry/opentelemetry-operator.git
+opentelemetry-operator 2e5148d7 GO       source_build=GO      compiler=compiles           0.2s replay=true 
+opentelemetry-operator 4ad3d0bd GO       source_build=GO      compiler=compiles          45.5s replay=true 
+opentelemetry-operator 65f7a62a NO_GO    source_build=NO_GO   compiler=breaks            47.6s replay=true 
+opentelemetry-operator d726ee2b GO       source_build=GO      compiler=breaks            31.4s replay=true 
+opentelemetry-operator ee8db9d4 GO       source_build=GO      compiler=breaks             0.3s replay=true 
+opentelemetry-operator 934c1d8e NO_GO    source_build=NO_GO   compiler=breaks            34.7s replay=true 
+opentelemetry-operator/additive windows=  1 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 1: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=1
+opentelemetry-operator/breaking windows=  3 | breaks= 3: caught= 2 WRONG_GO=1 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=3 broken=1 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=3
+opentelemetry-operator/unchanged windows=  2 | breaks= 1: caught= 0 WRONG_GO=1 abstained=0 | compiles= 1: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
+TOTAL                  windows=  6 | breaks= 4: caught= 2 WRONG_GO=2 abstained=0 | compiles= 2: GO= 2 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=6 broken=1 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=6
+  FAILED opentelemetry-operator@d726ee2b2bdb..49860fd6: wrong_go: cmd/operator-opamp-bridge/internal/proxy/server.go:70:22: undefined: server.CallbacksStruct | cmd/operator-opamp-bridge/internal/proxy/server.go:74:35: undefined: server.ConnectionCallbacksStruct
+  FAILED opentelemetry-operator@ee8db9d4641a..7718250c: wrong_go: cmd/operator-opamp-bridge/logger/logger.go:24:22: cannot use &Logger{} (value of type *Logger) as types.Logger value in variable declaration: *Logger does not implement types.Logger (wrong type for method Debugf)
+
+6 windows in 1m20s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 2 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 82
