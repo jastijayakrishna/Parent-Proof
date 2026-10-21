@@ -1,11 +1,11 @@
-time=2026-10-06T11:19:44.039Z level=INFO msg=cloning repo=csi-spec url=https://github.com/container-storage-interface/spec.git
-time=2026-10-06T11:19:44.462Z level=INFO msg=cloning repo=external-attacher url=https://github.com/kubernetes-csi/external-attacher.git
-time=2026-10-06T11:19:49.317Z level=INFO msg=mined consumer=external-attacher pin_moves=6 to_compile=6 skipped=map[]
-time=2026-10-06T11:20:43.384Z level=INFO msg=canary consumer=external-attacher at=ed7a208aeea0262e6f22e21002ea7295afb98556^ outcome=breaks detail="canary: github.com/container-storage-interface/spec/lib/go/csi removed."
-time=2026-10-06T11:20:47.441Z level=INFO msg=window consumer=external-attacher bump=ed7a208a select=breaking breaking=1 compiler=compiles
-time=2026-10-06T11:21:58.083Z level=INFO msg=window consumer=external-attacher bump=69bcfba4 select=breaking breaking=17 compiler=compiles
-time=2026-10-06T11:22:58.827Z level=INFO msg=window consumer=external-attacher bump=02cfc0f6 select=breaking breaking=7 compiler=compiles
-time=2026-10-06T11:24:08.073Z level=INFO msg=window consumer=external-attacher bump=11ff374a select=breaking breaking=6 compiler=compiles
-time=2026-10-06T11:24:08.559Z level=INFO msg=window consumer=external-attacher bump=582bc3ee select=additive breaking=0 compiler=compiles
-time=2026-10-06T11:24:44.375Z level=INFO msg=window consumer=external-attacher bump=34beee3e select=additive breaking=0 compiler=compiles
-time=2026-10-06T11:24:44.375Z level=INFO msg="suite built" suite=csi-spec windows_added=6
+time=2026-10-21T08:07:50.949Z level=INFO msg=cloning repo=csi-spec url=https://github.com/container-storage-interface/spec.git
+time=2026-10-21T08:07:52.062Z level=INFO msg=cloning repo=external-attacher url=https://github.com/kubernetes-csi/external-attacher.git
+time=2026-10-21T08:07:56.876Z level=INFO msg=mined consumer=external-attacher pin_moves=6 to_compile=6 skipped=map[]
+time=2026-10-21T08:08:56.440Z level=INFO msg=canary consumer=external-attacher at=ed7a208aeea0262e6f22e21002ea7295afb98556^ outcome=breaks detail="canary: github.com/container-storage-interface/spec/lib/go/csi removed."
+time=2026-10-21T08:09:00.751Z level=INFO msg=window consumer=external-attacher bump=ed7a208a select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:10:19.448Z level=INFO msg=window consumer=external-attacher bump=69bcfba4 select=breaking breaking=17 compiler=compiles
+time=2026-10-21T08:11:29.711Z level=INFO msg=window consumer=external-attacher bump=02cfc0f6 select=breaking breaking=7 compiler=compiles
+time=2026-10-21T08:12:43.104Z level=INFO msg=window consumer=external-attacher bump=11ff374a select=breaking breaking=6 compiler=compiles
+time=2026-10-21T08:12:44.496Z level=INFO msg=window consumer=external-attacher bump=582bc3ee select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:13:22.614Z level=INFO msg=window consumer=external-attacher bump=34beee3e select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:13:22.614Z level=INFO msg="suite built" suite=csi-spec windows_added=6
