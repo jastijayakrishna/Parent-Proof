@@ -1,0 +1,12 @@
+time=2026-10-21T08:52:11.821Z level=INFO msg=mined consumer=grafana-infinity-datasource pin_moves=40 to_compile=10 skipped=map[]
+time=2026-10-21T08:53:00.186Z level=INFO msg=canary consumer=grafana-infinity-datasource at=19210938a43f1cb191c1194eb4ff85c5381cf71e^ outcome=breaks detail="canary: github.com/grafana/grafana-plugin-sdk-go/backend removed."
+time=2026-10-21T08:53:17.245Z level=INFO msg=window consumer=grafana-infinity-datasource bump=19210938 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:54:19.718Z level=INFO msg=window consumer=grafana-infinity-datasource bump=574fd511 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:54:21.482Z level=INFO msg=window consumer=grafana-infinity-datasource bump=3039ff0d select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:54:54.092Z level=INFO msg=window consumer=grafana-infinity-datasource bump=770c1b46 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:55:21.215Z level=INFO msg=window consumer=grafana-infinity-datasource bump=7fe569b3 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:55:56.874Z level=INFO msg=window consumer=grafana-infinity-datasource bump=9385a4c9 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:56:20.849Z level=INFO msg=window consumer=grafana-infinity-datasource bump=9bd9ed2b select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:56:34.100Z level=INFO msg=window consumer=grafana-infinity-datasource bump=cfab73e2 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:56:46.712Z level=INFO msg=window consumer=grafana-infinity-datasource bump=b40c48f6 select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T08:56:49.771Z level=INFO msg=window consumer=grafana-infinity-datasource bump=fb58d6a6 select=additive breaking=0 compiler=compiles
