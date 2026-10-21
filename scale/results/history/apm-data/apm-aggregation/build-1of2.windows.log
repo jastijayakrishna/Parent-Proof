@@ -1,0 +1,15 @@
+time=2026-10-21T09:07:03.644Z level=INFO msg=mined consumer=apm-aggregation pin_moves=25 to_compile=13 skipped=map[]
+time=2026-10-21T09:07:29.089Z level=INFO msg=canary consumer=apm-aggregation at=0addc06a9a09edbccd59eddb9d12bba0cc7dbf6e^ outcome=breaks detail="canary: github.com/elastic/apm-data/model/modelpb removed."
+time=2026-10-21T09:07:35.115Z level=INFO msg=window consumer=apm-aggregation bump=0addc06a select=breaking breaking=19 compiler=breaks
+time=2026-10-21T09:07:39.350Z level=INFO msg=window consumer=apm-aggregation bump=2328b798 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:08:20.739Z level=INFO msg=window consumer=apm-aggregation bump=404b82fe select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:08:24.053Z level=INFO msg=window consumer=apm-aggregation bump=4c6fcdf9 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:08:29.247Z level=INFO msg=window consumer=apm-aggregation bump=769a38de select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:08:42.030Z level=INFO msg=window consumer=apm-aggregation bump=8320d088 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:08:48.157Z level=INFO msg=window consumer=apm-aggregation bump=9f02546c select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:08:51.335Z level=INFO msg=window consumer=apm-aggregation bump=92a5354f select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:08:56.826Z level=INFO msg=window consumer=apm-aggregation bump=cdee9c68 select=breaking breaking=36 compiler=breaks
+time=2026-10-21T09:09:00.685Z level=INFO msg=window consumer=apm-aggregation bump=b22aefd8 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:09:08.012Z level=INFO msg=window consumer=apm-aggregation bump=e4ab9e25 select=breaking breaking=4 compiler=breaks
+time=2026-10-21T09:09:14.209Z level=INFO msg=window consumer=apm-aggregation bump=f2c08952 select=unchanged breaking=0 compiler=baseline_fails
+time=2026-10-21T09:09:14.512Z level=INFO msg=window consumer=apm-aggregation bump=fe64c41f select=unchanged breaking=0 compiler=compiles
