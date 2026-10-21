@@ -1,0 +1,13 @@
+time=2026-10-21T08:29:37.938Z level=INFO msg=cloning repo=function-sdk-go url=https://github.com/crossplane/function-sdk-go.git
+time=2026-10-21T08:29:38.421Z level=INFO msg=cloning repo=function-go-templating url=https://github.com/crossplane-contrib/function-go-templating.git
+time=2026-10-21T08:29:39.384Z level=INFO msg=mined consumer=function-go-templating pin_moves=8 to_compile=8 skipped=map[]
+time=2026-10-21T08:30:21.253Z level=INFO msg=canary consumer=function-go-templating at=7e41c5795c35b4dc64c9a3523e081955ec2e4e31^ outcome=breaks detail="canary: github.com/crossplane/function-sdk-go/proto/v1beta1 removed."
+time=2026-10-21T08:30:54.569Z level=INFO msg=window consumer=function-go-templating bump=7e41c579 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:31:40.047Z level=INFO msg=window consumer=function-go-templating bump=6250ace3 select=breaking breaking=1 compiler=breaks
+time=2026-10-21T08:32:21.574Z level=INFO msg=window consumer=function-go-templating bump=ab6d5a9c select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:33:17.395Z level=INFO msg=window consumer=function-go-templating bump=fba11b57 select=breaking breaking=2 compiler=compiles
+time=2026-10-21T08:33:22.810Z level=INFO msg=window consumer=function-go-templating bump=e249e8cb select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:34:16.961Z level=INFO msg=window consumer=function-go-templating bump=afdbe4f5 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:34:20.187Z level=INFO msg=window consumer=function-go-templating bump=0e9fe3c9 select=unchanged breaking=0 compiler=bump_side_effect
+time=2026-10-21T08:34:35.247Z level=INFO msg=window consumer=function-go-templating bump=ea1ae291 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:34:35.247Z level=INFO msg="suite built" suite=function-sdk windows_added=8
