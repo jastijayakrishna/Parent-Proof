@@ -1,0 +1,72 @@
+# Scale test diagnostics (not scored; scale/PREREG.md counts none of this):
+# decides a scale/diag suite's windows again with another view of the
+# provider, keeping the compiler answers already recorded. Started by a push
+# of scale/diag/request.txt (suite=NAME, consumer=NAME, shards=N).
+name: scale-diag
+on:
+  push:
+    paths:
+      - scale/diag/request.txt
+  workflow_dispatch:
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      jobs: ${{ steps.p.outputs.jobs }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - id: p
+        run: |
+          r=scale/diag/request.txt
+          suite=$(sed -n 's/^suite=//p' $r); consumer=$(sed -n 's/^consumer=//p' $r); n=$(sed -n 's/^shards=//p' $r)
+          jobs=$(jq -cn --arg s "$suite" --arg c "$consumer" --argjson n "${n:-1}" '[range(1; $n + 1) | {suite: $s, consumer: $c, shard: "\(.)/\($n)"}]')
+          echo "jobs=$jobs" >> "$GITHUB_OUTPUT"
+
+  decide:
+    needs: plan
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        job: ${{ fromJSON(needs.plan.outputs.jobs) }}
+    name: "diag ${{ matrix.job.suite }} -> ${{ matrix.job.consumer }} ${{ matrix.job.shard }}"
+    env:
+      GOTOOLCHAIN: auto
+      SUITE: ${{ matrix.job.suite }}
+      CONSUMER: ${{ matrix.job.consumer }}
+      SHARD: ${{ matrix.job.shard }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: stable
+          cache: false
+      - run: echo "::remove-matcher owner=go::"
+      - name: Decide and commit
+        run: |
+          set +e
+          tag=${SHARD/\//of}
+          dest="scale/diag/results/$SUITE/$CONSUMER"
+          mkdir -p "$dest" "$RUNNER_TEMP/suite"
+          gunzip -c bin/verifier-linux-amd64.gz > "$RUNNER_TEMP/verifier" && chmod +x "$RUNNER_TEMP/verifier"
+          cp scale/diag/suites/$SUITE.suite.json scale/diag/suites/$SUITE.jsonl "$RUNNER_TEMP/suite/"
+          timeout 25m "$RUNNER_TEMP/verifier" gate --suite "$RUNNER_TEMP/suite/$SUITE.suite.json" --oss "$RUNNER_TEMP/oss" --work "$RUNNER_TEMP/gate" \
+            --workers 2 --consumers "$CONSUMER" --shard "$SHARD" --out "$dest/results-$tag.jsonl" --timeout 20m > "$RUNNER_TEMP/gate.log" 2>&1
+          echo "gate exit $?" >> "$RUNNER_TEMP/gate.log"
+          tail -c 6000 "$RUNNER_TEMP/gate.log" > "$dest/gate-$tag.log"
+          { "$RUNNER_TEMP/verifier" version 2>&1 | head -1; sha256sum "$RUNNER_TEMP/verifier" | cut -c1-64; } > "$dest/verifier.txt"
+          git config user.name "proto-shadow"
+          git config user.email "proto-shadow@users.noreply.github.com"
+          git add scale/diag/results
+          git commit -q -m "Scale diagnostic: $SUITE -> $CONSUMER ($SHARD)" || exit 0
+          for i in $(seq 1 20); do
+            if git pull -q --rebase -X theirs origin main && git push -q; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          exit 1

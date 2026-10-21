@@ -1,0 +1,19 @@
+{
+ "name": "durabletask-gomodule",
+ "description": "Diagnostic, not scored: the scale test's durabletask -> dapr windows (same upgrades, same compiler answers) decided with the provider given as the Go module repository dapr/durabletask-go, whose .proto files sit in a git submodule Parent does not read.",
+ "provider": {
+  "name": "durabletask-go",
+  "repo": "dapr/durabletask-go",
+  "url": "https://github.com/dapr/durabletask-go.git",
+  "module": "github.com/dapr/durabletask-go"
+ },
+ "consumers": {
+  "dapr": {
+   "repo": "dapr/dapr",
+   "url": "https://github.com/dapr/dapr.git"
+  }
+ },
+ "windows": "durabletask-gomodule.jsonl",
+ "workers": 2,
+ "proof": "diagnostic"
+}
