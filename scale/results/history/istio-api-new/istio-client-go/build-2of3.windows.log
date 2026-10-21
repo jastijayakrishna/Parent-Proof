@@ -1,0 +1,15 @@
+time=2026-10-21T09:13:24.557Z level=INFO msg=mined consumer=istio-client-go pin_moves=40 to_compile=13 skipped=map[]
+time=2026-10-21T09:14:02.743Z level=INFO msg=canary consumer=istio-client-go at=06e60d421a2fe7dd9f2e72f5524244b107a0665e^ outcome=breaks detail="canary: istio.io/api/meta/v1alpha1 removed."
+time=2026-10-21T09:14:11.931Z level=INFO msg=window consumer=istio-client-go bump=06e60d42 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:13.803Z level=INFO msg=window consumer=istio-client-go bump=10e6ab06 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:14:22.724Z level=INFO msg=window consumer=istio-client-go bump=25b5d989 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:25.041Z level=INFO msg=window consumer=istio-client-go bump=3070f51f select=breaking breaking=7 compiler=compiles
+time=2026-10-21T09:14:33.802Z level=INFO msg=window consumer=istio-client-go bump=3eeb1396 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:36.361Z level=INFO msg=window consumer=istio-client-go bump=583f9cf2 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:38.355Z level=INFO msg=window consumer=istio-client-go bump=92046409 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:44.891Z level=INFO msg=window consumer=istio-client-go bump=676a810f select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:14:48.044Z level=INFO msg=window consumer=istio-client-go bump=9c4efbe1 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:14:52.451Z level=INFO msg=window consumer=istio-client-go bump=b19f9697 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:58.825Z level=INFO msg=window consumer=istio-client-go bump=c23475f4 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:15:03.306Z level=INFO msg=window consumer=istio-client-go bump=c74c9c74 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:15:08.019Z level=INFO msg=window consumer=istio-client-go bump=dd5cbe1c select=additive breaking=0 compiler=compiles
