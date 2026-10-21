@@ -1,0 +1,6 @@
+time=2026-10-21T08:48:42.412Z level=INFO msg=mined consumer=timestamp-authority pin_moves=4 to_compile=4 skipped=map[]
+time=2026-10-21T08:48:55.012Z level=INFO msg=canary consumer=timestamp-authority at=089d8f9864b565f87939f62c0a4fa839776dfc3b outcome=oracle_error detail="canary: no package of the consumer imports a package of github.com/sigstore/protobuf-specs directly"
+time=2026-10-21T08:49:46.360Z level=INFO msg=window consumer=timestamp-authority bump=089d8f98 select=breaking breaking=7 compiler=compiles
+time=2026-10-21T08:49:49.826Z level=INFO msg=window consumer=timestamp-authority bump=81262868 select=breaking breaking=3 compiler=compiles
+time=2026-10-21T08:50:30.447Z level=INFO msg=window consumer=timestamp-authority bump=027bd03a select=breaking breaking=7 compiler=compiles
+time=2026-10-21T08:50:31.247Z level=INFO msg=window consumer=timestamp-authority bump=410820f4 select=additive breaking=0 compiler=compiles

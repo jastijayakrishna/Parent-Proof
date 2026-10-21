@@ -1,0 +1,1 @@
+{"consumer":"timestamp-authority","at":"089d8f9864b565f87939f62c0a4fa839776dfc3b","shard":"1/1","oracle":{"outcome":"oracle_error","detail":"canary: no package of the consumer imports a package of github.com/sigstore/protobuf-specs directly"}}
