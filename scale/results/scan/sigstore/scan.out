@@ -1,0 +1,34 @@
+time=2026-10-21T09:19:18.835Z level=INFO msg=cloning repo=p-sigstore url=https://github.com/sigstore/protobuf-specs.git
+time=2026-10-21T09:19:20.592Z level=INFO msg=cloning repo=c-sigstore url=https://github.com/sigstore/sigstore-go.git
+sigstore    1e1e7123 GO       source_build=GO      compiler=compiles           40.9s 
+sigstore    83e80589 GO       source_build=GO      compiler=compiles            3.5s 
+sigstore    5ead98ad UNKNOWN  source_build=GO      compiler=compiles            2.3s 
+sigstore    4159f60c GO       source_build=GO      compiler=compiles            2.3s 
+sigstore    fa76ba70 GO       source_build=GO      compiler=compiles            1.3s 
+sigstore    0839ebe6 GO       source_build=GO      compiler=compiles            1.4s 
+sigstore    1ab12759 UNKNOWN  source_build=UNKNOWN compiler=compiles            1.6s 
+sigstore    b7e49bef UNKNOWN  source_build=UNKNOWN compiler=compiles            1.0s 
+sigstore    966b43d0 UNKNOWN  source_build=GO      compiler=compiles            1.6s 
+sigstore    a4c70fea NO_GO    source_build=GO      compiler=compiles            1.6s 
+sigstore    8b886ffc GO       source_build=GO      compiler=compiles            1.3s 
+sigstore    dda47952 GO       source_build=GO      compiler=compiles            1.3s 
+sigstore    4c08c800 GO       source_build=GO      compiler=compiles            1.9s 
+sigstore    5d689af6 GO       source_build=GO      compiler=compiles            1.8s 
+sigstore    95810107 UNKNOWN  source_build=GO      compiler=compiles            2.3s 
+sigstore    4752ba2f NO_GO    source_build=GO      compiler=compiles            2.1s 
+sigstore    134d5731 GO       source_build=GO      compiler=compiles            2.3s 
+sigstore    dadc81ee GO       source_build=GO      compiler=compiles            2.3s 
+sigstore    ad0a7582 GO       source_build=GO      compiler=compiles            1.5s 
+sigstore    64a83d21 GO       source_build=GO      compiler=compiles            1.7s 
+sigstore      20 decisions  GO  13  NO-GO   2  UNKNOWN   5 (25.0%)  errors 0 | compiler judged  20: agree  18  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 2 | not judged 0
+TOTAL         20 decisions  GO  13  NO-GO   2  UNKNOWN   5 (25.0%)  errors 0 | compiler judged  20: agree  18  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 2 | not judged 0
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    3   1  NEEDS_REVIEW (e.g. sigstore@5ead98ad3e645571bc9a8dd63ee173e3145dd37a)
+    2   1  CONTRACT_COMPILE_ERROR (e.g. sigstore@1ab12759156ebf84bdd84b8db559b799834f62d9)
+  FAILED sigstore@1ab12759156ebf84bdd84b8db559b799834f62d9: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED sigstore@b7e49bef7cef2679e54fe1b8754bc5edb0f22824: unknown_on_safe: CONTRACT_COMPILE_ERROR
+
+20 windows in 1m20s.
+verifier gate: scan failed: 2 disagreements with the compiler or errors
+exit 1 seconds 80
