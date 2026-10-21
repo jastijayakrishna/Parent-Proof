@@ -1,0 +1,22 @@
+{
+ "suite": "containerd-api-new",
+ "tier": 2,
+ "consumer": "firecracker-containerd",
+ "repo": "firecracker-microvm/firecracker-containerd",
+ "module": "github.com/containerd/containerd/api",
+ "head_version": "v1.8.0",
+ "gomod_commits": 29,
+ "upgrades": 0,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2025-04-18",
+ "last": "2025-04-18",
+ "bumps": [
+  {
+   "commit": "438b1f7736e3370e6c9255a293644f2b8aff72b4",
+   "date": "2025-04-18",
+   "old": null,
+   "new": "v1.8.0"
+  }
+ ]
+}

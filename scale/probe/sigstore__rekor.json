@@ -1,0 +1,100 @@
+{
+ "suite": "sigstore",
+ "tier": 1,
+ "consumer": "rekor",
+ "repo": "sigstore/rekor",
+ "module": "github.com/sigstore/protobuf-specs",
+ "head_version": "v0.5.2",
+ "gomod_commits": 657,
+ "upgrades": 13,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2023-05-25",
+ "last": "2026-09-06",
+ "bumps": [
+  {
+   "commit": "a305f3b39e2a57ceb0f898ae18b2da848c76fdb4",
+   "date": "2026-09-06",
+   "old": "v0.5.1",
+   "new": "v0.5.2"
+  },
+  {
+   "commit": "726559c18375265033881876cc9ec284c0282607",
+   "date": "2026-04-14",
+   "old": "v0.5.0",
+   "new": "v0.5.1"
+  },
+  {
+   "commit": "802db4d87b871fd2163ed92d3e4ce9c7fc08a065",
+   "date": "2025-07-21",
+   "old": "v0.4.3",
+   "new": "v0.5.0"
+  },
+  {
+   "commit": "fa8712143722430cac8df0a7a8213d410b5e314a",
+   "date": "2025-06-16",
+   "old": "v0.4.2",
+   "new": "v0.4.3"
+  },
+  {
+   "commit": "90ca4b4543a4afc9a7f50955e104d2c1fde4992d",
+   "date": "2025-05-19",
+   "old": "v0.4.1",
+   "new": "v0.4.2"
+  },
+  {
+   "commit": "8f8fb19d252cb3e85c243dcdf93cab5b9e386e01",
+   "date": "2025-04-08",
+   "old": "v0.4.0",
+   "new": "v0.4.1"
+  },
+  {
+   "commit": "b3bd1de0922372092adc2bf26974c550ff4a2cb1",
+   "date": "2025-02-03",
+   "old": "v0.3.3",
+   "new": "v0.4.0"
+  },
+  {
+   "commit": "1082f4855b7d53fc766d91e9b8348b21905f0382",
+   "date": "2025-01-13",
+   "old": "v0.3.2",
+   "new": "v0.3.3"
+  },
+  {
+   "commit": "92cf4d5d3682ffcbf4138341f1bc5f7a66766549",
+   "date": "2024-05-13",
+   "old": "v0.3.1",
+   "new": "v0.3.2"
+  },
+  {
+   "commit": "9c4a7630b49630cbb2fdc004caf3fc946ff992bf",
+   "date": "2024-04-08",
+   "old": "v0.3.0",
+   "new": "v0.3.1"
+  },
+  {
+   "commit": "78c8c42c97d4a69430af522c3f8578b5ebdf29bd",
+   "date": "2024-02-19",
+   "old": "v0.2.1",
+   "new": "v0.3.0"
+  },
+  {
+   "commit": "4e0523526f730ca0ee930ad549ccba0a16a4f923",
+   "date": "2023-08-17",
+   "old": "v0.2.0",
+   "new": "v0.2.1"
+  },
+  {
+   "commit": "d702f84e6b8b127662c5e717ee550de1242a6aec",
+   "date": "2023-07-12",
+   "old": "v0.1.0",
+   "new": "v0.2.0"
+  },
+  {
+   "commit": "795a23619d5db1c9625a71f776474033c6712b56",
+   "date": "2023-05-25",
+   "old": null,
+   "new": "v0.1.0"
+  }
+ ]
+}

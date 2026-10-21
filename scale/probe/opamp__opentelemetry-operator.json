@@ -1,0 +1,70 @@
+{
+ "suite": "opamp",
+ "tier": 1,
+ "consumer": "opentelemetry-operator",
+ "repo": "open-telemetry/opentelemetry-operator",
+ "module": "github.com/open-telemetry/opamp-go",
+ "head_version": "v0.25.0",
+ "gomod_commits": 468,
+ "upgrades": 6,
+ "added_or_removed": 3,
+ "replaced_by_fork": 0,
+ "first": "2023-11-03",
+ "last": "2026-10-05",
+ "bumps": [
+  {
+   "commit": "2e5148d7840130f8f56d133bb97b6b4e8dcb4a00",
+   "date": "2026-10-05",
+   "old": "v0.24.0",
+   "new": "v0.25.0"
+  },
+  {
+   "commit": "65f7a62a0f7a9bb4bf612fdc90c83eef46523aba",
+   "date": "2026-09-17",
+   "old": "v0.23.0",
+   "new": "v0.24.0"
+  },
+  {
+   "commit": "d726ee2b2bdb9194dc9fa50a3f5bd3e1ec2ab585",
+   "date": "2026-05-25",
+   "old": "v0.15.0",
+   "new": "v0.23.0"
+  },
+  {
+   "commit": "934c1d8ef90dbf0d570c52e115148c09c63d3959",
+   "date": "2024-07-24",
+   "old": "v0.14.0",
+   "new": "v0.15.0"
+  },
+  {
+   "commit": "4ad3d0bdffcf6e4e8e0b87e457724db0023cc6b5",
+   "date": "2024-04-03",
+   "old": "v0.12.0",
+   "new": "v0.14.0"
+  },
+  {
+   "commit": "ee8db9d4641ab0d0b001748786c2cdf875e227d6",
+   "date": "2024-01-29",
+   "old": "v0.10.0",
+   "new": "v0.12.0"
+  },
+  {
+   "commit": "b50ddc350a4391049d65c99795ae11d98d5ff19e",
+   "date": "2024-01-11",
+   "old": null,
+   "new": "v0.10.0"
+  },
+  {
+   "commit": "1dc4f5e5a9388c2391fa805ed325abecb2d76bbb",
+   "date": "2023-11-07",
+   "old": "v0.10.0",
+   "new": null
+  },
+  {
+   "commit": "4b310f5cc94d73d5b29e598a5e2217a7ef62f36f",
+   "date": "2023-11-03",
+   "old": null,
+   "new": "v0.10.0"
+  }
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "suite": "argo-cd-v2",
+ "tier": 2,
+ "consumer": "argocd-image-updater",
+ "repo": "argoproj-labs/argocd-image-updater",
+ "module": "github.com/argoproj/argo-cd/v2",
+ "head_version": null,
+ "gomod_commits": 201,
+ "upgrades": 20,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2023-07-30",
+ "last": "2025-10-01",
+ "bumps": [
+  {
+   "commit": "ac5b3a0c851025eb2ef0cc3628b6519214c44003",
+   "date": "2025-10-01",
+   "old": "v2.14.16",
+   "new": null
+  },
+  {
+   "commit": "41ad8af45717047d297aeb74e003cace6c8b1f87",
+   "date": "2025-09-17",
+   "old": "v2.14.15",
+   "new": "v2.14.16"
+  },
+  {
+   "commit": "6d7c38db7b6286dd07e34bbf72e969992cb5e9e7",
+   "date": "2025-07-23",
+   "old": "v2.13.8",
+   "new": "v2.14.15"
+  },
+  {
+   "commit": "3ab2af048b6f8450c5e76f9df0ad2cb9ba9290cb",
+   "date": "2025-06-23",
+   "old": "v2.13.7",
+   "new": "v2.13.8"
+  },
+  {
+   "commit": "de1cd21ae3a545b564e90f73340340588c4afce9",
+   "date": "2025-06-23",
+   "old": "v2.13.8",
+   "new": "v2.13.7"
+  },
+  {
+   "commit": "0bcc4e613a18054fb099498ebc37f088faa9f691",
+   "date": "2025-05-28",
+   "old": "v2.13.7",
+   "new": "v2.13.8"
+  },
+  {
+   "commit": "873a71f25c94b6d5926305f881f57addcae60c66",
+   "date": "2025-05-06",
+   "old": "v2.13.6",
+   "new": "v2.13.7"
+  },
+  {
+   "commit": "e25b2286902d22ec5e5ceea246fbe00928d9f191",
+   "date": "2025-04-02",
+   "old": "v2.13.5",
+   "new": "v2.13.6"
+  },
+  {
+   "commit": "597aaa951cfde10e968207ee5ad62e046ba1fc48",
+   "date": "2025-02-07",
+   "old": "v2.13.4",
+   "new": "v2.13.5"
+  },
+  {
+   "commit": "37269876766dcacf2dd10f9ef5f3f9ec7a27d86b",
+   "date": "2025-01-30",
+   "old": "v2.13.2",
+   "new": "v2.13.4"
+  },
+  {
+   "commit": "148015af067b82e5ebab870b9ba4fd11d53d3493",
+   "date": "2025-01-07",
+   "old": "v2.13.1",
+   "new": "v2.13.2"
+  },
+  {
+   "commit": "a8e222d63672eb577e4e94b29db00d8af18c31fc",
+   "date": "2024-12-10",
+   "old": "v2.13.0",
+   "new": "v2.13.1"
+  },
+  {
+   "commit": "627381428eb3899596dfcb2d4f646f041c2febce",
+   "date": "2024-11-14",
+   "old": "v2.11.7",
+   "new": "v2.13.0"
+  },
+  {
+   "commit": "e8d82d7d113927d6e42e6be0797c232e3d770ffd",
+   "date": "2024-08-07",
+   "old": "v2.11.6",
+   "new": "v2.11.7"
+  },
+  {
+   "commit": "363ee7634d26052620065f600690cfc04c01e96c",
+   "date": "2024-07-22",
+   "old": "v2.11.2",
+   "new": "v2.11.6"
+  },
+  {
+   "commit": "38e2e2e87e49326da8de6dddd184ce2aea3fdef8",
+   "date": "2024-05-27",
+   "old": "v2.8.19",
+   "new": "v2.11.2"
+  },
+  {
+   "commit": "1bd67032c63ecc5f8c06613ba4a9625d790b4baa",
+   "date": "2024-05-24",
+   "old": "v2.8.17",
+   "new": "v2.8.19"
+  },
+  {
+   "commit": "1118c9b6b0bbc7107d2d9a6f9a26633da41ecc80",
+   "date": "2024-05-16",
+   "old": "v2.8.4",
+   "new": "v2.8.17"
+  },
+  {
+   "commit": "3a2a6c6e18984fec763d9b1309ca7a86b35998e7",
+   "date": "2023-12-04",
+   "old": "v2.7.9",
+   "new": "v2.8.4"
+  },
+  {
+   "commit": "c6cce47e2ae47e5bd67f98d993be4f476f7cadfa",
+   "date": "2023-08-10",
+   "old": "v2.7.7",
+   "new": "v2.7.9"
+  },
+  {
+   "commit": "d5a8f9436e301750c02943ac04090f410966df44",
+   "date": "2023-07-30",
+   "old": "v2.2.7",
+   "new": "v2.7.7"
+  }
+ ]
+}

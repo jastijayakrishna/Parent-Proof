@@ -1,0 +1,52 @@
+{
+ "suite": "csi-new",
+ "tier": 2,
+ "consumer": "livenessprobe",
+ "repo": "kubernetes-csi/livenessprobe",
+ "module": "github.com/container-storage-interface/spec",
+ "head_version": "v1.13.0",
+ "gomod_commits": 83,
+ "upgrades": 6,
+ "added_or_removed": 0,
+ "replaced_by_fork": 0,
+ "first": "2023-05-18",
+ "last": "2026-08-31",
+ "bumps": [
+  {
+   "commit": "e7948357126014765cdad682cd21ec6def78938a",
+   "date": "2026-08-31",
+   "old": "v1.12.0",
+   "new": "v1.13.0"
+  },
+  {
+   "commit": "0db77f8c3e4e585613d7243b67617ac2c54c81f4",
+   "date": "2025-10-30",
+   "old": "v1.11.0",
+   "new": "v1.12.0"
+  },
+  {
+   "commit": "daf05bf9f7dd5812f6406d49c07fd42f86c0ea29",
+   "date": "2024-12-18",
+   "old": "v1.10.0",
+   "new": "v1.11.0"
+  },
+  {
+   "commit": "d672e70549207b9e2519d73028e7ea276a692768",
+   "date": "2024-10-04",
+   "old": "v1.9.0",
+   "new": "v1.10.0"
+  },
+  {
+   "commit": "95261f7b9a7bc12a68b78fa973b24b1ce15bd0c1",
+   "date": "2023-11-30",
+   "old": "v1.8.0",
+   "new": "v1.9.0"
+  },
+  {
+   "commit": "755ecc32c7f4c5a7c4301299284d0446bdcd0603",
+   "date": "2023-05-18",
+   "old": "v1.7.0",
+   "new": "v1.8.0"
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "suite": "containerd-api-new",
+ "tier": 2,
+ "consumer": "stargz-snapshotter",
+ "repo": "containerd/stargz-snapshotter",
+ "module": "github.com/containerd/containerd/api",
+ "head_version": "v1.12.0",
+ "gomod_commits": 181,
+ "upgrades": 5,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2024-07-09",
+ "last": "2026-09-28",
+ "bumps": [
+  {
+   "commit": "9c1dc3ff271fa4115d0f306b0c184e23f0b85a3b",
+   "date": "2026-09-28",
+   "old": "v1.10.0",
+   "new": "v1.12.0"
+  },
+  {
+   "commit": "2c940ad4158b9629564df6303d34ee76a5f8c8c9",
+   "date": "2025-11-29",
+   "old": "v1.9.0",
+   "new": "v1.10.0"
+  },
+  {
+   "commit": "e9c84ab69e8d82abcc267d89217d11d401d8d64c",
+   "date": "2025-05-14",
+   "old": "v1.8.0",
+   "new": "v1.9.0"
+  },
+  {
+   "commit": "fe111ee126f2b0d36dbf360cff290132ca9e863f",
+   "date": "2024-11-13",
+   "old": "v1.8.0-rc.3",
+   "new": "v1.8.0"
+  },
+  {
+   "commit": "75e7cd385510b36171794a704f0a9594ce3c5556",
+   "date": "2024-10-07",
+   "old": "v1.8.0-rc.2",
+   "new": "v1.8.0-rc.3"
+  },
+  {
+   "commit": "1dac5ef893199b3617e6a6cd118d75d71adc7df1",
+   "date": "2024-07-09",
+   "old": null,
+   "new": "v1.8.0-rc.2"
+  }
+ ]
+}

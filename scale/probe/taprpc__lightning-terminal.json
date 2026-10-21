@@ -1,0 +1,106 @@
+{
+ "suite": "taprpc",
+ "tier": 1,
+ "consumer": "lightning-terminal",
+ "repo": "lightninglabs/lightning-terminal",
+ "module": "github.com/lightninglabs/taproot-assets/taprpc",
+ "head_version": "v1.3.3",
+ "gomod_commits": 136,
+ "upgrades": 14,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2025-05-02",
+ "last": "2026-09-03",
+ "bumps": [
+  {
+   "commit": "5f6dbc789ea1065ddc6be5d64dfb8215ec4186ad",
+   "date": "2026-09-03",
+   "old": "v1.2.0",
+   "new": "v1.3.3"
+  },
+  {
+   "commit": "9869f81c1e5f290557e89c388116bf2d6dd300fa",
+   "date": "2026-08-19",
+   "old": "v1.1.0",
+   "new": "v1.2.0"
+  },
+  {
+   "commit": "c9192f3318623fcc2d78bd3a4c2e8d36ef571d70",
+   "date": "2026-06-08",
+   "old": "v1.0.12",
+   "new": "v1.1.0"
+  },
+  {
+   "commit": "43518466ebe5edeadc89353a231680ee2488aa07",
+   "date": "2026-02-13",
+   "old": "v1.0.11",
+   "new": "v1.0.12"
+  },
+  {
+   "commit": "011d5fdf1a7b5cd214d2b66640825fd7655542eb",
+   "date": "2025-11-26",
+   "old": "v1.0.10",
+   "new": "v1.0.11"
+  },
+  {
+   "commit": "2db38f72fcbf1fd149b8d5dcdd127f7a8c0b755e",
+   "date": "2025-11-10",
+   "old": "v1.0.10-0.20251014100421-92189161aa7a",
+   "new": "v1.0.10"
+  },
+  {
+   "commit": "e3a85892835452821ca06dd6abd689f6f9617dac",
+   "date": "2025-10-15",
+   "old": "v1.0.8-0.20250716163904-2ef55ba74036",
+   "new": "v1.0.10-0.20251014100421-92189161aa7a"
+  },
+  {
+   "commit": "60a2b65afb101a513ec4cdb8c05d0d7f59f1cbbf",
+   "date": "2025-07-16",
+   "old": "v1.0.8-0.20250711162444-8d28f0bceebe",
+   "new": "v1.0.8-0.20250716163904-2ef55ba74036"
+  },
+  {
+   "commit": "a0915a30462f1a06b9355154382fb883bcd9ba70",
+   "date": "2025-07-15",
+   "old": "v1.0.7",
+   "new": "v1.0.8-0.20250711162444-8d28f0bceebe"
+  },
+  {
+   "commit": "eb7b77149790f332b43ecde292a4250c8c8256e0",
+   "date": "2025-06-17",
+   "old": "v1.0.6",
+   "new": "v1.0.7"
+  },
+  {
+   "commit": "f4a5883a4526299d634d18091da5b6ee1ab3fef9",
+   "date": "2025-06-06",
+   "old": "v1.0.4",
+   "new": "v1.0.6"
+  },
+  {
+   "commit": "d0eaa3dc6a62d4153ed466c138dc6e613891434c",
+   "date": "2025-05-21",
+   "old": "v1.0.3",
+   "new": "v1.0.4"
+  },
+  {
+   "commit": "131eda11eb55e6d8bcd85cb84e710dc6f5626034",
+   "date": "2025-05-15",
+   "old": "v1.0.2",
+   "new": "v1.0.3"
+  },
+  {
+   "commit": "5c59312471d1db014b9554939a1a8b24cdd69514",
+   "date": "2025-05-08",
+   "old": "v1.0.1",
+   "new": "v1.0.2"
+  },
+  {
+   "commit": "c0bd649ce2a4c324b81bd4b488b161d89646c99e",
+   "date": "2025-05-02",
+   "old": null,
+   "new": "v1.0.1"
+  }
+ ]
+}

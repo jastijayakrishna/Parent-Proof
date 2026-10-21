@@ -1,0 +1,52 @@
+{
+ "suite": "csi-new",
+ "tier": 2,
+ "consumer": "csi-test",
+ "repo": "kubernetes-csi/csi-test",
+ "module": "github.com/container-storage-interface/spec",
+ "head_version": "v1.13.0",
+ "gomod_commits": 50,
+ "upgrades": 6,
+ "added_or_removed": 0,
+ "replaced_by_fork": 0,
+ "first": "2023-04-04",
+ "last": "2026-07-28",
+ "bumps": [
+  {
+   "commit": "ae8a63a708ab8c9acf451f25f6824f0e3f010046",
+   "date": "2026-07-28",
+   "old": "v1.12.0",
+   "new": "v1.13.0"
+  },
+  {
+   "commit": "03160373a23e3b745323b9ad5bd839953712c0ec",
+   "date": "2025-10-20",
+   "old": "v1.11.0",
+   "new": "v1.12.0"
+  },
+  {
+   "commit": "70e0e18c4af7ae9094c8eb1ceb5e602eef149edf",
+   "date": "2024-12-19",
+   "old": "v1.10.0",
+   "new": "v1.11.0"
+  },
+  {
+   "commit": "7a77a229ee78f51178ce67006d1d3cff019c17e8",
+   "date": "2024-07-16",
+   "old": "v1.9.0",
+   "new": "v1.10.0"
+  },
+  {
+   "commit": "41ada7f444300992a0bdf121c6fedf2165a49ff4",
+   "date": "2023-11-20",
+   "old": "v1.8.0",
+   "new": "v1.9.0"
+  },
+  {
+   "commit": "91e2c3af078cad8456d2850bbc00921afbf21861",
+   "date": "2023-04-04",
+   "old": "v1.6.0",
+   "new": "v1.8.0"
+  }
+ ]
+}

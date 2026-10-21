@@ -1,0 +1,34 @@
+{
+ "suite": "containerd-api-new",
+ "tier": 2,
+ "consumer": "soci-snapshotter",
+ "repo": "awslabs/soci-snapshotter",
+ "module": "github.com/containerd/containerd/api",
+ "head_version": "v1.11.1",
+ "gomod_commits": 177,
+ "upgrades": 2,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2024-07-09",
+ "last": "2026-06-01",
+ "bumps": [
+  {
+   "commit": "2116e1d1d295556e523306037db16dd78b1f187c",
+   "date": "2026-06-01",
+   "old": "v1.8.0",
+   "new": "v1.11.1"
+  },
+  {
+   "commit": "1b2442118aac93685d5a6f95ca6e49101a0e6f96",
+   "date": "2025-01-15",
+   "old": "v1.7.19",
+   "new": "v1.8.0"
+  },
+  {
+   "commit": "0399e9a07784ea35e3daa1b457b32e8c840afe7f",
+   "date": "2024-07-09",
+   "old": null,
+   "new": "v1.7.19"
+  }
+ ]
+}

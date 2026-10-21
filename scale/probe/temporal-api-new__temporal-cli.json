@@ -1,0 +1,214 @@
+{
+ "suite": "temporal-api-new",
+ "tier": 2,
+ "consumer": "temporal-cli",
+ "repo": "temporalio/cli",
+ "module": "go.temporal.io/api",
+ "head_version": "v1.63.5",
+ "gomod_commits": 162,
+ "upgrades": 33,
+ "added_or_removed": 0,
+ "replaced_by_fork": 0,
+ "first": "2023-01-17",
+ "last": "2026-08-22",
+ "bumps": [
+  {
+   "commit": "f4895a443914f81a17c940c5183abe2dbe9b288e",
+   "date": "2026-08-22",
+   "old": "v1.63.4",
+   "new": "v1.63.5"
+  },
+  {
+   "commit": "b090bffdbd82924a2728e624e67891303bd4d6ec",
+   "date": "2026-07-30",
+   "old": "v1.63.0",
+   "new": "v1.63.4"
+  },
+  {
+   "commit": "b2ee8a2aad71749d831fb7645577dbea8347dc6a",
+   "date": "2026-07-06",
+   "old": "v1.62.13",
+   "new": "v1.63.0"
+  },
+  {
+   "commit": "a10f9ae8221a0ec5e9d750ccbdafbd54a5d7827e",
+   "date": "2026-06-02",
+   "old": "v1.62.8",
+   "new": "v1.62.13"
+  },
+  {
+   "commit": "f9563e0e089598cb4bf879858bdcc0231b484ebc",
+   "date": "2026-04-16",
+   "old": "v1.62.4",
+   "new": "v1.62.8"
+  },
+  {
+   "commit": "c824d024986a0fce254bec57c2eafed86139b219",
+   "date": "2026-03-25",
+   "old": "v1.62.2",
+   "new": "v1.62.4"
+  },
+  {
+   "commit": "f5a4d4b06686fceacd649faa6b0a809d256bbeab",
+   "date": "2026-03-10",
+   "old": "v1.60.2",
+   "new": "v1.62.2"
+  },
+  {
+   "commit": "3103d5b3942150023f059e7a2718612707b201a6",
+   "date": "2026-02-11",
+   "old": "v1.60.1",
+   "new": "v1.60.2"
+  },
+  {
+   "commit": "3f45bc8d70687cf48b30662300f995d212cc2163",
+   "date": "2026-02-05",
+   "old": "v1.60.0",
+   "new": "v1.60.1"
+  },
+  {
+   "commit": "2637a2f13952c24bfcd9d42466c7c26b1c874248",
+   "date": "2026-01-23",
+   "old": "v1.53.0",
+   "new": "v1.60.0"
+  },
+  {
+   "commit": "4113c11255557f050ceee1bb217de916be9147b7",
+   "date": "2025-10-06",
+   "old": "v1.52.0",
+   "new": "v1.53.0"
+  },
+  {
+   "commit": "16fbce85acc1588d5f5ec54cf9fb49c3f1cc1308",
+   "date": "2025-10-06",
+   "old": "v1.51.0",
+   "new": "v1.52.0"
+  },
+  {
+   "commit": "c48e6dfe9913b4f40593e20eab2a58017ffdcfd2",
+   "date": "2025-10-06",
+   "old": "v1.50.0",
+   "new": "v1.51.0"
+  },
+  {
+   "commit": "106fc344416cd1ce27a0fa94c73fe6ee4824d8ee",
+   "date": "2025-07-08",
+   "old": "v1.46.0",
+   "new": "v1.50.0"
+  },
+  {
+   "commit": "a466ce097c0d31736add4a2016f7ec5ccce89544",
+   "date": "2025-03-28",
+   "old": "v1.45.0",
+   "new": "v1.46.0"
+  },
+  {
+   "commit": "c4a505576644a8751b83d1f1266feaec8d24a285",
+   "date": "2025-02-26",
+   "old": "v1.44.1",
+   "new": "v1.45.0"
+  },
+  {
+   "commit": "1ffb35de122ff243a1bd4799f55146deaac38c3c",
+   "date": "2025-02-11",
+   "old": "v1.43.3-0.20250130180025-c83bb3e83097",
+   "new": "v1.44.1"
+  },
+  {
+   "commit": "5ab9198f9ccf376b9946ab5c6d9ecda2f35df1ac",
+   "date": "2025-02-03",
+   "old": "v1.43.0",
+   "new": "v1.43.3-0.20250130180025-c83bb3e83097"
+  },
+  {
+   "commit": "911a7861217064d2b26a6b00d093039ee15ea23d",
+   "date": "2025-01-13",
+   "old": "v1.38.0",
+   "new": "v1.43.0"
+  },
+  {
+   "commit": "344bf25553e2650d43f49c1d1396c352763a8ea5",
+   "date": "2024-09-13",
+   "old": "v1.32.1-cherry-pick-for-cli-tag",
+   "new": "v1.38.0"
+  },
+  {
+   "commit": "ba831c3ab6b1188d67778176c49f2bd354716769",
+   "date": "2024-07-05",
+   "old": "v1.32.1",
+   "new": "v1.32.1-cherry-pick-for-cli-tag"
+  },
+  {
+   "commit": "da1e0aab8d5c438e4b6eff650d6d5ae1a8e873b3",
+   "date": "2024-06-10",
+   "old": "v1.29.2",
+   "new": "v1.32.1"
+  },
+  {
+   "commit": "1a241066f5a441310452162f263b74dccc0b94fd",
+   "date": "2024-04-29",
+   "old": "v1.26.0",
+   "new": "v1.29.2"
+  },
+  {
+   "commit": "197f9a00c56450ca45ec13de36ba4d330c35081b",
+   "date": "2023-11-20",
+   "old": "v1.25.0",
+   "new": "v1.26.0"
+  },
+  {
+   "commit": "700234cf2df143d06a0c215f5e146f16ad66e570",
+   "date": "2023-10-30",
+   "old": "v1.24.0",
+   "new": "v1.25.0"
+  },
+  {
+   "commit": "c0e5a6e758733868d1fcff30f534813e5a70918c",
+   "date": "2023-09-20",
+   "old": "v1.23.0",
+   "new": "v1.24.0"
+  },
+  {
+   "commit": "a936ed506b3715612595e7c295db8e52f991b07e",
+   "date": "2023-06-21",
+   "old": "v1.18.2-0.20230324225508-f2c7ab685b44",
+   "new": "v1.23.0"
+  },
+  {
+   "commit": "d4a0004a8ad63d5380aeac84b8c5ae4fa0756c3c",
+   "date": "2023-03-30",
+   "old": "v1.18.1",
+   "new": "v1.18.2-0.20230324225508-f2c7ab685b44"
+  },
+  {
+   "commit": "0be9d0e02c5bb948c97c265e2a5d40d011d98d6f",
+   "date": "2023-02-21",
+   "old": "v1.17.0",
+   "new": "v1.18.1"
+  },
+  {
+   "commit": "f84c4b75f39c09b48114f6932c1eb67696ecbd71",
+   "date": "2023-02-14",
+   "old": "v1.16.0",
+   "new": "v1.17.0"
+  },
+  {
+   "commit": "0631cb1e13cfb8b7d282b65eaf0e9a48f6984e4b",
+   "date": "2023-02-06",
+   "old": "v1.15.0",
+   "new": "v1.16.0"
+  },
+  {
+   "commit": "718bb10d1a1597838e093089ac99cd9e951361ea",
+   "date": "2023-01-25",
+   "old": "v1.14.0",
+   "new": "v1.15.0"
+  },
+  {
+   "commit": "573870da318a67e30854277804b19e2c11f6685a",
+   "date": "2023-01-17",
+   "old": "v1.13.1-0.20221110200459-6a3cb21a3415",
+   "new": "v1.14.0"
+  }
+ ]
+}

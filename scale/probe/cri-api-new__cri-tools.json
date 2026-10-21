@@ -1,0 +1,376 @@
+{
+ "suite": "cri-api-new",
+ "tier": 2,
+ "consumer": "cri-tools",
+ "repo": "kubernetes-sigs/cri-tools",
+ "module": "k8s.io/cri-api",
+ "head_version": "v0.37.1",
+ "gomod_commits": 413,
+ "upgrades": 60,
+ "added_or_removed": 0,
+ "replaced_by_fork": 13,
+ "first": "2023-04-14",
+ "last": "2026-09-24",
+ "bumps": [
+  {
+   "commit": "e97cdaba9d855eb7fa335ee637290f3fc9016924",
+   "date": "2026-09-24",
+   "old": "v0.37.0",
+   "new": "v0.37.1"
+  },
+  {
+   "commit": "13496db06e3f6636a0855977dd86344698dfc501",
+   "date": "2026-09-01",
+   "old": "v0.36.4",
+   "new": "v0.37.0"
+  },
+  {
+   "commit": "4c010d8579127ebd7f68e3608394fdf0bccfdc68",
+   "date": "2026-08-24",
+   "old": "v0.36.3",
+   "new": "v0.36.4"
+  },
+  {
+   "commit": "7e2aa2ecc4deb575613c47d9e186ddea0d328206",
+   "date": "2026-07-24",
+   "old": "v0.36.2",
+   "new": "v0.36.3"
+  },
+  {
+   "commit": "3ef56ebdb310459092a9f4f3d89de469c6598630",
+   "date": "2026-06-15",
+   "old": "v0.36.1",
+   "new": "v0.36.2"
+  },
+  {
+   "commit": "4242bab28e935f5a3894a240c4c34779be927163",
+   "date": "2026-05-13",
+   "old": "v0.36.0",
+   "new": "v0.36.1"
+  },
+  {
+   "commit": "88d8ad9d40f82726fda53c2d271e6172b4c619c9",
+   "date": "2026-04-24",
+   "old": "v0.36.0-rc.0",
+   "new": "v0.36.0"
+  },
+  {
+   "commit": "de40f4cd898cb1098434cf050990804a28b816c2",
+   "date": "2026-04-16",
+   "old": "v0.36.0-beta.0",
+   "new": "v0.36.0-rc.0"
+  },
+  {
+   "commit": "2d0bbc7b0f8c6a8b52865fd1e03288728dbae10b",
+   "date": "2026-03-24",
+   "old": "v0.36.0-alpha.2.0.20260319125839-8d77fc8f4f18",
+   "new": "v0.36.0-beta.0"
+  },
+  {
+   "commit": "93a40465e87f6ae2b7c3894e1ca4d9bfefc99378",
+   "date": "2026-03-20",
+   "old": "v0.36.0-alpha.2.0.20260317122456-bde76f64cabb",
+   "new": "v0.36.0-alpha.2.0.20260319125839-8d77fc8f4f18"
+  },
+  {
+   "commit": "16d5673873fda6d333f8411778a35f5778998680",
+   "date": "2026-03-17",
+   "old": "v0.35.2",
+   "new": "v0.36.0-alpha.2.0.20260317122456-bde76f64cabb"
+  },
+  {
+   "commit": "cf43a9e54764b94a637f0eb423b2a1cb1fee8bdf",
+   "date": "2026-03-02",
+   "old": "v0.35.1",
+   "new": "v0.35.2"
+  },
+  {
+   "commit": "9ee43a8591423dd7310e94cc08be974cdbc543ad",
+   "date": "2026-02-17",
+   "old": "v0.35.0",
+   "new": "v0.35.1"
+  },
+  {
+   "commit": "59ba0dd8847279eb721b6499f1428540699a9d0b",
+   "date": "2026-01-13",
+   "old": "v0.35.0-rc.1",
+   "new": "v0.35.0"
+  },
+  {
+   "commit": "46c81013b00ea238cd39499df021441ae51ec65f",
+   "date": "2025-12-10",
+   "old": "v0.35.0-rc.0",
+   "new": "v0.35.0-rc.1"
+  },
+  {
+   "commit": "2a66a639a53ad3d5a658fe1873445e37484cb9ce",
+   "date": "2025-12-04",
+   "old": "v0.34.1",
+   "new": "v0.35.0-rc.0"
+  },
+  {
+   "commit": "684cf8238e183f2381096413f2d2da4ada652ad9",
+   "date": "2025-09-11",
+   "old": "v0.34.0",
+   "new": "v0.34.1"
+  },
+  {
+   "commit": "923e12693552fc9cbfb47bab896f5f0ff26a9f16",
+   "date": "2025-08-28",
+   "old": "v0.34.0-rc.2",
+   "new": "v0.34.0"
+  },
+  {
+   "commit": "ca0237b9fec5b675b0bb7bc96b7496e6d54f5ccb",
+   "date": "2025-08-21",
+   "old": "v0.34.0-rc.1",
+   "new": "v0.34.0-rc.2"
+  },
+  {
+   "commit": "88f266cb4bb92a86051524b7fa26fa9aa3d49fc0",
+   "date": "2025-08-11",
+   "old": "v0.33.3",
+   "new": "v0.34.0-rc.1"
+  },
+  {
+   "commit": "44512ae9b0a7558e7f4bad2097ca3e4d5f5675b0",
+   "date": "2025-07-17",
+   "old": "v0.33.2",
+   "new": "v0.33.3"
+  },
+  {
+   "commit": "582d49f6ab2bc11c9e6da728e32442a759e0e600",
+   "date": "2025-06-23",
+   "old": "v0.33.1",
+   "new": "v0.33.2"
+  },
+  {
+   "commit": "16aba0d097f391e673aec8d641521aff6531282c",
+   "date": "2025-05-19",
+   "old": "v0.33.0",
+   "new": "v0.33.1"
+  },
+  {
+   "commit": "5cb60482a464cd14dad6ed98eea3b9f00c184090",
+   "date": "2025-04-23",
+   "old": "v0.33.0-rc.0",
+   "new": "v0.33.0"
+  },
+  {
+   "commit": "801d04c1fe07495478e1d0d267eed2dddb82f8d3",
+   "date": "2025-04-22",
+   "old": "v0.34.0-alpha.0",
+   "new": "v0.33.0-rc.0"
+  },
+  {
+   "commit": "40122fbeff3485a9a58a485557851f7d4ee582e5",
+   "date": "2025-04-22",
+   "old": "v0.33.0-beta.0.0.20250324233632-87ee4e17aba6",
+   "new": "v0.34.0-alpha.0"
+  },
+  {
+   "commit": "b27f0459cb5bf4b2fdd1b597103dcf6df8fb6806",
+   "date": "2025-03-28",
+   "old": "v0.33.0-beta.0.0.20250313010358-ab383b81657e",
+   "new": "v0.33.0-beta.0.0.20250324233632-87ee4e17aba6"
+  },
+  {
+   "commit": "a09a30b916a46a0dab260a1ee398226e0f373e99",
+   "date": "2025-03-13",
+   "old": "v0.33.0-beta.0",
+   "new": "v0.33.0-beta.0.0.20250313010358-ab383b81657e"
+  },
+  {
+   "commit": "872df9b6b6eecd808e60de95e5f63b6aa6dd9dc2",
+   "date": "2025-03-13",
+   "old": "v0.33.0-alpha.3",
+   "new": "v0.33.0-beta.0"
+  },
+  {
+   "commit": "ec763f837e602ccb29894bcfbb6deea25cf712a1",
+   "date": "2025-03-05",
+   "old": "v0.33.0-alpha.2",
+   "new": "v0.33.0-alpha.3"
+  },
+  {
+   "commit": "69fb6e0423c8e9f83781ec044e2eabe9592bd47e",
+   "date": "2025-02-19",
+   "old": "v0.33.0-alpha.1",
+   "new": "v0.33.0-alpha.2"
+  },
+  {
+   "commit": "b89ca56b99ca2a9c271659d9af20231aed134d23",
+   "date": "2025-02-06",
+   "old": "v0.33.0-alpha.0",
+   "new": "v0.33.0-alpha.1"
+  },
+  {
+   "commit": "c4c65a9462f206cb722f9c4723b2161c41cc7591",
+   "date": "2024-12-11",
+   "old": "v0.32.0-rc.2",
+   "new": "v0.33.0-alpha.0"
+  },
+  {
+   "commit": "b5cf674bb19f574ee488c991ac813c76c08eedaf",
+   "date": "2024-12-06",
+   "old": "v0.32.0-rc.1",
+   "new": "v0.32.0-rc.2"
+  },
+  {
+   "commit": "88c142901acd2d18cbe4d71197c080114922a48d",
+   "date": "2024-12-04",
+   "old": "v0.33.0-alpha.0",
+   "new": "v0.32.0-rc.1"
+  },
+  {
+   "commit": "e23679fc0823b7b566363bde803230b7edaee6db",
+   "date": "2024-12-04",
+   "old": "v0.32.0-rc.0",
+   "new": "v0.33.0-alpha.0"
+  },
+  {
+   "commit": "562de3884b2f3cfa640fb278269d3724cffc5f3f",
+   "date": "2024-12-02",
+   "old": "v0.31.3",
+   "new": "v0.32.0-rc.0"
+  },
+  {
+   "commit": "e0327f822188a5f4ae60db979db3a03f0d7ef366",
+   "date": "2024-11-22",
+   "old": "v0.31.2",
+   "new": "v0.31.3"
+  },
+  {
+   "commit": "4c7bab8816fad2c1f31950bf105aa4989d37809d",
+   "date": "2024-10-24",
+   "old": "v0.31.1",
+   "new": "v0.31.2"
+  },
+  {
+   "commit": "f07d5fdbf69cff475c7b0576883c4e749d36a842",
+   "date": "2024-10-07",
+   "old": "v0.31.0-rc.1",
+   "new": "v0.31.1"
+  },
+  {
+   "commit": "e0c9c3ccf6caa2b459d1dff0c39f79d793343d98",
+   "date": "2024-08-06",
+   "old": "v0.31.0-rc.0",
+   "new": "v0.31.0-rc.1"
+  },
+  {
+   "commit": "600d7b15fe864e4ea32cfb3e109651bd57c10b21",
+   "date": "2024-08-01",
+   "old": "v0.31.0-beta.0.0.20240716205706-865479a3e1b3",
+   "new": "v0.31.0-rc.0"
+  },
+  {
+   "commit": "ee5808009e2c125502210f52cff1dcb00d3e2217",
+   "date": "2024-07-23",
+   "old": "v0.31.0-beta.0",
+   "new": "v0.31.0-beta.0.0.20240716205706-865479a3e1b3"
+  },
+  {
+   "commit": "a6a89f638472209be97e5218c98cfa4714b4d4c4",
+   "date": "2024-07-17",
+   "old": "v0.31.0-alpha.3",
+   "new": "v0.31.0-beta.0"
+  },
+  {
+   "commit": "529ae4dabe642ff8c8d3dae4ec9aa934c8864d1f",
+   "date": "2024-07-03",
+   "old": "v0.31.0-alpha.2",
+   "new": "v0.31.0-alpha.3"
+  },
+  {
+   "commit": "198050c4b20526e47e451601b36f7f35fb7d87fe",
+   "date": "2024-06-27",
+   "old": "v0.31.0-alpha.0.0.20240528091733-69e407966029",
+   "new": "v0.31.0-alpha.2"
+  },
+  {
+   "commit": "31ae1acefb41de3830d95cdb1dafd12aee799aac",
+   "date": "2024-05-31",
+   "old": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20240417172702-7c48c2bd72b9",
+   "new": "v0.31.0-alpha.0.0.20240528091733-69e407966029"
+  },
+  {
+   "commit": "87adf58b79394b151413c2e0ccfdc7e6332460dc",
+   "date": "2024-04-18",
+   "old": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20240312153413-634fc1b4836b",
+   "new": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20240417172702-7c48c2bd72b9"
+  },
+  {
+   "commit": "2b0a52937d956bc173112369d5ca02c3b14e1958",
+   "date": "2024-03-26",
+   "old": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20240227131458-12217672a351",
+   "new": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20240312153413-634fc1b4836b"
+  },
+  {
+   "commit": "3542da5d7e2a7d31d7bac3b335d97b386a4911a8",
+   "date": "2024-02-28",
+   "old": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20240213173326-5031ae115907",
+   "new": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20240227131458-12217672a351"
+  },
+  {
+   "commit": "7f1cb6fa1e8178a364eaffbe50c8414daef46c19",
+   "date": "2024-02-19",
+   "old": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20231213084502-3f7a50f38688",
+   "new": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20240213173326-5031ae115907"
+  },
+  {
+   "commit": "625674e03427f10052deb3ab7455b64a8a018115",
+   "date": "2023-12-14",
+   "old": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20231207112802-e4636d05bc32",
+   "new": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20231213084502-3f7a50f38688"
+  },
+  {
+   "commit": "3b3a9479260a5d9926c596ae068e9c51110cf546",
+   "date": "2023-12-11",
+   "old": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20231128100405-96a32568e664",
+   "new": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20231207112802-e4636d05bc32"
+  },
+  {
+   "commit": "3a4a18842357393139c61aba9e3c4a9ed35cbd05",
+   "date": "2023-11-30",
+   "old": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20230815101549-855e7c48de73",
+   "new": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20231128100405-96a32568e664"
+  },
+  {
+   "commit": "95c2b7a31b2ecb9d0e3b103e1a24bd42212f510b",
+   "date": "2023-08-16",
+   "old": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20230810203337-add7e14df11e",
+   "new": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20230815101549-855e7c48de73"
+  },
+  {
+   "commit": "3c91ebf539bd2035d60813386f5b1f023937423f",
+   "date": "2023-08-11",
+   "old": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20230718111709-6d83e22ba48e",
+   "new": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20230810203337-add7e14df11e"
+  },
+  {
+   "commit": "3deae73f8fb6e8601a3a9e9849eecc1ae1c72c59",
+   "date": "2023-07-18",
+   "old": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20230706183303-d02d8ba635c5",
+   "new": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20230718111709-6d83e22ba48e"
+  },
+  {
+   "commit": "b8bf840ed292a5fd8c06023731d1734cd80b38bb",
+   "date": "2023-07-13",
+   "old": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20230614094738-25b4e43193bc",
+   "new": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20230706183303-d02d8ba635c5"
+  },
+  {
+   "commit": "5a46c7af4d884a6004e0a47e92204f5aa34172d8",
+   "date": "2023-07-10",
+   "old": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20230411170423-1b4df30b3cdf",
+   "new": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20230614094738-25b4e43193bc"
+  },
+  {
+   "commit": "392a0aa118a9ee71572e0afd085d473f0b5b0752",
+   "date": "2023-04-14",
+   "old": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20221208195143-b46a3f887ca9",
+   "new": "replaced:k8s.io/kubernetes/staging/src/k8s.io/cri-api@v0.0.0-20230411170423-1b4df30b3cdf"
+  }
+ ]
+}

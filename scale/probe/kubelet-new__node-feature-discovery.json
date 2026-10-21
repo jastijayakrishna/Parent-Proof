@@ -1,0 +1,196 @@
+{
+ "suite": "kubelet-new",
+ "tier": 2,
+ "consumer": "node-feature-discovery",
+ "repo": "kubernetes-sigs/node-feature-discovery",
+ "module": "k8s.io/kubelet",
+ "head_version": "v0.37.1",
+ "gomod_commits": 296,
+ "upgrades": 30,
+ "added_or_removed": 0,
+ "replaced_by_fork": 0,
+ "first": "2023-03-10",
+ "last": "2026-10-12",
+ "bumps": [
+  {
+   "commit": "871da8ec7c4264283f00ef473c4d7a9e059c8b53",
+   "date": "2026-10-12",
+   "old": "v0.35.3",
+   "new": "v0.37.1"
+  },
+  {
+   "commit": "edc347e1fa385c0199b68fff019a602b1dda69a1",
+   "date": "2026-03-23",
+   "old": "v0.35.2",
+   "new": "v0.35.3"
+  },
+  {
+   "commit": "9b271035ce36fb310a0478021e8373014a0cff06",
+   "date": "2026-03-09",
+   "old": "v0.35.0",
+   "new": "v0.35.2"
+  },
+  {
+   "commit": "c46cac174a2e56feaa5ac0000247dd2e618be58a",
+   "date": "2025-12-31",
+   "old": "v0.34.2",
+   "new": "v0.35.0"
+  },
+  {
+   "commit": "bf98e78d34bcb710572f0b1e683209fa6ad674f1",
+   "date": "2025-11-19",
+   "old": "v0.34.1",
+   "new": "v0.34.2"
+  },
+  {
+   "commit": "64486866637e0cc3aa404b2f9cbc45cbf4882016",
+   "date": "2025-09-11",
+   "old": "v0.33.4",
+   "new": "v0.34.1"
+  },
+  {
+   "commit": "c3ec794044cae2079c92edfa86d0a0dbdbfb42b4",
+   "date": "2025-08-18",
+   "old": "v0.33.3",
+   "new": "v0.33.4"
+  },
+  {
+   "commit": "4f110ec1fd03407d11215cb067b6deaa90b818a0",
+   "date": "2025-07-24",
+   "old": "v0.33.2",
+   "new": "v0.33.3"
+  },
+  {
+   "commit": "553b2699fdda487b50be51461b44031573f2c6f6",
+   "date": "2025-06-24",
+   "old": "v0.33.1",
+   "new": "v0.33.2"
+  },
+  {
+   "commit": "dce439f9998eead406f41c43ddef6e5b38739a58",
+   "date": "2025-05-20",
+   "old": "v0.33.0",
+   "new": "v0.33.1"
+  },
+  {
+   "commit": "bfc2893fd4a2e905de93a4bf0cd653359312c691",
+   "date": "2025-05-06",
+   "old": "v0.32.3",
+   "new": "v0.33.0"
+  },
+  {
+   "commit": "242a4f439fb900d855a8112fb164e52c63806a7b",
+   "date": "2025-03-28",
+   "old": "v0.32.2",
+   "new": "v0.32.3"
+  },
+  {
+   "commit": "0e22b71dc749176945e568439de2bfec4f6ab35d",
+   "date": "2025-02-15",
+   "old": "v0.32.1",
+   "new": "v0.32.2"
+  },
+  {
+   "commit": "b9b4c853dc6b28b2076c4538d0c9d5505c3104e2",
+   "date": "2025-01-23",
+   "old": "v0.32.0",
+   "new": "v0.32.1"
+  },
+  {
+   "commit": "0188aade6005e57324591f24da32113f907c9c3e",
+   "date": "2024-12-18",
+   "old": "v0.31.3",
+   "new": "v0.32.0"
+  },
+  {
+   "commit": "b09a45444d610aca74f9664710564e876750b8cb",
+   "date": "2024-11-27",
+   "old": "v0.31.2",
+   "new": "v0.31.3"
+  },
+  {
+   "commit": "d13729bfa450fc68e8ba991c3d96ea79a91899b9",
+   "date": "2024-10-30",
+   "old": "v0.30.3",
+   "new": "v0.31.2"
+  },
+  {
+   "commit": "4e4ccf88189fa6201a6ab844dda8ec6f02ae01fc",
+   "date": "2024-07-22",
+   "old": "v0.30.2",
+   "new": "v0.30.3"
+  },
+  {
+   "commit": "4ae762acf5b9231b25dfef8fcac8dfe72259ae2f",
+   "date": "2024-07-13",
+   "old": "v0.30.0",
+   "new": "v0.30.2"
+  },
+  {
+   "commit": "4746c33915c66eac95825ee1e66336a9be828335",
+   "date": "2024-04-25",
+   "old": "v0.29.0",
+   "new": "v0.30.0"
+  },
+  {
+   "commit": "1a5659f9ccab239c7f4d92f257cba0da79eea210",
+   "date": "2023-12-20",
+   "old": "v0.28.4",
+   "new": "v0.29.0"
+  },
+  {
+   "commit": "c588371726e99d2d56b59df7b7c34c8029af8c22",
+   "date": "2023-11-16",
+   "old": "v0.28.3",
+   "new": "v0.28.4"
+  },
+  {
+   "commit": "6144f3db617534897db3b50ae3b229c65802d8db",
+   "date": "2023-10-20",
+   "old": "v0.28.2",
+   "new": "v0.28.3"
+  },
+  {
+   "commit": "3469e9139082d696e722cb9b46c007100af29f0c",
+   "date": "2023-10-09",
+   "old": "v0.28.1",
+   "new": "v0.28.2"
+  },
+  {
+   "commit": "194e5cc0569fcca5e21ef9fd97e0bceaa59ed0e7",
+   "date": "2023-08-29",
+   "old": "v0.28.0",
+   "new": "v0.28.1"
+  },
+  {
+   "commit": "198eb2b5db2d62b1e884be80da00af3c1603bce7",
+   "date": "2023-08-16",
+   "old": "v0.27.4",
+   "new": "v0.28.0"
+  },
+  {
+   "commit": "195e7908f17a9c69b1588ee8e51ff5c7d2b88c1b",
+   "date": "2023-07-20",
+   "old": "v0.27.1",
+   "new": "v0.27.4"
+  },
+  {
+   "commit": "e8183499d301e5f22772b77486a9499ecba91fee",
+   "date": "2023-04-18",
+   "old": "v0.26.3",
+   "new": "v0.27.1"
+  },
+  {
+   "commit": "285f4253134dfcf9c719d063f49a23df6ced1477",
+   "date": "2023-03-31",
+   "old": "v0.26.2",
+   "new": "v0.26.3"
+  },
+  {
+   "commit": "adea670ded0330a5534b72e2a6ab167aff6b2e6f",
+   "date": "2023-03-10",
+   "old": "v0.26.0",
+   "new": "v0.26.2"
+  }
+ ]
+}

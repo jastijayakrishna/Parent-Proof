@@ -1,0 +1,58 @@
+{
+ "suite": "sigstore",
+ "tier": 1,
+ "consumer": "rekor-tiles",
+ "repo": "sigstore/rekor-tiles",
+ "module": "github.com/sigstore/protobuf-specs",
+ "head_version": "v0.5.2",
+ "gomod_commits": 293,
+ "upgrades": 6,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2025-03-06",
+ "last": "2026-09-01",
+ "bumps": [
+  {
+   "commit": "d7fa58c96e14ea21bd6b794f866afc83d2f879ad",
+   "date": "2026-09-01",
+   "old": "v0.5.1",
+   "new": "v0.5.2"
+  },
+  {
+   "commit": "f9f26f9f430ca63058b48acfa451d5e11f5b6eb7",
+   "date": "2026-04-27",
+   "old": "v0.5.0",
+   "new": "v0.5.1"
+  },
+  {
+   "commit": "faad78a8565f82e7225ee31e1b6fcf15c3eb77cd",
+   "date": "2025-07-14",
+   "old": "v0.4.3",
+   "new": "v0.5.0"
+  },
+  {
+   "commit": "497e5d699695f259c43371d8ba53bb5b3174084d",
+   "date": "2025-06-16",
+   "old": "v0.4.2",
+   "new": "v0.4.3"
+  },
+  {
+   "commit": "b2931c4ad36ee66d268be42740f0f544d7817a8c",
+   "date": "2025-05-19",
+   "old": "v0.4.1",
+   "new": "v0.4.2"
+  },
+  {
+   "commit": "38109148db2f23235f4ab3a38fa2902b439909d8",
+   "date": "2025-04-07",
+   "old": "v0.4.0",
+   "new": "v0.4.1"
+  },
+  {
+   "commit": "5dc15406dc40522bf4c3ec765b21618084f33246",
+   "date": "2025-03-06",
+   "old": null,
+   "new": "v0.4.0"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "suite": "kubelet-new",
+ "tier": 2,
+ "consumer": "container-engine-accelerators",
+ "repo": "GoogleCloudPlatform/container-engine-accelerators",
+ "module": "k8s.io/kubelet",
+ "head_version": "v0.27.2",
+ "gomod_commits": 17,
+ "upgrades": 1,
+ "added_or_removed": 0,
+ "replaced_by_fork": 0,
+ "first": "2023-11-29",
+ "last": "2023-11-29",
+ "bumps": [
+  {
+   "commit": "c9276a5ded0f631efe2be7ac26466151cbe24ea1",
+   "date": "2023-11-29",
+   "old": "v0.19.2",
+   "new": "v0.27.2"
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "suite": "nri",
+ "tier": 1,
+ "consumer": "containerd",
+ "repo": "containerd/containerd",
+ "module": "github.com/containerd/nri",
+ "head_version": "v0.12.3",
+ "gomod_commits": 552,
+ "upgrades": 16,
+ "added_or_removed": 0,
+ "replaced_by_fork": 0,
+ "first": "2023-01-31",
+ "last": "2026-09-10",
+ "bumps": [
+  {
+   "commit": "63ea46d0fdd52b9c7b430a3b7ac8d403b1276ad5",
+   "date": "2026-09-10",
+   "old": "v0.12.2",
+   "new": "v0.12.3"
+  },
+  {
+   "commit": "1bcc9f3dc614309b9af13cbd664153df4977becf",
+   "date": "2026-08-19",
+   "old": "v0.12.1",
+   "new": "v0.12.2"
+  },
+  {
+   "commit": "55e47e129a4a5da45ce3d068103824653283ebf3",
+   "date": "2026-07-22",
+   "old": "v0.12.0",
+   "new": "v0.12.1"
+  },
+  {
+   "commit": "338d4a3e1683722db3eed31f9de688db571ee843",
+   "date": "2026-04-28",
+   "old": "v0.11.0",
+   "new": "v0.12.0"
+  },
+  {
+   "commit": "3d8c1cc1443df5bd85f48d3f60b0beb7aed442d6",
+   "date": "2025-12-17",
+   "old": "v0.10.1-0.20251117084425-3827d9da021a",
+   "new": "v0.11.0"
+  },
+  {
+   "commit": "18fcad83054ea3df0b85757f5dd0d2c312cb69b7",
+   "date": "2025-11-19",
+   "old": "v0.10.0",
+   "new": "v0.10.1-0.20251117084425-3827d9da021a"
+  },
+  {
+   "commit": "9aebe599eceb6acf433841221d4fe8cbc21ffd84",
+   "date": "2025-08-22",
+   "old": "v0.8.0",
+   "new": "v0.10.0"
+  },
+  {
+   "commit": "71c274bb8143b419390966370059e67449850deb",
+   "date": "2024-11-04",
+   "old": "v0.7.0",
+   "new": "v0.8.0"
+  },
+  {
+   "commit": "574f0daa3e40c036058ff9d69adae2b691488df7",
+   "date": "2024-10-23",
+   "old": "v0.6.2-0.20241010080438-159f5754db39",
+   "new": "v0.7.0"
+  },
+  {
+   "commit": "fff2236f49cab807102e01e100dc45b7b982c7a0",
+   "date": "2024-10-16",
+   "old": "v0.6.1",
+   "new": "v0.6.2-0.20241010080438-159f5754db39"
+  },
+  {
+   "commit": "6e0dc9f50f4b33d0b1a8c0a3fc64dd67b5b0c920",
+   "date": "2024-04-18",
+   "old": "v0.6.0",
+   "new": "v0.6.1"
+  },
+  {
+   "commit": "805ed8e871537b8105aa94fcde04e35e3940f2ff",
+   "date": "2024-02-07",
+   "old": "v0.5.0",
+   "new": "v0.6.0"
+  },
+  {
+   "commit": "82df7d52086e1e39d7b56819d89ea75eab5eb9fd",
+   "date": "2023-09-18",
+   "old": "v0.4.0",
+   "new": "v0.5.0"
+  },
+  {
+   "commit": "0f52935a531880267e7be43e12acba6b02491f36",
+   "date": "2023-09-13",
+   "old": "v0.3.0",
+   "new": "v0.4.0"
+  },
+  {
+   "commit": "d5425c4c41c9bb605d9d8adbf9b1c72733acd117",
+   "date": "2023-02-27",
+   "old": "v0.2.1-0.20230131001841-b3cabdec0657",
+   "new": "v0.3.0"
+  },
+  {
+   "commit": "58ad67caee7665f14dd59519adf83a21b96d7bd7",
+   "date": "2023-01-31",
+   "old": "v0.2.0",
+   "new": "v0.2.1-0.20230131001841-b3cabdec0657"
+  }
+ ]
+}

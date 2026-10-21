@@ -1,0 +1,28 @@
+{
+ "suite": "kms",
+ "tier": 1,
+ "consumer": "kubernetes-kms",
+ "repo": "Azure/kubernetes-kms",
+ "module": "k8s.io/kms",
+ "head_version": "v0.35.1",
+ "gomod_commits": 21,
+ "upgrades": 1,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2023-05-17",
+ "last": "2026-02-20",
+ "bumps": [
+  {
+   "commit": "5922b512d80b5928d626e48e0a706c19595c1d68",
+   "date": "2026-02-20",
+   "old": "v0.27.1",
+   "new": "v0.35.1"
+  },
+  {
+   "commit": "71ea631f5a260fa2832d61516769604e05e297a4",
+   "date": "2023-05-17",
+   "old": null,
+   "new": "v0.27.1"
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "suite": "function-sdk",
+ "tier": 1,
+ "consumer": "function-environment-configs",
+ "repo": "crossplane-contrib/function-environment-configs",
+ "module": "github.com/crossplane/function-sdk-go",
+ "head_version": "v0.7.1",
+ "gomod_commits": 29,
+ "upgrades": 6,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2024-02-14",
+ "last": "2026-08-31",
+ "bumps": [
+  {
+   "commit": "bef957755c56d5b9c1b3ba9ab089f18fa43340c9",
+   "date": "2026-08-31",
+   "old": "v0.6.2",
+   "new": "v0.7.1"
+  },
+  {
+   "commit": "ce24ceff678209c99bc47dcf887b621d57ff345c",
+   "date": "2026-04-09",
+   "old": "v0.4.0",
+   "new": "v0.6.2"
+  },
+  {
+   "commit": "d3c384c5fe3b811ff9991ef2977ff59d9cd7b727",
+   "date": "2024-12-16",
+   "old": "v0.3.0",
+   "new": "v0.4.0"
+  },
+  {
+   "commit": "4c67de9c0efa631256c2edc5a3c114beaee916cc",
+   "date": "2024-11-29",
+   "old": "v0.2.0",
+   "new": "v0.3.0"
+  },
+  {
+   "commit": "6e378560ca7bd0a1b5bd5235dc23f221f580a31d",
+   "date": "2024-02-22",
+   "old": "v0.2.0-rc.0.0.20240123000408-d88396bf995a",
+   "new": "v0.2.0"
+  },
+  {
+   "commit": "59cc7ebcc69c2653abf989bcb16d3c011cad09ab",
+   "date": "2024-02-14",
+   "old": "v0.1.0",
+   "new": "v0.2.0-rc.0.0.20240123000408-d88396bf995a"
+  },
+  {
+   "commit": "ce00c412a389ea450fdf4d44689259f28ff4fcdd",
+   "date": "2024-02-14",
+   "old": null,
+   "new": "v0.1.0"
+  }
+ ]
+}

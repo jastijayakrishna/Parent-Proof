@@ -1,0 +1,94 @@
+{
+ "suite": "sigstore",
+ "tier": 1,
+ "consumer": "gitsign",
+ "repo": "sigstore/gitsign",
+ "module": "github.com/sigstore/protobuf-specs",
+ "head_version": "v0.5.2",
+ "gomod_commits": 274,
+ "upgrades": 12,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2023-05-22",
+ "last": "2026-10-16",
+ "bumps": [
+  {
+   "commit": "af7461e688d29cde07ed5d3ef29cdea97ff122dd",
+   "date": "2026-10-16",
+   "old": "v0.5.1",
+   "new": "v0.5.2"
+  },
+  {
+   "commit": "666efd5e4c4472fc9be313a961dd9c64cf76b676",
+   "date": "2026-04-08",
+   "old": "v0.5.0",
+   "new": "v0.5.1"
+  },
+  {
+   "commit": "f2c099be154428b3474f726162bfd5645aa5fa9c",
+   "date": "2025-07-14",
+   "old": "v0.4.3",
+   "new": "v0.5.0"
+  },
+  {
+   "commit": "93f028ce8ff0686c4ccc9280374a2c18b8dc5b33",
+   "date": "2025-06-16",
+   "old": "v0.4.2",
+   "new": "v0.4.3"
+  },
+  {
+   "commit": "a49bf9ed4e9718414c1556d2a625b1d86ee4ef77",
+   "date": "2025-05-19",
+   "old": "v0.4.1",
+   "new": "v0.4.2"
+  },
+  {
+   "commit": "bd7dbe5bb7f7d0453f41b22a30528b35995fbb10",
+   "date": "2025-04-15",
+   "old": "v0.4.0",
+   "new": "v0.4.1"
+  },
+  {
+   "commit": "7a2b9d614c0e62a117a5be91b71f7ca0eb096691",
+   "date": "2025-02-19",
+   "old": "v0.3.2",
+   "new": "v0.4.0"
+  },
+  {
+   "commit": "78acfdc3192b952c6bf6ffdfa7943862247859a2",
+   "date": "2024-05-13",
+   "old": "v0.3.1",
+   "new": "v0.3.2"
+  },
+  {
+   "commit": "eaeda209bd78a9a818a9ceffec37662dbc300361",
+   "date": "2024-04-08",
+   "old": "v0.3.0",
+   "new": "v0.3.1"
+  },
+  {
+   "commit": "66e0ff5e1c56c87881349972ab95436d88bc9e6b",
+   "date": "2024-02-19",
+   "old": "v0.2.1",
+   "new": "v0.3.0"
+  },
+  {
+   "commit": "f7a3ed8a9b44050cc897d0c21063db8d969d6d69",
+   "date": "2023-08-21",
+   "old": "v0.2.0",
+   "new": "v0.2.1"
+  },
+  {
+   "commit": "4eca0d64c51630f1ab130279eb5454011ad02665",
+   "date": "2023-07-17",
+   "old": "v0.1.0",
+   "new": "v0.2.0"
+  },
+  {
+   "commit": "5dd609202187382ecf9e049a9495e20d7493cd4c",
+   "date": "2023-05-22",
+   "old": null,
+   "new": "v0.1.0"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "suite": "containerd-api-new",
+ "tier": 2,
+ "consumer": "kata-runtime",
+ "repo": "kata-containers/kata-containers",
+ "module": "github.com/containerd/containerd/api",
+ "head_version": "v1.9.0",
+ "gomod_commits": 64,
+ "upgrades": 1,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2025-03-19",
+ "last": "2025-09-15",
+ "bumps": [
+  {
+   "commit": "fab828586b0dcd9909eeebb32e7eb9710a03b97a",
+   "date": "2025-09-15",
+   "old": "v1.8.0",
+   "new": "v1.9.0"
+  },
+  {
+   "commit": "a6e5d28a15af4a11260312fdc9c33088c9f7a6ac",
+   "date": "2025-03-19",
+   "old": null,
+   "new": "v1.8.0"
+  }
+ ]
+}

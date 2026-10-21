@@ -1,0 +1,154 @@
+{
+ "suite": "argo-cd-v3",
+ "tier": 2,
+ "consumer": "argocd-image-updater",
+ "repo": "argoproj-labs/argocd-image-updater",
+ "module": "github.com/argoproj/argo-cd/v3",
+ "head_version": "v3.5.5",
+ "gomod_commits": 201,
+ "upgrades": 22,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2025-10-01",
+ "last": "2026-10-13",
+ "bumps": [
+  {
+   "commit": "aaf4bcee5c267efbdcb3d61922a81cc3f6574b3f",
+   "date": "2026-10-13",
+   "old": "v3.5.4",
+   "new": "v3.5.5"
+  },
+  {
+   "commit": "9b61d4612f52acec81b51602f7b5a6c0881122c8",
+   "date": "2026-10-07",
+   "old": "v3.5.3",
+   "new": "v3.5.4"
+  },
+  {
+   "commit": "8f1640632d545f108a47f8cb9c1e3e5a45833b4f",
+   "date": "2026-09-25",
+   "old": "v3.5.2",
+   "new": "v3.5.3"
+  },
+  {
+   "commit": "cc48a32996d10e80d7a082dda6b406abd82ad689",
+   "date": "2026-09-02",
+   "old": "v3.5.1",
+   "new": "v3.5.2"
+  },
+  {
+   "commit": "91eb1c26d3ad9774773bcb74af9e65a661739527",
+   "date": "2026-08-12",
+   "old": "v3.5.0",
+   "new": "v3.5.1"
+  },
+  {
+   "commit": "60bcb6c24587f8d8c46ccf3861e3f961ba20995a",
+   "date": "2026-08-06",
+   "old": "v3.4.6",
+   "new": "v3.5.0"
+  },
+  {
+   "commit": "967a1c85fed9e5277b6ce42847516839fe88d486",
+   "date": "2026-08-01",
+   "old": "v3.4.5",
+   "new": "v3.4.6"
+  },
+  {
+   "commit": "29d992f0e1539f0a2a1d74eec8ca47e36b61ebf4",
+   "date": "2026-07-14",
+   "old": "v3.4.4",
+   "new": "v3.4.5"
+  },
+  {
+   "commit": "bb991de95169d696e4de3cedbabf6a15e520aec9",
+   "date": "2026-06-22",
+   "old": "v3.4.3",
+   "new": "v3.4.4"
+  },
+  {
+   "commit": "fe5df120f2591c00fa6847be8c7a711d7f4eaac5",
+   "date": "2026-06-03",
+   "old": "v3.4.2",
+   "new": "v3.4.3"
+  },
+  {
+   "commit": "e294187f3e74c41ac1af1e93016548c7367eba35",
+   "date": "2026-05-19",
+   "old": "v3.4.1",
+   "new": "v3.4.2"
+  },
+  {
+   "commit": "4631cb6ea7f3d42b9d7777b75c96183f932ad1d0",
+   "date": "2026-05-07",
+   "old": "v3.3.9",
+   "new": "v3.4.1"
+  },
+  {
+   "commit": "142dff8fd5ce66d034dddcab0f47e8a88a9bcdcb",
+   "date": "2026-05-05",
+   "old": "v3.3.8",
+   "new": "v3.3.9"
+  },
+  {
+   "commit": "e7f08a3702be35e0e7f3eba580ea23c86d99c86f",
+   "date": "2026-04-29",
+   "old": "v3.3.6",
+   "new": "v3.3.8"
+  },
+  {
+   "commit": "2dd38e6fc3e63a77302340ad48447902ff40ab0c",
+   "date": "2026-04-02",
+   "old": "v3.3.4",
+   "new": "v3.3.6"
+  },
+  {
+   "commit": "32e031387ff4ef53cb821573c39444ad3b41fb8b",
+   "date": "2026-03-18",
+   "old": "v3.3.2",
+   "new": "v3.3.4"
+  },
+  {
+   "commit": "d1b29fe89cbc8963926f9633a0b117307de3d11d",
+   "date": "2026-03-06",
+   "old": "v3.3.0",
+   "new": "v3.3.2"
+  },
+  {
+   "commit": "316f66222547b41780898115d9e50c6625746093",
+   "date": "2026-02-03",
+   "old": "v3.2.6",
+   "new": "v3.3.0"
+  },
+  {
+   "commit": "0038e4a81cdc49d8883ce356934d27c0f55e17e9",
+   "date": "2026-01-26",
+   "old": "v3.2.3",
+   "new": "v3.2.6"
+  },
+  {
+   "commit": "c99dfca2d6d87af221f5c48fbca563acc97d72ed",
+   "date": "2026-01-08",
+   "old": "v3.2.1",
+   "new": "v3.2.3"
+  },
+  {
+   "commit": "4c5ca61029271a1c32b2e1e175c726056a67a2f8",
+   "date": "2025-12-16",
+   "old": "v3.1.9",
+   "new": "v3.2.1"
+  },
+  {
+   "commit": "ca2a4e030b95cb11cbe4f2b8b5154182524db3a2",
+   "date": "2025-10-28",
+   "old": "v3.1.8",
+   "new": "v3.1.9"
+  },
+  {
+   "commit": "ac5b3a0c851025eb2ef0cc3628b6519214c44003",
+   "date": "2025-10-01",
+   "old": null,
+   "new": "v3.1.8"
+  }
+ ]
+}

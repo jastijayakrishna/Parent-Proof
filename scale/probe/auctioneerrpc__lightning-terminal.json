@@ -1,0 +1,40 @@
+{
+ "suite": "auctioneerrpc",
+ "tier": 1,
+ "consumer": "lightning-terminal",
+ "repo": "lightninglabs/lightning-terminal",
+ "module": "github.com/lightninglabs/pool/auctioneerrpc",
+ "head_version": "v1.1.3",
+ "gomod_commits": 136,
+ "upgrades": 4,
+ "added_or_removed": 0,
+ "replaced_by_fork": 0,
+ "first": "2023-10-03",
+ "last": "2025-06-06",
+ "bumps": [
+  {
+   "commit": "f4a5883a4526299d634d18091da5b6ee1ab3fef9",
+   "date": "2025-06-06",
+   "old": "v1.1.3-0.20250305125211-4e860ec4e77f",
+   "new": "v1.1.3"
+  },
+  {
+   "commit": "443b5f41704bc1e7c74662668395bcc0d67514ec",
+   "date": "2025-03-26",
+   "old": "v1.1.2",
+   "new": "v1.1.3-0.20250305125211-4e860ec4e77f"
+  },
+  {
+   "commit": "2714bdc19866a2b1778d89e6b14cebd69417f763",
+   "date": "2024-06-06",
+   "old": "v1.1.1",
+   "new": "v1.1.2"
+  },
+  {
+   "commit": "8d7c53b2d1ccab6abc41a01b7c61e874cf194542",
+   "date": "2023-10-03",
+   "old": "v1.1.0",
+   "new": "v1.1.1"
+  }
+ ]
+}

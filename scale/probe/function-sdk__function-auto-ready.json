@@ -1,0 +1,82 @@
+{
+ "suite": "function-sdk",
+ "tier": 1,
+ "consumer": "function-auto-ready",
+ "repo": "crossplane-contrib/function-auto-ready",
+ "module": "github.com/crossplane/function-sdk-go",
+ "head_version": "v0.7.1",
+ "gomod_commits": 66,
+ "upgrades": 10,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2023-09-15",
+ "last": "2026-05-26",
+ "bumps": [
+  {
+   "commit": "7cc2faa73d000ea8c484eb2a7d943a1e6b230767",
+   "date": "2026-05-26",
+   "old": "v0.7.0",
+   "new": "v0.7.1"
+  },
+  {
+   "commit": "589dd7dae3b34179edc68a153f109c1e299e3926",
+   "date": "2026-05-22",
+   "old": "v0.6.2",
+   "new": "v0.7.0"
+  },
+  {
+   "commit": "a4ae612dc6b6f7d514deb23452d428978e9ac844",
+   "date": "2026-03-22",
+   "old": "v0.6.0",
+   "new": "v0.6.2"
+  },
+  {
+   "commit": "1ed7b3416558d9e016a870d94aee1f6421230511",
+   "date": "2026-02-28",
+   "old": "v0.5.0",
+   "new": "v0.6.0"
+  },
+  {
+   "commit": "fdbafb783b7ca48e375f9857ee6db511b29b1d1d",
+   "date": "2026-02-02",
+   "old": "v0.4.0",
+   "new": "v0.5.0"
+  },
+  {
+   "commit": "903d8e12a2a7d13cec66d80e36c0046e71d060a0",
+   "date": "2024-12-16",
+   "old": "v0.3.0",
+   "new": "v0.4.0"
+  },
+  {
+   "commit": "abca397ba1eab3914594b4744631e71bdd8b8739",
+   "date": "2024-09-19",
+   "old": "v0.1.0",
+   "new": "v0.3.0"
+  },
+  {
+   "commit": "9be3d005400699816a24581b897e6541152b4d19",
+   "date": "2023-11-01",
+   "old": "v0.0.0-20230920225543-a4ada4f934f6",
+   "new": "v0.1.0"
+  },
+  {
+   "commit": "8526ae6e15745a27329f5df3dc4db8a633587bc9",
+   "date": "2023-09-20",
+   "old": "v0.0.0-20230918205031-1c15c0202e57",
+   "new": "v0.0.0-20230920225543-a4ada4f934f6"
+  },
+  {
+   "commit": "bda5604b9d199e1055b1dc5f32252fc68f0c0e47",
+   "date": "2023-09-18",
+   "old": "v0.0.0-20230914214411-245eb193dcc9",
+   "new": "v0.0.0-20230918205031-1c15c0202e57"
+  },
+  {
+   "commit": "a66c6f7b5a32aea1d4c4c1f955b0b888cb084147",
+   "date": "2023-09-15",
+   "old": null,
+   "new": "v0.0.0-20230914214411-245eb193dcc9"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "suite": "remote-apis",
+ "tier": 1,
+ "consumer": "remote-apis-sdks",
+ "repo": "bazelbuild/remote-apis-sdks",
+ "module": "github.com/bazelbuild/remote-apis",
+ "head_version": "v0.0.0-20260216160025-715b73f3f9e4",
+ "gomod_commits": 23,
+ "upgrades": 2,
+ "added_or_removed": 0,
+ "replaced_by_fork": 0,
+ "first": "2023-05-01",
+ "last": "2026-03-05",
+ "bumps": [
+  {
+   "commit": "39d78dcb378f8effe60c150d21035f6de556b577",
+   "date": "2026-03-05",
+   "old": "v0.0.0-20230411132548-35aee1c4a425",
+   "new": "v0.0.0-20260216160025-715b73f3f9e4"
+  },
+  {
+   "commit": "935e61ad88b790831d03d577a903989913fef84d",
+   "date": "2023-05-01",
+   "old": "v0.0.0-20210718193713-0ecef08215cf",
+   "new": "v0.0.0-20230411132548-35aee1c4a425"
+  }
+ ]
+}

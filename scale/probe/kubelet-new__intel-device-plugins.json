@@ -1,0 +1,142 @@
+{
+ "suite": "kubelet-new",
+ "tier": 2,
+ "consumer": "intel-device-plugins",
+ "repo": "intel/intel-device-plugins-for-kubernetes",
+ "module": "k8s.io/kubelet",
+ "head_version": "v0.37.0",
+ "gomod_commits": 397,
+ "upgrades": 21,
+ "added_or_removed": 0,
+ "replaced_by_fork": 0,
+ "first": "2023-01-20",
+ "last": "2026-09-07",
+ "bumps": [
+  {
+   "commit": "dc2d76e04b7cea20940f4c424efae8818f0e3b9c",
+   "date": "2026-09-07",
+   "old": "v0.36.0",
+   "new": "v0.37.0"
+  },
+  {
+   "commit": "38740ea8d7b138a28aecc2d0210b3a14d0ef4aa8",
+   "date": "2026-05-05",
+   "old": "v0.35.1",
+   "new": "v0.36.0"
+  },
+  {
+   "commit": "7be6799d59f740a6019493658a731098a0b4fe04",
+   "date": "2026-02-13",
+   "old": "v0.35.0",
+   "new": "v0.35.1"
+  },
+  {
+   "commit": "98aa8d5f219052ff5392894c990f716117c3d9e2",
+   "date": "2025-12-29",
+   "old": "v0.34.0",
+   "new": "v0.35.0"
+  },
+  {
+   "commit": "094b4791e419159f5c11ef66f7077d2a28098765",
+   "date": "2025-09-03",
+   "old": "v0.33.0",
+   "new": "v0.34.0"
+  },
+  {
+   "commit": "eec5a308529ab94aeeb0e5efa2aade2c7d4d5afc",
+   "date": "2025-04-24",
+   "old": "v0.32.2",
+   "new": "v0.33.0"
+  },
+  {
+   "commit": "2672022cfcded4018c9badc929d8429855d557e1",
+   "date": "2025-02-17",
+   "old": "v0.32.1",
+   "new": "v0.32.2"
+  },
+  {
+   "commit": "b98844c5a1d0ee0291ddb508235f668218233367",
+   "date": "2025-01-21",
+   "old": "v0.32.0",
+   "new": "v0.32.1"
+  },
+  {
+   "commit": "c6e809fef7d08f30b6942b1473988726a4cfa41f",
+   "date": "2025-01-02",
+   "old": "v0.31.0",
+   "new": "v0.32.0"
+  },
+  {
+   "commit": "294b7b983a947d9731e511d1ca382a9a8ed4679c",
+   "date": "2024-08-16",
+   "old": "v0.31.0-beta.0",
+   "new": "v0.31.0"
+  },
+  {
+   "commit": "a64b3363e4133faaa08e13cf03bedb8dba302588",
+   "date": "2024-07-23",
+   "old": "v0.30.0",
+   "new": "v0.31.0-beta.0"
+  },
+  {
+   "commit": "158f9eedc6442246b1938afba57259b34b87a70a",
+   "date": "2024-04-18",
+   "old": "v0.29.0",
+   "new": "v0.30.0"
+  },
+  {
+   "commit": "c51850b138717336ad374cfbf96764f56ba3ed21",
+   "date": "2023-12-14",
+   "old": "v0.29.0-rc.1",
+   "new": "v0.29.0"
+  },
+  {
+   "commit": "b03ac67e2b5f70f7b479a008c8a38a37de00c962",
+   "date": "2023-12-04",
+   "old": "v0.28.2",
+   "new": "v0.29.0-rc.1"
+  },
+  {
+   "commit": "b38141d8350f8bfdbaafc31dc245f0524466ae89",
+   "date": "2023-09-21",
+   "old": "v0.28.1",
+   "new": "v0.28.2"
+  },
+  {
+   "commit": "1f792f568510fa69cdefa983c6eeaa616694a062",
+   "date": "2023-09-04",
+   "old": "v0.28.0",
+   "new": "v0.28.1"
+  },
+  {
+   "commit": "d43bab5a222b26965a29c3be03c4be255a0ae1fd",
+   "date": "2023-08-16",
+   "old": "v0.27.3",
+   "new": "v0.28.0"
+  },
+  {
+   "commit": "bbe0fab68abd6f01b9f36679a08075f885b3842d",
+   "date": "2023-06-19",
+   "old": "v0.27.2",
+   "new": "v0.27.3"
+  },
+  {
+   "commit": "5ccf149033f9670ef888ed897c6291e5a4e493e2",
+   "date": "2023-05-19",
+   "old": "v0.27.1",
+   "new": "v0.27.2"
+  },
+  {
+   "commit": "6a4721bfdd1c3e6fc62cd70d48ff77531379c84b",
+   "date": "2023-05-13",
+   "old": "v0.26.1",
+   "new": "v0.27.1"
+  },
+  {
+   "commit": "76e798c7affdb656bfbe217bb9e9a603fad1cb4b",
+   "date": "2023-01-20",
+   "old": "v0.26.0",
+   "new": "v0.26.1"
+  }
+ ]
+}

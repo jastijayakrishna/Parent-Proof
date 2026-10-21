@@ -1,0 +1,58 @@
+{
+ "suite": "argo-cd-v2",
+ "tier": 2,
+ "consumer": "argocd-autopilot",
+ "repo": "argoproj-labs/argocd-autopilot",
+ "module": "github.com/argoproj/argo-cd/v2",
+ "head_version": null,
+ "gomod_commits": 48,
+ "upgrades": 6,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2023-01-29",
+ "last": "2025-09-13",
+ "bumps": [
+  {
+   "commit": "9d881509c475e0c14ccd63e0bf99d68500993719",
+   "date": "2025-09-13",
+   "old": "v2.13.4",
+   "new": null
+  },
+  {
+   "commit": "c910b91c08bef2a705b74bddb82d459976ac638c",
+   "date": "2025-02-02",
+   "old": "v2.13.1",
+   "new": "v2.13.4"
+  },
+  {
+   "commit": "27048d78be8e5a31b2fa299a67d08d65f16f1e5b",
+   "date": "2024-11-26",
+   "old": "v2.10.0",
+   "new": "v2.13.1"
+  },
+  {
+   "commit": "1b878547c68821254829f02f574e27eff4fc23ec",
+   "date": "2024-02-07",
+   "old": "v2.8.4",
+   "new": "v2.10.0"
+  },
+  {
+   "commit": "9646e4c28a5426402e3641a23aef01caa712a1f9",
+   "date": "2023-09-18",
+   "old": "v2.8.3",
+   "new": "v2.8.4"
+  },
+  {
+   "commit": "da9b57c4a73562a55478361a028625eeacd5074e",
+   "date": "2023-09-12",
+   "old": "v2.5.9",
+   "new": "v2.8.3"
+  },
+  {
+   "commit": "8788c40cca35fe3f13ac14228817a9527761623b",
+   "date": "2023-01-29",
+   "old": "v2.5.2",
+   "new": "v2.5.9"
+  }
+ ]
+}

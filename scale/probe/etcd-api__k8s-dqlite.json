@@ -1,0 +1,40 @@
+{
+ "suite": "etcd-api",
+ "tier": 2,
+ "consumer": "k8s-dqlite",
+ "repo": "canonical/k8s-dqlite",
+ "module": "go.etcd.io/etcd/api/v3",
+ "head_version": "v3.5.17",
+ "gomod_commits": 37,
+ "upgrades": 3,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2023-08-30",
+ "last": "2025-06-04",
+ "bumps": [
+  {
+   "commit": "2fc6efa5d494a2335e61d0297b3859f81c76e3c4",
+   "date": "2025-06-04",
+   "old": "v3.5.20",
+   "new": "v3.5.17"
+  },
+  {
+   "commit": "5651b4edab3bf0ddfc93e3780af7a2d79d01fac4",
+   "date": "2025-03-31",
+   "old": "v3.5.12",
+   "new": "v3.5.20"
+  },
+  {
+   "commit": "76d29a99f552e15247bb8276e7790398245a238e",
+   "date": "2024-03-14",
+   "old": "v3.5.0",
+   "new": "v3.5.12"
+  },
+  {
+   "commit": "47a5891be971de926f5fec65e7a6747d2d5733b8",
+   "date": "2023-08-30",
+   "old": null,
+   "new": "v3.5.0"
+  }
+ ]
+}

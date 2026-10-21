@@ -1,0 +1,88 @@
+{
+ "suite": "sigstore",
+ "tier": 1,
+ "consumer": "cosign",
+ "repo": "sigstore/cosign",
+ "module": "github.com/sigstore/protobuf-specs",
+ "head_version": "v0.5.2",
+ "gomod_commits": 715,
+ "upgrades": 9,
+ "added_or_removed": 3,
+ "replaced_by_fork": 0,
+ "first": "2023-05-26",
+ "last": "2026-09-08",
+ "bumps": [
+  {
+   "commit": "633e8f4303b7db64c369bdfa315374a8bd511ac6",
+   "date": "2026-09-08",
+   "old": "v0.5.1",
+   "new": "v0.5.2"
+  },
+  {
+   "commit": "39940de028616e038b8262f11315aedc2f81806e",
+   "date": "2026-05-05",
+   "old": "v0.5.0",
+   "new": "v0.5.1"
+  },
+  {
+   "commit": "b2b94625e948fc5bd98740eb3f7048f6b7d5226b",
+   "date": "2025-07-15",
+   "old": "v0.4.3",
+   "new": "v0.5.0"
+  },
+  {
+   "commit": "2eb0d916b87baad977eba8ca73836c7e17806627",
+   "date": "2025-06-17",
+   "old": "v0.4.2",
+   "new": "v0.4.3"
+  },
+  {
+   "commit": "667ef61d5bbd4a4d0c3d60d768f230d84cd707b1",
+   "date": "2025-06-03",
+   "old": "v0.4.1",
+   "new": "v0.4.2"
+  },
+  {
+   "commit": "76d23ba9de3ce8e98c062925aa9ea1d2fe64e766",
+   "date": "2025-04-07",
+   "old": "v0.4.0",
+   "new": "v0.4.1"
+  },
+  {
+   "commit": "b5f6d98a526888dcbab36500fb0f33b3f302fa31",
+   "date": "2025-02-03",
+   "old": "v0.3.3",
+   "new": "v0.4.0"
+  },
+  {
+   "commit": "a25bb31f78edbc263e7fd2d0867ad27d194c1e38",
+   "date": "2025-01-31",
+   "old": "v0.3.2",
+   "new": "v0.3.3"
+  },
+  {
+   "commit": "b4cf37b00634d1f13b1e2156f2d19af394e33edc",
+   "date": "2024-07-29",
+   "old": "v0.3.0",
+   "new": "v0.3.2"
+  },
+  {
+   "commit": "c6cdf1b37664e8e83fdf4d4abf464f2ead4021a2",
+   "date": "2024-07-23",
+   "old": null,
+   "new": "v0.3.0"
+  },
+  {
+   "commit": "7739f5f172b079b579b1c60cff6c5e59a6405fd7",
+   "date": "2023-06-15",
+   "old": "v0.1.0",
+   "new": null
+  },
+  {
+   "commit": "b831958685cd17a71af2a07eb2a07e59555b5335",
+   "date": "2023-05-26",
+   "old": null,
+   "new": "v0.1.0"
+  }
+ ]
+}

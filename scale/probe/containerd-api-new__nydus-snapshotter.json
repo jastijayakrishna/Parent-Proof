@@ -1,0 +1,34 @@
+{
+ "suite": "containerd-api-new",
+ "tier": 2,
+ "consumer": "nydus-snapshotter",
+ "repo": "containerd/nydus-snapshotter",
+ "module": "github.com/containerd/containerd/api",
+ "head_version": "v1.8.0",
+ "gomod_commits": 44,
+ "upgrades": 2,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2024-08-01",
+ "last": "2024-11-15",
+ "bumps": [
+  {
+   "commit": "5f948e4498151b51c742d2ee0b3f7b96f86a26f7",
+   "date": "2024-11-15",
+   "old": "v1.8.0-rc.2",
+   "new": "v1.8.0"
+  },
+  {
+   "commit": "8fa319bfe9c550dee34b890d24e053cd7738c58e",
+   "date": "2024-08-06",
+   "old": "v1.7.19",
+   "new": "v1.8.0-rc.2"
+  },
+  {
+   "commit": "15fe07131b01606b1355331bab663402409aab1b",
+   "date": "2024-08-01",
+   "old": null,
+   "new": "v1.7.19"
+  }
+ ]
+}

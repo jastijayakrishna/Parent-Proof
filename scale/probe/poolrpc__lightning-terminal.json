@@ -1,0 +1,34 @@
+{
+ "suite": "poolrpc",
+ "tier": 1,
+ "consumer": "lightning-terminal",
+ "repo": "lightninglabs/lightning-terminal",
+ "module": "github.com/lightninglabs/pool/poolrpc",
+ "head_version": "v1.0.1",
+ "gomod_commits": 136,
+ "upgrades": 2,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2024-12-19",
+ "last": "2025-05-21",
+ "bumps": [
+  {
+   "commit": "d0eaa3dc6a62d4153ed466c138dc6e613891434c",
+   "date": "2025-05-21",
+   "old": "v1.0.1-0.20250305125211-4e860ec4e77f",
+   "new": "v1.0.1"
+  },
+  {
+   "commit": "443b5f41704bc1e7c74662668395bcc0d67514ec",
+   "date": "2025-03-26",
+   "old": "v1.0.0",
+   "new": "v1.0.1-0.20250305125211-4e860ec4e77f"
+  },
+  {
+   "commit": "f73b43a70e65a1fefb07a27693605f1071d46871",
+   "date": "2024-12-19",
+   "old": null,
+   "new": "v1.0.0"
+  }
+ ]
+}

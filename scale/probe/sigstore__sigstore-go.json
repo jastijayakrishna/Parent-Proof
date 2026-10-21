@@ -1,0 +1,100 @@
+{
+ "suite": "sigstore",
+ "tier": 1,
+ "consumer": "sigstore-go",
+ "repo": "sigstore/sigstore-go",
+ "module": "github.com/sigstore/protobuf-specs",
+ "head_version": "v0.5.2",
+ "gomod_commits": 175,
+ "upgrades": 13,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2023-04-19",
+ "last": "2026-09-03",
+ "bumps": [
+  {
+   "commit": "976125fd4b4294d6c75d0916d5c8086fe6f7d5b8",
+   "date": "2026-09-03",
+   "old": "v0.5.1",
+   "new": "v0.5.2"
+  },
+  {
+   "commit": "56c2528195bf85aadcdd52b40c469e2d02b5a084",
+   "date": "2026-06-01",
+   "old": "v0.5.0",
+   "new": "v0.5.1"
+  },
+  {
+   "commit": "dcab992b2d5f5c5719258292916e562f9344d0bc",
+   "date": "2025-07-14",
+   "old": "v0.4.3",
+   "new": "v0.5.0"
+  },
+  {
+   "commit": "2c9ea93842ff8c11d32d82fce5c0daef4b015bfb",
+   "date": "2025-06-16",
+   "old": "v0.4.2",
+   "new": "v0.4.3"
+  },
+  {
+   "commit": "c43b348797029a3a4483db857c16dd88d34a6cae",
+   "date": "2025-06-05",
+   "old": "v0.4.1",
+   "new": "v0.4.2"
+  },
+  {
+   "commit": "bdbe45f0cec9a35ae188533e0b53022ce303408b",
+   "date": "2025-04-07",
+   "old": "v0.4.1-0.20250313180955-4752ba2fcab1",
+   "new": "v0.4.1"
+  },
+  {
+   "commit": "cb4515a433d13a9a1fcad1cf36276a26410d54e2",
+   "date": "2025-03-14",
+   "old": "v0.4.0",
+   "new": "v0.4.1-0.20250313180955-4752ba2fcab1"
+  },
+  {
+   "commit": "916a021419c97c5ce321a014b7126659cd4253e8",
+   "date": "2025-02-02",
+   "old": "v0.3.3",
+   "new": "v0.4.0"
+  },
+  {
+   "commit": "f62d7f4cbf3455cedbbf3f63a46db87825003f8a",
+   "date": "2025-01-10",
+   "old": "v0.3.2",
+   "new": "v0.3.3"
+  },
+  {
+   "commit": "e5c957ab01bd1e10b921065a2bd362c3afc0324c",
+   "date": "2024-05-14",
+   "old": "v0.3.1",
+   "new": "v0.3.2"
+  },
+  {
+   "commit": "2a9419a8d8f1ea23d69c8e57f58b1ace4eb4ea6d",
+   "date": "2024-04-08",
+   "old": "v0.3.0",
+   "new": "v0.3.1"
+  },
+  {
+   "commit": "edafa82fb0eac52c99d485d8acab4d23d61c8070",
+   "date": "2024-04-01",
+   "old": "v0.2.1",
+   "new": "v0.3.0"
+  },
+  {
+   "commit": "2cdb28ed5f4ed437ed2dd34a94fe1eee2900ee0e",
+   "date": "2023-10-02",
+   "old": "v0.1.0",
+   "new": "v0.2.1"
+  },
+  {
+   "commit": "bd315bdfad3182b43129565ba041c5ac679ab08d",
+   "date": "2023-04-19",
+   "old": null,
+   "new": "v0.1.0"
+  }
+ ]
+}

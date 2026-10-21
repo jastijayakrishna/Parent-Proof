@@ -1,0 +1,58 @@
+{
+ "suite": "sigstore",
+ "tier": 1,
+ "consumer": "fulcio",
+ "repo": "sigstore/fulcio",
+ "module": "github.com/sigstore/protobuf-specs",
+ "head_version": "v0.5.2",
+ "gomod_commits": 547,
+ "upgrades": 6,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2025-02-14",
+ "last": "2026-09-30",
+ "bumps": [
+  {
+   "commit": "680a3cae5d392ba32a4be755cf50142bf02a20b8",
+   "date": "2026-09-30",
+   "old": "v0.5.1",
+   "new": "v0.5.2"
+  },
+  {
+   "commit": "7c15ea7872de69b75f8b8eff80ea28a8d1947c86",
+   "date": "2026-05-11",
+   "old": "v0.5.0",
+   "new": "v0.5.1"
+  },
+  {
+   "commit": "be7da0fe2691b5bbaed69ec296dbb328c1497764",
+   "date": "2025-07-14",
+   "old": "v0.4.3",
+   "new": "v0.5.0"
+  },
+  {
+   "commit": "66c0a56973bb646edd7170097af567a5e782f72e",
+   "date": "2025-06-16",
+   "old": "v0.4.2",
+   "new": "v0.4.3"
+  },
+  {
+   "commit": "95614bad2e911c0494af7afbf37a862d66f026c9",
+   "date": "2025-05-19",
+   "old": "v0.4.1",
+   "new": "v0.4.2"
+  },
+  {
+   "commit": "ca65fcf5e48f9509a974d136c0fe7d316909db0a",
+   "date": "2025-04-08",
+   "old": "v0.4.0",
+   "new": "v0.4.1"
+  },
+  {
+   "commit": "06e94fce5fd4a2d4580382641d0f0a8afdd572f4",
+   "date": "2025-02-14",
+   "old": null,
+   "new": "v0.4.0"
+  }
+ ]
+}

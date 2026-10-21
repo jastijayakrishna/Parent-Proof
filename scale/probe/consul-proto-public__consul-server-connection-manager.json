@@ -1,0 +1,28 @@
+{
+ "suite": "consul-proto-public",
+ "tier": 2,
+ "consumer": "consul-server-connection-manager",
+ "repo": "hashicorp/consul-server-connection-manager",
+ "module": "github.com/hashicorp/consul/proto-public",
+ "head_version": "v0.6.4",
+ "gomod_commits": 20,
+ "upgrades": 2,
+ "added_or_removed": 0,
+ "replaced_by_fork": 0,
+ "first": "2024-08-09",
+ "last": "2025-09-08",
+ "bumps": [
+  {
+   "commit": "11e3fb909ff800e243b71097d67eb0d7d1e67e4a",
+   "date": "2025-09-08",
+   "old": "v0.6.2",
+   "new": "v0.6.4"
+  },
+  {
+   "commit": "eb47eeb4886c4d5513cb77f1e7ca446fc05c757a",
+   "date": "2024-08-09",
+   "old": "v0.1.0",
+   "new": "v0.6.2"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "suite": "argo-cd-v3",
+ "tier": 2,
+ "consumer": "argocd-autopilot",
+ "repo": "argoproj-labs/argocd-autopilot",
+ "module": "github.com/argoproj/argo-cd/v3",
+ "head_version": "v3.1.5",
+ "gomod_commits": 48,
+ "upgrades": 0,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2025-09-13",
+ "last": "2025-09-13",
+ "bumps": [
+  {
+   "commit": "9d881509c475e0c14ccd63e0bf99d68500993719",
+   "date": "2025-09-13",
+   "old": null,
+   "new": "v3.1.5"
+  }
+ ]
+}

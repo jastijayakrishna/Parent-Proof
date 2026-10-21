@@ -1,0 +1,124 @@
+{
+ "suite": "swapserverrpc",
+ "tier": 1,
+ "consumer": "lightning-terminal",
+ "repo": "lightninglabs/lightning-terminal",
+ "module": "github.com/lightninglabs/loop/swapserverrpc",
+ "head_version": "v1.0.22",
+ "gomod_commits": 136,
+ "upgrades": 18,
+ "added_or_removed": 0,
+ "replaced_by_fork": 0,
+ "first": "2023-03-30",
+ "last": "2026-08-19",
+ "bumps": [
+  {
+   "commit": "9869f81c1e5f290557e89c388116bf2d6dd300fa",
+   "date": "2026-08-19",
+   "old": "v1.0.21",
+   "new": "v1.0.22"
+  },
+  {
+   "commit": "08934deeefe306d99e402c6c683bac3171fff88f",
+   "date": "2026-06-30",
+   "old": "v1.0.20",
+   "new": "v1.0.21"
+  },
+  {
+   "commit": "43518466ebe5edeadc89353a231680ee2488aa07",
+   "date": "2026-02-13",
+   "old": "v1.0.19",
+   "new": "v1.0.20"
+  },
+  {
+   "commit": "011d5fdf1a7b5cd214d2b66640825fd7655542eb",
+   "date": "2025-11-26",
+   "old": "v1.0.18",
+   "new": "v1.0.19"
+  },
+  {
+   "commit": "2db38f72fcbf1fd149b8d5dcdd127f7a8c0b755e",
+   "date": "2025-11-10",
+   "old": "v1.0.17-0.20251009095951-719355211f63",
+   "new": "v1.0.18"
+  },
+  {
+   "commit": "e3a85892835452821ca06dd6abd689f6f9617dac",
+   "date": "2025-10-15",
+   "old": "v1.0.15",
+   "new": "v1.0.17-0.20251009095951-719355211f63"
+  },
+  {
+   "commit": "779cf9d6385310d7bf32f9db8521d22bb061bd55",
+   "date": "2025-06-18",
+   "old": "v1.0.14",
+   "new": "v1.0.15"
+  },
+  {
+   "commit": "c0bd649ce2a4c324b81bd4b488b161d89646c99e",
+   "date": "2025-05-02",
+   "old": "v1.0.13",
+   "new": "v1.0.14"
+  },
+  {
+   "commit": "5d8753ab132586ffff16bc486afe7d00324fc83e",
+   "date": "2025-04-29",
+   "old": "v1.0.13-0.20250306160707-1091a628755c",
+   "new": "v1.0.13"
+  },
+  {
+   "commit": "443b5f41704bc1e7c74662668395bcc0d67514ec",
+   "date": "2025-03-26",
+   "old": "v1.0.12",
+   "new": "v1.0.13-0.20250306160707-1091a628755c"
+  },
+  {
+   "commit": "6ac0757d828fbd1ae578a59ab52dcc620a414298",
+   "date": "2025-01-07",
+   "old": "v1.0.11",
+   "new": "v1.0.12"
+  },
+  {
+   "commit": "f73b43a70e65a1fefb07a27693605f1071d46871",
+   "date": "2024-12-19",
+   "old": "v1.0.10",
+   "new": "v1.0.11"
+  },
+  {
+   "commit": "4e343f46c47869b0a6cadcdb87736d38d29d0f70",
+   "date": "2024-10-25",
+   "old": "v1.0.8",
+   "new": "v1.0.10"
+  },
+  {
+   "commit": "2714bdc19866a2b1778d89e6b14cebd69417f763",
+   "date": "2024-06-06",
+   "old": "v1.0.7",
+   "new": "v1.0.8"
+  },
+  {
+   "commit": "b5117a483a8dd8418e28b87531f130655b990825",
+   "date": "2024-03-11",
+   "old": "v1.0.6",
+   "new": "v1.0.7"
+  },
+  {
+   "commit": "6b53a86f6bd8b2d230e962f96dee5740ad6bad51",
+   "date": "2024-02-08",
+   "old": "v1.0.5",
+   "new": "v1.0.6"
+  },
+  {
+   "commit": "21d59a0c41fe8a6904439e67cab46342c447cb1f",
+   "date": "2023-08-08",
+   "old": "v1.0.4",
+   "new": "v1.0.5"
+  },
+  {
+   "commit": "94eff95228c55ea0f6b8da9ebcddaad6397c7928",
+   "date": "2023-03-30",
+   "old": "v1.0.3",
+   "new": "v1.0.4"
+  }
+ ]
+}

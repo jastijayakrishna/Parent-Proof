@@ -1,0 +1,208 @@
+{
+ "suite": "tfplugin",
+ "tier": 1,
+ "consumer": "terraform-plugin-mux",
+ "repo": "hashicorp/terraform-plugin-mux",
+ "module": "github.com/hashicorp/terraform-plugin-go",
+ "head_version": "v0.31.0",
+ "gomod_commits": 52,
+ "upgrades": 32,
+ "added_or_removed": 0,
+ "replaced_by_fork": 0,
+ "first": "2023-01-05",
+ "last": "2026-03-10",
+ "bumps": [
+  {
+   "commit": "93c5ace530fca62a6ea4d081755aefb13397656a",
+   "date": "2026-03-10",
+   "old": "v0.30.0",
+   "new": "v0.31.0"
+  },
+  {
+   "commit": "72c576af77410c840edd7b7a4321bbc3cecf0e67",
+   "date": "2026-02-24",
+   "old": "v0.29.1-0.20260202082722-14fe65ea923b",
+   "new": "v0.30.0"
+  },
+  {
+   "commit": "83949b00e2e63dede62aa35b4ef268ce1eeee074",
+   "date": "2026-02-23",
+   "old": "v0.29.0",
+   "new": "v0.29.1-0.20260202082722-14fe65ea923b"
+  },
+  {
+   "commit": "8af620e77de3fe1a24fd8db9e2c276ab1601cb6c",
+   "date": "2025-09-17",
+   "old": "v0.29.0-beta.1.0.20250915191812-03e996589dc2",
+   "new": "v0.29.0"
+  },
+  {
+   "commit": "c551d8bf1c4f2b7faa7e4c831366e0696d3808fb",
+   "date": "2025-09-16",
+   "old": "v0.29.0-beta.1.0.20250904144425-4c19f069077d",
+   "new": "v0.29.0-beta.1.0.20250915191812-03e996589dc2"
+  },
+  {
+   "commit": "2483daa523e32a5b24e9f7d2b7680db630e53d1f",
+   "date": "2025-09-08",
+   "old": "v0.29.0-beta.1",
+   "new": "v0.29.0-beta.1.0.20250904144425-4c19f069077d"
+  },
+  {
+   "commit": "19dddc728a0e928927904b97fabeaf940b8473c2",
+   "date": "2025-07-31",
+   "old": "v0.29.0-alpha.1.0.20250717133739-e33a5336fb19",
+   "new": "v0.29.0-beta.1"
+  },
+  {
+   "commit": "ba534763859ea84502ee00b46ceff5e0bfe61f91",
+   "date": "2025-07-17",
+   "old": "v0.29.0-alpha.1.0.20250709165734-a8477a15f806",
+   "new": "v0.29.0-alpha.1.0.20250717133739-e33a5336fb19"
+  },
+  {
+   "commit": "46602a4249aed23a1554f3ac27c37dc880707e0b",
+   "date": "2025-07-09",
+   "old": "v0.28.1-0.20250616135123-a19df43120ea",
+   "new": "v0.29.0-alpha.1.0.20250709165734-a8477a15f806"
+  },
+  {
+   "commit": "9447a0284505ea61a95f9cb232096ca205915da1",
+   "date": "2025-06-18",
+   "old": "v0.28.1-0.20250604150620-c6d59498a4e1",
+   "new": "v0.28.1-0.20250616135123-a19df43120ea"
+  },
+  {
+   "commit": "fcfffa0735f014f66fd79aa37900fa5c23bcbb5a",
+   "date": "2025-06-12",
+   "old": "v0.28.0",
+   "new": "v0.28.1-0.20250604150620-c6d59498a4e1"
+  },
+  {
+   "commit": "e2f2af1a13b5ee6648724f3af068b016aea60859",
+   "date": "2025-05-21",
+   "old": "v0.27.0",
+   "new": "v0.28.0"
+  },
+  {
+   "commit": "72f6d69a3672e80cc797a253236f74f546c4cec3",
+   "date": "2025-05-16",
+   "old": "v0.27.0-alpha.1",
+   "new": "v0.27.0"
+  },
+  {
+   "commit": "fc120d806c5b7f2b4d7d278e5acf759cd2aeb0e7",
+   "date": "2025-03-18",
+   "old": "v0.26.1-0.20250313132633-b799d5c93127",
+   "new": "v0.27.0-alpha.1"
+  },
+  {
+   "commit": "dfbb2d295b931e5b60ee8214f711fe7e67d954ce",
+   "date": "2025-03-14",
+   "old": "v0.26.1-0.20250210164912-1d335b3d83c3",
+   "new": "v0.26.1-0.20250313132633-b799d5c93127"
+  },
+  {
+   "commit": "58ca29a54f17153c15812e9d7a7d438d4eba6887",
+   "date": "2025-02-24",
+   "old": "v0.26.0",
+   "new": "v0.26.1-0.20250210164912-1d335b3d83c3"
+  },
+  {
+   "commit": "e62d24c776efc847d3e98ac0452ad51e9e7fa0d1",
+   "date": "2025-01-23",
+   "old": "v0.25.0",
+   "new": "v0.26.0"
+  },
+  {
+   "commit": "36bf5f536f9efd6f86636020f556ff3284ea5e05",
+   "date": "2024-10-30",
+   "old": "v0.24.0",
+   "new": "v0.25.0"
+  },
+  {
+   "commit": "9a3752c9d45e3a110b1fec704108935586f8590b",
+   "date": "2024-09-19",
+   "old": "v0.23.0",
+   "new": "v0.24.0"
+  },
+  {
+   "commit": "8c4e387986cf524e90be785672b8e149a1ba5865",
+   "date": "2024-05-06",
+   "old": "v0.22.2",
+   "new": "v0.23.0"
+  },
+  {
+   "commit": "931b7c9eec607db608cffa363b0c4175001b42f9",
+   "date": "2024-04-19",
+   "old": "v0.22.1",
+   "new": "v0.22.2"
+  },
+  {
+   "commit": "8150271e3c14a09d12b8cfb611ecb164922e0501",
+   "date": "2024-03-12",
+   "old": "v0.22.0",
+   "new": "v0.22.1"
+  },
+  {
+   "commit": "3557b60f5ac98e9ebeb65cebbd3e09c6a4067978",
+   "date": "2024-02-23",
+   "old": "v0.21.0",
+   "new": "v0.22.0"
+  },
+  {
+   "commit": "a3c2628c8beabaa7bad9b2288d1fa18545e4496b",
+   "date": "2024-01-26",
+   "old": "v0.20.0",
+   "new": "v0.21.0"
+  },
+  {
+   "commit": "58143dfb00ad39a291971b9290053bcb727455ac",
+   "date": "2023-12-14",
+   "old": "v0.19.1",
+   "new": "v0.20.0"
+  },
+  {
+   "commit": "50b5ca2a5b5a75f407bbcb51c52101f87bd04880",
+   "date": "2023-11-15",
+   "old": "v0.19.0",
+   "new": "v0.19.1"
+  },
+  {
+   "commit": "fe8079b634a404df4be1c30c22d2de028240e563",
+   "date": "2023-09-06",
+   "old": "v0.18.0",
+   "new": "v0.19.0"
+  },
+  {
+   "commit": "fc494c183fca0af0e6ec6435b61cb5e3174fea02",
+   "date": "2023-07-04",
+   "old": "v0.17.0",
+   "new": "v0.18.0"
+  },
+  {
+   "commit": "2d33d1e19c5c85eb426b51aac515a44d75e20784",
+   "date": "2023-06-28",
+   "old": "v0.16.0",
+   "new": "v0.17.0"
+  },
+  {
+   "commit": "0e9365e8ac07845ae3af8e3168c42489107aa45a",
+   "date": "2023-06-19",
+   "old": "v0.15.0",
+   "new": "v0.16.0"
+  },
+  {
+   "commit": "a8efb0b8193c0df0bd20b79d44ffa30fdfd28def",
+   "date": "2023-03-27",
+   "old": "v0.14.3",
+   "new": "v0.15.0"
+  },
+  {
+   "commit": "b5ac2f9055b8e285dac3847c78c2a41de4cd059c",
+   "date": "2023-01-05",
+   "old": "v0.14.2",
+   "new": "v0.14.3"
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "suite": "csi-new",
+ "tier": 2,
+ "consumer": "external-health-monitor",
+ "repo": "kubernetes-csi/external-health-monitor",
+ "module": "github.com/container-storage-interface/spec",
+ "head_version": "v1.13.0",
+ "gomod_commits": 62,
+ "upgrades": 7,
+ "added_or_removed": 0,
+ "replaced_by_fork": 0,
+ "first": "2023-05-01",
+ "last": "2026-08-31",
+ "bumps": [
+  {
+   "commit": "907ddacb0c2180ee6d09222fd61a679d86e7b107",
+   "date": "2026-08-31",
+   "old": "v1.13.0-rc1",
+   "new": "v1.13.0"
+  },
+  {
+   "commit": "8e7d753702a1f5946b8a4605d063133948708ccf",
+   "date": "2026-08-11",
+   "old": "v1.12.0",
+   "new": "v1.13.0-rc1"
+  },
+  {
+   "commit": "1e63d840a2281a77274c521e858742fb0ca2ab9b",
+   "date": "2026-05-27",
+   "old": "v1.11.0",
+   "new": "v1.12.0"
+  },
+  {
+   "commit": "ec1a3512222f55e6a5d33cd844efc7bd8d515b61",
+   "date": "2024-12-18",
+   "old": "v1.10.0",
+   "new": "v1.11.0"
+  },
+  {
+   "commit": "bea646f33f0ffbf784be7982363456a35a15d117",
+   "date": "2024-11-05",
+   "old": "v1.9.0",
+   "new": "v1.10.0"
+  },
+  {
+   "commit": "df299516356f45fcfc23fe5bd554684f525b5943",
+   "date": "2023-11-22",
+   "old": "v1.8.0",
+   "new": "v1.9.0"
+  },
+  {
+   "commit": "982fd25a62085a16a7b79cf5460f3f3d676ecd7e",
+   "date": "2023-05-01",
+   "old": "v1.7.0",
+   "new": "v1.8.0"
+  }
+ ]
+}

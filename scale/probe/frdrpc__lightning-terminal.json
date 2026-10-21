@@ -1,0 +1,34 @@
+{
+ "suite": "frdrpc",
+ "tier": 1,
+ "consumer": "lightning-terminal",
+ "repo": "lightninglabs/lightning-terminal",
+ "module": "github.com/lightninglabs/faraday/frdrpc",
+ "head_version": "v1.0.2",
+ "gomod_commits": 136,
+ "upgrades": 2,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2025-01-23",
+ "last": "2026-08-27",
+ "bumps": [
+  {
+   "commit": "194302630514b70b10b97b655f6355f1cd0ec48b",
+   "date": "2026-08-27",
+   "old": "v1.0.1",
+   "new": "v1.0.2"
+  },
+  {
+   "commit": "f4a5883a4526299d634d18091da5b6ee1ab3fef9",
+   "date": "2025-06-06",
+   "old": "v1.0.0",
+   "new": "v1.0.1"
+  },
+  {
+   "commit": "09c1c16fb74bed2c020161ac50e5fbd2307f9104",
+   "date": "2025-01-23",
+   "old": null,
+   "new": "v1.0.0"
+  }
+ ]
+}

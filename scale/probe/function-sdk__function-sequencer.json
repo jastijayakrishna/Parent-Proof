@@ -1,0 +1,52 @@
+{
+ "suite": "function-sdk",
+ "tier": 1,
+ "consumer": "function-sequencer",
+ "repo": "crossplane-contrib/function-sequencer",
+ "module": "github.com/crossplane/function-sdk-go",
+ "head_version": "v0.7.1",
+ "gomod_commits": 53,
+ "upgrades": 5,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2024-02-17",
+ "last": "2026-05-26",
+ "bumps": [
+  {
+   "commit": "301f28476406584f18792778490c72cea8e65f4a",
+   "date": "2026-05-26",
+   "old": "v0.7.0",
+   "new": "v0.7.1"
+  },
+  {
+   "commit": "4a5e15ff2f614e459b4bebcf3fa97667465a6a02",
+   "date": "2026-05-22",
+   "old": "v0.6.2",
+   "new": "v0.7.0"
+  },
+  {
+   "commit": "6f429f12a17a82305bad93e728cfcb0599ef3de9",
+   "date": "2026-03-22",
+   "old": "v0.6.0",
+   "new": "v0.6.2"
+  },
+  {
+   "commit": "a68d6a41e788b9057d2d49cce0ec0b7e23e2a156",
+   "date": "2026-02-20",
+   "old": "v0.5.0",
+   "new": "v0.6.0"
+  },
+  {
+   "commit": "60a60f247d460fc8ec66c450393b869b5017c156",
+   "date": "2026-01-13",
+   "old": "v0.1.0",
+   "new": "v0.5.0"
+  },
+  {
+   "commit": "5422676156eb6689b3549684ce39401407976627",
+   "date": "2024-02-17",
+   "old": null,
+   "new": "v0.1.0"
+  }
+ ]
+}

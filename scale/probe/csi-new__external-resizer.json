@@ -1,0 +1,52 @@
+{
+ "suite": "csi-new",
+ "tier": 2,
+ "consumer": "external-resizer",
+ "repo": "kubernetes-csi/external-resizer",
+ "module": "github.com/container-storage-interface/spec",
+ "head_version": "v1.13.0",
+ "gomod_commits": 52,
+ "upgrades": 6,
+ "added_or_removed": 0,
+ "replaced_by_fork": 0,
+ "first": "2023-08-22",
+ "last": "2026-09-17",
+ "bumps": [
+  {
+   "commit": "a61e7bca1b541b5f81fb655b2702a2d35bea2450",
+   "date": "2026-09-17",
+   "old": "v1.12.0",
+   "new": "v1.13.0"
+  },
+  {
+   "commit": "44449d7cb70d943be630077748e26c0633cce04f",
+   "date": "2025-10-22",
+   "old": "v1.11.0",
+   "new": "v1.12.0"
+  },
+  {
+   "commit": "04040416f221667f926479c5d8b35e1f412c8b0a",
+   "date": "2025-01-08",
+   "old": "v1.10.0",
+   "new": "v1.11.0"
+  },
+  {
+   "commit": "d6100254e3d2c35ba18d4e5474b4f223ac58e0e6",
+   "date": "2024-07-10",
+   "old": "v1.9.0",
+   "new": "v1.10.0"
+  },
+  {
+   "commit": "73ef0fd24f706427d8e04b3219ab31973b7152d8",
+   "date": "2023-11-30",
+   "old": "v1.8.0",
+   "new": "v1.9.0"
+  },
+  {
+   "commit": "6e02d62b2750e77a07a5fde7c4696502b56fae62",
+   "date": "2023-08-22",
+   "old": "v1.7.0",
+   "new": "v1.8.0"
+  }
+ ]
+}

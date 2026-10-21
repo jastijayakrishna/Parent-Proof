@@ -1,0 +1,52 @@
+{
+ "suite": "csi-new",
+ "tier": 2,
+ "consumer": "node-driver-registrar",
+ "repo": "kubernetes-csi/node-driver-registrar",
+ "module": "github.com/container-storage-interface/spec",
+ "head_version": "v1.13.0",
+ "gomod_commits": 127,
+ "upgrades": 6,
+ "added_or_removed": 0,
+ "replaced_by_fork": 0,
+ "first": "2023-07-11",
+ "last": "2026-08-04",
+ "bumps": [
+  {
+   "commit": "3d124e6eff35fb55a2c103f3d381caf3b1a89c68",
+   "date": "2026-08-04",
+   "old": "v1.12.0",
+   "new": "v1.13.0"
+  },
+  {
+   "commit": "d272665d322380ef9ec5d24be4dcf64ace080ee2",
+   "date": "2026-02-09",
+   "old": "v1.11.0",
+   "new": "v1.12.0"
+  },
+  {
+   "commit": "e472221b8ba6d9cff9438d46a3b46df35ca15a62",
+   "date": "2024-12-18",
+   "old": "v1.10.0",
+   "new": "v1.11.0"
+  },
+  {
+   "commit": "ceb1fa3d208c945c412abf77fefdb3c4493d7078",
+   "date": "2024-07-16",
+   "old": "v1.9.0",
+   "new": "v1.10.0"
+  },
+  {
+   "commit": "78b0d8da578bacb11f6ed9fba6b1aa22146a2ffd",
+   "date": "2023-12-21",
+   "old": "v1.8.0",
+   "new": "v1.9.0"
+  },
+  {
+   "commit": "e53ed9ab42d3d9975d99b91aad57f242b540ac76",
+   "date": "2023-07-11",
+   "old": "v1.7.0",
+   "new": "v1.8.0"
+  }
+ ]
+}

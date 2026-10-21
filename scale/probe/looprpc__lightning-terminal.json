@@ -1,0 +1,100 @@
+{
+ "suite": "looprpc",
+ "tier": 1,
+ "consumer": "lightning-terminal",
+ "repo": "lightninglabs/lightning-terminal",
+ "module": "github.com/lightninglabs/loop/looprpc",
+ "head_version": "v1.0.16",
+ "gomod_commits": 136,
+ "upgrades": 13,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2024-10-25",
+ "last": "2026-08-27",
+ "bumps": [
+  {
+   "commit": "8c3b11158dd136a2f4509587ec8b6b370459b626",
+   "date": "2026-08-27",
+   "old": "v1.0.15",
+   "new": "v1.0.16"
+  },
+  {
+   "commit": "9869f81c1e5f290557e89c388116bf2d6dd300fa",
+   "date": "2026-08-19",
+   "old": "v1.0.14",
+   "new": "v1.0.15"
+  },
+  {
+   "commit": "08934deeefe306d99e402c6c683bac3171fff88f",
+   "date": "2026-06-30",
+   "old": "v1.0.13",
+   "new": "v1.0.14"
+  },
+  {
+   "commit": "43518466ebe5edeadc89353a231680ee2488aa07",
+   "date": "2026-02-13",
+   "old": "v1.0.12",
+   "new": "v1.0.13"
+  },
+  {
+   "commit": "011d5fdf1a7b5cd214d2b66640825fd7655542eb",
+   "date": "2025-11-26",
+   "old": "v1.0.11",
+   "new": "v1.0.12"
+  },
+  {
+   "commit": "2db38f72fcbf1fd149b8d5dcdd127f7a8c0b755e",
+   "date": "2025-11-10",
+   "old": "v1.0.10-0.20251009095951-719355211f63",
+   "new": "v1.0.11"
+  },
+  {
+   "commit": "e3a85892835452821ca06dd6abd689f6f9617dac",
+   "date": "2025-10-15",
+   "old": "v1.0.8",
+   "new": "v1.0.10-0.20251009095951-719355211f63"
+  },
+  {
+   "commit": "779cf9d6385310d7bf32f9db8521d22bb061bd55",
+   "date": "2025-06-18",
+   "old": "v1.0.7",
+   "new": "v1.0.8"
+  },
+  {
+   "commit": "c0bd649ce2a4c324b81bd4b488b161d89646c99e",
+   "date": "2025-05-02",
+   "old": "v1.0.6",
+   "new": "v1.0.7"
+  },
+  {
+   "commit": "5d8753ab132586ffff16bc486afe7d00324fc83e",
+   "date": "2025-04-29",
+   "old": "v1.0.4-0.20250306160707-1091a628755c",
+   "new": "v1.0.6"
+  },
+  {
+   "commit": "443b5f41704bc1e7c74662668395bcc0d67514ec",
+   "date": "2025-03-26",
+   "old": "v1.0.3",
+   "new": "v1.0.4-0.20250306160707-1091a628755c"
+  },
+  {
+   "commit": "6ac0757d828fbd1ae578a59ab52dcc620a414298",
+   "date": "2025-01-07",
+   "old": "v1.0.2",
+   "new": "v1.0.3"
+  },
+  {
+   "commit": "f73b43a70e65a1fefb07a27693605f1071d46871",
+   "date": "2024-12-19",
+   "old": "v1.0.0",
+   "new": "v1.0.2"
+  },
+  {
+   "commit": "4e343f46c47869b0a6cadcdb87736d38d29d0f70",
+   "date": "2024-10-25",
+   "old": null,
+   "new": "v1.0.0"
+  }
+ ]
+}

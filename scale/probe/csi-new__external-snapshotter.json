@@ -1,0 +1,52 @@
+{
+ "suite": "csi-new",
+ "tier": 2,
+ "consumer": "external-snapshotter",
+ "repo": "kubernetes-csi/external-snapshotter",
+ "module": "github.com/container-storage-interface/spec",
+ "head_version": "v1.13.0",
+ "gomod_commits": 121,
+ "upgrades": 6,
+ "added_or_removed": 0,
+ "replaced_by_fork": 0,
+ "first": "2023-05-03",
+ "last": "2026-09-29",
+ "bumps": [
+  {
+   "commit": "b2d0e71cb09d121edfc9bb904999968151580605",
+   "date": "2026-09-29",
+   "old": "v1.12.0",
+   "new": "v1.13.0"
+  },
+  {
+   "commit": "5e233377682807e5cb34c4cc90af037dac04d47b",
+   "date": "2025-10-22",
+   "old": "v1.11.0",
+   "new": "v1.12.0"
+  },
+  {
+   "commit": "07425bd341a786aa58eecb1d2dcec81b5e6dcfe8",
+   "date": "2024-11-22",
+   "old": "v1.10.1-0.20241022120259-f6b6d53db606",
+   "new": "v1.11.0"
+  },
+  {
+   "commit": "53f161f642684d27284d0577aff07e8150e229d4",
+   "date": "2024-11-05",
+   "old": "v1.9.0",
+   "new": "v1.10.1-0.20241022120259-f6b6d53db606"
+  },
+  {
+   "commit": "2dd157aa27198afbcbef359b5bbd2691f171664d",
+   "date": "2023-11-28",
+   "old": "v1.8.0",
+   "new": "v1.9.0"
+  },
+  {
+   "commit": "50bdae2adfd6ac1db0d96c897b60ff5dbd8cf17d",
+   "date": "2023-05-03",
+   "old": "v1.7.0",
+   "new": "v1.8.0"
+  }
+ ]
+}

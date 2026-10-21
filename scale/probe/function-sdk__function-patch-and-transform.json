@@ -1,0 +1,94 @@
+{
+ "suite": "function-sdk",
+ "tier": 1,
+ "consumer": "function-patch-and-transform",
+ "repo": "crossplane-contrib/function-patch-and-transform",
+ "module": "github.com/crossplane/function-sdk-go",
+ "head_version": "v0.7.1",
+ "gomod_commits": 93,
+ "upgrades": 12,
+ "added_or_removed": 1,
+ "replaced_by_fork": 0,
+ "first": "2023-09-03",
+ "last": "2026-05-26",
+ "bumps": [
+  {
+   "commit": "0e57ae84455b3752ffc98d21d38812182f50ce62",
+   "date": "2026-05-26",
+   "old": "v0.7.0",
+   "new": "v0.7.1"
+  },
+  {
+   "commit": "10ae8425cb9dfc270df008138431674af3aa0092",
+   "date": "2026-05-22",
+   "old": "v0.6.2",
+   "new": "v0.7.0"
+  },
+  {
+   "commit": "37f19aa661ffcad1827be43da87cd09bb09dfd6e",
+   "date": "2026-03-22",
+   "old": "v0.5.0",
+   "new": "v0.6.2"
+  },
+  {
+   "commit": "fc37c5952cc55cfdbfbc7eab319fd8f3704a2c94",
+   "date": "2025-12-19",
+   "old": "v0.4.0",
+   "new": "v0.5.0"
+  },
+  {
+   "commit": "888fe26b10d5b6bb7b6b774391dd788456b23da8",
+   "date": "2024-12-16",
+   "old": "v0.2.0",
+   "new": "v0.4.0"
+  },
+  {
+   "commit": "22b30dce45b1100375badb0b6d6e2c0442805b43",
+   "date": "2024-02-21",
+   "old": "v0.1.0",
+   "new": "v0.2.0"
+  },
+  {
+   "commit": "4bb92014093c611a6ce03a9b0098804d565da1fb",
+   "date": "2023-11-01",
+   "old": "v0.0.0-20231016233407-0a4b30c5dacc",
+   "new": "v0.1.0"
+  },
+  {
+   "commit": "146bc706cefa66de10aa94c6ecb5d58904732ded",
+   "date": "2023-10-18",
+   "old": "v0.0.0-20230930011419-ec31b88ab696",
+   "new": "v0.0.0-20231016233407-0a4b30c5dacc"
+  },
+  {
+   "commit": "659dad3980f4a8728519025e3074201708f43c4d",
+   "date": "2023-09-29",
+   "old": "v0.0.0-20230929052952-230c7dfcb3b0",
+   "new": "v0.0.0-20230930011419-ec31b88ab696"
+  },
+  {
+   "commit": "3426939a67b77fb531fab972169cbaec40c99f78",
+   "date": "2023-09-29",
+   "old": "v0.0.0-20230927033848-4fd5cc3d7a44",
+   "new": "v0.0.0-20230929052952-230c7dfcb3b0"
+  },
+  {
+   "commit": "1f5a3a453429ebeca5c402c9a87144a29355b8c9",
+   "date": "2023-09-26",
+   "old": "v0.0.0-20230914214411-245eb193dcc9",
+   "new": "v0.0.0-20230927033848-4fd5cc3d7a44"
+  },
+  {
+   "commit": "46d109efc22ad02e51e354a174a4c2115ef01ea3",
+   "date": "2023-09-14",
+   "old": "v0.0.0-20230903005507-68555c3f1e6b",
+   "new": "v0.0.0-20230914214411-245eb193dcc9"
+  },
+  {
+   "commit": "d11e17ffcbcf796ec3ff4f27016f4f8c751f494e",
+   "date": "2023-09-03",
+   "old": null,
+   "new": "v0.0.0-20230903005507-68555c3f1e6b"
+  }
+ ]
+}

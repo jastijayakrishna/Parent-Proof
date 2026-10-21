@@ -1,0 +1,40 @@
+{
+ "suite": "cri-api-new",
+ "tier": 2,
+ "consumer": "cri-dockerd",
+ "repo": "Mirantis/cri-dockerd",
+ "module": "k8s.io/cri-api",
+ "head_version": "v0.30.1",
+ "gomod_commits": 47,
+ "upgrades": 4,
+ "added_or_removed": 0,
+ "replaced_by_fork": 0,
+ "first": "2023-01-10",
+ "last": "2024-06-26",
+ "bumps": [
+  {
+   "commit": "3921bcdcff666338ce5253c75b44199ccc6c2522",
+   "date": "2024-06-26",
+   "old": "v0.28.0",
+   "new": "v0.30.1"
+  },
+  {
+   "commit": "c62fa1b5fed2a6454be4b8d34c94a4016a4e82f9",
+   "date": "2024-04-02",
+   "old": "v0.27.8",
+   "new": "v0.28.0"
+  },
+  {
+   "commit": "ff375cf010f5159c86d44c28e9c71c5d7e7935d9",
+   "date": "2023-12-22",
+   "old": "v0.22.8",
+   "new": "v0.27.8"
+  },
+  {
+   "commit": "31e0d14f66d3552a394d171331dbcb493c89a261",
+   "date": "2023-01-10",
+   "old": "v0.20.4",
+   "new": "v0.22.8"
+  }
+ ]
+}
