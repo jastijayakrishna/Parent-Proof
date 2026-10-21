@@ -5,13 +5,15 @@
 # recorded of the provider's hand-written code. Reads one line of
 # scale/diag/why.txt: NAME PROVIDER_URL BASE HEAD CONSUMER_URL CONSUMER_REV GOMOD_DIR
 set -uo pipefail
-line=$(grep -v '^#' scale/diag/why.txt | sed -n "${LINE}p")
+line=$(grep -v '^#' scale/diag/why.txt | grep -v '^bin=' | sed -n "${LINE}p")
+# bin=FILE in scale/diag/why.txt picks the binary (default bin/verifier-linux-amd64.gz).
+bin_file=$(sed -n 's/^bin=//p' scale/diag/why.txt); bin_file=${bin_file:-bin/verifier-linux-amd64.gz}
 read -r name purl base head curl crev gdir <<< "$line"
 out="scale/diag/why/$name"
 mkdir -p "$out"
 tmp=${RUNNER_TEMP:-/tmp}
 bin="$tmp/verifier"
-gunzip -c bin/verifier-linux-amd64.gz > "$bin" && chmod +x "$bin"
+gunzip -c "$bin_file" > "$bin" && chmod +x "$bin"
 git clone -q --filter=blob:none "$purl" "$tmp/p" && git -C "$tmp/p" fetch -q origin "$base" "$head" 2>/dev/null
 git clone -q "$curl" "$tmp/c" && git -C "$tmp/c" checkout -q "$crev"
 callers="$tmp/c/${gdir:-.}"
@@ -25,6 +27,7 @@ d = rec.get("decision", {})
 s = {"verdict": d.get("verdict"), "aspects": d.get("aspects"), "changes": len(d.get("changes") or []),
      "go_only": rec.get("go_only"), "contract_files": len(rec.get("contract_files") or []),
      "provider_api_error": rec.get("provider_api_error"),
+     "generated_gone": rec.get("generated_gone"), "contract_outside": rec.get("contract_outside"),
      "findings": [{k: f.get(k) for k in ("rule", "outcome", "aspect", "symbol", "reason", "detail")} for f in d.get("findings") or []][:40],
      "callers": [{"unit": (c.get("caller") or {}).get("deploy_unit"), "outcome": c.get("outcome")} for c in d.get("callers") or []][:20]}
 api = rec.get("provider_api") or {}

@@ -1,2 +1,3 @@
 # NAME PROVIDER_URL BASE HEAD CONSUMER_URL CONSUMER_REV GOMOD_DIR (scale/diag: not scored)
-openfga-cli-c96ec773 https://github.com/openfga/api.git f33cb24bcd9707c5fba8cbbc4a4441ab24a3442d c96ec773cae9caf2a9536856bf1fa206a42ef7ef https://github.com/openfga/cli.git 53a584b4113f9f38bb392d89e7b0c5b0c5f2b13d^ .
+bin=bin/verifier-fixes-linux-amd64.gz
+consul-k8s-v0.7.0-rc1 https://github.com/hashicorp/consul.git 2a9230cbedd1a61ad3220f96282f607edfeb0cbb 1a3374b903e0ba2e17d56a7788e744c60f5815a3 https://github.com/hashicorp/consul-k8s.git e50cf8a9102cf48f2cd1e30db6d6ffed6693620b^ control-plane

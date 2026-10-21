@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - id: p
         run: |
-          n=$(grep -cv '^#' scale/diag/why.txt)
+          n=$(grep -v '^#' scale/diag/why.txt | grep -cv '^bin=')
           echo "lines=$(jq -cn --argjson n "$n" '[range(1; $n + 1)]')" >> "$GITHUB_OUTPUT"
 
   why:
