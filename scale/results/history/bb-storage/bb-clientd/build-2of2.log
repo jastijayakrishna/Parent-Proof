@@ -1,0 +1,19 @@
+time=2026-10-21T08:44:21.382Z level=INFO msg=cloning repo=bb-storage url=https://github.com/buildbarn/bb-storage.git
+time=2026-10-21T08:44:22.842Z level=INFO msg=cloning repo=bb-clientd url=https://github.com/buildbarn/bb-clientd.git
+time=2026-10-21T08:44:25.433Z level=INFO msg=mined consumer=bb-clientd pin_moves=29 to_compile=14 skipped=map[]
+time=2026-10-21T08:45:11.277Z level=INFO msg=canary consumer=bb-clientd at=02bcd4c83b4b7217bc2b8d88d400e20614f03091^ outcome=breaks detail="canary: github.com/buildbarn/bb-storage/pkg/proto/configuration/blobstore removed."
+time=2026-10-21T08:45:41.394Z level=INFO msg=window consumer=bb-clientd bump=045fb7a8 select=unchanged breaking=0 compiler=bump_side_effect
+time=2026-10-21T08:45:55.620Z level=INFO msg=window consumer=bb-clientd bump=02bcd4c8 select=breaking breaking=3 compiler=breaks
+time=2026-10-21T08:46:17.171Z level=INFO msg=window consumer=bb-clientd bump=066c9d98 select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T08:46:17.344Z level=INFO msg=window consumer=bb-clientd bump=19e35d0d select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:46:56.201Z level=INFO msg=window consumer=bb-clientd bump=2589e268 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:47:44.311Z level=INFO msg=window consumer=bb-clientd bump=28636995 select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T08:47:49.632Z level=INFO msg=window consumer=bb-clientd bump=4b20a85a select=breaking breaking=6 compiler=compiles
+time=2026-10-21T08:48:47.520Z level=INFO msg=window consumer=bb-clientd bump=8288a816 select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T08:49:18.744Z level=INFO msg=window consumer=bb-clientd bump=64e635ac select=breaking breaking=4 compiler=compiles
+time=2026-10-21T08:49:24.454Z level=INFO msg=window consumer=bb-clientd bump=b55af46f select=breaking breaking=8 compiler=compiles
+time=2026-10-21T08:49:44.077Z level=INFO msg=window consumer=bb-clientd bump=c239701b select=breaking breaking=3 compiler=bump_side_effect
+time=2026-10-21T08:49:46.199Z level=INFO msg=window consumer=bb-clientd bump=d70a80bd select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:49:54.352Z level=INFO msg=window consumer=bb-clientd bump=f5aa0a1e select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:49:55.872Z level=INFO msg=window consumer=bb-clientd bump=ed0a0acf select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:49:55.872Z level=INFO msg="suite built" suite=bb-storage windows_added=14
