@@ -1,0 +1,15 @@
+time=2026-10-21T08:19:27.885Z level=INFO msg=cloning repo=apm-data url=https://github.com/elastic/apm-data.git
+time=2026-10-21T08:19:28.508Z level=INFO msg=cloning repo=apm-server url=https://github.com/elastic/apm-server.git
+time=2026-10-21T08:19:40.359Z level=INFO msg=mined consumer=apm-server pin_moves=40 to_compile=10 skipped=map[]
+time=2026-10-21T08:20:57.816Z level=INFO msg=canary consumer=apm-server at=0062c137c1fbee5e6a75d27fe151b9e8538e5d8c^ outcome=breaks detail="canary: github.com/elastic/apm-data/model/modelpb removed."
+time=2026-10-21T08:21:07.292Z level=INFO msg=window consumer=apm-server bump=0062c137 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:22:40.448Z level=INFO msg=window consumer=apm-server bump=4cf627cb select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:22:40.587Z level=INFO msg=window consumer=apm-server bump=1fdef045 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:23:20.210Z level=INFO msg=window consumer=apm-server bump=783fd0b6 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:24:21.279Z level=INFO msg=window consumer=apm-server bump=583c26c0 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:24:31.343Z level=INFO msg=window consumer=apm-server bump=90549c37 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:24:39.926Z level=INFO msg=window consumer=apm-server bump=a7c86ecc select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:25:40.861Z level=INFO msg=window consumer=apm-server bump=cf4a4b42 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:26:20.893Z level=INFO msg=window consumer=apm-server bump=e51c697c select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:27:24.789Z level=INFO msg=window consumer=apm-server bump=b6263a2f select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:27:24.789Z level=INFO msg="suite built" suite=apm-data windows_added=10
