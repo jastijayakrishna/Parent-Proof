@@ -1,0 +1,15 @@
+time=2026-10-21T08:49:03.075Z level=INFO msg=cloning repo=api-go url=https://github.com/temporalio/api-go.git
+time=2026-10-21T08:49:11.714Z level=INFO msg=cloning repo=temporal-api url=https://github.com/temporalio/api.git
+time=2026-10-21T08:49:14.794Z level=INFO msg=cloning repo=temporal-cli url=https://github.com/temporalio/cli.git
+time=2026-10-21T08:49:23.380Z level=INFO msg=mined consumer=temporal-cli pin_moves=33 to_compile=11 skipped=map[]
+time=2026-10-21T08:50:59.078Z level=INFO msg=canary consumer=temporal-cli at=106fc344416cd1ce27a0fa94c73fe6ee4824d8ee^ outcome=breaks detail="canary: go.temporal.io/api/common/v1 removed."
+time=2026-10-21T08:51:29.385Z level=INFO msg=window consumer=temporal-cli bump=106fc344 select=breaking breaking=3 compiler=breaks
+time=2026-10-21T08:53:23.020Z level=INFO msg=window consumer=temporal-cli bump=1a241066 select=breaking breaking=99 compiler=breaks
+time=2026-10-21T08:55:04.441Z level=INFO msg=window consumer=temporal-cli bump=3103d5b3 select=breaking breaking=12 compiler=compiles
+time=2026-10-21T08:55:16.803Z level=INFO msg=window consumer=temporal-cli bump=4113c112 select=additive breaking=0 compiler=breaks
+time=2026-10-21T08:57:19.416Z level=INFO msg=window consumer=temporal-cli bump=700234cf select=breaking breaking=3 compiler=compiles
+time=2026-10-21T09:00:23.882Z level=INFO msg=window consumer=temporal-cli bump=a10f9ae8 select=breaking breaking=10 compiler=breaks
+time=2026-10-21T09:02:03.832Z level=INFO msg=window consumer=temporal-cli bump=b090bffd select=breaking breaking=8 compiler=breaks
+time=2026-10-21T09:02:22.317Z level=INFO msg=window consumer=temporal-cli bump=c0e5a6e7 select=breaking breaking=41 compiler=compiles
+time=2026-10-21T09:05:03.081Z level=INFO msg="suite built" suite=temporal-api-new windows_added=8
+verifier suite: context canceled
