@@ -1,0 +1,15 @@
+time=2026-10-21T08:35:50.869Z level=INFO msg=skip consumer=consul-k8s bump=e57edf5a old=v0.1.2-0.20230914174054-e5808d85f751 new=v0.1.2-0.20230921190229-d8ac6ee34f5e reason=unresolved_pin
+time=2026-10-21T08:35:50.869Z level=INFO msg=skip consumer=consul-k8s bump=12aeb304 old=v0.1.2-0.20230921190229-d8ac6ee34f5e new=v0.1.2-0.20230922204015-ac9209d8fba9 reason=unresolved_pin
+time=2026-10-21T08:35:50.869Z level=INFO msg=skip consumer=consul-k8s bump=78ad3764 old=v0.1.2-0.20230922204015-ac9209d8fba9 new=v0.1.2-0.20230923011829-3436b2921af5 reason=unresolved_pin
+time=2026-10-21T08:35:50.869Z level=INFO msg=skip consumer=consul-k8s bump=07fa7eb5 old=v0.1.2-0.20230923011829-3436b2921af5 new=v0.1.2-0.20230929231147-632fd65c091c reason=unresolved_pin
+time=2026-10-21T08:35:51.204Z level=INFO msg=skip consumer=consul-k8s bump=19685df1 old=v0.5.1 new=v0.1.2-0.20231109213314-40c57f10a0fb reason=not_forward
+time=2026-10-21T08:35:52.907Z level=INFO msg=skip consumer=consul-k8s bump=fd6d7659 old=v0.1.2-0.20231128204611-fd1d97c3349d new=v0.1.2-0.20231201193057-9b4c05bfd85f reason=unresolved_pin
+time=2026-10-21T08:35:52.907Z level=INFO msg=skip consumer=consul-k8s bump=5ed85142 old=v0.1.2-0.20231201193057-9b4c05bfd85f new=v0.1.2-0.20231212195019-69e3f93ee8a3 reason=unresolved_pin
+time=2026-10-21T08:35:55.351Z level=INFO msg=mined consumer=consul-k8s pin_moves=32 to_compile=6 skipped="map[not_forward:1 unresolved_pin:6]"
+time=2026-10-21T08:37:56.644Z level=INFO msg=canary consumer=consul-k8s at=2afb743da555acb7ee1ee974270d25cc91d7a417 outcome=oracle_error detail="canary: no package of the consumer imports a package of github.com/hashicorp/consul/proto-public directly"
+time=2026-10-21T08:40:02.286Z level=INFO msg=window consumer=consul-k8s bump=2afb743d select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:40:05.995Z level=INFO msg=window consumer=consul-k8s bump=59e7eae2 select=breaking breaking=17 compiler=breaks
+time=2026-10-21T08:41:12.903Z level=INFO msg=window consumer=consul-k8s bump=b0568b0f select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:41:54.691Z level=INFO msg=window consumer=consul-k8s bump=7654c438 select=breaking breaking=293 compiler=compiles
+time=2026-10-21T08:42:03.792Z level=INFO msg=window consumer=consul-k8s bump=dea23b06 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:42:40.040Z level=INFO msg=window consumer=consul-k8s bump=fd4e1844 select=breaking breaking=2 compiler=compiles
