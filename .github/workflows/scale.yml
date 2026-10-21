@@ -161,7 +161,9 @@ jobs:
             git diff --cached --quiet && exit 0
             git commit -q -m "SCALE.md of $(date -u +%Y-%m-%dT%H:%MZ)"
             git push -q && exit 0
-            git reset -q --soft HEAD~1
+            # Drop the rejected commit and its file, which the next try writes again:
+            # a soft reset left it staged and every later pull refused (2026-10-21).
+            git reset -q --hard HEAD~1
             sleep $((i * 5))
           done
           exit 1
