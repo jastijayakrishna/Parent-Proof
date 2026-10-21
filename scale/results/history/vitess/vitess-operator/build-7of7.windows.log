@@ -1,0 +1,7 @@
+time=2026-10-21T09:17:31.131Z level=INFO msg=mined consumer=vitess-operator pin_moves=40 to_compile=5 skipped=map[]
+time=2026-10-21T09:19:05.186Z level=INFO msg=canary consumer=vitess-operator at=1e0acc1444d166434da2d822e9232e57f78324f0^ outcome=breaks detail="canary: vitess.io/vitess/go/vt/proto/topodata removed."
+time=2026-10-21T09:20:00.813Z level=INFO msg=window consumer=vitess-operator bump=1e0acc14 select=breaking breaking=1 compiler=compiles
+time=2026-10-21T09:20:47.523Z level=INFO msg=window consumer=vitess-operator bump=7d69a017 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:20:48.389Z level=INFO msg=window consumer=vitess-operator bump=58a8d79b select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:23:07.244Z level=INFO msg=window consumer=vitess-operator bump=e7896652 select=additive breaking=0 compiler=baseline_fails
+time=2026-10-21T09:23:42.081Z level=INFO msg=window consumer=vitess-operator bump=b129bb44 select=additive breaking=0 compiler=compiles
