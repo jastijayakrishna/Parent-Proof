@@ -4,9 +4,12 @@ the pre-registered count): the decisions of the test itself
 (scale/results/history, binary bin/VERSION) and a decision-only rerun
 (scale/after/LABEL, scripts/decide.sh), each judged by the same frozen
 compiler answers. Prints the counts for both and every upgrade whose answer
-for the build moved.
+for the build moved. With BASE, the before is another rerun
+(scale/after/BASE): a control decided by the same script, so a difference
+between the test's run and a rerun (which decides without building) is not
+taken for the binary's.
 
-usage: compare.py LABEL"""
+usage: compare.py LABEL [BASE]"""
 import collections
 import glob
 import json
@@ -17,6 +20,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import score  # noqa: E402
 
 label = sys.argv[1]
+base = sys.argv[2] if len(sys.argv) > 2 else ""
 
 
 def load(root):
@@ -24,7 +28,10 @@ def load(root):
     for f in sorted(glob.glob(os.path.join(root, "*", "*", "results-*.jsonl"))):
         d = os.path.dirname(f)
         suite, consumer = os.path.normpath(d).split(os.sep)[-2:]
+        # A rerun decides every window in one job: each keeps the canary of
+        # the job of the scale test that decided it.
         canary = score.canary_of(d)
+        by_bump = score.canaries_by_bump(os.path.join("scale/results/history", suite, consumer))
         for line in open(f, encoding="utf-8"):
             if not line.strip():
                 continue
@@ -32,7 +39,7 @@ def load(root):
             w, o = r.get("window", {}), r.get("observed") or {}
             out[(suite, consumer, w.get("bump", ""))] = {
                 "pins": f"{w.get('old_pin', '')} -> {w.get('new_pin', '')}",
-                "compiler": score.trusted((w.get("oracle") or {}).get("outcome", "not judged"), canary),
+                "compiler": score.trusted((w.get("oracle") or {}).get("outcome", "not judged"), by_bump.get(w.get("bump", ""), canary)),
                 "build": (o.get("aspects") or {}).get("source_build", ""), "verdict": o.get("verdict", "ERROR"),
                 "reasons": o.get("unknown_reasons") or [], "where": (o.get("evidence") or [""])[0], "error": o.get("error", "")}
     return out
@@ -52,13 +59,14 @@ def tally(rows):
     return c
 
 
-before = load("scale/results/history")
+before = load(os.path.join("scale/after", base) if base else "scale/results/history")
 after = load(os.path.join("scale/after", label))
 diag = {k: v for k, v in after.items() if k[0].endswith("-gomodule")}
 after = {k: v for k, v in after.items() if not k[0].endswith("-gomodule")}
+before = {k: v for k, v in before.items() if not k[0].endswith("-gomodule")}
 common = sorted(set(before) & set(after))
-print(f"# Before and after on the scale test's upgrades ({label})\n")
-print(f"{len(common)} upgrades decided by both ({len(before)} by the test, {len(after)} by the rerun).\n")
+print(f"# Before and after on the scale test's upgrades ({label}; before: {base or 'the test itself'})\n")
+print(f"{len(common)} upgrades decided by both ({len(before)} before, {len(after)} after).\n")
 tb, ta = tally(before[k] for k in common), tally(after[k] for k in common)
 keys = ["broke", "caught", "needs review on a break", "MISSED", "safe", "merge on safe", "false alarm", "needs review on safe", "errors"]
 print("| | " + " | ".join(keys) + " |")

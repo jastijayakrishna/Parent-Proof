@@ -1,8 +1,8 @@
 # Scale test: real contract changes, judged by the compiler
 
-Updated 2026-10-21 09:49 UTC. Every count below comes from one binary: Parent main `f3db8e9`, sha256 `b494ad99de344acf…` ([bin/VERSION](bin/VERSION)), the build a customer would install today. Rules, fixed before the run: [scale/PREREG.md](scale/PREREG.md).
+Updated 2026-10-21 11:39 UTC. Every count below comes from one binary: Parent main `f3db8e9`, sha256 `b494ad99de344acf…` ([bin/VERSION](bin/VERSION)), the build a customer would install today. Rules, fixed before the run: [scale/PREREG.md](scale/PREREG.md).
 
-**2439 real changes decided; the compiler judged 1735. 204 broke a project's build: Parent said Don't merge on 138, Needs review on 44, and Merge on 22. Of the 1531 safe changes it said Merge on 1238 (80.9%), Don't merge on 25, Needs review on 268.**
+**2974 real changes decided; the compiler judged 1812. 211 broke a project's build: Parent said Don't merge on 145, Needs review on 44, and Merge on 22. Of the 1601 safe changes it said Merge on 1287 (80.4%), Don't merge on 24, Needs review on 290.**
 
 - **Caught**: the change broke the build; Parent said Don't merge, with the file and line.
 - **Stopped with Needs review**: it broke; Parent could not prove which way, so it did not say Merge.
@@ -14,20 +14,20 @@ Updated 2026-10-21 09:49 UTC. Every count below comes from one binary: Parent ma
 
 | | decided | judged by the compiler | broke the build | caught (Don't merge) | stopped with Needs review | **missed (said Merge)** | safe | said Merge on safe | false alarms | needs review on safe |
 |---|---|---|---|---|---|---|---|---|---|---|
-| **New projects, never used before: contract and project new** | 1089 | 783 | 93 | 64 | 18 | **11** | 690 | 548 | 18 | 124 |
-| **New projects: a known contract, a project never used** | 593 | 470 | 56 | 32 | 13 | **11** | 414 | 350 | 4 | 60 |
+| **New projects, never used before: contract and project new** | 1089 | 774 | 92 | 64 | 17 | **11** | 682 | 542 | 17 | 123 |
+| **New projects: a known contract, a project never used** | 593 | 460 | 55 | 31 | 13 | **11** | 405 | 341 | 4 | 60 |
 | History: 9 contract → project pairs, rerun | 179 | 173 | 24 | 21 | 3 | **0** | 149 | 126 | 1 | 22 |
 | Go stress test, rerun: dev | 144 | 82 | 7 | 7 | 0 | **0** | 75 | 63 | 0 | 12 |
 | Go stress test, rerun: hold-out | 256 | 206 | 22 | 12 | 10 | **0** | 184 | 134 | 2 | 48 |
-| Java stress test, rerun: dev | 87 | 21 | 2 | 2 | 0 | **0** | 19 | 17 | 0 | 2 |
-| Java stress test, rerun: hold-out | 91 | 0 | 0 | 0 | 0 | **0** | 0 | 0 | 0 | 0 |
-| Java stress test, rerun: regression | 0 | 0 | 0 | 0 | 0 | **0** | 0 | 0 | 0 | 0 |
+| Java stress test, rerun: dev | 366 | 80 | 10 | 9 | 1 | **0** | 70 | 63 | 0 | 7 |
+| Java stress test, rerun: hold-out | 308 | 0 | 0 | 0 | 0 | **0** | 0 | 0 | 0 | 0 |
+| Java stress test, rerun: regression | 39 | 37 | 1 | 1 | 0 | **0** | 36 | 18 | 0 | 18 |
 | Open pull requests, decided live | 0 | 0 | 0 | 0 | 0 | **0** | 0 | 0 | 0 | 0 |
-| **All** | 2439 | 1735 | 204 | 138 | 44 | **22** | 1531 | 1238 | 25 | 268 |
+| **All** | 2974 | 1812 | 211 | 145 | 44 | **22** | 1601 | 1287 | 24 | 290 |
 
-Kinds of change: 1749 real upgrades a project made of a contract it uses (its own commit, usually its own pull request); 727 merged or open pull requests of the contract itself, decided against a project that uses it.
+Kinds of change: 2439 real upgrades a project made of a contract it uses (its own commit, usually its own pull request); 727 merged or open pull requests of the contract itself, decided against a project that uses it.
 
-Left out because another binary decided them (rerun pending): Java stress test 670, Open pull requests, live 160.
+Left out because another binary decided them (rerun pending): Java stress test 51, Open pull requests, live 160.
 
 ## Every change that broke a build
 
@@ -108,8 +108,17 @@ Left out because another binary decided them (rerun pending): Java stress test 6
 | History (9 pairs) | tipb -> tidb | [v0.0.0-20241212101007-246f91188357 -> v0.0.0-20250321085733-a91a8fafd4ed](https://github.com/pingcap/tidb/commit/ca8a0707ab0605260b8bbce8427190607b3fe6d1) | 2025-03-23 | breaks: `pkg/planner/core/plan_to_pb.go:279:10: tsExec.AnnQuery undefined (type *tipb.TableScan has no field or method ` | Don't merge | pkg/planner/core/plan_to_pb.go:279 |
 | History (9 pairs) | tipb -> tidb | [v0.0.0-20250321085733-a91a8fafd4ed -> v0.0.0-20250331100511-d2c561dad347](https://github.com/pingcap/tidb/commit/7232aeab67e14fc757633393515d49da7117de36) | 2025-04-01 | breaks: `pkg/util/execdetails/execdetails.go:1296:46: summary.GetTotalVectorIdxLoadFromS3 undefined (type *tipb.TiFlash` | Don't merge | br/pkg/storage/batch.go:55 |
 | History (9 pairs) | tipb -> tidb | [v0.0.0-20250513092957-b555ca3fc078 -> v0.0.0-20250529123214-bb8180a479ec](https://github.com/pingcap/tidb/commit/ac6ea64b370f8736122ca19248c7f824461bc4b6) | 2025-06-04 | breaks: `pkg/kv/kv.go:818:32: unknown field KeyspaceId in struct literal of type tipb.ResourceGroupTag` | Don't merge | pkg/distsql/request_builder.go:100 |
+| Java stress test | camunda-zeebe | [5ed397e9d54f](https://github.com/camunda/camunda/commit/5ed397e9d54fe43d93d32ba8587acbd76a73e775) | 2026-09-16 | breaks: `clients/java/src/main/java/io/camunda/client/impl/command/CompleteJobCommandImpl.java:121: cannot find symbol` | Don't merge | clients/java/src/main/java/io/camunda/client/impl/command/CompleteJobCommandImpl.java:121: cannot find symbol |
+| Java stress test | hbase | [398c5ef3132d](https://github.com/apache/hbase/commit/398c5ef3132d3d1f34ddbd4cc181da83193947d8) | 2023-04-19 | breaks: `hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java:442: org.apache.hadoop.hbase.` | Don't merge | hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java:442: org.apache.hadoop.hbase.master.Mas |
 | Java stress test | hbase | [f81bdebedba3](https://github.com/apache/hbase/commit/f81bdebedba313fa9273ccb59e71c70c44c68d47) | 2023-05-15 | breaks: `hbase-server/src/main/java/org/apache/hadoop/hbase/master/replication/AssignReplicationQueuesProcedure.java:13` | Don't merge | hbase-server/src/main/java/org/apache/hadoop/hbase/master/replication/AssignReplicationQueuesProcedure.java:133: an enum |
+| Java stress test | hbase | [ffed09d96bba](https://github.com/apache/hbase/commit/ffed09d96bbaccdc83e1d7df66d640cf10b2f191) | 2025-09-12 | breaks: `hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java:454: org.apache.hadoop.hbase.` | Don't merge | hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java:454: org.apache.hadoop.hbase.master.Mas |
+| Java stress test | hbase | [c6a0c3b2b7af](https://github.com/apache/hbase/commit/c6a0c3b2b7af1253822066ee44fc88c6aff97db8) | 2025-09-16 | breaks: `hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java:456: org.apache.hadoop.hbase.` | Don't merge | hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java:456: org.apache.hadoop.hbase.master.Mas |
 | Java stress test | hbase | [7f7b9e6ef298](https://github.com/apache/hbase/commit/7f7b9e6ef298b16768382081c3ab0163d7f15af0) | 2025-09-16 | breaks: `hbase-client/src/main/java/org/apache/hadoop/hbase/client/RawAsyncHBaseAdmin.java:4656: cannot find symbol` | Don't merge | hbase-client/src/main/java/org/apache/hadoop/hbase/client/RawAsyncHBaseAdmin.java:4656: cannot find symbol |
+| Java stress test | hbase | [0f11becf4761](https://github.com/apache/hbase/commit/0f11becf47612de1af5c39fcc26ccb626a0dc310) | 2025-09-16 | breaks: `hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java:456: org.apache.hadoop.hbase.` | Don't merge | hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java:456: org.apache.hadoop.hbase.master.Mas |
+| Java stress test | hbase | [9ba5d3e55a36](https://github.com/apache/hbase/commit/9ba5d3e55a3624193e8c4ab13631db058b419546) | 2026-05-22 | breaks: `hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java:462: org.apache.hadoop.hbase.` | Don't merge | hbase-server/src/main/java/org/apache/hadoop/hbase/master/MasterRpcServices.java:462: org.apache.hadoop.hbase.master.Mas |
+| Java stress test | skywalking-java | [7b160b5fec60](https://github.com/apache/skywalking-data-collect-protocol/commit/7b160b5fec6060f69e1ccb764d55cdb0a6d80c29) | 2022-01-12 | breaks: `apm-sniffer/apm-agent-core/src/main/java/org/apache/skywalking/apm/agent/core/jvm/gc/GCModule.java:25: cannot ` | Don't merge | apm-sniffer/apm-agent-core/src/main/java/org/apache/skywalking/apm/agent/core/jvm/gc/GCModule.java:25: cannot find symbo |
+| Java stress test | temporal-sdk-java | [81cc6e037e3b](https://github.com/temporalio/api/commit/81cc6e037e3b0ac01901f81734f9315b907e0b3e) | 2024-04-15 | breaks: `temporal-sdk/src/main/java/io/temporal/internal/sync/SyncWorkflowContext.java:555: cannot find symbol` | Don't merge | temporal-sdk/src/main/java/io/temporal/internal/sync/SyncWorkflowContext.java:555: cannot find symbol |
+| Java stress test | temporal-sdk-java | [187421b0e5e1](https://github.com/temporalio/api/commit/187421b0e5e10b1dce62e661e5debeda45217e43) | 2026-05-27 | breaks: `temporal-test-server/src/main/java/io/temporal/internal/testservice/TestWorkflowMutableStateImpl.java:624: ref` | Needs review | OPTION_CHANGED |
 | New projects | apm-data -> apm-aggregation | [v0.1.1-0.20230628080651-9f67b9cdd993 -> v0.1.1-0.20230705050140-e5828f1f7c8f](https://github.com/elastic/apm-aggregation/commit/0addc06a9a09edbccd59eddb9d12bba0cc7dbf6e) | 2023-07-10 | breaks: `aggregators/converter.go:651:16: e.GetParent undefined (type *modelpb.APMEvent has no field or method GetParen` | Don't merge | aggregators/converter.go:651 |
 | New projects | apm-data -> apm-aggregation | [v0.1.1-0.20230705050140-e5828f1f7c8f -> v0.1.1-0.20230718152028-9c38d2361527](https://github.com/elastic/apm-aggregation/commit/cdee9c683fae7f4656dd6ceb3a7f404db899a8e9) | 2023-07-19 | breaks: `aggregators/converter.go:93:17: e.GetProcessor undefined (type *modelpb.APMEvent has no field or method GetPro` | Don't merge | aggregators/converter.go:101 |
 | New projects | apm-data -> apm-aggregation | [v0.1.1-0.20230728063148-1076ea8b4db0 -> v0.1.1-0.20230803060036-9180b59d7888](https://github.com/elastic/apm-aggregation/commit/c82b2b7e590c36703a5e12b110f0de6fe8e5fc14) | 2023-08-07 | breaks: `aggregators/converter.go:646:29: cannot use totalCount (variable of type int64) as uint64 value in assignment` | Don't merge | aggregators/converter.go:646 |
@@ -141,7 +150,6 @@ Left out because another binary decided them (rerun pending): Java stress test 6
 | New projects | bb-storage -> bb-remote-execution | [v0.0.0-20260507124548-e5d91cab6de6 -> v0.0.0-20260527152149-3991d6ebefb4](https://github.com/buildbarn/bb-remote-execution/commit/c48dcda5e792227f50ec5bae0fcec1ab2e40fb48) | 2026-05-27 | breaks: `pkg/blobstore/batched_store_blob_access.go:70:13: not enough arguments in call to digest.NewSetBuilder` | Needs review | GO_API_CHANGED_USED_BY_CALLER |
 | New projects | cilium -> hubble | [v1.14.0-snapshot.1 -> v1.14.0-snapshot.4](https://github.com/cilium/hubble/commit/7eaef51f42bae38ed5200cfb67c4ecd07b56a9a0) | 2023-06-19 | breaks: `cmd/observe/flows.go:156:12: cannot use NewIOReaderObserver(f) (value of type *IOReaderObserver) as observer.O` | Don't merge | cmd/observe/flows.go:156 |
 | New projects | cilium -> hubble | [v1.15.3 -> v1.16.0-pre.2](https://github.com/cilium/hubble/commit/774bf58f522d833d170eee864fa03f536ceacd08) | 2024-04-10 | breaks: `cmd/observe/io_reader_observer.go:86:69: cannot use filters.DefaultFilters (value of type func(log logrus.Fiel` | Needs review | JSON_OPTIONS_UNRESOLVED, GO_API_CHANGED_USED_BY_CALLER |
-| New projects | consul-proto-public -> consul-k8s | [v0.1.2-0.20240129174413-a2d50af1bdfb -> v0.1.2-0.20240202204845-fb2b696c0e6b](https://github.com/hashicorp/consul-k8s/commit/59e7eae2078f861a08a8635938e2dd6094ecb432) | 2024-02-05 | breaks: `module github.com/hashicorp/consul/proto-public@latest found (v0.9.0, replaced by github.com/hashicorp/consul/` | Don't merge | api/auth/v2beta1/traffic_permissions_types.go:68 |
 | New projects | cri-api-new -> cri-dockerd | [v0.22.8 -> v0.27.8](https://github.com/Mirantis/cri-dockerd/commit/ff375cf010f5159c86d44c28e9c71c5d7e7935d9) | 2023-12-22 | breaks: `module k8s.io/cri-api@latest found (v0.37.1, replaced by k8s.io/cri-api@v0.27.8), but does not contain package` | Needs review | UNRESOLVED_MEMBER, SECOND_CHECK_DISAGREES |
 | New projects | cri-api-new -> cri-tools | [v0.33.0-beta.0.0.20250313010358-ab383b81657e -> v0.33.0-beta.0.0.20250324233632-87ee4e17aba6](https://github.com/kubernetes-sigs/cri-tools/commit/b27f0459cb5bf4b2fdd1b597103dcf6df8fb6806) | 2025-03-28 | breaks: `/home/runner/go/pkg/mod/k8s.io/cri-client@v0.33.0-beta.0/pkg/remote_runtime.go:137:9: cannot use service (vari` | Don't merge | vendor/k8s.io/cri-client/pkg/remote_runtime.go:137 |
 | New projects | cri-api-new -> cri-tools | [v0.33.3 -> v0.34.0-rc.1](https://github.com/kubernetes-sigs/cri-tools/commit/88f266cb4bb92a86051524b7fa26fa9aa3d49fc0) | 2025-08-11 | breaks: `/home/runner/go/pkg/mod/k8s.io/cri-client@v0.33.3/pkg/remote_image.go:168:40: resp.Image.Size_ undefined (type` | Needs review | OPTION_CHANGED |
@@ -190,7 +198,6 @@ Left out because another binary decided them (rerun pending): Java stress test 6
 | New projects | openfga -> openfga-cli | [v0.0.0-20240807201305-c96ec773cae9 -> v0.0.0-20241028145042-7c098f10acd2](https://github.com/openfga/cli/commit/63b5ec74083f5f300ea2ae97adafd5326f854aa7) | 2024-10-29 | breaks: `/home/runner/go/pkg/mod/github.com/openfga/openfga@v1.6.0/pkg/server/errors/errors.go:27:77: undefined: openfg` | Don't merge | github.com/openfga/openfga@v1.6.0/pkg/server/errors/encoded_errors.go:230 |
 | New projects | pulumi -> pulumi-go-provider | [v3.234.0 -> v3.236.0](https://github.com/pulumi/pulumi-go-provider/commit/609ad86aff0daecfde17f85fc3140bd6fcfd03e0) | 2026-05-07 | breaks: `/home/runner/go/pkg/mod/github.com/pulumi/pulumi/pkg/v3@v3.234.0/codegen/schema/loader.go:436:25: pluginInfo.S` | Don't merge | github.com/pulumi/pulumi/pkg/v3@v3.234.0/codegen/schema/loader.go:436 |
 | New projects | pulumi -> pulumi-go-provider | [v3.243.0 -> v3.245.0](https://github.com/pulumi/pulumi-go-provider/commit/1bec48e4a6d2938f0ee8889b1e7992ef5eb3d540) | 2026-06-08 | breaks: `/home/runner/go/pkg/mod/github.com/pulumi/pulumi/pkg/v3@v3.243.0/workspace/plugin.go:165:3: not enough argumen` | Needs review | GO_API_CHANGED_USED_BY_CALLER |
-| New projects | pulumi -> pulumi-go-provider | [v3.246.0 -> v3.248.0](https://github.com/pulumi/pulumi-go-provider/commit/d829f2fe37ac858a20c3648a68978c738f65e9eb) | 2026-06-25 | breaks: `/home/runner/go/pkg/mod/github.com/pulumi/pulumi/pkg/v3@v3.246.0/workspace/plugin.go:201:3: too many arguments` | Needs review | GO_API_CHANGED_USED_BY_CALLER |
 | New projects | pulumi -> pulumi-go-provider | [v3.253.0 -> v3.254.0](https://github.com/pulumi/pulumi-go-provider/commit/8fa58a354d232f6e6b986f6f3f0f1ea7f843cb33) | 2026-07-24 | breaks: `/home/runner/go/pkg/mod/github.com/pulumi/pulumi/pkg/v3@v3.253.0/workspace/context.go:65:31: undefined: worksp` | Don't merge | github.com/pulumi/pulumi/pkg/v3@v3.253.0/workspace/context.go:65 |
 | New projects | pulumi -> pulumi-go-provider | [v3.255.0 -> v3.256.0](https://github.com/pulumi/pulumi-go-provider/commit/56fece700b9b57303a747c0c05d4601e096e8ae9) | 2026-08-06 | breaks: `integration/fake/monitor.go:108:41: cannot use &ResourceMonitorServer{} (value of type *ResourceMonitorServer)` | Don't merge | github.com/pulumi/pulumi/sdk/v3@v3.255.0/go/pulumi/context.go:1463 |
 | New projects | pulumi -> pulumi-yaml | [v3.224.0 -> v3.224.1-0.20260304132128-21b4452b91ce](https://github.com/pulumi/pulumi-yaml/commit/8265a7a3a0c9bed5e928a60b4afd8c14c43e2dbf) | 2026-03-04 | breaks: `/home/runner/go/pkg/mod/github.com/pulumi/pulumi/pkg/v3@v3.224.0/backend/httpstate/client/client.go:902:9: und` | Don't merge | github.com/pulumi/pulumi/pkg/v3@v3.224.0/backend/httpstate/client/client.go:902 |
@@ -238,7 +245,7 @@ Left out because another binary decided them (rerun pending): Java stress test 6
 | New projects | tfplugin -> terraform-plugin-testing | [v0.30.0 -> v0.31.0](https://github.com/hashicorp/terraform-plugin-testing/commit/d112e30d2250dbd7b35d7a622e1a7bb48d8c2756) | 2026-03-10 | breaks: `/home/runner/go/pkg/mod/github.com/hashicorp/terraform-plugin-sdk/v2@v2.39.0/helper/schema/grpc_provider.go:35` | Don't merge | github.com/hashicorp/terraform-plugin-sdk/v2@v2.39.0/plugin/serve.go:126 |
 | New projects | vitess -> vitess-operator | [v0.10.3-0.20250103182021-b36b2284176d -> v0.10.3-0.20250110203148-54dfd6005bcd](https://github.com/planetscale/vitess-operator/commit/9ab5f87dd454740e6c6b939898e8f3241cfaa774) | 2025-01-13 | breaks: `pkg/controller/vitessshardreplication/init_restored_shard.go:159:34: undefined: reparentutil.GetDurabilityPoli` | Don't merge | pkg/controller/vitessshardreplication/init_restored_shard.go:159 |
 
-## False alarms (25)
+## False alarms (24)
 
 | corpus | contract → project | change | date | Parent's finding |
 |---|---|---|---|---|
@@ -265,25 +272,24 @@ Left out because another binary decided them (rerun pending): Java stress test 6
 | New projects | grafana-plugin-sdk -> grafana-infinity-datasource | [v0.290.1 -> v0.292.0](https://github.com/grafana/grafana-infinity-datasource/commit/7df3c6c4153a5b6343017862915342ad3b180f30) | 2026-06-17 | github.com/grafana/grafana-aws-sdk@v1.4.3/pkg/awsds/authSettings.go:78 |
 | New projects | kubelet-new -> container-engine-accelerators | [v0.19.2 -> v0.27.2](https://github.com/GoogleCloudPlatform/container-engine-accelerators/commit/c9276a5ded0f631efe2be7ac26466151cbe24ea1) | 2023-11-29 | pkg/gpu/nvidia/beta_plugin.go:60 |
 | New projects | nri -> cri-o | [v0.9.1-0.20250219030224-e597e7849f24 -> v0.10.0](https://github.com/cri-o/cri-o/commit/1891357ec992db415e147997c9d75e0de62cd3a0) | 2025-08-25 | server/nri-api.go:272 |
-| New projects | pulumi -> pulumi-go-provider | [v3.248.0 -> v3.250.0](https://github.com/pulumi/pulumi-go-provider/commit/bf55f7db3f460831c4fb1393784dc2c320957e97) | 2026-07-06 | integration/integration.go:198 |
 | New projects | temporal-api-new -> temporal-cli | [v1.32.1-cherry-pick-for-cli-tag -> v1.38.0](https://github.com/temporalio/cli/commit/344bf25553e2650d43f49c1d1396c352763a8ea5) | 2024-09-13 | github.com/temporalio/ui-server/v2@v2.30.3/server/api/handler.go:201 |
 
 ## Needs review, by reason (judged changes)
 
 - CONTRACT_COMPILE_ERROR: 83
-- GO_API_CHANGED_USED_BY_CALLER: 73
+- OPTION_CHANGED: 75
+- GO_API_CHANGED_USED_BY_CALLER: 71
 - TOOLCHAIN_TOO_OLD: 56
-- OPTION_CHANGED: 55
-- DESCRIPTOR_REFLECTION: 28
+- DESCRIPTOR_REFLECTION: 29
 - GENERATED_BINDINGS_UNAVAILABLE: 24
+- NEEDS_REVIEW: 22
 - SECOND_CHECK_DISAGREES: 21
-- NEEDS_REVIEW: 18
-- WHOLE_MESSAGE_FLOW: 14
+- WHOLE_MESSAGE_FLOW: 16
 - UNRESOLVED_MEMBER: 12
 - AMBIENT_GENERATED_UNREAD: 10
+- JAVA_INLINED_CONSTANTS_UNCHECKED: 5
 - TYPE_ERROR_HIDES_USES: 2
 - JSON_OPTIONS_UNRESOLVED: 1
-- JAVA_INLINED_CONSTANTS_UNCHECKED: 1
 
 ## New projects, pair by pair
 
@@ -328,7 +334,7 @@ Left out because another binary decided them (rerun pending): Java stress test 6
 | tier 1 | poolrpc (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
 | tier 1 | poolrpc -> lightning-terminal | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 |
 | tier 1 | pulumi (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
-| tier 1 | pulumi -> pulumi-go-provider | 40 | 40 | 5 | 3 | 2 | 0 | 1 | 2 | 0 |
+| tier 1 | pulumi -> pulumi-go-provider | 40 | 31 | 4 | 3 | 1 | 0 | 0 | 1 | 9 |
 | tier 1 | pulumi -> pulumi-yaml | 38 | 38 | 13 | 13 | 0 | 0 | 0 | 0 | 0 |
 | tier 1 | remote-apis (pull requests) | 20 | 10 | 0 | 0 | 0 | 0 | 0 | 10 | 10 |
 | tier 1 | remote-apis -> bb-storage | 18 | 18 | 0 | 0 | 0 | 0 | 0 | 14 | 0 |
@@ -356,7 +362,7 @@ Left out because another binary decided them (rerun pending): Java stress test 6
 | tier 2 | argo-cd-v3 (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
 | tier 2 | argo-cd-v3 -> argocd-image-updater | 20 | 16 | 0 | 0 | 0 | 0 | 1 | 2 | 4 |
 | tier 2 | consul-proto-public (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
-| tier 2 | consul-proto-public -> consul-k8s | 25 | 25 | 1 | 1 | 0 | 0 | 0 | 4 | 0 |
+| tier 2 | consul-proto-public -> consul-k8s | 25 | 19 | 0 | 0 | 0 | 0 | 0 | 4 | 6 |
 | tier 2 | consul-proto-public -> consul-server-connection-manager | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
 | tier 2 | containerd-api-new (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
 | tier 2 | containerd-api-new -> kata-runtime | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 |
@@ -388,8 +394,8 @@ Left out because another binary decided them (rerun pending): Java stress test 6
 | tier 2 | nri -> cri-o | 16 | 15 | 1 | 1 | 0 | 0 | 1 | 2 | 1 |
 | tier 2 | temporal-api-new -> temporal-cli | 30 | 30 | 16 | 16 | 0 | 0 | 1 | 0 | 0 |
 | tier 2 | vitess (pull requests) | 20 | 20 | 0 | 0 | 0 | 0 | 0 | 20 | 0 |
-| tier 2 | vitess -> vitess-operator | 40 | 29 | 1 | 1 | 0 | 0 | 0 | 1 | 11 |
+| tier 2 | vitess -> vitess-operator | 40 | 25 | 1 | 1 | 0 | 0 | 0 | 1 | 15 |
 
-Not judged, by reason: judge not verified 174, baseline_fails 171, oracle_error 74, not_built 69, the provider's repository holds no Go module the consumer builds against 60, bump_side_effect 51, the commit changes no Go file of the module: its generated code is not regenerated with the .proto change, so the build cannot see it 26, a changed contract file is outside the module: proto/private/pbconfigentry/config_entry.proto 15, a changed contract file is outside the module: openfga/v1/openfga_service.proto 15, a changed contract file is outside the module: poolrpc/trader.proto 13, a changed contract file is outside the module: looprpc/client.proto 13, a changed contract file is outside the module: auctioneerrpc/auctioneer.proto 11, a changed contract file is outside the module: proto/pulumi/resource.proto 9, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/runtime/bootstrap/v1/bootstrap.proto 5, a changed contract file is outside the module: proto/pulumi/converter.proto 5, a changed contract file is outside the module: server/etcdserver/api/snap/snappb/snap.proto 4, a changed contract file is outside the module: swapserverrpc/staticaddr.proto 4, a changed contract file is outside the module: proto/pulumi/provider.proto 4, a changed contract file is outside the module: swapserverrpc/server.proto 3, a changed contract file is outside the module: proto/private/pbservice/node.proto 2, a changed contract file is outside the module: vendor/github.com/containerd/nri/pkg/api/api.proto 2, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/events/content.proto 2, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/types/runc/options/oci.proto 2, a changed contract file is outside the module: server/storage/wal/walpb/record.proto 2, a changed contract file is outside the module: openfga/v1/errors_ignore.proto 2, a changed contract file is outside the module: openfga/v1/openfga.proto 2, a changed contract file is outside the module: agent/grpc-middleware/testutil/testservice/simple.proto 1, a changed contract file is outside the module: proto/private/pbservice/service.proto 1, a changed contract file is outside the module: proto/private/pbsubscribe/subscribe.proto 1, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/runtime/sandbox/v1/sandbox.proto 1, a changed contract file is outside the module: vendor/k8s.io/api/core/v1/generated.proto 1, a changed contract file is outside the module: vendor/github.com/containers/ocicrypt/utils/keyprovider/keyprovider.proto 1, a changed contract file is outside the module: vendor/k8s.io/cri-api/pkg/apis/runtime/v1/api.proto 1, a changed contract file is outside the module: vendor/github.com/containerd/ttrpc/request.proto 1, a changed contract file is outside the module: vendor/github.com/Microsoft/hcsshim/cmd/containerd-shim-runhcs-v1/options/runhcs.proto 1, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/services/tasks/v1/tasks.proto 1, a changed contract file is outside the module: server/lease/leasepb/lease.proto 1, a changed contract file is outside the module: server/etcdserver/api/v3election/v3electionpb/v3election.proto 1, a changed contract file is outside the module: authzen/v1/authzen_service.proto 1, a changed contract file is outside the module: proto/pulumi/language.proto 1, a changed contract file is outside the module: proto/pulumi/callback.proto 1.
+Not judged, by reason: baseline_fails 372, oracle_error 317, judge not verified 284, not_built 174, the provider's repository holds no Go module the consumer builds against 60, bump_side_effect 51, the commit changes no Go file of the module: its generated code is not regenerated with the .proto change, so the build cannot see it 26, a changed contract file is outside the module: proto/private/pbconfigentry/config_entry.proto 15, a changed contract file is outside the module: openfga/v1/openfga_service.proto 15, a changed contract file is outside the module: poolrpc/trader.proto 13, a changed contract file is outside the module: looprpc/client.proto 13, a changed contract file is outside the module: auctioneerrpc/auctioneer.proto 11, a changed contract file is outside the module: proto/pulumi/resource.proto 9, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/runtime/bootstrap/v1/bootstrap.proto 5, a changed contract file is outside the module: proto/pulumi/converter.proto 5, a changed contract file is outside the module: server/etcdserver/api/snap/snappb/snap.proto 4, a changed contract file is outside the module: swapserverrpc/staticaddr.proto 4, a changed contract file is outside the module: proto/pulumi/provider.proto 4, a changed contract file is outside the module: swapserverrpc/server.proto 3, a changed contract file is outside the module: proto/private/pbservice/node.proto 2, a changed contract file is outside the module: vendor/github.com/containerd/nri/pkg/api/api.proto 2, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/events/content.proto 2, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/types/runc/options/oci.proto 2, a changed contract file is outside the module: server/storage/wal/walpb/record.proto 2, a changed contract file is outside the module: openfga/v1/errors_ignore.proto 2, a changed contract file is outside the module: openfga/v1/openfga.proto 2, a changed contract file is outside the module: agent/grpc-middleware/testutil/testservice/simple.proto 1, a changed contract file is outside the module: proto/private/pbservice/service.proto 1, a changed contract file is outside the module: proto/private/pbsubscribe/subscribe.proto 1, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/runtime/sandbox/v1/sandbox.proto 1, a changed contract file is outside the module: vendor/k8s.io/api/core/v1/generated.proto 1, a changed contract file is outside the module: vendor/github.com/containers/ocicrypt/utils/keyprovider/keyprovider.proto 1, a changed contract file is outside the module: vendor/k8s.io/cri-api/pkg/apis/runtime/v1/api.proto 1, a changed contract file is outside the module: vendor/github.com/containerd/ttrpc/request.proto 1, a changed contract file is outside the module: vendor/github.com/Microsoft/hcsshim/cmd/containerd-shim-runhcs-v1/options/runhcs.proto 1, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/services/tasks/v1/tasks.proto 1, a changed contract file is outside the module: server/lease/leasepb/lease.proto 1, a changed contract file is outside the module: server/etcdserver/api/v3election/v3electionpb/v3election.proto 1, a changed contract file is outside the module: authzen/v1/authzen_service.proto 1, a changed contract file is outside the module: proto/pulumi/language.proto 1, a changed contract file is outside the module: proto/pulumi/callback.proto 1.
 
 Errors: 0.

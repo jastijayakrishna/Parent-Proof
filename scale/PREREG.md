@@ -53,7 +53,13 @@ Exactly as the stress test ([stress/PREREG.md](../stress/PREREG.md)):
 - **Contract commits** (`verifier gate scan --oracle`): the compiler builds the pinned project against the contract
   before and after the commit, for commits inside the Go module the project builds against.
 - **The judge is tested before it judges**: a canary (the contract package the project imports most, removed) must
-  fail that project's build first, or the compiler's answers for it count as "judge not verified".
+  fail that project's build first, or the compiler's answers for it count as "judge not verified". (Scoring
+  corrected 2026-10-21 11:55 UTC, after the results had been read: each job runs its own canary, and `score.py` read
+  one canary per contract → project pair; where a pair's jobs disagreed (3 of 72: consul-k8s, pulumi-go-provider,
+  vitess-operator) it took whichever canary file the file system listed first, so GitHub's Linux and a Windows
+  checkout counted differently. An answer now counts only when its own job's judge broke on its canary, as this rule
+  says. Effect against the published SCALE.md of 09:49 UTC: 19 compiler answers of those 3 pairs become "judge not
+  verified" (2 breaks among them, both stopped: 1 Don't merge, 1 Needs review); no miss changes.)
 - Not judged, with the reason: the project did not build before the change, the module could not be resolved, the
   build failed without a compiler error, the change is outside a module the project builds.
 

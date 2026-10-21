@@ -47,12 +47,32 @@ def trusted(compiler, canary):
 
 
 def canary_of(d):
+    """One canary for a whole directory: "breaks" only when every job's judge
+    broke on its canary, else the first other outcome in name order."""
     outs = []
-    for cf in glob.glob(os.path.join(d, "canary-*.jsonl")):
+    for cf in sorted(glob.glob(os.path.join(d, "canary-*.jsonl"))):
         outs += [json.loads(x)["oracle"]["outcome"] for x in open(cf, encoding="utf-8") if x.strip()]
     if outs and all(c == "breaks" for c in outs):
         return "breaks"
-    return outs[0] if outs else "none"
+    return next((c for c in outs if c != "breaks"), "none")
+
+
+def canaries_by_bump(d):
+    """The canary of the job that decided each window (by its bump): a job's
+    windows-KofN.jsonl goes with its canary-KofN.jsonl, so an answer counts
+    only when its own judge broke on the canary. Three pairs had jobs that
+    disagreed (2026-10-21); reading one canary per directory then depended
+    on the order the file system listed the files."""
+    out = {}
+    for wf in glob.glob(os.path.join(d, "windows-*.jsonl")):
+        k = os.path.basename(wf)[len("windows-"):-len(".jsonl")]
+        cf = os.path.join(d, f"canary-{k}.jsonl")
+        outs = [json.loads(x)["oracle"]["outcome"] for x in open(cf, encoding="utf-8") if x.strip()] if os.path.exists(cf) else []
+        c = "breaks" if outs and all(o == "breaks" for o in outs) else next((o for o in outs if o != "breaks"), "none")
+        for x in open(wf, encoding="utf-8"):
+            if x.strip():
+                out[json.loads(x).get("bump", "")] = c
+    return out
 
 
 def suite_repos(*dirs):
@@ -74,16 +94,17 @@ def history_rows(root, corpus, setof, repos, skipped):
         if not ours(os.path.join(d, "verifier.txt")):
             skipped[corpus] += len(lines)
             continue
-        canary = canary_of(d)
+        canary, by_bump = canary_of(d), canaries_by_bump(d)
         repo = repos.get((suite, consumer), "")
         for line in lines:
             r = json.loads(line)
             w, o = r.get("window", {}), r.get("observed") or {}
+            c = by_bump.get(w.get("bump", ""), canary)
             out.append({"corpus": corpus, "set": setof(suite, consumer), "lang": "Go", "project": f"{suite} -> {consumer}",
                         "mode": "upgrade", "id": f"{w.get('old_pin', '')} -> {w.get('new_pin', '')}",
                         "link": f"https://github.com/{repo}/commit/{w.get('bump', '')}" if repo else "", "date": w.get("date", ""),
                         "verdict": o.get("verdict", "ERROR"), "build": (o.get("aspects") or {}).get("source_build", ""),
-                        "compiler": trusted((w.get("oracle") or {}).get("outcome", "not judged"), canary),
+                        "compiler": trusted((w.get("oracle") or {}).get("outcome", "not judged"), c),
                         "reasons": o.get("unknown_reasons") or [], "where": (o.get("evidence") or [""])[0],
                         "error": o.get("error", ""), "errors": (w.get("oracle") or {}).get("errors", [])[:2]})
     return out
