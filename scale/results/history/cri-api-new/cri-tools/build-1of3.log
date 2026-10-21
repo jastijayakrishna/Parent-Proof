@@ -1,0 +1,20 @@
+time=2026-10-21T08:54:45.840Z level=INFO msg=cloning repo=cri-api url=https://github.com/kubernetes/cri-api.git
+time=2026-10-21T08:54:46.502Z level=INFO msg=cloning repo=cri-tools url=https://github.com/kubernetes-sigs/cri-tools.git
+time=2026-10-21T08:54:51.377Z level=INFO msg=skip consumer=cri-tools bump=88c14290 old=v0.33.0-alpha.0 new=v0.32.0-rc.1 reason=not_forward
+time=2026-10-21T08:54:51.737Z level=INFO msg=skip consumer=cri-tools bump=801d04c1 old=v0.34.0-alpha.0 new=v0.33.0-rc.0 reason=not_forward
+time=2026-10-21T08:54:52.489Z level=INFO msg=mined consumer=cri-tools pin_moves=40 to_compile=13 skipped=map[not_forward:2]
+time=2026-10-21T08:55:43.405Z level=INFO msg=canary consumer=cri-tools at=13496db06e3f6636a0855977dd86344698dfc501^ outcome=breaks detail="canary: k8s.io/cri-api/pkg/apis/runtime/v1 removed."
+time=2026-10-21T08:55:48.131Z level=INFO msg=window consumer=cri-tools bump=13496db0 select=breaking breaking=66 compiler=breaks
+time=2026-10-21T08:56:48.510Z level=INFO msg=window consumer=cri-tools bump=2a66a639 select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T08:56:55.606Z level=INFO msg=window consumer=cri-tools bump=40122fbe select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:57:44.971Z level=INFO msg=window consumer=cri-tools bump=46c81013 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:57:48.299Z level=INFO msg=window consumer=cri-tools bump=562de388 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:58:24.349Z level=INFO msg=window consumer=cri-tools bump=5cb60482 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:58:27.672Z level=INFO msg=window consumer=cri-tools bump=7e2aa2ec select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:59:02.817Z level=INFO msg=window consumer=cri-tools bump=88f266cb select=breaking breaking=11 compiler=breaks
+time=2026-10-21T08:59:17.588Z level=INFO msg=window consumer=cri-tools bump=9ee43a85 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:59:39.398Z level=INFO msg=window consumer=cri-tools bump=b5cf674b select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:59:41.469Z level=INFO msg=window consumer=cri-tools bump=ca0237b9 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:00:07.320Z level=INFO msg=window consumer=cri-tools bump=e0327f82 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:00:19.023Z level=INFO msg=window consumer=cri-tools bump=ec763f83 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:00:19.023Z level=INFO msg="suite built" suite=cri-api-new windows_added=13
