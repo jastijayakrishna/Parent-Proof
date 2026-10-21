@@ -1,0 +1,12 @@
+time=2026-10-21T08:27:01.407Z level=INFO msg=cloning repo=spec url=https://github.com/container-storage-interface/spec.git
+time=2026-10-21T08:27:02.472Z level=INFO msg=cloning repo=external-health-monitor url=https://github.com/kubernetes-csi/external-health-monitor.git
+time=2026-10-21T08:27:06.694Z level=INFO msg=mined consumer=external-health-monitor pin_moves=7 to_compile=7 skipped=map[]
+time=2026-10-21T08:28:01.025Z level=INFO msg=canary consumer=external-health-monitor at=bea646f33f0ffbf784be7982363456a35a15d117^ outcome=breaks detail="canary: github.com/container-storage-interface/spec/lib/go/csi removed."
+time=2026-10-21T08:28:04.857Z level=INFO msg=window consumer=external-health-monitor bump=bea646f3 select=breaking breaking=1 compiler=breaks
+time=2026-10-21T08:28:05.753Z level=INFO msg=window consumer=external-health-monitor bump=ec1a3512 select=breaking breaking=17 compiler=compiles
+time=2026-10-21T08:30:10.719Z level=INFO msg=window consumer=external-health-monitor bump=1e63d840 select=breaking breaking=7 compiler=breaks
+time=2026-10-21T08:31:44.022Z level=INFO msg=window consumer=external-health-monitor bump=8e7d7537 select=breaking breaking=6 compiler=breaks
+time=2026-10-21T08:32:35.329Z level=INFO msg=window consumer=external-health-monitor bump=907ddacb select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:32:46.492Z level=INFO msg=window consumer=external-health-monitor bump=982fd25a select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:33:14.758Z level=INFO msg=window consumer=external-health-monitor bump=df299516 select=additive breaking=0 compiler=breaks
+time=2026-10-21T08:33:14.758Z level=INFO msg="suite built" suite=csi-new windows_added=7
