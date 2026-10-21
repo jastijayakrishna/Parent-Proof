@@ -1,0 +1,11 @@
+time=2026-10-21T09:15:55.148Z level=INFO msg=cloning repo=vitess url=https://github.com/vitessio/vitess.git
+time=2026-10-21T09:16:29.968Z level=INFO msg=cloning repo=vitess-operator url=https://github.com/planetscale/vitess-operator.git
+time=2026-10-21T09:16:41.087Z level=INFO msg=mined consumer=vitess-operator pin_moves=40 to_compile=6 skipped=map[]
+time=2026-10-21T09:19:22.553Z level=INFO msg=canary consumer=vitess-operator at=0035266ed63aeeeadb7370ae50b75805ff7a2197^ outcome=breaks detail="canary: vitess.io/vitess/go/vt/proto/topodata removed."
+time=2026-10-21T09:20:55.937Z level=INFO msg=window consumer=vitess-operator bump=0035266e select=breaking breaking=2 compiler=compiles
+time=2026-10-21T09:25:01.640Z level=INFO msg=window consumer=vitess-operator bump=2af0270f select=breaking breaking=3 compiler=compiles
+time=2026-10-21T09:28:23.234Z level=INFO msg=window consumer=vitess-operator bump=9293b825 select=additive breaking=0 compiler=baseline_fails
+time=2026-10-21T09:30:12.998Z level=INFO msg=window consumer=vitess-operator bump=b8d51054 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:30:17.294Z level=INFO msg=window consumer=vitess-operator bump=6a66429f select=breaking breaking=4 compiler=compiles
+time=2026-10-21T09:31:40.057Z level=INFO msg=window consumer=vitess-operator bump=f364aa3a select=additive breaking=0 compiler=baseline_fails
+time=2026-10-21T09:31:40.057Z level=INFO msg="suite built" suite=vitess windows_added=6
