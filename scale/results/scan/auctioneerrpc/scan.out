@@ -1,0 +1,27 @@
+time=2026-10-21T09:19:25.493Z level=INFO msg=cloning repo=p-auctioneerrpc url=https://github.com/lightninglabs/pool.git
+time=2026-10-21T09:19:26.341Z level=INFO msg=cloning repo=c-auctioneerrpc url=https://github.com/lightninglabs/lightning-terminal.git
+auctioneerrpc d000a6b7 GO       source_build=GO      compiler=compiles          205.4s 
+auctioneerrpc 1b1d0b69 GO       source_build=GO      compiler=-                   2.2s 
+auctioneerrpc cd632058 GO       source_build=GO      compiler=-                   2.0s 
+auctioneerrpc e6b45a76 GO       source_build=GO      compiler=-                   1.6s 
+auctioneerrpc b2a5c14e GO       source_build=GO      compiler=-                   1.9s 
+auctioneerrpc 091d8f57 GO       source_build=GO      compiler=-                   1.6s 
+auctioneerrpc f82b5759 GO       source_build=GO      compiler=-                   1.6s 
+auctioneerrpc b4b21da1 GO       source_build=GO      compiler=-                   1.5s 
+auctioneerrpc a63985d6 GO       source_build=GO      compiler=-                   1.9s 
+auctioneerrpc 1ef87fe3 GO       source_build=GO      compiler=compiles            3.9s 
+auctioneerrpc 758aa8e2 NO_GO    source_build=GO      compiler=compiles            4.0s 
+auctioneerrpc 73612159 GO       source_build=GO      compiler=compiles            3.1s 
+auctioneerrpc c85f2175 GO       source_build=GO      compiler=-                   1.3s 
+auctioneerrpc 34d03652 GO       source_build=GO      compiler=-                   1.6s 
+auctioneerrpc 9e36c749 GO       source_build=GO      compiler=-                   2.1s 
+auctioneerrpc cb538981 GO       source_build=GO      compiler=compiles            3.6s 
+auctioneerrpc 70719b68 GO       source_build=GO      compiler=compiles            2.8s 
+auctioneerrpc 7f2f4818 GO       source_build=GO      compiler=-                   1.2s 
+auctioneerrpc b1848de6 GO       source_build=GO      compiler=-                   1.9s 
+auctioneerrpc 2b3b29e3 GO       source_build=GO      compiler=compiles            3.5s 
+auctioneerrpc   20 decisions  GO  19  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO  19  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+
+20 windows in 4m13s.
+exit 0 seconds 253
