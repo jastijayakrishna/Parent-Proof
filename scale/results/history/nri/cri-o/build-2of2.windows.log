@@ -1,0 +1,10 @@
+time=2026-10-21T08:52:26.582Z level=INFO msg=mined consumer=cri-o pin_moves=16 to_compile=8 skipped=map[]
+time=2026-10-21T08:53:22.924Z level=INFO msg=canary consumer=cri-o at=0c8c22dc53226ecface2879d886d0d2478e56e10^ outcome=breaks detail="canary: github.com/containerd/nri/pkg/api removed."
+time=2026-10-21T08:53:28.149Z level=INFO msg=window consumer=cri-o bump=0c8c22dc select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:54:27.683Z level=INFO msg=window consumer=cri-o bump=2824bf99 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:54:37.768Z level=INFO msg=window consumer=cri-o bump=482be4b4 select=additive breaking=0 compiler=bump_side_effect
+time=2026-10-21T08:55:28.689Z level=INFO msg=window consumer=cri-o bump=8564f355 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:56:20.460Z level=INFO msg=window consumer=cri-o bump=95b887d5 select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T08:56:26.539Z level=INFO msg=window consumer=cri-o bump=9e979af0 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:57:12.932Z level=INFO msg=window consumer=cri-o bump=bdc8bd66 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:57:28.553Z level=INFO msg=window consumer=cri-o bump=deba5948 select=additive breaking=0 compiler=compiles
