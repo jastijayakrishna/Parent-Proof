@@ -1,0 +1,48 @@
+time=2026-10-21T09:19:18.905Z level=INFO msg=cloning repo=p-grafana-plugin-sdk url=https://github.com/grafana/grafana-plugin-sdk-go.git
+time=2026-10-21T09:19:19.576Z level=INFO msg=cloning repo=c-grafana-plugin-sdk url=https://github.com/grafana/github-datasource.git
+grafana-plugin-sdk 7a4287ce UNKNOWN  source_build=UNKNOWN compiler=compiles           64.0s 
+grafana-plugin-sdk 257acb1d UNKNOWN  source_build=UNKNOWN compiler=compiles            6.6s 
+grafana-plugin-sdk d381f847 UNKNOWN  source_build=UNKNOWN compiler=compiles            1.8s 
+grafana-plugin-sdk 3a046928 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.0s 
+grafana-plugin-sdk 3795667d UNKNOWN  source_build=UNKNOWN compiler=compiles            5.5s 
+grafana-plugin-sdk 6158ec51 UNKNOWN  source_build=UNKNOWN compiler=compiles            7.5s 
+grafana-plugin-sdk 94941f40 GO       source_build=GO      compiler=compiles            1.9s 
+grafana-plugin-sdk 878555a0 UNKNOWN  source_build=UNKNOWN compiler=compiles            1.5s 
+grafana-plugin-sdk b293c697 UNKNOWN  source_build=UNKNOWN compiler=compiles            5.9s 
+grafana-plugin-sdk e5fc54a7 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.6s 
+grafana-plugin-sdk be36c43f UNKNOWN  source_build=UNKNOWN compiler=compiles            1.4s 
+grafana-plugin-sdk 04d7c574 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.1s 
+grafana-plugin-sdk f716a601 UNKNOWN  source_build=UNKNOWN compiler=compiles            1.5s 
+grafana-plugin-sdk a8d67e76 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.0s 
+grafana-plugin-sdk 8801035e GO       source_build=GO      compiler=-                   0.4s 
+grafana-plugin-sdk 79ed6739 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.6s 
+grafana-plugin-sdk e239965b UNKNOWN  source_build=UNKNOWN compiler=compiles            1.8s 
+grafana-plugin-sdk b638fd74 GO       source_build=GO      compiler=compiles            1.5s 
+grafana-plugin-sdk 86041534 UNKNOWN  source_build=UNKNOWN compiler=compiles            1.8s 
+grafana-plugin-sdk e4d1c25b UNKNOWN  source_build=UNKNOWN compiler=compiles            3.2s 
+grafana-plugin-sdk   20 decisions  GO   3  NO-GO   0  UNKNOWN  17 (85.0%)  errors 0 | compiler judged  19: agree   2  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 17 | not judged 1
+TOTAL         20 decisions  GO   3  NO-GO   0  UNKNOWN  17 (85.0%)  errors 0 | compiler judged  19: agree   2  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 17 | not judged 1
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+   17   1  TOOLCHAIN_TOO_OLD (e.g. grafana-plugin-sdk@7a4287ce2aa46e39b1b0621c0507206ce935e2e9)
+  FAILED grafana-plugin-sdk@7a4287ce2aa46e39b1b0621c0507206ce935e2e9: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED grafana-plugin-sdk@257acb1dae5936140898607133de1b7f4b2c5c93: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED grafana-plugin-sdk@d381f84794373cc654cd04608cd51c3400093610: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED grafana-plugin-sdk@3a0469286cef33f46299440ab7d3e67ecd948d9f: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED grafana-plugin-sdk@3795667d9950b3f84b7b221198f2df99be54918b: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED grafana-plugin-sdk@6158ec511c2944068dceef24e36fdd116981549d: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED grafana-plugin-sdk@878555a0c4aff7c53299d408bc3a04ca49749ebc: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED grafana-plugin-sdk@b293c6975fcfaeaf027d4719e6e399a38ccbe874: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED grafana-plugin-sdk@e5fc54a711d20c7582b773a3f3c5304adb3f5227: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED grafana-plugin-sdk@be36c43f0760bbd2000a6428c050f79f772b5e9c: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED grafana-plugin-sdk@04d7c57478a115779986260ecc519abc630ee0fe: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED grafana-plugin-sdk@f716a601d0bfa2d74e63310636fd3ed1d863a77a: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED grafana-plugin-sdk@a8d67e76391bb3b0ba4ba00b38966853b6b668a4: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED grafana-plugin-sdk@79ed67393f662fccff8ea683eac8b12301c73603: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED grafana-plugin-sdk@e239965b5d630d2502f698fc0bc4c0fd4e3f9448: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED grafana-plugin-sdk@8604153458755df86f2ddb8629d2c898cd75725f: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED grafana-plugin-sdk@e4d1c25b8957ba87aa90f51c3f71b29352e4f336: unknown_on_safe: TOOLCHAIN_TOO_OLD
+
+20 windows in 2m1s.
+verifier gate: scan failed: 17 disagreements with the compiler or errors
+exit 1 seconds 122
