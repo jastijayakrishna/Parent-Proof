@@ -1,0 +1,27 @@
+time=2026-10-21T09:25:30.503Z level=INFO msg=cloning repo=p-istio-api-new url=https://github.com/istio/api.git
+time=2026-10-21T09:25:31.133Z level=INFO msg=cloning repo=c-istio-api-new url=https://github.com/istio/client-go.git
+istio-api-new e0d275e5 GO       source_build=GO      compiler=compiles           61.8s 
+istio-api-new 73ebf9ce GO       source_build=GO      compiler=compiles            5.5s 
+istio-api-new bfea1c8d GO       source_build=GO      compiler=compiles            9.5s 
+istio-api-new f7ae8c4f GO       source_build=GO      compiler=compiles            8.5s 
+istio-api-new 5803fb6a GO       source_build=GO      compiler=compiles            8.3s 
+istio-api-new abc03d0e NO_GO    source_build=GO      compiler=compiles            8.3s 
+istio-api-new 25d2a432 GO       source_build=GO      compiler=compiles            8.5s 
+istio-api-new 694749c7 GO       source_build=GO      compiler=compiles            8.1s 
+istio-api-new e6999310 GO       source_build=GO      compiler=compiles            7.6s 
+istio-api-new 13c4afd2 GO       source_build=GO      compiler=compiles            4.3s 
+istio-api-new b8f8791d GO       source_build=GO      compiler=compiles            5.6s 
+istio-api-new c9bb2b80 GO       source_build=GO      compiler=compiles            8.7s 
+istio-api-new 0ec93118 GO       source_build=GO      compiler=compiles            8.7s 
+istio-api-new 7d09c228 GO       source_build=GO      compiler=compiles            8.3s 
+istio-api-new a5e37fdd GO       source_build=GO      compiler=compiles            5.2s 
+istio-api-new 55674782 GO       source_build=GO      compiler=compiles            2.4s 
+istio-api-new ac56ebb2 GO       source_build=GO      compiler=compiles            5.4s 
+istio-api-new e4be915e GO       source_build=GO      compiler=compiles            5.1s 
+istio-api-new fd30c191 GO       source_build=GO      compiler=compiles            2.3s 
+istio-api-new 28b8d466 GO       source_build=GO      compiler=compiles            5.3s 
+istio-api-new   20 decisions  GO  19  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
+TOTAL         20 decisions  GO  19  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
+
+20 windows in 3m9s.
+exit 0 seconds 189
