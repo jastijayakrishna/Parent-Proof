@@ -1,0 +1,8 @@
+time=2026-10-21T08:48:02.287Z level=INFO msg=mined consumer=sigstore pin_moves=6 to_compile=6 skipped=map[]
+time=2026-10-21T08:48:17.861Z level=INFO msg=canary consumer=sigstore at=e8420902c6e951000156afc9deb5f92df2f4e855^ outcome=breaks detail="canary: github.com/sigstore/protobuf-specs/gen/pb-go/common/v1 removed."
+time=2026-10-21T08:48:21.887Z level=INFO msg=window consumer=sigstore bump=e8420902 select=breaking breaking=7 compiler=compiles
+time=2026-10-21T08:48:22.772Z level=INFO msg=window consumer=sigstore bump=404e5b55 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:48:25.819Z level=INFO msg=window consumer=sigstore bump=22661059 select=breaking breaking=3 compiler=compiles
+time=2026-10-21T08:48:26.816Z level=INFO msg=window consumer=sigstore bump=61907d2c select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:48:33.731Z level=INFO msg=window consumer=sigstore bump=1811eb85 select=breaking breaking=7 compiler=compiles
+time=2026-10-21T08:48:34.350Z level=INFO msg=window consumer=sigstore bump=5c8aef31 select=additive breaking=0 compiler=compiles
