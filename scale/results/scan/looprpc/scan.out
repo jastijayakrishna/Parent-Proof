@@ -1,0 +1,32 @@
+time=2026-10-21T09:22:14.213Z level=INFO msg=cloning repo=p-looprpc url=https://github.com/lightninglabs/loop.git
+time=2026-10-21T09:22:14.733Z level=INFO msg=cloning repo=c-looprpc url=https://github.com/lightninglabs/lightning-terminal.git
+looprpc     106b182a UNKNOWN  source_build=UNKNOWN compiler=compiles          204.5s 
+looprpc     bcb04b16 UNKNOWN  source_build=UNKNOWN compiler=compiles           10.7s 
+looprpc     44b49b3b UNKNOWN  source_build=UNKNOWN compiler=compiles            9.5s 
+looprpc     b877a8d2 UNKNOWN  source_build=UNKNOWN compiler=compiles            8.5s 
+looprpc     e772f8cc UNKNOWN  source_build=UNKNOWN compiler=compiles            8.2s 
+looprpc     edad26b8 UNKNOWN  source_build=UNKNOWN compiler=compiles            9.1s 
+looprpc     cb97b2a3 GO       source_build=GO      compiler=-                   1.0s 
+looprpc     4c03e469 UNKNOWN  source_build=UNKNOWN compiler=compiles            1.5s 
+looprpc     51f984f7 UNKNOWN  source_build=UNKNOWN compiler=compiles            9.1s 
+looprpc     410a4551 GO       source_build=GO      compiler=-                   1.0s 
+looprpc     8ea9adbd UNKNOWN  source_build=UNKNOWN compiler=compiles            8.8s 
+looprpc     e467ac93 UNKNOWN  source_build=UNKNOWN compiler=compiles            9.0s 
+looprpc     ac583361 UNKNOWN  source_build=UNKNOWN compiler=compiles            8.8s 
+looprpc     38654b91 GO       source_build=GO      compiler=-                   1.1s 
+looprpc     1ec0f77a GO       source_build=GO      compiler=-                   0.8s 
+looprpc     c8b59bee UNKNOWN  source_build=GO      compiler=-                   1.0s 
+looprpc     69a0798f GO       source_build=GO      compiler=-                   1.0s 
+looprpc     f47b6115 UNKNOWN  source_build=UNKNOWN compiler=compiles            9.7s 
+looprpc     9ee7a36f GO       source_build=GO      compiler=compiles            9.0s 
+looprpc     e77dc537 GO       source_build=GO      compiler=-                   1.5s 
+looprpc       20 decisions  GO   7  NO-GO   0  UNKNOWN  13 (65.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO   7  NO-GO   0  UNKNOWN  13 (65.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+   12   1  CONTRACT_COMPILE_ERROR (e.g. looprpc@106b182a3d82a08c27c8ce2c80a15e63fc7c8317)
+    1   1  DESCRIPTOR_REFLECTION (e.g. looprpc@c8b59beed6f225e61f86c99414e5a348e62d8866)
+    1   1  WHOLE_MESSAGE_FLOW (e.g. looprpc@c8b59beed6f225e61f86c99414e5a348e62d8866)
+
+20 windows in 5m16s.
+exit 0 seconds 316
