@@ -1,0 +1,30 @@
+time=2026-10-21T09:19:16.438Z level=INFO msg=cloning repo=p-cilium url=https://github.com/cilium/cilium.git
+time=2026-10-21T09:19:23.152Z level=INFO msg=cloning repo=c-cilium url=https://github.com/cilium/hubble.git
+cilium      fe05863c GO       source_build=GO      compiler=compiles          101.4s 
+cilium      f9f1867c GO       source_build=GO      compiler=compiles           18.7s 
+cilium      667d0201 GO       source_build=GO      compiler=compiles           66.5s 
+cilium      c96d5284 GO       source_build=GO      compiler=compiles           41.5s 
+cilium      1894e402 UNKNOWN  source_build=GO      compiler=compiles           20.9s 
+cilium      2d282745 UNKNOWN  source_build=GO      compiler=compiles           20.3s 
+cilium      79e4fa09 GO       source_build=GO      compiler=compiles           40.6s 
+cilium      36727fbc GO       source_build=GO      compiler=compiles            9.3s 
+cilium      3bea5cd7 GO       source_build=GO      compiler=compiles            8.9s 
+cilium      4272a96b GO       source_build=GO      compiler=compiles            9.4s 
+cilium      b049a106 GO       source_build=GO      compiler=compiles           51.9s 
+cilium      d697f30d UNKNOWN  source_build=GO      compiler=compiles           16.8s 
+cilium      c5477b13 GO       source_build=GO      compiler=compiles           13.2s 
+cilium      419b3f1f GO       source_build=GO      compiler=compiles           22.0s 
+cilium      9e461593 GO       source_build=GO      compiler=compiles           20.3s 
+cilium      46b1025f GO       source_build=GO      compiler=compiles           19.8s 
+cilium      5f2289b4 GO       source_build=GO      compiler=compiles           16.5s 
+cilium      3ded1f74 GO       source_build=GO      compiler=compiles           11.5s 
+cilium      d8bca265 GO       source_build=GO      compiler=compiles           16.3s 
+cilium      63525986 GO       source_build=GO      compiler=compiles           14.9s 
+cilium        20 decisions  GO  17  NO-GO   0  UNKNOWN   3 (15.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
+TOTAL         20 decisions  GO  17  NO-GO   0  UNKNOWN   3 (15.0%)  errors 0 | compiler judged  20: agree  20  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    3   1  JSON_OPTIONS_UNRESOLVED (e.g. cilium@1894e4021762d6a2d70c1401da622ee9e5e9fb19)
+
+20 windows in 9m13s.
+exit 0 seconds 553
