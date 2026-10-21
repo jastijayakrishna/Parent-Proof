@@ -72,8 +72,10 @@ Reported per corpus, per pair, every break, every false alarm, and every Needs r
 ## Pass, stop, report
 
 - **Pass**: 0 missed on every judged change of every set.
-- **Stop**: on any missed change, the test stops; the change, the code and the cause go to the founder before
-  anything is fixed. No fix is made during the test.
+- **A miss does not stop the runs**: the whole corpus is measured on the same binary, so the count of misses is
+  complete; nothing in Parent is fixed during the test, and every miss goes to the founder with the change, the code
+  and the cause. (Amended 2026-10-21 08:33 UTC, before any decision of the new projects was committed: the first
+  draft stopped at the first miss, which would leave the rest unmeasured.)
 - Every false alarm is listed with its cause. Nothing is dropped from the counts after the run: a pair or project whose
   harness failed is listed with what failed.
 

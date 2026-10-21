@@ -23,8 +23,8 @@
       "build": "./gradlew --no-daemon --console=plain --build-cache classes",
       "clean": "./gradlew --no-daemon --console=plain clean",
       "shards": {
-        "history": 5,
-        "scan": 4
+        "history": 8,
+        "scan": 5
       }
     },
     {
@@ -44,7 +44,7 @@
       "build": "./mvnw -B -ntp -T1C -Dquickly -DskipTests compile -pl zeebe/gateway-protocol,zeebe/gateway-protocol-impl,zeebe/gateway-grpc,zeebe/gateway,zeebe/gateway-rest,clients/java,clients/spring-boot-protobuf-compatibility -am",
       "clean": "rm -rf $(find . -name target -type d -prune)",
       "shards": {
-        "history": 12
+        "history": 24
       }
     },
     {
@@ -66,7 +66,7 @@
       "build": "mvn -B -ntp -T1C -DskipTests -Dclirr.skip -Denforcer.skip -Dcheckstyle.skip -Dfmt.skip -Danimal.sniffer.skip -Djacoco.skip compile -f java-pubsub/pom.xml",
       "clean": "rm -rf $(find java-pubsub -name target -type d -prune)",
       "shards": {
-        "history": 1
+        "history": 2
       }
     },
     {
@@ -129,7 +129,7 @@
       "build": "./gradlew --no-daemon --console=plain --build-cache :conductor-grpc:classes :conductor-grpc-server:classes :conductor-grpc-client:classes",
       "clean": "./gradlew --no-daemon --console=plain clean",
       "shards": {
-        "history": 2
+        "history": 3
       }
     },
     {
@@ -151,7 +151,7 @@
       "build": "./gradlew --no-daemon --console=plain --build-cache :runners:core-java:classes :sdks:java:harness:classes :runners:java-fn-execution:classes",
       "clean": "./gradlew --no-daemon --console=plain clean",
       "shards": {
-        "history": 17
+        "history": 40
       }
     },
     {
@@ -245,7 +245,7 @@
       "clean": "rm -rf target",
       "shards": {
         "history": 1,
-        "scan": 2
+        "scan": 3
       },
       "since": "2019-01-01"
     },

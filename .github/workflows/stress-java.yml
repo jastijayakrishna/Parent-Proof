@@ -27,7 +27,8 @@ jobs:
           set=$(sed -n 's/^set=//p' stress/java-request.txt)
           only=$(sed -n 's/^only=//p' stress/java-request.txt | tr -d ' ')
           modes=$(sed -n 's/^modes=//p' stress/java-request.txt | tr -d ' ')
-          jobs=$(python3 stress/java/plan.py "${set:-dev}" "$only" "${modes:-history,scan}")
+          part=$(sed -n 's/^part=//p' stress/java-request.txt | tr -d ' ')
+          jobs=$(python3 stress/java/plan.py "${set:-dev}" "$only" "${modes:-history,scan}" "${part:-1/1}")
           echo "$jobs" | jq -r '.[] | "\(.project) \(.mode) \(.shard)"'
           echo "jobs=$jobs" >> "$GITHUB_OUTPUT"
 

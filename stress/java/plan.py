@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Prints the jobs of a Java stress run as a JSON list (a CI matrix):
-plan.py SET ONLY MODES. SET is dev, holdout, regression or all (or a comma
+plan.py SET ONLY MODES [PART]. SET is dev, holdout, regression or all (or a comma
 list); ONLY a comma list of project names (empty: every project of the set);
 MODES a comma list of history and scan. Each project's `shards` says how many
 jobs share each mode's windows."""
@@ -23,4 +23,9 @@ for p in cfg["projects"]:
         n = int(p.get("shards", {}).get(mode, 0))
         for i in range(1, n + 1):
             jobs.append({"project": p["name"], "mode": mode, "shard": f"{i}/{n}", "jdk": p["jdk"]})
+# PART i/n (5th argument) keeps every n-th job, so one rerun can be split into
+# n runs that each end within the 30-minute budget.
+part = sys.argv[4] if len(sys.argv) > 4 and sys.argv[4] else "1/1"
+i, n = (int(x) for x in part.split("/"))
+jobs = [j for k, j in enumerate(jobs) if k % n == i - 1]
 print(json.dumps(jobs))
