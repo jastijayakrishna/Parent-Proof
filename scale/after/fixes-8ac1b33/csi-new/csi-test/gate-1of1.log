@@ -1,0 +1,18 @@
+time=2026-10-21T09:56:02.909Z level=INFO msg=cloning repo=csi-test url=https://github.com/kubernetes-csi/csi-test.git
+time=2026-10-21T09:56:04.969Z level=INFO msg=cloning repo=spec url=https://github.com/container-storage-interface/spec.git
+csi-test   41ada7f4 UNKNOWN  source_build=UNKNOWN compiler=breaks             7.1s replay=true 
+csi-test   03160373 NO_GO    source_build=NO_GO   compiler=breaks             7.2s replay=true 
+csi-test   7a77a229 NO_GO    source_build=UNKNOWN compiler=breaks             1.3s replay=true 
+csi-test   70e0e18c UNKNOWN  source_build=UNKNOWN compiler=compiles           1.4s replay=true 
+csi-test   91e2c3af NO_GO    source_build=GO      compiler=compiles           1.7s replay=true 
+csi-test   ae8a63a7 NO_GO    source_build=NO_GO   compiler=breaks             2.2s replay=true 
+csi-test/additive      windows=  1 | breaks= 1: caught= 0 WRONG_GO=0 abstained=1 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=1
+csi-test/breaking      windows=  5 | breaks= 3: caught= 2 WRONG_GO=0 abstained=1 | compiles= 2: GO= 1 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 1) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=5 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=3 | errors=0 | replayed=5
+TOTAL                  windows=  6 | breaks= 4: caught= 2 WRONG_GO=0 abstained=2 | compiles= 2: GO= 1 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 1) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=6 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=3 | errors=0 | replayed=6
+  FAILED csi-test@41ada7f44430..80d53107: unknown_on_break: driver/mock.go:41:17: cannot use servers.Controller (variable of type *MockControllerServer) as csi.ControllerServer value in struct literal: *MockControllerServer does not implement csi.ControllerServer (missing method ControllerModifyVolume)
+  WITHIN THE UNKNOWN LIMIT csi-test@70e0e18c4af7..f6b6d53d: unknown_on_safe: OPTION_CHANGED
+  FAILED csi-test@7a77a229ee78..21be3f81: unknown_on_break: driver/mock.go:41:17: cannot use servers.Controller (variable of type *MockControllerServer) as csi.ControllerServer value in struct literal: *MockControllerServer does not implement csi.ControllerServer (missing method mustEmbedUnimplementedControllerServer) | driver/mock.go:42:17: cannot use servers.Node (variable of type *MockNodeServer) as csi.NodeServer value in struct literal: *MockNodeServer does not implement csi.NodeServer (missing method mustEmbedUnimplementedNodeServer) | driver/mock.go:43:17: cannot use servers.Identity (variable of type *MockIdentityServer) as csi.IdentityServer value in struct literal: *MockIdentityServer does not implement csi.IdentityServer (missing method mustEmbedUnimplementedIdentityServer)
+
+6 windows in 11s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 2 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 14
