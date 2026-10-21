@@ -1,0 +1,22 @@
+terraform-plugin-testing 1453c639 GO       source_build=GO      compiler=compiles           6.2s replay=true 
+terraform-plugin-testing 08dd5f02 UNKNOWN  source_build=GO      compiler=compiles           6.3s replay=true 
+terraform-plugin-testing 5bac538f GO       source_build=GO      compiler=compiles           1.7s replay=true 
+terraform-plugin-testing 4da90ede NO_GO    source_build=NO_GO   compiler=breaks             1.8s replay=true 
+terraform-plugin-testing 7ae4318d GO       source_build=GO      compiler=compiles           0.1s replay=true 
+terraform-plugin-testing 99ed7b5e GO       source_build=GO      compiler=compiles           1.9s replay=true 
+terraform-plugin-testing aa67c757 GO       source_build=GO      compiler=compiles           2.6s replay=true 
+terraform-plugin-testing c169f566 NO_GO    source_build=GO      compiler=compiles           2.0s replay=true 
+terraform-plugin-testing cb1f2b6f UNKNOWN  source_build=UNKNOWN compiler=breaks             1.3s replay=true 
+terraform-plugin-testing e3316c0f NO_GO    source_build=GO      compiler=breaks             1.3s replay=true 
+terraform-plugin-testing d6234147 GO       source_build=GO      compiler=compiles           2.0s replay=true 
+terraform-plugin-testing eaab4a69 GO       source_build=GO      compiler=compiles           1.2s replay=true 
+terraform-plugin-testing fa89bd8d GO       source_build=GO      compiler=compiles           0.9s replay=true 
+terraform-plugin-testing/additive windows=  2 | breaks= 1: caught= 0 WRONG_GO=0 abstained=1 | compiles= 1: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
+terraform-plugin-testing/breaking windows=  5 | breaks= 2: caught= 1 WRONG_GO=1 abstained=0 | compiles= 3: GO= 3 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 1) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=5 broken=2 RUNTIME_WRONG_GO=0 confirmed=2 unconfirmed=1 | errors=0 | replayed=5
+terraform-plugin-testing/unchanged windows=  6 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 6: GO= 6 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=6 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=6
+TOTAL                  windows= 13 | breaks= 3: caught= 1 WRONG_GO=1 abstained=1 | compiles=10: GO=10 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 1) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=13 broken=2 RUNTIME_WRONG_GO=0 confirmed=2 unconfirmed=1 | errors=0 | replayed=13
+  FAILED terraform-plugin-testing@cb1f2b6f4be3..bd1819d2: unknown_on_break: internal/testing/testsdk/providerserver/providerserver.go:18:34: cannot use ProviderServer{} (value of struct type ProviderServer) as tfprotov6.ProviderServer value in variable declaration: ProviderServer does not implement tfprotov6.ProviderServer (missing method CallFunction) | internal/testing/testsdk/providerserver/providerserver.go:34:10: cannot use providerServer (variable of struct type ProviderServer) as tfprotov6.ProviderServer value in return statement: ProviderServer does not implement tfprotov6.ProviderServer (missing method CallFunction) | internal/testing/testsdk/providerserver/providerserver_protov5.go:14:34: cannot use Protov5ProviderServer{} (value of struct type Protov5ProviderServer) as tfprotov5.ProviderServer value in variable declaration: Protov5ProviderServer does not implement tfprotov5.ProviderServer (missing method CallFunction)
+  FAILED terraform-plugin-testing@e3316c0f04a6..01b86e95: wrong_go: /home/runner/go/pkg/mod/github.com/hashicorp/terraform-plugin-sdk/v2@v2.32.0/helper/schema/grpc_provider.go:1321:3: unknown field Diagnostics in struct literal of type tfprotov5.CallFunctionResponse
+
+13 windows in 15s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 2 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`

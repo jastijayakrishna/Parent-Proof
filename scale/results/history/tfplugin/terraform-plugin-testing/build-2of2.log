@@ -1,0 +1,18 @@
+time=2026-10-21T09:15:21.941Z level=INFO msg=cloning repo=terraform-plugin-go url=https://github.com/hashicorp/terraform-plugin-go.git
+time=2026-10-21T09:15:23.556Z level=INFO msg=cloning repo=terraform-plugin-testing url=https://github.com/hashicorp/terraform-plugin-testing.git
+time=2026-10-21T09:15:26.936Z level=INFO msg=mined consumer=terraform-plugin-testing pin_moves=26 to_compile=13 skipped=map[]
+time=2026-10-21T09:15:50.012Z level=INFO msg=canary consumer=terraform-plugin-testing at=08dd5f02ff7aff2d6dcc60cee1aa446c31637f69^ outcome=breaks detail="canary: github.com/hashicorp/terraform-plugin-go/tfprotov6 removed."
+time=2026-10-21T09:16:04.648Z level=INFO msg=window consumer=terraform-plugin-testing bump=08dd5f02 select=breaking breaking=4 compiler=compiles
+time=2026-10-21T09:16:16.116Z level=INFO msg=window consumer=terraform-plugin-testing bump=1453c639 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:16:28.410Z level=INFO msg=window consumer=terraform-plugin-testing bump=4da90ede select=breaking breaking=4 compiler=breaks
+time=2026-10-21T09:16:38.940Z level=INFO msg=window consumer=terraform-plugin-testing bump=5bac538f select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:16:44.420Z level=INFO msg=window consumer=terraform-plugin-testing bump=7ae4318d select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:17:03.099Z level=INFO msg=window consumer=terraform-plugin-testing bump=99ed7b5e select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:17:07.981Z level=INFO msg=window consumer=terraform-plugin-testing bump=aa67c757 select=breaking breaking=14 compiler=compiles
+time=2026-10-21T09:17:23.240Z level=INFO msg=window consumer=terraform-plugin-testing bump=c169f566 select=breaking breaking=60 compiler=compiles
+time=2026-10-21T09:17:24.739Z level=INFO msg=window consumer=terraform-plugin-testing bump=cb1f2b6f select=additive breaking=0 compiler=breaks
+time=2026-10-21T09:17:38.642Z level=INFO msg=window consumer=terraform-plugin-testing bump=e3316c0f select=breaking breaking=8 compiler=breaks
+time=2026-10-21T09:17:43.334Z level=INFO msg=window consumer=terraform-plugin-testing bump=d6234147 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:17:45.862Z level=INFO msg=window consumer=terraform-plugin-testing bump=eaab4a69 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:17:51.805Z level=INFO msg=window consumer=terraform-plugin-testing bump=fa89bd8d select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:17:51.805Z level=INFO msg="suite built" suite=tfplugin windows_added=13
