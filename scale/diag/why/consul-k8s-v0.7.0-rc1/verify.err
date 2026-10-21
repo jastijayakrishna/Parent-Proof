@@ -1,0 +1,3 @@
+Analyzing control-plane ...
+  control-plane: Go, 273 packages read (19.1s)
+exit 3

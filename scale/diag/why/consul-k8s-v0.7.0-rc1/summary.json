@@ -1,0 +1,632 @@
+{
+ "verdict": "NO_GO",
+ "aspects": {
+  "generated_code": "GO",
+  "runtime": "GO",
+  "source_build": "NO_GO"
+ },
+ "changes": 17,
+ "go_only": null,
+ "contract_files": 19,
+ "provider_api_error": null,
+ "generated_gone": [
+  "github.com/hashicorp/consul/proto-public/pbserverdiscovery.ServerDiscoveryService_WatchServersClient.Recv"
+ ],
+ "contract_outside": null,
+ "findings": [
+  {
+   "rule": "GO_GENERATED_REMOVED_USED_BY_CALLER",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "go",
+    "name": "github.com/hashicorp/consul/proto-public/pbserverdiscovery.ServerDiscoveryService_WatchServersClient.Recv"
+   },
+   "reason": null,
+   "detail": "the regenerated code no longer declares pbserverdiscovery.ServerDiscoveryService_WatchServersClient.Recv, which the caller uses; the caller will not compile"
+  },
+  {
+   "rule": "GO_GENERATED_REMOVED_USED_BY_CALLER",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "go",
+    "name": "github.com/hashicorp/consul/proto-public/pbserverdiscovery.ServerDiscoveryService_WatchServersClient.Recv"
+   },
+   "reason": null,
+   "detail": "the regenerated code no longer declares pbserverdiscovery.ServerDiscoveryService_WatchServersClient.Recv, which the caller uses; the caller will not compile"
+  },
+  {
+   "rule": "GO_API_CHANGED_USED_BY_CALLER",
+   "outcome": "UNKNOWN",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "go",
+    "name": "github.com/hashicorp/consul/sdk/iptables.Setup"
+   },
+   "reason": "GO_API_CHANGED_USED_BY_CALLER",
+   "detail": "the provider's Go code changes the declaration of iptables.Setup, which the caller uses: whether the caller still compiles is not checked"
+  }
+ ],
+ "callers": [
+  {
+   "unit": "control-plane",
+   "outcome": "NO_GO"
+  },
+  {
+   "unit": "control-plane (library)",
+   "outcome": "NO_GO"
+  },
+  {
+   "unit": "lint-api-new-client",
+   "outcome": "GO"
+  }
+ ],
+ "provider_api_facts": {
+  "version": "goapi/v2",
+  "modules": "{\"github.com/denverdino/aliyungo\": \"\", \"github.com/golang/groupcache\": \"\", \"github.com/google/gnostic-models\": \"\", \"github.com/google/s2a-go\": \"\", \"github.com/googleapis/gax-go/v2\": \"\", \"github.com/hashicorp/consul/api\": \"api\", \"github.com/hashicorp/consul/sdk\": \"sdk\", \"go.opencensus.io\": \"\", \"google.golang.org/appengine\": \"\", \"k8s.io/api\": \"\", \"k8s.io/apiextensions-apiserver\": \"\", \"k8s.io/apimach",
+  "decls": "{\"github.com/hashicorp/consul/api.ACL\": {\"head\": true, \"base\": true, \"methods\": [\"AuthMethodCreate\", \"AuthMethodDelete\", \"AuthMethodList\", \"AuthMethodRead\", \"AuthMethodUpdate\", \"BindingRuleCreate\", \"BindingRuleDelete\", \"BindingRuleList\", \"BindingRuleRead\", \"BindingRuleUpdate\", \"Bootstrap\", \"BootstrapWithToken\", \"Clone\", \"Create\", \"Destroy\", \"Info\", \"List\", \"Login\", \"Logout\", \"OIDCAuthURL\", \"OIDCCa"
+ },
+ "caller_provider_api_uses": 2857,
+ "caller_provider_api_sample": [
+  {
+   "module": "github.com/denverdino/aliyungo",
+   "version": "v0.0.0-20170926055100-d3308649c661",
+   "package": "github.com/denverdino/aliyungo/common",
+   "name": "Client",
+   "member": "SetUserAgent",
+   "via": "github.com/denverdino/aliyungo/ecs.Client",
+   "location": {
+    "file": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530/provider/aliyun/aliyun_discover.go",
+    "line": 67,
+    "column": 7
+   },
+   "snippet": "svc.SetUserAgent",
+   "count": 1,
+   "in": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530"
+  },
+  {
+   "module": "github.com/denverdino/aliyungo",
+   "version": "v0.0.0-20170926055100-d3308649c661",
+   "package": "github.com/denverdino/aliyungo/common",
+   "name": "PaginationResult",
+   "member": "TotalCount",
+   "via": "github.com/denverdino/aliyungo/ecs.DescribeInstancesResponse",
+   "location": {
+    "file": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530/provider/aliyun/aliyun_discover.go",
+    "line": 83,
+    "column": 69
+   },
+   "snippet": "resp.TotalCount",
+   "count": 1,
+   "in": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530"
+  },
+  {
+   "module": "github.com/denverdino/aliyungo",
+   "version": "v0.0.0-20170926055100-d3308649c661",
+   "package": "github.com/denverdino/aliyungo/common",
+   "name": "Region",
+   "location": {
+    "file": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530/provider/aliyun/aliyun_discover.go",
+    "line": 72,
+    "column": 20
+   },
+   "snippet": "Region",
+   "count": 1,
+   "in": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530"
+  },
+  {
+   "module": "github.com/denverdino/aliyungo",
+   "version": "v0.0.0-20170926055100-d3308649c661",
+   "package": "github.com/denverdino/aliyungo/ecs",
+   "name": "Client",
+   "member": "DescribeInstancesWithRaw",
+   "location": {
+    "file": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530/provider/aliyun/aliyun_discover.go",
+    "line": 71,
+    "column": 19
+   },
+   "snippet": "svc.DescribeInstancesWithRaw",
+   "count": 1,
+   "in": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530"
+  },
+  {
+   "module": "github.com/denverdino/aliyungo",
+   "version": "v0.0.0-20170926055100-d3308649c661",
+   "package": "github.com/denverdino/aliyungo/ecs",
+   "name": "DescribeInstancesArgs",
+   "location": {
+    "file": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530/provider/aliyun/aliyun_discover.go",
+    "line": 71,
+    "column": 49
+   },
+   "snippet": "DescribeInstancesArgs",
+   "count": 1,
+   "in": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530"
+  },
+  {
+   "module": "github.com/denverdino/aliyungo",
+   "version": "v0.0.0-20170926055100-d3308649c661",
+   "package": "github.com/denverdino/aliyungo/ecs",
+   "name": "DescribeInstancesResponse",
+   "member": "Instances",
+   "location": {
+    "file": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530/provider/aliyun/aliyun_discover.go",
+    "line": 86,
+    "column": 46
+   },
+   "snippet": "resp.Instances",
+   "count": 1,
+   "in": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530"
+  },
+  {
+   "module": "github.com/denverdino/aliyungo",
+   "version": "v0.0.0-20170926055100-d3308649c661",
+   "package": "github.com/denverdino/aliyungo/ecs",
+   "name": "InstanceAttributesType",
+   "member": "InnerIpAddress",
+   "location": {
+    "file": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530/provider/aliyun/aliyun_discover.go",
+    "line": 89,
+    "column": 53
+   },
+   "snippet": "instanceAttributesType.InnerIpAddress",
+   "count": 1,
+   "in": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530"
+  },
+  {
+   "module": "github.com/denverdino/aliyungo",
+   "version": "v0.0.0-20170926055100-d3308649c661",
+   "package": "github.com/denverdino/aliyungo/ecs",
+   "name": "InstanceAttributesType",
+   "member": "InstanceId",
+   "location": {
+    "file": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530/provider/aliyun/aliyun_discover.go",
+    "line": 90,
+    "column": 95
+   },
+   "snippet": "instanceAttributesType.InstanceId",
+   "count": 2,
+   "in": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530"
+  },
+  {
+   "module": "github.com/denverdino/aliyungo",
+   "version": "v0.0.0-20170926055100-d3308649c661",
+   "package": "github.com/denverdino/aliyungo/ecs",
+   "name": "InstanceAttributesType",
+   "member": "InstanceNetworkType",
+   "location": {
+    "file": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530/provider/aliyun/aliyun_discover.go",
+    "line": 87,
+    "column": 33
+   },
+   "snippet": "instanceAttributesType.InstanceNetworkType",
+   "count": 1,
+   "in": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530"
+  },
+  {
+   "module": "github.com/denverdino/aliyungo",
+   "version": "v0.0.0-20170926055100-d3308649c661",
+   "package": "github.com/denverdino/aliyungo/ecs",
+   "name": "InstanceAttributesType",
+   "member": "VpcAttributes",
+   "location": {
+    "file": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530/provider/aliyun/aliyun_discover.go",
+    "line": 94,
+    "column": 53
+   },
+   "snippet": "instanceAttributesType.VpcAttributes",
+   "count": 1,
+   "in": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530"
+  },
+  {
+   "module": "github.com/denverdino/aliyungo",
+   "version": "v0.0.0-20170926055100-d3308649c661",
+   "package": "github.com/denverdino/aliyungo/ecs",
+   "name": "IpAddressSetType",
+   "member": "IpAddress",
+   "location": {
+    "file": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530/provider/aliyun/aliyun_discover.go",
+    "line": 89,
+    "column": 68
+   },
+   "snippet": "instanceAttributesType.InnerIpAddress.IpAddress",
+   "count": 2,
+   "in": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530"
+  },
+  {
+   "module": "github.com/denverdino/aliyungo",
+   "version": "v0.0.0-20170926055100-d3308649c661",
+   "package": "github.com/denverdino/aliyungo/ecs",
+   "name": "NewClient",
+   "location": {
+    "file": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530/provider/aliyun/aliyun_discover.go",
+    "line": 64,
+    "column": 13
+   },
+   "snippet": "NewClient",
+   "count": 1,
+   "in": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530"
+  },
+  {
+   "module": "github.com/denverdino/aliyungo",
+   "version": "v0.0.0-20170926055100-d3308649c661",
+   "package": "github.com/denverdino/aliyungo/ecs",
+   "name": "Running",
+   "location": {
+    "file": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530/provider/aliyun/aliyun_discover.go",
+    "line": 73,
+    "column": 17
+   },
+   "snippet": "Running",
+   "count": 1,
+   "in": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530"
+  },
+  {
+   "module": "github.com/denverdino/aliyungo",
+   "version": "v0.0.0-20170926055100-d3308649c661",
+   "package": "github.com/denverdino/aliyungo/ecs",
+   "name": "VpcAttributesType",
+   "member": "PrivateIpAddress",
+   "location": {
+    "file": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530/provider/aliyun/aliyun_discover.go",
+    "line": 94,
+    "column": 67
+   },
+   "snippet": "instanceAttributesType.VpcAttributes.PrivateIpAddress",
+   "count": 1,
+   "in": "github.com/hashicorp/go-discover@v0.0.0-20230519164032-214571b6a530"
+  },
+  {
+   "module": "github.com/golang/groupcache",
+   "version": "v0.0.0-20210331224755-41bb18bfe9da",
+   "package": "github.com/golang/groupcache/lru",
+   "name": "Cache",
+   "member": "Add",
+   "location": {
+    "file": "k8s.io/client-go@v0.29.8/tools/record/events_cache.go",
+    "line": 152,
+    "column": 10
+   },
+   "count": 4,
+   "in": "k8s.io/client-go@v0.29.8"
+  },
+  {
+   "module": "github.com/golang/groupcache",
+   "version": "v0.0.0-20210331224755-41bb18bfe9da",
+   "package": "github.com/golang/groupcache/lru",
+   "name": "Cache",
+   "member": "Get",
+   "location": {
+    "file": "k8s.io/client-go@v0.29.8/tools/record/events_cache.go",
+    "line": 138,
+    "column": 26
+   },
+   "count": 3,
+   "in": "k8s.io/client-go@v0.29.8"
+  },
+  {
+   "module": "github.com/golang/groupcache",
+   "version": "v0.0.0-20210331224755-41bb18bfe9da",
+   "package": "github.com/golang/groupcache/lru",
+   "name": "Cache",
+   "location": {
+    "file": "k8s.io/client-go@v0.29.8/tools/record/events_cache.go",
+    "line": 96,
+    "column": 13
+   },
+   "count": 3,
+   "in": "k8s.io/client-go@v0.29.8"
+  },
+  {
+   "module": "github.com/golang/groupcache",
+   "version": "v0.0.0-20210331224755-41bb18bfe9da",
+   "package": "github.com/golang/groupcache/lru",
+   "name": "New",
+   "location": {
+    "file": "k8s.io/client-go@v0.29.8/tools/record/events_cache.go",
+    "line": 114,
+    "column": 20
+   },
+   "count": 3,
+   "in": "k8s.io/client-go@v0.29.8"
+  },
+  {
+   "module": "github.com/google/gnostic-models",
+   "version": "v0.6.8",
+   "package": "github.com/google/gnostic-models/openapiv2",
+   "name": "Any",
+   "member": "ToRawInfo",
+   "location": {
+    "file": "k8s.io/kube-openapi@v0.0.0-20231010175941-2dd684a91f00/pkg/validation/spec/gnostic.go",
+    "line": 101,
+    "column": 16
+   },
+   "snippet": "alJSON mars",
+   "count": 9,
+   "in": "k8s.io/kube-openapi@v0.0.0-20231010175941-2dd684a91f00"
+  },
+  {
+   "module": "github.com/google/gnostic-models",
+   "version": "v0.6.8",
+   "package": "github.com/google/gnostic-models/openapiv3",
+   "name": "DefaultType",
+   "member": "ToRawInfo",
+   "location": {
+    "file": "k8s.io/kube-openapi@v0.0.0-20231010175941-2dd684a91f00/pkg/util/proto/document_v3.go",
+    "line": 291,
+    "column": 46
+   },
+   "count": 1,
+   "in": "k8s.io/kube-openapi@v0.0.0-20231010175941-2dd684a91f00"
+  },
+  {
+   "module": "github.com/google/gnostic-models",
+   "version": "v0.6.8",
+   "package": "github.com/google/gnostic-models/openapiv3",
+   "name": "ParseDocument",
+   "location": {
+    "file": "k8s.io/kube-openapi@v0.0.0-20231010175941-2dd684a91f00/pkg/handler3/handler.go",
+    "line": 63,
+    "column": 30
+   },
+   "snippet": "ParseDocument",
+   "count": 1,
+   "in": "k8s.io/kube-openapi@v0.0.0-20231010175941-2dd684a91f00"
+  },
+  {
+   "module": "github.com/google/s2a-go",
+   "version": "v0.1.4",
+   "package": "github.com/google/s2a-go",
+   "name": "ClientOptions",
+   "location": {
+    "file": "google.golang.org/api@v0.126.0/internal/cba.go",
+    "line": 235,
+    "column": 52
+   },
+   "count": 2,
+   "in": "google.golang.org/api@v0.126.0"
+  },
+  {
+   "module": "github.com/google/s2a-go",
+   "version": "v0.1.4",
+   "package": "github.com/google/s2a-go",
+   "name": "FallbackDialer",
+   "location": {
+    "file": "google.golang.org/api@v0.126.0/internal/cba.go",
+    "line": 263,
+    "column": 26
+   },
+   "count": 1,
+   "in": "google.golang.org/api@v0.126.0"
+  },
+  {
+   "module": "github.com/google/s2a-go",
+   "version": "v0.1.4",
+   "package": "github.com/google/s2a-go",
+   "name": "FallbackOptions",
+   "location": {
+    "file": "google.golang.org/api@v0.126.0/internal/cba.go",
+    "line": 227,
+    "column": 24
+   },
+   "count": 4,
+   "in": "google.golang.org/api@v0.126.0"
+  },
+  {
+   "module": "github.com/google/s2a-go",
+   "version": "v0.1.4",
+   "package": "github.com/google/s2a-go",
+   "name": "NewClientCreds",
+   "location": {
+    "file": "google.golang.org/api@v0.126.0/internal/cba.go",
+    "line": 235,
+    "column": 32
+   },
+   "count": 1,
+   "in": "google.golang.org/api@v0.126.0"
+  },
+  {
+   "module": "github.com/google/s2a-go",
+   "version": "v0.1.4",
+   "package": "github.com/google/s2a-go",
+   "name": "NewS2ADialTLSContextFunc",
+   "location": {
+    "file": "google.golang.org/api@v0.126.0/internal/cba.go",
+    "line": 271,
+    "column": 28
+   },
+   "count": 1,
+   "in": "google.golang.org/api@v0.126.0"
+  },
+  {
+   "module": "github.com/google/s2a-go",
+   "version": "v0.1.4",
+   "package": "github.com/google/s2a-go/fallback",
+   "name": "DefaultFallbackClientHandshakeFunc",
+   "location": {
+    "file": "google.golang.org/api@v0.126.0/internal/cba.go",
+    "line": 229,
+    "column": 40
+   },
+   "count": 1,
+   "in": "google.golang.org/api@v0.126.0"
+  },
+  {
+   "module": "github.com/google/s2a-go",
+   "version": "v0.1.4",
+   "package": "github.com/google/s2a-go/fallback",
+   "name": "DefaultFallbackDialerAndAddress",
+   "location": {
+    "file": "google.golang.org/api@v0.126.0/internal/cba.go",
+    "line": 261,
+    "column": 58
+   },
+   "count": 1,
+   "in": "google.golang.org/api@v0.126.0"
+  },
+  {
+   "module": "github.com/googleapis/gax-go/v2",
+   "version": "v2.11.0",
+   "package": "github.com/googleapis/gax-go/v2",
+   "name": "Backoff",
+   "member": "Initial",
+   "location": {
+    "file": "google.golang.org/api@v0.126.0/internal/gensupport/retry.go",
+    "line": 99,
+    "column": 25
+   },
+   "count": 2,
+   "in": "google.golang.org/api@v0.126.0"
+  },
+  {
+   "module": "github.com/googleapis/gax-go/v2",
+   "version": "v2.11.0",
+   "package": "github.com/googleapis/gax-go/v2",
+   "name": "Backoff",
+   "member": "Max",
+   "location": {
+    "file": "google.golang.org/api@v0.126.0/internal/gensupport/retry.go",
+    "line": 100,
+    "column": 25
+   },
+   "count": 2,
+   "in": "google.golang.org/api@v0.126.0"
+  },
+  {
+   "module": "github.com/googleapis/gax-go/v2",
+   "version": "v2.11.0",
+   "package": "github.com/googleapis/gax-go/v2",
+   "name": "Backoff",
+   "member": "Multiplier",
+   "location": {
+    "file": "google.golang.org/api@v0.126.0/internal/gensupport/retry.go",
+    "line": 101,
+    "column": 25
+   },
+   "count": 2,
+   "in": "google.golang.org/api@v0.126.0"
+  },
+  {
+   "module": "github.com/googleapis/gax-go/v2",
+   "version": "v2.11.0",
+   "package": "github.com/googleapis/gax-go/v2",
+   "name": "Backoff",
+   "location": {
+    "file": "google.golang.org/api@v0.126.0/internal/gensupport/retry.go",
+    "line": 30,
+    "column": 15
+   },
+   "snippet": "string",
+   "count": 4,
+   "in": "google.golang.org/api@v0.126.0"
+  },
+  {
+   "module": "github.com/googleapis/gax-go/v2",
+   "version": "v2.11.0",
+   "package": "github.com/googleapis/gax-go/v2",
+   "name": "DetermineContentType",
+   "location": {
+    "file": "google.golang.org/api@v0.126.0/internal/gensupport/media.go",
+    "line": 156,
+    "column": 22
+   },
+   "count": 2,
+   "in": "google.golang.org/api@v0.126.0"
+  },
+  {
+   "module": "github.com/googleapis/gax-go/v2",
+   "version": "v2.11.0",
+   "package": "github.com/googleapis/gax-go/v2/apierror",
+   "name": "ParseError",
+   "location": {
+    "file": "google.golang.org/api@v0.126.0/internal/gensupport/error.go",
+    "line": 19,
+    "column": 27
+   },
+   "snippet": "= 0 { ...",
+   "count": 1,
+   "in": "google.golang.org/api@v0.126.0"
+  },
+  {
+   "module": "github.com/hashicorp/consul/api",
+   "version": "v1.32.2-0.20250922125912-57fdfe125310",
+   "package": "github.com/hashicorp/consul/api",
+   "name": "ACL",
+   "member": "AuthMethodCreate",
+   "location": {
+    "file": "subcommand/server-acl-init/command.go",
+    "line": 743,
+    "column": 42
+   },
+   "count": 2
+  },
+  {
+   "module": "github.com/hashicorp/consul/api",
+   "version": "v1.32.2-0.20250922125912-57fdfe125310",
+   "package": "github.com/hashicorp/consul/api",
+   "name": "ACL",
+   "member": "BindingRuleCreate",
+   "location": {
+    "file": "api-gateway/cache/consul.go",
+    "line": 577,
+    "column": 29
+   },
+   "count": 3
+  },
+  {
+   "module": "github.com/hashicorp/consul/api",
+   "version": "v1.32.2-0.20250922125912-57fdfe125310",
+   "package": "github.com/hashicorp/consul/api",
+   "name": "ACL",
+   "member": "BindingRuleDelete",
+   "location": {
+    "file": "api-gateway/binding/cleanup.go",
+    "line": 99,
+    "column": 26
+   },
+   "snippet": "g whether or ...",
+   "count": 2
+  },
+  {
+   "module": "github.com/hashicorp/consul/api",
+   "version": "v1.32.2-0.20250922125912-57fdfe125310",
+   "package": "github.com/hashicorp/consul/api",
+   "name": "ACL",
+   "member": "BindingRuleList",
+   "location": {
+    "file": "api-gateway/binding/cleanup.go",
+    "line": 69,
+    "column": 40
+   },
+   "snippet": ":  {}, ...",
+   "count": 3
+  },
+  {
+   "module": "github.com/hashicorp/consul/api",
+   "version": "v1.32.2-0.20250922125912-57fdfe125310",
+   "package": "github.com/hashicorp/consul/api",
+   "name": "ACL",
+   "member": "BindingRuleUpdate",
+   "location": {
+    "file": "api-gateway/cache/consul.go",
+    "line": 588,
+    "column": 27
+   },
+   "count": 2
+  },
+  {
+   "module": "github.com/hashicorp/consul/api",
+   "version": "v1.32.2-0.20250922125912-57fdfe125310",
+   "package": "github.com/hashicorp/consul/api",
+   "name": "ACL",
+   "member": "Bootstrap",
+   "location": {
+    "file": "subcommand/server-acl-init/servers.go",
+    "line": 76,
+    "column": 48
+   },
+   "count": 1
+  }
+ ]
+}
