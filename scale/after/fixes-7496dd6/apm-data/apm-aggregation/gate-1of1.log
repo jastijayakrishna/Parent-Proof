@@ -1,0 +1,35 @@
+time=2026-10-21T10:52:33.588Z level=INFO msg=cloning repo=apm-aggregation url=https://github.com/elastic/apm-aggregation.git
+time=2026-10-21T10:52:34.526Z level=INFO msg=cloning repo=apm-data url=https://github.com/elastic/apm-data.git
+apm-aggregation 0addc06a NO_GO    source_build=NO_GO   compiler=breaks            12.0s replay=true 
+apm-aggregation 0edaadee NO_GO    source_build=NO_GO   compiler=breaks            12.1s replay=true 
+apm-aggregation 2328b798 GO       source_build=GO      compiler=compiles           5.2s replay=true 
+apm-aggregation 28945669 GO       source_build=GO      compiler=compiles           6.4s replay=true 
+apm-aggregation 461c4f56 GO       source_build=GO      compiler=compiles           2.5s replay=true 
+apm-aggregation 404b82fe GO       source_build=GO      compiler=compiles           4.5s replay=true 
+apm-aggregation 5c307e3c GO       source_build=GO      compiler=compiles           2.5s replay=true 
+apm-aggregation 4c6fcdf9 GO       source_build=GO      compiler=compiles           3.6s replay=true 
+apm-aggregation 769a38de GO       source_build=GO      compiler=compiles           2.3s replay=true 
+apm-aggregation 78454528 GO       source_build=GO      compiler=compiles           2.3s replay=true 
+apm-aggregation 8bb2e5c7 GO       source_build=GO      compiler=compiles           2.6s replay=true 
+apm-aggregation 8320d088 GO       source_build=GO      compiler=compiles           3.2s replay=true 
+apm-aggregation 968f8036 GO       source_build=GO      compiler=compiles           4.2s replay=true 
+apm-aggregation 92a5354f GO       source_build=GO      compiler=compiles           5.3s replay=true 
+apm-aggregation 9f02546c GO       source_build=GO      compiler=compiles           2.1s replay=true 
+apm-aggregation 9f2ca7df GO       source_build=GO      compiler=compiles           2.1s replay=true 
+apm-aggregation b22aefd8 GO       source_build=GO      compiler=compiles           2.7s replay=true 
+apm-aggregation c82b2b7e NO_GO    source_build=NO_GO   compiler=breaks             2.9s replay=true 
+apm-aggregation cdee9c68 NO_GO    source_build=NO_GO   compiler=breaks             2.1s replay=true 
+apm-aggregation d6e4828a GO       source_build=GO      compiler=compiles           2.8s replay=true 
+apm-aggregation e4ab9e25 NO_GO    source_build=NO_GO   compiler=breaks             2.8s replay=true 
+apm-aggregation eb29ba50 GO       source_build=GO      compiler=baseline_fails     6.0s replay=true 
+apm-aggregation f7831e2c GO       source_build=GO      compiler=compiles           0.0s replay=true 
+apm-aggregation f2c08952 GO       source_build=GO      compiler=baseline_fails     6.3s replay=true 
+apm-aggregation fe64c41f GO       source_build=GO      compiler=compiles           1.9s replay=true 
+apm-aggregation/additive windows=  3 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 3: GO= 3 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=3 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=3
+apm-aggregation/breaking windows=  5 | breaks= 5: caught= 5 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=5 broken=5 RUNTIME_WRONG_GO=0 confirmed=5 unconfirmed=0 | errors=0 | replayed=5
+apm-aggregation/unchanged windows= 17 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=15: GO=15 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=2 (NO-GO 0, UNKNOWN 0, GO 2) | wire: judged=17 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=17
+TOTAL                  windows= 25 | breaks= 5: caught= 5 WRONG_GO=0 abstained=0 | compiles=18: GO=18 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=2 (NO-GO 0, UNKNOWN 0, GO 2) | wire: judged=25 broken=5 RUNTIME_WRONG_GO=0 confirmed=5 unconfirmed=0 | errors=0 | replayed=25
+
+25 windows in 51s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 53
