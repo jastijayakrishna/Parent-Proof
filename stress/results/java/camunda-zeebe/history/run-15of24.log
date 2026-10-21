@@ -1,0 +1,4 @@
+camunda-zeebe history: 55 windows, shard 15/24 has 2
+canary at da2043e9a716: breaks (1 files moved) ['clients/java/src/main/java/io/camunda/client/impl/CamundaClientImpl.java:293: package io.camunda.zeebe.gateway.protocol does not exist']
+da2043e9a716 2025-07-24 verifier=None build=None compiler=baseline_fails 53.3s 
+7f602f0b2671 2026-05-19 verifier=GO build=GO compiler=compiles 318.9s 
