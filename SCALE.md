@@ -1,8 +1,8 @@
 # Scale test: real contract changes, judged by the compiler
 
-Updated 2026-10-21 09:35 UTC. Every count below comes from one binary: Parent main `f3db8e9`, sha256 `b494ad99de344acf…` ([bin/VERSION](bin/VERSION)), the build a customer would install today. Rules, fixed before the run: [scale/PREREG.md](scale/PREREG.md).
+Updated 2026-10-21 09:49 UTC. Every count below comes from one binary: Parent main `f3db8e9`, sha256 `b494ad99de344acf…` ([bin/VERSION](bin/VERSION)), the build a customer would install today. Rules, fixed before the run: [scale/PREREG.md](scale/PREREG.md).
 
-**2230 real changes decided; the compiler judged 1699. 204 broke a project's build: Parent said Don't merge on 138, Needs review on 44, and Merge on 22. Of the 1495 safe changes it said Merge on 1223 (81.8%), Don't merge on 25, Needs review on 247.**
+**2439 real changes decided; the compiler judged 1735. 204 broke a project's build: Parent said Don't merge on 138, Needs review on 44, and Merge on 22. Of the 1531 safe changes it said Merge on 1238 (80.9%), Don't merge on 25, Needs review on 268.**
 
 - **Caught**: the change broke the build; Parent said Don't merge, with the file and line.
 - **Stopped with Needs review**: it broke; Parent could not prove which way, so it did not say Merge.
@@ -14,20 +14,20 @@ Updated 2026-10-21 09:35 UTC. Every count below comes from one binary: Parent ma
 
 | | decided | judged by the compiler | broke the build | caught (Don't merge) | stopped with Needs review | **missed (said Merge)** | safe | said Merge on safe | false alarms | needs review on safe |
 |---|---|---|---|---|---|---|---|---|---|---|
-| **New projects, never used before: contract and project new** | 1069 | 783 | 93 | 64 | 18 | **11** | 690 | 548 | 18 | 124 |
-| **New projects: a known contract, a project never used** | 553 | 450 | 56 | 32 | 13 | **11** | 394 | 350 | 4 | 40 |
+| **New projects, never used before: contract and project new** | 1089 | 783 | 93 | 64 | 18 | **11** | 690 | 548 | 18 | 124 |
+| **New projects: a known contract, a project never used** | 593 | 470 | 56 | 32 | 13 | **11** | 414 | 350 | 4 | 60 |
 | History: 9 contract → project pairs, rerun | 179 | 173 | 24 | 21 | 3 | **0** | 149 | 126 | 1 | 22 |
 | Go stress test, rerun: dev | 144 | 82 | 7 | 7 | 0 | **0** | 75 | 63 | 0 | 12 |
 | Go stress test, rerun: hold-out | 256 | 206 | 22 | 12 | 10 | **0** | 184 | 134 | 2 | 48 |
-| Java stress test, rerun: dev | 29 | 5 | 2 | 2 | 0 | **0** | 3 | 2 | 0 | 1 |
-| Java stress test, rerun: hold-out | 0 | 0 | 0 | 0 | 0 | **0** | 0 | 0 | 0 | 0 |
+| Java stress test, rerun: dev | 87 | 21 | 2 | 2 | 0 | **0** | 19 | 17 | 0 | 2 |
+| Java stress test, rerun: hold-out | 91 | 0 | 0 | 0 | 0 | **0** | 0 | 0 | 0 | 0 |
 | Java stress test, rerun: regression | 0 | 0 | 0 | 0 | 0 | **0** | 0 | 0 | 0 | 0 |
 | Open pull requests, decided live | 0 | 0 | 0 | 0 | 0 | **0** | 0 | 0 | 0 | 0 |
-| **All** | 2230 | 1699 | 204 | 138 | 44 | **22** | 1495 | 1223 | 25 | 247 |
+| **All** | 2439 | 1735 | 204 | 138 | 44 | **22** | 1531 | 1238 | 25 | 268 |
 
-Kinds of change: 1568 real upgrades a project made of a contract it uses (its own commit, usually its own pull request); 667 merged or open pull requests of the contract itself, decided against a project that uses it.
+Kinds of change: 1749 real upgrades a project made of a contract it uses (its own commit, usually its own pull request); 727 merged or open pull requests of the contract itself, decided against a project that uses it.
 
-Left out because another binary decided them (rerun pending): Java stress test 967, Open pull requests, live 160.
+Left out because another binary decided them (rerun pending): Java stress test 670, Open pull requests, live 160.
 
 ## Every change that broke a build
 
@@ -272,8 +272,8 @@ Left out because another binary decided them (rerun pending): Java stress test 9
 
 - CONTRACT_COMPILE_ERROR: 83
 - GO_API_CHANGED_USED_BY_CALLER: 73
-- OPTION_CHANGED: 54
-- TOOLCHAIN_TOO_OLD: 36
+- TOOLCHAIN_TOO_OLD: 56
+- OPTION_CHANGED: 55
 - DESCRIPTOR_REFLECTION: 28
 - GENERATED_BINDINGS_UNAVAILABLE: 24
 - SECOND_CHECK_DISAGREES: 21
@@ -344,6 +344,7 @@ Left out because another binary decided them (rerun pending): Java stress test 9
 | tier 1 | sigstore -> timestamp-authority | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 |
 | tier 1 | swapserverrpc (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
 | tier 1 | swapserverrpc -> lightning-terminal | 16 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 16 |
+| tier 1 | taprpc (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
 | tier 1 | taprpc -> lightning-terminal | 12 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 12 |
 | tier 1 | tfplugin (pull requests) | 20 | 20 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
 | tier 1 | tfplugin -> terraform-plugin-framework | 31 | 31 | 4 | 2 | 0 | 2 | 0 | 3 | 0 |
@@ -352,6 +353,7 @@ Left out because another binary decided them (rerun pending): Java stress test 9
 | tier 1 | tfplugin -> terraform-plugin-testing | 26 | 26 | 4 | 2 | 1 | 1 | 0 | 2 | 0 |
 | tier 2 | argo-cd-v2 -> argocd-autopilot | 6 | 4 | 1 | 0 | 1 | 0 | 0 | 2 | 2 |
 | tier 2 | argo-cd-v2 -> argocd-image-updater | 19 | 16 | 1 | 1 | 0 | 0 | 0 | 3 | 3 |
+| tier 2 | argo-cd-v3 (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
 | tier 2 | argo-cd-v3 -> argocd-image-updater | 20 | 16 | 0 | 0 | 0 | 0 | 1 | 2 | 4 |
 | tier 2 | consul-proto-public (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
 | tier 2 | consul-proto-public -> consul-k8s | 25 | 25 | 1 | 1 | 0 | 0 | 0 | 4 | 0 |
@@ -385,8 +387,9 @@ Left out because another binary decided them (rerun pending): Java stress test 9
 | tier 2 | nri -> containerd | 16 | 15 | 1 | 1 | 0 | 0 | 0 | 4 | 1 |
 | tier 2 | nri -> cri-o | 16 | 15 | 1 | 1 | 0 | 0 | 1 | 2 | 1 |
 | tier 2 | temporal-api-new -> temporal-cli | 30 | 30 | 16 | 16 | 0 | 0 | 1 | 0 | 0 |
+| tier 2 | vitess (pull requests) | 20 | 20 | 0 | 0 | 0 | 0 | 0 | 20 | 0 |
 | tier 2 | vitess -> vitess-operator | 40 | 29 | 1 | 1 | 0 | 0 | 0 | 1 | 11 |
 
-Not judged, by reason: baseline_fails 125, judge not verified 125, the provider's repository holds no Go module the consumer builds against 60, bump_side_effect 51, the commit changes no Go file of the module: its generated code is not regenerated with the .proto change, so the build cannot see it 26, oracle_error 19, a changed contract file is outside the module: proto/private/pbconfigentry/config_entry.proto 15, a changed contract file is outside the module: openfga/v1/openfga_service.proto 15, a changed contract file is outside the module: poolrpc/trader.proto 13, a changed contract file is outside the module: looprpc/client.proto 13, a changed contract file is outside the module: auctioneerrpc/auctioneer.proto 11, a changed contract file is outside the module: proto/pulumi/resource.proto 9, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/runtime/bootstrap/v1/bootstrap.proto 5, a changed contract file is outside the module: proto/pulumi/converter.proto 5, a changed contract file is outside the module: server/etcdserver/api/snap/snappb/snap.proto 4, a changed contract file is outside the module: swapserverrpc/staticaddr.proto 4, a changed contract file is outside the module: proto/pulumi/provider.proto 4, a changed contract file is outside the module: swapserverrpc/server.proto 3, a changed contract file is outside the module: proto/private/pbservice/node.proto 2, a changed contract file is outside the module: vendor/github.com/containerd/nri/pkg/api/api.proto 2, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/events/content.proto 2, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/types/runc/options/oci.proto 2, a changed contract file is outside the module: server/storage/wal/walpb/record.proto 2, a changed contract file is outside the module: openfga/v1/errors_ignore.proto 2, a changed contract file is outside the module: openfga/v1/openfga.proto 2, a changed contract file is outside the module: agent/grpc-middleware/testutil/testservice/simple.proto 1, a changed contract file is outside the module: proto/private/pbservice/service.proto 1, a changed contract file is outside the module: proto/private/pbsubscribe/subscribe.proto 1, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/runtime/sandbox/v1/sandbox.proto 1, a changed contract file is outside the module: vendor/k8s.io/api/core/v1/generated.proto 1, a changed contract file is outside the module: vendor/github.com/containers/ocicrypt/utils/keyprovider/keyprovider.proto 1, a changed contract file is outside the module: vendor/k8s.io/cri-api/pkg/apis/runtime/v1/api.proto 1, a changed contract file is outside the module: vendor/github.com/containerd/ttrpc/request.proto 1, a changed contract file is outside the module: vendor/github.com/Microsoft/hcsshim/cmd/containerd-shim-runhcs-v1/options/runhcs.proto 1, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/services/tasks/v1/tasks.proto 1, a changed contract file is outside the module: server/lease/leasepb/lease.proto 1, a changed contract file is outside the module: server/etcdserver/api/v3election/v3electionpb/v3election.proto 1, a changed contract file is outside the module: authzen/v1/authzen_service.proto 1, a changed contract file is outside the module: proto/pulumi/language.proto 1, a changed contract file is outside the module: proto/pulumi/callback.proto 1.
+Not judged, by reason: judge not verified 174, baseline_fails 171, oracle_error 74, not_built 69, the provider's repository holds no Go module the consumer builds against 60, bump_side_effect 51, the commit changes no Go file of the module: its generated code is not regenerated with the .proto change, so the build cannot see it 26, a changed contract file is outside the module: proto/private/pbconfigentry/config_entry.proto 15, a changed contract file is outside the module: openfga/v1/openfga_service.proto 15, a changed contract file is outside the module: poolrpc/trader.proto 13, a changed contract file is outside the module: looprpc/client.proto 13, a changed contract file is outside the module: auctioneerrpc/auctioneer.proto 11, a changed contract file is outside the module: proto/pulumi/resource.proto 9, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/runtime/bootstrap/v1/bootstrap.proto 5, a changed contract file is outside the module: proto/pulumi/converter.proto 5, a changed contract file is outside the module: server/etcdserver/api/snap/snappb/snap.proto 4, a changed contract file is outside the module: swapserverrpc/staticaddr.proto 4, a changed contract file is outside the module: proto/pulumi/provider.proto 4, a changed contract file is outside the module: swapserverrpc/server.proto 3, a changed contract file is outside the module: proto/private/pbservice/node.proto 2, a changed contract file is outside the module: vendor/github.com/containerd/nri/pkg/api/api.proto 2, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/events/content.proto 2, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/types/runc/options/oci.proto 2, a changed contract file is outside the module: server/storage/wal/walpb/record.proto 2, a changed contract file is outside the module: openfga/v1/errors_ignore.proto 2, a changed contract file is outside the module: openfga/v1/openfga.proto 2, a changed contract file is outside the module: agent/grpc-middleware/testutil/testservice/simple.proto 1, a changed contract file is outside the module: proto/private/pbservice/service.proto 1, a changed contract file is outside the module: proto/private/pbsubscribe/subscribe.proto 1, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/runtime/sandbox/v1/sandbox.proto 1, a changed contract file is outside the module: vendor/k8s.io/api/core/v1/generated.proto 1, a changed contract file is outside the module: vendor/github.com/containers/ocicrypt/utils/keyprovider/keyprovider.proto 1, a changed contract file is outside the module: vendor/k8s.io/cri-api/pkg/apis/runtime/v1/api.proto 1, a changed contract file is outside the module: vendor/github.com/containerd/ttrpc/request.proto 1, a changed contract file is outside the module: vendor/github.com/Microsoft/hcsshim/cmd/containerd-shim-runhcs-v1/options/runhcs.proto 1, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/services/tasks/v1/tasks.proto 1, a changed contract file is outside the module: server/lease/leasepb/lease.proto 1, a changed contract file is outside the module: server/etcdserver/api/v3election/v3electionpb/v3election.proto 1, a changed contract file is outside the module: authzen/v1/authzen_service.proto 1, a changed contract file is outside the module: proto/pulumi/language.proto 1, a changed contract file is outside the module: proto/pulumi/callback.proto 1.
 
 Errors: 0.
