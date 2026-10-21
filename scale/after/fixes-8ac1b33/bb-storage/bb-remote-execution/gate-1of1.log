@@ -1,0 +1,41 @@
+ecution 93cc4402 GO       source_build=GO      compiler=compiles          15.0s replay=true 
+bb-remote-execution 947d8e2c UNKNOWN  source_build=UNKNOWN compiler=compiles           7.3s replay=true 
+bb-remote-execution 9b1e3637 NO_GO    source_build=GO      compiler=compiles          15.9s replay=true 
+bb-remote-execution 9a07f5c9 GO       source_build=GO      compiler=compiles          16.6s replay=true 
+bb-remote-execution 9c26bb06 GO       source_build=GO      compiler=compiles           7.0s replay=true 
+bb-remote-execution a3a263e8 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+bb-remote-execution 9dbd838f GO       source_build=GO      compiler=compiles          10.4s replay=true 
+bb-remote-execution a750e60f UNKNOWN  source_build=GO      compiler=compiles           6.5s replay=true 
+bb-remote-execution b1589bb8 GO       source_build=GO      compiler=compiles           6.7s replay=true 
+bb-remote-execution ae26acb2 NO_GO    source_build=NO_GO   compiler=breaks            11.9s replay=true 
+bb-remote-execution b66a0fb8 GO       source_build=GO      compiler=compiles           6.7s replay=true 
+bb-remote-execution b7e61b2f UNKNOWN  source_build=GO      compiler=compiles          17.1s replay=true 
+bb-remote-execution c1349dff NO_GO    source_build=UNKNOWN compiler=breaks            14.4s replay=true 
+bb-remote-execution c453f856 GO       source_build=GO      compiler=compiles          10.6s replay=true 
+bb-remote-execution ca77ec14 NO_GO    source_build=NO_GO   compiler=breaks            12.6s replay=true 
+bb-remote-execution c48dcda5 UNKNOWN  source_build=UNKNOWN compiler=breaks            22.9s replay=true 
+bb-remote-execution d42ff456 GO       source_build=GO      compiler=compiles           5.8s replay=true 
+bb-remote-execution d8a2b258 GO       source_build=GO      compiler=compiles           8.0s replay=true 
+bb-remote-execution db78144f UNKNOWN  source_build=UNKNOWN compiler=breaks            14.8s replay=true 
+bb-remote-execution de7f55ed GO       source_build=GO      compiler=compiles          11.6s replay=true 
+bb-remote-execution ea22f37f GO       source_build=GO      compiler=compiles           0.1s replay=true 
+bb-remote-execution ea06b049 NO_GO    source_build=NO_GO   compiler=breaks             6.3s replay=true 
+bb-remote-execution efef252c GO       source_build=GO      compiler=compiles           7.1s replay=true 
+bb-remote-execution ed02b7a0 GO       source_build=GO      compiler=compiles          15.7s replay=true 
+bb-remote-execution f6cf6bb8 GO       source_build=GO      compiler=compiles           5.3s replay=true 
+bb-remote-execution f978d18f GO       source_build=GO      compiler=compiles           0.1s replay=true 
+bb-remote-execution fa5964b7 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+bb-remote-execution f84a2c0f GO       source_build=GO      compiler=compiles           9.2s replay=true 
+bb-remote-execution/additive windows=  6 | breaks= 3: caught= 2 WRONG_GO=0 abstained=1 | compiles= 3: GO= 3 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=6 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=6
+bb-remote-execution/breaking windows=  9 | breaks= 3: caught= 2 WRONG_GO=0 abstained=1 | compiles= 6: GO= 6 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 3) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=9 broken=4 RUNTIME_WRONG_GO=0 confirmed=4 unconfirmed=2 | errors=0 | replayed=9
+bb-remote-execution/unchanged windows= 25 | breaks= 3: caught= 1 WRONG_GO=0 abstained=2 | compiles=22: GO=21 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=25 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=25
+TOTAL                  windows= 40 | breaks= 9: caught= 5 WRONG_GO=0 abstained=4 | compiles=31: GO=30 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 3) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=40 broken=4 RUNTIME_WRONG_GO=0 confirmed=4 unconfirmed=2 | errors=0 | replayed=40
+  FAILED bb-remote-execution@2bcc408397c4..e7e069d5: unknown_on_break: pkg/filesystem/configuration.go:30:50: cannot use backend.DirectoryPath (variable of type string) as "github.com/buildbarn/bb-storage/pkg/filesystem/path".Parser value in argument to filesystem.NewLocalDirectory: string does not implement "github.com/buildbarn/bb-storage/pkg/filesystem/path".Parser (missing method ParseScope) | pkg/runner/local_runner.go:72:24: assignment mismatch: 2 variables but path.NewUNIXParser returns 1 value | pkg/runner/local_runner.go:111:35: assignment mismatch: 2 variables but path.NewUNIXParser returns 1 value
+  WITHIN THE UNKNOWN LIMIT bb-remote-execution@947d8e2c5019..89b92028: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED bb-remote-execution@c1349dff8093..48ed1320: unknown_on_break: cmd/bb_noop_worker/main.go:38:71: not enough arguments in call to global.ApplyConfiguration | cmd/bb_noop_worker/main.go:62:76: not enough arguments in call to grpcClientFactory.NewClientFromConfiguration | cmd/bb_runner/main.go:37:71: not enough arguments in call to global.ApplyConfiguration
+  FAILED bb-remote-execution@c48dcda5e792..3991d6eb: unknown_on_break: pkg/blobstore/batched_store_blob_access.go:70:13: not enough arguments in call to digest.NewSetBuilder | pkg/filesystem/virtual/cas_initial_contents_fetcher.go:139:25: not enough arguments in call to digest.NewSetBuilder
+  FAILED bb-remote-execution@db78144fca20..dc342e17: unknown_on_break: cmd/bb_noop_worker/main.go:51:5: not enough arguments in call to blobstore_configuration.NewCASBlobAccessCreator | cmd/bb_scheduler/main.go:66:5: not enough arguments in call to blobstore_configuration.NewCASBlobAccessCreator
+
+40 windows in 4m22s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 4 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 263
