@@ -1,0 +1,12 @@
+vitess-operator 224d6c1c GO       source_build=GO      compiler=compiles          22.7s replay=true 
+vitess-operator 00339380 NO_GO    source_build=GO      compiler=compiles          27.8s replay=true 
+vitess-operator 65518cb8 GO       source_build=GO      compiler=compiles          14.0s replay=true 
+vitess-operator 8a636936 NO_GO    source_build=GO      compiler=compiles          15.5s replay=true 
+vitess-operator b314facb NO_GO    source_build=GO      compiler=compiles          15.0s replay=true 
+vitess-operator e7d68985 NO_GO    source_build=GO      compiler=baseline_fails    15.1s replay=true 
+vitess-operator/additive windows=  4 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 4: GO= 4 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 2) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=4 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=2 | errors=0 | replayed=4
+vitess-operator/breaking windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 1: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 1) | unavailable=1 (NO-GO 1, UNKNOWN 0, GO 0) | wire: judged=2 broken=1 RUNTIME_WRONG_GO=0 confirmed=1 unconfirmed=1 | errors=0 | replayed=2
+TOTAL                  windows=  6 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 5: GO= 5 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 3) | unavailable=1 (NO-GO 1, UNKNOWN 0, GO 0) | wire: judged=6 broken=1 RUNTIME_WRONG_GO=0 confirmed=1 unconfirmed=3 | errors=0 | replayed=6
+
+6 windows in 58s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
