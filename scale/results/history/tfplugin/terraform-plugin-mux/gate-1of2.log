@@ -1,0 +1,29 @@
+terraform-plugin-mux 2483daa5 UNKNOWN  source_build=UNKNOWN compiler=breaks             4.6s replay=true 
+terraform-plugin-mux 0e9365e8 GO       source_build=GO      compiler=compiles           4.7s replay=true 
+terraform-plugin-mux 46602a42 UNKNOWN  source_build=UNKNOWN compiler=compiles           0.3s replay=true 
+terraform-plugin-mux 3557b60f UNKNOWN  source_build=UNKNOWN compiler=breaks             1.0s replay=true 
+terraform-plugin-mux 58143dfb UNKNOWN  source_build=UNKNOWN compiler=compiles           0.9s replay=true 
+terraform-plugin-mux 72f6d69a GO       source_build=GO      compiler=compiles           0.9s replay=true 
+terraform-plugin-mux 83949b00 UNKNOWN  source_build=UNKNOWN compiler=compiles           1.0s replay=true 
+terraform-plugin-mux a3c2628c UNKNOWN  source_build=UNKNOWN compiler=compiles           0.2s replay=true 
+terraform-plugin-mux 931b7c9e GO       source_build=GO      compiler=compiles           0.6s replay=true 
+terraform-plugin-mux 9447a028 GO       source_build=GO      compiler=compiles           0.9s replay=true 
+terraform-plugin-mux e2f2af1a GO       source_build=GO      compiler=breaks             0.8s replay=true 
+terraform-plugin-mux fc120d80 GO       source_build=GO      compiler=compiles           0.7s replay=true 
+terraform-plugin-mux fcfffa07 UNKNOWN  source_build=UNKNOWN compiler=compiles           0.2s replay=true 
+terraform-plugin-mux b5ac2f90 GO       source_build=GO      compiler=compiles           1.8s replay=true 
+terraform-plugin-mux/additive windows=  4 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 4: GO= 0 FALSE_NOGO=0 abstained=4 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=4 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=4
+terraform-plugin-mux/breaking windows=  3 | breaks= 2: caught= 0 WRONG_GO=0 abstained=2 | compiles= 1: GO= 0 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=3 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=3
+terraform-plugin-mux/unchanged windows=  7 | breaks= 1: caught= 0 WRONG_GO=1 abstained=0 | compiles= 6: GO= 6 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=7 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=7
+TOTAL                  windows= 14 | breaks= 3: caught= 0 WRONG_GO=1 abstained=2 | compiles=11: GO= 6 FALSE_NOGO=0 abstained=5 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=14 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=14
+  FAILED terraform-plugin-mux@2483daa523e3..4c19f069: unknown_on_break: internal/tfprotov5tov6/tfprotov5tov6.go:1088:17: undefined: tfprotov5.LifecycleActionSchemaType | internal/tfprotov5tov6/tfprotov5tov6.go:1089:33: undefined: tfprotov6.LifecycleActionSchemaType | internal/tfprotov5tov6/tfprotov5tov6.go:1090:30: undefined: tfprotov6.LifecycleExecutionOrder
+  FAILED terraform-plugin-mux@3557b60f5ac9..01b86e95: unknown_on_break: internal/tfprotov5tov6/tfprotov5tov6.go:62:3: unknown field Diagnostics in struct literal of type tfprotov6.CallFunctionResponse | internal/tfprotov5tov6/tfprotov5tov6.go:62:31: in.Diagnostics undefined (type *tfprotov5.CallFunctionResponse has no field or method Diagnostics) | internal/tfprotov6tov5/tfprotov6tov5.go:67:3: unknown field Diagnostics in struct literal of type tfprotov5.CallFunctionResponse
+  WITHIN THE UNKNOWN LIMIT terraform-plugin-mux@46602a4249ae..a8477a15: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+  WITHIN THE UNKNOWN LIMIT terraform-plugin-mux@58143dfb00ad..4eb19ff7: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+  WITHIN THE UNKNOWN LIMIT terraform-plugin-mux@83949b00e2e6..14fe65ea: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+  WITHIN THE UNKNOWN LIMIT terraform-plugin-mux@a3c2628c8bea..1a2a9f86: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+  FAILED terraform-plugin-mux@e2f2af1a13b5..3fd901ba: wrong_go: tf5muxserver/mux_server_GetResourceIdentitySchemas.go:35:51: undefined: tfprotov5.ProviderServerWithResourceIdentity | tf5muxserver/mux_server_UpgradeResourceIdentity.go:35:50: undefined: tfprotov5.ProviderServerWithResourceIdentity | tf5to6server/tf5to6server.go:116:54: undefined: tfprotov5.ProviderServerWithResourceIdentity
+  WITHIN THE UNKNOWN LIMIT terraform-plugin-mux@fcfffa0735f0..c6d59498: unknown_on_safe: GENERATED_BINDINGS_UNAVAILABLE
+
+14 windows in 10s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 3 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`

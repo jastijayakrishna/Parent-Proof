@@ -1,0 +1,20 @@
+time=2026-10-21T08:49:24.189Z level=INFO msg=skip consumer=terraform-plugin-mux bump=58ca29a5 old=v0.26.0 new=v0.26.1-0.20250210164912-1d335b3d83c3 reason=unresolved_pin
+time=2026-10-21T08:49:24.190Z level=INFO msg=skip consumer=terraform-plugin-mux bump=dfbb2d29 old=v0.26.1-0.20250210164912-1d335b3d83c3 new=v0.26.1-0.20250313132633-b799d5c93127 reason=unresolved_pin
+time=2026-10-21T08:49:24.498Z level=INFO msg=skip consumer=terraform-plugin-mux bump=c551d8bf old=v0.29.0-beta.1.0.20250904144425-4c19f069077d new=v0.29.0-beta.1.0.20250915191812-03e996589dc2 reason=unresolved_pin
+time=2026-10-21T08:49:24.498Z level=INFO msg=skip consumer=terraform-plugin-mux bump=8af620e7 old=v0.29.0-beta.1.0.20250915191812-03e996589dc2 new=v0.29.0 reason=unresolved_pin
+time=2026-10-21T08:49:24.659Z level=INFO msg=mined consumer=terraform-plugin-mux pin_moves=32 to_compile=14 skipped=map[unresolved_pin:4]
+time=2026-10-21T08:49:31.210Z level=INFO msg=canary consumer=terraform-plugin-mux at=0e9365e8ac07845ae3af8e3168c42489107aa45a^ outcome=breaks detail="canary: github.com/hashicorp/terraform-plugin-go/tfprotov5 removed."
+time=2026-10-21T08:49:34.335Z level=INFO msg=window consumer=terraform-plugin-mux bump=0e9365e8 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:49:41.202Z level=INFO msg=window consumer=terraform-plugin-mux bump=2483daa5 select=breaking breaking=10 compiler=breaks
+time=2026-10-21T08:49:42.808Z level=INFO msg=window consumer=terraform-plugin-mux bump=3557b60f select=breaking breaking=8 compiler=breaks
+time=2026-10-21T08:49:43.320Z level=INFO msg=window consumer=terraform-plugin-mux bump=46602a42 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:49:48.378Z level=INFO msg=window consumer=terraform-plugin-mux bump=58143dfb select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:49:49.324Z level=INFO msg=window consumer=terraform-plugin-mux bump=72f6d69a select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:49:56.241Z level=INFO msg=window consumer=terraform-plugin-mux bump=83949b00 select=breaking breaking=4 compiler=compiles
+time=2026-10-21T08:49:56.401Z level=INFO msg=window consumer=terraform-plugin-mux bump=931b7c9e select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:49:57.458Z level=INFO msg=window consumer=terraform-plugin-mux bump=a3c2628c select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:49:58.073Z level=INFO msg=window consumer=terraform-plugin-mux bump=9447a028 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:49:59.406Z level=INFO msg=window consumer=terraform-plugin-mux bump=e2f2af1a select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T08:50:00.662Z level=INFO msg=window consumer=terraform-plugin-mux bump=fc120d80 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:50:01.025Z level=INFO msg=window consumer=terraform-plugin-mux bump=b5ac2f90 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:50:01.520Z level=INFO msg=window consumer=terraform-plugin-mux bump=fcfffa07 select=additive breaking=0 compiler=compiles
