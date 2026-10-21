@@ -1,0 +1,4 @@
+time=2026-10-21T08:20:10.300Z level=INFO msg=mined consumer=soci-snapshotter pin_moves=2 to_compile=2 skipped=map[]
+time=2026-10-21T08:20:16.493Z level=INFO msg=canary consumer=soci-snapshotter at=1b2442118aac93685d5a6f95ca6e49101a0e6f96 outcome=oracle_error detail="canary: no package of the consumer imports a package of github.com/containerd/containerd/api directly"
+time=2026-10-21T08:22:29.182Z level=INFO msg=window consumer=soci-snapshotter bump=2116e1d1 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:22:35.241Z level=INFO msg=window consumer=soci-snapshotter bump=1b244211 select=breaking breaking=39 compiler=compiles
