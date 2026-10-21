@@ -1,0 +1,18 @@
+time=2026-10-21T09:15:15.206Z level=INFO msg=cloning repo=terraform-plugin-go url=https://github.com/hashicorp/terraform-plugin-go.git
+time=2026-10-21T09:15:16.101Z level=INFO msg=cloning repo=terraform-plugin-testing url=https://github.com/hashicorp/terraform-plugin-testing.git
+time=2026-10-21T09:15:18.814Z level=INFO msg=mined consumer=terraform-plugin-testing pin_moves=26 to_compile=13 skipped=map[]
+time=2026-10-21T09:15:42.185Z level=INFO msg=canary consumer=terraform-plugin-testing at=00a2cce7fdd86ad45eda9669fbc2c252cdc353c4^ outcome=breaks detail="canary: github.com/hashicorp/terraform-plugin-go/tfprotov6 removed."
+time=2026-10-21T09:15:51.009Z level=INFO msg=window consumer=terraform-plugin-testing bump=00a2cce7 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:16:01.573Z level=INFO msg=window consumer=terraform-plugin-testing bump=0fb2d68e select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:16:14.720Z level=INFO msg=window consumer=terraform-plugin-testing bump=39474b3b select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:16:19.779Z level=INFO msg=window consumer=terraform-plugin-testing bump=56a9daa5 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:16:34.524Z level=INFO msg=window consumer=terraform-plugin-testing bump=5dd7333a select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:16:34.788Z level=INFO msg=window consumer=terraform-plugin-testing bump=988fbc53 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:16:37.769Z level=INFO msg=window consumer=terraform-plugin-testing bump=a5a8d6a9 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:16:48.885Z level=INFO msg=window consumer=terraform-plugin-testing bump=ae5ca3c0 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:16:54.798Z level=INFO msg=window consumer=terraform-plugin-testing bump=c748d531 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:16:58.064Z level=INFO msg=window consumer=terraform-plugin-testing bump=d112e30d select=additive breaking=0 compiler=breaks
+time=2026-10-21T09:17:02.448Z level=INFO msg=window consumer=terraform-plugin-testing bump=e14e9c90 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:17:10.604Z level=INFO msg=window consumer=terraform-plugin-testing bump=f93511e1 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:17:11.614Z level=INFO msg=window consumer=terraform-plugin-testing bump=e978948e select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:17:11.615Z level=INFO msg="suite built" suite=tfplugin windows_added=13
