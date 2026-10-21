@@ -1,0 +1,8 @@
+time=2026-10-21T08:28:18.782Z level=INFO msg=mined consumer=function-environment-configs pin_moves=6 to_compile=6 skipped=map[]
+time=2026-10-21T08:29:04.215Z level=INFO msg=canary consumer=function-environment-configs at=6e378560ca7bd0a1b5bd5235dc23f221f580a31d^ outcome=breaks detail="canary: github.com/crossplane/function-sdk-go/proto/v1beta1 removed."
+time=2026-10-21T08:29:07.948Z level=INFO msg=window consumer=function-environment-configs bump=6e378560 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:30:01.211Z level=INFO msg=window consumer=function-environment-configs bump=4c67de9c select=breaking breaking=1 compiler=breaks
+time=2026-10-21T08:30:44.539Z level=INFO msg=window consumer=function-environment-configs bump=d3c384c5 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:31:44.132Z level=INFO msg=window consumer=function-environment-configs bump=ce24ceff select=breaking breaking=2 compiler=breaks
+time=2026-10-21T08:32:20.084Z level=INFO msg=window consumer=function-environment-configs bump=bef95775 select=unchanged breaking=0 compiler=bump_side_effect
+time=2026-10-21T08:32:38.264Z level=INFO msg=window consumer=function-environment-configs bump=59cc7ebc select=additive breaking=0 compiler=compiles
