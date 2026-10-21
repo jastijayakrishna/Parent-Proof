@@ -1,0 +1,10 @@
+time=2026-10-21T08:35:28.838Z level=INFO msg=cloning repo=loop-looprpc url=https://github.com/lightninglabs/loop.git
+time=2026-10-21T08:35:30.662Z level=INFO msg=cloning repo=lightning-terminal url=https://github.com/lightninglabs/lightning-terminal.git
+time=2026-10-21T08:35:33.035Z level=INFO msg=skip consumer=lightning-terminal bump=443b5f41 old=v1.0.3 new=v1.0.4-0.20250306160707-1091a628755c reason=unresolved_pin
+time=2026-10-21T08:35:33.035Z level=INFO msg=skip consumer=lightning-terminal bump=5d8753ab old=v1.0.4-0.20250306160707-1091a628755c new=v1.0.6 reason=unresolved_pin
+time=2026-10-21T08:35:33.821Z level=INFO msg=mined consumer=lightning-terminal pin_moves=13 to_compile=3 skipped=map[unresolved_pin:2]
+time=2026-10-21T08:38:59.849Z level=INFO msg=canary consumer=lightning-terminal at=2db38f72fcbf1fd149b8d5dcdd127f7a8c0b755e^ outcome=bump_side_effect detail="canary: github.com/lightninglabs/loop/looprpc removed. module github.com/lightninglabs/loop/looprpc@latest found (v1.0.16, replaced by /tmp/parent-canary-1026239651), but does not contain package github.com/lightninglabs/loop/looprpc"
+time=2026-10-21T08:39:27.067Z level=INFO msg=window consumer=lightning-terminal bump=2db38f72 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:43:40.660Z level=INFO msg=window consumer=lightning-terminal bump=779cf9d6 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:44:55.536Z level=INFO msg=window consumer=lightning-terminal bump=c0bd649c select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:44:55.536Z level=INFO msg="suite built" suite=looprpc windows_added=3
