@@ -1,0 +1,4 @@
+time=2026-10-21T08:32:39.858Z level=INFO msg=mined consumer=lightning-terminal pin_moves=2 to_compile=2 skipped=map[]
+time=2026-10-21T08:34:28.323Z level=INFO msg=canary consumer=lightning-terminal at=443b5f41704bc1e7c74662668395bcc0d67514ec^ outcome=bump_side_effect detail="canary: github.com/lightninglabs/pool/poolrpc removed. module github.com/lightninglabs/pool/poolrpc@latest found (v1.0.1, replaced by /tmp/parent-canary-797674223), but does not contain package github.com/lightninglabs/pool/poolrpc"
+time=2026-10-21T08:34:36.224Z level=INFO msg=window consumer=lightning-terminal bump=443b5f41 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:36:58.408Z level=INFO msg=window consumer=lightning-terminal bump=d0eaa3dc select=unchanged breaking=0 compiler=compiles
