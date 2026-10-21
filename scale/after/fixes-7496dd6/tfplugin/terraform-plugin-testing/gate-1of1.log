@@ -1,0 +1,39 @@
+time=2026-10-21T10:59:51.595Z level=INFO msg=cloning repo=terraform-plugin-go url=https://github.com/hashicorp/terraform-plugin-go.git
+time=2026-10-21T10:59:52.153Z level=INFO msg=cloning repo=terraform-plugin-testing url=https://github.com/hashicorp/terraform-plugin-testing.git
+terraform-plugin-testing 08dd5f02 UNKNOWN  source_build=GO      compiler=compiles           9.3s replay=true 
+terraform-plugin-testing 00a2cce7 GO       source_build=GO      compiler=compiles           9.3s replay=true 
+terraform-plugin-testing 0fb2d68e GO       source_build=GO      compiler=compiles           4.7s replay=true 
+terraform-plugin-testing 1453c639 GO       source_build=GO      compiler=compiles           4.8s replay=true 
+terraform-plugin-testing 39474b3b UNKNOWN  source_build=UNKNOWN compiler=compiles           4.1s replay=true 
+terraform-plugin-testing 4da90ede NO_GO    source_build=NO_GO   compiler=breaks             4.5s replay=true 
+terraform-plugin-testing 56a9daa5 GO       source_build=GO      compiler=compiles           2.8s replay=true 
+terraform-plugin-testing 5bac538f GO       source_build=GO      compiler=compiles           3.7s replay=true 
+terraform-plugin-testing 7ae4318d GO       source_build=GO      compiler=compiles           0.0s replay=true 
+terraform-plugin-testing 5dd7333a GO       source_build=GO      compiler=compiles           3.7s replay=true 
+terraform-plugin-testing 988fbc53 GO       source_build=GO      compiler=compiles           2.8s replay=true 
+terraform-plugin-testing 99ed7b5e GO       source_build=GO      compiler=compiles           3.2s replay=true 
+terraform-plugin-testing a5a8d6a9 GO       source_build=GO      compiler=compiles           2.6s replay=true 
+terraform-plugin-testing ae5ca3c0 GO       source_build=GO      compiler=compiles           1.9s replay=true 
+terraform-plugin-testing aa67c757 GO       source_build=GO      compiler=compiles           3.6s replay=true 
+terraform-plugin-testing c748d531 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+terraform-plugin-testing c169f566 NO_GO    source_build=GO      compiler=compiles           3.3s replay=true 
+terraform-plugin-testing cb1f2b6f NO_GO    source_build=NO_GO   compiler=breaks             3.3s replay=true 
+terraform-plugin-testing d112e30d NO_GO    source_build=NO_GO   compiler=breaks             2.6s replay=true 
+terraform-plugin-testing e14e9c90 GO       source_build=GO      compiler=compiles           1.6s replay=true 
+terraform-plugin-testing d6234147 GO       source_build=GO      compiler=compiles           4.6s replay=true 
+terraform-plugin-testing e3316c0f NO_GO    source_build=GO      compiler=breaks             2.2s replay=true 
+terraform-plugin-testing e978948e GO       source_build=GO      compiler=compiles           1.9s replay=true 
+terraform-plugin-testing eaab4a69 GO       source_build=GO      compiler=compiles           2.5s replay=true 
+terraform-plugin-testing f93511e1 UNKNOWN  source_build=UNKNOWN compiler=compiles           2.7s replay=true 
+terraform-plugin-testing fa89bd8d GO       source_build=GO      compiler=compiles           3.1s replay=true 
+terraform-plugin-testing/additive windows=  9 | breaks= 2: caught= 2 WRONG_GO=0 abstained=0 | compiles= 7: GO= 6 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=9 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=9
+terraform-plugin-testing/breaking windows=  5 | breaks= 2: caught= 1 WRONG_GO=1 abstained=0 | compiles= 3: GO= 3 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 1) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=5 broken=2 RUNTIME_WRONG_GO=0 confirmed=2 unconfirmed=1 | errors=0 | replayed=5
+terraform-plugin-testing/unchanged windows= 12 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=12: GO=11 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=12 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=12
+TOTAL                  windows= 26 | breaks= 4: caught= 3 WRONG_GO=1 abstained=0 | compiles=22: GO=20 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 1) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=26 broken=2 RUNTIME_WRONG_GO=0 confirmed=2 unconfirmed=1 | errors=0 | replayed=26
+  WITHIN THE UNKNOWN LIMIT terraform-plugin-testing@39474b3b40c7..a106af9a: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
+  FAILED terraform-plugin-testing@e3316c0f04a6..01b86e95: wrong_go: /home/runner/go/pkg/mod/github.com/hashicorp/terraform-plugin-sdk/v2@v2.32.0/helper/schema/grpc_provider.go:1321:3: unknown field Diagnostics in struct literal of type tfprotov5.CallFunctionResponse
+  WITHIN THE UNKNOWN LIMIT terraform-plugin-testing@f93511e1eeb9..3fd901ba: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
+
+26 windows in 45s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 1 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 47
