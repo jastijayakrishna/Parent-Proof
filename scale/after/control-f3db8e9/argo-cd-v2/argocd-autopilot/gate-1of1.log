@@ -1,0 +1,18 @@
+time=2026-10-21T11:55:28.086Z level=INFO msg=cloning repo=argo-cd url=https://github.com/argoproj/argo-cd.git
+time=2026-10-21T11:55:42.452Z level=INFO msg=cloning repo=argocd-autopilot url=https://github.com/argoproj-labs/argocd-autopilot.git
+argocd-autopilot 1b878547 UNKNOWN  source_build=UNKNOWN compiler=bump_side_effect  43.1s replay=true 
+argocd-autopilot 27048d78 UNKNOWN  source_build=UNKNOWN compiler=bump_side_effect  43.5s replay=true 
+argocd-autopilot 9646e4c2 GO       source_build=GO      compiler=compiles          11.4s replay=true 
+argocd-autopilot 8788c40c UNKNOWN  source_build=UNKNOWN compiler=compiles          19.9s replay=true 
+argocd-autopilot da9b57c4 UNKNOWN  source_build=UNKNOWN compiler=breaks            11.6s replay=true 
+argocd-autopilot c910b91c UNKNOWN  source_build=UNKNOWN compiler=compiles          23.6s replay=true 
+argocd-autopilot/additive windows=  3 | breaks= 1: caught= 0 WRONG_GO=0 abstained=1 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=2 (NO-GO 0, UNKNOWN 2, GO 0) | wire: judged=3 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=3
+argocd-autopilot/unchanged windows=  3 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 3: GO= 1 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=3 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=3
+TOTAL                  windows=  6 | breaks= 1: caught= 0 WRONG_GO=0 abstained=1 | compiles= 3: GO= 1 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 0) | unavailable=2 (NO-GO 0, UNKNOWN 2, GO 0) | wire: judged=6 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=6
+  WITHIN THE UNKNOWN LIMIT argocd-autopilot@8788c40cca35..e5f1194a: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  WITHIN THE UNKNOWN LIMIT argocd-autopilot@c910b91c08be..102853d3: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED argocd-autopilot@da9b57c4a735..77556d9e: unknown_on_break: cmd/commands/common.go:110:12: cannot use argocdv1alpha1.ApplicationSource{…} (value of struct type "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1".ApplicationSource) as *"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1".ApplicationSource value in struct literal | cmd/commands/common.go:225:14: cannot use argocdv1alpha1.ApplicationSource{…} (value of struct type "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1".ApplicationSource) as *"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1".ApplicationSource value in struct literal | cmd/commands/project.go:327:16: cannot use argocdv1alpha1.ApplicationSource{…} (value of struct type "github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1".ApplicationSource) as *"github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1".ApplicationSource value in struct literal
+
+6 windows in 1m19s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 1 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 93
