@@ -1,8 +1,8 @@
 # Scale test: real contract changes, judged by the compiler
 
-Updated 2026-10-21 09:15 UTC. Every count below comes from one binary: Parent main `f3db8e9`, sha256 `b494ad99de344acf…` ([bin/VERSION](bin/VERSION)), the build a customer would install today. Rules, fixed before the run: [scale/PREREG.md](scale/PREREG.md).
+Updated 2026-10-21 09:35 UTC. Every count below comes from one binary: Parent main `f3db8e9`, sha256 `b494ad99de344acf…` ([bin/VERSION](bin/VERSION)), the build a customer would install today. Rules, fixed before the run: [scale/PREREG.md](scale/PREREG.md).
 
-**1489 real changes decided; the compiler judged 1258. 182 broke a project's build: Parent said Don't merge on 126, Needs review on 38, and Merge on 18. Of the 1076 safe changes it said Merge on 886 (82.3%), Don't merge on 20, Needs review on 170.**
+**2230 real changes decided; the compiler judged 1699. 204 broke a project's build: Parent said Don't merge on 138, Needs review on 44, and Merge on 22. Of the 1495 safe changes it said Merge on 1223 (81.8%), Don't merge on 25, Needs review on 247.**
 
 - **Caught**: the change broke the build; Parent said Don't merge, with the file and line.
 - **Stopped with Needs review**: it broke; Parent could not prove which way, so it did not say Merge.
@@ -14,26 +14,27 @@ Updated 2026-10-21 09:15 UTC. Every count below comes from one binary: Parent ma
 
 | | decided | judged by the compiler | broke the build | caught (Don't merge) | stopped with Needs review | **missed (said Merge)** | safe | said Merge on safe | false alarms | needs review on safe |
 |---|---|---|---|---|---|---|---|---|---|---|
-| **New projects, never used before: contract and project new** | 605 | 523 | 76 | 56 | 13 | **7** | 447 | 371 | 14 | 62 |
-| **New projects: a known contract, a project never used** | 305 | 274 | 53 | 30 | 12 | **11** | 221 | 192 | 3 | 26 |
+| **New projects, never used before: contract and project new** | 1069 | 783 | 93 | 64 | 18 | **11** | 690 | 548 | 18 | 124 |
+| **New projects: a known contract, a project never used** | 553 | 450 | 56 | 32 | 13 | **11** | 394 | 350 | 4 | 40 |
 | History: 9 contract → project pairs, rerun | 179 | 173 | 24 | 21 | 3 | **0** | 149 | 126 | 1 | 22 |
 | Go stress test, rerun: dev | 144 | 82 | 7 | 7 | 0 | **0** | 75 | 63 | 0 | 12 |
 | Go stress test, rerun: hold-out | 256 | 206 | 22 | 12 | 10 | **0** | 184 | 134 | 2 | 48 |
-| Java stress test, rerun: dev | 0 | 0 | 0 | 0 | 0 | **0** | 0 | 0 | 0 | 0 |
+| Java stress test, rerun: dev | 29 | 5 | 2 | 2 | 0 | **0** | 3 | 2 | 0 | 1 |
 | Java stress test, rerun: hold-out | 0 | 0 | 0 | 0 | 0 | **0** | 0 | 0 | 0 | 0 |
 | Java stress test, rerun: regression | 0 | 0 | 0 | 0 | 0 | **0** | 0 | 0 | 0 | 0 |
 | Open pull requests, decided live | 0 | 0 | 0 | 0 | 0 | **0** | 0 | 0 | 0 | 0 |
-| **All** | 1489 | 1258 | 182 | 126 | 38 | **18** | 1076 | 886 | 20 | 170 |
+| **All** | 2230 | 1699 | 204 | 138 | 44 | **22** | 1495 | 1223 | 25 | 247 |
 
-Kinds of change: 1309 real upgrades a project made of a contract it uses (its own commit, usually its own pull request); 180 merged or open pull requests of the contract itself, decided against a project that uses it.
+Kinds of change: 1568 real upgrades a project made of a contract it uses (its own commit, usually its own pull request); 667 merged or open pull requests of the contract itself, decided against a project that uses it.
 
-Left out because another binary decided them (rerun pending): Java stress test 1025, Open pull requests, live 160.
+Left out because another binary decided them (rerun pending): Java stress test 967, Open pull requests, live 160.
 
 ## Every change that broke a build
 
 | corpus | contract → project | change | date | compiler | Parent, for the build | where Parent points |
 |---|---|---|---|---|---|---|
 | New projects | apm-data -> apm-server | [v1.12.0 -> v1.13.1](https://github.com/elastic/apm-server/commit/55f9eb59ee96a6c8e17c9a976c99570fed29a363) | 2024-09-09 | breaks: `/home/runner/go/pkg/mod/github.com/elastic/apm-aggregation@v1.0.2/aggregators/converter.go:574:19: undefined: ` | **MISSED: Merge** |  |
+| New projects | bb-storage -> bb-browser | [v0.0.0-20250812162552-7bb781bdf07d -> v0.0.0-20250820101750-5bae58446505](https://github.com/buildbarn/bb-browser/commit/823deb2f4b072d5e0d86b6260819b5f3755e6aba) | 2025-08-20 | breaks: `/home/runner/go/pkg/mod/github.com/buildbarn/bb-remote-execution@v0.0.0-20250812083130-5b4f5a6879e1/pkg/clock/` | **MISSED: Merge** |  |
 | New projects | durabletask -> dapr | [v0.7.3-0.20250701130509-07b13de1f50f -> v0.7.3-0.20250703143506-24aa630ce118](https://github.com/dapr/dapr/commit/009a8156715565dcb6b62c7624a1cf03fb50020b) | 2025-07-04 | breaks: `pkg/runtime/wfengine/wfengine.go:86:60: cannot use abackend (variable of type *"github.com/dapr/dapr/pkg/runti` | **MISSED: Merge** | WHOLE_MESSAGE_FLOW |
 | New projects | durabletask -> dapr | [v0.7.3-0.20250711135247-7a35af6fe0e5 -> v0.9.0](https://github.com/dapr/dapr/commit/02b550f4cb6c6174b5913d45a777127ec8b9cbfb) | 2025-09-24 | breaks: `pkg/runtime/wfengine/wfengine.go:88:60: cannot use abackend (variable of type *"github.com/dapr/dapr/pkg/runti` | **MISSED: Merge** |  |
 | New projects | durabletask -> dapr | [v0.10.1 -> v0.10.2-0.20251113171253-87ecdf8f0547](https://github.com/dapr/dapr/commit/8e1a73b5c1e8eede40e3e3b42788f49f2f381b32) | 2025-11-18 | breaks: `pkg/runtime/wfengine/wfengine.go:90:60: cannot use abackend (variable of type *"github.com/dapr/dapr/pkg/runti` | **MISSED: Merge** |  |
@@ -49,8 +50,11 @@ Left out because another binary decided them (rerun pending): Java stress test 1
 | New projects | opamp -> opentelemetry-operator | [v0.10.0 -> v0.12.0](https://github.com/open-telemetry/opentelemetry-operator/commit/ee8db9d4641ab0d0b001748786c2cdf875e227d6) | 2024-01-29 | breaks: `cmd/operator-opamp-bridge/logger/logger.go:24:22: cannot use &Logger{} (value of type *Logger) as types.Logger` | **MISSED: Merge** |  |
 | New projects | opamp -> opentelemetry-operator | [v0.15.0 -> v0.23.0](https://github.com/open-telemetry/opentelemetry-operator/commit/d726ee2b2bdb9194dc9fa50a3f5bd3e1ec2ab585) | 2026-05-25 | breaks: `cmd/operator-opamp-bridge/internal/proxy/server.go:70:22: undefined: server.CallbacksStruct` | **MISSED: Merge** |  |
 | New projects | openfga -> openfga-cli | [v0.0.0-20240613184530-f33cb24bcd97 -> v0.0.0-20240807201305-c96ec773cae9](https://github.com/openfga/cli/commit/53a584b4113f9f38bb392d89e7b0c5b0c5f2b13d) | 2024-08-08 | breaks: `/home/runner/go/pkg/mod/github.com/openfga/openfga@v1.5.5/pkg/tuple/tuple.go:178:46: undefined: openfgav1.Obje` | **MISSED: Merge** |  |
+| New projects | tfplugin -> terraform-plugin-framework | [v0.21.0 -> v0.22.0](https://github.com/hashicorp/terraform-plugin-framework/commit/a99599148977b8ec59e146a1545a4ca7118684e9) | 2024-02-28 | breaks: `internal/toproto5/callfunction.go:21:3: unknown field Diagnostics in struct literal of type tfprotov5.CallFunc` | **MISSED: Merge** |  |
+| New projects | tfplugin -> terraform-plugin-framework | [v0.29.0-beta.1.0.20250904144425-4c19f069077d -> v0.29.0-beta.1.0.20250915194700-c3810b1245c0](https://github.com/hashicorp/terraform-plugin-framework/commit/7fb936eeb1d4c4f180c4aad97270962cd744a856) | 2025-09-16 | breaks: `internal/toproto5/action_schema.go:32:10: result.Type undefined (type *tfprotov5.ActionSchema has no field or ` | **MISSED: Merge** | NEEDS_REVIEW |
 | New projects | tfplugin -> terraform-plugin-mux | [v0.27.0 -> v0.28.0](https://github.com/hashicorp/terraform-plugin-mux/commit/e2f2af1a13b5ee6648724f3af068b016aea60859) | 2025-05-21 | breaks: `tf5muxserver/mux_server_GetResourceIdentitySchemas.go:35:51: undefined: tfprotov5.ProviderServerWithResourceId` | **MISSED: Merge** |  |
 | New projects | tfplugin -> terraform-plugin-sdk | [v0.21.0 -> v0.22.0](https://github.com/hashicorp/terraform-plugin-sdk/commit/70fb6b9b15e8e5fc73f424e24084c28fedd1e013) | 2024-02-23 | breaks: `helper/schema/grpc_provider.go:1321:3: unknown field Diagnostics in struct literal of type tfprotov5.CallFunct` | **MISSED: Merge** |  |
+| New projects | tfplugin -> terraform-plugin-testing | [v0.21.0 -> v0.22.0](https://github.com/hashicorp/terraform-plugin-testing/commit/e3316c0f04a6f300c8d6221a3e34eff41d8fecc6) | 2024-02-29 | breaks: `/home/runner/go/pkg/mod/github.com/hashicorp/terraform-plugin-sdk/v2@v2.32.0/helper/schema/grpc_provider.go:13` | **MISSED: Merge** |  |
 | Go stress test | buildkit -> buildx | [v0.11.0-rc1.0.20221213193744-862b22d7e7cf -> v0.11.0-rc4](https://github.com/docker/buildx/commit/cb279bb14b2cdaf3f6e5d100e13713d7336cbe81) | 2023-01-06 | breaks: `build/build.go:1508:28: undefined: ociindex.ReadIndexJSONFileLocked` | Don't merge | build/build.go:1508 |
 | Go stress test | buildkit -> buildx | [v0.11.0-rc3.0.20230216100651-46e4e7e51b01 -> v0.11.0-rc3.0.20230330090027-8b7bcb900d3c](https://github.com/docker/buildx/commit/f815f4acf77389339621ee57644ddedba2a40643) | 2023-03-30 | breaks: `build/build.go:1490:39: undefined: exptypes.ExporterBuildInfo` | Don't merge | build/build.go:1490 |
 | Go stress test | buildkit -> buildx | [v0.11.0-rc3.0.20230330090027-8b7bcb900d3c -> v0.11.0-rc3.0.20230411142536-333ee9158128](https://github.com/docker/buildx/commit/7d35a3b8d86f5077e048e38dbc0a6c63c15e0c78) | 2023-04-14 | breaks: `driver/remote/driver.go:81:86: too many arguments in call to client.WithCredentials` | Needs review | GO_API_CHANGED_USED_BY_CALLER |
@@ -104,14 +108,21 @@ Left out because another binary decided them (rerun pending): Java stress test 1
 | History (9 pairs) | tipb -> tidb | [v0.0.0-20241212101007-246f91188357 -> v0.0.0-20250321085733-a91a8fafd4ed](https://github.com/pingcap/tidb/commit/ca8a0707ab0605260b8bbce8427190607b3fe6d1) | 2025-03-23 | breaks: `pkg/planner/core/plan_to_pb.go:279:10: tsExec.AnnQuery undefined (type *tipb.TableScan has no field or method ` | Don't merge | pkg/planner/core/plan_to_pb.go:279 |
 | History (9 pairs) | tipb -> tidb | [v0.0.0-20250321085733-a91a8fafd4ed -> v0.0.0-20250331100511-d2c561dad347](https://github.com/pingcap/tidb/commit/7232aeab67e14fc757633393515d49da7117de36) | 2025-04-01 | breaks: `pkg/util/execdetails/execdetails.go:1296:46: summary.GetTotalVectorIdxLoadFromS3 undefined (type *tipb.TiFlash` | Don't merge | br/pkg/storage/batch.go:55 |
 | History (9 pairs) | tipb -> tidb | [v0.0.0-20250513092957-b555ca3fc078 -> v0.0.0-20250529123214-bb8180a479ec](https://github.com/pingcap/tidb/commit/ac6ea64b370f8736122ca19248c7f824461bc4b6) | 2025-06-04 | breaks: `pkg/kv/kv.go:818:32: unknown field KeyspaceId in struct literal of type tipb.ResourceGroupTag` | Don't merge | pkg/distsql/request_builder.go:100 |
+| Java stress test | hbase | [f81bdebedba3](https://github.com/apache/hbase/commit/f81bdebedba313fa9273ccb59e71c70c44c68d47) | 2023-05-15 | breaks: `hbase-server/src/main/java/org/apache/hadoop/hbase/master/replication/AssignReplicationQueuesProcedure.java:13` | Don't merge | hbase-server/src/main/java/org/apache/hadoop/hbase/master/replication/AssignReplicationQueuesProcedure.java:133: an enum |
+| Java stress test | hbase | [7f7b9e6ef298](https://github.com/apache/hbase/commit/7f7b9e6ef298b16768382081c3ab0163d7f15af0) | 2025-09-16 | breaks: `hbase-client/src/main/java/org/apache/hadoop/hbase/client/RawAsyncHBaseAdmin.java:4656: cannot find symbol` | Don't merge | hbase-client/src/main/java/org/apache/hadoop/hbase/client/RawAsyncHBaseAdmin.java:4656: cannot find symbol |
 | New projects | apm-data -> apm-aggregation | [v0.1.1-0.20230628080651-9f67b9cdd993 -> v0.1.1-0.20230705050140-e5828f1f7c8f](https://github.com/elastic/apm-aggregation/commit/0addc06a9a09edbccd59eddb9d12bba0cc7dbf6e) | 2023-07-10 | breaks: `aggregators/converter.go:651:16: e.GetParent undefined (type *modelpb.APMEvent has no field or method GetParen` | Don't merge | aggregators/converter.go:651 |
 | New projects | apm-data -> apm-aggregation | [v0.1.1-0.20230705050140-e5828f1f7c8f -> v0.1.1-0.20230718152028-9c38d2361527](https://github.com/elastic/apm-aggregation/commit/cdee9c683fae7f4656dd6ceb3a7f404db899a8e9) | 2023-07-19 | breaks: `aggregators/converter.go:93:17: e.GetProcessor undefined (type *modelpb.APMEvent has no field or method GetPro` | Don't merge | aggregators/converter.go:101 |
 | New projects | apm-data -> apm-aggregation | [v0.1.1-0.20230728063148-1076ea8b4db0 -> v0.1.1-0.20230803060036-9180b59d7888](https://github.com/elastic/apm-aggregation/commit/c82b2b7e590c36703a5e12b110f0de6fe8e5fc14) | 2023-08-07 | breaks: `aggregators/converter.go:646:29: cannot use totalCount (variable of type int64) as uint64 value in assignment` | Don't merge | aggregators/converter.go:646 |
 | New projects | apm-data -> apm-aggregation | [v0.1.1-0.20230803060036-9180b59d7888 -> v0.1.1-0.20230809075845-a636758ca08d](https://github.com/elastic/apm-aggregation/commit/e4ab9e25b8e2f5ca4dc35d5fd33f8a268cd63e47) | 2023-08-11 | breaks: `aggregators/converter.go:348:22: e.GetTimestamp().AsTime undefined (type uint64 has no field or method AsTime)` | Don't merge | aggregators/converter.go:348 |
 | New projects | apm-data -> apm-aggregation | [v0.1.1-0.20230809075845-a636758ca08d -> v0.1.1-0.20230814023104-48e4b20579f6](https://github.com/elastic/apm-aggregation/commit/0edaadeee2bad42b43883c0fff1cab379f1b5a19) | 2023-08-14 | breaks: `aggregators/converter.go:114:42: e.GetEvent().GetDuration().AsDuration undefined (type uint64 has no field or ` | Don't merge | aggregators/converter.go:114 |
 | New projects | apm-data -> apm-server | [v0.1.1-0.20231212041654-b2a4dabeb6e3 -> v0.1.1-0.20240111111310-80b6af8d97e1](https://github.com/elastic/apm-server/commit/52849ff30f6211afacdbecc838a645eac93cb6da) | 2024-01-15 | breaks: `internal/beater/api/intake/handler.go:108:4: too many arguments in call to handler.HandleStream` | Don't merge | internal/beater/api/intake/handler.go:197 |
+| New projects | argo-cd-v2 -> argocd-autopilot | [v2.5.9 -> v2.8.3](https://github.com/argoproj-labs/argocd-autopilot/commit/da9b57c4a73562a55478361a028625eeacd5074e) | 2023-09-12 | breaks: `cmd/commands/common.go:110:12: cannot use argocdv1alpha1.ApplicationSource{…} (value of struct type "github.co` | Needs review | CONTRACT_COMPILE_ERROR |
 | New projects | argo-cd-v2 -> argocd-image-updater | [v2.13.8 -> v2.14.15](https://github.com/argoproj-labs/argocd-image-updater/commit/6d7c38db7b6286dd07e34bbf72e969992cb5e9e7) | 2025-07-22 | breaks: `module github.com/argoproj/argo-cd/v2@latest found (v2.14.21), but does not contain package github.com/argopro` | Don't merge | cmd/ask_pass.go:15 |
+| New projects | bb-storage -> bb-browser | [v0.0.0-20240612173029-118cb9ca2a7d -> v0.0.0-20240928104605-8abbcfab01bc](https://github.com/buildbarn/bb-browser/commit/af89e4bc66f01ec022f8473a0068b8b6866662e2) | 2024-09-29 | breaks: `/home/runner/go/pkg/mod/github.com/buildbarn/bb-remote-execution@v0.0.0-20240401130706-ea22f37f62b8/pkg/filesy` | Don't merge | github.com/buildbarn/bb-remote-execution@v0.0.0-20240401130706-ea22f37f62b8/pkg/builder/command.go:104 |
+| New projects | bb-storage -> bb-browser | [v0.0.0-20250408112116-1d733a37487a -> v0.0.0-20250812162552-7bb781bdf07d](https://github.com/buildbarn/bb-browser/commit/cef29fb0887311cc6fa12bcfb377047042f8c44b) | 2025-08-14 | breaks: `cmd/bb_browser/main.go:72:71: not enough arguments in call to global.ApplyConfiguration` | Needs review | CONTRACT_COMPILE_ERROR, NEEDS_REVIEW |
 | New projects | bb-storage -> bb-browser | [v0.0.0-20250820101750-5bae58446505 -> v0.0.0-20250929074734-1170df56abab](https://github.com/buildbarn/bb-browser/commit/d115d51d178dd8a762916d298169bf04abafd73e) | 2025-09-29 | breaks: `module github.com/buildbarn/bb-storage@latest found (v0.0.0-20261020094522-60204be844cd), but does not contain` | Don't merge | cmd/bb_browser/browser_service.go:139 |
+| New projects | bb-storage -> bb-browser | [v0.0.0-20250929074734-1170df56abab -> v0.0.0-20260129210602-7c615f65d679](https://github.com/buildbarn/bb-browser/commit/ef9eacb9d60aa8a1b09a6788751a58f3229fd589) | 2026-01-31 | breaks: `/home/runner/go/pkg/mod/github.com/buildbarn/bb-remote-execution@v0.0.0-20250929111506-78a187fdbd35/pkg/filesy` | Don't merge | github.com/buildbarn/bb-remote-execution@v0.0.0-20250929111506-78a187fdbd35/pkg/filesystem/pool/block_device_backed_file |
+| New projects | bb-storage -> bb-browser | [v0.0.0-20260303071613-6002cad33537 -> v0.0.0-20260317135248-dc342e1799d7](https://github.com/buildbarn/bb-browser/commit/1731858db193643641ad80e8485eec29c88113fb) | 2026-03-19 | breaks: `cmd/bb_browser/main.go:83:4: not enough arguments in call to blobstore_configuration.NewCASAndACBlobAccessFrom` | Needs review | CONTRACT_COMPILE_ERROR, GO_API_CHANGED_USED_BY_CALLER |
 | New projects | bb-storage -> bb-clientd | [v0.0.0-20240307194821-4d0d7a3d85b5 -> v0.0.0-20240308085957-e8fd6935d2ef](https://github.com/buildbarn/bb-clientd/commit/0dd19dea6490a0d750a9e1deff1106fe7d4fdef4) | 2024-03-08 | breaks: `/home/runner/go/pkg/mod/github.com/buildbarn/bb-remote-execution@v0.0.0-20240307211444-6879a90a1d00/pkg/filesy` | Needs review | GO_API_CHANGED_USED_BY_CALLER |
 | New projects | bb-storage -> bb-clientd | [v0.0.0-20240308085957-e8fd6935d2ef -> v0.0.0-20240310075825-20598f43e294](https://github.com/buildbarn/bb-clientd/commit/066c9d9881bc350955de25fb92ddefda2451ca1a) | 2024-03-10 | breaks: `/home/runner/go/pkg/mod/github.com/buildbarn/bb-remote-execution@v0.0.0-20240308103551-b4cdefde2e35/pkg/filesy` | Don't merge | github.com/buildbarn/bb-remote-execution@v0.0.0-20240308103551-b4cdefde2e35/pkg/builder/command.go:115 |
 | New projects | bb-storage -> bb-clientd | [v0.0.0-20240331131648-914e53aad8cd -> v0.0.0-20240622054538-e7e069d58643](https://github.com/buildbarn/bb-clientd/commit/4c800c40d0d103bbab61da53afbad0a9bd8c56bc) | 2024-06-22 | breaks: `/home/runner/go/pkg/mod/github.com/buildbarn/bb-remote-execution@v0.0.0-20240331151324-f84a2c0f7211/pkg/filesy` | Don't merge | pkg/filesystem/virtual/bazel_output_service_directory.go:566 |
@@ -129,6 +140,7 @@ Left out because another binary decided them (rerun pending): Java stress test 1
 | New projects | bb-storage -> bb-remote-execution | [v0.0.0-20260303071613-6002cad33537 -> v0.0.0-20260317135248-dc342e1799d7](https://github.com/buildbarn/bb-remote-execution/commit/db78144fca2068e4572b57e5a86173b95c8555c2) | 2026-03-18 | breaks: `cmd/bb_noop_worker/main.go:51:5: not enough arguments in call to blobstore_configuration.NewCASBlobAccessCreat` | Needs review | CONTRACT_COMPILE_ERROR, GO_API_CHANGED_USED_BY_CALLER |
 | New projects | bb-storage -> bb-remote-execution | [v0.0.0-20260507124548-e5d91cab6de6 -> v0.0.0-20260527152149-3991d6ebefb4](https://github.com/buildbarn/bb-remote-execution/commit/c48dcda5e792227f50ec5bae0fcec1ab2e40fb48) | 2026-05-27 | breaks: `pkg/blobstore/batched_store_blob_access.go:70:13: not enough arguments in call to digest.NewSetBuilder` | Needs review | GO_API_CHANGED_USED_BY_CALLER |
 | New projects | cilium -> hubble | [v1.14.0-snapshot.1 -> v1.14.0-snapshot.4](https://github.com/cilium/hubble/commit/7eaef51f42bae38ed5200cfb67c4ecd07b56a9a0) | 2023-06-19 | breaks: `cmd/observe/flows.go:156:12: cannot use NewIOReaderObserver(f) (value of type *IOReaderObserver) as observer.O` | Don't merge | cmd/observe/flows.go:156 |
+| New projects | cilium -> hubble | [v1.15.3 -> v1.16.0-pre.2](https://github.com/cilium/hubble/commit/774bf58f522d833d170eee864fa03f536ceacd08) | 2024-04-10 | breaks: `cmd/observe/io_reader_observer.go:86:69: cannot use filters.DefaultFilters (value of type func(log logrus.Fiel` | Needs review | JSON_OPTIONS_UNRESOLVED, GO_API_CHANGED_USED_BY_CALLER |
 | New projects | consul-proto-public -> consul-k8s | [v0.1.2-0.20240129174413-a2d50af1bdfb -> v0.1.2-0.20240202204845-fb2b696c0e6b](https://github.com/hashicorp/consul-k8s/commit/59e7eae2078f861a08a8635938e2dd6094ecb432) | 2024-02-05 | breaks: `module github.com/hashicorp/consul/proto-public@latest found (v0.9.0, replaced by github.com/hashicorp/consul/` | Don't merge | api/auth/v2beta1/traffic_permissions_types.go:68 |
 | New projects | cri-api-new -> cri-dockerd | [v0.22.8 -> v0.27.8](https://github.com/Mirantis/cri-dockerd/commit/ff375cf010f5159c86d44c28e9c71c5d7e7935d9) | 2023-12-22 | breaks: `module k8s.io/cri-api@latest found (v0.37.1, replaced by k8s.io/cri-api@v0.27.8), but does not contain package` | Needs review | UNRESOLVED_MEMBER, SECOND_CHECK_DISAGREES |
 | New projects | cri-api-new -> cri-tools | [v0.33.0-beta.0.0.20250313010358-ab383b81657e -> v0.33.0-beta.0.0.20250324233632-87ee4e17aba6](https://github.com/kubernetes-sigs/cri-tools/commit/b27f0459cb5bf4b2fdd1b597103dcf6df8fb6806) | 2025-03-28 | breaks: `/home/runner/go/pkg/mod/k8s.io/cri-client@v0.33.0-beta.0/pkg/remote_runtime.go:137:9: cannot use service (vari` | Don't merge | vendor/k8s.io/cri-client/pkg/remote_runtime.go:137 |
@@ -149,6 +161,7 @@ Left out because another binary decided them (rerun pending): Java stress test 1
 | New projects | csi-new -> external-health-monitor | [v1.12.0 -> v1.13.0-rc1](https://github.com/kubernetes-csi/external-health-monitor/commit/8e7d753702a1f5946b8a4605d063133948708ccf) | 2026-08-11 | breaks: `/home/runner/go/pkg/mod/github.com/kubernetes-csi/csi-test/v5@v5.4.0/driver/mock.go:44:17: cannot use struct{c` | Don't merge | cmd/csi-external-health-monitor-controller/main.go:332 |
 | New projects | durabletask -> dapr | [v0.7.3-0.20250705135742-20fd7583dc03 -> v0.7.3-0.20250711135247-7a35af6fe0e5](https://github.com/dapr/dapr/commit/48bcce66d4d5fcc95f94129108d846c85feedc5a) | 2025-07-15 | breaks: `pkg/actors/targets/workflow/activity/execute.go:115:52: router.GetSource undefined (type *protos.TaskRouter ha` | Needs review | WHOLE_MESSAGE_FLOW, SECOND_CHECK_DISAGREES |
 | New projects | durabletask -> dapr | [v0.11.4-0.20260401134941-caa84142cb18 -> v0.11.4-0.20260406161632-36d7b5486fa8](https://github.com/dapr/dapr/commit/7302781d64889a9e0bdeb527c66f68c77af0dcea) | 2026-04-08 | breaks: `pkg/runtime/wfengine/state/state.go:437:3: unknown field Inbox in struct literal of type backend.WorkflowState` | Needs review | WHOLE_MESSAGE_FLOW, SECOND_CHECK_DISAGREES |
+| New projects | etcd-api -> kine | [v3.5.21 -> v3.6.4](https://github.com/k3s-io/kine/commit/85554b47615baf1f9f7e8e4edf012794aa095fd0) | 2025-08-13 | breaks: `/home/runner/go/pkg/mod/go.etcd.io/etcd/client/v3@v3.5.21/retry_interceptor.go:334:29: undefined: rpctypes.Err` | Don't merge | go.etcd.io/etcd/client/v3@v3.5.21/retry_interceptor.go:334 |
 | New projects | function-sdk -> function-auto-ready | [v0.0.0-20230914214411-245eb193dcc9 -> v0.0.0-20230918205031-1c15c0202e57](https://github.com/crossplane-contrib/function-auto-ready/commit/bda5604b9d199e1055b1dc5f32252fc68f0c0e47) | 2023-09-18 | breaks: `./fn.go:59:17: undefined: resource.DesiredComposedResources` | Don't merge | fn.go:59 |
 | New projects | function-sdk -> function-auto-ready | [v0.1.0 -> v0.3.0](https://github.com/crossplane-contrib/function-auto-ready/commit/abca397ba1eab3914594b4744631e71bdd8b8739) | 2024-09-19 | breaks: `./fn.go:29:21: cannot use req (variable of type *"github.com/crossplane/function-sdk-go/proto/v1beta1".RunFunc` | Don't merge | fn.go:10 |
 | New projects | function-sdk -> function-auto-ready | [v0.4.0 -> v0.5.0](https://github.com/crossplane-contrib/function-auto-ready/commit/fdbafb783b7ca48e375f9857ee6db511b29b1d1d) | 2026-02-02 | breaks: `./fn.go:113:33: cannot use xpv1.TypeReady (constant "Ready" of string type "github.com/crossplane/crossplane-r` | Needs review | SECOND_CHECK_DISAGREES |
@@ -158,6 +171,9 @@ Left out because another binary decided them (rerun pending): Java stress test 1
 | New projects | function-sdk -> function-extra-resources | [v0.2.0 -> v0.4.0](https://github.com/crossplane-contrib/function-extra-resources/commit/3bf8f5d599f912ba078b436fad33c96454dd81f4) | 2025-05-23 | breaks: `./fn.go:40:21: cannot use req (variable of type *"github.com/crossplane/function-sdk-go/proto/v1beta1".RunFunc` | Don't merge | fn.go:119 |
 | New projects | function-sdk -> function-extra-resources | [v0.5.0-rc.0.0.20250608193828-e1a38586f605 -> v0.5.0](https://github.com/crossplane-contrib/function-extra-resources/commit/ab9198c8972ef0e0e0b152eb9f20a06900cae164) | 2025-12-10 | breaks: `./main.go:28:39: cannot use log (variable of interface type "github.com/crossplane/function-sdk-go/logging".Lo` | Don't merge | fn.go:193 |
 | New projects | function-sdk -> function-go-templating | [v0.2.0 -> v0.3.0](https://github.com/crossplane-contrib/function-go-templating/commit/6250ace32388cc3508eb73ee0290f55b797a87c4) | 2024-11-26 | breaks: `./fn.go:58:21: cannot use req (variable of type *"github.com/crossplane/function-sdk-go/proto/v1beta1".RunFunc` | Don't merge | context.go:10 |
+| New projects | function-sdk -> function-patch-and-transform | [v0.0.0-20230927033848-4fd5cc3d7a44 -> v0.0.0-20230929052952-230c7dfcb3b0](https://github.com/crossplane-contrib/function-patch-and-transform/commit/3426939a67b77fb531fab972169cbaec40c99f78) | 2023-09-29 | breaks: `./fn.go:98:19: undefined: resource.NewDesiredComposedResource` | Don't merge | fn.go:98 |
+| New projects | function-sdk -> function-patch-and-transform | [v0.2.0 -> v0.4.0](https://github.com/crossplane-contrib/function-patch-and-transform/commit/888fe26b10d5b6bb7b6b774391dd788456b23da8) | 2024-12-16 | breaks: `./fn.go:40:21: cannot use req (variable of type *"github.com/crossplane/function-sdk-go/proto/v1beta1".RunFunc` | Don't merge | fn.go:16 |
+| New projects | function-sdk -> function-patch-and-transform | [v0.4.0 -> v0.5.0](https://github.com/crossplane-contrib/function-patch-and-transform/commit/fc37c5952cc55cfdbfbc7eab319fd8f3704a2c94) | 2025-12-19 | breaks: `./fn.go:193:42: cannot use ocd.Resource (variable of type *composed.Unstructured) as "github.com/crossplane/cr` | Needs review | SECOND_CHECK_DISAGREES |
 | New projects | function-sdk -> function-sequencer | [v0.1.0 -> v0.5.0](https://github.com/crossplane-contrib/function-sequencer/commit/60a60f247d460fc8ec66c450393b869b5017c156) | 2026-01-13 | breaks: `./fn.go:37:21: cannot use req (variable of type *"github.com/crossplane/function-sdk-go/proto/v1beta1".RunFunc` | Don't merge | fn.go:13 |
 | New projects | grafana-plugin-sdk -> grafana-infinity-datasource | [v0.248.0 -> v0.255.0](https://github.com/grafana/grafana-infinity-datasource/commit/b40c48f6c9fcce72c9425562c7be551f819a9cb0) | 2024-10-17 | breaks: `/home/runner/go/pkg/mod/github.com/grafana/grafana-aws-sdk@v0.24.0/pkg/awsds/utils.go:56:13: buildInfo.Hash un` | Don't merge | github.com/grafana/grafana-aws-sdk@v0.24.0/pkg/awsds/utils.go:56 |
 | New projects | kubelet-new -> intel-device-plugins | [v0.26.1 -> v0.27.1](https://github.com/intel/intel-device-plugins-for-kubernetes/commit/6a4721bfdd1c3e6fc62cd70d48ff77531379c84b) | 2023-05-13 | breaks: `/home/runner/go/pkg/mod/k8s.io/kubernetes@v1.26.1/pkg/kubelet/apis/podresources/server_v1.go:41:9: cannot use ` | Needs review | UNRESOLVED_MEMBER |
@@ -209,20 +225,31 @@ Left out because another binary decided them (rerun pending): Java stress test 1
 | New projects | temporal-api-new -> temporal-cli | [v1.62.8 -> v1.62.13](https://github.com/temporalio/cli/commit/a10f9ae8221a0ec5e9d750ccbdafbd54a5d7827e) | 2026-06-02 | breaks: `/home/runner/go/pkg/mod/go.temporal.io/server@v1.31.0/client/frontend/client.go:21:47: cannot use (*clientImpl` | Don't merge | github.com/temporalio/ui-server/v2@v2.49.1/server/api/handler.go:209 |
 | New projects | temporal-api-new -> temporal-cli | [v1.62.13 -> v1.63.0](https://github.com/temporalio/cli/commit/b2ee8a2aad71749d831fb7645577dbea8347dc6a) | 2026-07-06 | breaks: `/home/runner/go/pkg/mod/go.temporal.io/server@v1.32.0-157.0/api/persistence/v1/executions.pb.go:1179:14: undef` | Don't merge | github.com/temporalio/ui-server/v2@v2.49.1/server/api/handler.go:209 |
 | New projects | temporal-api-new -> temporal-cli | [v1.63.0 -> v1.63.4](https://github.com/temporalio/cli/commit/b090bffdbd82924a2728e624e67891303bd4d6ec) | 2026-07-30 | breaks: `/home/runner/go/pkg/mod/go.temporal.io/server@v1.32.0-158.0/service/history/workflow/timeskipping.go:50:70: so` | Don't merge | github.com/temporalio/ui-server/v2@v2.52.0/server/api/handler.go:215 |
+| New projects | tfplugin -> terraform-plugin-framework | [v0.18.0 -> v0.19.0](https://github.com/hashicorp/terraform-plugin-framework/commit/92180ccd456557c4d6fc57a5a35cab5e64267f53) | 2023-09-06 | breaks: `internal/proto5server/serve.go:14:34: cannot use &Server{} (value of type *Server) as tfprotov5.ProviderServer` | Don't merge | github.com/hashicorp/terraform-plugin-go@v0.18.0/tfprotov5/internal/toproto/provider.go:19 |
+| New projects | tfplugin -> terraform-plugin-framework | [v0.30.0 -> v0.31.0](https://github.com/hashicorp/terraform-plugin-framework/commit/2ee75aa70b8f3b6549bf4f8075c24cc8770dc9c7) | 2026-03-10 | breaks: `internal/proto5server/serve.go:14:34: cannot use &Server{} (value of type *Server) as tfprotov5.ProviderServer` | Don't merge | providerserver/providerserver.go:26 |
 | New projects | tfplugin -> terraform-plugin-mux | [v0.18.0 -> v0.19.0](https://github.com/hashicorp/terraform-plugin-mux/commit/fe8079b634a404df4be1c30c22d2de028240e563) | 2023-09-06 | breaks: `internal/tf5testserver/tf5testserver.go:12:34: cannot use &TestServer{} (value of type *TestServer) as tfproto` | Needs review | GENERATED_BINDINGS_UNAVAILABLE |
 | New projects | tfplugin -> terraform-plugin-mux | [v0.21.0 -> v0.22.0](https://github.com/hashicorp/terraform-plugin-mux/commit/3557b60f5ac98e9ebeb65cebbd3e09c6a4067978) | 2024-02-23 | breaks: `internal/tfprotov5tov6/tfprotov5tov6.go:62:3: unknown field Diagnostics in struct literal of type tfprotov6.Ca` | Needs review | GENERATED_BINDINGS_UNAVAILABLE |
 | New projects | tfplugin -> terraform-plugin-mux | [v0.29.0-beta.1 -> v0.29.0-beta.1.0.20250904144425-4c19f069077d](https://github.com/hashicorp/terraform-plugin-mux/commit/2483daa523e32a5b24e9f7d2b7680db630e53d1f) | 2025-09-08 | breaks: `internal/tfprotov5tov6/tfprotov5tov6.go:1088:17: undefined: tfprotov5.LifecycleActionSchemaType` | Needs review | GENERATED_BINDINGS_UNAVAILABLE |
 | New projects | tfplugin -> terraform-plugin-mux | [v0.30.0 -> v0.31.0](https://github.com/hashicorp/terraform-plugin-mux/commit/93c5ace530fca62a6ea4d081755aefb13397656a) | 2026-03-10 | breaks: `internal/tf5testserver/tf5testserver.go:14:34: cannot use &TestServer{} (value of type *TestServer) as tfproto` | Needs review | GENERATED_BINDINGS_UNAVAILABLE |
 | New projects | tfplugin -> terraform-plugin-sdk | [v0.18.0 -> v0.19.0](https://github.com/hashicorp/terraform-plugin-sdk/commit/d419eaab16fec59d43b09f472388795d9d3a1c3d) | 2023-09-06 | breaks: `helper/schema/provider.go:511:9: cannot use NewGRPCProviderServer(p) (value of type *GRPCProviderServer) as tf` | Don't merge | github.com/hashicorp/terraform-plugin-go@v0.18.0/tfprotov5/internal/toproto/provider.go:19 |
 | New projects | tfplugin -> terraform-plugin-sdk | [v0.30.0 -> v0.31.0](https://github.com/hashicorp/terraform-plugin-sdk/commit/86877a0b4fa52fb5b4a802d102f8afedb76b5dbe) | 2026-03-10 | breaks: `helper/schema/grpc_provider.go:35:34: cannot use (*GRPCProviderServer)(nil) (value of type *GRPCProviderServer` | Don't merge | helper/resource/plugin.go:205 |
+| New projects | tfplugin -> terraform-plugin-testing | [v0.18.0 -> v0.19.0](https://github.com/hashicorp/terraform-plugin-testing/commit/4da90ede6ba8912abcf165523ef01185e0a3e25d) | 2023-09-11 | breaks: `/home/runner/go/pkg/mod/github.com/hashicorp/terraform-plugin-sdk/v2@v2.28.0/helper/schema/provider.go:511:9: ` | Don't merge | github.com/hashicorp/terraform-plugin-go@v0.18.0/tfprotov5/internal/toproto/provider.go:19 |
+| New projects | tfplugin -> terraform-plugin-testing | [v0.22.2 -> v0.23.0](https://github.com/hashicorp/terraform-plugin-testing/commit/cb1f2b6f4be3fd20b6bf5f03dbbc71c9d58b56ab) | 2024-05-17 | breaks: `internal/testing/testsdk/providerserver/providerserver.go:18:34: cannot use ProviderServer{} (value of struct ` | Needs review | GO_API_CHANGED_USED_BY_CALLER |
+| New projects | tfplugin -> terraform-plugin-testing | [v0.30.0 -> v0.31.0](https://github.com/hashicorp/terraform-plugin-testing/commit/d112e30d2250dbd7b35d7a622e1a7bb48d8c2756) | 2026-03-10 | breaks: `/home/runner/go/pkg/mod/github.com/hashicorp/terraform-plugin-sdk/v2@v2.39.0/helper/schema/grpc_provider.go:35` | Don't merge | github.com/hashicorp/terraform-plugin-sdk/v2@v2.39.0/plugin/serve.go:126 |
+| New projects | vitess -> vitess-operator | [v0.10.3-0.20250103182021-b36b2284176d -> v0.10.3-0.20250110203148-54dfd6005bcd](https://github.com/planetscale/vitess-operator/commit/9ab5f87dd454740e6c6b939898e8f3241cfaa774) | 2025-01-13 | breaks: `pkg/controller/vitessshardreplication/init_restored_shard.go:159:34: undefined: reparentutil.GetDurabilityPoli` | Don't merge | pkg/controller/vitessshardreplication/init_restored_shard.go:159 |
 
-## False alarms (20)
+## False alarms (25)
 
 | corpus | contract → project | change | date | Parent's finding |
 |---|---|---|---|---|
 | Go stress test | cosmos-sdk -> gaia | [v0.50.11-lsm.0.20250523173923-11578258172e -> v0.53.0](https://github.com/cosmos/gaia/commit/558be6323bc9b9966242069d8b9fe02c37f32848) | 2025-06-03 | app/sim/sim_state.go:247 |
 | Go stress test | cosmos-sdk -> gaia | [v0.53.4 -> v0.53.8](https://github.com/cosmos/gaia/commit/c3c08fedef4e1115512ad5fb264641d7f98cf93c) | 2026-08-21 | app/keepers/keepers.go:595 |
 | History (9 pairs) | containerd-api -> nerdctl | [v1.7.19 -> v1.8.0-rc.2](https://github.com/containerd/nerdctl/commit/7aa8ca9b65e90d22bf0faac77cbe528a0462630e) | 2024-08-09 | github.com/containerd/containerd@v1.7.20/container.go:333 |
+| New projects | apm-data | [e5765b8f8d89](https://github.com/elastic/apm-data/commit/e5765b8f8d8992d4360231ce86d5f57a8d637366) | 2023-07-17 | github.com/elastic/apm-data@v1.22.2/input/elasticapm/internal/modeldecoder/v2/decoder.go:265 |
+| New projects | apm-data | [31428f0fc5e3](https://github.com/elastic/apm-data/commit/31428f0fc5e35707de044c19b5be8de7d3187e40) | 2023-07-28 | github.com/elastic/apm-aggregation@v1.5.1/aggregators/converter.go:652 |
+| New projects | apm-data | [a636758ca08d](https://github.com/elastic/apm-data/commit/a636758ca08d02499994eb62121429153e3ae9c5) | 2023-08-09 | github.com/elastic/apm-aggregation@v1.5.1/aggregators/converter.go:328 |
+| New projects | apm-data | [48e4b20579f6](https://github.com/elastic/apm-data/commit/48e4b20579f65594692c21eb3ade2213955778a7) | 2023-08-14 | github.com/elastic/apm-aggregation@v1.5.1/aggregators/converter.go:554 |
+| New projects | argo-cd-v3 -> argocd-image-updater | [v3.4.3 -> v3.4.4](https://github.com/argoproj-labs/argocd-image-updater/commit/bb991de95169d696e4de3cedbabf6a15e520aec9) | 2026-06-22 | github.com/argoproj/argo-cd/v3@v3.4.3/util/kube/kubectl.go:33 |
 | New projects | bb-storage -> bb-browser | [v0.0.0-20230119153358-2d0d7ee15967 -> v0.0.0-20230120132704-98063ef6edfa](https://github.com/buildbarn/bb-browser/commit/84796f0577a89085615abf1025b1610d1fdad1fe) | 2023-01-20 | cmd/bb_browser/browser_service.go:411 |
 | New projects | bb-storage -> bb-browser | [v0.0.0-20230124100847-756fc23c9924 -> v0.0.0-20230223115958-4f243ea90d39](https://github.com/buildbarn/bb-browser/commit/4ed56d704c1c194da7ca82765142ce83e56fa388) | 2023-02-24 | cmd/bb_browser/main.go:73 |
 | New projects | bb-storage -> bb-browser | [v0.0.0-20230517082930-1eb2bad58bdb -> v0.0.0-20230629193729-d6a051ca744d](https://github.com/buildbarn/bb-browser/commit/5d710fd5fca58f4de1edb01225e72d634eb52fe3) | 2023-07-03 | cmd/bb_browser/main.go:64 |
@@ -243,70 +270,101 @@ Left out because another binary decided them (rerun pending): Java stress test 1
 
 ## Needs review, by reason (judged changes)
 
-- CONTRACT_COMPILE_ERROR: 61
-- GO_API_CHANGED_USED_BY_CALLER: 58
-- OPTION_CHANGED: 49
+- CONTRACT_COMPILE_ERROR: 83
+- GO_API_CHANGED_USED_BY_CALLER: 73
+- OPTION_CHANGED: 54
+- TOOLCHAIN_TOO_OLD: 36
+- DESCRIPTOR_REFLECTION: 28
 - GENERATED_BINDINGS_UNAVAILABLE: 24
-- DESCRIPTOR_REFLECTION: 23
-- SECOND_CHECK_DISAGREES: 19
-- NEEDS_REVIEW: 14
-- WHOLE_MESSAGE_FLOW: 10
+- SECOND_CHECK_DISAGREES: 21
+- NEEDS_REVIEW: 18
+- WHOLE_MESSAGE_FLOW: 14
+- UNRESOLVED_MEMBER: 12
 - AMBIENT_GENERATED_UNREAD: 10
-- UNRESOLVED_MEMBER: 9
 - TYPE_ERROR_HIDES_USES: 2
+- JSON_OPTIONS_UNRESOLVED: 1
+- JAVA_INLINED_CONSTANTS_UNCHECKED: 1
 
 ## New projects, pair by pair
 
 | tier | contract → project | decided | judged | broke | caught | needs review on a break | missed | false alarms | needs review on safe | not judged |
 |---|---|---|---|---|---|---|---|---|---|---|
+| tier 1 | apm-data (pull requests) | 20 | 18 | 0 | 0 | 0 | 0 | 4 | 3 | 2 |
 | tier 1 | apm-data -> apm-aggregation | 25 | 23 | 5 | 5 | 0 | 0 | 0 | 0 | 2 |
 | tier 1 | apm-data -> apm-server | 40 | 40 | 2 | 1 | 0 | 1 | 0 | 0 | 0 |
+| tier 1 | auctioneerrpc (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
 | tier 1 | auctioneerrpc -> lightning-terminal | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 |
-| tier 1 | bb-storage -> bb-browser | 13 | 11 | 1 | 1 | 0 | 0 | 6 | 0 | 2 |
+| tier 1 | bb-storage (pull requests) | 20 | 17 | 0 | 0 | 0 | 0 | 0 | 15 | 3 |
+| tier 1 | bb-storage -> bb-browser | 27 | 24 | 6 | 3 | 2 | 1 | 6 | 0 | 3 |
 | tier 1 | bb-storage -> bb-clientd | 29 | 26 | 7 | 5 | 2 | 0 | 4 | 3 | 3 |
 | tier 1 | bb-storage -> bb-remote-execution | 40 | 40 | 9 | 5 | 4 | 0 | 0 | 1 | 0 |
-| tier 1 | cilium -> hubble | 24 | 23 | 1 | 1 | 0 | 0 | 0 | 0 | 1 |
+| tier 1 | cilium (pull requests) | 20 | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| tier 1 | cilium -> hubble | 32 | 30 | 2 | 1 | 1 | 0 | 0 | 0 | 2 |
+| tier 1 | frdrpc (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
 | tier 1 | frdrpc -> lightning-terminal | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 |
+| tier 1 | function-sdk (pull requests) | 18 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 18 |
 | tier 1 | function-sdk -> function-auto-ready | 10 | 8 | 3 | 2 | 1 | 0 | 0 | 0 | 2 |
 | tier 1 | function-sdk -> function-cel-filter | 5 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 2 |
 | tier 1 | function-sdk -> function-environment-configs | 6 | 5 | 2 | 2 | 0 | 0 | 0 | 0 | 1 |
 | tier 1 | function-sdk -> function-extra-resources | 4 | 4 | 2 | 2 | 0 | 0 | 0 | 0 | 0 |
 | tier 1 | function-sdk -> function-go-templating | 8 | 7 | 1 | 1 | 0 | 0 | 0 | 1 | 1 |
+| tier 1 | function-sdk -> function-patch-and-transform | 12 | 9 | 3 | 2 | 1 | 0 | 0 | 1 | 3 |
 | tier 1 | function-sdk -> function-sequencer | 5 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 2 |
-| tier 1 | grafana-plugin-sdk -> github-datasource | 20 | 20 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| tier 1 | grafana-plugin-sdk (pull requests) | 20 | 19 | 0 | 0 | 0 | 0 | 0 | 17 | 1 |
+| tier 1 | grafana-plugin-sdk -> github-datasource | 40 | 40 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
 | tier 1 | grafana-plugin-sdk -> grafana-infinity-datasource | 40 | 40 | 1 | 1 | 0 | 0 | 3 | 1 | 0 |
+| tier 1 | kms (pull requests) | 9 | 6 | 0 | 0 | 0 | 0 | 0 | 6 | 3 |
 | tier 1 | kms -> aws-encryption-provider | 10 | 10 | 1 | 0 | 0 | 1 | 0 | 1 | 0 |
 | tier 1 | kms -> kubernetes-kms | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| tier 1 | kubearmor (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
 | tier 1 | kubearmor -> kubearmor-client | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 13 |
+| tier 1 | looprpc (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
 | tier 1 | looprpc -> lightning-terminal | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 11 |
+| tier 1 | nri (pull requests) | 20 | 18 | 0 | 0 | 0 | 0 | 0 | 0 | 2 |
 | tier 1 | opamp -> opentelemetry-operator | 6 | 6 | 4 | 2 | 0 | 2 | 0 | 0 | 0 |
+| tier 1 | openfga (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
 | tier 1 | openfga -> openfga | 23 | 23 | 3 | 3 | 0 | 0 | 0 | 8 | 0 |
 | tier 1 | openfga -> openfga-cli | 22 | 22 | 3 | 2 | 0 | 1 | 0 | 9 | 0 |
+| tier 1 | poolrpc (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
 | tier 1 | poolrpc -> lightning-terminal | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 |
+| tier 1 | pulumi (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
 | tier 1 | pulumi -> pulumi-go-provider | 40 | 40 | 5 | 3 | 2 | 0 | 1 | 2 | 0 |
 | tier 1 | pulumi -> pulumi-yaml | 38 | 38 | 13 | 13 | 0 | 0 | 0 | 0 | 0 |
+| tier 1 | remote-apis (pull requests) | 20 | 10 | 0 | 0 | 0 | 0 | 0 | 10 | 10 |
 | tier 1 | remote-apis -> bb-storage | 18 | 18 | 0 | 0 | 0 | 0 | 0 | 14 | 0 |
 | tier 1 | remote-apis -> remote-apis-sdks | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
+| tier 1 | sigstore (pull requests) | 20 | 20 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
 | tier 1 | sigstore -> cosign | 10 | 9 | 1 | 1 | 0 | 0 | 0 | 1 | 1 |
 | tier 1 | sigstore -> fulcio | 6 | 6 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
 | tier 1 | sigstore -> gitsign | 12 | 12 | 1 | 1 | 0 | 0 | 0 | 1 | 0 |
 | tier 1 | sigstore -> rekor | 13 | 13 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| tier 1 | sigstore -> rekor-tiles | 6 | 6 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
 | tier 1 | sigstore -> sigstore | 6 | 6 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
 | tier 1 | sigstore -> sigstore-go | 13 | 13 | 1 | 1 | 0 | 0 | 0 | 1 | 0 |
 | tier 1 | sigstore -> timestamp-authority | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 |
+| tier 1 | swapserverrpc (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
 | tier 1 | swapserverrpc -> lightning-terminal | 16 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 16 |
 | tier 1 | taprpc -> lightning-terminal | 12 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 12 |
+| tier 1 | tfplugin (pull requests) | 20 | 20 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| tier 1 | tfplugin -> terraform-plugin-framework | 31 | 31 | 4 | 2 | 0 | 2 | 0 | 3 | 0 |
 | tier 1 | tfplugin -> terraform-plugin-mux | 28 | 28 | 5 | 0 | 4 | 1 | 0 | 10 | 0 |
 | tier 1 | tfplugin -> terraform-plugin-sdk | 24 | 24 | 3 | 2 | 0 | 1 | 0 | 3 | 0 |
+| tier 1 | tfplugin -> terraform-plugin-testing | 26 | 26 | 4 | 2 | 1 | 1 | 0 | 2 | 0 |
+| tier 2 | argo-cd-v2 -> argocd-autopilot | 6 | 4 | 1 | 0 | 1 | 0 | 0 | 2 | 2 |
 | tier 2 | argo-cd-v2 -> argocd-image-updater | 19 | 16 | 1 | 1 | 0 | 0 | 0 | 3 | 3 |
+| tier 2 | argo-cd-v3 -> argocd-image-updater | 20 | 16 | 0 | 0 | 0 | 0 | 1 | 2 | 4 |
+| tier 2 | consul-proto-public (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
 | tier 2 | consul-proto-public -> consul-k8s | 25 | 25 | 1 | 1 | 0 | 0 | 0 | 4 | 0 |
 | tier 2 | consul-proto-public -> consul-server-connection-manager | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| tier 2 | containerd-api-new (pull requests) | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 20 |
 | tier 2 | containerd-api-new -> kata-runtime | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 |
 | tier 2 | containerd-api-new -> nydus-snapshotter | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | tier 2 | containerd-api-new -> soci-snapshotter | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 |
 | tier 2 | containerd-api-new -> stargz-snapshotter | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
+| tier 2 | cri-api-new (pull requests) | 20 | 17 | 0 | 0 | 0 | 0 | 0 | 3 | 3 |
 | tier 2 | cri-api-new -> cri-dockerd | 4 | 3 | 1 | 0 | 1 | 0 | 0 | 0 | 1 |
 | tier 2 | cri-api-new -> cri-tools | 38 | 38 | 5 | 3 | 2 | 0 | 0 | 1 | 0 |
+| tier 2 | csi-new (pull requests) | 20 | 17 | 0 | 0 | 0 | 0 | 0 | 3 | 3 |
 | tier 2 | csi-new -> csi-driver-host-path | 6 | 6 | 3 | 1 | 2 | 0 | 0 | 2 | 0 |
 | tier 2 | csi-new -> csi-test | 6 | 6 | 4 | 2 | 2 | 0 | 0 | 1 | 0 |
 | tier 2 | csi-new -> external-health-monitor | 7 | 7 | 4 | 2 | 2 | 0 | 0 | 1 | 0 |
@@ -315,15 +373,20 @@ Left out because another binary decided them (rerun pending): Java stress test 1
 | tier 2 | csi-new -> livenessprobe | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 |
 | tier 2 | csi-new -> node-driver-registrar | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 |
 | tier 2 | durabletask -> dapr | 40 | 40 | 13 | 0 | 2 | 11 | 0 | 1 | 0 |
+| tier 2 | etcd-api (pull requests) | 20 | 11 | 0 | 0 | 0 | 0 | 0 | 1 | 9 |
 | tier 2 | etcd-api -> k8s-dqlite | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
-| tier 2 | istio-api-new -> istio-client-go | 13 | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| tier 2 | etcd-api -> kine | 15 | 15 | 1 | 1 | 0 | 0 | 0 | 1 | 0 |
+| tier 2 | istio-api-new (pull requests) | 20 | 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| tier 2 | istio-api-new -> istio-client-go | 40 | 40 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| tier 2 | kubelet-new (pull requests) | 20 | 20 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
 | tier 2 | kubelet-new -> container-engine-accelerators | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | tier 2 | kubelet-new -> intel-device-plugins | 20 | 18 | 2 | 1 | 1 | 0 | 0 | 0 | 2 |
 | tier 2 | kubelet-new -> node-feature-discovery | 25 | 23 | 1 | 1 | 0 | 0 | 0 | 0 | 2 |
 | tier 2 | nri -> containerd | 16 | 15 | 1 | 1 | 0 | 0 | 0 | 4 | 1 |
 | tier 2 | nri -> cri-o | 16 | 15 | 1 | 1 | 0 | 0 | 1 | 2 | 1 |
 | tier 2 | temporal-api-new -> temporal-cli | 30 | 30 | 16 | 16 | 0 | 0 | 1 | 0 | 0 |
+| tier 2 | vitess -> vitess-operator | 40 | 29 | 1 | 1 | 0 | 0 | 0 | 1 | 11 |
 
-Not judged, by reason: judge not verified 83, the provider's repository holds no Go module the consumer builds against 60, baseline_fails 45, bump_side_effect 38, the commit changes no Go file of the module: its generated code is not regenerated with the .proto change, so the build cannot see it 3, oracle_error 2.
+Not judged, by reason: baseline_fails 125, judge not verified 125, the provider's repository holds no Go module the consumer builds against 60, bump_side_effect 51, the commit changes no Go file of the module: its generated code is not regenerated with the .proto change, so the build cannot see it 26, oracle_error 19, a changed contract file is outside the module: proto/private/pbconfigentry/config_entry.proto 15, a changed contract file is outside the module: openfga/v1/openfga_service.proto 15, a changed contract file is outside the module: poolrpc/trader.proto 13, a changed contract file is outside the module: looprpc/client.proto 13, a changed contract file is outside the module: auctioneerrpc/auctioneer.proto 11, a changed contract file is outside the module: proto/pulumi/resource.proto 9, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/runtime/bootstrap/v1/bootstrap.proto 5, a changed contract file is outside the module: proto/pulumi/converter.proto 5, a changed contract file is outside the module: server/etcdserver/api/snap/snappb/snap.proto 4, a changed contract file is outside the module: swapserverrpc/staticaddr.proto 4, a changed contract file is outside the module: proto/pulumi/provider.proto 4, a changed contract file is outside the module: swapserverrpc/server.proto 3, a changed contract file is outside the module: proto/private/pbservice/node.proto 2, a changed contract file is outside the module: vendor/github.com/containerd/nri/pkg/api/api.proto 2, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/events/content.proto 2, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/types/runc/options/oci.proto 2, a changed contract file is outside the module: server/storage/wal/walpb/record.proto 2, a changed contract file is outside the module: openfga/v1/errors_ignore.proto 2, a changed contract file is outside the module: openfga/v1/openfga.proto 2, a changed contract file is outside the module: agent/grpc-middleware/testutil/testservice/simple.proto 1, a changed contract file is outside the module: proto/private/pbservice/service.proto 1, a changed contract file is outside the module: proto/private/pbsubscribe/subscribe.proto 1, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/runtime/sandbox/v1/sandbox.proto 1, a changed contract file is outside the module: vendor/k8s.io/api/core/v1/generated.proto 1, a changed contract file is outside the module: vendor/github.com/containers/ocicrypt/utils/keyprovider/keyprovider.proto 1, a changed contract file is outside the module: vendor/k8s.io/cri-api/pkg/apis/runtime/v1/api.proto 1, a changed contract file is outside the module: vendor/github.com/containerd/ttrpc/request.proto 1, a changed contract file is outside the module: vendor/github.com/Microsoft/hcsshim/cmd/containerd-shim-runhcs-v1/options/runhcs.proto 1, a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/services/tasks/v1/tasks.proto 1, a changed contract file is outside the module: server/lease/leasepb/lease.proto 1, a changed contract file is outside the module: server/etcdserver/api/v3election/v3electionpb/v3election.proto 1, a changed contract file is outside the module: authzen/v1/authzen_service.proto 1, a changed contract file is outside the module: proto/pulumi/language.proto 1, a changed contract file is outside the module: proto/pulumi/callback.proto 1.
 
 Errors: 0.
