@@ -1,0 +1,5 @@
+temporal-sdk-java history: 27 windows, shard 5/8 has 3
+canary at c215a78b5502: breaks (34 files moved) ['temporal-serviceclient/src/main/java/io/temporal/serviceclient/SystemInfoInterceptor.java:24: package io.temporal.api.workflowservice.v1 does not exist']
+c215a78b5502 2023-06-16 verifier=None build=None compiler=baseline_fails 36.5s 
+746015641156 2025-04-25 verifier=NO_GO build=GO compiler=compiles 240.3s 
+a714cc1006c3 2026-03-23 verifier=NO_GO build=UNKNOWN compiler=oracle_error 184.6s 
