@@ -1,0 +1,8 @@
+time=2026-10-21T09:07:04.283Z level=INFO msg=mined consumer=external-resizer pin_moves=6 to_compile=6 skipped=map[]
+time=2026-10-21T09:08:05.890Z level=INFO msg=canary consumer=external-resizer at=d6100254e3d2c35ba18d4e5474b4f223ac58e0e6^ outcome=breaks detail="canary: github.com/container-storage-interface/spec/lib/go/csi removed."
+time=2026-10-21T09:08:12.467Z level=INFO msg=window consumer=external-resizer bump=d6100254 select=breaking breaking=1 compiler=compiles
+time=2026-10-21T09:09:37.931Z level=INFO msg=window consumer=external-resizer bump=04040416 select=breaking breaking=17 compiler=compiles
+time=2026-10-21T09:11:00.359Z level=INFO msg=window consumer=external-resizer bump=44449d7c select=breaking breaking=7 compiler=compiles
+time=2026-10-21T09:12:14.098Z level=INFO msg=window consumer=external-resizer bump=a61e7bca select=breaking breaking=6 compiler=compiles
+time=2026-10-21T09:12:20.093Z level=INFO msg=window consumer=external-resizer bump=6e02d62b select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:12:56.575Z level=INFO msg=window consumer=external-resizer bump=73ef0fd2 select=additive breaking=0 compiler=compiles
