@@ -1,12 +1,12 @@
 {
-  "id": "d_ba99f9fd736bece2",
-  "created_at": "2026-10-07T14:51:46.611971119Z",
+  "id": "d_d64f5f9886a8fa2d",
+  "created_at": "2026-10-21T06:54:27.698562497Z",
   "organization": "local",
   "provider": {
     "owner": "",
     "repo": "payments-protos",
-    "base": "38a0076ce59c7f0414fb3b5988035514232ccb1d",
-    "head": "34357774a9d7bf5092fe7314aafdc12f5f3567a4",
+    "base": "38bc4ad57935067fd205da12bba223afba011d63",
+    "head": "e51d58afa8d91d091b445d931c168468e54a1906",
     "contracts": 1
   },
   "subject": {
@@ -734,7 +734,7 @@
   "callers": [
     {
       "repo": "jastijayakrishna/Parent-Proof",
-      "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+      "commit": "a4ecc96b08b11ff51a1a01296d59bd333f68f4ba",
       "deploy_unit": "billing-worker",
       "language": "go",
       "build": {
@@ -745,10 +745,10 @@
         "module_path": "example.com/billing"
       },
       "generated_version": "example.com/billing/gen/paymentsv1@- protoc-gen-go=1.36.12 protoc-gen-go-grpc=1.6.2 protoc=7.35.1",
-      "footprint_digest": "5792adab2ad0d2c5021b7f035331a828f8f6e372ea35b6e3dc9bc429e89bb766",
+      "footprint_digest": "9b8d56616ea164ea0068fac61b22b92dc86c00353207d88166508c50ea57c97a",
       "footprint": {
         "repo": "jastijayakrishna/Parent-Proof",
-        "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+        "commit": "a4ecc96b08b11ff51a1a01296d59bd333f68f4ba",
         "deploy_unit": "billing-worker",
         "language": "go",
         "build": {
@@ -1273,7 +1273,7 @@
     },
     {
       "repo": "jastijayakrishna/Parent-Proof",
-      "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+      "commit": "a4ecc96b08b11ff51a1a01296d59bd333f68f4ba",
       "deploy_unit": "refund-job",
       "language": "go",
       "build": {
@@ -1284,10 +1284,10 @@
         "module_path": "example.com/billing"
       },
       "generated_version": "example.com/billing/gen/paymentsv1@- protoc-gen-go=1.36.12 protoc-gen-go-grpc=1.6.2 protoc=7.35.1",
-      "footprint_digest": "aaf228a37911fa43be0d7016c85dbcbdfca222b2b0338256280c45bc1e6866a8",
+      "footprint_digest": "99170794e14106a7cd3bf5cc97bc760756ff446b256c4e89603ceb2ee073e05c",
       "footprint": {
         "repo": "jastijayakrishna/Parent-Proof",
-        "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+        "commit": "a4ecc96b08b11ff51a1a01296d59bd333f68f4ba",
         "deploy_unit": "refund-job",
         "language": "go",
         "build": {
@@ -1617,7 +1617,7 @@
         },
         "caller": {
           "repo": "jastijayakrishna/Parent-Proof",
-          "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+          "commit": "a4ecc96b08b11ff51a1a01296d59bd333f68f4ba",
           "deploy_unit": "billing-worker",
           "language": "go"
         },
@@ -1669,7 +1669,7 @@
         },
         "caller": {
           "repo": "jastijayakrishna/Parent-Proof",
-          "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+          "commit": "a4ecc96b08b11ff51a1a01296d59bd333f68f4ba",
           "deploy_unit": "billing-worker",
           "language": "go"
         },
@@ -1720,7 +1720,7 @@
         },
         "caller": {
           "repo": "jastijayakrishna/Parent-Proof",
-          "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+          "commit": "a4ecc96b08b11ff51a1a01296d59bd333f68f4ba",
           "deploy_unit": "billing-worker",
           "language": "go"
         },
@@ -1772,7 +1772,7 @@
         },
         "caller": {
           "repo": "jastijayakrishna/Parent-Proof",
-          "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+          "commit": "a4ecc96b08b11ff51a1a01296d59bd333f68f4ba",
           "deploy_unit": "refund-job",
           "language": "go"
         },
@@ -1825,7 +1825,7 @@
         },
         "caller": {
           "repo": "jastijayakrishna/Parent-Proof",
-          "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+          "commit": "a4ecc96b08b11ff51a1a01296d59bd333f68f4ba",
           "deploy_unit": "refund-job",
           "language": "go"
         },
@@ -1877,7 +1877,7 @@
         },
         "caller": {
           "repo": "jastijayakrishna/Parent-Proof",
-          "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+          "commit": "a4ecc96b08b11ff51a1a01296d59bd333f68f4ba",
           "deploy_unit": "refund-job",
           "language": "go"
         },
@@ -1904,7 +1904,7 @@
       {
         "caller": {
           "repo": "jastijayakrishna/Parent-Proof",
-          "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+          "commit": "a4ecc96b08b11ff51a1a01296d59bd333f68f4ba",
           "deploy_unit": "billing-worker",
           "language": "go"
         },
@@ -1914,7 +1914,7 @@
       {
         "caller": {
           "repo": "jastijayakrishna/Parent-Proof",
-          "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
+          "commit": "a4ecc96b08b11ff51a1a01296d59bd333f68f4ba",
           "deploy_unit": "refund-job",
           "language": "go"
         },
@@ -1943,10 +1943,10 @@
     "mode": "silent",
     "unknown_as": "warn"
   },
-  "cache_key": "4802eadcb72770de559cd5f0e4ac0f21995f4129f31ee61dfceb3c6b63d23e58",
+  "cache_key": "5da0025bd4f83bf20acbe47c6800f9e8e185cb47cdd76d65249dae236fe67e4b",
   "migration": "1. Keep Charge.amount_cents (#7) until jastijayakrishna/Parent-Proof (all 2 units: billing-worker and refund-job) stop using it: cmd/refund-job/main.go:17, internal/ledger/ledger.go:21. Remove it only after those callers are deployed.\n2. When Charge.amount_cents (#7) is finally removed, add `reserved 7; reserved \"amount_cents\";` to Charge.\nDeploy order: ship and deploy the caller changes first, then merge and deploy this provider change.",
   "binary": {
-    "revision": "69540630b02b08b77058d0cb3f8763fbc403500f",
+    "revision": "8028c741c1502cef85f1ca5bc8fdf9a69560f7ea",
     "go": "go1.27.1"
   },
   "settings": {},
@@ -1965,12 +1965,12 @@
   },
   "usage": {
     "store": "https://github.com/jastijayakrishna/Parent-Proof.git",
-    "version": "usage-store/v1.2.0",
+    "version": "usage-store/v1.3.0",
     "services": [
       {
         "service": "jastijayakrishna/Parent-Proof",
-        "commit": "c522a594c5adbdab1bc3089b97404a9e830931ae",
-        "index_sha256": "72147a5b8108d3c3b05fde7494bfb970b4edd682e92ccfd65322d0f210d98d83"
+        "commit": "a4ecc96b08b11ff51a1a01296d59bd333f68f4ba",
+        "index_sha256": "7038379ba8cf0680ced389241d8deba276d68e05e1ddc53fcea30d6def6fa4e4"
       }
     ]
   }

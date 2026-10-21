@@ -1,12 +1,12 @@
 {
-  "id": "d_cbc88d8aa848c443",
-  "created_at": "2026-10-07T14:51:54.421070872Z",
+  "id": "d_ff050d7812826bd0",
+  "created_at": "2026-10-21T06:54:32.371430976Z",
   "organization": "local",
   "provider": {
     "owner": "",
     "repo": "payments-protos",
-    "base": "38a0076ce59c7f0414fb3b5988035514232ccb1d",
-    "head": "34357774a9d7bf5092fe7314aafdc12f5f3567a4",
+    "base": "38bc4ad57935067fd205da12bba223afba011d63",
+    "head": "e51d58afa8d91d091b445d931c168468e54a1906",
     "contracts": 1
   },
   "subject": {
@@ -831,9 +831,9 @@
     "mode": "silent",
     "unknown_as": "warn"
   },
-  "cache_key": "8fd70dfa3ddab75196ae15a0bbb4b374d297b3da5212e1b9af8e8f4d14c9260a",
+  "cache_key": "5b14f2e293daf8d00d66dfe1cf519bbf7e2c06af7705e5486fae97aee872dff8",
   "binary": {
-    "revision": "69540630b02b08b77058d0cb3f8763fbc403500f",
+    "revision": "8028c741c1502cef85f1ca5bc8fdf9a69560f7ea",
     "go": "go1.27.1"
   },
   "settings": {},
@@ -852,7 +852,7 @@
   },
   "usage": {
     "store": "https://github.com/jastijayakrishna/Parent-Proof-no-such-store.git",
-    "version": "usage-store/v1.2.0",
+    "version": "usage-store/v1.3.0",
     "services": [
       {
         "service": "",

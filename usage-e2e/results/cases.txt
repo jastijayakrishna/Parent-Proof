@@ -1,4 +1,4 @@
-publish            true  Published the usage of github.com/jastijayakrishna/Parent-Proof at c522a594 to h
+publish            true  Published the usage of github.com/jastijayakrishna/Parent-Proof at a4ecc96b to h
 publish-older      true  Not published: https://github.com/jastijayakrishna/Parent-Proof.git already hold
 signed             true  NO_GO -
 signed-scope       true  Checked 1 service(s)
@@ -17,4 +17,11 @@ records-tampered   true  UNKNOWN USAGE_DIGEST_MISMATCH
 record-deleted     true  NO_GO USAGE_DIGEST_MISMATCH
 index-edited       true  UNKNOWN USAGE_SIGNATURE_INVALID
 pr-replay          true  UNKNOWN USAGE_SIGNATURE_INVALID
+deploy-production  true  Recorded in https://github.com/jastijayakrishna/Parent-Proof.git (deploy/product
+deployed           true  NO_GO -
+deploy-staging     true    Its records were never published (or were pruned): until `verifier usage publi
+staging            true  NO_GO USAGE_DEPLOYED_RECORD_MISSING
+can-i-deploy       true  Not yet: shipping it to staging now would not be safe.
+deployment-edited  true  UNKNOWN USAGE_SIGNATURE_INVALID
+deployment-moved   true  UNKNOWN USAGE_SIGNATURE_INVALID
 store-tampered     true  NO_GO USAGE_DIGEST_MISMATCH

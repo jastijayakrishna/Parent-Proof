@@ -11,8 +11,8 @@ Rebuilding callers with the new contract: not proved
 Breaking in general, safe for your callers:
 - removes Charge.amount_cents (#7): a wire, json, source break in general; no checked deploy unit uses it
 
-Verified against payments-protos@34357774 (base 38a0076c) and 0 caller commit(s).
+Verified against payments-protos@e51d58af (base 38bc4ad5) and 0 caller commit(s).
 Checked 1 service(s) from the usage store /home/runner/work/_temp/e2e/s-pr-replay.git, including 1 open pull request(s) (jastijayakrishna/Parent-Proof#5). Only services that publish usage records are checked.
 
-Decision d_87e29ad433594a27 · keep it with --out record.json and replay with: verifier replay --file record.json
+Decision d_4c7c6213a225800a · keep it with --out record.json and replay with: verifier replay --file record.json
 exit 3

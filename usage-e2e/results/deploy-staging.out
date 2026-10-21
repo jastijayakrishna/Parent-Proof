@@ -1,0 +1,3 @@
+Recorded in https://github.com/jastijayakrishna/Parent-Proof.git (deploy/staging/github.com/jastijayakrishna/Parent-Proof): staging runs github.com/jastijayakrishna/Parent-Proof at 730bdd5c, signed by this CI run.
+  Its records were never published (or were pruned): until `verifier usage publish --commit 730bdd5c` runs on that commit, checks of staging say Needs review for github.com/jastijayakrishna/Parent-Proof.
+exit 3

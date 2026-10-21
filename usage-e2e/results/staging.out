@@ -1,0 +1,30 @@
+✗ Don't merge
+
+removes Charge.amount_cents (#7)
+
+2 of 3 deploy units break (jastijayakrishna/Parent-Proof) · 1 need review (jastijayakrishna/Parent-Proof@staging) · 0 proved safe
+
+Breaks:
+- jastijayakrishna/Parent-Proof (all 2 units: billing-worker and refund-job) @ a4ecc96b
+  Why: caller reads a field the new provider no longer sends; it will silently receive the default value [PROTO_FIELD_REMOVED_READ_BY_CALLER]
+  Why: regenerated bindings no longer define this field; the caller will not compile [PROTO_FIELD_REMOVED_REFERENCED_IN_SOURCE]
+  - cmd/refund-job/main.go:17
+  - internal/ledger/ledger.go:21
+
+Not proved:
+- jastijayakrishna/Parent-Proof@staging — staging runs 730bdd5cd38e, whose records were never published (or were pruned): publish them from that commit (verifier usage publish --commit 730bdd5cd38e)
+  - Fix: What jastijayakrishna/Parent-Proof@staging runs in that environment has no usage records (staging runs 730bdd5cd38e, whose records were never published (or were pruned): publish them from that commit (verifier usage publish --commit 730bdd5cd38e)), so what it uses is not known. Publish them from the deployed commit (run `verifier usage publish --commit SHA` on a checkout of it), then run the check again.
+
+Old and new running together (new provider → old callers): breaks
+Rebuilding callers with the new contract: breaks
+
+How to ship this safely:
+1. Keep Charge.amount_cents (#7) until jastijayakrishna/Parent-Proof (all 2 units: billing-worker and refund-job) stop using it: cmd/refund-job/main.go:17, internal/ledger/ledger.go:21. Remove it only after those callers are deployed.
+2. When Charge.amount_cents (#7) is finally removed, add `reserved 7; reserved "amount_cents";` to Charge.
+Deploy order: ship and deploy the caller changes first, then merge and deploy this provider change.
+
+Verified against payments-protos@e51d58af (base 38bc4ad5) and 1 caller commit(s).
+Checked 2 service(s) from the usage store https://github.com/jastijayakrishna/Parent-Proof.git, and 1 as deployed (jastijayakrishna/Parent-Proof@staging). Only services that publish usage records are checked.
+
+Decision d_c970262a35339fec · keep it with --out record.json and replay with: verifier replay --file record.json
+exit 3
