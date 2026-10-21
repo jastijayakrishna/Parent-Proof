@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-21 01:07 UTC.
+Updated 2026-10-21 12:09 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 160 | 130 | 5 | 25 | 71 | 70 | 0 | 0 |
+| 162 | 131 | 5 | 26 | 71 | 70 | 0 | 0 |
 
 ## Every pull request
 
@@ -25,6 +25,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
 | argo-cd | [#28908](https://github.com/argoproj/argo-cd/pull/28908) fix: base auto-sync change detection on the last synced revision (#27875, #21692) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29105](https://github.com/argoproj/argo-cd/pull/29105) feat: expose health check code in UI (#7773) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -177,3 +178,4 @@ verifier before the compiler built the consumer against it.
 | temporal | [#886](https://github.com/temporalio/api/pull/886) Document current activity attempt start time | Merge | Merge | not judged |  |
 | temporal | [#887](https://github.com/temporalio/api/pull/887) Add PollerScalingInfo to poll requests | Merge | Merge | not judged |  |
 | temporal | [#890](https://github.com/temporalio/api/pull/890) marking time skipping API experimental | Merge | Merge | not judged |  |
+| temporal | [#891](https://github.com/temporalio/api/pull/891) PoC Workflow Heartbeat Notification | Merge | Merge | not judged |  |

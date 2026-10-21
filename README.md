@@ -4,17 +4,17 @@ A public, timestamped record of how a contract verifier does on real pull
 requests it has never seen.
 
 <!-- live:begin -->
-**Updated 2026-10-21 08:18 UTC.** [![shadow](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml/badge.svg)](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml)
+**Updated 2026-10-21 12:09 UTC.** [![shadow](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml/badge.svg)](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml)
 
 | | changes | judge not verified | broke the build | caught | missed | false alarms | needs review |
 |---|---|---|---|---|---|---|---|
 | [Real upgrades](HISTORY.md), 9 projects' history | 179 | 0 | 24 | 21 | 0 | 1 | 25 |
-| [Open pull requests](SCOREBOARD.md), decided live | 160 | 25 | 0 | 0 | 0 | 0 | 25 |
-| [Stress test](STRESS.md), Go: projects never used to tune it | 185 | 2 | 7 | 7 | 0 | 0 | 38 |
-| [Stress test](STRESS.md), Go: hold-out projects, run once | 254 | 0 | 22 | 12 | 0 | 4 | 56 |
-| [Stress test](STRESS.md), Java: projects never used to tune it | 450 | 71 | 17 | 16 | 0 | 0 | 13 |
-| [Stress test](STRESS.md), Java: hold-out projects, run once | 491 | 80 | 2 | 2 | 0 | 1 | 31 |
-| [Stress test](STRESS.md), Java: projects it was tuned on | 84 | 0 | 5 | 5 | 0 | 0 | 21 |
+| [Open pull requests](SCOREBOARD.md), decided live | 162 | 25 | 0 | 0 | 0 | 0 | 26 |
+| [Stress test](STRESS.md), Go: projects never used to tune it | 186 | 2 | 7 | 7 | 0 | 0 | 39 |
+| [Stress test](STRESS.md), Go: hold-out projects, run once | 256 | 0 | 22 | 12 | 0 | 2 | 63 |
+| [Stress test](STRESS.md), Java: projects never used to tune it | 451 | 63 | 10 | 9 | 0 | 0 | 10 |
+| [Stress test](STRESS.md), Java: hold-out projects, run once | 492 | 55 | 0 | 0 | 0 | 0 | 166 |
+| [Stress test](STRESS.md), Java: projects it was tuned on | 84 | 0 | 2 | 2 | 0 | 0 | 21 |
 
 **Caught**: it broke the build and the verifier said Don't merge first. **Missed**: the verifier said Merge and the compiler says it breaks, the failure that matters most. **Judge not verified**: not counted, because a planted break did not fail that project's build, so the compiler's answer proves nothing there.
 

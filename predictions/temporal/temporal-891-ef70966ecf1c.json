@@ -1,0 +1,49 @@
+{
+  "pr": {
+    "n": 891,
+    "head": "ef70966ecf1cbbad2915148ca8bacb38a8b37608",
+    "base": "0b837ae7ceefbe4569254e793b96bbf2dd8ed877",
+    "title": "PoC Workflow Heartbeat Notification",
+    "url": "https://github.com/temporalio/api/pull/891",
+    "updated": "2026-10-21T08:25:32Z",
+    "eco": "temporal",
+    "key": "temporal-891-ef70966ecf1c",
+    "provider": "temporalio/api",
+    "consumer": "temporalio/sdk-go",
+    "consumer_sha": "10beba7b1782adfadb54ba58736b7c7c97f24757"
+  },
+  "merge_base": "0b837ae7ceefbe4569254e793b96bbf2dd8ed877",
+  "decided": "4e7008ec6c2ba8db7acdefa59f5cdc06867fa96c",
+  "started": "2026-10-21T12:08:24Z",
+  "finished": "2026-10-21T12:08:35Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/39596798804",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "temporal",
+      "commit": "4e7008ec6c2ba8db7acdefa59f5cdc06867fa96c",
+      "parent": "0b837ae7ceefbe4569254e793b96bbf2dd8ed877",
+      "date": "2026-10-21",
+      "subject": "pull request 891 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "temporal/api/worker/v1/message.proto",
+        "temporal/api/workflowservice/v1/request_response.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 10.152651354,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-21T12:08:24.450Z level=INFO msg=cloning repo=c-temporal url=https://github.com/temporalio/sdk-go.git\ntemporal    4e7008ec GO       source_build=GO      compiler=-                  10.2s \ntemporal       1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 11s."
+}
