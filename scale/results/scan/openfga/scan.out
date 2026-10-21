@@ -1,0 +1,31 @@
+time=2026-10-21T09:19:15.476Z level=INFO msg=cloning repo=p-openfga url=https://github.com/openfga/api.git
+time=2026-10-21T09:19:16.141Z level=INFO msg=cloning repo=c-openfga url=https://github.com/openfga/openfga.git
+openfga     c0650ce2 UNKNOWN  source_build=GO      compiler=-                  16.3s 
+openfga     f153694b GO       source_build=GO      compiler=-                   0.7s 
+openfga     8c6ab437 UNKNOWN  source_build=UNKNOWN compiler=-                   0.9s 
+openfga     25e22cb1 UNKNOWN  source_build=UNKNOWN compiler=-                   0.8s 
+openfga     b4b2a12f UNKNOWN  source_build=GO      compiler=-                   0.7s 
+openfga     e53c69cc UNKNOWN  source_build=GO      compiler=-                   0.7s 
+openfga     f9709139 UNKNOWN  source_build=UNKNOWN compiler=-                   1.0s 
+openfga     c22e6db5 UNKNOWN  source_build=UNKNOWN compiler=-                   0.7s 
+openfga     b61b4ea2 UNKNOWN  source_build=UNKNOWN compiler=-                   0.8s 
+openfga     157144d6 UNKNOWN  source_build=UNKNOWN compiler=-                   0.6s 
+openfga     6e048d80 GO       source_build=GO      compiler=-                   0.6s 
+openfga     0bb89b73 NO_GO    source_build=GO      compiler=-                   0.6s 
+openfga     24dec682 UNKNOWN  source_build=GO      compiler=-                   0.6s 
+openfga     c14fb4b3 GO       source_build=GO      compiler=-                   0.6s 
+openfga     ee46d672 GO       source_build=GO      compiler=-                   0.6s 
+openfga     7c098f10 NO_GO    source_build=GO      compiler=-                   0.6s 
+openfga     30477608 UNKNOWN  source_build=UNKNOWN compiler=-                   0.6s 
+openfga     297cfdbb UNKNOWN  source_build=GO      compiler=-                   0.6s 
+openfga     63b9cf90 UNKNOWN  source_build=GO      compiler=-                   0.5s 
+openfga     94a1320a UNKNOWN  source_build=GO      compiler=-                   0.6s 
+openfga       20 decisions  GO   4  NO-GO   2  UNKNOWN  14 (70.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO   4  NO-GO   2  UNKNOWN  14 (70.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+   15   1  DESCRIPTOR_REFLECTION (e.g. openfga@c0650ce2169bcb39a72d73841fb531c200e32248)
+    7   1  OPTION_CHANGED (e.g. openfga@8c6ab4372be3d593574f3bcfe954f0faaa7f1a09)
+
+20 windows in 32s.
+exit 0 seconds 32
