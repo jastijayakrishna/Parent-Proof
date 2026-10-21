@@ -1,0 +1,20 @@
+cri-tools  2d0bbc7b GO       source_build=GO      compiler=compiles           0.4s replay=true 
+cri-tools  16aba0d0 GO       source_build=GO      compiler=compiles           0.4s replay=true 
+cri-tools  4242bab2 GO       source_build=GO      compiler=compiles           0.4s replay=true 
+cri-tools  582d49f6 GO       source_build=GO      compiler=compiles           0.3s replay=true 
+cri-tools  684cf823 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+cri-tools  4c010d85 GO       source_build=GO      compiler=compiles           0.2s replay=true 
+cri-tools  872df9b6 GO       source_build=GO      compiler=compiles           0.2s replay=true 
+cri-tools  923e1269 GO       source_build=GO      compiler=compiles           0.2s replay=true 
+cri-tools  a09a30b9 GO       source_build=GO      compiler=compiles           9.7s replay=true 
+cri-tools  b89ca56b UNKNOWN  source_build=UNKNOWN compiler=compiles           9.8s replay=true 
+cri-tools  cf43a9e5 GO       source_build=GO      compiler=compiles           0.2s replay=true 
+cri-tools  e23679fc GO       source_build=GO      compiler=compiles           0.3s replay=true 
+cri-tools  f07d5fdb GO       source_build=GO      compiler=compiles           0.3s replay=true 
+cri-tools/additive     windows=  1 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 1: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=1
+cri-tools/unchanged    windows= 12 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=12: GO=11 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=12 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=12
+TOTAL                  windows= 13 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=13: GO=12 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=13 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=13
+  WITHIN THE UNKNOWN LIMIT cri-tools@b89ca56b99ca..82e1e917: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
+
+13 windows in 11s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
