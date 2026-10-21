@@ -1,0 +1,2 @@
+bin=bin/verifier-fixes-linux-amd64.gz
+version=bin/VERSION-fixes
