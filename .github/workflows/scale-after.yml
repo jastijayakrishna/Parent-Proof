@@ -4,7 +4,9 @@
 # scale/after/request.txt: bin=FILE (a gzipped binary under bin/), label=NAME
 # (results go to scale/after/NAME/), only=a,b (suites or consumers; empty:
 # every pair of scale/plan.json), diag=SUITE:CONSUMER (also decide a
-# scale/diag suite's windows).
+# scale/diag suite's windows). bin and label may each list several, comma
+# separated, in the same order: one run per binary, so a control decided by
+# the same script compares with the candidate window by window.
 name: scale-after
 on:
   push:
@@ -20,22 +22,23 @@ jobs:
     timeout-minutes: 5
     outputs:
       jobs: ${{ steps.p.outputs.jobs }}
-      bin: ${{ steps.p.outputs.bin }}
-      label: ${{ steps.p.outputs.label }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - id: p
         run: |
           r=scale/after/request.txt
-          bin=$(sed -n 's/^bin=//p' $r); label=$(sed -n 's/^label=//p' $r)
+          bins=$(sed -n 's/^bin=//p' $r | tr -d ' '); labels=$(sed -n 's/^label=//p' $r | tr -d ' ')
           only=$(sed -n 's/^only=//p' $r | tr -d ' '); diag=$(sed -n 's/^diag=//p' $r | tr -d ' ')
-          jobs=$(jq -c --arg only "$only" '[.history[] | select(.suite as $s | .consumer as $c | $only == "" or (($only | split(",")) | (index($s) != null or index($c) != null)))
+          pairs=$(jq -c --arg only "$only" '[.history[] | select(.suite as $s | .consumer as $c | $only == "" or (($only | split(",")) | (index($s) != null or index($c) != null)))
             | {suite: .suite, consumer: .consumer, diag: false}]' scale/plan.json)
           if [ -n "$diag" ]; then
-            jobs=$(echo "$jobs" | jq -c --arg d "$diag" '. + [($d | split(",")[] | split(":") | {suite: .[0], consumer: .[1], diag: true})]')
+            pairs=$(echo "$pairs" | jq -c --arg d "$diag" '. + [($d | split(",")[] | split(":") | {suite: .[0], consumer: .[1], diag: true})]')
           fi
+          jobs=$(echo "$pairs" | jq -c --arg b "$bins" --arg l "$labels" '($b | split(",")) as $b | ($l | split(",")) as $l
+            | if ($b | length) != ($l | length) then error("bin and label differ in length") else . end
+            | [range(0; $b | length) as $i | .[] | . + {bin: $b[$i], label: $l[$i]}]')
           echo "jobs: $(echo "$jobs" | jq length)"
-          { echo "jobs=$jobs"; echo "bin=$bin"; echo "label=$label"; } >> "$GITHUB_OUTPUT"
+          echo "jobs=$jobs" >> "$GITHUB_OUTPUT"
 
   decide:
     needs: plan
@@ -46,13 +49,13 @@ jobs:
       max-parallel: 20
       matrix:
         job: ${{ fromJSON(needs.plan.outputs.jobs) }}
-    name: "decide ${{ matrix.job.suite }} -> ${{ matrix.job.consumer }}"
+    name: "${{ matrix.job.label }} ${{ matrix.job.suite }} -> ${{ matrix.job.consumer }}"
     env:
       GOTOOLCHAIN: auto
       SUITE: ${{ matrix.job.suite }}
       CONSUMER: ${{ matrix.job.consumer }}
-      BIN_FILE: ${{ needs.plan.outputs.bin }}
-      LABEL: ${{ needs.plan.outputs.label }}
+      BIN_FILE: ${{ matrix.job.bin }}
+      LABEL: ${{ matrix.job.label }}
       DIAG: ${{ matrix.job.diag }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -73,7 +76,7 @@ jobs:
           git add scale/after
           git commit -q -m "Scale after ($LABEL): $SUITE -> $CONSUMER" || exit 0
           for i in $(seq 1 20); do
-            if git pull -q --rebase -X theirs origin main && git push -q; then exit 0; fi
+            if git pull -q --rebase -X theirs -X no-renames origin main && git push -q; then exit 0; fi
             git rebase --abort 2>/dev/null || true
             sleep $((i * 5))
           done

@@ -1,4 +1,4 @@
-bin=bin/verifier-fixes-linux-amd64.gz
-label=fixes-7496dd6
+bin=bin/verifier-fixes-linux-amd64.gz,bin/verifier-linux-amd64.gz
+label=fixes-6c8def0,control-f3db8e9
 only=
 diag=durabletask-gomodule:dapr

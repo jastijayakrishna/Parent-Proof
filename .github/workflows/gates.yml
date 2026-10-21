@@ -21,6 +21,7 @@ jobs:
     outputs:
       jobs: ${{ steps.plan.outputs.jobs }}
       suites: ${{ steps.plan.outputs.suites }}
+      builds: ${{ steps.plan.outputs.builds }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Plan every suite
@@ -36,6 +37,10 @@ jobs:
           done
           echo "jobs=$jobs" >> "$GITHUB_OUTPUT"
           echo "suites=$suites" >> "$GITHUB_OUTPUT"
+          # scan=new in gates/request.txt keeps the committed scan of the
+          # binary it replaces (gates/results/scan-before/, same binary and
+          # corpus, deterministic) instead of scanning with it again.
+          if grep -q '^scan=new$' gates/request.txt; then echo 'builds=["new"]' >> "$GITHUB_OUTPUT"; else echo 'builds=["new","before"]' >> "$GITHUB_OUTPUT"; fi
 
   shard:
     name: "${{ matrix.job.name }} ${{ matrix.job.shard }}"
@@ -172,6 +177,7 @@ jobs:
 
   scan:
     name: "scan ${{ matrix.ecosystem }} ${{ matrix.build }} with the compiler"
+    needs: plan
     runs-on: ubuntu-24.04
     timeout-minutes: 60
     strategy:
@@ -180,7 +186,7 @@ jobs:
         ecosystem: [istio, spire, linkerd, consul, lnd, dapr, containerd, authzed, temporal, etcd, crio, contour, raft, cortex, jaeger, loki, thanos]
         # new: bin/verifier-linux-amd64.gz; before: bin/verifier-before-linux-amd64.gz,
         # the verifier it replaces, so new Needs review decisions can be counted.
-        build: [new, before]
+        build: ${{ fromJSON(needs.plan.outputs.builds) }}
     env:
       GOTOOLCHAIN: auto
       ECO: ${{ matrix.ecosystem }}
