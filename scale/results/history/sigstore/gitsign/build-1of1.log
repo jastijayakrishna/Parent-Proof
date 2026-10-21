@@ -1,0 +1,17 @@
+time=2026-10-21T09:01:19.284Z level=INFO msg=cloning repo=protobuf-specs url=https://github.com/sigstore/protobuf-specs.git
+time=2026-10-21T09:01:20.482Z level=INFO msg=cloning repo=gitsign url=https://github.com/sigstore/gitsign.git
+time=2026-10-21T09:01:22.961Z level=INFO msg=mined consumer=gitsign pin_moves=12 to_compile=12 skipped=map[]
+time=2026-10-21T09:02:31.042Z level=INFO msg=canary consumer=gitsign at=4eca0d64c51630f1ab130279eb5454011ad02665^ outcome=breaks detail="canary: github.com/sigstore/protobuf-specs/gen/pb-go/common/v1 removed."
+time=2026-10-21T09:02:33.238Z level=INFO msg=window consumer=gitsign bump=4eca0d64 select=breaking breaking=20 compiler=compiles
+time=2026-10-21T09:03:20.513Z level=INFO msg=window consumer=gitsign bump=f7a3ed8a select=breaking breaking=1 compiler=compiles
+time=2026-10-21T09:03:58.896Z level=INFO msg=window consumer=gitsign bump=66e0ff5e select=breaking breaking=1 compiler=compiles
+time=2026-10-21T09:04:13.385Z level=INFO msg=window consumer=gitsign bump=eaeda209 select=breaking breaking=1 compiler=compiles
+time=2026-10-21T09:05:55.190Z level=INFO msg=window consumer=gitsign bump=a49bf9ed select=breaking breaking=3 compiler=compiles
+time=2026-10-21T09:06:05.013Z level=INFO msg=window consumer=gitsign bump=bd7dbe5b select=breaking breaking=7 compiler=breaks
+time=2026-10-21T09:06:25.215Z level=INFO msg=window consumer=gitsign bump=93f028ce select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:07:49.202Z level=INFO msg=window consumer=gitsign bump=f2c099be select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:08:41.436Z level=INFO msg=window consumer=gitsign bump=666efd5e select=breaking breaking=7 compiler=compiles
+time=2026-10-21T09:09:29.534Z level=INFO msg=window consumer=gitsign bump=7a2b9d61 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:09:30.413Z level=INFO msg=window consumer=gitsign bump=78acfdc3 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:10:33.866Z level=INFO msg=window consumer=gitsign bump=af7461e6 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:10:33.866Z level=INFO msg="suite built" suite=sigstore windows_added=12
