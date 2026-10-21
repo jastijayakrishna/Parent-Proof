@@ -1,0 +1,18 @@
+time=2026-10-21T08:39:52.851Z level=INFO msg=cloning repo=KubeArmor url=https://github.com/kubearmor/KubeArmor.git
+time=2026-10-21T08:39:56.775Z level=INFO msg=cloning repo=kubearmor-client url=https://github.com/kubearmor/kubearmor-client.git
+time=2026-10-21T08:39:58.550Z level=INFO msg=mined consumer=kubearmor-client pin_moves=13 to_compile=13 skipped=map[]
+time=2026-10-21T08:41:15.256Z level=INFO msg=canary consumer=kubearmor-client at=21e194aef9869cf59a83c6945e13c2031a451bb2^ outcome=bump_side_effect detail="canary: github.com/kubearmor/KubeArmor/protobuf removed. module github.com/kubearmor/KubeArmor/protobuf@latest found (v0.0.0-20261016060601-e6c53bb14bd0, replaced by /tmp/parent-canary-1842711788), but does not contain package github.com/kubearmor/KubeArmor/protobuf"
+time=2026-10-21T08:41:41.327Z level=INFO msg=window consumer=kubearmor-client bump=21e194ae select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:44:05.571Z level=INFO msg=window consumer=kubearmor-client bump=25085caa select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:44:44.406Z level=INFO msg=window consumer=kubearmor-client bump=c87cc11d select=breaking breaking=4 compiler=compiles
+time=2026-10-21T08:45:23.632Z level=INFO msg=window consumer=kubearmor-client bump=8cc39359 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:48:02.706Z level=INFO msg=window consumer=kubearmor-client bump=e448ed77 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:48:03.517Z level=INFO msg=window consumer=kubearmor-client bump=05c25322 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:48:22.990Z level=INFO msg=window consumer=kubearmor-client bump=45c59e0b select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:48:41.104Z level=INFO msg=window consumer=kubearmor-client bump=9eda6b00 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:50:21.779Z level=INFO msg=window consumer=kubearmor-client bump=325762c6 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:52:14.911Z level=INFO msg=window consumer=kubearmor-client bump=f2ed4970 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:52:48.389Z level=INFO msg=window consumer=kubearmor-client bump=b3070182 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:53:00.278Z level=INFO msg=window consumer=kubearmor-client bump=a9b0c249 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:53:45.327Z level=INFO msg=window consumer=kubearmor-client bump=1f00a476 select=additive breaking=0 compiler=bump_side_effect
+time=2026-10-21T08:53:45.327Z level=INFO msg="suite built" suite=kubearmor windows_added=13
