@@ -1,0 +1,25 @@
+terraform-plugin-framework 19c7ca72 GO       source_build=GO      compiler=compiles           5.8s replay=true 
+terraform-plugin-framework 283721dc GO       source_build=GO      compiler=compiles           6.0s replay=true 
+terraform-plugin-framework 34934f71 GO       source_build=GO      compiler=compiles           0.2s replay=true 
+terraform-plugin-framework 4fc07b7e GO       source_build=GO      compiler=compiles           1.2s replay=true 
+terraform-plugin-framework 60113892 GO       source_build=GO      compiler=compiles           0.2s replay=true 
+terraform-plugin-framework 58b62c83 GO       source_build=GO      compiler=compiles           1.3s replay=true 
+terraform-plugin-framework 7b702d39 NO_GO    source_build=GO      compiler=compiles           1.7s replay=true 
+terraform-plugin-framework 72376c65 UNKNOWN  source_build=GO      compiler=compiles           2.0s replay=true 
+terraform-plugin-framework 7fb936ee NO_GO    source_build=GO      compiler=breaks             1.5s replay=true 
+terraform-plugin-framework 88524807 GO       source_build=GO      compiler=compiles           1.6s replay=true 
+terraform-plugin-framework 9cafd72d GO       source_build=GO      compiler=compiles           1.5s replay=true 
+terraform-plugin-framework 9d9533cf GO       source_build=GO      compiler=compiles           1.7s replay=true 
+terraform-plugin-framework a2137d3a GO       source_build=GO      compiler=compiles           1.7s replay=true 
+terraform-plugin-framework bae96ea8 GO       source_build=GO      compiler=compiles           1.6s replay=true 
+terraform-plugin-framework fd308f11 GO       source_build=GO      compiler=compiles           1.1s replay=true 
+terraform-plugin-framework d6b53b14 UNKNOWN  source_build=UNKNOWN compiler=compiles           1.5s replay=true 
+terraform-plugin-framework/additive windows=  6 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 6: GO= 5 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=6 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=6
+terraform-plugin-framework/breaking windows=  3 | breaks= 1: caught= 0 WRONG_GO=1 abstained=0 | compiles= 2: GO= 2 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 1) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=3 broken=2 RUNTIME_WRONG_GO=0 confirmed=2 unconfirmed=0 | errors=0 | replayed=3
+terraform-plugin-framework/unchanged windows=  7 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 7: GO= 7 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=7 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=7
+TOTAL                  windows= 16 | breaks= 1: caught= 0 WRONG_GO=1 abstained=0 | compiles=15: GO=14 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 1) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=16 broken=2 RUNTIME_WRONG_GO=0 confirmed=2 unconfirmed=0 | errors=0 | replayed=16
+  FAILED terraform-plugin-framework@7fb936eeb1d4..c3810b12: wrong_go: internal/toproto5/action_schema.go:32:10: result.Type undefined (type *tfprotov5.ActionSchema has no field or method Type) | internal/toproto5/action_schema.go:32:27: undefined: tfprotov5.UnlinkedActionSchemaType | internal/toproto6/action_schema.go:32:10: result.Type undefined (type *tfprotov6.ActionSchema has no field or method Type)
+  WITHIN THE UNKNOWN LIMIT terraform-plugin-framework@d6b53b141735..a106af9a: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
+
+16 windows in 15s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 1 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
