@@ -1,0 +1,35 @@
+time=2026-10-21T09:49:04.287Z level=INFO msg=cloning repo=kubelet url=https://github.com/kubernetes/kubelet.git
+time=2026-10-21T09:49:05.389Z level=INFO msg=cloning repo=node-feature-discovery url=https://github.com/kubernetes-sigs/node-feature-discovery.git
+node-feature-discovery 0e22b71d GO       source_build=GO      compiler=compiles           0.7s replay=true 
+node-feature-discovery 194e5cc0 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+node-feature-discovery 195e7908 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+node-feature-discovery 198eb2b5 GO       source_build=GO      compiler=compiles          30.4s replay=true 
+node-feature-discovery 0188aade GO       source_build=GO      compiler=bump_side_effect  34.8s replay=true 
+node-feature-discovery 242a4f43 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+node-feature-discovery 285f4253 GO       source_build=GO      compiler=compiles           0.2s replay=true 
+node-feature-discovery 3469e913 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+node-feature-discovery 1a5659f9 GO       source_build=GO      compiler=compiles          30.6s replay=true 
+node-feature-discovery 4ae762ac GO       source_build=GO      compiler=compiles           1.5s replay=true 
+node-feature-discovery 4e4ccf88 GO       source_build=GO      compiler=compiles           1.6s replay=true 
+node-feature-discovery 4f110ec1 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+node-feature-discovery 553b2699 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+node-feature-discovery 6144f3db GO       source_build=GO      compiler=compiles           0.1s replay=true 
+node-feature-discovery 4746c339 GO       source_build=GO      compiler=compiles          35.8s replay=true 
+node-feature-discovery 871da8ec GO       source_build=GO      compiler=compiles          18.3s replay=true 
+node-feature-discovery 9b271035 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+node-feature-discovery adea670d GO       source_build=GO      compiler=compiles           0.5s replay=true 
+node-feature-discovery b09a4544 GO       source_build=GO      compiler=compiles           0.4s replay=true 
+node-feature-discovery 64486866 NO_GO    source_build=NO_GO   compiler=breaks            34.9s replay=true 
+node-feature-discovery bf98e78d GO       source_build=GO      compiler=compiles           0.1s replay=true 
+node-feature-discovery c3ec7940 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+node-feature-discovery b9b4c853 GO       source_build=GO      compiler=compiles          28.7s replay=true 
+node-feature-discovery edc347e1 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+node-feature-discovery d13729bf GO       source_build=GO      compiler=bump_side_effect  21.9s replay=true 
+node-feature-discovery/additive windows=  4 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 3: GO= 3 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 0, UNKNOWN 0, GO 1) | wire: judged=4 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=4
+node-feature-discovery/breaking windows=  2 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 0, UNKNOWN 0, GO 1) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=1 | errors=0 | replayed=2
+node-feature-discovery/unchanged windows= 19 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=19: GO=19 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=19 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=19
+TOTAL                  windows= 25 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles=22: GO=22 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=2 (NO-GO 0, UNKNOWN 0, GO 2) | wire: judged=25 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=1 | errors=0 | replayed=25
+
+25 windows in 2m2s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 128
