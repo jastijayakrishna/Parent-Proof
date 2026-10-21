@@ -1,0 +1,43 @@
+time=2026-10-21T11:56:11.266Z level=INFO msg=cloning repo=bb-browser url=https://github.com/buildbarn/bb-browser.git
+time=2026-10-21T11:56:12.337Z level=INFO msg=cloning repo=bb-storage url=https://github.com/buildbarn/bb-storage.git
+bb-browser 013765a5 GO       source_build=GO      compiler=compiles          17.7s replay=true 
+bb-browser 10b339da NO_GO    source_build=NO_GO   compiler=compiles          29.3s replay=true 
+bb-browser 4035a546 NO_GO    source_build=NO_GO   compiler=bump_side_effect  10.1s replay=true 
+bb-browser 1731858d UNKNOWN  source_build=UNKNOWN compiler=breaks            23.6s replay=true 
+bb-browser 4ab3ea9d NO_GO    source_build=NO_GO   compiler=compiles           9.2s replay=true 
+bb-browser 4d897223 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+bb-browser 4ed56d70 NO_GO    source_build=NO_GO   compiler=compiles           2.7s replay=true 
+bb-browser 55c13808 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+bb-browser 423d039d NO_GO    source_build=NO_GO   compiler=bump_side_effect  18.5s replay=true 
+bb-browser 5d710fd5 NO_GO    source_build=NO_GO   compiler=compiles           7.6s replay=true 
+bb-browser 68e67027 GO       source_build=GO      compiler=compiles           6.6s replay=true 
+bb-browser 794e3807 NO_GO    source_build=NO_GO   compiler=compiles           8.6s replay=true 
+bb-browser 84796f05 NO_GO    source_build=NO_GO   compiler=compiles           1.8s replay=true 
+bb-browser 8d647cd2 GO       source_build=GO      compiler=compiles           4.5s replay=true 
+bb-browser 823deb2f GO       source_build=GO      compiler=breaks            25.5s replay=true 
+bb-browser 9b44996f NO_GO    source_build=GO      compiler=compiles          23.6s replay=true 
+bb-browser b3570162 GO       source_build=GO      compiler=compiles           3.3s replay=true 
+bb-browser af89e4bc NO_GO    source_build=NO_GO   compiler=breaks            13.0s replay=true 
+bb-browser cc676d9c NO_GO    source_build=NO_GO   compiler=bump_side_effect   4.3s replay=true 
+bb-browser cef29fb0 NO_GO    source_build=UNKNOWN compiler=breaks            12.8s replay=true 
+bb-browser b82789fb NO_GO    source_build=GO      compiler=compiles          19.2s replay=true 
+bb-browser d115d51d NO_GO    source_build=NO_GO   compiler=breaks             7.0s replay=true 
+bb-browser e5acd046 GO       source_build=GO      compiler=compiles           5.2s replay=true 
+bb-browser e6e9ad5f GO       source_build=GO      compiler=compiles           4.5s replay=true 
+bb-browser f0fbe965 GO       source_build=GO      compiler=compiles           5.1s replay=true 
+bb-browser fc78080f GO       source_build=GO      compiler=compiles           0.0s replay=true 
+bb-browser ef9eacb9 NO_GO    source_build=NO_GO   compiler=breaks            18.2s replay=true 
+bb-browser/additive    windows=  8 | breaks= 2: caught= 0 WRONG_GO=1 abstained=1 | compiles= 5: GO= 2 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 1, UNKNOWN 0, GO 0) | wire: judged=8 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=8
+bb-browser/breaking    windows=  8 | breaks= 3: caught= 2 WRONG_GO=0 abstained=1 | compiles= 4: GO= 2 FALSE_NOGO=2 abstained=0 (runtime-only NO-GO 2) | unavailable=1 (NO-GO 1, UNKNOWN 0, GO 0) | wire: judged=8 broken=6 RUNTIME_WRONG_GO=0 confirmed=6 unconfirmed=2 | errors=0 | replayed=8
+bb-browser/unchanged   windows= 11 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles= 9: GO= 8 FALSE_NOGO=1 abstained=0 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 1, UNKNOWN 0, GO 0) | wire: judged=11 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=11
+TOTAL                  windows= 27 | breaks= 6: caught= 3 WRONG_GO=1 abstained=2 | compiles=18: GO=12 FALSE_NOGO=3 abstained=0 (runtime-only NO-GO 2) | unavailable=3 (NO-GO 3, UNKNOWN 0, GO 0) | wire: judged=27 broken=6 RUNTIME_WRONG_GO=0 confirmed=6 unconfirmed=2 | errors=0 | replayed=27
+  FAILED bb-browser@10b339da6324..20598f43: false_nogo: cmd/bb_browser/browser_service.go:1011, cmd/bb_browser/browser_service.go:177, cmd/bb_browser/browser_service.go:970
+  FAILED bb-browser@1731858db193..dc342e17: unknown_on_break: cmd/bb_browser/main.go:83:4: not enough arguments in call to blobstore_configuration.NewCASAndACBlobAccessFromConfiguration
+  FAILED bb-browser@4ab3ea9df0fa..34e3e8d9: false_nogo: cmd/bb_browser/main.go:276, github.com/buildbarn/bb-storage@v0.0.0-20230629193729-d6a051ca744d/pkg/global/apply_configuration.go:74
+  FAILED bb-browser@794e38071d7a..519a8946: false_nogo: github.com/buildbarn/bb-storage@v0.0.0-20230905110346-c04246b462b6/pkg/blobstore/configuration/ac_blob_access_creator.go:62, github.com/buildbarn/bb-storage@v0.0.0-20230905110346-c04246b462b6/pkg/blobstore/configuration/cas_blob_access_creator.go:80, github.com/buildbarn/bb-storage@v0.0.0-20230905110346-c04246b462b6/pkg/blobstore/configuration/fsac_blob_access_creator.go:44
+  FAILED bb-browser@823deb2f4b07..5bae5844: wrong_go: /home/runner/go/pkg/mod/github.com/buildbarn/bb-remote-execution@v0.0.0-20250812083130-5b4f5a6879e1/pkg/clock/suspendable_clock.go:42:18: cannot use (*SuspendableClock)(nil) (value of type *SuspendableClock) as "github.com/buildbarn/bb-storage/pkg/clock".Clock value in variable declaration: *SuspendableClock does not implement "github.com/buildbarn/bb-storage/pkg/clock".Clock (missing method NewTicker)
+  FAILED bb-browser@cef29fb08873..7bb781bd: unknown_on_break: cmd/bb_browser/main.go:72:71: not enough arguments in call to global.ApplyConfiguration | cmd/bb_browser/main.go:88:97: not enough arguments in call to authorizerFactory.NewAuthorizerFromConfiguration
+
+27 windows in 2m25s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 6 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 147
