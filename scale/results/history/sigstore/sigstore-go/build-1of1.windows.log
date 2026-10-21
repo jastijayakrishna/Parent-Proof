@@ -1,0 +1,15 @@
+time=2026-10-21T08:33:31.784Z level=INFO msg=mined consumer=sigstore-go pin_moves=13 to_compile=13 skipped=map[]
+time=2026-10-21T08:34:05.115Z level=INFO msg=canary consumer=sigstore-go at=2cdb28ed5f4ed437ed2dd34a94fe1eee2900ee0e^ outcome=breaks detail="canary: github.com/sigstore/protobuf-specs/gen/pb-go/common/v1 removed."
+time=2026-10-21T08:34:07.366Z level=INFO msg=window consumer=sigstore-go bump=2cdb28ed select=breaking breaking=21 compiler=compiles
+time=2026-10-21T08:34:29.300Z level=INFO msg=window consumer=sigstore-go bump=edafa82f select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:34:29.723Z level=INFO msg=window consumer=sigstore-go bump=2a9419a8 select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:34:48.882Z level=INFO msg=window consumer=sigstore-go bump=916a0214 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:34:49.966Z level=INFO msg=window consumer=sigstore-go bump=cb4515a4 select=breaking breaking=4 compiler=breaks
+time=2026-10-21T08:35:04.308Z level=INFO msg=window consumer=sigstore-go bump=bdbe45f0 select=breaking breaking=3 compiler=compiles
+time=2026-10-21T08:35:07.569Z level=INFO msg=window consumer=sigstore-go bump=c43b3487 select=breaking breaking=3 compiler=compiles
+time=2026-10-21T08:35:10.796Z level=INFO msg=window consumer=sigstore-go bump=2c9ea938 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:35:42.485Z level=INFO msg=window consumer=sigstore-go bump=56c25281 select=breaking breaking=7 compiler=compiles
+time=2026-10-21T08:36:04.863Z level=INFO msg=window consumer=sigstore-go bump=dcab992b select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:36:06.368Z level=INFO msg=window consumer=sigstore-go bump=f62d7f4c select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:36:24.856Z level=INFO msg=window consumer=sigstore-go bump=e5c957ab select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:36:27.912Z level=INFO msg=window consumer=sigstore-go bump=976125fd select=additive breaking=0 compiler=compiles
