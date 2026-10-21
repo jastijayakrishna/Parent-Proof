@@ -29,6 +29,9 @@ s = {"verdict": d.get("verdict"), "aspects": d.get("aspects"), "changes": len(d.
      "provider_api_error": rec.get("provider_api_error"),
      "generated_gone": rec.get("generated_gone"), "contract_outside": rec.get("contract_outside"),
      "findings": [{k: f.get(k) for k in ("rule", "outcome", "aspect", "symbol", "reason", "detail")} for f in d.get("findings") or []][:40],
+     # Every finding that needs review, with where it points (file:line, sink).
+     "unknown_findings": [dict({k: f.get(k) for k in ("rule", "reason", "symbol", "detail")}, evidence=[json.dumps(e)[:600] for e in (f.get("evidence") or [])[:4]])
+                          for f in d.get("findings") or [] if f.get("outcome") == "UNKNOWN"][:60],
      "callers": [{"unit": (c.get("caller") or {}).get("deploy_unit"), "outcome": c.get("outcome")} for c in d.get("callers") or []][:20]}
 api = rec.get("provider_api") or {}
 s["provider_api_facts"] = {k: (v if len(json.dumps(v)) < 400 else json.dumps(v)[:400]) for k, v in list(api.items())[:40]} if isinstance(api, dict) else str(api)[:2000]
