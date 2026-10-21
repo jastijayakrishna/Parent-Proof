@@ -1,0 +1,26 @@
+time=2026-10-21T09:24:25.117Z level=INFO msg=cloning repo=p-kms url=https://github.com/kubernetes/kms.git
+time=2026-10-21T09:24:25.819Z level=INFO msg=cloning repo=c-kms url=https://github.com/kubernetes-sigs/aws-encryption-provider.git
+kms         bff5d3e8 UNKNOWN  source_build=UNKNOWN compiler=compiles           23.6s 
+kms         cc6cab96 UNKNOWN  source_build=UNKNOWN compiler=compiles            1.7s 
+kms         2273d4f8 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.2s 
+kms         04e6fca5 UNKNOWN  source_build=UNKNOWN compiler=compiles            1.7s 
+kms         3fc96f31 UNKNOWN  source_build=UNKNOWN compiler=compiles            1.8s 
+kms         aa59e393 UNKNOWN  source_build=UNKNOWN compiler=compiles            1.3s 
+kms         0522009d GO       source_build=GO      compiler=-                   0.3s 
+kms         85aba10c GO       source_build=GO      compiler=-                   0.3s 
+kms         01ccf5e4 GO       source_build=GO      compiler=baseline_fails      0.9s 
+kms            9 decisions  GO   3  NO-GO   0  UNKNOWN   6 (66.7%)  errors 0 | compiler judged   6: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 6 | not judged 3
+TOTAL          9 decisions  GO   3  NO-GO   0  UNKNOWN   6 (66.7%)  errors 0 | compiler judged   6: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 6 | not judged 3
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    6   1  TOOLCHAIN_TOO_OLD (e.g. kms@bff5d3e86c9c0a1adb9be217094c5c3f1a9c5a0a)
+  FAILED kms@bff5d3e86c9c0a1adb9be217094c5c3f1a9c5a0a: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED kms@cc6cab969b524e04ed93e59267304466f4d83de7: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED kms@2273d4f89020820d4ae1ad2ea3f9975ac355f7e8: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED kms@04e6fca5676722dc1872e6f6e0179fd6306cb03a: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED kms@3fc96f31b528cd905c972eda22b5d6a92329e1fe: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED kms@aa59e393d048a8740617b690060b21878ab46489: unknown_on_safe: TOOLCHAIN_TOO_OLD
+
+9 windows in 36s.
+verifier gate: scan failed: 6 disagreements with the compiler or errors
+exit 1 seconds 35
