@@ -1,0 +1,1 @@
+{"consumer":"node-driver-registrar","at":"ceb1fa3d208c945c412abf77fefdb3c4493d7078","shard":"1/1","oracle":{"outcome":"oracle_error","detail":"canary: no package of the consumer imports a package of github.com/container-storage-interface/spec directly"}}

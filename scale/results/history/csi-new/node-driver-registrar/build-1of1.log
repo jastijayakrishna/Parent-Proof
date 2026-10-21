@@ -1,0 +1,11 @@
+time=2026-10-21T08:23:23.855Z level=INFO msg=cloning repo=spec url=https://github.com/container-storage-interface/spec.git
+time=2026-10-21T08:23:25.269Z level=INFO msg=cloning repo=node-driver-registrar url=https://github.com/kubernetes-csi/node-driver-registrar.git
+time=2026-10-21T08:23:29.447Z level=INFO msg=mined consumer=node-driver-registrar pin_moves=6 to_compile=6 skipped=map[]
+time=2026-10-21T08:23:33.862Z level=INFO msg=canary consumer=node-driver-registrar at=ceb1fa3d208c945c412abf77fefdb3c4493d7078 outcome=oracle_error detail="canary: no package of the consumer imports a package of github.com/container-storage-interface/spec directly"
+time=2026-10-21T08:24:11.930Z level=INFO msg=window consumer=node-driver-registrar bump=ceb1fa3d select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:24:12.040Z level=INFO msg=window consumer=node-driver-registrar bump=e472221b select=breaking breaking=17 compiler=compiles
+time=2026-10-21T08:24:34.334Z level=INFO msg=window consumer=node-driver-registrar bump=d272665d select=breaking breaking=7 compiler=compiles
+time=2026-10-21T08:24:34.561Z level=INFO msg=window consumer=node-driver-registrar bump=3d124e6e select=breaking breaking=6 compiler=compiles
+time=2026-10-21T08:24:47.665Z level=INFO msg=window consumer=node-driver-registrar bump=78b0d8da select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:24:47.843Z level=INFO msg=window consumer=node-driver-registrar bump=e53ed9ab select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:24:47.843Z level=INFO msg="suite built" suite=csi-new windows_added=6
