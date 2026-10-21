@@ -1,0 +1,50 @@
+=https://github.com/kubernetes/cri-api.git
+time=2026-10-21T11:44:34.459Z level=INFO msg=cloning repo=cri-tools url=https://github.com/kubernetes-sigs/cri-tools.git
+cri-tools  16aba0d0 GO       source_build=GO      compiler=compiles           0.9s replay=true 
+cri-tools  16d56738 UNKNOWN  source_build=UNKNOWN compiler=breaks             6.6s replay=true 
+cri-tools  13496db0 NO_GO    source_build=NO_GO   compiler=breaks             7.7s replay=true 
+cri-tools  2d0bbc7b GO       source_build=GO      compiler=compiles           0.3s replay=true 
+cri-tools  2a66a639 NO_GO    source_build=NO_GO   compiler=breaks             2.6s replay=true 
+cri-tools  3ef56ebd UNKNOWN  source_build=GO      compiler=compiles           2.2s replay=true 
+cri-tools  4242bab2 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+cri-tools  40122fbe GO       source_build=GO      compiler=compiles           0.2s replay=true 
+cri-tools  46c81013 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+cri-tools  44512ae9 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+cri-tools  4c010d85 GO       source_build=GO      compiler=compiles           0.2s replay=true 
+cri-tools  4c7bab88 GO       source_build=GO      compiler=compiles           0.2s replay=true 
+cri-tools  582d49f6 GO       source_build=GO      compiler=compiles           0.2s replay=true 
+cri-tools  59ba0dd8 GO       source_build=GO      compiler=compiles           0.2s replay=true 
+cri-tools  5cb60482 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+cri-tools  684cf823 GO       source_build=GO      compiler=compiles           0.2s replay=true 
+cri-tools  69fb6e04 GO       source_build=GO      compiler=compiles           0.3s replay=true 
+cri-tools  562de388 GO       source_build=GO      compiler=compiles           3.3s replay=true 
+cri-tools  872df9b6 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+cri-tools  88d8ad9d GO       source_build=GO      compiler=compiles           0.2s replay=true 
+cri-tools  7e2aa2ec GO       source_build=GO      compiler=compiles           2.9s replay=true 
+cri-tools  923e1269 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+cri-tools  93a40465 GO       source_build=GO      compiler=compiles           2.1s replay=true 
+cri-tools  9ee43a85 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+cri-tools  88f266cb NO_GO    source_build=NO_GO   compiler=breaks             3.6s replay=true 
+cri-tools  a09a30b9 GO       source_build=GO      compiler=compiles           2.5s replay=true 
+cri-tools  b5cf674b GO       source_build=GO      compiler=compiles           0.2s replay=true 
+cri-tools  b27f0459 NO_GO    source_build=NO_GO   compiler=breaks             2.2s replay=true 
+cri-tools  c4c65a94 GO       source_build=GO      compiler=compiles           0.2s replay=true 
+cri-tools  ca0237b9 GO       source_build=GO      compiler=compiles           0.3s replay=true 
+cri-tools  cf43a9e5 GO       source_build=GO      compiler=compiles           0.2s replay=true 
+cri-tools  b89ca56b UNKNOWN  source_build=UNKNOWN compiler=compiles           2.1s replay=true 
+cri-tools  e0327f82 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+cri-tools  e23679fc GO       source_build=GO      compiler=compiles           0.1s replay=true 
+cri-tools  e97cdaba GO       source_build=GO      compiler=compiles           0.2s replay=true 
+cri-tools  de40f4cd GO       source_build=GO      compiler=compiles           1.8s replay=true 
+cri-tools  f07d5fdb GO       source_build=GO      compiler=compiles           0.4s replay=true 
+cri-tools  ec763f83 GO       source_build=GO      compiler=compiles           1.9s replay=true 
+cri-tools/additive     windows=  6 | breaks= 2: caught= 1 WRONG_GO=0 abstained=1 | compiles= 4: GO= 4 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=6 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=6
+cri-tools/breaking     windows=  3 | breaks= 2: caught= 2 WRONG_GO=0 abstained=0 | compiles= 1: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=3 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=3
+cri-tools/unchanged    windows= 29 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles=28: GO=27 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=29 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=29
+TOTAL                  windows= 38 | breaks= 5: caught= 4 WRONG_GO=0 abstained=1 | compiles=33: GO=32 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=38 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=38
+  FAILED cri-tools@16d5673873fd..bde76f64: unknown_on_break: /home/runner/go/pkg/mod/k8s.io/cri-client@v0.35.2/pkg/remote_image.go:104:9: cannot use service (variable of type *remoteImageService) as "k8s.io/cri-api/pkg/apis".ImageManagerService value in return statement: *remoteImageService does not implement "k8s.io/cri-api/pkg/apis".ImageManagerService (wrong type for method Close) | /home/runner/go/pkg/mod/k8s.io/cri-client@v0.35.2/pkg/remote_runtime.go:138:9: cannot use service (variable of type *remoteRuntimeService) as "k8s.io/cri-api/pkg/apis".RuntimeService value in return statement: *remoteRuntimeService does not implement "k8s.io/cri-api/pkg/apis".RuntimeService (wrong type for method Close)
+  WITHIN THE UNKNOWN LIMIT cri-tools@b89ca56b99ca..82e1e917: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
+
+38 windows in 24s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 1 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 28
