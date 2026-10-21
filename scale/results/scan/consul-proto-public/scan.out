@@ -1,0 +1,27 @@
+time=2026-10-21T09:25:34.467Z level=INFO msg=cloning repo=p-consul-proto-public url=https://github.com/hashicorp/consul.git
+time=2026-10-21T09:25:36.908Z level=INFO msg=cloning repo=c-consul-proto-public url=https://github.com/hashicorp/consul-server-connection-manager.git
+consul-proto-public 668c7586 GO       source_build=GO      compiler=-                   7.4s 
+consul-proto-public 1fde5839 GO       source_build=GO      compiler=-                   0.5s 
+consul-proto-public 9ef2b8e0 GO       source_build=GO      compiler=-                   0.5s 
+consul-proto-public 28ae8145 GO       source_build=GO      compiler=-                   0.5s 
+consul-proto-public 3db1bb7d GO       source_build=GO      compiler=-                   0.4s 
+consul-proto-public 31a91624 GO       source_build=GO      compiler=-                   0.5s 
+consul-proto-public 6aaebf2d GO       source_build=GO      compiler=-                   0.5s 
+consul-proto-public f11866ea GO       source_build=GO      compiler=-                   0.6s 
+consul-proto-public a3b721be GO       source_build=GO      compiler=-                   0.5s 
+consul-proto-public 4d996d1b GO       source_build=GO      compiler=-                   0.4s 
+consul-proto-public 8af3adec GO       source_build=GO      compiler=-                   0.5s 
+consul-proto-public f1f68f35 GO       source_build=GO      compiler=-                   0.6s 
+consul-proto-public 57e08666 GO       source_build=GO      compiler=-                   0.4s 
+consul-proto-public 25e8c070 GO       source_build=GO      compiler=-                   0.5s 
+consul-proto-public c035ddbe GO       source_build=GO      compiler=-                   0.5s 
+consul-proto-public e4277643 GO       source_build=GO      compiler=-                   0.5s 
+consul-proto-public 7ee7c79b GO       source_build=GO      compiler=-                   0.5s 
+consul-proto-public 57fdfe12 GO       source_build=GO      compiler=-                   0.4s 
+consul-proto-public 5a6283bd GO       source_build=GO      compiler=-                   0.5s 
+consul-proto-public b3fa6c40 GO       source_build=GO      compiler=-                   0.5s 
+consul-proto-public   20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+
+20 windows in 20s.
+exit 0 seconds 20
