@@ -1,0 +1,11 @@
+time=2026-10-21T08:58:22.915Z level=INFO msg=cloning repo=pulumi-v3 url=https://github.com/pulumi/pulumi.git
+time=2026-10-21T08:58:41.400Z level=INFO msg=cloning repo=pulumi-yaml url=https://github.com/pulumi/pulumi-yaml.git
+time=2026-10-21T08:58:54.247Z level=INFO msg=skip consumer=pulumi-yaml bump=c10ff4fc old=v3.242.0 new=v3.242.1-0.20260522102204-0b24bb6eb47b reason=unresolved_pin
+time=2026-10-21T08:58:54.247Z level=INFO msg=skip consumer=pulumi-yaml bump=13429c4e old=v3.242.1-0.20260522102204-0b24bb6eb47b new=v3.243.0 reason=unresolved_pin
+time=2026-10-21T08:59:11.588Z level=INFO msg=mined consumer=pulumi-yaml pin_moves=40 to_compile=4 skipped=map[unresolved_pin:2]
+time=2026-10-21T09:00:54.357Z level=INFO msg=canary consumer=pulumi-yaml at=0fe531ad72dc18364b980a26f61527e189c2360e^ outcome=breaks detail="canary: github.com/pulumi/pulumi/sdk/v3/proto/go removed."
+time=2026-10-21T09:01:55.244Z level=INFO msg=window consumer=pulumi-yaml bump=0fe531ad select=breaking breaking=1 compiler=breaks
+time=2026-10-21T09:03:47.542Z level=INFO msg=window consumer=pulumi-yaml bump=4784ba54 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:04:06.826Z level=INFO msg=window consumer=pulumi-yaml bump=9bf66fb8 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:04:52.055Z level=INFO msg=window consumer=pulumi-yaml bump=dde3dbee select=additive breaking=0 compiler=breaks
+time=2026-10-21T09:04:52.056Z level=INFO msg="suite built" suite=pulumi windows_added=4
