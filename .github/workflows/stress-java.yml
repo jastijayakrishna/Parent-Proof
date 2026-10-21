@@ -28,7 +28,8 @@ jobs:
           only=$(sed -n 's/^only=//p' stress/java-request.txt | tr -d ' ')
           modes=$(sed -n 's/^modes=//p' stress/java-request.txt | tr -d ' ')
           part=$(sed -n 's/^part=//p' stress/java-request.txt | tr -d ' ')
-          jobs=$(python3 stress/java/plan.py "${set:-dev}" "$only" "${modes:-history,scan}" "${part:-1/1}")
+          shards=$(sed -n 's/^shards=//p' stress/java-request.txt | tr -d ' ')
+          jobs=$(python3 stress/java/plan.py "${set:-dev}" "$only" "${modes:-history,scan}" "${part:-1/1}" "$shards")
           echo "$jobs" | jq -r '.[] | "\(.project) \(.mode) \(.shard)"'
           echo "jobs=$jobs" >> "$GITHUB_OUTPUT"
 
@@ -107,8 +108,10 @@ jobs:
           git config user.email "proto-shadow@users.noreply.github.com"
           git add "$dest"
           git commit -q -m "Stress Java: $P $MODE $SHARD" || exit 0
+          # No rename detection: a shard's new file taken as a rename of an
+          # old shard file deleted upstream stopped the rebase (2026-10-21).
           for i in 1 2 3 4 5 6; do
-            if git pull -q --rebase -X theirs origin main && git push -q; then exit 0; fi
+            if git pull -q --rebase -X theirs -X no-renames origin main && git push -q; then exit 0; fi
             git rebase --abort 2>/dev/null || true
             sleep $((i * 5))
           done

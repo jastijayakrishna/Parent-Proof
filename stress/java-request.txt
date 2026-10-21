@@ -1,5 +1,6 @@
-# rerun 2026-10-21: binary main f3db8e9 (scale test), part 4/4
+# rerun 2026-10-21: binary main f3db8e9 (scale test), the 5 jobs of part 1/4 whose results did not land (rename/delete conflict on commit)
 set=all
-only=
-modes=history,scan
-part=4/4
+only=camunda-zeebe,beam
+modes=history
+part=1/1
+shards=camunda-zeebe:history:4/24,camunda-zeebe:history:8/24,beam:history:9/40,beam:history:13/40,beam:history:17/40
