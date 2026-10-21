@@ -1,0 +1,15 @@
+argocd-image-updater 1118c9b6 UNKNOWN  source_build=UNKNOWN compiler=compiles          18.6s replay=true 
+argocd-image-updater 363ee763 GO       source_build=GO      compiler=compiles          19.2s replay=true 
+argocd-image-updater 3a2a6c6e UNKNOWN  source_build=UNKNOWN compiler=compiles          10.0s replay=true 
+argocd-image-updater 597aaa95 GO       source_build=GO      compiler=compiles          14.6s replay=true 
+argocd-image-updater 873a71f2 GO       source_build=GO      compiler=compiles          13.3s replay=true 
+argocd-image-updater d5a8f943 NO_GO    source_build=UNKNOWN compiler=bump_side_effect  10.9s replay=true 
+argocd-image-updater/additive windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 2: GO= 0 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
+argocd-image-updater/breaking windows=  1 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 1, UNKNOWN 0, GO 0) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=1 | errors=0 | replayed=1
+argocd-image-updater/unchanged windows=  3 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 3: GO= 3 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=3 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=3
+TOTAL                  windows=  6 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 5: GO= 3 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 1, UNKNOWN 0, GO 0) | wire: judged=6 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=1 | errors=0 | replayed=6
+  WITHIN THE UNKNOWN LIMIT argocd-image-updater@1118c9b6b0bb..f2ae45b1: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  WITHIN THE UNKNOWN LIMIT argocd-image-updater@3a2a6c6e1898..c2792992: unknown_on_safe: CONTRACT_COMPILE_ERROR
+
+6 windows in 45s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
