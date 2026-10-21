@@ -1,0 +1,8 @@
+time=2026-10-21T08:54:41.211Z level=INFO msg=mined consumer=opentelemetry-operator pin_moves=6 to_compile=6 skipped=map[]
+time=2026-10-21T08:55:54.555Z level=INFO msg=canary consumer=opentelemetry-operator at=ee8db9d4641ab0d0b001748786c2cdf875e227d6^ outcome=breaks detail="canary: github.com/open-telemetry/opamp-go/protobufs removed."
+time=2026-10-21T08:55:59.091Z level=INFO msg=window consumer=opentelemetry-operator bump=ee8db9d4 select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T08:57:33.535Z level=INFO msg=window consumer=opentelemetry-operator bump=934c1d8e select=breaking breaking=3 compiler=breaks
+time=2026-10-21T08:58:08.706Z level=INFO msg=window consumer=opentelemetry-operator bump=d726ee2b select=breaking breaking=4 compiler=breaks
+time=2026-10-21T09:00:29.686Z level=INFO msg=window consumer=opentelemetry-operator bump=65f7a62a select=breaking breaking=53 compiler=breaks
+time=2026-10-21T09:00:49.963Z level=INFO msg=window consumer=opentelemetry-operator bump=2e5148d7 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:01:25.840Z level=INFO msg=window consumer=opentelemetry-operator bump=4ad3d0bd select=additive breaking=0 compiler=compiles
