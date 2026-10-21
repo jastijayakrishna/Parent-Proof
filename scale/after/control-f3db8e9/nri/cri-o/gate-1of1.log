@@ -1,0 +1,29 @@
+time=2026-10-21T11:54:58.947Z level=INFO msg=cloning repo=cri-o url=https://github.com/cri-o/cri-o.git
+time=2026-10-21T11:55:09.775Z level=INFO msg=cloning repo=nri url=https://github.com/containerd/nri.git
+cri-o      0393a498 GO       source_build=GO      compiler=compiles          30.0s replay=true 
+cri-o      0c8c22dc NO_GO    source_build=GO      compiler=compiles          31.1s replay=true 
+cri-o      1891357e NO_GO    source_build=NO_GO   compiler=compiles          24.1s replay=true 
+cri-o      2824bf99 GO       source_build=GO      compiler=compiles          25.2s replay=true 
+cri-o      33da12ff UNKNOWN  source_build=UNKNOWN compiler=compiles          21.8s replay=true 
+cri-o      482be4b4 UNKNOWN  source_build=UNKNOWN compiler=bump_side_effect  21.9s replay=true 
+cri-o      85104990 GO       source_build=GO      compiler=compiles          14.2s replay=true 
+cri-o      8564f355 GO       source_build=GO      compiler=compiles          20.4s replay=true 
+cri-o      91bf1709 GO       source_build=GO      compiler=compiles           9.4s replay=true 
+cri-o      95b887d5 NO_GO    source_build=NO_GO   compiler=breaks            13.9s replay=true 
+cri-o      9de68f5d GO       source_build=GO      compiler=compiles          13.7s replay=true 
+cri-o      a8f0ff8d GO       source_build=GO      compiler=compiles           7.0s replay=true 
+cri-o      9e979af0 GO       source_build=GO      compiler=compiles          14.5s replay=true 
+cri-o      bdc8bd66 GO       source_build=GO      compiler=compiles          17.1s replay=true 
+cri-o      cde8de8a GO       source_build=GO      compiler=compiles          10.5s replay=true 
+cri-o      deba5948 UNKNOWN  source_build=UNKNOWN compiler=compiles          14.8s replay=true 
+cri-o/additive         windows=  8 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 7: GO= 5 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 0, UNKNOWN 1, GO 0) | wire: judged=8 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=8
+cri-o/breaking         windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 2: GO= 1 FALSE_NOGO=1 abstained=0 (runtime-only NO-GO 1) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=2 broken=2 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
+cri-o/unchanged        windows=  6 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles= 5: GO= 5 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=6 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=6
+TOTAL                  windows= 16 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles=14: GO=11 FALSE_NOGO=1 abstained=2 (runtime-only NO-GO 1) | unavailable=1 (NO-GO 0, UNKNOWN 1, GO 0) | wire: judged=16 broken=2 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=16
+  FAILED cri-o@1891357ec992..a2eea2bc: false_nogo: server/nri-api.go:272, server/nri-api.go:80, vendor/github.com/containerd/nri/pkg/adaptation/adaptation.go:207
+  WITHIN THE UNKNOWN LIMIT cri-o@33da12ff6d9a..edfd91b7: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
+  WITHIN THE UNKNOWN LIMIT cri-o@deba5948e5a9..57442b2a: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
+
+16 windows in 2m32s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 1 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 164
