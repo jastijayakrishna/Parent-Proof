@@ -4,12 +4,12 @@ A public, timestamped record of how a contract verifier does on real pull
 requests it has never seen.
 
 <!-- live:begin -->
-**Updated 2026-10-20 22:48 UTC.** [![shadow](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml/badge.svg)](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml)
+**Updated 2026-10-21 01:07 UTC.** [![shadow](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml/badge.svg)](https://github.com/jastijayakrishna/Parent-Proof/actions/workflows/shadow.yml)
 
 | | changes | judge not verified | broke the build | caught | missed | false alarms | needs review |
 |---|---|---|---|---|---|---|---|
 | [Real upgrades](HISTORY.md), 9 projects' history | 178 | 0 | 24 | 21 | 0 | 1 | 25 |
-| [Open pull requests](SCOREBOARD.md), decided live | 159 | 25 | 0 | 0 | 0 | 0 | 25 |
+| [Open pull requests](SCOREBOARD.md), decided live | 160 | 25 | 0 | 0 | 0 | 0 | 25 |
 | [Stress test](STRESS.md), Go: projects never used to tune it | 185 | 2 | 7 | 7 | 0 | 0 | 38 |
 | [Stress test](STRESS.md), Go: hold-out projects, run once | 254 | 0 | 22 | 12 | 0 | 4 | 58 |
 | [Stress test](STRESS.md), Java: projects never used to tune it | 450 | 71 | 17 | 16 | 0 | 0 | 13 |

@@ -1,0 +1,51 @@
+{
+  "pr": {
+    "n": 13908,
+    "head": "a305bcdab702f99eabced3ae6ba4d308a41df77f",
+    "base": "b0a37b632b22993f9a85ea7583b8ae0102d3d4a2",
+    "title": "cri: Upgrade go-criu to v8",
+    "url": "https://github.com/containerd/containerd/pull/13908",
+    "updated": "2026-10-21T00:51:18Z",
+    "eco": "containerd",
+    "key": "containerd-13908-a305bcdab702",
+    "provider": "containerd/containerd",
+    "consumer": "containerd/nerdctl",
+    "consumer_sha": "af8c1c8c6fd52ccddb43a975801143b91786d72f"
+  },
+  "merge_base": "b0a37b632b22993f9a85ea7583b8ae0102d3d4a2",
+  "decided": "a34e2f487b10520aa09a0c1d80b03256a792c426",
+  "started": "2026-10-21T01:07:11Z",
+  "finished": "2026-10-21T01:07:39Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/39525152557",
+  "verifier": {
+    "version": "v0.0.0-20261007154851-0d192b46d993 protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "7a40d7d36869f7f02c88b50f87ada4736577f9d657a5c820dad878529ae8636f"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "containerd",
+      "commit": "a34e2f487b10520aa09a0c1d80b03256a792c426",
+      "parent": "b0a37b632b22993f9a85ea7583b8ae0102d3d4a2",
+      "date": "2026-10-21",
+      "subject": "pull request 13908 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "vendor/github.com/checkpoint-restore/go-criu/v7/rpc/rpc.proto",
+        "vendor/github.com/checkpoint-restore/go-criu/v7/stats/stats.proto",
+        "vendor/github.com/checkpoint-restore/go-criu/v8/rpc/rpc.proto",
+        "vendor/github.com/checkpoint-restore/go-criu/v8/stats/stats.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: vendor/github.com/checkpoint-restore/go-criu/v7/rpc/rpc.proto",
+      "seconds": 26.610291984,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-21T01:07:11.803Z level=INFO msg=cloning repo=c-containerd url=https://github.com/containerd/nerdctl.git\ncontainerd  a34e2f48 GO       source_build=GO      compiler=-                  26.6s \ncontainerd     1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 28s."
+}
