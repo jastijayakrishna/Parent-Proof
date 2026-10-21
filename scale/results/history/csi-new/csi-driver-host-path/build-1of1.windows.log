@@ -1,0 +1,8 @@
+time=2026-10-21T08:37:59.516Z level=INFO msg=mined consumer=csi-driver-host-path pin_moves=6 to_compile=6 skipped=map[]
+time=2026-10-21T08:38:25.857Z level=INFO msg=canary consumer=csi-driver-host-path at=99af4f99e2f1f391ab059a16cf0ae9e473c6ff78^ outcome=breaks detail="canary: github.com/container-storage-interface/spec/lib/go/csi removed."
+time=2026-10-21T08:38:28.217Z level=INFO msg=window consumer=csi-driver-host-path bump=99af4f99 select=breaking breaking=1 compiler=breaks
+time=2026-10-21T08:38:42.327Z level=INFO msg=window consumer=csi-driver-host-path bump=ab4139c3 select=breaking breaking=17 compiler=compiles
+time=2026-10-21T08:38:49.590Z level=INFO msg=window consumer=csi-driver-host-path bump=d4c8d9e4 select=breaking breaking=7 compiler=compiles
+time=2026-10-21T08:39:09.904Z level=INFO msg=window consumer=csi-driver-host-path bump=ffe5cb0d select=breaking breaking=6 compiler=breaks
+time=2026-10-21T08:39:10.307Z level=INFO msg=window consumer=csi-driver-host-path bump=09376b45 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:39:21.256Z level=INFO msg=window consumer=csi-driver-host-path bump=60f5b164 select=additive breaking=0 compiler=breaks
