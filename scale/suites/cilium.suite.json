@@ -1,0 +1,19 @@
+{
+ "name": "cilium",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "cilium",
+  "repo": "cilium/cilium",
+  "url": "https://github.com/cilium/cilium.git",
+  "module": "github.com/cilium/cilium"
+ },
+ "consumers": {
+  "hubble": {
+   "repo": "cilium/hubble",
+   "url": "https://github.com/cilium/hubble.git"
+  }
+ },
+ "windows": "cilium.jsonl",
+ "workers": 2,
+ "proof": "cilium/cilium upgrades of its consumers"
+}

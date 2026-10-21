@@ -1,0 +1,19 @@
+{
+ "name": "istio-api-new",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "api",
+  "repo": "istio/api",
+  "url": "https://github.com/istio/api.git",
+  "module": "istio.io/api"
+ },
+ "consumers": {
+  "istio-client-go": {
+   "repo": "istio/client-go",
+   "url": "https://github.com/istio/client-go.git"
+  }
+ },
+ "windows": "istio-api-new.jsonl",
+ "workers": 2,
+ "proof": "istio/api upgrades of its consumers"
+}

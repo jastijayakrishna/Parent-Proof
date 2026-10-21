@@ -1,0 +1,43 @@
+{
+ "name": "csi-new",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "spec",
+  "repo": "container-storage-interface/spec",
+  "url": "https://github.com/container-storage-interface/spec.git",
+  "module": "github.com/container-storage-interface/spec"
+ },
+ "consumers": {
+  "external-resizer": {
+   "repo": "kubernetes-csi/external-resizer",
+   "url": "https://github.com/kubernetes-csi/external-resizer.git"
+  },
+  "external-snapshotter": {
+   "repo": "kubernetes-csi/external-snapshotter",
+   "url": "https://github.com/kubernetes-csi/external-snapshotter.git"
+  },
+  "node-driver-registrar": {
+   "repo": "kubernetes-csi/node-driver-registrar",
+   "url": "https://github.com/kubernetes-csi/node-driver-registrar.git"
+  },
+  "csi-test": {
+   "repo": "kubernetes-csi/csi-test",
+   "url": "https://github.com/kubernetes-csi/csi-test.git"
+  },
+  "livenessprobe": {
+   "repo": "kubernetes-csi/livenessprobe",
+   "url": "https://github.com/kubernetes-csi/livenessprobe.git"
+  },
+  "csi-driver-host-path": {
+   "repo": "kubernetes-csi/csi-driver-host-path",
+   "url": "https://github.com/kubernetes-csi/csi-driver-host-path.git"
+  },
+  "external-health-monitor": {
+   "repo": "kubernetes-csi/external-health-monitor",
+   "url": "https://github.com/kubernetes-csi/external-health-monitor.git"
+  }
+ },
+ "windows": "csi-new.jsonl",
+ "workers": 2,
+ "proof": "container-storage-interface/spec upgrades of its consumers"
+}

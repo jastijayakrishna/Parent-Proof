@@ -1,0 +1,24 @@
+{
+ "name": "durabletask",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "durabletask-go",
+  "repo": "dapr/durabletask-go",
+  "url": "https://github.com/dapr/durabletask-go.git",
+  "module": "github.com/dapr/durabletask-go",
+  "contracts": {
+   "name": "durabletask-protobuf",
+   "url": "https://github.com/dapr/durabletask-protobuf.git",
+   "path": "submodules/durabletask-protobuf"
+  }
+ },
+ "consumers": {
+  "dapr": {
+   "repo": "dapr/dapr",
+   "url": "https://github.com/dapr/dapr.git"
+  }
+ },
+ "windows": "durabletask.jsonl",
+ "workers": 2,
+ "proof": "dapr/durabletask-go upgrades of its consumers"
+}

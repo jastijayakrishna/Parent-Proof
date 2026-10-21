@@ -1,0 +1,20 @@
+{
+ "name": "auctioneerrpc",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "pool-auctioneerrpc",
+  "repo": "lightninglabs/pool",
+  "url": "https://github.com/lightninglabs/pool.git",
+  "module": "github.com/lightninglabs/pool/auctioneerrpc",
+  "tag_prefix": "auctioneerrpc/"
+ },
+ "consumers": {
+  "lightning-terminal": {
+   "repo": "lightninglabs/lightning-terminal",
+   "url": "https://github.com/lightninglabs/lightning-terminal.git"
+  }
+ },
+ "windows": "auctioneerrpc.jsonl",
+ "workers": 2,
+ "proof": "lightninglabs/pool upgrades of its consumers"
+}

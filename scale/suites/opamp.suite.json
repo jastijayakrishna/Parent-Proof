@@ -1,0 +1,24 @@
+{
+ "name": "opamp",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "opamp-go",
+  "repo": "open-telemetry/opamp-go",
+  "url": "https://github.com/open-telemetry/opamp-go.git",
+  "module": "github.com/open-telemetry/opamp-go",
+  "contracts": {
+   "name": "opamp-spec",
+   "url": "https://github.com/open-telemetry/opamp-spec.git",
+   "path": "internal/opamp-spec"
+  }
+ },
+ "consumers": {
+  "opentelemetry-operator": {
+   "repo": "open-telemetry/opentelemetry-operator",
+   "url": "https://github.com/open-telemetry/opentelemetry-operator.git"
+  }
+ },
+ "windows": "opamp.jsonl",
+ "workers": 2,
+ "proof": "open-telemetry/opamp-go upgrades of its consumers"
+}

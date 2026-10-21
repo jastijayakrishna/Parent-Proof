@@ -1,0 +1,399 @@
+{
+ "description": "Scale test 2026-10-21 (scale/PREREG.md): each new contract's last 20 contract commits (most of them merged pull requests), decided against one consumer pinned at its head on 2026-10-21; the Go compiler judges every window whose change lies in the Go module the consumer builds against.",
+ "limit": 20,
+ "max_unknown_percent": 100,
+ "ecosystems": [
+  {
+   "name": "sigstore",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/sigstore/protobuf-specs.git",
+    "commit": "a008f6f9d68b430dd0340398861e67e753a46281"
+   },
+   "consumer": {
+    "url": "https://github.com/sigstore/sigstore-go.git",
+    "commit": "35e12bbcc65735debee767f60a869024ad1b7206"
+   },
+   "module": "github.com/sigstore/protobuf-specs",
+   "module_dir": "."
+  },
+  {
+   "name": "openfga",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/openfga/api.git",
+    "commit": "c0650ce2169bcb39a72d73841fb531c200e32248"
+   },
+   "consumer": {
+    "url": "https://github.com/openfga/openfga.git",
+    "commit": "22c4d5ddf4d5969bee10c24e468a5acfbcf26837"
+   },
+   "module": "github.com/openfga/api/proto",
+   "module_dir": "proto"
+  },
+  {
+   "name": "cilium",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/cilium/cilium.git",
+    "commit": "a481d0174533bc86baad8ff458f086d9281259c1"
+   },
+   "consumer": {
+    "url": "https://github.com/cilium/hubble.git",
+    "commit": "17991a57cdb9bd90d1447b558e4aef702c243903"
+   },
+   "module": "github.com/cilium/cilium",
+   "module_dir": "."
+  },
+  {
+   "name": "looprpc",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/lightninglabs/loop.git",
+    "commit": "ee9219dd134ae0ac72702fe2ac49364917330ae2"
+   },
+   "consumer": {
+    "url": "https://github.com/lightninglabs/lightning-terminal.git",
+    "commit": "8976aa881d427cc50c4c3b67956e7a271caa6b54"
+   },
+   "module": "github.com/lightninglabs/loop/looprpc",
+   "module_dir": "looprpc"
+  },
+  {
+   "name": "swapserverrpc",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/lightninglabs/loop.git",
+    "commit": "ee9219dd134ae0ac72702fe2ac49364917330ae2"
+   },
+   "consumer": {
+    "url": "https://github.com/lightninglabs/lightning-terminal.git",
+    "commit": "8976aa881d427cc50c4c3b67956e7a271caa6b54"
+   },
+   "module": "github.com/lightninglabs/loop/swapserverrpc",
+   "module_dir": "swapserverrpc"
+  },
+  {
+   "name": "poolrpc",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/lightninglabs/pool.git",
+    "commit": "7fa2c9f5b0d8b886f7d3989aecfd2b794bd6c491"
+   },
+   "consumer": {
+    "url": "https://github.com/lightninglabs/lightning-terminal.git",
+    "commit": "8976aa881d427cc50c4c3b67956e7a271caa6b54"
+   },
+   "module": "github.com/lightninglabs/pool/poolrpc",
+   "module_dir": "poolrpc"
+  },
+  {
+   "name": "auctioneerrpc",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/lightninglabs/pool.git",
+    "commit": "7fa2c9f5b0d8b886f7d3989aecfd2b794bd6c491"
+   },
+   "consumer": {
+    "url": "https://github.com/lightninglabs/lightning-terminal.git",
+    "commit": "8976aa881d427cc50c4c3b67956e7a271caa6b54"
+   },
+   "module": "github.com/lightninglabs/pool/auctioneerrpc",
+   "module_dir": "auctioneerrpc"
+  },
+  {
+   "name": "frdrpc",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/lightninglabs/faraday.git",
+    "commit": "7b481b942b2bb4695c8491eb5b7df99a3e3bc77c"
+   },
+   "consumer": {
+    "url": "https://github.com/lightninglabs/lightning-terminal.git",
+    "commit": "8976aa881d427cc50c4c3b67956e7a271caa6b54"
+   },
+   "module": "github.com/lightninglabs/faraday/frdrpc",
+   "module_dir": "frdrpc"
+  },
+  {
+   "name": "taprpc",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/lightninglabs/taproot-assets.git",
+    "commit": "07d5c6427db9adbcfcb8724665c59b609f0bdaff"
+   },
+   "consumer": {
+    "url": "https://github.com/lightninglabs/lightning-terminal.git",
+    "commit": "8976aa881d427cc50c4c3b67956e7a271caa6b54"
+   },
+   "module": "github.com/lightninglabs/taproot-assets/taprpc",
+   "module_dir": "taprpc"
+  },
+  {
+   "name": "remote-apis",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/bazelbuild/remote-apis.git",
+    "commit": "c2c07e3d718d3d490a4958344d9c3e47de0bfaf3"
+   },
+   "consumer": {
+    "url": "https://github.com/bazelbuild/remote-apis-sdks.git",
+    "commit": "0e08b587cfaf303e42652ce2f25b57c537027365"
+   },
+   "module": "github.com/bazelbuild/remote-apis",
+   "module_dir": "."
+  },
+  {
+   "name": "bb-storage",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/buildbarn/bb-storage.git",
+    "commit": "60204be844cd8b5705f5e169e11d4fe4a24cf7eb"
+   },
+   "consumer": {
+    "url": "https://github.com/buildbarn/bb-remote-execution.git",
+    "commit": "e88a90ad7415d0867f38705285b36b8481b6af77"
+   },
+   "module": "github.com/buildbarn/bb-storage",
+   "module_dir": "."
+  },
+  {
+   "name": "function-sdk",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/crossplane/function-sdk-go.git",
+    "commit": "8c5cbb6fa2de744e4371459d41acbd5759c6e7ef"
+   },
+   "consumer": {
+    "url": "https://github.com/crossplane-contrib/function-patch-and-transform.git",
+    "commit": "a21e35f42b83cd6b8958929bca95109941419163"
+   },
+   "module": "github.com/crossplane/function-sdk-go",
+   "module_dir": "."
+  },
+  {
+   "name": "apm-data",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/elastic/apm-data.git",
+    "commit": "c818f31a68205c834d179f76b15425ba367c4129"
+   },
+   "consumer": {
+    "url": "https://github.com/elastic/apm-server.git",
+    "commit": "ea648c915e803081c78d711b7bdd24c2a5985da0"
+   },
+   "module": "github.com/elastic/apm-data",
+   "module_dir": "."
+  },
+  {
+   "name": "kms",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/kubernetes/kms.git",
+    "commit": "b0d7c001485916ced13539a4440728ffc4c7c6c9"
+   },
+   "consumer": {
+    "url": "https://github.com/kubernetes-sigs/aws-encryption-provider.git",
+    "commit": "0925b4e248925d27779bf727eb86ef468d54f975"
+   },
+   "module": "k8s.io/kms",
+   "module_dir": "."
+  },
+  {
+   "name": "kubearmor",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/kubearmor/KubeArmor.git",
+    "commit": "e6c53bb14bd0f20400715b180fd4ea1b925b016f"
+   },
+   "consumer": {
+    "url": "https://github.com/kubearmor/kubearmor-client.git",
+    "commit": "c474495aa29aa7d59f893201d2109ddd7c56840e"
+   },
+   "module": "github.com/kubearmor/KubeArmor/protobuf",
+   "module_dir": "protobuf"
+  },
+  {
+   "name": "tfplugin",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/hashicorp/terraform-plugin-go.git",
+    "commit": "5376f1bde95b0d0427eb8ff2d66cf8115481c008"
+   },
+   "consumer": {
+    "url": "https://github.com/hashicorp/terraform-plugin-framework.git",
+    "commit": "00badb1b0584b22f3799c474b9f1cea4b49e5163"
+   },
+   "module": "github.com/hashicorp/terraform-plugin-go",
+   "module_dir": "."
+  },
+  {
+   "name": "grafana-plugin-sdk",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/grafana/grafana-plugin-sdk-go.git",
+    "commit": "124bab7cbb9c3cd3b69697eac183b24afe817ee5"
+   },
+   "consumer": {
+    "url": "https://github.com/grafana/github-datasource.git",
+    "commit": "12df66596e8c1583668ebbbc846841cb9da6b2dd"
+   },
+   "module": "github.com/grafana/grafana-plugin-sdk-go",
+   "module_dir": "."
+  },
+  {
+   "name": "nri",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/containerd/nri.git",
+    "commit": "53b711125c22339d9ba367bce242d9f1dfc6b75a"
+   },
+   "consumer": {
+    "url": "https://github.com/containerd/containerd.git",
+    "commit": "2c2a63f43253bda805d83b6f31c70443ffe783ec"
+   },
+   "module": "github.com/containerd/nri",
+   "module_dir": "."
+  },
+  {
+   "name": "pulumi",
+   "tier": 1,
+   "provider": {
+    "url": "https://github.com/pulumi/pulumi.git",
+    "commit": "2dfeb5294c804c4195b49c39a450c49e92fc686c"
+   },
+   "consumer": {
+    "url": "https://github.com/pulumi/pulumi-yaml.git",
+    "commit": "e8162ef03a446e66178fe7e74d79bda900174ab1"
+   },
+   "module": "github.com/pulumi/pulumi/sdk/v3",
+   "module_dir": "sdk"
+  },
+  {
+   "name": "etcd-api",
+   "tier": 2,
+   "provider": {
+    "url": "https://github.com/etcd-io/etcd.git",
+    "commit": "7ff040cb84c9944d0c38a9f0dc9f12ed9c58223b"
+   },
+   "consumer": {
+    "url": "https://github.com/k3s-io/kine.git",
+    "commit": "8b50803639aa7d70dc472dd9c3c5f4c3efe0e0bc"
+   },
+   "module": "go.etcd.io/etcd/api/v3",
+   "module_dir": "api"
+  },
+  {
+   "name": "cri-api-new",
+   "tier": 2,
+   "provider": {
+    "url": "https://github.com/kubernetes/cri-api.git",
+    "commit": "a8dc9a1420e112d5572ffe9b847fa56b710ddd4d"
+   },
+   "consumer": {
+    "url": "https://github.com/kubernetes-sigs/cri-tools.git",
+    "commit": "0ecb2bd12d71c7f8c4988a76335b8b78058c9dfc"
+   },
+   "module": "k8s.io/cri-api",
+   "module_dir": "."
+  },
+  {
+   "name": "csi-new",
+   "tier": 2,
+   "provider": {
+    "url": "https://github.com/container-storage-interface/spec.git",
+    "commit": "25b3f10249abe6033887ed5177e856b9f73b1105"
+   },
+   "consumer": {
+    "url": "https://github.com/kubernetes-csi/external-resizer.git",
+    "commit": "baa08e6d8773f167dbddce36579f36d84bbe3fde"
+   },
+   "module": "github.com/container-storage-interface/spec",
+   "module_dir": "."
+  },
+  {
+   "name": "kubelet-new",
+   "tier": 2,
+   "provider": {
+    "url": "https://github.com/kubernetes/kubelet.git",
+    "commit": "e715b5d84f6cc3f71a463b983218e5a969f7924a"
+   },
+   "consumer": {
+    "url": "https://github.com/kubernetes-sigs/node-feature-discovery.git",
+    "commit": "94e107ba94a22b906d8acb7daaa66dd3b8a8386b"
+   },
+   "module": "k8s.io/kubelet",
+   "module_dir": "."
+  },
+  {
+   "name": "containerd-api-new",
+   "tier": 2,
+   "provider": {
+    "url": "https://github.com/containerd/containerd.git",
+    "commit": "2c2a63f43253bda805d83b6f31c70443ffe783ec"
+   },
+   "consumer": {
+    "url": "https://github.com/awslabs/soci-snapshotter.git",
+    "commit": "e471a8225d1de34d1234912192abf7b3fbd5dd65"
+   },
+   "module": "github.com/containerd/containerd/api",
+   "module_dir": "api"
+  },
+  {
+   "name": "argo-cd-v3",
+   "tier": 2,
+   "provider": {
+    "url": "https://github.com/argoproj/argo-cd.git",
+    "commit": "5f6569ec51bdb7c88a7402f9ea1395a21fe7f540"
+   },
+   "consumer": {
+    "url": "https://github.com/argoproj-labs/argocd-image-updater.git",
+    "commit": "763096814bdca8d3e8308e261e14893d747c4925"
+   },
+   "module": "github.com/argoproj/argo-cd/v3",
+   "module_dir": "."
+  },
+  {
+   "name": "vitess",
+   "tier": 2,
+   "provider": {
+    "url": "https://github.com/vitessio/vitess.git",
+    "commit": "da3ecf2a6e93fbba479fa0e308760853d692977b"
+   },
+   "consumer": {
+    "url": "https://github.com/planetscale/vitess-operator.git",
+    "commit": "6a66429fd6e38434b018a0dab6579f0f8b945013"
+   },
+   "module": "vitess.io/vitess",
+   "module_dir": "."
+  },
+  {
+   "name": "istio-api-new",
+   "tier": 2,
+   "provider": {
+    "url": "https://github.com/istio/api.git",
+    "commit": "84d6aa6381e41b5396898f1c02be75b4896c24d8"
+   },
+   "consumer": {
+    "url": "https://github.com/istio/client-go.git",
+    "commit": "13e4c6b5adf9621ed3092c10210213e967d8b7eb"
+   },
+   "module": "istio.io/api",
+   "module_dir": "."
+  },
+  {
+   "name": "consul-proto-public",
+   "tier": 2,
+   "provider": {
+    "url": "https://github.com/hashicorp/consul.git",
+    "commit": "0166b0f831fcf2ab67dbb744c77f2fc5c57ed1c0"
+   },
+   "consumer": {
+    "url": "https://github.com/hashicorp/consul-server-connection-manager.git",
+    "commit": "27fc6c71812d59d1f5b5fe6fe47f14dae6d51728"
+   },
+   "module": "github.com/hashicorp/consul/proto-public",
+   "module_dir": "proto-public"
+  }
+ ]
+}

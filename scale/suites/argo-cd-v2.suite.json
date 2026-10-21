@@ -1,0 +1,23 @@
+{
+ "name": "argo-cd-v2",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "argo-cd",
+  "repo": "argoproj/argo-cd",
+  "url": "https://github.com/argoproj/argo-cd.git",
+  "module": "github.com/argoproj/argo-cd/v2"
+ },
+ "consumers": {
+  "argocd-image-updater": {
+   "repo": "argoproj-labs/argocd-image-updater",
+   "url": "https://github.com/argoproj-labs/argocd-image-updater.git"
+  },
+  "argocd-autopilot": {
+   "repo": "argoproj-labs/argocd-autopilot",
+   "url": "https://github.com/argoproj-labs/argocd-autopilot.git"
+  }
+ },
+ "windows": "argo-cd-v2.jsonl",
+ "workers": 2,
+ "proof": "argoproj/argo-cd upgrades of its consumers"
+}

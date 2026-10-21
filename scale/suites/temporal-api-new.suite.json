@@ -1,0 +1,24 @@
+{
+ "name": "temporal-api-new",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "api-go",
+  "repo": "temporalio/api-go",
+  "url": "https://github.com/temporalio/api-go.git",
+  "module": "go.temporal.io/api",
+  "contracts": {
+   "name": "temporal-api",
+   "url": "https://github.com/temporalio/api.git",
+   "path": "proto/api"
+  }
+ },
+ "consumers": {
+  "temporal-cli": {
+   "repo": "temporalio/cli",
+   "url": "https://github.com/temporalio/cli.git"
+  }
+ },
+ "windows": "temporal-api-new.jsonl",
+ "workers": 2,
+ "proof": "temporalio/api-go upgrades of its consumers"
+}

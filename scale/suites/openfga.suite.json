@@ -1,0 +1,23 @@
+{
+ "name": "openfga",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "api",
+  "repo": "openfga/api",
+  "url": "https://github.com/openfga/api.git",
+  "module": "github.com/openfga/api/proto"
+ },
+ "consumers": {
+  "openfga": {
+   "repo": "openfga/openfga",
+   "url": "https://github.com/openfga/openfga.git"
+  },
+  "openfga-cli": {
+   "repo": "openfga/cli",
+   "url": "https://github.com/openfga/cli.git"
+  }
+ },
+ "windows": "openfga.jsonl",
+ "workers": 2,
+ "proof": "openfga/api upgrades of its consumers"
+}

@@ -1,0 +1,23 @@
+{
+ "name": "grafana-plugin-sdk",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "grafana-plugin-sdk-go",
+  "repo": "grafana/grafana-plugin-sdk-go",
+  "url": "https://github.com/grafana/grafana-plugin-sdk-go.git",
+  "module": "github.com/grafana/grafana-plugin-sdk-go"
+ },
+ "consumers": {
+  "github-datasource": {
+   "repo": "grafana/github-datasource",
+   "url": "https://github.com/grafana/github-datasource.git"
+  },
+  "grafana-infinity-datasource": {
+   "repo": "grafana/grafana-infinity-datasource",
+   "url": "https://github.com/grafana/grafana-infinity-datasource.git"
+  }
+ },
+ "windows": "grafana-plugin-sdk.jsonl",
+ "workers": 2,
+ "proof": "grafana/grafana-plugin-sdk-go upgrades of its consumers"
+}

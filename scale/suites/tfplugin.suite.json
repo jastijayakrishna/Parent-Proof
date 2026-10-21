@@ -1,0 +1,31 @@
+{
+ "name": "tfplugin",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "terraform-plugin-go",
+  "repo": "hashicorp/terraform-plugin-go",
+  "url": "https://github.com/hashicorp/terraform-plugin-go.git",
+  "module": "github.com/hashicorp/terraform-plugin-go"
+ },
+ "consumers": {
+  "terraform-plugin-framework": {
+   "repo": "hashicorp/terraform-plugin-framework",
+   "url": "https://github.com/hashicorp/terraform-plugin-framework.git"
+  },
+  "terraform-plugin-sdk": {
+   "repo": "hashicorp/terraform-plugin-sdk",
+   "url": "https://github.com/hashicorp/terraform-plugin-sdk.git"
+  },
+  "terraform-plugin-mux": {
+   "repo": "hashicorp/terraform-plugin-mux",
+   "url": "https://github.com/hashicorp/terraform-plugin-mux.git"
+  },
+  "terraform-plugin-testing": {
+   "repo": "hashicorp/terraform-plugin-testing",
+   "url": "https://github.com/hashicorp/terraform-plugin-testing.git"
+  }
+ },
+ "windows": "tfplugin.jsonl",
+ "workers": 2,
+ "proof": "hashicorp/terraform-plugin-go upgrades of its consumers"
+}

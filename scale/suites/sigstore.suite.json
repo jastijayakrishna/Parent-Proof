@@ -1,0 +1,47 @@
+{
+ "name": "sigstore",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "protobuf-specs",
+  "repo": "sigstore/protobuf-specs",
+  "url": "https://github.com/sigstore/protobuf-specs.git",
+  "module": "github.com/sigstore/protobuf-specs"
+ },
+ "consumers": {
+  "sigstore-go": {
+   "repo": "sigstore/sigstore-go",
+   "url": "https://github.com/sigstore/sigstore-go.git"
+  },
+  "cosign": {
+   "repo": "sigstore/cosign",
+   "url": "https://github.com/sigstore/cosign.git"
+  },
+  "rekor": {
+   "repo": "sigstore/rekor",
+   "url": "https://github.com/sigstore/rekor.git"
+  },
+  "fulcio": {
+   "repo": "sigstore/fulcio",
+   "url": "https://github.com/sigstore/fulcio.git"
+  },
+  "timestamp-authority": {
+   "repo": "sigstore/timestamp-authority",
+   "url": "https://github.com/sigstore/timestamp-authority.git"
+  },
+  "sigstore": {
+   "repo": "sigstore/sigstore",
+   "url": "https://github.com/sigstore/sigstore.git"
+  },
+  "rekor-tiles": {
+   "repo": "sigstore/rekor-tiles",
+   "url": "https://github.com/sigstore/rekor-tiles.git"
+  },
+  "gitsign": {
+   "repo": "sigstore/gitsign",
+   "url": "https://github.com/sigstore/gitsign.git"
+  }
+ },
+ "windows": "sigstore.jsonl",
+ "workers": 2,
+ "proof": "sigstore/protobuf-specs upgrades of its consumers"
+}

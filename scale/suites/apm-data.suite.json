@@ -1,0 +1,23 @@
+{
+ "name": "apm-data",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "apm-data",
+  "repo": "elastic/apm-data",
+  "url": "https://github.com/elastic/apm-data.git",
+  "module": "github.com/elastic/apm-data"
+ },
+ "consumers": {
+  "apm-server": {
+   "repo": "elastic/apm-server",
+   "url": "https://github.com/elastic/apm-server.git"
+  },
+  "apm-aggregation": {
+   "repo": "elastic/apm-aggregation",
+   "url": "https://github.com/elastic/apm-aggregation.git"
+  }
+ },
+ "windows": "apm-data.jsonl",
+ "workers": 2,
+ "proof": "elastic/apm-data upgrades of its consumers"
+}

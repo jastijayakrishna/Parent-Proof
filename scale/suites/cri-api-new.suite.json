@@ -1,0 +1,23 @@
+{
+ "name": "cri-api-new",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "cri-api",
+  "repo": "kubernetes/cri-api",
+  "url": "https://github.com/kubernetes/cri-api.git",
+  "module": "k8s.io/cri-api"
+ },
+ "consumers": {
+  "cri-tools": {
+   "repo": "kubernetes-sigs/cri-tools",
+   "url": "https://github.com/kubernetes-sigs/cri-tools.git"
+  },
+  "cri-dockerd": {
+   "repo": "Mirantis/cri-dockerd",
+   "url": "https://github.com/Mirantis/cri-dockerd.git"
+  }
+ },
+ "windows": "cri-api-new.jsonl",
+ "workers": 2,
+ "proof": "kubernetes/cri-api upgrades of its consumers"
+}

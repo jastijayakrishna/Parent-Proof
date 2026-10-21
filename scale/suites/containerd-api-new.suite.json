@@ -1,0 +1,33 @@
+{
+ "name": "containerd-api-new",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "containerd-api",
+  "repo": "containerd/containerd",
+  "url": "https://github.com/containerd/containerd.git",
+  "module": "github.com/containerd/containerd/api",
+  "tag_prefix": "api/"
+ },
+ "consumers": {
+  "kata-runtime": {
+   "repo": "kata-containers/kata-containers",
+   "url": "https://github.com/kata-containers/kata-containers.git",
+   "gomod": "src/runtime/go.mod"
+  },
+  "soci-snapshotter": {
+   "repo": "awslabs/soci-snapshotter",
+   "url": "https://github.com/awslabs/soci-snapshotter.git"
+  },
+  "stargz-snapshotter": {
+   "repo": "containerd/stargz-snapshotter",
+   "url": "https://github.com/containerd/stargz-snapshotter.git"
+  },
+  "nydus-snapshotter": {
+   "repo": "containerd/nydus-snapshotter",
+   "url": "https://github.com/containerd/nydus-snapshotter.git"
+  }
+ },
+ "windows": "containerd-api-new.jsonl",
+ "workers": 2,
+ "proof": "containerd/containerd upgrades of its consumers"
+}

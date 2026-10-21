@@ -1,0 +1,27 @@
+{
+ "name": "bb-storage",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "bb-storage",
+  "repo": "buildbarn/bb-storage",
+  "url": "https://github.com/buildbarn/bb-storage.git",
+  "module": "github.com/buildbarn/bb-storage"
+ },
+ "consumers": {
+  "bb-remote-execution": {
+   "repo": "buildbarn/bb-remote-execution",
+   "url": "https://github.com/buildbarn/bb-remote-execution.git"
+  },
+  "bb-browser": {
+   "repo": "buildbarn/bb-browser",
+   "url": "https://github.com/buildbarn/bb-browser.git"
+  },
+  "bb-clientd": {
+   "repo": "buildbarn/bb-clientd",
+   "url": "https://github.com/buildbarn/bb-clientd.git"
+  }
+ },
+ "windows": "bb-storage.jsonl",
+ "workers": 2,
+ "proof": "buildbarn/bb-storage upgrades of its consumers"
+}

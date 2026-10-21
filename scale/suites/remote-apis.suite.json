@@ -1,0 +1,23 @@
+{
+ "name": "remote-apis",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "remote-apis",
+  "repo": "bazelbuild/remote-apis",
+  "url": "https://github.com/bazelbuild/remote-apis.git",
+  "module": "github.com/bazelbuild/remote-apis"
+ },
+ "consumers": {
+  "remote-apis-sdks": {
+   "repo": "bazelbuild/remote-apis-sdks",
+   "url": "https://github.com/bazelbuild/remote-apis-sdks.git"
+  },
+  "bb-storage": {
+   "repo": "buildbarn/bb-storage",
+   "url": "https://github.com/buildbarn/bb-storage.git"
+  }
+ },
+ "windows": "remote-apis.jsonl",
+ "workers": 2,
+ "proof": "bazelbuild/remote-apis upgrades of its consumers"
+}

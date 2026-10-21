@@ -1,0 +1,27 @@
+{
+ "name": "kubelet-new",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "kubelet",
+  "repo": "kubernetes/kubelet",
+  "url": "https://github.com/kubernetes/kubelet.git",
+  "module": "k8s.io/kubelet"
+ },
+ "consumers": {
+  "node-feature-discovery": {
+   "repo": "kubernetes-sigs/node-feature-discovery",
+   "url": "https://github.com/kubernetes-sigs/node-feature-discovery.git"
+  },
+  "intel-device-plugins": {
+   "repo": "intel/intel-device-plugins-for-kubernetes",
+   "url": "https://github.com/intel/intel-device-plugins-for-kubernetes.git"
+  },
+  "container-engine-accelerators": {
+   "repo": "GoogleCloudPlatform/container-engine-accelerators",
+   "url": "https://github.com/GoogleCloudPlatform/container-engine-accelerators.git"
+  }
+ },
+ "windows": "kubelet-new.jsonl",
+ "workers": 2,
+ "proof": "kubernetes/kubelet upgrades of its consumers"
+}

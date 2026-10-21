@@ -1,0 +1,19 @@
+{
+ "name": "vitess",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "vitess",
+  "repo": "vitessio/vitess",
+  "url": "https://github.com/vitessio/vitess.git",
+  "module": "vitess.io/vitess"
+ },
+ "consumers": {
+  "vitess-operator": {
+   "repo": "planetscale/vitess-operator",
+   "url": "https://github.com/planetscale/vitess-operator.git"
+  }
+ },
+ "windows": "vitess.jsonl",
+ "workers": 2,
+ "proof": "vitessio/vitess upgrades of its consumers"
+}

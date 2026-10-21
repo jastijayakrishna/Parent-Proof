@@ -1,0 +1,20 @@
+{
+ "name": "poolrpc",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "pool-poolrpc",
+  "repo": "lightninglabs/pool",
+  "url": "https://github.com/lightninglabs/pool.git",
+  "module": "github.com/lightninglabs/pool/poolrpc",
+  "tag_prefix": "poolrpc/"
+ },
+ "consumers": {
+  "lightning-terminal": {
+   "repo": "lightninglabs/lightning-terminal",
+   "url": "https://github.com/lightninglabs/lightning-terminal.git"
+  }
+ },
+ "windows": "poolrpc.jsonl",
+ "workers": 2,
+ "proof": "lightninglabs/pool upgrades of its consumers"
+}

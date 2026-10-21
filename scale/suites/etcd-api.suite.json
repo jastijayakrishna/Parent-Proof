@@ -1,0 +1,24 @@
+{
+ "name": "etcd-api",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "etcd-v3",
+  "repo": "etcd-io/etcd",
+  "url": "https://github.com/etcd-io/etcd.git",
+  "module": "go.etcd.io/etcd/api/v3",
+  "tag_prefix": "api/"
+ },
+ "consumers": {
+  "kine": {
+   "repo": "k3s-io/kine",
+   "url": "https://github.com/k3s-io/kine.git"
+  },
+  "k8s-dqlite": {
+   "repo": "canonical/k8s-dqlite",
+   "url": "https://github.com/canonical/k8s-dqlite.git"
+  }
+ },
+ "windows": "etcd-api.jsonl",
+ "workers": 2,
+ "proof": "etcd-io/etcd upgrades of its consumers"
+}

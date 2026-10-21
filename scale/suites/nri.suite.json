@@ -1,0 +1,23 @@
+{
+ "name": "nri",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "nri",
+  "repo": "containerd/nri",
+  "url": "https://github.com/containerd/nri.git",
+  "module": "github.com/containerd/nri"
+ },
+ "consumers": {
+  "containerd": {
+   "repo": "containerd/containerd",
+   "url": "https://github.com/containerd/containerd.git"
+  },
+  "cri-o": {
+   "repo": "cri-o/cri-o",
+   "url": "https://github.com/cri-o/cri-o.git"
+  }
+ },
+ "windows": "nri.jsonl",
+ "workers": 2,
+ "proof": "containerd/nri upgrades of its consumers"
+}

@@ -1,0 +1,25 @@
+{
+ "name": "consul-proto-public",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "consul-proto-public",
+  "repo": "hashicorp/consul",
+  "url": "https://github.com/hashicorp/consul.git",
+  "module": "github.com/hashicorp/consul/proto-public",
+  "tag_prefix": "proto-public/"
+ },
+ "consumers": {
+  "consul-k8s": {
+   "repo": "hashicorp/consul-k8s",
+   "url": "https://github.com/hashicorp/consul-k8s.git",
+   "gomod": "control-plane/go.mod"
+  },
+  "consul-server-connection-manager": {
+   "repo": "hashicorp/consul-server-connection-manager",
+   "url": "https://github.com/hashicorp/consul-server-connection-manager.git"
+  }
+ },
+ "windows": "consul-proto-public.jsonl",
+ "workers": 2,
+ "proof": "hashicorp/consul upgrades of its consumers"
+}

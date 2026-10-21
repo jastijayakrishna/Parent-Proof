@@ -1,0 +1,23 @@
+{
+ "name": "kms",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "kms",
+  "repo": "kubernetes/kms",
+  "url": "https://github.com/kubernetes/kms.git",
+  "module": "k8s.io/kms"
+ },
+ "consumers": {
+  "aws-encryption-provider": {
+   "repo": "kubernetes-sigs/aws-encryption-provider",
+   "url": "https://github.com/kubernetes-sigs/aws-encryption-provider.git"
+  },
+  "kubernetes-kms": {
+   "repo": "Azure/kubernetes-kms",
+   "url": "https://github.com/Azure/kubernetes-kms.git"
+  }
+ },
+ "windows": "kms.jsonl",
+ "workers": 2,
+ "proof": "kubernetes/kms upgrades of its consumers"
+}

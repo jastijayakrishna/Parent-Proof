@@ -1,0 +1,43 @@
+{
+ "name": "function-sdk",
+ "description": "Scale test (scale/PREREG.md): every upgrade of the provider module in each consumer's history since 2023-01-01 (at most the 40 most recent per consumer); the Go compiler judges every one, the pinned verifier decides it.",
+ "provider": {
+  "name": "function-sdk-go",
+  "repo": "crossplane/function-sdk-go",
+  "url": "https://github.com/crossplane/function-sdk-go.git",
+  "module": "github.com/crossplane/function-sdk-go"
+ },
+ "consumers": {
+  "function-patch-and-transform": {
+   "repo": "crossplane-contrib/function-patch-and-transform",
+   "url": "https://github.com/crossplane-contrib/function-patch-and-transform.git"
+  },
+  "function-go-templating": {
+   "repo": "crossplane-contrib/function-go-templating",
+   "url": "https://github.com/crossplane-contrib/function-go-templating.git"
+  },
+  "function-auto-ready": {
+   "repo": "crossplane-contrib/function-auto-ready",
+   "url": "https://github.com/crossplane-contrib/function-auto-ready.git"
+  },
+  "function-cel-filter": {
+   "repo": "crossplane-contrib/function-cel-filter",
+   "url": "https://github.com/crossplane-contrib/function-cel-filter.git"
+  },
+  "function-environment-configs": {
+   "repo": "crossplane-contrib/function-environment-configs",
+   "url": "https://github.com/crossplane-contrib/function-environment-configs.git"
+  },
+  "function-extra-resources": {
+   "repo": "crossplane-contrib/function-extra-resources",
+   "url": "https://github.com/crossplane-contrib/function-extra-resources.git"
+  },
+  "function-sequencer": {
+   "repo": "crossplane-contrib/function-sequencer",
+   "url": "https://github.com/crossplane-contrib/function-sequencer.git"
+  }
+ },
+ "windows": "function-sdk.jsonl",
+ "workers": 2,
+ "proof": "crossplane/function-sdk-go upgrades of its consumers"
+}
