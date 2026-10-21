@@ -1,24 +1,28 @@
-buildx     17eff25f GO       source_build=GO      compiler=compiles          11.9s replay=true 
-buildx     08998a7e GO       source_build=GO      compiler=compiles          12.8s replay=true 
-buildx     285dd76b UNKNOWN  source_build=UNKNOWN compiler=breaks             8.9s replay=true 
-buildx     39db6159 GO       source_build=GO      compiler=compiles           8.1s replay=true 
-buildx     5723ceef GO       source_build=GO      compiler=compiles           6.1s replay=true 
-buildx     40fcf992 GO       source_build=GO      compiler=compiles           6.4s replay=true 
-buildx     6160c9bc GO       source_build=GO      compiler=compiles           7.4s replay=true 
-buildx     73b05c14 GO       source_build=GO      compiler=compiles           7.8s replay=true 
-buildx     8c741093 GO       source_build=GO      compiler=compiles           0.6s replay=true 
-buildx     ad371e42 GO       source_build=GO      compiler=bump_side_effect   7.2s replay=true 
-buildx     a4a02b07 GO       source_build=GO      compiler=compiles           7.2s replay=true 
-buildx     c1d3955f GO       source_build=GO      compiler=compiles           9.3s replay=true 
-buildx     cb378866 GO       source_build=GO      compiler=compiles           9.4s replay=true 
-buildx     dab7af61 GO       source_build=GO      compiler=compiles           5.7s replay=true 
-buildx     e4ee2ca1 GO       source_build=GO      compiler=compiles           5.9s replay=true 
-buildx     ea7c8e83 GO       source_build=GO      compiler=compiles           6.0s replay=true 
-buildx     efaf9daa UNKNOWN  source_build=UNKNOWN compiler=compiles           6.9s replay=true 
-buildx/unchanged       windows= 17 | breaks= 1: caught= 0 WRONG_GO=0 abstained=1 | compiles=15: GO=14 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 0, UNKNOWN 0, GO 1) | wire: judged=17 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=17
-TOTAL                  windows= 17 | breaks= 1: caught= 0 WRONG_GO=0 abstained=1 | compiles=15: GO=14 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 0, UNKNOWN 0, GO 1) | wire: judged=17 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=17
-  FAILED buildx@285dd76b2500..c8fad61a: unknown_on_break: tests/workers/docker-container.go:52:18: assignment mismatch: 2 variables but integration.WriteConfig returns 3 values
-  WITHIN THE UNKNOWN LIMIT buildx@efaf9daa21e8..9512a2e1: unknown_on_safe: CONTRACT_COMPILE_ERROR
+buildx     171fcbeb GO       source_build=GO      compiler=compiles          16.5s replay=true 
+buildx     08998a7e GO       source_build=GO      compiler=compiles          17.4s replay=true 
+buildx     26a8ffb3 GO       source_build=GO      compiler=compiles           8.4s replay=true 
+buildx     3808fba7 GO       source_build=GO      compiler=compiles           7.8s replay=true 
+buildx     40ef3446 GO       source_build=GO      compiler=compiles           8.0s replay=true 
+buildx     606e9d1f UNKNOWN  source_build=UNKNOWN compiler=compiles           8.5s replay=true 
+buildx     70536fc8 UNKNOWN  source_build=UNKNOWN compiler=compiles           5.3s replay=true 
+buildx     4e15a5ac GO       source_build=GO      compiler=compiles           6.2s replay=true 
+buildx     ac30b249 GO       source_build=GO      compiler=compiles           0.3s replay=true 
+buildx     a1150734 GO       source_build=GO      compiler=compiles           0.7s replay=true 
+buildx     83c30c6c GO       source_build=GO      compiler=compiles           8.0s replay=true 
+buildx     c9b2da6b GO       source_build=GO      compiler=compiles           8.1s replay=true 
+buildx     c07bc083 UNKNOWN  source_build=UNKNOWN compiler=breaks             7.0s replay=true 
+buildx     d3ff70ac NO_GO    source_build=NO_GO   compiler=breaks             6.7s replay=true 
+buildx     e98e8f6a GO       source_build=GO      compiler=compiles           6.0s replay=true 
+buildx     e2534c77 GO       source_build=GO      compiler=compiles           7.9s replay=true 
+buildx     fa392a2d GO       source_build=GO      compiler=compiles           0.5s replay=true 
+buildx     ef2dabd5 GO       source_build=GO      compiler=compiles           4.8s replay=true 
+buildx/additive        windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 2: GO= 1 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
+buildx/breaking        windows=  1 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=1
+buildx/unchanged       windows= 15 | breaks= 1: caught= 0 WRONG_GO=0 abstained=1 | compiles=14: GO=13 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=15 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=15
+TOTAL                  windows= 18 | breaks= 2: caught= 1 WRONG_GO=0 abstained=1 | compiles=16: GO=14 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=18 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=18
+  WITHIN THE UNKNOWN LIMIT buildx@606e9d1f4880..46de8529: unknown_on_safe: CONTRACT_COMPILE_ERROR, GO_API_CHANGED_USED_BY_CALLER
+  WITHIN THE UNKNOWN LIMIT buildx@70536fc89082..7ea9fa1c: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
+  FAILED buildx@c07bc08336cf..eece108c: unknown_on_break: tests/bake.go:2278:54: not enough arguments in call to contentutil.ProviderFromRef | tests/bake.go:2339:53: not enough arguments in call to contentutil.ProviderFromRef | tests/bake.go:2431:53: not enough arguments in call to contentutil.ProviderFromRef
 
-17 windows in 1m4s with 2 workers; 0 differ from the baseline.
+18 windows in 1m5s with 2 workers; 0 differ from the baseline.
 verifier gate: release gate failed: 1 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
