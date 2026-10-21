@@ -1,0 +1,42 @@
+time=2026-10-21T11:55:15.027Z level=INFO msg=cloning repo=api url=https://github.com/openfga/api.git
+time=2026-10-21T11:55:16.746Z level=INFO msg=cloning repo=openfga-cli url=https://github.com/openfga/cli.git
+openfga-cli 009b2ef5 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+openfga-cli 23648b03 UNKNOWN  source_build=UNKNOWN compiler=compiles           9.9s replay=true 
+openfga-cli 09898bd1 GO       source_build=GO      compiler=compiles          10.1s replay=true 
+openfga-cli 283e52bb UNKNOWN  source_build=GO      compiler=compiles           5.9s replay=true 
+openfga-cli 2ee4bd4f UNKNOWN  source_build=UNKNOWN compiler=compiles           6.0s replay=true 
+openfga-cli 4acdde75 UNKNOWN  source_build=GO      compiler=compiles           3.6s replay=true 
+openfga-cli 512e33bf GO       source_build=GO      compiler=compiles           5.3s replay=true 
+openfga-cli 53a584b4 GO       source_build=GO      compiler=breaks             3.7s replay=true 
+openfga-cli 6362bd14 UNKNOWN  source_build=UNKNOWN compiler=compiles           4.3s replay=true 
+openfga-cli 63b5ec74 NO_GO    source_build=NO_GO   compiler=breaks             3.6s replay=true 
+openfga-cli 6f526d41 UNKNOWN  source_build=GO      compiler=compiles           3.9s replay=true 
+openfga-cli 79d44e30 UNKNOWN  source_build=UNKNOWN compiler=compiles           5.0s replay=true 
+openfga-cli 86be8fcd GO       source_build=GO      compiler=compiles           0.1s replay=true 
+openfga-cli 7e4603bc NO_GO    source_build=UNKNOWN compiler=compiles           2.7s replay=true 
+openfga-cli 9a624cb2 GO       source_build=GO      compiler=compiles           1.7s replay=true 
+openfga-cli 95e8422c UNKNOWN  source_build=UNKNOWN compiler=compiles           3.4s replay=true 
+openfga-cli a2919b77 UNKNOWN  source_build=UNKNOWN compiler=compiles           2.0s replay=true 
+openfga-cli b2016dbd GO       source_build=GO      compiler=compiles           4.0s replay=true 
+openfga-cli b4ed2231 UNKNOWN  source_build=UNKNOWN compiler=compiles           3.8s replay=true 
+openfga-cli cea1edc0 NO_GO    source_build=NO_GO   compiler=breaks             2.4s replay=true 
+openfga-cli b8fb487d GO       source_build=GO      compiler=compiles           3.7s replay=true 
+openfga-cli ecab3c8b UNKNOWN  source_build=UNKNOWN compiler=compiles           3.7s replay=true 
+openfga-cli/additive   windows=  1 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 1: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=1
+openfga-cli/breaking   windows= 19 | breaks= 3: caught= 2 WRONG_GO=1 abstained=0 | compiles=16: GO= 7 FALSE_NOGO=0 abstained=9 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=19 broken=1 RUNTIME_WRONG_GO=0 confirmed=1 unconfirmed=2 | errors=0 | replayed=19
+openfga-cli/unchanged  windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 2: GO= 2 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
+TOTAL                  windows= 22 | breaks= 3: caught= 2 WRONG_GO=1 abstained=0 | compiles=19: GO=10 FALSE_NOGO=0 abstained=9 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=22 broken=1 RUNTIME_WRONG_GO=0 confirmed=1 unconfirmed=2 | errors=0 | replayed=22
+  WITHIN THE UNKNOWN LIMIT openfga-cli@23648b03aabe..3037910c: unknown_on_safe: OPTION_CHANGED
+  WITHIN THE UNKNOWN LIMIT openfga-cli@2ee4bd4fbcda..25e22cb1: unknown_on_safe: OPTION_CHANGED, DESCRIPTOR_REFLECTION
+  FAILED openfga-cli@53a584b4113f..c96ec773: wrong_go: /home/runner/go/pkg/mod/github.com/openfga/openfga@v1.5.5/pkg/tuple/tuple.go:178:46: undefined: openfgav1.ObjectOrUserset | /home/runner/go/pkg/mod/github.com/openfga/openfga@v1.5.5/pkg/tuple/tuple.go:180:18: undefined: openfgav1.ObjectOrUserset_Object | /home/runner/go/pkg/mod/github.com/openfga/openfga@v1.5.5/pkg/tuple/tuple.go:182:18: undefined: openfgav1.ObjectOrUserset_Userset
+  WITHIN THE UNKNOWN LIMIT openfga-cli@6362bd14f23e..b61b4ea2: unknown_on_safe: OPTION_CHANGED, DESCRIPTOR_REFLECTION
+  WITHIN THE UNKNOWN LIMIT openfga-cli@79d44e304678..f153694b: unknown_on_safe: OPTION_CHANGED, DESCRIPTOR_REFLECTION
+  WITHIN THE UNKNOWN LIMIT openfga-cli@7e4603bcf898..66b9e5cb: unknown_on_safe: OPTION_CHANGED
+  WITHIN THE UNKNOWN LIMIT openfga-cli@95e8422cebc0..f9709139: unknown_on_safe: OPTION_CHANGED, DESCRIPTOR_REFLECTION
+  WITHIN THE UNKNOWN LIMIT openfga-cli@a2919b77d847..394820df: unknown_on_safe: OPTION_CHANGED
+  WITHIN THE UNKNOWN LIMIT openfga-cli@b4ed2231597a..c22e6db5: unknown_on_safe: OPTION_CHANGED, DESCRIPTOR_REFLECTION
+  WITHIN THE UNKNOWN LIMIT openfga-cli@ecab3c8b3e06..d0942ea5: unknown_on_safe: OPTION_CHANGED
+
+22 windows in 46s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 1 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 49
