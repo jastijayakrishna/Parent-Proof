@@ -1,0 +1,17 @@
+time=2026-10-21T08:48:43.949Z level=INFO msg=cloning repo=api-go url=https://github.com/temporalio/api-go.git
+time=2026-10-21T08:48:50.773Z level=INFO msg=cloning repo=temporal-api url=https://github.com/temporalio/api.git
+time=2026-10-21T08:48:53.641Z level=INFO msg=cloning repo=temporal-cli url=https://github.com/temporalio/cli.git
+time=2026-10-21T08:49:04.134Z level=INFO msg=mined consumer=temporal-cli pin_moves=33 to_compile=11 skipped=map[]
+time=2026-10-21T08:50:22.095Z level=INFO msg=canary consumer=temporal-cli at=0be9d0e02c5bb948c97c265e2a5d40d011d98d6f^ outcome=breaks detail="canary: go.temporal.io/api/enums/v1 removed."
+time=2026-10-21T08:51:16.703Z level=INFO msg=window consumer=temporal-cli bump=0be9d0e0 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:53:36.948Z level=INFO msg=window consumer=temporal-cli bump=197f9a00 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:55:06.289Z level=INFO msg=window consumer=temporal-cli bump=2637a2f1 select=breaking breaking=4 compiler=breaks
+time=2026-10-21T08:57:03.813Z level=INFO msg=window consumer=temporal-cli bump=3f45bc8d select=breaking breaking=2 compiler=compiles
+time=2026-10-21T08:57:29.508Z level=INFO msg=window consumer=temporal-cli bump=5ab9198f select=breaking breaking=12 compiler=breaks
+time=2026-10-21T08:59:22.710Z level=INFO msg=window consumer=temporal-cli bump=911a7861 select=breaking breaking=2 compiler=breaks
+time=2026-10-21T08:59:31.171Z level=INFO msg=window consumer=temporal-cli bump=a936ed50 select=breaking breaking=24 compiler=breaks
+time=2026-10-21T09:01:37.430Z level=INFO msg=window consumer=temporal-cli bump=ba831c3a select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:03:08.471Z level=INFO msg=window consumer=temporal-cli bump=c4a50557 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:03:52.069Z level=INFO msg=window consumer=temporal-cli bump=da1e0aab select=breaking breaking=45 compiler=breaks
+time=2026-10-21T09:04:08.974Z level=INFO msg=window consumer=temporal-cli bump=f84c4b75 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:04:08.974Z level=INFO msg="suite built" suite=temporal-api-new windows_added=11
