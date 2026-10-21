@@ -1,0 +1,14 @@
+argocd-image-updater 32e03138 GO       source_build=GO      compiler=compiles          30.1s replay=true 
+argocd-image-updater 29d992f0 UNKNOWN  source_build=UNKNOWN compiler=bump_side_effect  31.2s replay=true 
+argocd-image-updater 967a1c85 GO       source_build=GO      compiler=compiles          12.3s replay=true 
+argocd-image-updater 60bcb6c2 UNKNOWN  source_build=UNKNOWN compiler=bump_side_effect  13.7s replay=true 
+argocd-image-updater cc48a329 GO       source_build=GO      compiler=compiles          14.7s replay=true 
+argocd-image-updater bb991de9 NO_GO    source_build=NO_GO   compiler=compiles          15.6s replay=true 
+argocd-image-updater e7f08a37 GO       source_build=GO      compiler=compiles           8.0s replay=true 
+argocd-image-updater/additive windows=  1 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 0, UNKNOWN 1, GO 0) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=1
+argocd-image-updater/unchanged windows=  6 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 5: GO= 4 FALSE_NOGO=1 abstained=0 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 0, UNKNOWN 1, GO 0) | wire: judged=6 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=6
+TOTAL                  windows=  7 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 5: GO= 4 FALSE_NOGO=1 abstained=0 (runtime-only NO-GO 0) | unavailable=2 (NO-GO 0, UNKNOWN 2, GO 0) | wire: judged=7 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=7
+  FAILED argocd-image-updater@bb991de95169..443415b5: false_nogo: github.com/argoproj/argo-cd/v3@v3.4.3/util/kube/kubectl.go:33
+
+7 windows in 1m6s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 1 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`

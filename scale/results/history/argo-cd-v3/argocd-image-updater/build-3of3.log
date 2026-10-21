@@ -1,0 +1,12 @@
+time=2026-10-21T09:06:59.979Z level=INFO msg=cloning repo=argo-cd url=https://github.com/argoproj/argo-cd.git
+time=2026-10-21T09:07:21.899Z level=INFO msg=cloning repo=argocd-image-updater url=https://github.com/argoproj-labs/argocd-image-updater.git
+time=2026-10-21T09:07:35.513Z level=INFO msg=mined consumer=argocd-image-updater pin_moves=22 to_compile=7 skipped=map[]
+time=2026-10-21T09:10:14.925Z level=INFO msg=canary consumer=argocd-image-updater at=29d992f0e1539f0a2a1d74eec8ca47e36b61ebf4^ outcome=breaks detail="canary: github.com/argoproj/argo-cd/v3/pkg/apis/application/v1alpha1 removed."
+time=2026-10-21T09:10:46.228Z level=INFO msg=window consumer=argocd-image-updater bump=29d992f0 select=unchanged breaking=0 compiler=bump_side_effect
+time=2026-10-21T09:14:02.100Z level=INFO msg=window consumer=argocd-image-updater bump=32e03138 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:51.750Z level=INFO msg=window consumer=argocd-image-updater bump=60bcb6c2 select=additive breaking=0 compiler=bump_side_effect
+time=2026-10-21T09:15:00.048Z level=INFO msg=window consumer=argocd-image-updater bump=967a1c85 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:17:54.152Z level=INFO msg=window consumer=argocd-image-updater bump=bb991de9 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:17:58.182Z level=INFO msg=window consumer=argocd-image-updater bump=cc48a329 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:19:36.313Z level=INFO msg=window consumer=argocd-image-updater bump=e7f08a37 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:19:36.313Z level=INFO msg="suite built" suite=argo-cd-v3 windows_added=7
