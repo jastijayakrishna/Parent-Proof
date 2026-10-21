@@ -1,0 +1,22 @@
+bb-storage 72f277c0 UNKNOWN  source_build=UNKNOWN compiler=compiles           6.7s replay=true 
+bb-storage 0dded70a UNKNOWN  source_build=UNKNOWN compiler=compiles          13.3s replay=true 
+bb-storage 3991d6eb UNKNOWN  source_build=UNKNOWN compiler=compiles          15.2s replay=true 
+bb-storage 9cc3bc2a UNKNOWN  source_build=UNKNOWN compiler=compiles           9.1s replay=true 
+bb-storage d1f6a173 GO       source_build=GO      compiler=compiles           1.2s replay=true 
+bb-storage b93ac88a UNKNOWN  source_build=UNKNOWN compiler=compiles           5.4s replay=true 
+bb-storage e30fe8b1 UNKNOWN  source_build=UNKNOWN compiler=compiles          10.2s replay=true 
+bb-storage f74342af UNKNOWN  source_build=UNKNOWN compiler=compiles           3.7s replay=true 
+bb-storage ec3902eb UNKNOWN  source_build=UNKNOWN compiler=compiles          11.3s replay=true 
+bb-storage/unchanged   windows=  9 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 9: GO= 1 FALSE_NOGO=0 abstained=8 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=9 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=9
+TOTAL                  windows=  9 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 9: GO= 1 FALSE_NOGO=0 abstained=8 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=9 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=9
+  WITHIN THE UNKNOWN LIMIT bb-storage@0dded70a7bc3..d20ae8b9: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  WITHIN THE UNKNOWN LIMIT bb-storage@72f277c0b7e8..cb805879: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  WITHIN THE UNKNOWN LIMIT bb-storage@3991d6ebefb4..becdd8f9: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  WITHIN THE UNKNOWN LIMIT bb-storage@9cc3bc2af044..25301330: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  WITHIN THE UNKNOWN LIMIT bb-storage@b93ac88a6871..8f539af4: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  WITHIN THE UNKNOWN LIMIT bb-storage@e30fe8b16b69..9ef19c6b: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  WITHIN THE UNKNOWN LIMIT bb-storage@ec3902ebd92c..e94a7ece: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  WITHIN THE UNKNOWN LIMIT bb-storage@f74342af6396..9a250a0f: unknown_on_safe: CONTRACT_COMPILE_ERROR
+
+9 windows in 39s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`

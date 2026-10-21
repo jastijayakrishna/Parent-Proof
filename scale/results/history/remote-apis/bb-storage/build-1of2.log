@@ -1,0 +1,14 @@
+time=2026-10-21T09:00:39.172Z level=INFO msg=cloning repo=remote-apis url=https://github.com/bazelbuild/remote-apis.git
+time=2026-10-21T09:00:39.793Z level=INFO msg=cloning repo=bb-storage url=https://github.com/buildbarn/bb-storage.git
+time=2026-10-21T09:00:41.789Z level=INFO msg=mined consumer=bb-storage pin_moves=18 to_compile=9 skipped=map[]
+time=2026-10-21T09:01:14.655Z level=INFO msg=canary consumer=bb-storage at=0dded70a7bc3ae6f9b0b7999f88376a7266ee89b^ outcome=breaks detail="canary: github.com/bazelbuild/remote-apis/build/bazel/remote/execution/v2 removed."
+time=2026-10-21T09:01:17.056Z level=INFO msg=window consumer=bb-storage bump=0dded70a select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:01:56.368Z level=INFO msg=window consumer=bb-storage bump=72f277c0 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:02:12.042Z level=INFO msg=window consumer=bb-storage bump=3991d6eb select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:02:33.289Z level=INFO msg=window consumer=bb-storage bump=9cc3bc2a select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:02:41.102Z level=INFO msg=window consumer=bb-storage bump=b93ac88a select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:02:54.503Z level=INFO msg=window consumer=bb-storage bump=d1f6a173 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:03:34.367Z level=INFO msg=window consumer=bb-storage bump=e30fe8b1 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:03:52.499Z level=INFO msg=window consumer=bb-storage bump=ec3902eb select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:03:58.594Z level=INFO msg=window consumer=bb-storage bump=f74342af select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:03:58.594Z level=INFO msg="suite built" suite=remote-apis windows_added=9
