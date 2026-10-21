@@ -1,0 +1,9 @@
+client-java scan: 20 windows, shard 2/3 has 7
+canary at 1e6ff1c80df2: oracle_error (51 files moved) ['']
+1e6ff1c80df2 2026-06-02 verifier=None build=None compiler=baseline_fails 9.9s 
+b41e86365ce0 2026-06-22 verifier=None build=None compiler=baseline_fails 9.4s 
+7022f46937bc 2026-07-24 verifier=None build=None compiler=baseline_fails 10.3s 
+af1ad1bef5b9 2026-08-13 verifier=None build=None compiler=baseline_fails 9.3s 
+107095f1d250 2026-09-03 verifier=None build=None compiler=baseline_fails 10.2s 
+121875fd9777 2026-10-05 verifier=None build=None compiler=baseline_fails 9.1s 
+f8ad079c8e98 2026-10-16 verifier=None build=None compiler=baseline_fails 9.5s 
