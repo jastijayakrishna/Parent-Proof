@@ -1,0 +1,32 @@
+time=2026-10-21T09:21:00.309Z level=INFO msg=cloning repo=p-swapserverrpc url=https://github.com/lightninglabs/loop.git
+time=2026-10-21T09:21:01.044Z level=INFO msg=cloning repo=c-swapserverrpc url=https://github.com/lightninglabs/lightning-terminal.git
+swapserverrpc 106b182a UNKNOWN  source_build=UNKNOWN compiler=-                  41.6s 
+swapserverrpc bcb04b16 UNKNOWN  source_build=UNKNOWN compiler=-                   2.6s 
+swapserverrpc 44b49b3b UNKNOWN  source_build=UNKNOWN compiler=-                   2.3s 
+swapserverrpc b877a8d2 UNKNOWN  source_build=UNKNOWN compiler=-                   1.8s 
+swapserverrpc e772f8cc UNKNOWN  source_build=UNKNOWN compiler=-                   1.8s 
+swapserverrpc edad26b8 UNKNOWN  source_build=UNKNOWN compiler=-                   2.5s 
+swapserverrpc cb97b2a3 GO       source_build=GO      compiler=compiles          223.4s 
+swapserverrpc 4c03e469 UNKNOWN  source_build=UNKNOWN compiler=-                   0.9s 
+swapserverrpc 51f984f7 UNKNOWN  source_build=UNKNOWN compiler=-                   2.3s 
+swapserverrpc 410a4551 GO       source_build=GO      compiler=compiles           15.2s 
+swapserverrpc 8ea9adbd UNKNOWN  source_build=UNKNOWN compiler=-                   2.3s 
+swapserverrpc e467ac93 UNKNOWN  source_build=UNKNOWN compiler=-                   1.8s 
+swapserverrpc ac583361 UNKNOWN  source_build=UNKNOWN compiler=-                   1.8s 
+swapserverrpc 38654b91 GO       source_build=GO      compiler=compiles           15.1s 
+swapserverrpc 1ec0f77a GO       source_build=GO      compiler=compiles           14.4s 
+swapserverrpc c8b59bee UNKNOWN  source_build=GO      compiler=compiles           15.0s 
+swapserverrpc 69a0798f GO       source_build=GO      compiler=compiles           14.7s 
+swapserverrpc f47b6115 UNKNOWN  source_build=UNKNOWN compiler=-                   2.6s 
+swapserverrpc 9ee7a36f GO       source_build=GO      compiler=-                   2.0s 
+swapserverrpc e77dc537 GO       source_build=GO      compiler=compiles            7.2s 
+swapserverrpc   20 decisions  GO   7  NO-GO   0  UNKNOWN  13 (65.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO   7  NO-GO   0  UNKNOWN  13 (65.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+   12   1  CONTRACT_COMPILE_ERROR (e.g. swapserverrpc@106b182a3d82a08c27c8ce2c80a15e63fc7c8317)
+    1   1  DESCRIPTOR_REFLECTION (e.g. swapserverrpc@c8b59beed6f225e61f86c99414e5a348e62d8866)
+    1   1  WHOLE_MESSAGE_FLOW (e.g. swapserverrpc@c8b59beed6f225e61f86c99414e5a348e62d8866)
+
+20 windows in 6m14s.
+exit 0 seconds 374
