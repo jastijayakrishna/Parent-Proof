@@ -1,0 +1,8 @@
+time=2026-10-21T09:07:01.675Z level=INFO msg=mined consumer=livenessprobe pin_moves=6 to_compile=6 skipped=map[]
+time=2026-10-21T09:07:04.174Z level=INFO msg=canary consumer=livenessprobe at=d672e70549207b9e2519d73028e7ea276a692768 outcome=oracle_error detail="canary: no package of the consumer imports a package of github.com/container-storage-interface/spec directly"
+time=2026-10-21T09:07:46.297Z level=INFO msg=window consumer=livenessprobe bump=d672e705 select=breaking breaking=1 compiler=compiles
+time=2026-10-21T09:07:46.297Z level=INFO msg=window consumer=livenessprobe bump=daf05bf9 select=breaking breaking=17 compiler=compiles
+time=2026-10-21T09:08:09.754Z level=INFO msg=window consumer=livenessprobe bump=0db77f8c select=breaking breaking=7 compiler=compiles
+time=2026-10-21T09:08:09.951Z level=INFO msg=window consumer=livenessprobe bump=e7948357 select=breaking breaking=6 compiler=compiles
+time=2026-10-21T09:08:26.092Z level=INFO msg=window consumer=livenessprobe bump=755ecc32 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:08:26.417Z level=INFO msg=window consumer=livenessprobe bump=95261f7b select=additive breaking=0 compiler=compiles
