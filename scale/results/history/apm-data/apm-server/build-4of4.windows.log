@@ -1,0 +1,12 @@
+time=2026-10-21T08:20:21.210Z level=INFO msg=mined consumer=apm-server pin_moves=40 to_compile=10 skipped=map[]
+time=2026-10-21T08:21:55.727Z level=INFO msg=canary consumer=apm-server at=1a47a103f6cf053af6e3042958fc061cdab5cf97^ outcome=breaks detail="canary: github.com/elastic/apm-data/model/modelpb removed."
+time=2026-10-21T08:22:06.847Z level=INFO msg=window consumer=apm-server bump=1a47a103 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:24:14.659Z level=INFO msg=window consumer=apm-server bump=3f43a1ad select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:24:39.418Z level=INFO msg=window consumer=apm-server bump=55f9eb59 select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T08:26:32.638Z level=INFO msg=window consumer=apm-server bump=7331566a select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:26:39.142Z level=INFO msg=window consumer=apm-server bump=8d880028 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:27:23.998Z level=INFO msg=window consumer=apm-server bump=b57a8225 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:27:54.876Z level=INFO msg=window consumer=apm-server bump=cd54f7d4 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:30:30.589Z level=INFO msg=window consumer=apm-server bump=e1adc792 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:30:42.493Z level=INFO msg=window consumer=apm-server bump=a5447fff select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:30:52.984Z level=INFO msg=window consumer=apm-server bump=f56767d4 select=unchanged breaking=0 compiler=compiles
