@@ -1,0 +1,13 @@
+time=2026-10-21T08:30:19.338Z level=INFO msg=mined consumer=intel-device-plugins pin_moves=21 to_compile=11 skipped=map[]
+time=2026-10-21T08:31:58.571Z level=INFO msg=canary consumer=intel-device-plugins at=094b4791e419159f5c11ef66f7077d2a28098765^ outcome=breaks detail="canary: k8s.io/kubelet/pkg/apis/deviceplugin/v1beta1 removed."
+time=2026-10-21T08:33:41.490Z level=INFO msg=window consumer=intel-device-plugins bump=094b4791 select=breaking breaking=63 compiler=breaks
+time=2026-10-21T08:33:46.071Z level=INFO msg=window consumer=intel-device-plugins bump=1f792f56 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:35:28.752Z level=INFO msg=window consumer=intel-device-plugins bump=5ccf1490 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:35:39.239Z level=INFO msg=window consumer=intel-device-plugins bump=294b7b98 select=breaking breaking=20 compiler=compiles
+time=2026-10-21T08:36:43.394Z level=INFO msg=window consumer=intel-device-plugins bump=76e798c7 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:38:41.676Z level=INFO msg=window consumer=intel-device-plugins bump=98aa8d5f select=breaking breaking=18 compiler=compiles
+time=2026-10-21T08:39:16.455Z level=INFO msg=window consumer=intel-device-plugins bump=b03ac67e select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:40:54.799Z level=INFO msg=window consumer=intel-device-plugins bump=c51850b1 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:41:08.475Z level=INFO msg=window consumer=intel-device-plugins bump=b98844c5 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:43:22.573Z level=INFO msg=window consumer=intel-device-plugins bump=d43bab5a select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:44:11.369Z level=INFO msg=window consumer=intel-device-plugins bump=eec5a308 select=unchanged breaking=0 compiler=compiles
