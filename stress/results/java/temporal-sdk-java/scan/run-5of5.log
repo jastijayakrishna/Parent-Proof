@@ -1,0 +1,6 @@
+temporal-sdk-java scan: 20 windows, shard 5/5 has 4
+canary at f53963d4489c: breaks (55 files moved) ['temporal-serviceclient/src/main/java/io/temporal/serviceclient/WorkflowServiceStubs.java:5: package io.temporal.api.workflowservice.v1 does not exist']
+f53963d4489c 2026-07-23 verifier=None build=None compiler=baseline_fails 59.1s 
+13d59637385d 2026-07-30 verifier=None build=None compiler=baseline_fails 54.3s 
+5520164fddb4 2026-08-20 verifier=GO build=GO compiler=compiles 231.7s 
+05384b58adf1 2026-10-05 verifier=GO build=GO compiler=compiles 205.7s 
