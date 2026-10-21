@@ -1,0 +1,37 @@
+time=2026-10-21T09:24:52.999Z level=INFO msg=cloning repo=p-cri-api-new url=https://github.com/kubernetes/cri-api.git
+time=2026-10-21T09:24:53.801Z level=INFO msg=cloning repo=c-cri-api-new url=https://github.com/kubernetes-sigs/cri-tools.git
+cri-api-new 5950389a GO       source_build=GO      compiler=compiles           59.0s 
+cri-api-new d279f3cb GO       source_build=GO      compiler=compiles            5.7s 
+cri-api-new d106c2f6 GO       source_build=GO      compiler=compiles            5.3s 
+cri-api-new 47789ac6 UNKNOWN  source_build=UNKNOWN compiler=compiles            3.6s 
+cri-api-new c9d92637 GO       source_build=GO      compiler=compiles            3.0s 
+cri-api-new 044b7dee UNKNOWN  source_build=GO      compiler=compiles            3.2s 
+cri-api-new d3d9c71c UNKNOWN  source_build=GO      compiler=compiles            3.2s 
+cri-api-new c71d95a3 GO       source_build=GO      compiler=compiles            3.7s 
+cri-api-new 2461a679 GO       source_build=GO      compiler=compiles            3.2s 
+cri-api-new bb3131c5 GO       source_build=GO      compiler=compiles            3.6s 
+cri-api-new ce6444f1 GO       source_build=GO      compiler=-                   1.1s 
+cri-api-new 42f1638a GO       source_build=GO      compiler=compiles            3.1s 
+cri-api-new 65ec8e48 GO       source_build=GO      compiler=compiles            2.9s 
+cri-api-new 077888e1 GO       source_build=GO      compiler=compiles            3.1s 
+cri-api-new 3cd2df7d UNKNOWN  source_build=UNKNOWN compiler=compiles            3.4s 
+cri-api-new 9c7cf2cf UNKNOWN  source_build=UNKNOWN compiler=compiles            6.9s 
+cri-api-new ea06df2a GO       source_build=GO      compiler=-                   1.2s 
+cri-api-new 26564a8e GO       source_build=GO      compiler=-                   1.2s 
+cri-api-new 475a7417 GO       source_build=GO      compiler=compiles            5.7s 
+cri-api-new 6477f0b2 GO       source_build=GO      compiler=compiles            5.3s 
+cri-api-new   20 decisions  GO  15  NO-GO   0  UNKNOWN   5 (25.0%)  errors 0 | compiler judged  17: agree  14  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 3 | not judged 3
+TOTAL         20 decisions  GO  15  NO-GO   0  UNKNOWN   5 (25.0%)  errors 0 | compiler judged  17: agree  14  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 3 | not judged 3
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    2   1  OPTION_CHANGED (e.g. cri-api-new@3cd2df7d59946d6078bf0e77db62369adc6b0ece)
+    1   1  GO_API_CHANGED_USED_BY_CALLER (e.g. cri-api-new@47789ac6867ed526d88876fa9a3be73f2ab37ac8)
+    1   1  NEEDS_REVIEW (e.g. cri-api-new@d3d9c71cbdb59ef52e589f825ef17b34fd377c47)
+    1   1  WHOLE_MESSAGE_FLOW (e.g. cri-api-new@044b7deef2ff223d2f4bba4f5b00d8b504e6307c)
+  FAILED cri-api-new@47789ac6867ed526d88876fa9a3be73f2ab37ac8: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
+  FAILED cri-api-new@3cd2df7d59946d6078bf0e77db62369adc6b0ece: unknown_on_safe: OPTION_CHANGED
+  FAILED cri-api-new@9c7cf2cf4abe1f3e56b6e8a69ba0abb8923833c5: unknown_on_safe: OPTION_CHANGED
+
+20 windows in 2m12s.
+verifier gate: scan failed: 3 disagreements with the compiler or errors
+exit 1 seconds 132
