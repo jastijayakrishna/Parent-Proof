@@ -1,0 +1,15 @@
+time=2026-10-21T08:30:45.952Z level=INFO msg=cloning repo=kubelet url=https://github.com/kubernetes/kubelet.git
+time=2026-10-21T08:30:46.825Z level=INFO msg=cloning repo=intel-device-plugins url=https://github.com/intel/intel-device-plugins-for-kubernetes.git
+time=2026-10-21T08:30:58.378Z level=INFO msg=mined consumer=intel-device-plugins pin_moves=21 to_compile=10 skipped=map[]
+time=2026-10-21T08:32:32.556Z level=INFO msg=canary consumer=intel-device-plugins at=158f9eedc6442246b1938afba57259b34b87a70a^ outcome=breaks detail="canary: k8s.io/kubelet/pkg/apis/deviceplugin/v1beta1 removed."
+time=2026-10-21T08:34:20.305Z level=INFO msg=window consumer=intel-device-plugins bump=158f9eed select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:36:17.860Z level=INFO msg=window consumer=intel-device-plugins bump=2672022c select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:38:35.758Z level=INFO msg=window consumer=intel-device-plugins bump=38740ea8 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:39:24.167Z level=INFO msg=window consumer=intel-device-plugins bump=6a4721bf select=breaking breaking=13 compiler=breaks
+time=2026-10-21T08:40:46.438Z level=INFO msg=window consumer=intel-device-plugins bump=7be6799d select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:43:09.065Z level=INFO msg=window consumer=intel-device-plugins bump=b38141d8 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:43:13.648Z level=INFO msg=window consumer=intel-device-plugins bump=a64b3363 select=breaking breaking=6 compiler=bump_side_effect
+time=2026-10-21T08:45:23.534Z level=INFO msg=window consumer=intel-device-plugins bump=bbe0fab6 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:46:24.816Z level=INFO msg=window consumer=intel-device-plugins bump=c6e809fe select=additive breaking=0 compiler=bump_side_effect
+time=2026-10-21T08:46:45.947Z level=INFO msg="suite built" suite=kubelet-new windows_added=9
+verifier suite: context canceled
