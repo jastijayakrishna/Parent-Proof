@@ -1,0 +1,1 @@
+{"consumer":"livenessprobe","at":"d672e70549207b9e2519d73028e7ea276a692768","shard":"1/1","oracle":{"outcome":"oracle_error","detail":"canary: no package of the consumer imports a package of github.com/container-storage-interface/spec directly"}}
