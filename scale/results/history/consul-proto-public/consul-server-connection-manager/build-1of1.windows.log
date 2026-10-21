@@ -1,0 +1,4 @@
+time=2026-10-21T08:22:59.087Z level=INFO msg=mined consumer=consul-server-connection-manager pin_moves=2 to_compile=2 skipped=map[]
+time=2026-10-21T08:23:21.634Z level=INFO msg=canary consumer=consul-server-connection-manager at=eb47eeb4886c4d5513cb77f1e7ca446fc05c757a^ outcome=breaks detail="canary: github.com/hashicorp/consul/proto-public/pbacl removed."
+time=2026-10-21T08:23:24.975Z level=INFO msg=window consumer=consul-server-connection-manager bump=eb47eeb4 select=breaking breaking=76 compiler=compiles
+time=2026-10-21T08:23:28.323Z level=INFO msg=window consumer=consul-server-connection-manager bump=11e3fb90 select=breaking breaking=293 compiler=compiles
