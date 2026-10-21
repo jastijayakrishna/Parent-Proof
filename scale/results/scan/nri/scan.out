@@ -1,0 +1,27 @@
+time=2026-10-21T09:21:43.074Z level=INFO msg=cloning repo=p-nri url=https://github.com/containerd/nri.git
+time=2026-10-21T09:21:43.663Z level=INFO msg=cloning repo=c-nri url=https://github.com/containerd/containerd.git
+nri         03cfa9c2 GO       source_build=GO      compiler=compiles           81.9s 
+nri         63270123 GO       source_build=GO      compiler=compiles            6.5s 
+nri         bbf892d2 GO       source_build=GO      compiler=compiles            5.6s 
+nri         ee82b966 GO       source_build=GO      compiler=compiles            5.9s 
+nri         e35ace8c GO       source_build=GO      compiler=compiles            5.8s 
+nri         8c0c9f67 GO       source_build=GO      compiler=compiles            6.5s 
+nri         a7832a24 GO       source_build=GO      compiler=compiles            5.4s 
+nri         687c1a6a GO       source_build=GO      compiler=compiles            4.6s 
+nri         e06369e8 GO       source_build=GO      compiler=compiles            5.2s 
+nri         8a03823f GO       source_build=GO      compiler=compiles            5.1s 
+nri         8705f9b1 GO       source_build=GO      compiler=compiles            5.5s 
+nri         71b0335f GO       source_build=GO      compiler=compiles            5.1s 
+nri         a584b9b2 GO       source_build=GO      compiler=compiles            4.7s 
+nri         c6e1e28e GO       source_build=GO      compiler=compiles            2.9s 
+nri         b315f77d GO       source_build=GO      compiler=compiles            4.1s 
+nri         7448ebbc GO       source_build=GO      compiler=compiles            3.2s 
+nri         274f2766 GO       source_build=GO      compiler=compiles            3.8s 
+nri         09305bfc GO       source_build=GO      compiler=compiles            3.5s 
+nri         e9f95d08 NO_GO    source_build=GO      compiler=baseline_fails      6.5s 
+nri         d9d8be82 GO       source_build=GO      compiler=baseline_fails      2.9s 
+nri           20 decisions  GO  19  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  18: agree  18  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 2
+TOTAL         20 decisions  GO  19  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged  18: agree  18  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 2
+
+20 windows in 3m0s.
+exit 0 seconds 180
