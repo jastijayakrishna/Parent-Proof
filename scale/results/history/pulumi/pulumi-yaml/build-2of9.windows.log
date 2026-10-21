@@ -1,0 +1,9 @@
+time=2026-10-21T08:57:50.158Z level=INFO msg=skip consumer=pulumi-yaml bump=c10ff4fc old=v3.242.0 new=v3.242.1-0.20260522102204-0b24bb6eb47b reason=unresolved_pin
+time=2026-10-21T08:57:50.158Z level=INFO msg=skip consumer=pulumi-yaml bump=13429c4e old=v3.242.1-0.20260522102204-0b24bb6eb47b new=v3.243.0 reason=unresolved_pin
+time=2026-10-21T08:58:04.342Z level=INFO msg=mined consumer=pulumi-yaml pin_moves=40 to_compile=5 skipped=map[unresolved_pin:2]
+time=2026-10-21T08:59:29.350Z level=INFO msg=canary consumer=pulumi-yaml at=0b86aae83dfed4e013c96044f23335f9b4d88b88^ outcome=breaks detail="canary: github.com/pulumi/pulumi/sdk/v3/proto/go removed."
+time=2026-10-21T09:00:27.408Z level=INFO msg=window consumer=pulumi-yaml bump=0b86aae8 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:01:04.610Z level=INFO msg=window consumer=pulumi-yaml bump=353b12dc select=additive breaking=0 compiler=breaks
+time=2026-10-21T09:01:12.359Z level=INFO msg=window consumer=pulumi-yaml bump=95779b21 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:02:57.330Z level=INFO msg=window consumer=pulumi-yaml bump=ff8a2cd7 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:03:14.851Z level=INFO msg=window consumer=pulumi-yaml bump=d3b7f3ce select=unchanged breaking=0 compiler=compiles

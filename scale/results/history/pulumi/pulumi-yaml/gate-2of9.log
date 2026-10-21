@@ -1,0 +1,11 @@
+pulumi-yaml 353b12dc NO_GO    source_build=NO_GO   compiler=breaks            15.3s replay=true 
+pulumi-yaml 0b86aae8 GO       source_build=GO      compiler=compiles          16.5s replay=true 
+pulumi-yaml ff8a2cd7 GO       source_build=GO      compiler=compiles           7.8s replay=true 
+pulumi-yaml 95779b21 GO       source_build=GO      compiler=compiles           9.9s replay=true 
+pulumi-yaml d3b7f3ce GO       source_build=GO      compiler=compiles           7.4s replay=true 
+pulumi-yaml/additive   windows=  3 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles= 2: GO= 2 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=3 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=3
+pulumi-yaml/unchanged  windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 2: GO= 2 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
+TOTAL                  windows=  5 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles= 4: GO= 4 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=5 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=5
+
+5 windows in 32s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
