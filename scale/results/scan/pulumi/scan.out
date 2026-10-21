@@ -1,0 +1,30 @@
+time=2026-10-21T09:19:16.042Z level=INFO msg=cloning repo=p-pulumi url=https://github.com/pulumi/pulumi.git
+time=2026-10-21T09:19:18.965Z level=INFO msg=cloning repo=c-pulumi url=https://github.com/pulumi/pulumi-yaml.git
+pulumi      55676740 GO       source_build=GO      compiler=-                  33.6s 
+pulumi      a83416bd GO       source_build=GO      compiler=-                   4.1s 
+pulumi      a02182c6 GO       source_build=GO      compiler=-                   3.9s 
+pulumi      95c0b71a GO       source_build=GO      compiler=-                   4.9s 
+pulumi      f58c751f UNKNOWN  source_build=UNKNOWN compiler=-                   5.2s 
+pulumi      8489d0b1 GO       source_build=GO      compiler=-                   6.1s 
+pulumi      c645e4f2 GO       source_build=GO      compiler=-                   6.2s 
+pulumi      82bf60a3 GO       source_build=GO      compiler=-                   5.3s 
+pulumi      f05eae64 GO       source_build=GO      compiler=-                   6.4s 
+pulumi      114a66e3 GO       source_build=GO      compiler=-                   8.6s 
+pulumi      420021da GO       source_build=GO      compiler=-                   7.4s 
+pulumi      5c2eeecc GO       source_build=GO      compiler=-                   5.4s 
+pulumi      3abcd594 GO       source_build=GO      compiler=-                   4.6s 
+pulumi      bb4e4dd0 NO_GO    source_build=NO_GO   compiler=-                   5.3s 
+pulumi      7d30b0c0 GO       source_build=GO      compiler=-                   5.2s 
+pulumi      3b6e0db7 GO       source_build=GO      compiler=-                   4.9s 
+pulumi      6c9f7e4a GO       source_build=GO      compiler=-                   4.5s 
+pulumi      aca18621 GO       source_build=GO      compiler=-                   8.4s 
+pulumi      73ab6caa GO       source_build=GO      compiler=-                   5.0s 
+pulumi      69afa574 GO       source_build=GO      compiler=-                   5.3s 
+pulumi        20 decisions  GO  18  NO-GO   1  UNKNOWN   1 ( 5.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO  18  NO-GO   1  UNKNOWN   1 ( 5.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    1   1  NEEDS_REVIEW (e.g. pulumi@f58c751f39ca0153c25a2e09c42e7c0d3e869862)
+
+20 windows in 2m24s.
+exit 0 seconds 144
