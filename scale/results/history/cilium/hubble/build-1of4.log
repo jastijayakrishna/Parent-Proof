@@ -1,0 +1,13 @@
+time=2026-10-21T09:06:58.386Z level=INFO msg=cloning repo=cilium url=https://github.com/cilium/cilium.git
+time=2026-10-21T09:07:28.235Z level=INFO msg=cloning repo=hubble url=https://github.com/cilium/hubble.git
+time=2026-10-21T09:07:43.533Z level=INFO msg=mined consumer=hubble pin_moves=32 to_compile=8 skipped=map[]
+time=2026-10-21T09:09:10.000Z level=INFO msg=canary consumer=hubble at=0790bf1b68fa9932da05a4cb6d3fa5821aa06d6c^ outcome=breaks detail="canary: github.com/cilium/cilium/api/v1/observer removed."
+time=2026-10-21T09:09:43.197Z level=INFO msg=window consumer=hubble bump=0790bf1b select=breaking breaking=19 compiler=compiles
+time=2026-10-21T09:09:58.089Z level=INFO msg=window consumer=hubble bump=27783a60 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:10:12.852Z level=INFO msg=window consumer=hubble bump=4b765dcd select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:10:37.498Z level=INFO msg=window consumer=hubble bump=6dbbd44d select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:10:44.772Z level=INFO msg=window consumer=hubble bump=904285a2 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:11:06.694Z level=INFO msg=window consumer=hubble bump=9feee533 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:12:18.371Z level=INFO msg=window consumer=hubble bump=cc2786af select=breaking breaking=2 compiler=bump_side_effect
+time=2026-10-21T09:12:50.910Z level=INFO msg=window consumer=hubble bump=f310f727 select=breaking breaking=3 compiler=compiles
+time=2026-10-21T09:12:50.910Z level=INFO msg="suite built" suite=cilium windows_added=8
