@@ -1,0 +1,11 @@
+time=2026-10-21T09:01:00.437Z level=INFO msg=cloning repo=protobuf-specs url=https://github.com/sigstore/protobuf-specs.git
+time=2026-10-21T09:01:01.511Z level=INFO msg=cloning repo=fulcio url=https://github.com/sigstore/fulcio.git
+time=2026-10-21T09:01:05.087Z level=INFO msg=mined consumer=fulcio pin_moves=6 to_compile=6 skipped=map[]
+time=2026-10-21T09:01:58.584Z level=INFO msg=canary consumer=fulcio at=ca65fcf5e48f9509a974d136c0fe7d316909db0a^ outcome=breaks detail="canary: github.com/sigstore/protobuf-specs/gen/pb-go/common/v1 removed."
+time=2026-10-21T09:02:13.102Z level=INFO msg=window consumer=fulcio bump=ca65fcf5 select=breaking breaking=7 compiler=compiles
+time=2026-10-21T09:02:57.472Z level=INFO msg=window consumer=fulcio bump=95614bad select=breaking breaking=3 compiler=compiles
+time=2026-10-21T09:02:57.631Z level=INFO msg=window consumer=fulcio bump=66c0a569 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:03:33.682Z level=INFO msg=window consumer=fulcio bump=be7da0fe select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:03:49.872Z level=INFO msg=window consumer=fulcio bump=7c15ea78 select=breaking breaking=7 compiler=compiles
+time=2026-10-21T09:04:13.971Z level=INFO msg=window consumer=fulcio bump=680a3cae select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:04:13.971Z level=INFO msg="suite built" suite=sigstore windows_added=6
