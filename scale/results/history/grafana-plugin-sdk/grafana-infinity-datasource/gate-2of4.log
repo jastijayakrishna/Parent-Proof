@@ -1,0 +1,17 @@
+grafana-infinity-datasource 02980158 GO       source_build=GO      compiler=compiles           7.2s replay=true 
+grafana-infinity-datasource 4458dfaf GO       source_build=GO      compiler=compiles           7.3s replay=true 
+grafana-infinity-datasource 2675268d NO_GO    source_build=NO_GO   compiler=compiles           2.5s replay=true 
+grafana-infinity-datasource 65a171f4 GO       source_build=GO      compiler=compiles           2.9s replay=true 
+grafana-infinity-datasource 8d01502f GO       source_build=GO      compiler=compiles           0.1s replay=true 
+grafana-infinity-datasource 7ad6cede GO       source_build=GO      compiler=compiles           3.6s replay=true 
+grafana-infinity-datasource a9db545c GO       source_build=GO      compiler=compiles           3.2s replay=true 
+grafana-infinity-datasource c1cec615 GO       source_build=GO      compiler=compiles           2.3s replay=true 
+grafana-infinity-datasource 95f650dd GO       source_build=GO      compiler=compiles           4.5s replay=true 
+grafana-infinity-datasource f0879c25 GO       source_build=GO      compiler=compiles           2.4s replay=true 
+grafana-infinity-datasource/additive windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 2: GO= 2 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
+grafana-infinity-datasource/unchanged windows=  8 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 8: GO= 7 FALSE_NOGO=1 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=8 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=8
+TOTAL                  windows= 10 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=10: GO= 9 FALSE_NOGO=1 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=10 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=10
+  FAILED grafana-infinity-datasource@2675268df098..5364a9d4: false_nogo: github.com/grafana/sqlds/v4@v4.1.0/errors.go:34, pkg/pluginhost/handler_querydata.go:96
+
+10 windows in 18s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 1 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
