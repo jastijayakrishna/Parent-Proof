@@ -1,0 +1,8 @@
+time=2026-10-21T09:01:46.269Z level=INFO msg=skip consumer=lightning-terminal bump=443b5f41 old=v1.0.12 new=v1.0.13-0.20250306160707-1091a628755c reason=unresolved_pin
+time=2026-10-21T09:01:46.269Z level=INFO msg=skip consumer=lightning-terminal bump=5d8753ab old=v1.0.13-0.20250306160707-1091a628755c new=v1.0.13 reason=unresolved_pin
+time=2026-10-21T09:01:46.727Z level=INFO msg=mined consumer=lightning-terminal pin_moves=18 to_compile=4 skipped=map[unresolved_pin:2]
+time=2026-10-21T09:04:29.869Z level=INFO msg=canary consumer=lightning-terminal at=011d5fdf1a7b5cd214d2b66640825fd7655542eb^ outcome=bump_side_effect detail="canary: github.com/lightninglabs/loop/swapserverrpc removed. module github.com/lightninglabs/loop/swapserverrpc@latest found (v1.0.22, replaced by /tmp/parent-canary-315897815), but does not contain package github.com/lightninglabs/loop/swapserverrpc"
+time=2026-10-21T09:04:48.701Z level=INFO msg=window consumer=lightning-terminal bump=011d5fdf select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:06:08.467Z level=INFO msg=window consumer=lightning-terminal bump=6b53a86f select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:06:59.460Z level=INFO msg=window consumer=lightning-terminal bump=b5117a48 select=breaking breaking=1 compiler=compiles
+time=2026-10-21T09:07:41.910Z level=INFO msg=window consumer=lightning-terminal bump=2db38f72 select=additive breaking=0 compiler=compiles
