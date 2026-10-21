@@ -1,0 +1,15 @@
+time=2026-10-21T09:11:53.165Z level=INFO msg=cloning repo=grafana-plugin-sdk-go url=https://github.com/grafana/grafana-plugin-sdk-go.git
+time=2026-10-21T09:11:54.685Z level=INFO msg=cloning repo=github-datasource url=https://github.com/grafana/github-datasource.git
+time=2026-10-21T09:12:00.772Z level=INFO msg=mined consumer=github-datasource pin_moves=40 to_compile=10 skipped=map[]
+time=2026-10-21T09:12:48.697Z level=INFO msg=canary consumer=github-datasource at=0f89676d65f11316a0b8842b0f4daf40239ff532^ outcome=breaks detail="canary: github.com/grafana/grafana-plugin-sdk-go/backend removed."
+time=2026-10-21T09:12:53.129Z level=INFO msg=window consumer=github-datasource bump=0f89676d select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:13:48.845Z level=INFO msg=window consumer=github-datasource bump=2467672b select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:14:26.545Z level=INFO msg=window consumer=github-datasource bump=54a5cd0c select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:28.455Z level=INFO msg=window consumer=github-datasource bump=3934a880 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:15:18.839Z level=INFO msg=window consumer=github-datasource bump=99eafd20 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:23.361Z level=INFO msg=window consumer=github-datasource bump=88528253 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:52.083Z level=INFO msg=window consumer=github-datasource bump=b1e83d70 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:53.891Z level=INFO msg=window consumer=github-datasource bump=bf280e3c select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:59.007Z level=INFO msg=window consumer=github-datasource bump=fec69afc select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:16:25.593Z level=INFO msg=window consumer=github-datasource bump=dd9234ca select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:16:25.593Z level=INFO msg="suite built" suite=grafana-plugin-sdk windows_added=10
