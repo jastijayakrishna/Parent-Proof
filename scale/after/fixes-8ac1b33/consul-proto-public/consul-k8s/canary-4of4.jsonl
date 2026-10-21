@@ -1,0 +1,1 @@
+{"consumer":"consul-k8s","at":"2afb743da555acb7ee1ee974270d25cc91d7a417","shard":"4/4","oracle":{"outcome":"oracle_error","detail":"canary: no package of the consumer imports a package of github.com/hashicorp/consul/proto-public directly"}}
