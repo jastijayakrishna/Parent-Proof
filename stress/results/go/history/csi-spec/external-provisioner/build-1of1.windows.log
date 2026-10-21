@@ -1,8 +1,8 @@
-time=2026-10-06T14:01:56.865Z level=INFO msg=mined consumer=external-provisioner pin_moves=6 to_compile=6 skipped=map[]
-time=2026-10-06T14:02:50.993Z level=INFO msg=canary consumer=external-provisioner at=0f8b1662e25f37675da1f82acb78cd820b359419^ outcome=breaks detail="canary: github.com/container-storage-interface/spec/lib/go/csi removed."
-time=2026-10-06T14:02:56.414Z level=INFO msg=window consumer=external-provisioner bump=0f8b1662 select=breaking breaking=1 compiler=compiles
-time=2026-10-06T14:03:51.958Z level=INFO msg=window consumer=external-provisioner bump=e2d90af1 select=breaking breaking=17 compiler=compiles
-time=2026-10-06T14:04:57.837Z level=INFO msg=window consumer=external-provisioner bump=964de412 select=breaking breaking=7 compiler=compiles
-time=2026-10-06T14:05:48.739Z level=INFO msg=window consumer=external-provisioner bump=ebd63204 select=breaking breaking=6 compiler=compiles
-time=2026-10-06T14:05:58.767Z level=INFO msg=window consumer=external-provisioner bump=1272a9d1 select=additive breaking=0 compiler=compiles
-time=2026-10-06T14:06:30.429Z level=INFO msg=window consumer=external-provisioner bump=b0225237 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:01:05.603Z level=INFO msg=mined consumer=external-provisioner pin_moves=6 to_compile=6 skipped=map[]
+time=2026-10-21T08:02:09.809Z level=INFO msg=canary consumer=external-provisioner at=0f8b1662e25f37675da1f82acb78cd820b359419^ outcome=breaks detail="canary: github.com/container-storage-interface/spec/lib/go/csi removed."
+time=2026-10-21T08:02:16.480Z level=INFO msg=window consumer=external-provisioner bump=0f8b1662 select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:03:28.662Z level=INFO msg=window consumer=external-provisioner bump=e2d90af1 select=breaking breaking=17 compiler=compiles
+time=2026-10-21T08:04:48.378Z level=INFO msg=window consumer=external-provisioner bump=964de412 select=breaking breaking=7 compiler=compiles
+time=2026-10-21T08:05:55.292Z level=INFO msg=window consumer=external-provisioner bump=ebd63204 select=breaking breaking=6 compiler=compiles
+time=2026-10-21T08:06:05.864Z level=INFO msg=window consumer=external-provisioner bump=1272a9d1 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:06:44.144Z level=INFO msg=window consumer=external-provisioner bump=b0225237 select=additive breaking=0 compiler=compiles
