@@ -1,0 +1,4 @@
+time=2026-10-21T09:13:42.875Z level=INFO msg=mined consumer=remote-apis-sdks pin_moves=2 to_compile=2 skipped=map[]
+time=2026-10-21T09:13:56.844Z level=INFO msg=canary consumer=remote-apis-sdks at=935e61ad88b790831d03d577a903989913fef84d^ outcome=breaks detail="canary: github.com/bazelbuild/remote-apis/build/bazel/remote/execution/v2 removed."
+time=2026-10-21T09:13:59.391Z level=INFO msg=window consumer=remote-apis-sdks bump=935e61ad select=breaking breaking=2 compiler=compiles
+time=2026-10-21T09:14:06.140Z level=INFO msg=window consumer=remote-apis-sdks bump=39d78dcb select=unchanged breaking=0 compiler=compiles
