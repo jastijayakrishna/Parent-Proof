@@ -1,0 +1,18 @@
+time=2026-10-21T08:22:43.553Z level=INFO msg=cloning repo=bb-storage url=https://github.com/buildbarn/bb-storage.git
+time=2026-10-21T08:22:45.202Z level=INFO msg=cloning repo=bb-remote-execution url=https://github.com/buildbarn/bb-remote-execution.git
+time=2026-10-21T08:22:51.622Z level=INFO msg=mined consumer=bb-remote-execution pin_moves=40 to_compile=13 skipped=map[]
+time=2026-10-21T08:23:51.616Z level=INFO msg=canary consumer=bb-remote-execution at=1c726bdc27e7793c685d8788913f8f91f59bc887^ outcome=breaks detail="canary: github.com/buildbarn/bb-storage/pkg/proto/configuration/global removed."
+time=2026-10-21T08:24:23.472Z level=INFO msg=window consumer=bb-remote-execution bump=1c726bdc select=breaking breaking=2 compiler=compiles
+time=2026-10-21T08:25:14.244Z level=INFO msg=window consumer=bb-remote-execution bump=2da03930 select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T08:25:46.564Z level=INFO msg=window consumer=bb-remote-execution bump=78a187fd select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:25:55.315Z level=INFO msg=window consumer=bb-remote-execution bump=7f1de89c select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:27:12.935Z level=INFO msg=window consumer=bb-remote-execution bump=9c26bb06 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:27:59.330Z level=INFO msg=window consumer=bb-remote-execution bump=947d8e2c select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:28:10.404Z level=INFO msg=window consumer=bb-remote-execution bump=b66a0fb8 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:28:47.386Z level=INFO msg=window consumer=bb-remote-execution bump=a750e60f select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:29:26.501Z level=INFO msg=window consumer=bb-remote-execution bump=c453f856 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:29:34.562Z level=INFO msg=window consumer=bb-remote-execution bump=d42ff456 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:30:14.154Z level=INFO msg=window consumer=bb-remote-execution bump=de7f55ed select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:30:57.775Z level=INFO msg=window consumer=bb-remote-execution bump=ed02b7a0 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:31:09.939Z level=INFO msg=window consumer=bb-remote-execution bump=f84a2c0f select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:31:09.939Z level=INFO msg="suite built" suite=bb-storage windows_added=13
