@@ -1,0 +1,17 @@
+time=2026-10-21T08:50:05.869Z level=INFO msg=cloning repo=terraform-plugin-go url=https://github.com/hashicorp/terraform-plugin-go.git
+time=2026-10-21T08:50:06.857Z level=INFO msg=cloning repo=terraform-plugin-sdk url=https://github.com/hashicorp/terraform-plugin-sdk.git
+time=2026-10-21T08:50:10.194Z level=INFO msg=mined consumer=terraform-plugin-sdk pin_moves=24 to_compile=12 skipped=map[]
+time=2026-10-21T08:50:37.033Z level=INFO msg=canary consumer=terraform-plugin-sdk at=04daf66b83f6c45e219ef6bf482751dab36610d8^ outcome=breaks detail="canary: github.com/hashicorp/terraform-plugin-go/tfprotov5 removed."
+time=2026-10-21T08:50:51.271Z level=INFO msg=window consumer=terraform-plugin-sdk bump=04daf66b select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:51:05.755Z level=INFO msg=window consumer=terraform-plugin-sdk bump=183e62bd select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:51:08.883Z level=INFO msg=window consumer=terraform-plugin-sdk bump=3a612a24 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:51:26.736Z level=INFO msg=window consumer=terraform-plugin-sdk bump=5ffe9fbf select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:51:32.238Z level=INFO msg=window consumer=terraform-plugin-sdk bump=47fc83b1 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:51:53.374Z level=INFO msg=window consumer=terraform-plugin-sdk bump=70fb6b9b select=breaking breaking=8 compiler=breaks
+time=2026-10-21T08:52:02.359Z level=INFO msg=window consumer=terraform-plugin-sdk bump=86877a0b select=additive breaking=0 compiler=breaks
+time=2026-10-21T08:52:10.869Z level=INFO msg=window consumer=terraform-plugin-sdk bump=9eb7da0b select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:52:25.915Z level=INFO msg=window consumer=terraform-plugin-sdk bump=aa0b6ace select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:52:34.144Z level=INFO msg=window consumer=terraform-plugin-sdk bump=d419eaab select=breaking breaking=4 compiler=breaks
+time=2026-10-21T08:52:39.370Z level=INFO msg=window consumer=terraform-plugin-sdk bump=ebc3afed select=breaking breaking=4 compiler=compiles
+time=2026-10-21T08:52:43.920Z level=INFO msg=window consumer=terraform-plugin-sdk bump=f58eb000 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:52:43.920Z level=INFO msg="suite built" suite=tfplugin windows_added=12
