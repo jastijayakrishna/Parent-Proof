@@ -1,0 +1,3 @@
+beam history: 56 windows, shard 16/40 has 2
+canary at 79b9de283fed: generated_fails (11 files moved) ['model/pipeline/build/generated/source/proto/main/java/parentcanary/org/apache/beam/model/pipeline/v1/MetricsApi.java:173: [initialization.fields.uninitialized] the constructor does not initialize fields: urn_, type_, requiredLabels_, annotations_']
+79b9de283fed 2024-01-17 verifier=NO_GO build=GO compiler=compiles 464.8s 
