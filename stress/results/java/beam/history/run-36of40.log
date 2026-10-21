@@ -1,0 +1,3 @@
+beam history: 56 windows, shard 36/40 has 1
+canary at b7bd1274039b: generated_fails (11 files moved) ['model/pipeline/build/generated/source/proto/main/java/parentcanary/org/apache/beam/model/pipeline/v1/StandardWindowFns.java:108: [return] incompatible types in return.']
+b7bd1274039b 2025-04-22 verifier=GO build=GO compiler=compiles 676.1s 
