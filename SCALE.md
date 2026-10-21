@@ -1,8 +1,8 @@
 # Scale test: real contract changes, judged by the compiler
 
-Updated 2026-10-21 09:11 UTC. Every count below comes from one binary: Parent main `f3db8e9`, sha256 `b494ad99de344acf…` ([bin/VERSION](bin/VERSION)), the build a customer would install today. Rules, fixed before the run: [scale/PREREG.md](scale/PREREG.md).
+Updated 2026-10-21 09:15 UTC. Every count below comes from one binary: Parent main `f3db8e9`, sha256 `b494ad99de344acf…` ([bin/VERSION](bin/VERSION)), the build a customer would install today. Rules, fixed before the run: [scale/PREREG.md](scale/PREREG.md).
 
-**1392 real changes decided; the compiler judged 1174. 177 broke a project's build: Parent said Don't merge on 122, Needs review on 37, and Merge on 18. Of the 997 safe changes it said Merge on 820 (82.2%), Don't merge on 13, Needs review on 164.**
+**1489 real changes decided; the compiler judged 1258. 182 broke a project's build: Parent said Don't merge on 126, Needs review on 38, and Merge on 18. Of the 1076 safe changes it said Merge on 886 (82.3%), Don't merge on 20, Needs review on 170.**
 
 - **Caught**: the change broke the build; Parent said Don't merge, with the file and line.
 - **Stopped with Needs review**: it broke; Parent could not prove which way, so it did not say Merge.
@@ -14,8 +14,8 @@ Updated 2026-10-21 09:11 UTC. Every count below comes from one binary: Parent ma
 
 | | decided | judged by the compiler | broke the build | caught (Don't merge) | stopped with Needs review | **missed (said Merge)** | safe | said Merge on safe | false alarms | needs review on safe |
 |---|---|---|---|---|---|---|---|---|---|---|
-| **New projects, never used before: contract and project new** | 528 | 459 | 71 | 52 | 12 | **7** | 388 | 321 | 8 | 59 |
-| **New projects: a known contract, a project never used** | 285 | 254 | 53 | 30 | 12 | **11** | 201 | 176 | 2 | 23 |
+| **New projects, never used before: contract and project new** | 605 | 523 | 76 | 56 | 13 | **7** | 447 | 371 | 14 | 62 |
+| **New projects: a known contract, a project never used** | 305 | 274 | 53 | 30 | 12 | **11** | 221 | 192 | 3 | 26 |
 | History: 9 contract → project pairs, rerun | 179 | 173 | 24 | 21 | 3 | **0** | 149 | 126 | 1 | 22 |
 | Go stress test, rerun: dev | 144 | 82 | 7 | 7 | 0 | **0** | 75 | 63 | 0 | 12 |
 | Go stress test, rerun: hold-out | 256 | 206 | 22 | 12 | 10 | **0** | 184 | 134 | 2 | 48 |
@@ -23,9 +23,9 @@ Updated 2026-10-21 09:11 UTC. Every count below comes from one binary: Parent ma
 | Java stress test, rerun: hold-out | 0 | 0 | 0 | 0 | 0 | **0** | 0 | 0 | 0 | 0 |
 | Java stress test, rerun: regression | 0 | 0 | 0 | 0 | 0 | **0** | 0 | 0 | 0 | 0 |
 | Open pull requests, decided live | 0 | 0 | 0 | 0 | 0 | **0** | 0 | 0 | 0 | 0 |
-| **All** | 1392 | 1174 | 177 | 122 | 37 | **18** | 997 | 820 | 13 | 164 |
+| **All** | 1489 | 1258 | 182 | 126 | 38 | **18** | 1076 | 886 | 20 | 170 |
 
-Kinds of change: 1212 real upgrades a project made of a contract it uses (its own commit, usually its own pull request); 180 merged or open pull requests of the contract itself, decided against a project that uses it.
+Kinds of change: 1309 real upgrades a project made of a contract it uses (its own commit, usually its own pull request); 180 merged or open pull requests of the contract itself, decided against a project that uses it.
 
 Left out because another binary decided them (rerun pending): Java stress test 1025, Open pull requests, live 160.
 
@@ -111,6 +111,7 @@ Left out because another binary decided them (rerun pending): Java stress test 1
 | New projects | apm-data -> apm-aggregation | [v0.1.1-0.20230809075845-a636758ca08d -> v0.1.1-0.20230814023104-48e4b20579f6](https://github.com/elastic/apm-aggregation/commit/0edaadeee2bad42b43883c0fff1cab379f1b5a19) | 2023-08-14 | breaks: `aggregators/converter.go:114:42: e.GetEvent().GetDuration().AsDuration undefined (type uint64 has no field or ` | Don't merge | aggregators/converter.go:114 |
 | New projects | apm-data -> apm-server | [v0.1.1-0.20231212041654-b2a4dabeb6e3 -> v0.1.1-0.20240111111310-80b6af8d97e1](https://github.com/elastic/apm-server/commit/52849ff30f6211afacdbecc838a645eac93cb6da) | 2024-01-15 | breaks: `internal/beater/api/intake/handler.go:108:4: too many arguments in call to handler.HandleStream` | Don't merge | internal/beater/api/intake/handler.go:197 |
 | New projects | argo-cd-v2 -> argocd-image-updater | [v2.13.8 -> v2.14.15](https://github.com/argoproj-labs/argocd-image-updater/commit/6d7c38db7b6286dd07e34bbf72e969992cb5e9e7) | 2025-07-22 | breaks: `module github.com/argoproj/argo-cd/v2@latest found (v2.14.21), but does not contain package github.com/argopro` | Don't merge | cmd/ask_pass.go:15 |
+| New projects | bb-storage -> bb-browser | [v0.0.0-20250820101750-5bae58446505 -> v0.0.0-20250929074734-1170df56abab](https://github.com/buildbarn/bb-browser/commit/d115d51d178dd8a762916d298169bf04abafd73e) | 2025-09-29 | breaks: `module github.com/buildbarn/bb-storage@latest found (v0.0.0-20261020094522-60204be844cd), but does not contain` | Don't merge | cmd/bb_browser/browser_service.go:139 |
 | New projects | bb-storage -> bb-clientd | [v0.0.0-20240307194821-4d0d7a3d85b5 -> v0.0.0-20240308085957-e8fd6935d2ef](https://github.com/buildbarn/bb-clientd/commit/0dd19dea6490a0d750a9e1deff1106fe7d4fdef4) | 2024-03-08 | breaks: `/home/runner/go/pkg/mod/github.com/buildbarn/bb-remote-execution@v0.0.0-20240307211444-6879a90a1d00/pkg/filesy` | Needs review | GO_API_CHANGED_USED_BY_CALLER |
 | New projects | bb-storage -> bb-clientd | [v0.0.0-20240308085957-e8fd6935d2ef -> v0.0.0-20240310075825-20598f43e294](https://github.com/buildbarn/bb-clientd/commit/066c9d9881bc350955de25fb92ddefda2451ca1a) | 2024-03-10 | breaks: `/home/runner/go/pkg/mod/github.com/buildbarn/bb-remote-execution@v0.0.0-20240308103551-b4cdefde2e35/pkg/filesy` | Don't merge | github.com/buildbarn/bb-remote-execution@v0.0.0-20240308103551-b4cdefde2e35/pkg/builder/command.go:115 |
 | New projects | bb-storage -> bb-clientd | [v0.0.0-20240331131648-914e53aad8cd -> v0.0.0-20240622054538-e7e069d58643](https://github.com/buildbarn/bb-clientd/commit/4c800c40d0d103bbab61da53afbad0a9bd8c56bc) | 2024-06-22 | breaks: `/home/runner/go/pkg/mod/github.com/buildbarn/bb-remote-execution@v0.0.0-20240331151324-f84a2c0f7211/pkg/filesy` | Don't merge | pkg/filesystem/virtual/bazel_output_service_directory.go:566 |
@@ -127,6 +128,7 @@ Left out because another binary decided them (rerun pending): Java stress test 1
 | New projects | bb-storage -> bb-remote-execution | [v0.0.0-20251111104208-faf8fe60ecd0 -> v0.0.0-20260127050344-797be97c5d2c](https://github.com/buildbarn/bb-remote-execution/commit/79a33f17d765752994746d74f92751a014fc883d) | 2026-01-27 | breaks: `pkg/filesystem/pool/hole_source.go:31:33: cannot use zeroHoleSource{} (value of struct type zeroHoleSource) as` | Don't merge | github.com/buildbarn/bb-storage@v0.0.0-20251111104208-faf8fe60ecd0/pkg/blobstore/configuration/new_blob_access.go:129 |
 | New projects | bb-storage -> bb-remote-execution | [v0.0.0-20260303071613-6002cad33537 -> v0.0.0-20260317135248-dc342e1799d7](https://github.com/buildbarn/bb-remote-execution/commit/db78144fca2068e4572b57e5a86173b95c8555c2) | 2026-03-18 | breaks: `cmd/bb_noop_worker/main.go:51:5: not enough arguments in call to blobstore_configuration.NewCASBlobAccessCreat` | Needs review | CONTRACT_COMPILE_ERROR, GO_API_CHANGED_USED_BY_CALLER |
 | New projects | bb-storage -> bb-remote-execution | [v0.0.0-20260507124548-e5d91cab6de6 -> v0.0.0-20260527152149-3991d6ebefb4](https://github.com/buildbarn/bb-remote-execution/commit/c48dcda5e792227f50ec5bae0fcec1ab2e40fb48) | 2026-05-27 | breaks: `pkg/blobstore/batched_store_blob_access.go:70:13: not enough arguments in call to digest.NewSetBuilder` | Needs review | GO_API_CHANGED_USED_BY_CALLER |
+| New projects | cilium -> hubble | [v1.14.0-snapshot.1 -> v1.14.0-snapshot.4](https://github.com/cilium/hubble/commit/7eaef51f42bae38ed5200cfb67c4ecd07b56a9a0) | 2023-06-19 | breaks: `cmd/observe/flows.go:156:12: cannot use NewIOReaderObserver(f) (value of type *IOReaderObserver) as observer.O` | Don't merge | cmd/observe/flows.go:156 |
 | New projects | consul-proto-public -> consul-k8s | [v0.1.2-0.20240129174413-a2d50af1bdfb -> v0.1.2-0.20240202204845-fb2b696c0e6b](https://github.com/hashicorp/consul-k8s/commit/59e7eae2078f861a08a8635938e2dd6094ecb432) | 2024-02-05 | breaks: `module github.com/hashicorp/consul/proto-public@latest found (v0.9.0, replaced by github.com/hashicorp/consul/` | Don't merge | api/auth/v2beta1/traffic_permissions_types.go:68 |
 | New projects | cri-api-new -> cri-dockerd | [v0.22.8 -> v0.27.8](https://github.com/Mirantis/cri-dockerd/commit/ff375cf010f5159c86d44c28e9c71c5d7e7935d9) | 2023-12-22 | breaks: `module k8s.io/cri-api@latest found (v0.37.1, replaced by k8s.io/cri-api@v0.27.8), but does not contain package` | Needs review | UNRESOLVED_MEMBER, SECOND_CHECK_DISAGREES |
 | New projects | cri-api-new -> cri-tools | [v0.33.0-beta.0.0.20250313010358-ab383b81657e -> v0.33.0-beta.0.0.20250324233632-87ee4e17aba6](https://github.com/kubernetes-sigs/cri-tools/commit/b27f0459cb5bf4b2fdd1b597103dcf6df8fb6806) | 2025-03-28 | breaks: `/home/runner/go/pkg/mod/k8s.io/cri-client@v0.33.0-beta.0/pkg/remote_runtime.go:137:9: cannot use service (vari` | Don't merge | vendor/k8s.io/cri-client/pkg/remote_runtime.go:137 |
@@ -147,6 +149,9 @@ Left out because another binary decided them (rerun pending): Java stress test 1
 | New projects | csi-new -> external-health-monitor | [v1.12.0 -> v1.13.0-rc1](https://github.com/kubernetes-csi/external-health-monitor/commit/8e7d753702a1f5946b8a4605d063133948708ccf) | 2026-08-11 | breaks: `/home/runner/go/pkg/mod/github.com/kubernetes-csi/csi-test/v5@v5.4.0/driver/mock.go:44:17: cannot use struct{c` | Don't merge | cmd/csi-external-health-monitor-controller/main.go:332 |
 | New projects | durabletask -> dapr | [v0.7.3-0.20250705135742-20fd7583dc03 -> v0.7.3-0.20250711135247-7a35af6fe0e5](https://github.com/dapr/dapr/commit/48bcce66d4d5fcc95f94129108d846c85feedc5a) | 2025-07-15 | breaks: `pkg/actors/targets/workflow/activity/execute.go:115:52: router.GetSource undefined (type *protos.TaskRouter ha` | Needs review | WHOLE_MESSAGE_FLOW, SECOND_CHECK_DISAGREES |
 | New projects | durabletask -> dapr | [v0.11.4-0.20260401134941-caa84142cb18 -> v0.11.4-0.20260406161632-36d7b5486fa8](https://github.com/dapr/dapr/commit/7302781d64889a9e0bdeb527c66f68c77af0dcea) | 2026-04-08 | breaks: `pkg/runtime/wfengine/state/state.go:437:3: unknown field Inbox in struct literal of type backend.WorkflowState` | Needs review | WHOLE_MESSAGE_FLOW, SECOND_CHECK_DISAGREES |
+| New projects | function-sdk -> function-auto-ready | [v0.0.0-20230914214411-245eb193dcc9 -> v0.0.0-20230918205031-1c15c0202e57](https://github.com/crossplane-contrib/function-auto-ready/commit/bda5604b9d199e1055b1dc5f32252fc68f0c0e47) | 2023-09-18 | breaks: `./fn.go:59:17: undefined: resource.DesiredComposedResources` | Don't merge | fn.go:59 |
+| New projects | function-sdk -> function-auto-ready | [v0.1.0 -> v0.3.0](https://github.com/crossplane-contrib/function-auto-ready/commit/abca397ba1eab3914594b4744631e71bdd8b8739) | 2024-09-19 | breaks: `./fn.go:29:21: cannot use req (variable of type *"github.com/crossplane/function-sdk-go/proto/v1beta1".RunFunc` | Don't merge | fn.go:10 |
+| New projects | function-sdk -> function-auto-ready | [v0.4.0 -> v0.5.0](https://github.com/crossplane-contrib/function-auto-ready/commit/fdbafb783b7ca48e375f9857ee6db511b29b1d1d) | 2026-02-02 | breaks: `./fn.go:113:33: cannot use xpv1.TypeReady (constant "Ready" of string type "github.com/crossplane/crossplane-r` | Needs review | SECOND_CHECK_DISAGREES |
 | New projects | function-sdk -> function-cel-filter | [v0.2.0 -> v0.3.0](https://github.com/crossplane-contrib/function-cel-filter/commit/327f8b2e4b9f658d80e50e0160f9da146c10c521) | 2024-10-03 | breaks: `./fn.go:42:21: cannot use req (variable of type *"github.com/crossplane/function-sdk-go/proto/v1beta1".RunFunc` | Don't merge | fn.go:100 |
 | New projects | function-sdk -> function-environment-configs | [v0.2.0 -> v0.3.0](https://github.com/crossplane-contrib/function-environment-configs/commit/4c67de9c0efa631256c2edc5a3c114beaee916cc) | 2024-11-29 | breaks: `./fn.go:42:21: cannot use req (variable of type *"github.com/crossplane/function-sdk-go/proto/v1beta1".RunFunc` | Don't merge | fn.go:20 |
 | New projects | function-sdk -> function-environment-configs | [v0.4.0 -> v0.6.2](https://github.com/crossplane-contrib/function-environment-configs/commit/ce24ceff678209c99bc47dcf887b621d57ff345c) | 2026-04-09 | breaks: `./main.go:28:39: cannot use log (variable of interface type "github.com/crossplane/function-sdk-go/logging".Lo` | Don't merge | fn.go:176 |
@@ -211,13 +216,19 @@ Left out because another binary decided them (rerun pending): Java stress test 1
 | New projects | tfplugin -> terraform-plugin-sdk | [v0.18.0 -> v0.19.0](https://github.com/hashicorp/terraform-plugin-sdk/commit/d419eaab16fec59d43b09f472388795d9d3a1c3d) | 2023-09-06 | breaks: `helper/schema/provider.go:511:9: cannot use NewGRPCProviderServer(p) (value of type *GRPCProviderServer) as tf` | Don't merge | github.com/hashicorp/terraform-plugin-go@v0.18.0/tfprotov5/internal/toproto/provider.go:19 |
 | New projects | tfplugin -> terraform-plugin-sdk | [v0.30.0 -> v0.31.0](https://github.com/hashicorp/terraform-plugin-sdk/commit/86877a0b4fa52fb5b4a802d102f8afedb76b5dbe) | 2026-03-10 | breaks: `helper/schema/grpc_provider.go:35:34: cannot use (*GRPCProviderServer)(nil) (value of type *GRPCProviderServer` | Don't merge | helper/resource/plugin.go:205 |
 
-## False alarms (13)
+## False alarms (20)
 
 | corpus | contract → project | change | date | Parent's finding |
 |---|---|---|---|---|
 | Go stress test | cosmos-sdk -> gaia | [v0.50.11-lsm.0.20250523173923-11578258172e -> v0.53.0](https://github.com/cosmos/gaia/commit/558be6323bc9b9966242069d8b9fe02c37f32848) | 2025-06-03 | app/sim/sim_state.go:247 |
 | Go stress test | cosmos-sdk -> gaia | [v0.53.4 -> v0.53.8](https://github.com/cosmos/gaia/commit/c3c08fedef4e1115512ad5fb264641d7f98cf93c) | 2026-08-21 | app/keepers/keepers.go:595 |
 | History (9 pairs) | containerd-api -> nerdctl | [v1.7.19 -> v1.8.0-rc.2](https://github.com/containerd/nerdctl/commit/7aa8ca9b65e90d22bf0faac77cbe528a0462630e) | 2024-08-09 | github.com/containerd/containerd@v1.7.20/container.go:333 |
+| New projects | bb-storage -> bb-browser | [v0.0.0-20230119153358-2d0d7ee15967 -> v0.0.0-20230120132704-98063ef6edfa](https://github.com/buildbarn/bb-browser/commit/84796f0577a89085615abf1025b1610d1fdad1fe) | 2023-01-20 | cmd/bb_browser/browser_service.go:411 |
+| New projects | bb-storage -> bb-browser | [v0.0.0-20230124100847-756fc23c9924 -> v0.0.0-20230223115958-4f243ea90d39](https://github.com/buildbarn/bb-browser/commit/4ed56d704c1c194da7ca82765142ce83e56fa388) | 2023-02-24 | cmd/bb_browser/main.go:73 |
+| New projects | bb-storage -> bb-browser | [v0.0.0-20230517082930-1eb2bad58bdb -> v0.0.0-20230629193729-d6a051ca744d](https://github.com/buildbarn/bb-browser/commit/5d710fd5fca58f4de1edb01225e72d634eb52fe3) | 2023-07-03 | cmd/bb_browser/main.go:64 |
+| New projects | bb-storage -> bb-browser | [v0.0.0-20230629193729-d6a051ca744d -> v0.0.0-20230829194228-34e3e8d9c159](https://github.com/buildbarn/bb-browser/commit/4ab3ea9df0fa2e9811245aa6caa36bff7806dc20) | 2023-08-30 | cmd/bb_browser/main.go:276 |
+| New projects | bb-storage -> bb-browser | [v0.0.0-20230905110346-c04246b462b6 -> v0.0.0-20231030120605-519a8946d90d](https://github.com/buildbarn/bb-browser/commit/794e38071d7a18babfc6c57643767d26415dcd63) | 2023-11-03 | github.com/buildbarn/bb-storage@v0.0.0-20230905110346-c04246b462b6/pkg/blobstore/configuration/ac_blob_access_creator.go:62 |
+| New projects | bb-storage -> bb-browser | [v0.0.0-20240227100204-0aa40dfdbead -> v0.0.0-20240310075825-20598f43e294](https://github.com/buildbarn/bb-browser/commit/10b339da6324b00efb3e8a7cfb95f2f3790bed7f) | 2024-03-10 | cmd/bb_browser/browser_service.go:1011 |
 | New projects | bb-storage -> bb-clientd | [v0.0.0-20230124100847-756fc23c9924 -> v0.0.0-20230223115958-4f243ea90d39](https://github.com/buildbarn/bb-clientd/commit/007cdc1065258e08a88afa5c8f5fb1cb76b48641) | 2023-02-24 | cmd/bb_clientd/main.go:52 |
 | New projects | bb-storage -> bb-clientd | [v0.0.0-20230317062200-2cbf9f602b09 -> v0.0.0-20230629193729-d6a051ca744d](https://github.com/buildbarn/bb-clientd/commit/25fd4b186d2dbb487128f6b0b6a1d10f0a9cb673) | 2023-06-30 | cmd/bb_clientd/main.go:43 |
 | New projects | bb-storage -> bb-clientd | [v0.0.0-20230905110346-c04246b462b6 -> v0.0.0-20231008111112-ba53c0ad05f2](https://github.com/buildbarn/bb-clientd/commit/b55af46f6ebcf14dd441bcae6e72c1b34a3d18f8) | 2023-10-13 | github.com/buildbarn/bb-storage@v0.0.0-20230905110346-c04246b462b6/pkg/blobstore/configuration/ac_blob_access_creator.go:62 |
@@ -225,19 +236,20 @@ Left out because another binary decided them (rerun pending): Java stress test 1
 | New projects | grafana-plugin-sdk -> grafana-infinity-datasource | [v0.259.4 -> v0.261.0](https://github.com/grafana/grafana-infinity-datasource/commit/2675268df098c7965b3ccc0573defa59e2141328) | 2025-01-10 | github.com/grafana/sqlds/v4@v4.1.0/errors.go:34 |
 | New projects | grafana-plugin-sdk -> grafana-infinity-datasource | [v0.279.0 -> v0.280.0](https://github.com/grafana/grafana-infinity-datasource/commit/9bd9ed2b74fe20aff05285efb2882d325c431a22) | 2025-10-06 | github.com/grafana/grafana-aws-sdk@v1.0.4/pkg/awsauth/settings.go:217 |
 | New projects | grafana-plugin-sdk -> grafana-infinity-datasource | [v0.290.1 -> v0.292.0](https://github.com/grafana/grafana-infinity-datasource/commit/7df3c6c4153a5b6343017862915342ad3b180f30) | 2026-06-17 | github.com/grafana/grafana-aws-sdk@v1.4.3/pkg/awsds/authSettings.go:78 |
+| New projects | kubelet-new -> container-engine-accelerators | [v0.19.2 -> v0.27.2](https://github.com/GoogleCloudPlatform/container-engine-accelerators/commit/c9276a5ded0f631efe2be7ac26466151cbe24ea1) | 2023-11-29 | pkg/gpu/nvidia/beta_plugin.go:60 |
 | New projects | nri -> cri-o | [v0.9.1-0.20250219030224-e597e7849f24 -> v0.10.0](https://github.com/cri-o/cri-o/commit/1891357ec992db415e147997c9d75e0de62cd3a0) | 2025-08-25 | server/nri-api.go:272 |
 | New projects | pulumi -> pulumi-go-provider | [v3.248.0 -> v3.250.0](https://github.com/pulumi/pulumi-go-provider/commit/bf55f7db3f460831c4fb1393784dc2c320957e97) | 2026-07-06 | integration/integration.go:198 |
 | New projects | temporal-api-new -> temporal-cli | [v1.32.1-cherry-pick-for-cli-tag -> v1.38.0](https://github.com/temporalio/cli/commit/344bf25553e2650d43f49c1d1396c352763a8ea5) | 2024-09-13 | github.com/temporalio/ui-server/v2@v2.30.3/server/api/handler.go:201 |
 
 ## Needs review, by reason (judged changes)
 
-- CONTRACT_COMPILE_ERROR: 59
-- GO_API_CHANGED_USED_BY_CALLER: 57
-- OPTION_CHANGED: 47
+- CONTRACT_COMPILE_ERROR: 61
+- GO_API_CHANGED_USED_BY_CALLER: 58
+- OPTION_CHANGED: 49
 - GENERATED_BINDINGS_UNAVAILABLE: 24
-- DESCRIPTOR_REFLECTION: 22
-- SECOND_CHECK_DISAGREES: 17
-- NEEDS_REVIEW: 13
+- DESCRIPTOR_REFLECTION: 23
+- SECOND_CHECK_DISAGREES: 19
+- NEEDS_REVIEW: 14
 - WHOLE_MESSAGE_FLOW: 10
 - AMBIENT_GENERATED_UNREAD: 10
 - UNRESOLVED_MEMBER: 9
@@ -250,14 +262,18 @@ Left out because another binary decided them (rerun pending): Java stress test 1
 | tier 1 | apm-data -> apm-aggregation | 25 | 23 | 5 | 5 | 0 | 0 | 0 | 0 | 2 |
 | tier 1 | apm-data -> apm-server | 40 | 40 | 2 | 1 | 0 | 1 | 0 | 0 | 0 |
 | tier 1 | auctioneerrpc -> lightning-terminal | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 |
+| tier 1 | bb-storage -> bb-browser | 13 | 11 | 1 | 1 | 0 | 0 | 6 | 0 | 2 |
 | tier 1 | bb-storage -> bb-clientd | 29 | 26 | 7 | 5 | 2 | 0 | 4 | 3 | 3 |
 | tier 1 | bb-storage -> bb-remote-execution | 40 | 40 | 9 | 5 | 4 | 0 | 0 | 1 | 0 |
+| tier 1 | cilium -> hubble | 24 | 23 | 1 | 1 | 0 | 0 | 0 | 0 | 1 |
 | tier 1 | frdrpc -> lightning-terminal | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 |
+| tier 1 | function-sdk -> function-auto-ready | 10 | 8 | 3 | 2 | 1 | 0 | 0 | 0 | 2 |
 | tier 1 | function-sdk -> function-cel-filter | 5 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 2 |
 | tier 1 | function-sdk -> function-environment-configs | 6 | 5 | 2 | 2 | 0 | 0 | 0 | 0 | 1 |
 | tier 1 | function-sdk -> function-extra-resources | 4 | 4 | 2 | 2 | 0 | 0 | 0 | 0 | 0 |
 | tier 1 | function-sdk -> function-go-templating | 8 | 7 | 1 | 1 | 0 | 0 | 0 | 1 | 1 |
 | tier 1 | function-sdk -> function-sequencer | 5 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 2 |
+| tier 1 | grafana-plugin-sdk -> github-datasource | 20 | 20 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
 | tier 1 | grafana-plugin-sdk -> grafana-infinity-datasource | 40 | 40 | 1 | 1 | 0 | 0 | 3 | 1 | 0 |
 | tier 1 | kms -> aws-encryption-provider | 10 | 10 | 1 | 0 | 0 | 1 | 0 | 1 | 0 |
 | tier 1 | kms -> kubernetes-kms | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
@@ -270,6 +286,7 @@ Left out because another binary decided them (rerun pending): Java stress test 1
 | tier 1 | pulumi -> pulumi-go-provider | 40 | 40 | 5 | 3 | 2 | 0 | 1 | 2 | 0 |
 | tier 1 | pulumi -> pulumi-yaml | 38 | 38 | 13 | 13 | 0 | 0 | 0 | 0 | 0 |
 | tier 1 | remote-apis -> bb-storage | 18 | 18 | 0 | 0 | 0 | 0 | 0 | 14 | 0 |
+| tier 1 | remote-apis -> remote-apis-sdks | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
 | tier 1 | sigstore -> cosign | 10 | 9 | 1 | 1 | 0 | 0 | 0 | 1 | 1 |
 | tier 1 | sigstore -> fulcio | 6 | 6 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
 | tier 1 | sigstore -> gitsign | 12 | 12 | 1 | 1 | 0 | 0 | 0 | 1 | 0 |
@@ -277,7 +294,7 @@ Left out because another binary decided them (rerun pending): Java stress test 1
 | tier 1 | sigstore -> sigstore | 6 | 6 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
 | tier 1 | sigstore -> sigstore-go | 13 | 13 | 1 | 1 | 0 | 0 | 0 | 1 | 0 |
 | tier 1 | sigstore -> timestamp-authority | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 |
-| tier 1 | swapserverrpc -> lightning-terminal | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 8 |
+| tier 1 | swapserverrpc -> lightning-terminal | 16 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 16 |
 | tier 1 | taprpc -> lightning-terminal | 12 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 12 |
 | tier 1 | tfplugin -> terraform-plugin-mux | 28 | 28 | 5 | 0 | 4 | 1 | 0 | 10 | 0 |
 | tier 1 | tfplugin -> terraform-plugin-sdk | 24 | 24 | 3 | 2 | 0 | 1 | 0 | 3 | 0 |
@@ -293,17 +310,20 @@ Left out because another binary decided them (rerun pending): Java stress test 1
 | tier 2 | csi-new -> csi-driver-host-path | 6 | 6 | 3 | 1 | 2 | 0 | 0 | 2 | 0 |
 | tier 2 | csi-new -> csi-test | 6 | 6 | 4 | 2 | 2 | 0 | 0 | 1 | 0 |
 | tier 2 | csi-new -> external-health-monitor | 7 | 7 | 4 | 2 | 2 | 0 | 0 | 1 | 0 |
+| tier 2 | csi-new -> external-resizer | 6 | 6 | 0 | 0 | 0 | 0 | 0 | 3 | 0 |
 | tier 2 | csi-new -> external-snapshotter | 6 | 6 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
 | tier 2 | csi-new -> livenessprobe | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 |
 | tier 2 | csi-new -> node-driver-registrar | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 |
 | tier 2 | durabletask -> dapr | 40 | 40 | 13 | 0 | 2 | 11 | 0 | 1 | 0 |
 | tier 2 | etcd-api -> k8s-dqlite | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| tier 2 | istio-api-new -> istio-client-go | 13 | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| tier 2 | kubelet-new -> container-engine-accelerators | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | tier 2 | kubelet-new -> intel-device-plugins | 20 | 18 | 2 | 1 | 1 | 0 | 0 | 0 | 2 |
 | tier 2 | kubelet-new -> node-feature-discovery | 25 | 23 | 1 | 1 | 0 | 0 | 0 | 0 | 2 |
 | tier 2 | nri -> containerd | 16 | 15 | 1 | 1 | 0 | 0 | 0 | 4 | 1 |
 | tier 2 | nri -> cri-o | 16 | 15 | 1 | 1 | 0 | 0 | 1 | 2 | 1 |
 | tier 2 | temporal-api-new -> temporal-cli | 30 | 30 | 16 | 16 | 0 | 0 | 1 | 0 | 0 |
 
-Not judged, by reason: judge not verified 75, the provider's repository holds no Go module the consumer builds against 60, baseline_fails 45, bump_side_effect 33, the commit changes no Go file of the module: its generated code is not regenerated with the .proto change, so the build cannot see it 3, oracle_error 2.
+Not judged, by reason: judge not verified 83, the provider's repository holds no Go module the consumer builds against 60, baseline_fails 45, bump_side_effect 38, the commit changes no Go file of the module: its generated code is not regenerated with the .proto change, so the build cannot see it 3, oracle_error 2.
 
 Errors: 0.
