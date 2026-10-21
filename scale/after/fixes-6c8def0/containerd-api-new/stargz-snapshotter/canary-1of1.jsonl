@@ -1,0 +1,1 @@
+{"consumer":"stargz-snapshotter","at":"fe111ee126f2b0d36dbf360cff290132ca9e863f","shard":"1/1","oracle":{"outcome":"oracle_error","detail":"canary: no package of the consumer imports a package of github.com/containerd/containerd/api directly"}}
