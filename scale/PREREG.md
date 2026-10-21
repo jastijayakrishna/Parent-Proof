@@ -74,8 +74,9 @@ Reported per corpus, per pair, every break, every false alarm, and every Needs r
 - **Pass**: 0 missed on every judged change of every set.
 - **A miss does not stop the runs**: the whole corpus is measured on the same binary, so the count of misses is
   complete; nothing in Parent is fixed during the test, and every miss goes to the founder with the change, the code
-  and the cause. (Amended 2026-10-21 08:33 UTC, before any decision of the new projects was committed: the first
-  draft stopped at the first miss, which would leave the rest unmeasured.)
+  and the cause. (Amended 2026-10-21 08:33 UTC: the first draft stopped at the first miss, which would leave the rest
+  unmeasured. One pair's result, soci-snapshotter's 2 upgrades, had been committed at 08:23 UTC; it was not read
+  before this amendment, and the amendment changes no count.)
 - Every false alarm is listed with its cause. Nothing is dropped from the counts after the run: a pair or project whose
   harness failed is listed with what failed.
 
