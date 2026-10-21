@@ -166,6 +166,43 @@ if [ "$mode" = github ]; then
   decide pr-replay "$s";  expect pr-replay UNKNOWN USAGE_SIGNATURE_INVALID
 fi
 
+# What runs where: production runs the published commit, staging one whose
+# records were never published (the older pipeline was refused above).
+deploy() { # name env commit
+  local t0; t0=$(date +%s%N)
+  "$v" usage record-deployment ${sign[@]+"${sign[@]}"} --store "$STORE" --env "$2" --repo "$REPO" --commit "$3" > "$out/$1.out" 2>&1
+  echo "exit $?" >> "$out/$1.out"
+  echo "$1 $(ms "$t0") ms" >> "$out/timings.txt"
+}
+deploy deploy-production production "$commit"
+ok=true; grep -q '^exit 0$' "$out/deploy-production.out" || ok=false
+if [ "$mode" = github ]; then grep -q 'signed by this CI run' "$out/deploy-production.out" || ok=false; fi
+report deploy-production "$ok" "$(grep -m1 '^Recorded' "$out/deploy-production.out" | cut -c1-80)"
+# Production runs what the latest records are of: decided once, the deployment verified.
+decide deployed "$STORE" ${trial[@]+"${trial[@]}"} --env production
+expect deployed NO_GO - "2 of 2 deploy units break"
+deploy deploy-staging staging "$older"
+ok=true; grep -q '^exit 3$' "$out/deploy-staging.out" && grep -q 'never published' "$out/deploy-staging.out" || ok=false
+report deploy-staging "$ok" "$(grep -m1 'never published' "$out/deploy-staging.out" | cut -c1-80)"
+decide staging "$STORE" ${trial[@]+"${trial[@]}"} --env staging
+expect staging NO_GO USAGE_DEPLOYED_RECORD_MISSING
+"$v" can-i-deploy --repo "$prov" --base HEAD~1 --usage "$STORE" ${trial[@]+"${trial[@]}"} --env staging > "$out/can-i-deploy.out" 2>&1
+echo "exit $?" >> "$out/can-i-deploy.out"
+ok=true; grep -q '^exit 3$' "$out/can-i-deploy.out" && grep -q '^Not yet' "$out/can-i-deploy.out" || ok=false
+report can-i-deploy "$ok" "$(grep -m1 '^Not yet\|^Yes' "$out/can-i-deploy.out" | cut -c1-80)"
+# Attacks on the recorded deployment.
+dbase="$tmp/dbase"; dbranch="deploy/production/$REPO"
+git clone -q --depth 1 --branch "$dbranch" "$AUTH" "$dbase" && rm -rf "$dbase/.git"
+kept="$base"; base="$dbase"
+s=$(attacked deployment-edited "$dbranch" "sed -i 's/\"commit\":\"[0-9a-f]*\"/\"commit\":\"$older\"/' deployment.json")
+decide deployment-edited "$s" ${trial[@]+"${trial[@]}"} --env production;  expect deployment-edited UNKNOWN USAGE_SIGNATURE_INVALID
+s=$(attacked deployment-moved "deploy/production/github.com/acme/other" ':')
+decide deployment-moved "$s" ${trial[@]+"${trial[@]}"} --env production;  expect deployment-moved UNKNOWN USAGE_SIGNATURE_INVALID
+base="$kept"
+if [ "$mode" = github ]; then
+  git push -q "$AUTH" --delete "deploy/production/$REPO" "deploy/staging/$REPO" || true
+fi
+
 # Tampering with the store itself: the next check fetches the new tip.
 t="$tmp/tamper"; git clone -q --depth 1 --branch "$branch" "$AUTH" "$t"
 (cd "$t" && printf x >> records/billing-worker@*.json.gz && git commit -q -am tamper && git push -q origin "HEAD:$branch")
