@@ -1,0 +1,17 @@
+time=2026-10-21T10:51:07.098Z level=INFO msg=cloning repo=fulcio url=https://github.com/sigstore/fulcio.git
+time=2026-10-21T10:51:07.881Z level=INFO msg=cloning repo=protobuf-specs url=https://github.com/sigstore/protobuf-specs.git
+fulcio     66c0a569 UNKNOWN  source_build=UNKNOWN compiler=compiles          17.1s replay=true 
+fulcio     680a3cae GO       source_build=GO      compiler=compiles          17.2s replay=true 
+fulcio     95614bad UNKNOWN  source_build=GO      compiler=compiles           8.8s replay=true 
+fulcio     7c15ea78 UNKNOWN  source_build=GO      compiler=compiles          11.3s replay=true 
+fulcio     be7da0fe GO       source_build=GO      compiler=compiles           8.0s replay=true 
+fulcio     ca65fcf5 UNKNOWN  source_build=GO      compiler=compiles           9.3s replay=true 
+fulcio/additive        windows=  1 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 1: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=1
+fulcio/breaking        windows=  3 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 3: GO= 3 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=3 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=3
+fulcio/unchanged       windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 2: GO= 1 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
+TOTAL                  windows=  6 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 6: GO= 5 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=6 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=6
+  WITHIN THE UNKNOWN LIMIT fulcio@66c0a56973bb..eede12ff: unknown_on_safe: CONTRACT_COMPILE_ERROR
+
+6 windows in 38s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 38
