@@ -1,0 +1,1900 @@
+{
+ "verdict": "NO_GO",
+ "aspects": {
+  "generated_code": "NO_GO",
+  "runtime": "NO_GO",
+  "source_build": "NO_GO"
+ },
+ "changes": 63,
+ "go_only": null,
+ "contract_files": 12,
+ "provider_api_error": null,
+ "generated_gone": [
+  "github.com/pingcap/kvproto/pkg/autoid.AutoIDRequest.KeyspaceID",
+  "github.com/pingcap/kvproto/pkg/externalworkloadpb.RequestHeader.KeyspaceId",
+  "github.com/pingcap/kvproto/pkg/keyspacepb.GetAllKeyspacesRequest.StartId",
+  "github.com/pingcap/kvproto/pkg/keyspacepb.KeyspaceMeta.Id",
+  "github.com/pingcap/kvproto/pkg/keyspacepb.LoadKeyspaceByIDRequest.Id",
+  "github.com/pingcap/kvproto/pkg/keyspacepb.UpdateKeyspaceStateRequest.Id",
+  "github.com/pingcap/kvproto/pkg/kvrpcpb.CompactRequest.KeyspaceId",
+  "github.com/pingcap/kvproto/pkg/kvrpcpb.Context.KeyspaceId",
+  "github.com/pingcap/kvproto/pkg/mpp.TaskMeta.KeyspaceId",
+  "github.com/pingcap/kvproto/pkg/pdpb.KeyspaceScope.KeyspaceId",
+  "github.com/pingcap/kvproto/pkg/pdpb.UpdateGCSafePointV2Request.KeyspaceId",
+  "github.com/pingcap/kvproto/pkg/pdpb.UpdateServiceSafePointV2Request.KeyspaceId",
+  "github.com/pingcap/kvproto/pkg/resource_manager.KeyspaceIDValue.Value",
+  "github.com/pingcap/kvproto/pkg/tsopb.FindGroupByKeyspaceIDRequest.KeyspaceId",
+  "github.com/pingcap/kvproto/pkg/tsopb.RequestHeader.KeyspaceId"
+ ],
+ "contract_outside": null,
+ "findings": [
+  {
+   "rule": "PROTO_ENUM_VALUE_ADDED_SWITCH_WITHOUT_DEFAULT",
+   "outcome": "NO_GO",
+   "aspect": "runtime",
+   "symbol": {
+    "kind": "enum_value",
+    "name": "kvrpcpb.APIVersion.#3"
+   },
+   "reason": null,
+   "detail": "caller switches over this enum with no default branch; the new value falls through unhandled"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "generated_code",
+   "symbol": {
+    "kind": "field",
+    "name": "autoid.AutoIDRequest.#7"
+   },
+   "reason": null,
+   "detail": "regenerated bindings change the accessor shape for this field"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "field",
+    "name": "autoid.AutoIDRequest.#7"
+   },
+   "reason": null,
+   "detail": "caller source uses the field's old accessor shape"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "generated_code",
+   "symbol": {
+    "kind": "field",
+    "name": "externalworkloadpb.RequestHeader.#1"
+   },
+   "reason": null,
+   "detail": "regenerated bindings change the accessor shape for this field"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "field",
+    "name": "externalworkloadpb.RequestHeader.#1"
+   },
+   "reason": null,
+   "detail": "caller source uses the field's old accessor shape"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "generated_code",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.GetAllKeyspacesRequest.#2"
+   },
+   "reason": null,
+   "detail": "regenerated bindings change the accessor shape for this field"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.GetAllKeyspacesRequest.#2"
+   },
+   "reason": null,
+   "detail": "caller source uses the field's old accessor shape"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "generated_code",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.KeyspaceMeta.#1"
+   },
+   "reason": null,
+   "detail": "regenerated bindings change the accessor shape for this field"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.KeyspaceMeta.#1"
+   },
+   "reason": null,
+   "detail": "caller source uses the field's old accessor shape"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "generated_code",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.LoadKeyspaceByIDRequest.#2"
+   },
+   "reason": null,
+   "detail": "regenerated bindings change the accessor shape for this field"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.LoadKeyspaceByIDRequest.#2"
+   },
+   "reason": null,
+   "detail": "caller source uses the field's old accessor shape"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "generated_code",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.UpdateKeyspaceStateRequest.#2"
+   },
+   "reason": null,
+   "detail": "regenerated bindings change the accessor shape for this field"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.UpdateKeyspaceStateRequest.#2"
+   },
+   "reason": null,
+   "detail": "caller source uses the field's old accessor shape"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "generated_code",
+   "symbol": {
+    "kind": "field",
+    "name": "kvrpcpb.CompactRequest.#8"
+   },
+   "reason": null,
+   "detail": "regenerated bindings change the accessor shape for this field"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "field",
+    "name": "kvrpcpb.CompactRequest.#8"
+   },
+   "reason": null,
+   "detail": "caller source uses the field's old accessor shape"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "generated_code",
+   "symbol": {
+    "kind": "field",
+    "name": "kvrpcpb.Context.#32"
+   },
+   "reason": null,
+   "detail": "regenerated bindings change the accessor shape for this field"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "field",
+    "name": "kvrpcpb.Context.#32"
+   },
+   "reason": null,
+   "detail": "caller source uses the field's old accessor shape"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "generated_code",
+   "symbol": {
+    "kind": "field",
+    "name": "mpp.TaskMeta.#10"
+   },
+   "reason": null,
+   "detail": "regenerated bindings change the accessor shape for this field"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "field",
+    "name": "mpp.TaskMeta.#10"
+   },
+   "reason": null,
+   "detail": "caller source uses the field's old accessor shape"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "generated_code",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.KeyspaceScope.#1"
+   },
+   "reason": null,
+   "detail": "regenerated bindings change the accessor shape for this field"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.KeyspaceScope.#1"
+   },
+   "reason": null,
+   "detail": "caller source uses the field's old accessor shape"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "generated_code",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.UpdateGCSafePointV2Request.#2"
+   },
+   "reason": null,
+   "detail": "regenerated bindings change the accessor shape for this field"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.UpdateGCSafePointV2Request.#2"
+   },
+   "reason": null,
+   "detail": "caller source uses the field's old accessor shape"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "generated_code",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.UpdateServiceSafePointV2Request.#2"
+   },
+   "reason": null,
+   "detail": "regenerated bindings change the accessor shape for this field"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.UpdateServiceSafePointV2Request.#2"
+   },
+   "reason": null,
+   "detail": "caller source uses the field's old accessor shape"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "generated_code",
+   "symbol": {
+    "kind": "field",
+    "name": "resource_manager.KeyspaceIDValue.#1"
+   },
+   "reason": null,
+   "detail": "regenerated bindings change the accessor shape for this field"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "field",
+    "name": "resource_manager.KeyspaceIDValue.#1"
+   },
+   "reason": null,
+   "detail": "caller source uses the field's old accessor shape"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "generated_code",
+   "symbol": {
+    "kind": "field",
+    "name": "tsopb.FindGroupByKeyspaceIDRequest.#2"
+   },
+   "reason": null,
+   "detail": "regenerated bindings change the accessor shape for this field"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "field",
+    "name": "tsopb.FindGroupByKeyspaceIDRequest.#2"
+   },
+   "reason": null,
+   "detail": "caller source uses the field's old accessor shape"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "generated_code",
+   "symbol": {
+    "kind": "field",
+    "name": "tsopb.RequestHeader.#3"
+   },
+   "reason": null,
+   "detail": "regenerated bindings change the accessor shape for this field"
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED_REFERENCED_IN_SOURCE",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "field",
+    "name": "tsopb.RequestHeader.#3"
+   },
+   "reason": null,
+   "detail": "caller source uses the field's old accessor shape"
+  },
+  {
+   "rule": "GO_GENERATED_REMOVED_USED_BY_CALLER",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "go",
+    "name": "github.com/pingcap/kvproto/pkg/autoid.AutoIDRequest.KeyspaceID"
+   },
+   "reason": null,
+   "detail": "the regenerated code no longer declares autoid.AutoIDRequest.KeyspaceID, which the caller uses; the caller will not compile"
+  },
+  {
+   "rule": "GO_GENERATED_REMOVED_USED_BY_CALLER",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "go",
+    "name": "github.com/pingcap/kvproto/pkg/externalworkloadpb.RequestHeader.KeyspaceId"
+   },
+   "reason": null,
+   "detail": "the regenerated code no longer declares externalworkloadpb.RequestHeader.KeyspaceId, which the caller uses; the caller will not compile"
+  },
+  {
+   "rule": "GO_GENERATED_REMOVED_USED_BY_CALLER",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "go",
+    "name": "github.com/pingcap/kvproto/pkg/keyspacepb.GetAllKeyspacesRequest.StartId"
+   },
+   "reason": null,
+   "detail": "the regenerated code no longer declares keyspacepb.GetAllKeyspacesRequest.StartId, which the caller uses; the caller will not compile"
+  },
+  {
+   "rule": "GO_GENERATED_REMOVED_USED_BY_CALLER",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "go",
+    "name": "github.com/pingcap/kvproto/pkg/keyspacepb.KeyspaceMeta.Id"
+   },
+   "reason": null,
+   "detail": "the regenerated code no longer declares keyspacepb.KeyspaceMeta.Id, which the caller uses; the caller will not compile"
+  },
+  {
+   "rule": "GO_GENERATED_REMOVED_USED_BY_CALLER",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "go",
+    "name": "github.com/pingcap/kvproto/pkg/keyspacepb.LoadKeyspaceByIDRequest.Id"
+   },
+   "reason": null,
+   "detail": "the regenerated code no longer declares keyspacepb.LoadKeyspaceByIDRequest.Id, which the caller uses; the caller will not compile"
+  },
+  {
+   "rule": "GO_GENERATED_REMOVED_USED_BY_CALLER",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "go",
+    "name": "github.com/pingcap/kvproto/pkg/keyspacepb.UpdateKeyspaceStateRequest.Id"
+   },
+   "reason": null,
+   "detail": "the regenerated code no longer declares keyspacepb.UpdateKeyspaceStateRequest.Id, which the caller uses; the caller will not compile"
+  },
+  {
+   "rule": "GO_GENERATED_REMOVED_USED_BY_CALLER",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "go",
+    "name": "github.com/pingcap/kvproto/pkg/kvrpcpb.CompactRequest.KeyspaceId"
+   },
+   "reason": null,
+   "detail": "the regenerated code no longer declares kvrpcpb.CompactRequest.KeyspaceId, which the caller uses; the caller will not compile"
+  },
+  {
+   "rule": "GO_GENERATED_REMOVED_USED_BY_CALLER",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "go",
+    "name": "github.com/pingcap/kvproto/pkg/kvrpcpb.Context.KeyspaceId"
+   },
+   "reason": null,
+   "detail": "the regenerated code no longer declares kvrpcpb.Context.KeyspaceId, which the caller uses; the caller will not compile"
+  },
+  {
+   "rule": "GO_GENERATED_REMOVED_USED_BY_CALLER",
+   "outcome": "NO_GO",
+   "aspect": "source_build",
+   "symbol": {
+    "kind": "go",
+    "name": "github.com/pingcap/kvproto/pkg/mpp.TaskMeta.KeyspaceId"
+   },
+   "reason": null,
+   "detail": "the regenerated code no longer declares mpp.TaskMeta.KeyspaceId, which the caller uses; the caller will not compile"
+  }
+ ],
+ "unknown_findings": [
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "autoid.AutoIDRequest.#7"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"autoid.AutoIDRequest.#7\"}, \"location\": {\"file\": \"pkg/meta/autoid/autoid_service.go\", \"line\": 381, \"column\": 3}, \"snippet\": \"KeyspaceID: sp.keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "externalworkloadpb.RequestHeader.#1"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"externalworkloadpb.RequestHeader.#1\"}, \"location\": {\"file\": \"pkg/extworkload/client/client.go\", \"line\": 138, \"column\": 3}, \"snippet\": \"KeyspaceId:   c.opt.KeyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.GetAllKeyspacesRequest.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.GetAllKeyspacesRequest.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/keyspace_client.go\", \"line\": 217, \"column\": 3}, \"snippet\": \"StartId: startID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.KeyspaceMeta.#1"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.KeyspaceMeta.#1\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec_v2.go\", \"line\": 67, \"column\": 29}, \"snippet\": \"keyspaceMeta.Id\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.KeyspaceMeta.#1\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec_v2.go\", \"line\": 117, \"column\": 35}, \"snippet\": \"c.keyspaceMeta.Id\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.KeyspaceMeta.#1\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/locate/pd_codec.go\", \"line\": 90, \"column\": 14}, \"snippet\": \"meta.Id\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.KeyspaceMeta.#1\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/tikv/compatible_txn_safe_point_loader.go\", \"line\": 107, \"column\": 65}, \"snippet\": \"keyspaceMeta.Id\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.LoadKeyspaceByIDRequest.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.LoadKeyspaceByIDRequest.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/keyspace_client.go\", \"line\": 129, \"column\": 3}, \"snippet\": \"Id:     id\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.UpdateKeyspaceStateRequest.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.UpdateKeyspaceStateRequest.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/keyspace_client.go\", \"line\": 173, \"column\": 3}, \"snippet\": \"Id:     id\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "kvrpcpb.CompactRequest.#8"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.CompactRequest.#8\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 134, \"column\": 11}, \"snippet\": \"compact.KeyspaceId\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "kvrpcpb.Context.#32"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.Context.#32\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 116, \"column\": 4}, \"snippet\": \"r.KeyspaceId\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.Context.#32\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 127, \"column\": 23}, \"snippet\": \"r.KeyspaceId\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.Context.#32\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 134, \"column\": 26}, \"snippet\": \"r.KeyspaceId\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.Context.#32\"}, \"location\": {\"file\": \"pkg/store/mockstore/unistore/cophandler/cop_handler.go\", \"line\": 439, \"column\": 27}, \"snippet\": \"reqCtx.KeyspaceId\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "mpp.TaskMeta.#10"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"mpp.TaskMeta.#10\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 127, \"column\": 8}, \"snippet\": \"meta.KeyspaceId\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.KeyspaceScope.#1"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.KeyspaceScope.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 112, \"column\": 3}, \"snippet\": \"KeyspaceId: keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.KeyspaceScope.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 335, \"column\": 33}, \"snippet\": \"pb.KeyspaceScope.KeyspaceId\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.KeyspaceScope.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 439, \"column\": 37}, \"snippet\": \"state.KeyspaceScope.KeyspaceId\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.UpdateGCSafePointV2Request.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.UpdateGCSafePointV2Request.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 48, \"column\": 3}, \"snippet\": \"KeyspaceId: keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.UpdateServiceSafePointV2Request.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.UpdateServiceSafePointV2Request.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 79, \"column\": 3}, \"snippet\": \"KeyspaceId: keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "resource_manager.KeyspaceIDValue.#1"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"resource_manager.KeyspaceIDValue.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/resource_group/controller/global_controller.go\", \"line\": 746, \"column\": 5}, \"snippet\": \"Value: c.keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"resource_manager.KeyspaceIDValue.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/resource_manager_client.go\", \"line\": 123, \"column\": 4}, \"snippet\": \"Value: c.inner.keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"resource_manager.KeyspaceIDValue.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/resource_manager_client.go\", \"line\": 153, \"column\": 4}, \"snippet\": \"Value: c.inner.keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"resource_manager.KeyspaceIDValue.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/resource_manager_client.go\", \"line\": 196, \"column\": 4}, \"snippet\": \"Value: c.inner.keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "tsopb.FindGroupByKeyspaceIDRequest.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"tsopb.FindGroupByKeyspaceIDRequest.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/servicediscovery/tso_service_discovery.go\", \"line\": 674, \"column\": 4}, \"snippet\": \"KeyspaceId:  keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "tsopb.RequestHeader.#3"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"tsopb.RequestHeader.#3\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/clients/tso/stream.go\", \"line\": 170, \"column\": 4}, \"snippet\": \"KeyspaceId:      keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"tsopb.RequestHeader.#3\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/servicediscovery/tso_service_discovery.go\", \"line\": 670, \"column\": 5}, \"snippet\": \"KeyspaceId:      keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "autoid.AutoIDRequest.#7"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"autoid.AutoIDRequest.#7\"}, \"location\": {\"file\": \"pkg/meta/autoid/autoid_service.go\", \"line\": 381, \"column\": 3}, \"snippet\": \"KeyspaceID: sp.keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "externalworkloadpb.RequestHeader.#1"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"externalworkloadpb.RequestHeader.#1\"}, \"location\": {\"file\": \"pkg/extworkload/client/client.go\", \"line\": 138, \"column\": 3}, \"snippet\": \"KeyspaceId:   c.opt.KeyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.GetAllKeyspacesRequest.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.GetAllKeyspacesRequest.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/keyspace_client.go\", \"line\": 217, \"column\": 3}, \"snippet\": \"StartId: startID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.KeyspaceMeta.#1"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.KeyspaceMeta.#1\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec_v2.go\", \"line\": 67, \"column\": 29}, \"snippet\": \"keyspaceMeta.Id\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.KeyspaceMeta.#1\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec_v2.go\", \"line\": 117, \"column\": 35}, \"snippet\": \"c.keyspaceMeta.Id\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.KeyspaceMeta.#1\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/locate/pd_codec.go\", \"line\": 90, \"column\": 14}, \"snippet\": \"meta.Id\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.KeyspaceMeta.#1\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/tikv/compatible_txn_safe_point_loader.go\", \"line\": 107, \"column\": 65}, \"snippet\": \"keyspaceMeta.Id\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.LoadKeyspaceByIDRequest.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.LoadKeyspaceByIDRequest.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/keyspace_client.go\", \"line\": 129, \"column\": 3}, \"snippet\": \"Id:     id\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.UpdateKeyspaceStateRequest.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.UpdateKeyspaceStateRequest.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/keyspace_client.go\", \"line\": 173, \"column\": 3}, \"snippet\": \"Id:     id\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "kvrpcpb.CompactRequest.#8"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.CompactRequest.#8\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 134, \"column\": 11}, \"snippet\": \"compact.KeyspaceId\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "kvrpcpb.Context.#32"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.Context.#32\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 116, \"column\": 4}, \"snippet\": \"r.KeyspaceId\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.Context.#32\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 127, \"column\": 23}, \"snippet\": \"r.KeyspaceId\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.Context.#32\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 134, \"column\": 26}, \"snippet\": \"r.KeyspaceId\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.Context.#32\"}, \"location\": {\"file\": \"pkg/store/mockstore/unistore/cophandler/cop_handler.go\", \"line\": 439, \"column\": 27}, \"snippet\": \"reqCtx.KeyspaceId\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "mpp.TaskMeta.#10"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"mpp.TaskMeta.#10\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 127, \"column\": 8}, \"snippet\": \"meta.KeyspaceId\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.KeyspaceScope.#1"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.KeyspaceScope.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 112, \"column\": 3}, \"snippet\": \"KeyspaceId: keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.KeyspaceScope.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 335, \"column\": 33}, \"snippet\": \"pb.KeyspaceScope.KeyspaceId\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.KeyspaceScope.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 439, \"column\": 37}, \"snippet\": \"state.KeyspaceScope.KeyspaceId\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.UpdateGCSafePointV2Request.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.UpdateGCSafePointV2Request.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 48, \"column\": 3}, \"snippet\": \"KeyspaceId: keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.UpdateServiceSafePointV2Request.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.UpdateServiceSafePointV2Request.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 79, \"column\": 3}, \"snippet\": \"KeyspaceId: keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "resource_manager.KeyspaceIDValue.#1"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"resource_manager.KeyspaceIDValue.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/resource_group/controller/global_controller.go\", \"line\": 746, \"column\": 5}, \"snippet\": \"Value: c.keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"resource_manager.KeyspaceIDValue.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/resource_manager_client.go\", \"line\": 123, \"column\": 4}, \"snippet\": \"Value: c.inner.keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"resource_manager.KeyspaceIDValue.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/resource_manager_client.go\", \"line\": 153, \"column\": 4}, \"snippet\": \"Value: c.inner.keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"resource_manager.KeyspaceIDValue.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/resource_manager_client.go\", \"line\": 196, \"column\": 4}, \"snippet\": \"Value: c.inner.keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "tsopb.FindGroupByKeyspaceIDRequest.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"tsopb.FindGroupByKeyspaceIDRequest.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/servicediscovery/tso_service_discovery.go\", \"line\": 674, \"column\": 4}, \"snippet\": \"KeyspaceId:  keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "tsopb.RequestHeader.#3"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"tsopb.RequestHeader.#3\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/clients/tso/stream.go\", \"line\": 170, \"column\": 4}, \"snippet\": \"KeyspaceId:      keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"tsopb.RequestHeader.#3\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/servicediscovery/tso_service_discovery.go\", \"line\": 670, \"column\": 5}, \"snippet\": \"KeyspaceId:      keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.GetAllKeyspacesRequest.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.GetAllKeyspacesRequest.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/keyspace_client.go\", \"line\": 217, \"column\": 3}, \"snippet\": \"StartId: startID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.KeyspaceMeta.#1"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.KeyspaceMeta.#1\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec_v2.go\", \"line\": 67, \"column\": 29}, \"snippet\": \"keyspaceMeta.Id\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.KeyspaceMeta.#1\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec_v2.go\", \"line\": 117, \"column\": 35}, \"snippet\": \"c.keyspaceMeta.Id\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.KeyspaceMeta.#1\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/locate/pd_codec.go\", \"line\": 90, \"column\": 14}, \"snippet\": \"meta.Id\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.KeyspaceMeta.#1\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/tikv/compatible_txn_safe_point_loader.go\", \"line\": 107, \"column\": 65}, \"snippet\": \"keyspaceMeta.Id\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.LoadKeyspaceByIDRequest.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.LoadKeyspaceByIDRequest.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/keyspace_client.go\", \"line\": 129, \"column\": 3}, \"snippet\": \"Id:     id\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.UpdateKeyspaceStateRequest.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.UpdateKeyspaceStateRequest.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/keyspace_client.go\", \"line\": 173, \"column\": 3}, \"snippet\": \"Id:     id\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "kvrpcpb.CompactRequest.#8"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.CompactRequest.#8\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 134, \"column\": 11}, \"snippet\": \"compact.KeyspaceId\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "kvrpcpb.Context.#32"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.Context.#32\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 116, \"column\": 4}, \"snippet\": \"r.KeyspaceId\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.Context.#32\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 127, \"column\": 23}, \"snippet\": \"r.KeyspaceId\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.Context.#32\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 134, \"column\": 26}, \"snippet\": \"r.KeyspaceId\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "mpp.TaskMeta.#10"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"mpp.TaskMeta.#10\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 127, \"column\": 8}, \"snippet\": \"meta.KeyspaceId\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.KeyspaceScope.#1"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.KeyspaceScope.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 112, \"column\": 3}, \"snippet\": \"KeyspaceId: keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.KeyspaceScope.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 335, \"column\": 33}, \"snippet\": \"pb.KeyspaceScope.KeyspaceId\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.KeyspaceScope.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 439, \"column\": 37}, \"snippet\": \"state.KeyspaceScope.KeyspaceId\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.UpdateGCSafePointV2Request.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.UpdateGCSafePointV2Request.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 48, \"column\": 3}, \"snippet\": \"KeyspaceId: keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.UpdateServiceSafePointV2Request.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.UpdateServiceSafePointV2Request.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 79, \"column\": 3}, \"snippet\": \"KeyspaceId: keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "resource_manager.KeyspaceIDValue.#1"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"resource_manager.KeyspaceIDValue.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/resource_group/controller/global_controller.go\", \"line\": 746, \"column\": 5}, \"snippet\": \"Value: c.keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"resource_manager.KeyspaceIDValue.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/resource_manager_client.go\", \"line\": 123, \"column\": 4}, \"snippet\": \"Value: c.inner.keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"resource_manager.KeyspaceIDValue.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/resource_manager_client.go\", \"line\": 153, \"column\": 4}, \"snippet\": \"Value: c.inner.keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"resource_manager.KeyspaceIDValue.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/resource_manager_client.go\", \"line\": 196, \"column\": 4}, \"snippet\": \"Value: c.inner.keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "tsopb.FindGroupByKeyspaceIDRequest.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"tsopb.FindGroupByKeyspaceIDRequest.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/servicediscovery/tso_service_discovery.go\", \"line\": 674, \"column\": 4}, \"snippet\": \"KeyspaceId:  keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "tsopb.RequestHeader.#3"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"tsopb.RequestHeader.#3\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/clients/tso/stream.go\", \"line\": 170, \"column\": 4}, \"snippet\": \"KeyspaceId:      keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"tsopb.RequestHeader.#3\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/servicediscovery/tso_service_discovery.go\", \"line\": 670, \"column\": 5}, \"snippet\": \"KeyspaceId:      keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "autoid.AutoIDRequest.#7"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"autoid.AutoIDRequest.#7\"}, \"location\": {\"file\": \"pkg/meta/autoid/autoid_service.go\", \"line\": 381, \"column\": 3}, \"snippet\": \"KeyspaceID: sp.keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "externalworkloadpb.RequestHeader.#1"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"externalworkloadpb.RequestHeader.#1\"}, \"location\": {\"file\": \"pkg/extworkload/client/client.go\", \"line\": 138, \"column\": 3}, \"snippet\": \"KeyspaceId:   c.opt.KeyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.GetAllKeyspacesRequest.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.GetAllKeyspacesRequest.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/keyspace_client.go\", \"line\": 217, \"column\": 3}, \"snippet\": \"StartId: startID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.KeyspaceMeta.#1"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.KeyspaceMeta.#1\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec_v2.go\", \"line\": 67, \"column\": 29}, \"snippet\": \"keyspaceMeta.Id\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.KeyspaceMeta.#1\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec_v2.go\", \"line\": 117, \"column\": 35}, \"snippet\": \"c.keyspaceMeta.Id\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.KeyspaceMeta.#1\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/locate/pd_codec.go\", \"line\": 90, \"column\": 14}, \"snippet\": \"meta.Id\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.KeyspaceMeta.#1\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/tikv/compatible_txn_safe_point_loader.go\", \"line\": 107, \"column\": 65}, \"snippet\": \"keyspaceMeta.Id\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.LoadKeyspaceByIDRequest.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.LoadKeyspaceByIDRequest.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/keyspace_client.go\", \"line\": 129, \"column\": 3}, \"snippet\": \"Id:     id\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "keyspacepb.UpdateKeyspaceStateRequest.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"keyspacepb.UpdateKeyspaceStateRequest.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/keyspace_client.go\", \"line\": 173, \"column\": 3}, \"snippet\": \"Id:     id\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "kvrpcpb.CompactRequest.#8"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.CompactRequest.#8\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 134, \"column\": 11}, \"snippet\": \"compact.KeyspaceId\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "kvrpcpb.Context.#32"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.Context.#32\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 116, \"column\": 4}, \"snippet\": \"r.KeyspaceId\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.Context.#32\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 127, \"column\": 23}, \"snippet\": \"r.KeyspaceId\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.Context.#32\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 134, \"column\": 26}, \"snippet\": \"r.KeyspaceId\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"kvrpcpb.Context.#32\"}, \"location\": {\"file\": \"pkg/store/mockstore/unistore/cophandler/cop_handler.go\", \"line\": 439, \"column\": 27}, \"snippet\": \"reqCtx.KeyspaceId\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "mpp.TaskMeta.#10"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"mpp.TaskMeta.#10\"}, \"location\": {\"file\": \"github.com/tikv/client-go/v2@v2.0.8-0.20260803074519-341d4692ec57/internal/apicodec/codec.go\", \"line\": 127, \"column\": 8}, \"snippet\": \"meta.KeyspaceId\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.KeyspaceScope.#1"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.KeyspaceScope.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 112, \"column\": 3}, \"snippet\": \"KeyspaceId: keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.KeyspaceScope.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 335, \"column\": 33}, \"snippet\": \"pb.KeyspaceScope.KeyspaceId\"}",
+    "{\"kind\": \"read\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.KeyspaceScope.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 439, \"column\": 37}, \"snippet\": \"state.KeyspaceScope.KeyspaceId\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.UpdateGCSafePointV2Request.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.UpdateGCSafePointV2Request.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 48, \"column\": 3}, \"snippet\": \"KeyspaceId: keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "pdpb.UpdateServiceSafePointV2Request.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"pdpb.UpdateServiceSafePointV2Request.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/gc_client.go\", \"line\": 79, \"column\": 3}, \"snippet\": \"KeyspaceId: keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "resource_manager.KeyspaceIDValue.#1"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"resource_manager.KeyspaceIDValue.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/resource_group/controller/global_controller.go\", \"line\": 746, \"column\": 5}, \"snippet\": \"Value: c.keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"resource_manager.KeyspaceIDValue.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/resource_manager_client.go\", \"line\": 123, \"column\": 4}, \"snippet\": \"Value: c.inner.keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"resource_manager.KeyspaceIDValue.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/resource_manager_client.go\", \"line\": 153, \"column\": 4}, \"snippet\": \"Value: c.inner.keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"resource_manager.KeyspaceIDValue.#1\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/resource_manager_client.go\", \"line\": 196, \"column\": 4}, \"snippet\": \"Value: c.inner.keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "tsopb.FindGroupByKeyspaceIDRequest.#2"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"tsopb.FindGroupByKeyspaceIDRequest.#2\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/servicediscovery/tso_service_discovery.go\", \"line\": 674, \"column\": 4}, \"snippet\": \"KeyspaceId:  keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "tsopb.RequestHeader.#3"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"tsopb.RequestHeader.#3\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/clients/tso/stream.go\", \"line\": 170, \"column\": 4}, \"snippet\": \"KeyspaceId:      keyspaceID\", \"value_type\": \"uint32\"}",
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"tsopb.RequestHeader.#3\"}, \"location\": {\"file\": \"github.com/tikv/pd/client@v0.0.0-20260720043438-0b37df9a48ed/servicediscovery/tso_service_discovery.go\", \"line\": 670, \"column\": 5}, \"snippet\": \"KeyspaceId:      keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "autoid.AutoIDRequest.#7"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"autoid.AutoIDRequest.#7\"}, \"location\": {\"file\": \"pkg/meta/autoid/autoid_service.go\", \"line\": 381, \"column\": 3}, \"snippet\": \"KeyspaceID: sp.keyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  },
+  {
+   "rule": "PROTO_FIELD_ONEOF_MOVED",
+   "reason": "NEEDS_REVIEW",
+   "symbol": {
+    "kind": "field",
+    "name": "externalworkloadpb.RequestHeader.#1"
+   },
+   "detail": "moving a field into or out of a oneof changes which fields can be set together; a human must decide",
+   "evidence": [
+    "{\"kind\": \"write\", \"symbol\": {\"kind\": \"field\", \"name\": \"externalworkloadpb.RequestHeader.#1\"}, \"location\": {\"file\": \"pkg/extworkload/client/client.go\", \"line\": 138, \"column\": 3}, \"snippet\": \"KeyspaceId:   c.opt.KeyspaceID\", \"value_type\": \"uint32\"}"
+   ]
+  }
+ ],
+ "callers": [
+  {
+   "unit": "benchdb",
+   "outcome": "NO_GO"
+  },
+  {
+   "unit": "benchkv",
+   "outcome": "NO_GO"
+  },
+  {
+   "unit": "benchraw",
+   "outcome": "NO_GO"
+  },
+  {
+   "unit": "br",
+   "outcome": "NO_GO"
+  },
+  {
+   "unit": "br_key_locked",
+   "outcome": "NO_GO"
+  },
+  {
+   "unit": "br_rawkv",
+   "outcome": "NO_GO"
+  },
+  {
+   "unit": "br_txn",
+   "outcome": "NO_GO"
+  },
+  {
+   "unit": "br_z_gc_safepoint",
+   "outcome": "NO_GO"
+  },
+  {
+   "unit": "check",
+   "outcome": "GO"
+  },
+  {
+   "unit": "conn_ip_example",
+   "outcome": "NO_GO"
+  },
+  {
+   "unit": "dashboard-linter",
+   "outcome": "GO"
+  },
+  {
+   "unit": "debug-linter",
+   "outcome": "GO"
+  },
+  {
+   "unit": "dumpling",
+   "outcome": "NO_GO"
+  },
+  {
+   "unit": "fake-oauth",
+   "outcome": "GO"
+  },
+  {
+   "unit": "gen-parquet",
+   "outcome": "UNKNOWN"
+  },
+  {
+   "unit": "hash64_equals",
+   "outcome": "NO_GO"
+  },
+  {
+   "unit": "importer",
+   "outcome": "NO_GO"
+  },
+  {
+   "unit": "llmtest",
+   "outcome": "GO"
+  },
+  {
+   "unit": "mirror",
+   "outcome": "GO"
+  },
+  {
+   "unit": "patch-go",
+   "outcome": "GO"
+  }
+ ],
+ "provider_api_facts": {
+  "version": "goapi/v2",
+  "modules": "{\"github.com/apache/arrow-go/v18\": \"\", \"github.com/bazelbuild/buildtools\": \"\", \"github.com/cockroachdb/errors\": \"\", \"github.com/google/s2a-go\": \"\", \"github.com/googleapis/gax-go/v2\": \"\", \"github.com/grpc-ecosystem/go-grpc-middleware\": \"\", \"github.com/opentracing/basictracer-go\": \"\", \"github.com/pingcap/badger\": \"\", \"github.com/pingcap/kvproto\": \".\", \"github.com/pingcap/tidb/pkg/parser\": \"\", \"githu",
+  "decls": {
+   "github.com/pingcap/kvproto/pkg/brpb.BackupSchemaVersion": {
+    "head": true,
+    "base": true
+   },
+   "github.com/pingcap/kvproto/pkg/sharedbytes.SharedBytes": {
+    "head": true,
+    "base": true,
+    "methods": [
+     "Marshal",
+     "MarshalTo",
+     "Size",
+     "Unmarshal"
+    ]
+   },
+   "github.com/pingcap/kvproto/pkg/sharedbytes.SharedBytes.Size": {
+    "head": true,
+    "base": true
+   }
+  }
+ },
+ "caller_provider_api_uses": 38147,
+ "caller_provider_api_sample": [
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/arrow",
+   "name": "Date32",
+   "member": "ToTime",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/type_converter.go",
+    "line": 203,
+    "column": 27
+   },
+   "snippet": "it sets the row-group fl",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/arrow",
+   "name": "Date32",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/type_converter.go",
+    "line": 203,
+    "column": 15
+   },
+   "snippet": "s the",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/arrow",
+   "name": "Microsecond",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/type_converter.go",
+    "line": 284,
+    "column": 43
+   },
+   "snippet": "nil { ...",
+   "count": 2
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/arrow",
+   "name": "Millisecond",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/type_converter.go",
+    "line": 267,
+    "column": 43
+   },
+   "snippet": "losed = tru",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/arrow",
+   "name": "Timestamp",
+   "member": "ToTime",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/type_converter.go",
+    "line": 267,
+    "column": 30
+   },
+   "snippet": "pw.closed { ...",
+   "count": 3
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/arrow",
+   "name": "Timestamp",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/type_converter.go",
+    "line": 267,
+    "column": 15
+   },
+   "snippet": "osed {",
+   "count": 3
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/arrow/memory",
+   "name": "Allocator",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/parser.go",
+    "line": 72,
+    "column": 19
+   },
+   "snippet": "Type) ...",
+   "count": 2
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/arrow/memory",
+   "name": "Allocator",
+   "implements": {
+    "type": "github.com/pingcap/tidb/pkg/dumpformat/parquetfile.trackingAllocator",
+    "methods": [
+     "Allocate",
+     "Free",
+     "Reallocate"
+    ]
+   },
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/parser.go",
+    "line": 942,
+    "column": 41
+   },
+   "snippet": "allocator",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/arrow/memory",
+   "name": "NewGoAllocator",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/parser.go",
+    "line": 661,
+    "column": 22
+   },
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "ByteArray",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/column_buffer.go",
+    "line": 30,
+    "column": 36
+   },
+   "snippet": "onst ( ...",
+   "count": 11
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "ColumnTypes",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/parser.go",
+    "line": 92,
+    "column": 28
+   },
+   "snippet": "{ ...",
+   "count": 4
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "FixedLenByteArray",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/column_buffer.go",
+    "line": 31,
+    "column": 36
+   },
+   "snippet": "ult parquet compr",
+   "count": 12
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "Int96",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/parser.go",
+    "line": 207,
+    "column": 36
+   },
+   "count": 8
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "NewReaderProperties",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/parser.go",
+    "line": 663,
+    "column": 18
+   },
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "NewWriterProperties",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/writer.go",
+    "line": 190,
+    "column": 19
+   },
+   "snippet": "NewWriterProperties",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "ReaderAtSeeker",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/reader_wrapper.go",
+    "line": 255,
+    "column": 12
+   },
+   "snippet": "w from SQL raw",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "ReaderAtSeeker",
+   "implements": {
+    "type": "github.com/pingcap/tidb/pkg/dumpformat/parquetfile.inMemoryReaderWrapper",
+    "methods": [
+     "Close",
+     "ReadAt",
+     "Seek"
+    ]
+   },
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/reader_wrapper.go",
+    "line": 261,
+    "column": 10
+   },
+   "snippet": "&inMemoryReaderWrapper{base: base, fileSize: fileSize}",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "ReaderAtSeeker",
+   "implements": {
+    "type": "github.com/pingcap/tidb/pkg/dumpformat/parquetfile.readerWrapper",
+    "methods": [
+     "Close",
+     "Read",
+     "ReadAt",
+     "Seek",
+     "Write"
+    ]
+   },
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/parser.go",
+    "line": 629,
+    "column": 39
+   },
+   "snippet": "&readerWrapper{ReadSeekCloser: r}",
+   "count": 2
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "ReaderProperties",
+   "member": "BufferSize",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/parser.go",
+    "line": 669,
+    "column": 7
+   },
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "ReaderProperties",
+   "member": "BufferedStreamEnabled",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/parser.go",
+    "line": 664,
+    "column": 7
+   },
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "ReaderProperties",
+   "member": "PageStreamingEnabled",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/parser.go",
+    "line": 668,
+    "column": 7
+   },
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "ReaderProperties",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/parser.go",
+    "line": 323,
+    "column": 17
+   },
+   "snippet": "mnValue) error {",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "Repetition",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/writer.go",
+    "line": 64,
+    "column": 21
+   },
+   "snippet": "Repetition",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "Repetitions",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/schema_builder.go",
+    "line": 34,
+    "column": 25
+   },
+   "snippet": "flush thre",
+   "count": 3
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "Type",
+   "member": "String",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/parser.go",
+    "line": 268,
+    "column": 59
+   },
+   "snippet": "upWriter.",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "Type",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/parser.go",
+    "line": 194,
+    "column": 38
+   },
+   "snippet": "ates",
+   "count": 2
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "Types",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/column_buffer.go",
+    "line": 64,
+    "column": 15
+   },
+   "snippet": "rs ti",
+   "count": 52
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "WithCompression",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/writer.go",
+    "line": 128,
+    "column": 12
+   },
+   "snippet": "WithCompression",
+   "count": 2
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "WithDataPageSize",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/writer.go",
+    "line": 161,
+    "column": 71
+   },
+   "snippet": "WithDataPageSize",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet",
+   "name": "WriterProperty",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/writer.go",
+    "line": 118,
+    "column": 37
+   },
+   "snippet": "WriterProperty",
+   "count": 2
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet/compress",
+   "name": "Codecs",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/writer.go",
+    "line": 138,
+    "column": 19
+   },
+   "snippet": "Codecs",
+   "count": 4
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet/compress",
+   "name": "Compression",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/writer.go",
+    "line": 135,
+    "column": 72
+   },
+   "snippet": "Compression",
+   "count": 2
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet/file",
+   "name": "BooleanColumnChunkReader",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/parser.go",
+    "line": 197,
+    "column": 40
+   },
+   "snippet": "rn nil, fmt.Errorf(\"parq",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet/file",
+   "name": "BooleanColumnChunkWriter",
+   "member": "WriteBatch",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/column_value.go",
+    "line": 207,
+    "column": 19
+   },
+   "snippet": "tes > 0 && pw.buf",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet/file",
+   "name": "BooleanColumnChunkWriter",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/column_value.go",
+    "line": 206,
+    "column": 13
+   },
+   "snippet": "n err ...",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet/file",
+   "name": "ByteArrayColumnChunkReader",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/parser.go",
+    "line": 209,
+    "column": 53
+   },
+   "snippet": "ocalOptions := defaultWrit",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet/file",
+   "name": "ByteArrayColumnChunkWriter",
+   "member": "WriteBatch",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/column_value.go",
+    "line": 217,
+    "column": 19
+   },
+   "snippet": "EstimateFileSize(",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet/file",
+   "name": "ByteArrayColumnChunkWriter",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/column_value.go",
+    "line": 216,
+    "column": 13
+   },
+   "snippet": "buffered in memory. ...",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet/file",
+   "name": "ColumnChunkReader",
+   "member": "Close",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/parser.go",
+    "line": 147,
+    "column": 23
+   },
+   "snippet": "case compressedio.",
+   "count": 1
+  },
+  {
+   "module": "github.com/apache/arrow-go/v18",
+   "version": "v18.6.1-0.20260713210906-efc145c067b6",
+   "package": "github.com/apache/arrow-go/v18/parquet/file",
+   "name": "ColumnChunkReader",
+   "member": "Descriptor",
+   "location": {
+    "file": "pkg/dumpformat/parquetfile/parser.go",
+    "line": 184,
+    "column": 30
+   },
+   "snippet": "mit(limitBytes int64) Wr",
+   "count": 1
+  }
+ ]
+}
