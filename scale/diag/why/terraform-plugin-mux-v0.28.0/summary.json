@@ -1,0 +1,22 @@
+{
+ "verdict": "GO",
+ "aspects": {
+  "generated_code": "GO",
+  "runtime": "GO",
+  "source_build": "GO"
+ },
+ "changes": 0,
+ "go_only": true,
+ "contract_files": 0,
+ "provider_api_error": null,
+ "findings": [],
+ "callers": [
+  {
+   "unit": "terraform-plugin-mux",
+   "outcome": "GO"
+  }
+ ],
+ "provider_api_facts": {},
+ "caller_provider_api_uses": 0,
+ "caller_provider_api_sample": []
+}
