@@ -1,0 +1,1 @@
+{"consumer":"soci-snapshotter","at":"1b2442118aac93685d5a6f95ca6e49101a0e6f96","shard":"1/1","oracle":{"outcome":"oracle_error","detail":"canary: no package of the consumer imports a package of github.com/containerd/containerd/api directly"}}
