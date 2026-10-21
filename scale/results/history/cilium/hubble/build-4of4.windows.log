@@ -1,0 +1,10 @@
+time=2026-10-21T09:07:49.160Z level=INFO msg=mined consumer=hubble pin_moves=32 to_compile=8 skipped=map[]
+time=2026-10-21T09:09:34.521Z level=INFO msg=canary consumer=hubble at=200487d588512acf5a926b09c924978c3c806b14^ outcome=breaks detail="canary: github.com/cilium/cilium/hubble/cmd removed."
+time=2026-10-21T09:11:26.227Z level=INFO msg=window consumer=hubble bump=200487d5 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:12:06.730Z level=INFO msg=window consumer=hubble bump=6b8e2a78 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:12:55.014Z level=INFO msg=window consumer=hubble bump=400168bf select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:13:10.793Z level=INFO msg=window consumer=hubble bump=7eaef51f select=additive breaking=0 compiler=breaks
+time=2026-10-21T09:14:37.081Z level=INFO msg=window consumer=hubble bump=95622e77 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:41.340Z level=INFO msg=window consumer=hubble bump=c5685398 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:53.653Z level=INFO msg=window consumer=hubble bump=fff0f33a select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:57.799Z level=INFO msg=window consumer=hubble bump=ef134ba4 select=unchanged breaking=0 compiler=compiles
