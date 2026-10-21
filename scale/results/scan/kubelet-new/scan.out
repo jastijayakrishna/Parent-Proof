@@ -1,0 +1,33 @@
+time=2026-10-21T09:25:15.260Z level=INFO msg=cloning repo=p-kubelet-new url=https://github.com/kubernetes/kubelet.git
+time=2026-10-21T09:25:15.946Z level=INFO msg=cloning repo=c-kubelet-new url=https://github.com/kubernetes-sigs/node-feature-discovery.git
+kubelet-new 20b23951 GO       source_build=GO      compiler=compiles          159.8s 
+kubelet-new 43855acf GO       source_build=GO      compiler=compiles            2.4s 
+kubelet-new 69781c54 GO       source_build=GO      compiler=compiles            3.5s 
+kubelet-new b8f0b5fc GO       source_build=GO      compiler=compiles            2.0s 
+kubelet-new 803c2a9d GO       source_build=GO      compiler=compiles            2.2s 
+kubelet-new 5e736808 GO       source_build=GO      compiler=compiles            1.4s 
+kubelet-new eee7528e GO       source_build=GO      compiler=compiles            2.6s 
+kubelet-new 57d3a574 GO       source_build=GO      compiler=compiles            2.3s 
+kubelet-new 5aff898c GO       source_build=GO      compiler=compiles            2.4s 
+kubelet-new dfb0aa2c GO       source_build=GO      compiler=compiles            3.5s 
+kubelet-new e6033dfb GO       source_build=GO      compiler=compiles            2.0s 
+kubelet-new 3f57b9b2 GO       source_build=GO      compiler=compiles            2.0s 
+kubelet-new db9675bc GO       source_build=GO      compiler=compiles            2.0s 
+kubelet-new 3c7be057 UNKNOWN  source_build=GO      compiler=compiles            2.0s 
+kubelet-new 27761cab UNKNOWN  source_build=UNKNOWN compiler=compiles            2.8s 
+kubelet-new b1b8e206 GO       source_build=GO      compiler=compiles            2.7s 
+kubelet-new 4defd3ee GO       source_build=GO      compiler=compiles            2.0s 
+kubelet-new b469d38a GO       source_build=GO      compiler=compiles            2.8s 
+kubelet-new 41096538 GO       source_build=GO      compiler=compiles            2.3s 
+kubelet-new 5cbf982c GO       source_build=GO      compiler=compiles            2.7s 
+kubelet-new   20 decisions  GO  18  NO-GO   0  UNKNOWN   2 (10.0%)  errors 0 | compiler judged  20: agree  19  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 1 | not judged 0
+TOTAL         20 decisions  GO  18  NO-GO   0  UNKNOWN   2 (10.0%)  errors 0 | compiler judged  20: agree  19  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 1 | not judged 0
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    2   1  DESCRIPTOR_REFLECTION (e.g. kubelet-new@3c7be0577afb3dfbff2946b47c3b3ccf51a30b24)
+    2   1  OPTION_CHANGED (e.g. kubelet-new@3c7be0577afb3dfbff2946b47c3b3ccf51a30b24)
+  FAILED kubelet-new@27761cabf930c0def2f4ae5a9413425be47849c5: unknown_on_safe: DESCRIPTOR_REFLECTION, OPTION_CHANGED
+
+20 windows in 3m29s.
+verifier gate: scan failed: 1 disagreements with the compiler or errors
+exit 1 seconds 209
