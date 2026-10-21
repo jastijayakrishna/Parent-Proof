@@ -1,0 +1,8 @@
+time=2026-10-21T08:43:51.554Z level=INFO msg=mined consumer=external-snapshotter pin_moves=6 to_compile=6 skipped=map[]
+time=2026-10-21T08:44:42.566Z level=INFO msg=canary consumer=external-snapshotter at=53f161f642684d27284d0577aff07e8150e229d4^ outcome=breaks detail="canary: github.com/container-storage-interface/spec/lib/go/csi removed."
+time=2026-10-21T08:44:46.484Z level=INFO msg=window consumer=external-snapshotter bump=53f161f6 select=breaking breaking=18 compiler=compiles
+time=2026-10-21T08:44:47.693Z level=INFO msg=window consumer=external-snapshotter bump=07425bd3 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:46:52.009Z level=INFO msg=window consumer=external-snapshotter bump=b2d0e71c select=breaking breaking=6 compiler=compiles
+time=2026-10-21T08:46:52.104Z level=INFO msg=window consumer=external-snapshotter bump=5e233377 select=breaking breaking=7 compiler=compiles
+time=2026-10-21T08:47:55.216Z level=INFO msg=window consumer=external-snapshotter bump=50bdae2a select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:47:55.327Z level=INFO msg=window consumer=external-snapshotter bump=2dd157aa select=additive breaking=0 compiler=compiles
