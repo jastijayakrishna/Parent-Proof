@@ -1,0 +1,32 @@
+time=2026-10-21T09:25:19.982Z level=INFO msg=cloning repo=p-argo-cd-v3 url=https://github.com/argoproj/argo-cd.git
+time=2026-10-21T09:25:21.482Z level=INFO msg=cloning repo=c-argo-cd-v3 url=https://github.com/argoproj-labs/argocd-image-updater.git
+argo-cd-v3  c6760e80 GO       source_build=GO      compiler=compiles          144.5s 
+argo-cd-v3  e2a605e0 UNKNOWN  source_build=UNKNOWN compiler=compiles            9.1s 
+argo-cd-v3  bcb771e2 UNKNOWN  source_build=UNKNOWN compiler=compiles           77.2s 
+argo-cd-v3  e4470c5f GO       source_build=GO      compiler=compiles           50.8s 
+argo-cd-v3  545bcb5e UNKNOWN  source_build=UNKNOWN compiler=compiles           60.5s 
+argo-cd-v3  69afa575 GO       source_build=GO      compiler=compiles           22.6s 
+argo-cd-v3  80732013 UNKNOWN  source_build=UNKNOWN compiler=compiles           23.0s 
+argo-cd-v3  4abcbcf1 UNKNOWN  source_build=UNKNOWN compiler=compiles            9.3s 
+argo-cd-v3  c861e048 UNKNOWN  source_build=UNKNOWN compiler=compiles           30.5s 
+argo-cd-v3  79e12294 GO       source_build=GO      compiler=compiles           50.5s 
+argo-cd-v3  619c6424 UNKNOWN  source_build=UNKNOWN compiler=compiles           72.4s 
+argo-cd-v3  022f9354 GO       source_build=GO      compiler=compiles           31.5s 
+argo-cd-v3  566c6225 GO       source_build=GO      compiler=compiles           19.7s 
+argo-cd-v3  f7a7deb8 UNKNOWN  source_build=UNKNOWN compiler=compiles           22.0s 
+argo-cd-v3  bf1591de GO       source_build=GO      compiler=compiles           23.7s 
+argo-cd-v3  6d92e177 GO       source_build=GO      compiler=compiles           20.3s 
+argo-cd-v3  224b75af UNKNOWN  source_build=UNKNOWN compiler=compiles            7.8s 
+argo-cd-v3  c61c1dcf GO       source_build=GO      compiler=compiles            5.5s 
+argo-cd-v3  5ec06031 GO       source_build=GO      compiler=compiles            6.0s 
+argo-cd-v3  a6c12987 UNKNOWN  source_build=UNKNOWN compiler=compiles            5.0s 
+argo-cd-v3    20 decisions  GO  10  NO-GO   0  UNKNOWN  10 (50.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO  10  NO-GO   0  UNKNOWN  10 (50.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+   10   1  CONTRACT_COMPILE_ERROR (e.g. argo-cd-v3@e2a605e0d0a1f2c154c4f2215f8c66a02beba602)
+    1   1  DESCRIPTOR_REFLECTION (e.g. argo-cd-v3@545bcb5eeba8240ffa47299ee9ace8bb54c61dc8)
+    1   1  WHOLE_MESSAGE_FLOW (e.g. argo-cd-v3@545bcb5eeba8240ffa47299ee9ace8bb54c61dc8)
+
+20 windows in 11m34s.
+exit 0 seconds 694
