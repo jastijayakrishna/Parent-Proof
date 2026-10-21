@@ -1,0 +1,36 @@
+time=2026-10-21T09:20:09.879Z level=INFO msg=cloning repo=p-frdrpc url=https://github.com/lightninglabs/faraday.git
+time=2026-10-21T09:20:10.449Z level=INFO msg=cloning repo=c-frdrpc url=https://github.com/lightninglabs/lightning-terminal.git
+frdrpc      eaaba2fb UNKNOWN  source_build=UNKNOWN compiler=compiles          213.7s 
+frdrpc      f96edbb0 NO_GO    source_build=GO      compiler=compiles            8.2s 
+frdrpc      7e252bd1 GO       source_build=GO      compiler=compiles            8.9s 
+frdrpc      6a1710af GO       source_build=GO      compiler=compiles            9.0s 
+frdrpc      9e10faa8 GO       source_build=GO      compiler=compiles            8.9s 
+frdrpc      579ad0e7 GO       source_build=GO      compiler=compiles            8.0s 
+frdrpc      99769f63 GO       source_build=GO      compiler=baseline_fails      1.9s 
+frdrpc      f064bb22 GO       source_build=GO      compiler=baseline_fails      1.6s 
+frdrpc      36188ebd GO       source_build=GO      compiler=baseline_fails      1.7s 
+frdrpc      38a0790a GO       source_build=GO      compiler=baseline_fails      2.1s 
+frdrpc      2d5920cb GO       source_build=GO      compiler=baseline_fails      1.6s 
+frdrpc      49ddecfb UNKNOWN  source_build=UNKNOWN compiler=baseline_fails      1.4s 
+frdrpc      055b39cf UNKNOWN  source_build=UNKNOWN compiler=baseline_fails      1.6s 
+frdrpc      442fa2ab UNKNOWN  source_build=UNKNOWN compiler=baseline_fails      1.8s 
+frdrpc      400bca29 UNKNOWN  source_build=UNKNOWN compiler=baseline_fails      2.1s 
+frdrpc      7d2ee52f UNKNOWN  source_build=UNKNOWN compiler=baseline_fails      1.9s 
+frdrpc      72dec6db UNKNOWN  source_build=UNKNOWN compiler=baseline_fails      1.9s 
+frdrpc      b8eef9c5 UNKNOWN  source_build=UNKNOWN compiler=baseline_fails      1.4s 
+frdrpc      03d4738f UNKNOWN  source_build=UNKNOWN compiler=baseline_fails      1.9s 
+frdrpc      2a0d39a9 GO       source_build=GO      compiler=-                   0.3s 
+frdrpc        20 decisions  GO  10  NO-GO   1  UNKNOWN   9 (45.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO  10  NO-GO   1  UNKNOWN   9 (45.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    7   1  GENERATED_BINDINGS_UNAVAILABLE (e.g. frdrpc@055b39cfe943dbb2cc29c965553d89dc4e3b8372)
+    3   1  DESCRIPTOR_REFLECTION (e.g. frdrpc@eaaba2fbf98d1c0f7622ec91c87580a25a027abc)
+    1   1  GO_API_CHANGED_USED_BY_CALLER (e.g. frdrpc@eaaba2fbf98d1c0f7622ec91c87580a25a027abc)
+    1   1  NEEDS_REVIEW (e.g. frdrpc@eaaba2fbf98d1c0f7622ec91c87580a25a027abc)
+    1   1  OPTION_CHANGED (e.g. frdrpc@49ddecfbec5d7632bf8a45d7495cf806645d2253)
+    1   1  SECOND_CHECK_DISAGREES (e.g. frdrpc@49ddecfbec5d7632bf8a45d7495cf806645d2253)
+    1   1  WHOLE_MESSAGE_FLOW (e.g. frdrpc@f96edbb0c8e19bea560bd61cbaffb840771f4001)
+
+20 windows in 4m43s.
+exit 0 seconds 283
