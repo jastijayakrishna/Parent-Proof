@@ -1,6 +1,6 @@
 # Stress test: Go and Java consumers
 
-Updated 2026-10-21 11:24 UTC. Plan and rules: [stress/PREREG.md](stress/PREREG.md).
+Updated 2026-10-21 12:03 UTC. Plan and rules: [stress/PREREG.md](stress/PREREG.md).
 
 Every row is a real contract change of an open-source project never used to tune the verifier, decided by the
 verifier before the project's own compiler judged it (Go: `go build`; Java: the project's Maven or Gradle build).
@@ -11,8 +11,8 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 |---|---|---|---|---|---|---|---|---|
 | Go dev | 185 | 85 | 7 | 7 | **0** | 0 | 38 (21%) | 0 |
 | Go holdout | 256 | 206 | 22 | 12 | **0** | 2 | 63 (25%) | 0 |
-| Java dev | 446 | 80 | 10 | 9 | **0** | 0 | 10 (3%) | 0 |
-| Java holdout | 486 | 0 | 0 | 0 | **0** | 0 | 166 (47%) | 0 |
+| Java dev | 451 | 80 | 10 | 9 | **0** | 0 | 10 (3%) | 0 |
+| Java holdout | 492 | 0 | 0 | 0 | **0** | 0 | 166 (50%) | 0 |
 | Java regression | 84 | 46 | 2 | 2 | **0** | 0 | 21 (44%) | 0 |
 
 ## Go by project
@@ -45,12 +45,12 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 |---|---|---|---|---|---|---|---|---|
 | alluxio (history) | 27 | 0 | 0 | 0 | **0** | 0 | 0 (-) | 0 |
 | bazel (history) | 174 | 0 | 0 | 0 | **0** | 0 | 146 (84%) | 0 |
-| beam (history) | 31 | 0 | 0 | 0 | **0** | 0 | 10 (40%) | 0 |
-| camunda-zeebe (history) | 50 | 16 | 1 | 1 | **0** | 0 | 0 (0%) | 0 |
+| beam (history) | 37 | 0 | 0 | 0 | **0** | 0 | 13 (42%) | 0 |
+| camunda-zeebe (history) | 55 | 16 | 1 | 1 | **0** | 0 | 0 (0%) | 0 |
 | client-java (history) | 10 | 0 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
 | client-java (scan) | 20 | 0 | 0 | 0 | **0** | 0 | 0 (-) | 0 |
 | conductor (history) | 25 | 8 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
-| google-cloud-bigtable-history (history) | 254 | 0 | 0 | 0 | **0** | 0 | 10 (7%) | 0 |
+| google-cloud-bigtable-history (history) | 254 | 0 | 0 | 0 | **0** | 0 | 7 (5%) | 0 |
 | google-cloud-pubsub (history) | 19 | 0 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
 | google-cloud-pubsub-history (history) | 248 | 0 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
 | hbase (history) | 57 | 27 | 7 | 7 | **0** | 0 | 2 (6%) | 0 |
@@ -77,9 +77,9 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 ## Not judged by the compiler, by reason
 
 - Go: not judged 99, baseline_fails 39, bump_side_effect 8, oracle_error 2, judge not verified 2
-- Java: oracle_error 346, baseline_fails 252, not_built 174, judge not verified 118
+- Java: oracle_error 332, baseline_fails 277, not_built 174, judge not verified 118
 
 ## Errors: 0
 
 
-## Job minutes: 157 jobs, slowest 40.0 min (stress/results/java/beam/history/job-22of40.json), 14 over 30 min
+## Job minutes: 170 jobs, slowest 40.0 min (stress/results/java/beam/history/job-22of40.json), 23 over 30 min
