@@ -1,0 +1,31 @@
+time=2026-10-21T09:19:16.396Z level=INFO msg=cloning repo=p-kubearmor url=https://github.com/kubearmor/KubeArmor.git
+time=2026-10-21T09:19:17.820Z level=INFO msg=cloning repo=c-kubearmor url=https://github.com/kubearmor/kubearmor-client.git
+kubearmor   9ab474e3 GO       source_build=GO      compiler=baseline_fails     90.6s 
+kubearmor   45773ac8 NO_GO    source_build=GO      compiler=baseline_fails      2.9s 
+kubearmor   aa076a4b NO_GO    source_build=GO      compiler=baseline_fails      5.8s 
+kubearmor   ecc6dd0a UNKNOWN  source_build=GO      compiler=baseline_fails      3.4s 
+kubearmor   f9c7f426 NO_GO    source_build=GO      compiler=baseline_fails      1.9s 
+kubearmor   89b41356 NO_GO    source_build=GO      compiler=baseline_fails      3.8s 
+kubearmor   466347dd GO       source_build=GO      compiler=baseline_fails      3.5s 
+kubearmor   b694b96e NO_GO    source_build=GO      compiler=baseline_fails      4.4s 
+kubearmor   5e5ced66 NO_GO    source_build=GO      compiler=baseline_fails      1.9s 
+kubearmor   66d8ed42 NO_GO    source_build=GO      compiler=baseline_fails      1.8s 
+kubearmor   43299bad GO       source_build=GO      compiler=baseline_fails      3.8s 
+kubearmor   0605ea27 GO       source_build=GO      compiler=baseline_fails      3.4s 
+kubearmor   86cf299d GO       source_build=GO      compiler=baseline_fails      5.6s 
+kubearmor   f642a76c GO       source_build=GO      compiler=baseline_fails      3.8s 
+kubearmor   34efdaf2 GO       source_build=GO      compiler=baseline_fails      1.7s 
+kubearmor   bc240574 GO       source_build=GO      compiler=baseline_fails      1.9s 
+kubearmor   f45729fd GO       source_build=GO      compiler=baseline_fails      1.6s 
+kubearmor   87ff0ce7 NO_GO    source_build=GO      compiler=baseline_fails      1.9s 
+kubearmor   aecf2890 GO       source_build=GO      compiler=baseline_fails      3.7s 
+kubearmor   27fdf9ab GO       source_build=GO      compiler=baseline_fails      1.7s 
+kubearmor     20 decisions  GO  11  NO-GO   8  UNKNOWN   1 ( 5.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO  11  NO-GO   8  UNKNOWN   1 ( 5.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    1   1  NEEDS_REVIEW (e.g. kubearmor@ecc6dd0afc29ac7a8564882cfe2400eb5a1bbac1)
+    1   1  WHOLE_MESSAGE_FLOW (e.g. kubearmor@b694b96ece4d2db38b95f08b0f2244fa62cb2927)
+
+20 windows in 2m32s.
+exit 0 seconds 152
