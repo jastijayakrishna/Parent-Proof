@@ -1,0 +1,38 @@
+time=2026-10-21T09:25:13.606Z level=INFO msg=cloning repo=p-csi-new url=https://github.com/container-storage-interface/spec.git
+time=2026-10-21T09:25:14.093Z level=INFO msg=cloning repo=c-csi-new url=https://github.com/kubernetes-csi/external-resizer.git
+csi-new     25b3f102 GO       source_build=GO      compiler=compiles          130.0s 
+csi-new     5334f340 GO       source_build=GO      compiler=compiles            8.9s 
+csi-new     8e06851c GO       source_build=GO      compiler=-                   0.3s 
+csi-new     6f801196 GO       source_build=GO      compiler=compiles            9.1s 
+csi-new     72e2e56b NO_GO    source_build=GO      compiler=baseline_fails      1.7s 
+csi-new     0c337900 UNKNOWN  source_build=GO      compiler=bump_side_effect    5.3s 
+csi-new     91b25fc4 UNKNOWN  source_build=UNKNOWN compiler=compiles            9.5s 
+csi-new     a539b4f9 GO       source_build=GO      compiler=compiles            8.4s 
+csi-new     f6b6d53d UNKNOWN  source_build=UNKNOWN compiler=compiles            8.1s 
+csi-new     26967731 GO       source_build=GO      compiler=compiles            8.3s 
+csi-new     abf6346b UNKNOWN  source_build=UNKNOWN compiler=compiles            8.9s 
+csi-new     c918b7f6 GO       source_build=GO      compiler=compiles            8.7s 
+csi-new     3e57adf7 GO       source_build=GO      compiler=compiles            5.6s 
+csi-new     6eaead6d GO       source_build=GO      compiler=compiles            2.5s 
+csi-new     c6f94f66 GO       source_build=GO      compiler=compiles            2.4s 
+csi-new     3084acc9 UNKNOWN  source_build=GO      compiler=compiles            2.9s 
+csi-new     47a0fa4c GO       source_build=GO      compiler=compiles            2.4s 
+csi-new     77897809 UNKNOWN  source_build=GO      compiler=compiles            2.5s 
+csi-new     d9ee9b8b UNKNOWN  source_build=GO      compiler=compiles            2.0s 
+csi-new     62c6bbb6 UNKNOWN  source_build=GO      compiler=compiles            2.0s 
+csi-new       20 decisions  GO  11  NO-GO   1  UNKNOWN   8 (40.0%)  errors 0 | compiler judged  17: agree  14  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 3 | not judged 3
+TOTAL         20 decisions  GO  11  NO-GO   1  UNKNOWN   8 (40.0%)  errors 0 | compiler judged  17: agree  14  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 3 | not judged 3
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    9   1  DESCRIPTOR_REFLECTION (e.g. csi-new@72e2e56b8db0c12479a3d317ef1a677f8c23ca88)
+    6   1  NEEDS_REVIEW (e.g. csi-new@91b25fc4ba3b2c3f869e9fc4d6e37776416d46b8)
+    6   1  OPTION_CHANGED (e.g. csi-new@91b25fc4ba3b2c3f869e9fc4d6e37776416d46b8)
+    2   1  WHOLE_MESSAGE_FLOW (e.g. csi-new@72e2e56b8db0c12479a3d317ef1a677f8c23ca88)
+    1   1  SECOND_CHECK_DISAGREES (e.g. csi-new@abf6346bb13d6323f4a0a792226778dc82c974ec)
+  FAILED csi-new@91b25fc4ba3b2c3f869e9fc4d6e37776416d46b8: unknown_on_safe: OPTION_CHANGED, NEEDS_REVIEW, DESCRIPTOR_REFLECTION
+  FAILED csi-new@f6b6d53db606c651d975edf0ff3d0c9f5cd4fa35: unknown_on_safe: OPTION_CHANGED, NEEDS_REVIEW, DESCRIPTOR_REFLECTION
+  FAILED csi-new@abf6346bb13d6323f4a0a792226778dc82c974ec: unknown_on_safe: DESCRIPTOR_REFLECTION, SECOND_CHECK_DISAGREES
+
+20 windows in 3m54s.
+verifier gate: scan failed: 3 disagreements with the compiler or errors
+exit 1 seconds 234
