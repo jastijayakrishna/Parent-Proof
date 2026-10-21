@@ -1,0 +1,16 @@
+time=2026-10-21T08:19:58.129Z level=INFO msg=mined consumer=bb-remote-execution pin_moves=40 to_compile=14 skipped=map[]
+time=2026-10-21T08:21:01.249Z level=INFO msg=canary consumer=bb-remote-execution at=0ef36fa4ed17c2b9667f163d91fb10e9ace946f7^ outcome=breaks detail="canary: github.com/buildbarn/bb-storage/pkg/proto/configuration/global removed."
+time=2026-10-21T08:21:10.997Z level=INFO msg=window consumer=bb-remote-execution bump=0ef36fa4 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:22:28.358Z level=INFO msg=window consumer=bb-remote-execution bump=2bcc4083 select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T08:22:34.117Z level=INFO msg=window consumer=bb-remote-execution bump=75123396 select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:24:01.958Z level=INFO msg=window consumer=bb-remote-execution bump=7cf2f89e select=breaking breaking=5 compiler=compiles
+time=2026-10-21T08:24:31.398Z level=INFO msg=window consumer=bb-remote-execution bump=93cc4402 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:25:27.142Z level=INFO msg=window consumer=bb-remote-execution bump=a3a263e8 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:25:29.796Z level=INFO msg=window consumer=bb-remote-execution bump=9b1e3637 select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:26:43.257Z level=INFO msg=window consumer=bb-remote-execution bump=b1589bb8 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:26:47.015Z level=INFO msg=window consumer=bb-remote-execution bump=c1349dff select=breaking breaking=15 compiler=breaks
+time=2026-10-21T08:28:06.707Z level=INFO msg=window consumer=bb-remote-execution bump=db78144f select=additive breaking=0 compiler=breaks
+time=2026-10-21T08:28:13.769Z level=INFO msg=window consumer=bb-remote-execution bump=ca77ec14 select=additive breaking=0 compiler=breaks
+time=2026-10-21T08:28:20.237Z level=INFO msg=window consumer=bb-remote-execution bump=ea22f37f select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:28:57.710Z level=INFO msg=window consumer=bb-remote-execution bump=f6cf6bb8 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:29:15.824Z level=INFO msg=window consumer=bb-remote-execution bump=fa5964b7 select=unchanged breaking=0 compiler=compiles
