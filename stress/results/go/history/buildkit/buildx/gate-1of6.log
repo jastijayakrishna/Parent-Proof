@@ -1,29 +1,27 @@
-buildx     22074cd4 GO       source_build=GO      compiler=compiles           0.9s replay=true 
-buildx     010e4c8d NO_GO    source_build=NO_GO   compiler=breaks            10.5s replay=true 
-buildx     1300882b UNKNOWN  source_build=UNKNOWN compiler=compiles          10.5s replay=true 
-buildx     3808fba7 GO       source_build=GO      compiler=compiles           9.1s replay=true 
-buildx     40ef3446 GO       source_build=GO      compiler=compiles           9.2s replay=true 
-buildx     606e9d1f UNKNOWN  source_build=UNKNOWN compiler=compiles          10.1s replay=true 
-buildx     4e15a5ac GO       source_build=GO      compiler=compiles           9.4s replay=true 
-buildx     70536fc8 UNKNOWN  source_build=UNKNOWN compiler=compiles           6.9s replay=true 
-buildx     83c30c6c GO       source_build=GO      compiler=compiles           6.9s replay=true 
-buildx     ac30b249 GO       source_build=GO      compiler=compiles           0.5s replay=true 
-buildx     a1150734 GO       source_build=GO      compiler=compiles           0.7s replay=true 
-buildx     c07bc083 UNKNOWN  source_build=UNKNOWN compiler=breaks             7.2s replay=true 
-buildx     c9b2da6b GO       source_build=GO      compiler=compiles           7.3s replay=true 
-buildx     d3ff70ac NO_GO    source_build=NO_GO   compiler=breaks             8.2s replay=true 
-buildx     e2534c77 GO       source_build=GO      compiler=compiles           8.6s replay=true 
-buildx     e98e8f6a GO       source_build=GO      compiler=compiles           4.8s replay=true 
-buildx     fa392a2d GO       source_build=GO      compiler=compiles           0.7s replay=true 
-buildx     ef2dabd5 GO       source_build=GO      compiler=compiles           5.3s replay=true 
-buildx/additive        windows=  2 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 2: GO= 1 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=2 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=2
-buildx/breaking        windows=  1 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=1
-buildx/unchanged       windows= 15 | breaks= 2: caught= 1 WRONG_GO=0 abstained=1 | compiles=13: GO=11 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=15 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=15
-TOTAL                  windows= 18 | breaks= 3: caught= 2 WRONG_GO=0 abstained=1 | compiles=15: GO=12 FALSE_NOGO=0 abstained=3 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=18 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=18
-  WITHIN THE UNKNOWN LIMIT buildx@1300882b67f0..67aca427: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
-  WITHIN THE UNKNOWN LIMIT buildx@606e9d1f4880..46de8529: unknown_on_safe: CONTRACT_COMPILE_ERROR, GO_API_CHANGED_USED_BY_CALLER
-  WITHIN THE UNKNOWN LIMIT buildx@70536fc89082..7ea9fa1c: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
-  FAILED buildx@c07bc08336cf..eece108c: unknown_on_break: tests/bake.go:2278:54: not enough arguments in call to contentutil.ProviderFromRef | tests/bake.go:2339:53: not enough arguments in call to contentutil.ProviderFromRef | tests/bake.go:2431:53: not enough arguments in call to contentutil.ProviderFromRef
+buildx     010e4c8d NO_GO    source_build=NO_GO   compiler=breaks            12.1s replay=true 
+buildx     0dbe87f3 GO       source_build=GO      compiler=compiles          12.3s replay=true 
+buildx     209f90c1 GO       source_build=GO      compiler=compiles           0.9s replay=true 
+buildx     31a3fbf1 NO_GO    source_build=NO_GO   compiler=breaks             8.4s replay=true 
+buildx     3ca6a438 UNKNOWN  source_build=UNKNOWN compiler=compiles           8.0s replay=true 
+buildx     4abff3ce GO       source_build=GO      compiler=compiles           6.1s replay=true 
+buildx     5afb210d NO_GO    source_build=NO_GO   compiler=breaks             6.5s replay=true 
+buildx     75f1d5e2 GO       source_build=GO      compiler=compiles           0.4s replay=true 
+buildx     62ba1d50 GO       source_build=GO      compiler=compiles           6.3s replay=true 
+buildx     9392590c UNKNOWN  source_build=UNKNOWN compiler=breaks             5.8s replay=true 
+buildx     a718d07f GO       source_build=GO      compiler=compiles           6.6s replay=true 
+buildx     c7b0a84c GO       source_build=GO      compiler=compiles           0.6s replay=true 
+buildx     b96ad59f GO       source_build=GO      compiler=compiles           6.6s replay=true 
+buildx     df28b0a0 GO       source_build=GO      compiler=compiles           0.7s replay=true 
+buildx     d0c4bed4 NO_GO    source_build=NO_GO   compiler=breaks             5.8s replay=true 
+buildx     e628f9ea GO       source_build=GO      compiler=compiles           5.5s replay=true 
+buildx     ee42096f GO       source_build=GO      compiler=compiles           4.7s replay=true 
+buildx     f7897eba GO       source_build=GO      compiler=compiles           4.5s replay=true 
+buildx/additive        windows=  5 | breaks= 1: caught= 0 WRONG_GO=0 abstained=1 | compiles= 4: GO= 3 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=5 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=5
+buildx/breaking        windows=  1 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles= 0: GO= 0 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=1 | errors=0 | replayed=1
+buildx/unchanged       windows= 12 | breaks= 3: caught= 3 WRONG_GO=0 abstained=0 | compiles= 9: GO= 9 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=12 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=12
+TOTAL                  windows= 18 | breaks= 5: caught= 4 WRONG_GO=0 abstained=1 | compiles=13: GO=12 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=18 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=1 | errors=0 | replayed=18
+  WITHIN THE UNKNOWN LIMIT buildx@3ca6a438081b..e18be418: unknown_on_safe: CONTRACT_COMPILE_ERROR, GO_API_CHANGED_USED_BY_CALLER
+  FAILED buildx@9392590cfa63..6baf355a: unknown_on_break: module github.com/moby/buildkit@latest found (v0.34.1), but does not contain package github.com/moby/buildkit/util/tracing/env | util/history/name.go:87:36: not enough arguments in call to dfgitutil.FragmentFormat
 
-18 windows in 59s with 2 workers; 0 differ from the baseline.
+18 windows in 51s with 2 workers; 0 differ from the baseline.
 verifier gate: release gate failed: 1 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
