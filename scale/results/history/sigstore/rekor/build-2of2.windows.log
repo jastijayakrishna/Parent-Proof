@@ -1,0 +1,8 @@
+time=2026-10-21T08:33:26.639Z level=INFO msg=mined consumer=rekor pin_moves=13 to_compile=6 skipped=map[]
+time=2026-10-21T08:34:02.916Z level=INFO msg=canary consumer=rekor at=4e0523526f730ca0ee930ad549ccba0a16a4f923^ outcome=breaks detail="canary: github.com/sigstore/protobuf-specs/gen/pb-go/rekor/v1 removed."
+time=2026-10-21T08:34:06.635Z level=INFO msg=window consumer=rekor bump=4e052352 select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:35:26.823Z level=INFO msg=window consumer=rekor bump=78c8c42c select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:35:55.200Z level=INFO msg=window consumer=rekor bump=8f8fb19d select=breaking breaking=7 compiler=compiles
+time=2026-10-21T08:36:41.329Z level=INFO msg=window consumer=rekor bump=92cf4d5d select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:37:11.462Z level=INFO msg=window consumer=rekor bump=d702f84e select=breaking breaking=20 compiler=compiles
+time=2026-10-21T08:37:32.705Z level=INFO msg=window consumer=rekor bump=a305f3b3 select=additive breaking=0 compiler=compiles
