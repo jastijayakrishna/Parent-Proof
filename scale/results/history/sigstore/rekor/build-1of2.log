@@ -1,0 +1,12 @@
+time=2026-10-21T08:33:24.635Z level=INFO msg=cloning repo=protobuf-specs url=https://github.com/sigstore/protobuf-specs.git
+time=2026-10-21T08:33:25.566Z level=INFO msg=cloning repo=rekor url=https://github.com/sigstore/rekor.git
+time=2026-10-21T08:33:29.907Z level=INFO msg=mined consumer=rekor pin_moves=13 to_compile=7 skipped=map[]
+time=2026-10-21T08:34:32.219Z level=INFO msg=canary consumer=rekor at=1082f4855b7d53fc766d91e9b8348b21905f0382^ outcome=breaks detail="canary: github.com/sigstore/protobuf-specs/gen/pb-go/rekor/v1 removed."
+time=2026-10-21T08:34:48.856Z level=INFO msg=window consumer=rekor bump=1082f485 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:36:25.970Z level=INFO msg=window consumer=rekor bump=726559c1 select=breaking breaking=7 compiler=compiles
+time=2026-10-21T08:36:33.195Z level=INFO msg=window consumer=rekor bump=802db4d8 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:37:48.296Z level=INFO msg=window consumer=rekor bump=90ca4b45 select=breaking breaking=3 compiler=compiles
+time=2026-10-21T08:37:49.762Z level=INFO msg=window consumer=rekor bump=9c4a7630 select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:38:35.630Z level=INFO msg=window consumer=rekor bump=fa871214 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:38:46.409Z level=INFO msg=window consumer=rekor bump=b3bd1de0 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:38:46.409Z level=INFO msg="suite built" suite=sigstore windows_added=7
