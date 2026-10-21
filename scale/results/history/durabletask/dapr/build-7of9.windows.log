@@ -1,0 +1,6 @@
+time=2026-10-21T08:27:40.767Z level=INFO msg=mined consumer=dapr pin_moves=40 to_compile=4 skipped=map[]
+time=2026-10-21T08:29:05.751Z level=INFO msg=canary consumer=dapr at=15f48b50ac29a1c647d304d4a5ce5913aabaf5da^ outcome=breaks detail="canary: github.com/dapr/durabletask-go/api/protos removed."
+time=2026-10-21T08:29:58.801Z level=INFO msg=window consumer=dapr bump=15f48b50 select=unclassified breaking=0 compiler=compiles
+time=2026-10-21T08:31:44.063Z level=INFO msg=window consumer=dapr bump=56f3c8fc select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T08:33:10.131Z level=INFO msg=window consumer=dapr bump=7f85241d select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:33:38.107Z level=INFO msg=window consumer=dapr bump=e3f18f25 select=additive breaking=0 compiler=compiles
