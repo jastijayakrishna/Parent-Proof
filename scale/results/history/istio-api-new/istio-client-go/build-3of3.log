@@ -1,0 +1,18 @@
+time=2026-10-21T09:13:30.752Z level=INFO msg=cloning repo=api url=https://github.com/istio/api.git
+time=2026-10-21T09:13:33.732Z level=INFO msg=cloning repo=istio-client-go url=https://github.com/istio/client-go.git
+time=2026-10-21T09:13:58.985Z level=INFO msg=mined consumer=istio-client-go pin_moves=40 to_compile=13 skipped=map[]
+time=2026-10-21T09:14:41.968Z level=INFO msg=canary consumer=istio-client-go at=0cd1f87d725c6089fd6d1ecde129538e711c4470^ outcome=breaks detail="canary: istio.io/api/meta/v1alpha1 removed."
+time=2026-10-21T09:14:53.603Z level=INFO msg=window consumer=istio-client-go bump=0cd1f87d select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:14:54.909Z level=INFO msg=window consumer=istio-client-go bump=13e4c6b5 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:05.822Z level=INFO msg=window consumer=istio-client-go bump=2ce63476 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:08.505Z level=INFO msg=window consumer=istio-client-go bump=37a790e1 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:15:18.619Z level=INFO msg=window consumer=istio-client-go bump=445e9563 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:15:22.228Z level=INFO msg=window consumer=istio-client-go bump=59edaaaa select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:15:30.222Z level=INFO msg=window consumer=istio-client-go bump=6dec637f select=breaking breaking=1 compiler=compiles
+time=2026-10-21T09:15:31.860Z level=INFO msg=window consumer=istio-client-go bump=ab0a44a1 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:36.003Z level=INFO msg=window consumer=istio-client-go bump=962757d1 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:15:43.802Z level=INFO msg=window consumer=istio-client-go bump=bc418f4e select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:15:48.143Z level=INFO msg=window consumer=istio-client-go bump=c48efc0f select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:15:57.257Z level=INFO msg=window consumer=istio-client-go bump=c8b18a22 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:59.607Z level=INFO msg=window consumer=istio-client-go bump=e00df391 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:59.607Z level=INFO msg="suite built" suite=istio-api-new windows_added=13
