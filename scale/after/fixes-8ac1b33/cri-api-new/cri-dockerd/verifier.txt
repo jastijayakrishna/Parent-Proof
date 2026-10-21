@@ -1,0 +1,2 @@
+v0.0.0-20261021093544-8ac1b339d6d1 protocompile/v0.14.1 verdict/v0.16.0 go-analyzer/v0.26.0
+f812fcd715cb08f1fb088896ad678dbbaae812b5b6cbc61cd036aca88bbae361
