@@ -7,8 +7,7 @@ tidb/breaking          windows= 49 | breaks=22: caught=22 WRONG_GO=0 abstained=0
 TOTAL                  windows=152 | breaks=49: caught=49 WRONG_GO=0 abstained=0 | compiles=97: GO=95 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 7) | unavailable=6 (NO-GO 2, UNKNOWN 4, GO 0) | wire: judged=152 broken=26 RUNTIME_WRONG_GO=0 confirmed=21 unconfirmed=18 | errors=0 | replayed=152
   WITHIN THE UNKNOWN LIMIT client-go@00eeab450c8c..62eb316d: unknown_on_safe: WHOLE_MESSAGE_FLOW, OPTION_CHANGED
   WITHIN THE UNKNOWN LIMIT client-go@57c12f7c64f6..aa9c2d20: unknown_on_safe: NEEDS_REVIEW
-  DIFFERS FROM BASELINE tidb@17c0dd0fe42b..059694ae: expected NO_GO (generated_code NO_GO, runtime NO_GO, source_build NO_GO; UNKNOWN: NEEDS_REVIEW), got NO_GO (generated_code NO_GO, runtime NO_GO, source_build NO_GO; UNKNOWN: NEEDS_REVIEW, WHOLE_MESSAGE_FLOW)
 
-152 windows merged; verifier 24739ac9a77c6232970ae79abaf6c53ac339a803060b0789789ec320b1e9ecc3; slowest window 1.5 minutes; 1 differ from the baseline.
-verifier gate: release gate failed: 1 windows differ from the baseline (record intended changes with `verifier gate baseline` and a reason for each)
-exit 1
+152 windows merged; verifier 2e20c978077168cd4f30ab4b630eec1c75168129b35f0ba815b3ef940e307a65; slowest window 1.1 minutes; 0 differ from the baseline.
+Release gate passed.
+exit 0
