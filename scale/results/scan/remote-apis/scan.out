@@ -1,0 +1,41 @@
+time=2026-10-21T09:24:05.998Z level=INFO msg=cloning repo=p-remote-apis url=https://github.com/bazelbuild/remote-apis.git
+time=2026-10-21T09:24:06.252Z level=INFO msg=cloning repo=c-remote-apis url=https://github.com/bazelbuild/remote-apis-sdks.git
+remote-apis 6def1c5d UNKNOWN  source_build=UNKNOWN compiler=compiles           25.4s 
+remote-apis 76ddd98e UNKNOWN  source_build=UNKNOWN compiler=compiles            1.8s 
+remote-apis 77ec6301 UNKNOWN  source_build=UNKNOWN compiler=compiles            1.7s 
+remote-apis 715b73f3 UNKNOWN  source_build=UNKNOWN compiler=compiles            1.9s 
+remote-apis e4515f05 UNKNOWN  source_build=UNKNOWN compiler=-                   0.2s 
+remote-apis de5501d2 UNKNOWN  source_build=UNKNOWN compiler=-                   0.2s 
+remote-apis 080cf125 UNKNOWN  source_build=UNKNOWN compiler=-                   0.2s 
+remote-apis b02e15a6 UNKNOWN  source_build=UNKNOWN compiler=-                   0.2s 
+remote-apis 016806f6 UNKNOWN  source_build=UNKNOWN compiler=-                   0.6s 
+remote-apis 3860ca2d UNKNOWN  source_build=UNKNOWN compiler=compiles            3.4s 
+remote-apis e94a7ece UNKNOWN  source_build=UNKNOWN compiler=compiles            2.4s 
+remote-apis 9ef19c6b UNKNOWN  source_build=UNKNOWN compiler=-                   0.2s 
+remote-apis 536ec595 UNKNOWN  source_build=UNKNOWN compiler=compiles            2.4s 
+remote-apis 2721568d UNKNOWN  source_build=UNKNOWN compiler=-                   0.2s 
+remote-apis 9a0af1d3 UNKNOWN  source_build=UNKNOWN compiler=-                   0.2s 
+remote-apis 412b8808 UNKNOWN  source_build=UNKNOWN compiler=-                   0.2s 
+remote-apis 6777112e UNKNOWN  source_build=UNKNOWN compiler=compiles            1.8s 
+remote-apis a6328f50 UNKNOWN  source_build=UNKNOWN compiler=compiles            1.7s 
+remote-apis 9a250a0f UNKNOWN  source_build=UNKNOWN compiler=compiles            2.7s 
+remote-apis 1f36c310 UNKNOWN  source_build=UNKNOWN compiler=-                   0.3s 
+remote-apis   20 decisions  GO   0  NO-GO   0  UNKNOWN  20 (100.0%)  errors 0 | compiler judged  10: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 10 | not judged 10
+TOTAL         20 decisions  GO   0  NO-GO   0  UNKNOWN  20 (100.0%)  errors 0 | compiler judged  10: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 10 | not judged 10
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+   20   1  CONTRACT_COMPILE_ERROR (e.g. remote-apis@6def1c5d27a527c400875c24ae8b1a160145d7e1)
+  FAILED remote-apis@6def1c5d27a527c400875c24ae8b1a160145d7e1: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED remote-apis@76ddd98e1f92c0e2e71d0d3aa6906eca31754c03: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED remote-apis@77ec630134abbf9aa525f921eee4e5d11dc20f7e: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED remote-apis@715b73f3f9e4c70b22854e3cf8a927a9077dde1c: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED remote-apis@3860ca2d3e559d487b7d4ad07aa2a4a08d7624da: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED remote-apis@e94a7ece2a1e8da1dcf278a0baf2edfe7baafb94: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED remote-apis@536ec595e1df0064bb37aecc95332a661b8c79b2: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED remote-apis@6777112ef7defa6705b1ebd2831d6c7efeb12ba2: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED remote-apis@a6328f5026d3b2ae27bd8efd86a0f1057ccab361: unknown_on_safe: CONTRACT_COMPILE_ERROR
+  FAILED remote-apis@9a250a0f817fe63a426ede43b133c3dc4549d75f: unknown_on_safe: CONTRACT_COMPILE_ERROR
+
+20 windows in 49s.
+verifier gate: scan failed: 10 disagreements with the compiler or errors
+exit 1 seconds 49
