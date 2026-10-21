@@ -1,0 +1,20 @@
+time=2026-10-21T08:36:32.465Z level=INFO msg=cloning repo=bb-storage url=https://github.com/buildbarn/bb-storage.git
+time=2026-10-21T08:36:33.301Z level=INFO msg=cloning repo=bb-clientd url=https://github.com/buildbarn/bb-clientd.git
+time=2026-10-21T08:36:35.992Z level=INFO msg=mined consumer=bb-clientd pin_moves=29 to_compile=15 skipped=map[]
+time=2026-10-21T08:37:10.651Z level=INFO msg=canary consumer=bb-clientd at=007cdc1065258e08a88afa5c8f5fb1cb76b48641^ outcome=breaks detail="canary: github.com/buildbarn/bb-storage/pkg/proto/configuration/blobstore removed."
+time=2026-10-21T08:37:12.714Z level=INFO msg=window consumer=bb-clientd bump=007cdc10 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:37:36.891Z level=INFO msg=window consumer=bb-clientd bump=03832c1b select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:38:14.044Z level=INFO msg=window consumer=bb-clientd bump=0dd19dea select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T08:38:29.063Z level=INFO msg=window consumer=bb-clientd bump=053ca02e select=additive breaking=0 compiler=bump_side_effect
+time=2026-10-21T08:39:21.131Z level=INFO msg=window consumer=bb-clientd bump=25fd4b18 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:39:28.430Z level=INFO msg=window consumer=bb-clientd bump=316e5632 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:40:15.750Z level=INFO msg=window consumer=bb-clientd bump=253388f5 select=breaking breaking=34 compiler=breaks
+time=2026-10-21T08:40:38.446Z level=INFO msg=window consumer=bb-clientd bump=4c800c40 select=additive breaking=0 compiler=breaks
+time=2026-10-21T08:40:41.649Z level=INFO msg=window consumer=bb-clientd bump=696018ff select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:41:21.624Z level=INFO msg=window consumer=bb-clientd bump=b57a6cb5 select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:41:39.160Z level=INFO msg=window consumer=bb-clientd bump=ac37453d select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:41:44.145Z level=INFO msg=window consumer=bb-clientd bump=e1139953 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:41:47.517Z level=INFO msg=window consumer=bb-clientd bump=d33e5813 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:41:52.135Z level=INFO msg=window consumer=bb-clientd bump=f87436b4 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:42:27.589Z level=INFO msg=window consumer=bb-clientd bump=f4f51ee5 select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:42:27.589Z level=INFO msg="suite built" suite=bb-storage windows_added=15
