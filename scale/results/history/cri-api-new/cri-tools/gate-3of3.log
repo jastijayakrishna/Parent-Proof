@@ -1,0 +1,20 @@
+cri-tools  16d56738 UNKNOWN  source_build=UNKNOWN compiler=breaks             9.3s replay=true 
+cri-tools  3ef56ebd UNKNOWN  source_build=GO      compiler=compiles           9.5s replay=true 
+cri-tools  44512ae9 GO       source_build=GO      compiler=compiles           0.4s replay=true 
+cri-tools  59ba0dd8 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+cri-tools  4c7bab88 GO       source_build=GO      compiler=compiles           0.4s replay=true 
+cri-tools  88d8ad9d GO       source_build=GO      compiler=compiles           0.2s replay=true 
+cri-tools  69fb6e04 GO       source_build=GO      compiler=compiles           0.3s replay=true 
+cri-tools  93a40465 GO       source_build=GO      compiler=compiles           3.2s replay=true 
+cri-tools  b27f0459 NO_GO    source_build=NO_GO   compiler=breaks             3.9s replay=true 
+cri-tools  c4c65a94 GO       source_build=GO      compiler=compiles           0.3s replay=true 
+cri-tools  e97cdaba GO       source_build=GO      compiler=compiles           0.4s replay=true 
+cri-tools  de40f4cd GO       source_build=GO      compiler=compiles           2.2s replay=true 
+cri-tools/additive     windows=  4 | breaks= 2: caught= 1 WRONG_GO=0 abstained=1 | compiles= 2: GO= 2 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=4 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=4
+cri-tools/breaking     windows=  1 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 1: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=1
+cri-tools/unchanged    windows=  7 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 7: GO= 7 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=7 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=7
+TOTAL                  windows= 12 | breaks= 2: caught= 1 WRONG_GO=0 abstained=1 | compiles=10: GO=10 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=12 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=12
+  FAILED cri-tools@16d5673873fd..bde76f64: unknown_on_break: /home/runner/go/pkg/mod/k8s.io/cri-client@v0.35.2/pkg/remote_image.go:104:9: cannot use service (variable of type *remoteImageService) as "k8s.io/cri-api/pkg/apis".ImageManagerService value in return statement: *remoteImageService does not implement "k8s.io/cri-api/pkg/apis".ImageManagerService (wrong type for method Close) | /home/runner/go/pkg/mod/k8s.io/cri-client@v0.35.2/pkg/remote_runtime.go:138:9: cannot use service (variable of type *remoteRuntimeService) as "k8s.io/cri-api/pkg/apis".RuntimeService value in return statement: *remoteRuntimeService does not implement "k8s.io/cri-api/pkg/apis".RuntimeService (wrong type for method Close)
+
+12 windows in 15s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 1 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`

@@ -1,0 +1,16 @@
+time=2026-10-21T08:52:35.789Z level=INFO msg=skip consumer=cri-tools bump=88c14290 old=v0.33.0-alpha.0 new=v0.32.0-rc.1 reason=not_forward
+time=2026-10-21T08:52:36.120Z level=INFO msg=skip consumer=cri-tools bump=801d04c1 old=v0.34.0-alpha.0 new=v0.33.0-rc.0 reason=not_forward
+time=2026-10-21T08:52:36.822Z level=INFO msg=mined consumer=cri-tools pin_moves=40 to_compile=12 skipped=map[not_forward:2]
+time=2026-10-21T08:53:17.543Z level=INFO msg=canary consumer=cri-tools at=16d5673873fda6d333f8411778a35f5778998680^ outcome=breaks detail="canary: k8s.io/cri-api/pkg/apis/runtime/v1 removed."
+time=2026-10-21T08:53:28.952Z level=INFO msg=window consumer=cri-tools bump=16d56738 select=additive breaking=0 compiler=breaks
+time=2026-10-21T08:54:08.890Z level=INFO msg=window consumer=cri-tools bump=3ef56ebd select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:54:19.115Z level=INFO msg=window consumer=cri-tools bump=44512ae9 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:54:54.000Z level=INFO msg=window consumer=cri-tools bump=4c7bab88 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:54:57.975Z level=INFO msg=window consumer=cri-tools bump=59ba0dd8 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:55:28.934Z level=INFO msg=window consumer=cri-tools bump=88d8ad9d select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:55:29.970Z level=INFO msg=window consumer=cri-tools bump=69fb6e04 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:55:57.522Z level=INFO msg=window consumer=cri-tools bump=93a40465 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:56:01.846Z level=INFO msg=window consumer=cri-tools bump=b27f0459 select=additive breaking=0 compiler=breaks
+time=2026-10-21T08:56:27.827Z level=INFO msg=window consumer=cri-tools bump=de40f4cd select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:56:30.937Z level=INFO msg=window consumer=cri-tools bump=c4c65a94 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:56:55.261Z level=INFO msg=window consumer=cri-tools bump=e97cdaba select=unchanged breaking=0 compiler=compiles
