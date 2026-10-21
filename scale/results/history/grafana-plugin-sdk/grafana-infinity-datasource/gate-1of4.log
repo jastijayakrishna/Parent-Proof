@@ -1,0 +1,17 @@
+grafana-infinity-datasource 240189d8 NO_GO    source_build=GO      compiler=compiles           9.3s replay=true 
+grafana-infinity-datasource 022767f1 GO       source_build=GO      compiler=compiles           9.3s replay=true 
+grafana-infinity-datasource 3ec0c581 GO       source_build=GO      compiler=compiles           4.9s replay=true 
+grafana-infinity-datasource 5b7b255a GO       source_build=GO      compiler=compiles           5.1s replay=true 
+grafana-infinity-datasource 771bd07e GO       source_build=GO      compiler=compiles           4.5s replay=true 
+grafana-infinity-datasource 94dc2ef2 GO       source_build=GO      compiler=compiles           4.8s replay=true 
+grafana-infinity-datasource 88d34f02 GO       source_build=GO      compiler=compiles           2.5s replay=true 
+grafana-infinity-datasource a4f772e2 GO       source_build=GO      compiler=compiles           2.3s replay=true 
+grafana-infinity-datasource e7760b19 GO       source_build=GO      compiler=compiles           3.1s replay=true 
+grafana-infinity-datasource b990dd40 GO       source_build=GO      compiler=compiles           3.7s replay=true 
+grafana-infinity-datasource/additive windows=  1 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 1: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=1 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=1
+grafana-infinity-datasource/breaking windows=  1 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 1: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 1) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=1 broken=1 RUNTIME_WRONG_GO=0 confirmed=1 unconfirmed=0 | errors=0 | replayed=1
+grafana-infinity-datasource/unchanged windows=  8 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 8: GO= 8 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=8 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=8
+TOTAL                  windows= 10 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=10: GO=10 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 1) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=10 broken=1 RUNTIME_WRONG_GO=0 confirmed=1 unconfirmed=0 | errors=0 | replayed=10
+
+10 windows in 25s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
