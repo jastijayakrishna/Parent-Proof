@@ -1,0 +1,3 @@
+time=2026-10-21T09:13:42.688Z level=INFO msg=mined consumer=container-engine-accelerators pin_moves=1 to_compile=1 skipped=map[]
+time=2026-10-21T09:14:04.893Z level=INFO msg=canary consumer=container-engine-accelerators at=c9276a5ded0f631efe2be7ac26466151cbe24ea1^ outcome=breaks detail="canary: k8s.io/kubelet/pkg/apis/deviceplugin/v1beta1 removed."
+time=2026-10-21T09:14:15.091Z level=INFO msg=window consumer=container-engine-accelerators bump=c9276a5d select=breaking breaking=11 compiler=compiles
