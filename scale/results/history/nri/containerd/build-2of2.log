@@ -1,0 +1,13 @@
+time=2026-10-21T08:32:03.180Z level=INFO msg=cloning repo=nri url=https://github.com/containerd/nri.git
+time=2026-10-21T08:32:04.209Z level=INFO msg=cloning repo=containerd url=https://github.com/containerd/containerd.git
+time=2026-10-21T08:32:12.311Z level=INFO msg=mined consumer=containerd pin_moves=16 to_compile=8 skipped=map[]
+time=2026-10-21T08:33:00.362Z level=INFO msg=canary consumer=containerd at=18fcad83054ea3df0b85757f5dd0d2c312cb69b7^ outcome=breaks detail="canary: github.com/containerd/nri/pkg/api removed."
+time=2026-10-21T08:33:15.378Z level=INFO msg=window consumer=containerd bump=18fcad83 select=additive breaking=0 compiler=bump_side_effect
+time=2026-10-21T08:33:58.441Z level=INFO msg=window consumer=containerd bump=338d4a3e select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:34:02.125Z level=INFO msg=window consumer=containerd bump=55e47e12 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:34:54.210Z level=INFO msg=window consumer=containerd bump=6e0dc9f5 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:34:57.792Z level=INFO msg=window consumer=containerd bump=58ad67ca select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:35:42.784Z level=INFO msg=window consumer=containerd bump=805ed8e8 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:35:48.124Z level=INFO msg=window consumer=containerd bump=9aebe599 select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:36:19.569Z level=INFO msg=window consumer=containerd bump=fff2236f select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:36:19.569Z level=INFO msg="suite built" suite=nri windows_added=8
