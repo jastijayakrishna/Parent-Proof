@@ -1,0 +1,7 @@
+time=2026-10-21T09:17:21.382Z level=INFO msg=mined consumer=vitess-operator pin_moves=40 to_compile=5 skipped=map[]
+time=2026-10-21T09:18:47.054Z level=INFO msg=canary consumer=vitess-operator at=183c8ff9295845e54531baccf18c1248893cb8ce^ outcome=baseline_fails detail="canary: vitess.io/vitess/go/vt/proto/topodata removed. every package that imports vitess.io/vitess fails to compile before the bump"
+time=2026-10-21T09:18:48.081Z level=INFO msg=window consumer=vitess-operator bump=183c8ff9 select=additive breaking=0 compiler=baseline_fails
+time=2026-10-21T09:22:09.954Z level=INFO msg=window consumer=vitess-operator bump=7a864c53 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:22:16.931Z level=INFO msg=window consumer=vitess-operator bump=58493115 select=breaking breaking=3 compiler=compiles
+time=2026-10-21T09:23:08.086Z level=INFO msg=window consumer=vitess-operator bump=ab53266c select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:24:12.726Z level=INFO msg=window consumer=vitess-operator bump=e6d6fe99 select=additive breaking=0 compiler=compiles
