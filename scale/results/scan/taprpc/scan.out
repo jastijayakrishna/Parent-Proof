@@ -1,0 +1,31 @@
+time=2026-10-21T09:23:37.739Z level=INFO msg=cloning repo=p-taprpc url=https://github.com/lightninglabs/taproot-assets.git
+time=2026-10-21T09:23:38.466Z level=INFO msg=cloning repo=c-taprpc url=https://github.com/lightninglabs/lightning-terminal.git
+taprpc      8282d188 GO       source_build=GO      compiler=compiles          255.5s 
+taprpc      d81aeef9 GO       source_build=GO      compiler=compiles           67.7s 
+taprpc      39346401 GO       source_build=GO      compiler=compiles           22.3s 
+taprpc      857e1ed8 GO       source_build=GO      compiler=compiles           50.0s 
+taprpc      9ef9d690 GO       source_build=GO      compiler=compiles           99.1s 
+taprpc      afeb22f9 GO       source_build=GO      compiler=compiles          100.0s 
+taprpc      ba33eb94 GO       source_build=GO      compiler=compiles           33.9s 
+taprpc      09ceba55 GO       source_build=GO      compiler=compiles           59.1s 
+taprpc      af91ed7e UNKNOWN  source_build=UNKNOWN compiler=compiles           55.1s 
+taprpc      9d393e5f GO       source_build=GO      compiler=compiles           28.9s 
+taprpc      83ce918a UNKNOWN  source_build=UNKNOWN compiler=compiles           58.8s 
+taprpc      30bc25c6 GO       source_build=GO      compiler=compiles           30.4s 
+taprpc      73fa24ff GO       source_build=GO      compiler=compiles            3.9s 
+taprpc      47adcf21 GO       source_build=GO      compiler=compiles           30.3s 
+taprpc      a952e176 GO       source_build=GO      compiler=compiles           55.6s 
+taprpc      a709cac4 NO_GO    source_build=NO_GO   compiler=compiles           54.6s 
+taprpc      2fde7f90 GO       source_build=GO      compiler=compiles           56.7s 
+taprpc      23a49a59 GO       source_build=GO      compiler=compiles           56.4s 
+taprpc      e6f3d15c NO_GO    source_build=NO_GO   compiler=compiles           49.0s 
+taprpc      33cfe06f UNKNOWN  source_build=UNKNOWN compiler=compiles           24.1s 
+taprpc        20 decisions  GO  15  NO-GO   2  UNKNOWN   3 (15.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO  15  NO-GO   2  UNKNOWN   3 (15.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    4   1  CONTRACT_COMPILE_ERROR (e.g. taprpc@af91ed7e949d37128b08d093b735c0e618634d4f)
+    2   1  DESCRIPTOR_REFLECTION (e.g. taprpc@a709cac4b2ff77eb6017ca2db5fd340c0321c48e)
+
+20 windows in 19m54s.
+exit 0 seconds 1194
