@@ -1,0 +1,6 @@
+time=2026-10-21T08:47:55.500Z level=INFO msg=mined consumer=pulumi-go-provider pin_moves=40 to_compile=4 skipped=map[]
+time=2026-10-21T08:49:01.696Z level=INFO msg=canary consumer=pulumi-go-provider at=143e131ed4c377c75e2b68e05d96b786c69b9145^ outcome=breaks detail="canary: github.com/pulumi/pulumi/sdk/v3/proto/go removed."
+time=2026-10-21T08:49:35.360Z level=INFO msg=window consumer=pulumi-go-provider bump=143e131e select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:50:10.462Z level=INFO msg=window consumer=pulumi-go-provider bump=854ffc79 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:50:13.938Z level=INFO msg=window consumer=pulumi-go-provider bump=46d3d11d select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:50:55.124Z level=INFO msg=window consumer=pulumi-go-provider bump=d83264b8 select=unchanged breaking=0 compiler=compiles
