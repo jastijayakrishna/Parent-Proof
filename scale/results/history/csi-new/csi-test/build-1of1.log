@@ -1,0 +1,11 @@
+time=2026-10-21T08:55:13.561Z level=INFO msg=cloning repo=spec url=https://github.com/container-storage-interface/spec.git
+time=2026-10-21T08:55:14.152Z level=INFO msg=cloning repo=csi-test url=https://github.com/kubernetes-csi/csi-test.git
+time=2026-10-21T08:55:16.342Z level=INFO msg=mined consumer=csi-test pin_moves=6 to_compile=6 skipped=map[]
+time=2026-10-21T08:55:32.484Z level=INFO msg=canary consumer=csi-test at=91e2c3af078cad8456d2850bbc00921afbf21861^ outcome=breaks detail="canary: github.com/container-storage-interface/spec/lib/go/csi removed."
+time=2026-10-21T08:55:34.910Z level=INFO msg=window consumer=csi-test bump=91e2c3af select=breaking breaking=2 compiler=compiles
+time=2026-10-21T08:55:46.604Z level=INFO msg=window consumer=csi-test bump=70e0e18c select=breaking breaking=17 compiler=compiles
+time=2026-10-21T08:55:46.656Z level=INFO msg=window consumer=csi-test bump=7a77a229 select=breaking breaking=1 compiler=breaks
+time=2026-10-21T08:56:02.687Z level=INFO msg=window consumer=csi-test bump=ae8a63a7 select=breaking breaking=6 compiler=breaks
+time=2026-10-21T08:56:04.304Z level=INFO msg=window consumer=csi-test bump=03160373 select=breaking breaking=7 compiler=breaks
+time=2026-10-21T08:56:10.977Z level=INFO msg=window consumer=csi-test bump=41ada7f4 select=additive breaking=0 compiler=breaks
+time=2026-10-21T08:56:10.977Z level=INFO msg="suite built" suite=csi-new windows_added=6
