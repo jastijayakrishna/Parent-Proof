@@ -1,0 +1,647 @@
+{
+ "verdict": "NO_GO",
+ "aspects": {
+  "generated_code": "GO",
+  "runtime": "NO_GO",
+  "source_build": "GO"
+ },
+ "changes": 10,
+ "go_only": null,
+ "contract_files": 2,
+ "provider_api_error": null,
+ "findings": [
+  {
+   "rule": "PROTO_FIELD_TYPE_CHANGED_USED_BY_CALLER",
+   "outcome": "NO_GO",
+   "aspect": "runtime",
+   "symbol": {
+    "kind": "field",
+    "name": "tfplugin5.CallFunction.Response.#2"
+   },
+   "reason": null,
+   "detail": "the field's wire encoding changed; old and new binaries will misparse each other's messages"
+  },
+  {
+   "rule": "PROTO_FIELD_REMOVED_WRITTEN_BY_CALLER",
+   "outcome": "NO_GO",
+   "aspect": "runtime",
+   "symbol": {
+    "kind": "field",
+    "name": "tfplugin5.Diagnostic.#5"
+   },
+   "reason": null,
+   "detail": "caller sends a field the new provider ignores as unknown; data is dropped silently"
+  },
+  {
+   "rule": "PROTO_FIELD_TYPE_CHANGED_USED_BY_CALLER",
+   "outcome": "NO_GO",
+   "aspect": "runtime",
+   "symbol": {
+    "kind": "field",
+    "name": "tfplugin6.CallFunction.Response.#2"
+   },
+   "reason": null,
+   "detail": "the field's wire encoding changed; old and new binaries will misparse each other's messages"
+  },
+  {
+   "rule": "PROTO_FIELD_REMOVED_WRITTEN_BY_CALLER",
+   "outcome": "NO_GO",
+   "aspect": "runtime",
+   "symbol": {
+    "kind": "field",
+    "name": "tfplugin6.Diagnostic.#5"
+   },
+   "reason": null,
+   "detail": "caller sends a field the new provider ignores as unknown; data is dropped silently"
+  }
+ ],
+ "callers": [
+  {
+   "unit": "terraform-plugin-sdk",
+   "outcome": "NO_GO"
+  }
+ ],
+ "provider_api_facts": {
+  "version": "goapi/v2",
+  "modules": {
+   "github.com/hashicorp/go-plugin": "",
+   "github.com/hashicorp/terraform-plugin-go": "."
+  },
+  "decls": "{\"github.com/hashicorp/terraform-plugin-go/tfprotov5.ProviderServer\": {\"head\": true, \"base\": true, \"methods\": [\"ApplyResourceChange\", \"ConfigureProvider\", \"GetMetadata\", \"GetProviderSchema\", \"ImportResourceState\", \"PlanResourceChange\", \"PrepareProviderConfig\", \"ReadDataSource\", \"ReadResource\", \"StopProvider\", \"UpgradeResourceState\", \"ValidateDataSourceConfig\", \"ValidateResourceTypeConfig\"]}, \"gith"
+ },
+ "caller_provider_api_uses": 41,
+ "caller_provider_api_sample": [
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "GRPCBroker",
+   "location": {
+    "file": "github.com/hashicorp/terraform-plugin-go@v0.21.0/tfprotov5/tf5server/plugin.go",
+    "line": 41,
+    "column": 66
+   },
+   "snippet": "protocol d",
+   "count": 4,
+   "in": "github.com/hashicorp/terraform-plugin-go@v0.21.0"
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "HandshakeConfig",
+   "location": {
+    "file": "plugin/serve.go",
+    "line": 34,
+    "column": 24
+   },
+   "snippet": "HandshakeConfig",
+   "count": 1
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "HandshakeConfig",
+   "location": {
+    "file": "github.com/hashicorp/terraform-plugin-go@v0.21.0/tfprotov5/tf5server/server.go",
+    "line": 258,
+    "column": 27
+   },
+   "snippet": "HandshakeConfig",
+   "count": 2,
+   "in": "github.com/hashicorp/terraform-plugin-go@v0.21.0"
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "MuxBroker",
+   "location": {
+    "file": "github.com/hashicorp/terraform-plugin-go@v0.21.0/tfprotov5/tf5server/plugin.go",
+    "line": 29,
+    "column": 45
+   },
+   "snippet": "mitchellh",
+   "count": 4,
+   "in": "github.com/hashicorp/terraform-plugin-go@v0.21.0"
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "PluginSet",
+   "location": {
+    "file": "github.com/hashicorp/terraform-plugin-go@v0.21.0/tfprotov5/tf5server/server.go",
+    "line": 263,
+    "column": 19
+   },
+   "snippet": "PluginSet",
+   "count": 2,
+   "in": "github.com/hashicorp/terraform-plugin-go@v0.21.0"
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ReattachConfig",
+   "member": "Addr",
+   "location": {
+    "file": "plugin/debug.go",
+    "line": 66,
+    "column": 20
+   },
+   "snippet": "// Debug st",
+   "count": 2
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ReattachConfig",
+   "member": "Addr",
+   "location": {
+    "file": "github.com/hashicorp/terraform-plugin-go@v0.21.0/tfprotov5/tf5server/server.go",
+    "line": 356,
+    "column": 35
+   },
+   "snippet": "pluginReattachConfig.Addr",
+   "count": 4,
+   "in": "github.com/hashicorp/terraform-plugin-go@v0.21.0"
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ReattachConfig",
+   "member": "Pid",
+   "location": {
+    "file": "plugin/debug.go",
+    "line": 63,
+    "column": 27
+   },
+   "snippet": "derV6Func",
+   "count": 1
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ReattachConfig",
+   "member": "Pid",
+   "location": {
+    "file": "github.com/hashicorp/terraform-plugin-go@v0.21.0/tfprotov5/tf5server/server.go",
+    "line": 353,
+    "column": 42
+   },
+   "snippet": "pluginReattachConfig.Pid",
+   "count": 2,
+   "in": "github.com/hashicorp/terraform-plugin-go@v0.21.0"
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ReattachConfig",
+   "member": "ProtocolVersion",
+   "location": {
+    "file": "plugin/debug.go",
+    "line": 62,
+    "column": 27
+   },
+   "snippet": "ProviderFunc ...",
+   "count": 1
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ReattachConfig",
+   "member": "ProtocolVersion",
+   "location": {
+    "file": "github.com/hashicorp/terraform-plugin-go@v0.21.0/tfprotov5/tf5server/server.go",
+    "line": 352,
+    "column": 42
+   },
+   "snippet": "pluginReattachConfig.ProtocolVersion",
+   "count": 2,
+   "in": "github.com/hashicorp/terraform-plugin-go@v0.21.0"
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ReattachConfig",
+   "member": "Protocol",
+   "location": {
+    "file": "plugin/debug.go",
+    "line": 61,
+    "column": 34
+   },
+   "snippet": "when possible.",
+   "count": 1
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ReattachConfig",
+   "member": "Protocol",
+   "location": {
+    "file": "github.com/hashicorp/terraform-plugin-go@v0.21.0/tfprotov5/tf5server/server.go",
+    "line": 351,
+    "column": 49
+   },
+   "snippet": "pluginReattachConfig.Protocol",
+   "count": 2,
+   "in": "github.com/hashicorp/terraform-plugin-go@v0.21.0"
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ReattachConfig",
+   "member": "Test",
+   "location": {
+    "file": "plugin/debug.go",
+    "line": 64,
+    "column": 27
+   },
+   "snippet": "gger that g",
+   "count": 1
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ReattachConfig",
+   "member": "Test",
+   "location": {
+    "file": "github.com/hashicorp/terraform-plugin-go@v0.21.0/tfprotov5/tf5server/server.go",
+    "line": 354,
+    "column": 42
+   },
+   "snippet": "pluginReattachConfig.Test",
+   "count": 2,
+   "in": "github.com/hashicorp/terraform-plugin-go@v0.21.0"
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ReattachConfig",
+   "location": {
+    "file": "plugin/debug.go",
+    "line": 34,
+    "column": 34
+   },
+   "snippet": "is no longer",
+   "count": 4
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ReattachConfig",
+   "location": {
+    "file": "github.com/hashicorp/terraform-plugin-go@v0.21.0/tfprotov5/tf5server/server.go",
+    "line": 100,
+    "column": 28
+   },
+   "snippet": "ReattachConfig",
+   "count": 8,
+   "in": "github.com/hashicorp/terraform-plugin-go@v0.21.0"
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "Serve",
+   "location": {
+    "file": "github.com/hashicorp/terraform-plugin-go@v0.21.0/tfprotov5/tf5server/server.go",
+    "line": 315,
+    "column": 10
+   },
+   "snippet": "Serve",
+   "count": 4,
+   "in": "github.com/hashicorp/terraform-plugin-go@v0.21.0"
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ServeConfig",
+   "member": "Logger",
+   "location": {
+    "file": "github.com/hashicorp/terraform-plugin-go@v0.21.0/tfprotov5/tf5server/server.go",
+    "line": 279,
+    "column": 15
+   },
+   "snippet": "serveConfig.Logger",
+   "count": 2,
+   "in": "github.com/hashicorp/terraform-plugin-go@v0.21.0"
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ServeConfig",
+   "member": "Test",
+   "location": {
+    "file": "github.com/hashicorp/terraform-plugin-go@v0.21.0/tfprotov5/tf5server/server.go",
+    "line": 307,
+    "column": 15
+   },
+   "snippet": "serveConfig.Test",
+   "count": 2,
+   "in": "github.com/hashicorp/terraform-plugin-go@v0.21.0"
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ServeConfig",
+   "location": {
+    "file": "github.com/hashicorp/terraform-plugin-go@v0.21.0/tfprotov5/tf5server/server.go",
+    "line": 257,
+    "column": 25
+   },
+   "snippet": "ServeConfig",
+   "count": 2,
+   "in": "github.com/hashicorp/terraform-plugin-go@v0.21.0"
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ServeTestConfig",
+   "member": "CloseCh",
+   "location": {
+    "file": "plugin/serve.go",
+    "line": 166,
+    "column": 20
+   },
+   "snippet": "opts.TestConfig.CloseCh",
+   "count": 2
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ServeTestConfig",
+   "member": "Context",
+   "location": {
+    "file": "plugin/serve.go",
+    "line": 178,
+    "column": 20
+   },
+   "snippet": "opts.TestConfig.Context",
+   "count": 2
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ServeTestConfig",
+   "member": "ReattachConfigCh",
+   "location": {
+    "file": "plugin/serve.go",
+    "line": 173,
+    "column": 21
+   },
+   "snippet": "opts.TestConfig.ReattachConfigCh",
+   "count": 2
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ServeTestConfig",
+   "location": {
+    "file": "plugin/debug.go",
+    "line": 41,
+    "column": 28
+   },
+   "snippet": "PLUGIN_MAGIC_CO",
+   "count": 2
+  },
+  {
+   "module": "github.com/hashicorp/go-plugin",
+   "version": "v1.6.0",
+   "package": "github.com/hashicorp/go-plugin",
+   "name": "ServeTestConfig",
+   "location": {
+    "file": "github.com/hashicorp/terraform-plugin-go@v0.21.0/tfprotov5/tf5server/server.go",
+    "line": 307,
+    "column": 30
+   },
+   "snippet": "ServeTestConfig",
+   "count": 2,
+   "in": "github.com/hashicorp/terraform-plugin-go@v0.21.0"
+  },
+  {
+   "module": "github.com/hashicorp/terraform-plugin-go",
+   "version": "v0.21.0",
+   "package": "github.com/hashicorp/terraform-plugin-go/tfprotov5",
+   "name": "ProviderServer",
+   "location": {
+    "file": "helper/resource/plugin.go",
+    "line": 27,
+    "column": 47
+   },
+   "snippet": "t.Context) boo",
+   "count": 8
+  },
+  {
+   "module": "github.com/hashicorp/terraform-plugin-go",
+   "version": "v0.21.0",
+   "package": "github.com/hashicorp/terraform-plugin-go/tfprotov5",
+   "name": "ProviderServer",
+   "implements": {
+    "type": "github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema.GRPCProviderServer",
+    "methods": [
+     "ApplyResourceChange",
+     "CallFunction",
+     "ConfigureProvider",
+     "GetFunctions",
+     "GetMetadata",
+     "GetProviderSchema",
+     "ImportResourceState",
+     "MoveResourceState",
+     "PlanResourceChange",
+     "PrepareProviderConfig",
+     "ReadDataSource",
+     "ReadResource",
+     "StopContext",
+     "StopProvider",
+     "UpgradeResourceState",
+     "ValidateDataSourceConfig",
+     "ValidateResourceTypeConfig"
+    ]
+   },
+   "location": {
+    "file": "helper/resource/plugin.go",
+    "line": 205,
+    "column": 12
+   },
+   "snippet": "grpcProviderServer",
+   "count": 2
+  },
+  {
+   "module": "github.com/hashicorp/terraform-plugin-go",
+   "version": "v0.21.0",
+   "package": "github.com/hashicorp/terraform-plugin-go/tfprotov5/tf5server",
+   "name": "Serve",
+   "location": {
+    "file": "plugin/serve.go",
+    "line": 188,
+    "column": 19
+   },
+   "snippet": "Serve",
+   "count": 1
+  },
+  {
+   "module": "github.com/hashicorp/terraform-plugin-go",
+   "version": "v0.21.0",
+   "package": "github.com/hashicorp/terraform-plugin-go/tfprotov5/tf5server",
+   "name": "ServeOpt",
+   "location": {
+    "file": "plugin/serve.go",
+    "line": 143,
+    "column": 31
+   },
+   "snippet": "ServeOpt",
+   "count": 1
+  },
+  {
+   "module": "github.com/hashicorp/terraform-plugin-go",
+   "version": "v0.21.0",
+   "package": "github.com/hashicorp/terraform-plugin-go/tfprotov5/tf5server",
+   "name": "WithDebug",
+   "location": {
+    "file": "plugin/serve.go",
+    "line": 177,
+    "column": 49
+   },
+   "snippet": "WithDebug",
+   "count": 1
+  },
+  {
+   "module": "github.com/hashicorp/terraform-plugin-go",
+   "version": "v0.21.0",
+   "package": "github.com/hashicorp/terraform-plugin-go/tfprotov5/tf5server",
+   "name": "WithGoPluginLogger",
+   "location": {
+    "file": "plugin/serve.go",
+    "line": 150,
+    "column": 49
+   },
+   "snippet": "WithGoPluginLogger",
+   "count": 1
+  },
+  {
+   "module": "github.com/hashicorp/terraform-plugin-go",
+   "version": "v0.21.0",
+   "package": "github.com/hashicorp/terraform-plugin-go/tfprotov5/tf5server",
+   "name": "WithLoggingSink",
+   "location": {
+    "file": "plugin/serve.go",
+    "line": 185,
+    "column": 49
+   },
+   "snippet": "WithLoggingSink",
+   "count": 1
+  },
+  {
+   "module": "github.com/hashicorp/terraform-plugin-go",
+   "version": "v0.21.0",
+   "package": "github.com/hashicorp/terraform-plugin-go/tfprotov5/tf5server",
+   "name": "WithManagedDebug",
+   "location": {
+    "file": "plugin/serve.go",
+    "line": 146,
+    "column": 49
+   },
+   "snippet": "WithManagedDebug",
+   "count": 1
+  },
+  {
+   "module": "github.com/hashicorp/terraform-plugin-go",
+   "version": "v0.21.0",
+   "package": "github.com/hashicorp/terraform-plugin-go/tfprotov6",
+   "name": "ProviderServer",
+   "location": {
+    "file": "helper/resource/plugin.go",
+    "line": 55,
+    "column": 47
+   },
+   "snippet": "l. ...",
+   "count": 6
+  },
+  {
+   "module": "github.com/hashicorp/terraform-plugin-go",
+   "version": "v0.21.0",
+   "package": "github.com/hashicorp/terraform-plugin-go/tfprotov6/tf6server",
+   "name": "Serve",
+   "location": {
+    "file": "plugin/serve.go",
+    "line": 237,
+    "column": 19
+   },
+   "snippet": "Serve",
+   "count": 1
+  },
+  {
+   "module": "github.com/hashicorp/terraform-plugin-go",
+   "version": "v0.21.0",
+   "package": "github.com/hashicorp/terraform-plugin-go/tfprotov6/tf6server",
+   "name": "ServeOpt",
+   "location": {
+    "file": "plugin/serve.go",
+    "line": 192,
+    "column": 31
+   },
+   "snippet": "ServeOpt",
+   "count": 1
+  },
+  {
+   "module": "github.com/hashicorp/terraform-plugin-go",
+   "version": "v0.21.0",
+   "package": "github.com/hashicorp/terraform-plugin-go/tfprotov6/tf6server",
+   "name": "WithDebug",
+   "location": {
+    "file": "plugin/serve.go",
+    "line": 226,
+    "column": 49
+   },
+   "snippet": "WithDebug",
+   "count": 1
+  },
+  {
+   "module": "github.com/hashicorp/terraform-plugin-go",
+   "version": "v0.21.0",
+   "package": "github.com/hashicorp/terraform-plugin-go/tfprotov6/tf6server",
+   "name": "WithGoPluginLogger",
+   "location": {
+    "file": "plugin/serve.go",
+    "line": 199,
+    "column": 49
+   },
+   "snippet": "WithGoPluginLogger",
+   "count": 1
+  },
+  {
+   "module": "github.com/hashicorp/terraform-plugin-go",
+   "version": "v0.21.0",
+   "package": "github.com/hashicorp/terraform-plugin-go/tfprotov6/tf6server",
+   "name": "WithLoggingSink",
+   "location": {
+    "file": "plugin/serve.go",
+    "line": 234,
+    "column": 49
+   },
+   "snippet": "WithLoggingSink",
+   "count": 1
+  }
+ ]
+}
