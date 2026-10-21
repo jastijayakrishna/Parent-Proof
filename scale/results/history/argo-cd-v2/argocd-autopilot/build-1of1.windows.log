@@ -1,0 +1,8 @@
+time=2026-10-21T09:10:30.392Z level=INFO msg=mined consumer=argocd-autopilot pin_moves=6 to_compile=6 skipped=map[]
+time=2026-10-21T09:12:16.372Z level=INFO msg=canary consumer=argocd-autopilot at=8788c40cca35fe3f13ac14228817a9527761623b^ outcome=breaks detail="canary: github.com/argoproj/argo-cd/v2/pkg/apis/application/v1alpha1 removed."
+time=2026-10-21T09:12:41.126Z level=INFO msg=window consumer=argocd-autopilot bump=8788c40c select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:13.634Z level=INFO msg=window consumer=argocd-autopilot bump=9646e4c2 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:18:35.672Z level=INFO msg=window consumer=argocd-autopilot bump=c910b91c select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:18:41.850Z level=INFO msg=window consumer=argocd-autopilot bump=1b878547 select=additive breaking=0 compiler=bump_side_effect
+time=2026-10-21T09:21:52.573Z level=INFO msg=window consumer=argocd-autopilot bump=27048d78 select=additive breaking=0 compiler=bump_side_effect
+time=2026-10-21T09:22:05.750Z level=INFO msg=window consumer=argocd-autopilot bump=da9b57c4 select=additive breaking=0 compiler=breaks
