@@ -1,0 +1,12 @@
+time=2026-10-21T08:52:12.242Z level=INFO msg=mined consumer=aws-encryption-provider pin_moves=10 to_compile=10 skipped=map[]
+time=2026-10-21T08:52:39.851Z level=INFO msg=canary consumer=aws-encryption-provider at=e85c2546d476b78c073bedeb5bdea201971ec040^ outcome=breaks detail="canary: k8s.io/kms/apis/v1beta1 removed."
+time=2026-10-21T08:52:53.994Z level=INFO msg=window consumer=aws-encryption-provider bump=e85c2546 select=breaking breaking=9 compiler=compiles
+time=2026-10-21T08:52:57.508Z level=INFO msg=window consumer=aws-encryption-provider bump=0ede4e55 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:53:10.341Z level=INFO msg=window consumer=aws-encryption-provider bump=e08d7014 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:53:11.290Z level=INFO msg=window consumer=aws-encryption-provider bump=aa366759 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:53:23.236Z level=INFO msg=window consumer=aws-encryption-provider bump=d55cc6b5 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:53:24.454Z level=INFO msg=window consumer=aws-encryption-provider bump=5ea85bbe select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:53:25.372Z level=INFO msg=window consumer=aws-encryption-provider bump=18b4b65b select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:53:49.673Z level=INFO msg=window consumer=aws-encryption-provider bump=e3279814 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:54:01.700Z level=INFO msg=window consumer=aws-encryption-provider bump=e5ed52bf select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T08:54:09.860Z level=INFO msg=window consumer=aws-encryption-provider bump=20d8ca0b select=unchanged breaking=0 compiler=compiles
