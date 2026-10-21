@@ -1,5 +1,5 @@
-# rerun 2026-10-21: binary main f3db8e9 (scale test), part 1/4
+# rerun 2026-10-21: binary main f3db8e9 (scale test), part 2/4
 set=all
 only=
 modes=history,scan
-part=1/4
+part=2/4
