@@ -1,0 +1,16 @@
+time=2026-10-21T09:13:23.669Z level=INFO msg=mined consumer=istio-client-go pin_moves=40 to_compile=14 skipped=map[]
+time=2026-10-21T09:14:04.283Z level=INFO msg=canary consumer=istio-client-go at=0382ab2d50dfb6fc4f76dc489a72ea2aec9122a4^ outcome=breaks detail="canary: istio.io/api/meta/v1alpha1 removed."
+time=2026-10-21T09:14:14.535Z level=INFO msg=window consumer=istio-client-go bump=0382ab2d select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:16.879Z level=INFO msg=window consumer=istio-client-go bump=0f8b6a79 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:26.220Z level=INFO msg=window consumer=istio-client-go bump=15cb8cea select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:29.238Z level=INFO msg=window consumer=istio-client-go bump=2db25f57 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:14:38.227Z level=INFO msg=window consumer=istio-client-go bump=3a2d7266 select=breaking breaking=1 compiler=compiles
+time=2026-10-21T09:14:41.503Z level=INFO msg=window consumer=istio-client-go bump=4eb82353 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:14:50.897Z level=INFO msg=window consumer=istio-client-go bump=6503a3d6 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:14:53.409Z level=INFO msg=window consumer=istio-client-go bump=80686f49 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:02.791Z level=INFO msg=window consumer=istio-client-go bump=99e880a7 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:05.588Z level=INFO msg=window consumer=istio-client-go bump=afab21d5 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:12.885Z level=INFO msg=window consumer=istio-client-go bump=c6b098ca select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:14.723Z level=INFO msg=window consumer=istio-client-go bump=bf213183 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:22.112Z level=INFO msg=window consumer=istio-client-go bump=dac5464d select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:24.566Z level=INFO msg=window consumer=istio-client-go bump=e7eec3a8 select=unchanged breaking=0 compiler=compiles
