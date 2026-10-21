@@ -1,0 +1,51 @@
+time=2026-10-21T09:25:24.952Z level=INFO msg=cloning repo=p-vitess url=https://github.com/vitessio/vitess.git
+time=2026-10-21T09:25:28.789Z level=INFO msg=cloning repo=c-vitess url=https://github.com/planetscale/vitess-operator.git
+vitess      7988b033 UNKNOWN  source_build=UNKNOWN compiler=compiles          199.9s 
+vitess      10bc300c UNKNOWN  source_build=UNKNOWN compiler=compiles          132.1s 
+vitess      a240ed6c UNKNOWN  source_build=UNKNOWN compiler=compiles           63.2s 
+vitess      4689ec4d UNKNOWN  source_build=UNKNOWN compiler=compiles           30.8s 
+vitess      e7ea4792 UNKNOWN  source_build=UNKNOWN compiler=compiles           52.8s 
+vitess      2265cacb UNKNOWN  source_build=UNKNOWN compiler=compiles           58.2s 
+vitess      01a25a7d UNKNOWN  source_build=UNKNOWN compiler=compiles           63.3s 
+vitess      25b34575 UNKNOWN  source_build=UNKNOWN compiler=compiles           63.8s 
+vitess      18dc5a3c UNKNOWN  source_build=UNKNOWN compiler=compiles           63.5s 
+vitess      4425351c UNKNOWN  source_build=UNKNOWN compiler=compiles           24.5s 
+vitess      43fb69ff UNKNOWN  source_build=UNKNOWN compiler=compiles           63.6s 
+vitess      e2e08e89 UNKNOWN  source_build=UNKNOWN compiler=compiles           68.5s 
+vitess      638053b1 UNKNOWN  source_build=UNKNOWN compiler=compiles           67.7s 
+vitess      0c4cf11d UNKNOWN  source_build=UNKNOWN compiler=compiles           53.6s 
+vitess      3da1db26 UNKNOWN  source_build=UNKNOWN compiler=compiles           55.6s 
+vitess      bc7bb3c3 UNKNOWN  source_build=UNKNOWN compiler=compiles           68.4s 
+vitess      9a3646f7 UNKNOWN  source_build=UNKNOWN compiler=compiles           74.9s 
+vitess      a610566b UNKNOWN  source_build=UNKNOWN compiler=compiles           64.2s 
+vitess      8f5a43e4 UNKNOWN  source_build=UNKNOWN compiler=compiles           60.8s 
+vitess      422379fa UNKNOWN  source_build=UNKNOWN compiler=compiles           72.2s 
+vitess        20 decisions  GO   0  NO-GO   0  UNKNOWN  20 (100.0%)  errors 0 | compiler judged  20: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 20 | not judged 0
+TOTAL         20 decisions  GO   0  NO-GO   0  UNKNOWN  20 (100.0%)  errors 0 | compiler judged  20: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 20 | not judged 0
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+   20   1  TOOLCHAIN_TOO_OLD (e.g. vitess@7988b03312d3dd7106bb94cf8c9151d8fc92e351)
+  FAILED vitess@7988b03312d3dd7106bb94cf8c9151d8fc92e351: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@10bc300cf82449a50e52cfe6785d15c41b1992d2: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@a240ed6c4bf6aae24b6f4a0b4c14bf2f5dd85aa5: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@4689ec4dd9d06b3425ab2f5a0e1d107c675dcd02: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@e7ea47920d0d75db281dbd3c3eb5c768f054e473: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@2265cacb30bb90a4cc2441ef5c017c8dd81fc62e: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@01a25a7d176f94613b8d59d799f438380a8760e4: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@25b34575545421227bd2d89ffc040fd218a036fb: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@18dc5a3cbf533f040713204e970ecc4da61c86a5: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@4425351c3c47c9adf83f284cf8adadd9ea633fb8: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@43fb69ff245491bd89d4d883328a7a54e00c13d5: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@e2e08e891122314d532570e1e45b5e9e882d035c: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@638053b1e232cf5343707b9aaac0f682e3a4370c: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@0c4cf11d8cbb358dd795838ee6767aa6d2ea0ac3: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@3da1db263a6124344f3448500c58ae9337dc7178: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@bc7bb3c360dcc6486fff7e5a4aa513cfd6cdde9e: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@9a3646f7f16d38cec2efabc13cef5da800a72280: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@a610566bf72d7dcc4b9b098b64cba6fb3d4641ec: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@8f5a43e40a13b7833295977a1b650390a1db76bb: unknown_on_safe: TOOLCHAIN_TOO_OLD
+  FAILED vitess@422379fadcec1da42fe360133760526d789c9941: unknown_on_safe: TOOLCHAIN_TOO_OLD
+
+20 windows in 23m26s.
+verifier gate: scan failed: 20 disagreements with the compiler or errors
+exit 1 seconds 1407
