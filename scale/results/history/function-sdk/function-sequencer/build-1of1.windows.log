@@ -1,0 +1,7 @@
+time=2026-10-21T08:52:08.581Z level=INFO msg=mined consumer=function-sequencer pin_moves=5 to_compile=5 skipped=map[]
+time=2026-10-21T08:52:42.126Z level=INFO msg=canary consumer=function-sequencer at=60a60f247d460fc8ec66c450393b869b5017c156^ outcome=breaks detail="canary: github.com/crossplane/function-sdk-go/proto/v1beta1 removed."
+time=2026-10-21T08:53:15.833Z level=INFO msg=window consumer=function-sequencer bump=60a60f24 select=breaking breaking=1 compiler=breaks
+time=2026-10-21T08:53:19.451Z level=INFO msg=window consumer=function-sequencer bump=6f429f12 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:53:44.842Z level=INFO msg=window consumer=function-sequencer bump=4a5e15ff select=unchanged breaking=0 compiler=bump_side_effect
+time=2026-10-21T08:54:07.207Z level=INFO msg=window consumer=function-sequencer bump=301f2847 select=unchanged breaking=0 compiler=bump_side_effect
+time=2026-10-21T08:54:15.698Z level=INFO msg=window consumer=function-sequencer bump=a68d6a41 select=additive breaking=0 compiler=compiles
