@@ -1,6 +1,6 @@
 # History: real upgrades, judged by the compiler
 
-Updated 2026-10-06 14:05 UTC.
+Updated 2026-10-21 08:18 UTC.
 
 Every row is one upgrade a project really made of a contract module it
 uses, mined from its git history. The Go compiler builds the project's code
@@ -18,7 +18,7 @@ was used to tune the verifier.
 
 | upgrades | judge not verified | broke the build | caught | missed | safe | said Merge | false alarm | needs review |
 |---|---|---|---|---|---|---|---|---|
-| 178 | 0 | 24 | 21 | 0 | 148 | 125 | 1 | 25 |
+| 179 | 0 | 24 | 21 | 0 | 149 | 126 | 1 | 25 |
 
 ## By project
 
@@ -32,7 +32,7 @@ was used to tune the verifier.
 | milvus -> milvus-client | 25 | 2 | 1 | 0 | 0 | 4 |
 | milvus -> milvus-sdk-go | 13 | 0 | 0 | 0 | 0 | 4 |
 | otlp -> otel-go | 14 | 0 | 0 | 0 | 0 | 10 |
-| tipb -> tidb | 17 | 6 | 6 | 0 | 0 | 1 |
+| tipb -> tidb | 18 | 6 | 6 | 0 | 0 | 1 |
 
 ## Every break, miss, false alarm and needs-review
 
@@ -79,9 +79,9 @@ was used to tune the verifier.
 | otlp -> otel-go | v1.1.0 -> v1.2.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE, AMBIENT_GENERATED_UNREAD |
 | otlp -> otel-go | v1.0.0 -> v1.1.0 | compiles | Needs review (Needs review) | GENERATED_BINDINGS_UNAVAILABLE, AMBIENT_GENERATED_UNREAD |
 | tipb -> tidb | v0.0.0-20250513092957-b555ca3fc078 -> v0.0.0-20250529123214-bb8180a479ec | breaks | Don't merge (Don't merge) | WHOLE_MESSAGE_FLOW, NEEDS_REVIEW |
+| tipb -> tidb | v0.0.0-20241212101007-246f91188357 -> v0.0.0-20250321085733-a91a8fafd4ed | breaks | Don't merge (Don't merge) | WHOLE_MESSAGE_FLOW |
 | tipb -> tidb | v0.0.0-20240823074000-a40c2347786e -> v0.0.0-20240919023442-cf70966bef25 | breaks | Don't merge (Don't merge) | NEEDS_REVIEW, WHOLE_MESSAGE_FLOW |
 | tipb -> tidb | v0.0.0-20230523034258-1bbc3bbbd369 -> v0.0.0-20230602100112-acb7942db1ca | breaks | Don't merge (Don't merge) |  |
 | tipb -> tidb | v0.0.0-20240305085524-87f5b80908ab -> v0.0.0-20240318032315-55a7867ddd50 | breaks | Don't merge (Don't merge) | WHOLE_MESSAGE_FLOW |
 | tipb -> tidb | v0.0.0-20241022082558-0607513e7fa4 -> v0.0.0-20241105053214-f91fdb81a69e | compiles | Needs review (Needs review) | OPTION_CHANGED |
 | tipb -> tidb | v0.0.0-20250321085733-a91a8fafd4ed -> v0.0.0-20250331100511-d2c561dad347 | breaks | Don't merge (Don't merge) | WHOLE_MESSAGE_FLOW |
-| tipb -> tidb | v0.0.0-20241212101007-246f91188357 -> v0.0.0-20250321085733-a91a8fafd4ed | breaks | Don't merge (Don't merge) | WHOLE_MESSAGE_FLOW |
