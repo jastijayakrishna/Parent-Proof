@@ -1,0 +1,10 @@
+time=2026-10-21T08:44:48.178Z level=INFO msg=cloning repo=pulumi-v3 url=https://github.com/pulumi/pulumi.git
+time=2026-10-21T08:45:04.866Z level=INFO msg=cloning repo=pulumi-go-provider url=https://github.com/pulumi/pulumi-go-provider.git
+time=2026-10-21T08:45:30.811Z level=INFO msg=mined consumer=pulumi-go-provider pin_moves=40 to_compile=5 skipped=map[]
+time=2026-10-21T08:46:01.726Z level=INFO msg=canary consumer=pulumi-go-provider at=02affded5d81f6d5ef420fba18a5df7a0b233e91^ outcome=compiles detail="canary: github.com/pulumi/pulumi/sdk/v3/proto/go removed."
+time=2026-10-21T08:46:04.847Z level=INFO msg=window consumer=pulumi-go-provider bump=02affded select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:47:03.904Z level=INFO msg=window consumer=pulumi-go-provider bump=28d8c867 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:47:06.394Z level=INFO msg=window consumer=pulumi-go-provider bump=579696be select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:47:56.024Z level=INFO msg=window consumer=pulumi-go-provider bump=bf55f7db select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:47:56.243Z level=INFO msg=window consumer=pulumi-go-provider bump=ee63ece0 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:47:56.243Z level=INFO msg="suite built" suite=pulumi windows_added=5
