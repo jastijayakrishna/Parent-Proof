@@ -1,0 +1,40 @@
+time=2026-10-21T09:19:17.037Z level=INFO msg=cloning repo=p-apm-data url=https://github.com/elastic/apm-data.git
+time=2026-10-21T09:19:17.646Z level=INFO msg=cloning repo=c-apm-data url=https://github.com/elastic/apm-server.git
+apm-data    1b2eff2b GO       source_build=GO      compiler=compiles          151.3s 
+apm-data    939dec97 GO       source_build=GO      compiler=compiles           17.5s 
+apm-data    5179047c GO       source_build=GO      compiler=compiles           16.2s 
+apm-data    e5d03356 GO       source_build=GO      compiler=compiles           15.8s 
+apm-data    668fa483 GO       source_build=GO      compiler=compiles           17.1s 
+apm-data    1bb8a93f GO       source_build=GO      compiler=compiles           15.6s 
+apm-data    48e4b205 NO_GO    source_build=NO_GO   compiler=compiles           12.2s 
+apm-data    a636758c NO_GO    source_build=NO_GO   compiler=compiles           10.1s 
+apm-data    31428f0f NO_GO    source_build=NO_GO   compiler=compiles           10.7s 
+apm-data    a8a43258 NO_GO    source_build=GO      compiler=compiles           12.8s 
+apm-data    b61afc50 NO_GO    source_build=UNKNOWN compiler=compiles           11.1s 
+apm-data    e5765b8f NO_GO    source_build=NO_GO   compiler=compiles            9.5s 
+apm-data    ae4dc1ee UNKNOWN  source_build=UNKNOWN compiler=compiles           10.0s 
+apm-data    43edca79 GO       source_build=GO      compiler=compiles            9.0s 
+apm-data    1704f25f NO_GO    source_build=UNKNOWN compiler=compiles            9.4s 
+apm-data    6c45a893 NO_GO    source_build=GO      compiler=compiles            9.2s 
+apm-data    6dfa24cb GO       source_build=GO      compiler=compiles            9.9s 
+apm-data    e3ce8361 NO_GO    source_build=GO      compiler=compiles            9.1s 
+apm-data    64d161ee NO_GO    source_build=GO      compiler=baseline_fails      7.7s 
+apm-data    6ef8c812 NO_GO    source_build=NO_GO   compiler=baseline_fails      6.4s 
+apm-data      20 decisions  GO   8  NO-GO  11  UNKNOWN   1 ( 5.0%)  errors 0 | compiler judged  18: agree  11  WRONG_GO 0  FALSE_NOGO 4  UNKNOWN 3 | not judged 2
+TOTAL         20 decisions  GO   8  NO-GO  11  UNKNOWN   1 ( 5.0%)  errors 0 | compiler judged  18: agree  11  WRONG_GO 0  FALSE_NOGO 4  UNKNOWN 3 | not judged 2
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    5   1  WHOLE_MESSAGE_FLOW (e.g. apm-data@b61afc507e0fa13818aec8393a0804a0c33feac1)
+    4   1  UNRESOLVED_MEMBER (e.g. apm-data@a636758ca08d02499994eb62121429153e3ae9c5)
+    2   1  NEEDS_REVIEW (e.g. apm-data@31428f0fc5e35707de044c19b5be8de7d3187e40)
+  FAILED apm-data@48e4b20579f65594692c21eb3ade2213955778a7: false_nogo: github.com/elastic/apm-aggregation@v1.5.1/aggregators/converter.go:554, github.com/elastic/apm-aggregation@v1.5.1/aggregators/converter.go:565, github.com/elastic/apm-aggregation@v1.5.1/aggregators/converter.go:868
+  FAILED apm-data@a636758ca08d02499994eb62121429153e3ae9c5: false_nogo: github.com/elastic/apm-aggregation@v1.5.1/aggregators/converter.go:328, github.com/elastic/apm-aggregation@v1.5.1/aggregators/converter.go:351, github.com/elastic/apm-aggregation@v1.5.1/aggregators/converter.go:573
+  FAILED apm-data@31428f0fc5e35707de044c19b5be8de7d3187e40: false_nogo: github.com/elastic/apm-aggregation@v1.5.1/aggregators/converter.go:652, github.com/elastic/apm-aggregation@v1.5.1/aggregators/converter.go:815, github.com/elastic/apm-data@v1.22.2/input/elasticapm/internal/modeldecoder/v2/decoder.go:731
+  FAILED apm-data@b61afc507e0fa13818aec8393a0804a0c33feac1: unknown_on_safe: UNRESOLVED_MEMBER, WHOLE_MESSAGE_FLOW
+  FAILED apm-data@e5765b8f8d8992d4360231ce86d5f57a8d637366: false_nogo: github.com/elastic/apm-data@v1.22.2/input/elasticapm/internal/modeldecoder/v2/decoder.go:265, github.com/elastic/apm-data@v1.22.2/input/elasticapm/internal/modeldecoder/v2/decoder.go:271, github.com/elastic/apm-data@v1.22.2/input/elasticapm/internal/modeldecoder/v2/decoder.go:274
+  FAILED apm-data@ae4dc1ee682ca36228b90841c8d98e45cc627ac4: unknown_on_safe: UNRESOLVED_MEMBER, WHOLE_MESSAGE_FLOW
+  FAILED apm-data@1704f25fc7026fb5fb7640a1dc9a9013bcf81767: unknown_on_safe: UNRESOLVED_MEMBER, WHOLE_MESSAGE_FLOW
+
+20 windows in 6m14s.
+verifier gate: scan failed: 7 disagreements with the compiler or errors
+exit 1 seconds 373
