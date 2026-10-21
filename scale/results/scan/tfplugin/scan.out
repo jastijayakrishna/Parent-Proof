@@ -1,0 +1,33 @@
+time=2026-10-21T09:22:06.595Z level=INFO msg=cloning repo=p-tfplugin url=https://github.com/hashicorp/terraform-plugin-go.git
+time=2026-10-21T09:22:07.221Z level=INFO msg=cloning repo=c-tfplugin url=https://github.com/hashicorp/terraform-plugin-framework.git
+tfplugin    e48445ae UNKNOWN  source_build=UNKNOWN compiler=compiles           28.9s 
+tfplugin    e392eb68 GO       source_build=GO      compiler=compiles            3.4s 
+tfplugin    caa12502 GO       source_build=GO      compiler=compiles            3.9s 
+tfplugin    b0a6aca8 NO_GO    source_build=GO      compiler=compiles            2.9s 
+tfplugin    dfb1155c UNKNOWN  source_build=GO      compiler=compiles            2.8s 
+tfplugin    c3810b12 NO_GO    source_build=GO      compiler=compiles            4.1s 
+tfplugin    4c19f069 GO       source_build=GO      compiler=compiles            4.0s 
+tfplugin    e33a5336 NO_GO    source_build=GO      compiler=compiles            7.2s 
+tfplugin    cf99b16b GO       source_build=GO      compiler=compiles            2.4s 
+tfplugin    a8477a15 NO_GO    source_build=GO      compiler=compiles            2.9s 
+tfplugin    06cc08e5 GO       source_build=GO      compiler=compiles            2.4s 
+tfplugin    55e8e165 GO       source_build=GO      compiler=compiles            1.8s 
+tfplugin    553984cb GO       source_build=GO      compiler=compiles            3.1s 
+tfplugin    0c51a41a NO_GO    source_build=GO      compiler=compiles            2.8s 
+tfplugin    f412d394 GO       source_build=GO      compiler=compiles            0.8s 
+tfplugin    b799d5c9 NO_GO    source_build=GO      compiler=compiles            3.0s 
+tfplugin    6ebe79b1 GO       source_build=GO      compiler=compiles            3.3s 
+tfplugin    71a1984a GO       source_build=GO      compiler=compiles            2.3s 
+tfplugin    afd18f17 GO       source_build=GO      compiler=compiles            3.2s 
+tfplugin    879185f1 GO       source_build=GO      compiler=compiles            2.9s 
+tfplugin      20 decisions  GO  12  NO-GO   6  UNKNOWN   2 (10.0%)  errors 0 | compiler judged  20: agree  19  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 1 | not judged 0
+TOTAL         20 decisions  GO  12  NO-GO   6  UNKNOWN   2 (10.0%)  errors 0 | compiler judged  20: agree  19  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 1 | not judged 0
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    2   1  NEEDS_REVIEW (e.g. tfplugin@dfb1155c79e13595a8c70a4c487e1a0ba9a478f5)
+    1   1  GO_API_CHANGED_USED_BY_CALLER (e.g. tfplugin@e48445ae5a8e743cf97470f7badcc06ce80c0155)
+  FAILED tfplugin@e48445ae5a8e743cf97470f7badcc06ce80c0155: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
+
+20 windows in 1m31s.
+verifier gate: scan failed: 1 disagreements with the compiler or errors
+exit 1 seconds 91
