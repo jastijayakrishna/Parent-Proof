@@ -1,6 +1,6 @@
 # Stress test: Go and Java consumers
 
-Updated 2026-10-06 14:48 UTC. Plan and rules: [stress/PREREG.md](stress/PREREG.md).
+Updated 2026-10-21 08:33 UTC. Plan and rules: [stress/PREREG.md](stress/PREREG.md).
 
 Every row is a real contract change of an open-source project never used to tune the verifier, decided by the
 verifier before the project's own compiler judged it (Go: `go build`; Java: the project's Maven or Gradle build).
@@ -9,8 +9,8 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 
 | language, set | windows | compiler judged | broke the build | caught | missed | false alarm | needs review (build) | errors |
 |---|---|---|---|---|---|---|---|---|
-| Go dev | 149 | 81 | 7 | 7 | **0** | 0 | 24 (16%) | 0 |
-| Go holdout | 254 | 204 | 22 | 12 | **0** | 4 | 58 (23%) | 0 |
+| Go dev | 185 | 85 | 7 | 7 | **0** | 0 | 38 (21%) | 0 |
+| Go holdout | 256 | 206 | 22 | 12 | **0** | 2 | 63 (25%) | 0 |
 | Java dev | 450 | 86 | 17 | 16 | **0** | 0 | 13 (3%) | 0 |
 | Java holdout | 491 | 27 | 2 | 2 | **0** | 1 | 31 (10%) | 174 |
 | Java regression | 84 | 75 | 5 | 5 | **0** | 0 | 21 (27%) | 0 |
@@ -19,23 +19,24 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 
 | project (what) | windows | compiler judged | broke the build | caught | missed | false alarm | needs review (build) | errors |
 |---|---|---|---|---|---|---|---|---|
-| argo-cd (live) | 3 | 0 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
+| argo-cd (live) | 36 | 0 | 0 | 0 | **0** | 0 | 14 (39%) | 0 |
 | argo-cd (scan) | 20 | 0 | 0 | 0 | **0** | 0 | 9 (45%) | 0 |
-| buildkit -> buildx (history) | 104 | 103 | 19 | 11 | **0** | 0 | 16 (15%) | 0 |
+| buildkit -> buildx (history) | 106 | 105 | 19 | 11 | **0** | 0 | 16 (15%) | 0 |
 | buildkit-buildx (scan) | 20 | 20 | 0 | 0 | **0** | 0 | 7 (35%) | 0 |
-| cometbft -> cosmos-sdk (history) | 41 | 39 | 6 | 6 | **0** | 0 | 3 (7%) | 0 |
+| cometbft -> cosmos-sdk (history) | 41 | 40 | 6 | 6 | **0** | 0 | 3 (7%) | 0 |
+| cometbft-cosmos-sdk (live) | 1 | 1 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
 | cometbft-cosmos-sdk (scan) | 20 | 19 | 1 | 1 | **0** | 0 | 3 (15%) | 0 |
 | cosmos-sdk -> gaia (history) | 32 | 28 | 3 | 1 | **0** | 2 | 10 (31%) | 0 |
 | cosmos-sdk-gaia (scan) | 20 | 18 | 0 | 0 | **0** | 0 | 14 (70%) | 0 |
-| csi-attacher (scan) | 20 | 17 | 0 | 0 | **0** | 0 | 7 (35%) | 0 |
-| csi-provisioner (live) | 2 | 0 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
+| csi-attacher (scan) | 20 | 17 | 0 | 0 | **0** | 0 | 3 (15%) | 0 |
+| csi-provisioner (live) | 4 | 2 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
 | csi-provisioner (scan) | 20 | 17 | 0 | 0 | **0** | 0 | 3 (15%) | 0 |
 | csi-spec -> external-attacher (history) | 6 | 6 | 0 | 0 | **0** | 0 | 3 (50%) | 0 |
 | csi-spec -> external-provisioner (history) | 6 | 6 | 0 | 0 | **0** | 0 | 3 (50%) | 0 |
 | kubelet -> k8s-device-plugin (history) | 17 | 0 | 0 | 0 | **0** | 0 | 1 (6%) | 0 |
 | kubelet-device-plugin (scan) | 20 | 0 | 0 | 0 | **0** | 0 | 2 (10%) | 0 |
-| otlp-tempo (scan) | 20 | 0 | 0 | 0 | **0** | 0 | 0 (0%) | 0 |
-| otlp-tempo -> tempo (history) | 12 | 12 | 0 | 0 | **0** | 2 | 0 (0%) | 0 |
+| otlp-tempo (scan) | 20 | 0 | 0 | 0 | **0** | 0 | 2 (10%) | 0 |
+| otlp-tempo -> tempo (history) | 12 | 12 | 0 | 0 | **0** | 0 | 7 (58%) | 0 |
 | vitess (scan) | 20 | 0 | 0 | 0 | **0** | 0 | 1 (5%) | 0 |
 
 ## Java by project
@@ -63,22 +64,20 @@ failure that matters most; **false alarm** means it said Don't merge and the cod
 ## Missed: 0
 
 
-## False alarms: 5
+## False alarms: 3
 
 - Go cosmos-sdk -> gaia history v0.53.4 -> v0.53.8: verifier cites `app/keepers/keepers.go:595`
 - Go cosmos-sdk -> gaia history v0.50.11-lsm.0.20250523173923-11578258172e -> v0.53.0: verifier cites `app/sim/sim_state.go:247`
-- Go otlp-tempo -> tempo history v1.7.1 -> v1.9.0: verifier cites `vendor/go.opentelemetry.io/collector/pdata/internal/generated_wrapper_location.go:100`
-- Go otlp-tempo -> tempo history v1.5.0 -> v1.6.0: verifier cites `vendor/go.opentelemetry.io/collector/pdata/pprofile/generated_profile.go:101`
 - Java alluxio history dbac084c1e1d: verifier cites ``
 
 ## Needs review, by reason
 
-- Go: CONTRACT_COMPILE_ERROR 41, GO_API_CHANGED_USED_BY_CALLER 28, DESCRIPTOR_REFLECTION 21, OPTION_CHANGED 16, NEEDS_REVIEW 14, SECOND_CHECK_DISAGREES 6, WHOLE_MESSAGE_FLOW 4, UNRESOLVED_MEMBER 3, TYPE_ERROR_HIDES_USES 3
+- Go: CONTRACT_COMPILE_ERROR 55, GO_API_CHANGED_USED_BY_CALLER 28, DESCRIPTOR_REFLECTION 21, OPTION_CHANGED 16, NEEDS_REVIEW 15, AMBIENT_GENERATED_UNREAD 8, WHOLE_MESSAGE_FLOW 7, SECOND_CHECK_DISAGREES 7, UNRESOLVED_MEMBER 3, TYPE_ERROR_HIDES_USES 3
 - Java: CONTRACT_COMPILE_ERROR 28, OPTION_CHANGED 26, NEEDS_REVIEW 16, JAVA_INLINED_CONSTANTS_UNCHECKED 6, JAVA_DYNAMIC_CODE 5, DESCRIPTOR_REFLECTION 2, WHOLE_MESSAGE_FLOW 2
 
 ## Not judged by the compiler, by reason
 
-- Go: not judged 66, baseline_fails 39, bump_side_effect 8, oracle_error 3, judge not verified 2
+- Go: not judged 99, baseline_fails 39, bump_side_effect 8, oracle_error 2, judge not verified 2
 - Java: oracle_error 431, not_built 174, judge not verified 151, baseline_fails 81
 
 ## Errors: 174
