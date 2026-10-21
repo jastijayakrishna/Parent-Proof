@@ -1,0 +1,15 @@
+time=2026-10-21T08:24:47.875Z level=INFO msg=cloning repo=durabletask-go url=https://github.com/dapr/durabletask-go.git
+time=2026-10-21T08:24:48.780Z level=INFO msg=cloning repo=durabletask-protobuf url=https://github.com/dapr/durabletask-protobuf.git
+time=2026-10-21T08:24:49.347Z level=INFO msg=cloning repo=dapr url=https://github.com/dapr/dapr.git
+time=2026-10-21T08:24:57.884Z level=WARN msg=classify consumer=dapr bump=40b1bcd9 err="base: git rev-parse --verify 032f09142da3676853a660644480c762582d54be^{commit}: exit status 128: fatal: Needed a single revision"
+time=2026-10-21T08:24:58.050Z level=WARN msg=classify consumer=dapr bump=e6aad043 err="head: git rev-parse --verify 600d9045237518945c2663d561b4893dd10ab0f1^{commit}: exit status 128: fatal: Needed a single revision"
+time=2026-10-21T08:24:58.051Z level=WARN msg=classify consumer=dapr bump=15f48b50 err="base: git rev-parse --verify 600d9045237518945c2663d561b4893dd10ab0f1^{commit}: exit status 128: fatal: Needed a single revision"
+time=2026-10-21T08:24:58.052Z level=WARN msg=classify consumer=dapr bump=498ed75e err="base: git rev-parse --verify 600d9045237518945c2663d561b4893dd10ab0f1^{commit}: exit status 128: fatal: Needed a single revision"
+time=2026-10-21T08:24:58.713Z level=INFO msg=mined consumer=dapr pin_moves=40 to_compile=5 skipped=map[]
+time=2026-10-21T08:26:37.387Z level=INFO msg=canary consumer=dapr at=02b550f4cb6c6174b5913d45a777127ec8b9cbfb^ outcome=breaks detail="canary: github.com/dapr/durabletask-go/api/protos removed."
+time=2026-10-21T08:27:24.628Z level=INFO msg=window consumer=dapr bump=02b550f4 select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T08:27:26.603Z level=INFO msg=window consumer=dapr bump=48bcce66 select=breaking breaking=4 compiler=breaks
+time=2026-10-21T08:29:57.311Z level=INFO msg=window consumer=dapr bump=6e562842 select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T08:30:35.424Z level=INFO msg=window consumer=dapr bump=afb22f80 select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:31:26.418Z level=INFO msg=window consumer=dapr bump=f4d43112 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:31:26.418Z level=INFO msg="suite built" suite=durabletask windows_added=5
