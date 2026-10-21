@@ -1,0 +1,17 @@
+time=2026-10-21T09:08:41.533Z level=INFO msg=cloning repo=function-sdk-go url=https://github.com/crossplane/function-sdk-go.git
+time=2026-10-21T09:08:42.134Z level=INFO msg=cloning repo=function-patch-and-transform url=https://github.com/crossplane-contrib/function-patch-and-transform.git
+time=2026-10-21T09:08:43.059Z level=INFO msg=mined consumer=function-patch-and-transform pin_moves=12 to_compile=12 skipped=map[]
+time=2026-10-21T09:09:22.668Z level=INFO msg=canary consumer=function-patch-and-transform at=46d109efc22ad02e51e354a174a4c2115ef01ea3^ outcome=breaks detail="canary: github.com/crossplane/function-sdk-go/proto/v1beta1 removed."
+time=2026-10-21T09:09:51.038Z level=INFO msg=window consumer=function-patch-and-transform bump=46d109ef select=breaking breaking=3 compiler=bump_side_effect
+time=2026-10-21T09:09:59.236Z level=INFO msg=window consumer=function-patch-and-transform bump=1f5a3a45 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:09:59.270Z level=INFO msg=window consumer=function-patch-and-transform bump=3426939a select=unchanged breaking=0 compiler=breaks
+time=2026-10-21T09:10:00.576Z level=INFO msg=window consumer=function-patch-and-transform bump=659dad39 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:11:17.104Z level=INFO msg=window consumer=function-patch-and-transform bump=4bb92014 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:12:05.706Z level=INFO msg=window consumer=function-patch-and-transform bump=888fe26b select=breaking breaking=1 compiler=breaks
+time=2026-10-21T09:13:43.744Z level=INFO msg=window consumer=function-patch-and-transform bump=fc37c595 select=breaking breaking=2 compiler=breaks
+time=2026-10-21T09:14:23.856Z level=INFO msg=window consumer=function-patch-and-transform bump=10ae8425 select=unchanged breaking=0 compiler=bump_side_effect
+time=2026-10-21T09:15:12.467Z level=INFO msg=window consumer=function-patch-and-transform bump=22b30dce select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:15:22.147Z level=INFO msg=window consumer=function-patch-and-transform bump=0e57ae84 select=unchanged breaking=0 compiler=bump_side_effect
+time=2026-10-21T09:15:25.220Z level=INFO msg=window consumer=function-patch-and-transform bump=146bc706 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:15:55.449Z level=INFO msg=window consumer=function-patch-and-transform bump=37f19aa6 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:15:55.449Z level=INFO msg="suite built" suite=function-sdk windows_added=12
