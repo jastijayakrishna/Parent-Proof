@@ -1,0 +1,17 @@
+time=2026-10-21T09:14:42.875Z level=INFO msg=mined consumer=terraform-plugin-framework pin_moves=31 to_compile=15 skipped=map[]
+time=2026-10-21T09:15:09.232Z level=INFO msg=canary consumer=terraform-plugin-framework at=27bd2c2da618f5dab86c9423bbff6d24e69b41ed^ outcome=breaks detail="canary: github.com/hashicorp/terraform-plugin-go/tftypes removed."
+time=2026-10-21T09:15:33.252Z level=INFO msg=window consumer=terraform-plugin-framework bump=27bd2c2d select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:15:48.485Z level=INFO msg=window consumer=terraform-plugin-framework bump=2ee75aa7 select=additive breaking=0 compiler=breaks
+time=2026-10-21T09:16:07.909Z level=INFO msg=window consumer=terraform-plugin-framework bump=4bb3f89e select=breaking breaking=10 compiler=compiles
+time=2026-10-21T09:16:29.399Z level=INFO msg=window consumer=terraform-plugin-framework bump=57021a42 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:16:33.465Z level=INFO msg=window consumer=terraform-plugin-framework bump=5ad5f892 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:16:57.386Z level=INFO msg=window consumer=terraform-plugin-framework bump=60c74cfc select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:17:01.899Z level=INFO msg=window consumer=terraform-plugin-framework bump=743126ed select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:17:20.310Z level=INFO msg=window consumer=terraform-plugin-framework bump=80ed1369 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:17:31.078Z level=INFO msg=window consumer=terraform-plugin-framework bump=7f6bef5d select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:17:45.387Z level=INFO msg=window consumer=terraform-plugin-framework bump=9cb36590 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:17:45.548Z level=INFO msg=window consumer=terraform-plugin-framework bump=92180ccd select=breaking breaking=4 compiler=breaks
+time=2026-10-21T09:18:00.761Z level=INFO msg=window consumer=terraform-plugin-framework bump=a9959914 select=breaking breaking=8 compiler=breaks
+time=2026-10-21T09:18:10.067Z level=INFO msg=window consumer=terraform-plugin-framework bump=9dee5493 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:18:17.771Z level=INFO msg=window consumer=terraform-plugin-framework bump=cca5c5aa select=breaking breaking=4 compiler=compiles
+time=2026-10-21T09:18:28.334Z level=INFO msg=window consumer=terraform-plugin-framework bump=e7536003 select=unchanged breaking=0 compiler=compiles
