@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-21 12:09 UTC.
+Updated 2026-10-21 17:35 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 162 | 131 | 5 | 26 | 71 | 70 | 0 | 0 |
+| 168 | 133 | 5 | 30 | 72 | 71 | 0 | 0 |
 
 ## Every pull request
 
@@ -34,10 +34,12 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Merge | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29236](https://github.com/argoproj/argo-cd/pull/29236) feat: add seal signing inspection command | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#29236](https://github.com/argoproj/argo-cd/pull/29236) feat: add seal signing inspection command | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29322](https://github.com/argoproj/argo-cd/pull/29322) feat(appset): add metrics for appset to measure rollout durations for progressive sync | Merge | Merge | not judged |  |
 | argo-cd | [#29647](https://github.com/argoproj/argo-cd/pull/29647) refactor: filter appset file patterns in the repo-server | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29926](https://github.com/argoproj/argo-cd/pull/29926) feat: allow rollback while auto-sync is enabled | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29926](https://github.com/argoproj/argo-cd/pull/29926) feat: allow rollback while auto-sync is enabled | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
@@ -95,6 +97,7 @@ verifier before the compiler built the consumer against it.
 | istio | [#3798](https://github.com/istio/api/pull/3798) docs: clarify maxConnections applies to HTTP/2 | Merge | Merge | compiles |  |
 | istio | [#3799](https://github.com/istio/api/pull/3799) Allow 63-character WorkloadEntry port names | Merge | Merge | compiles |  |
 | istio | [#3801](https://github.com/istio/api/pull/3801) feat: add `presence: IGNORED` and `failedStatusInMetadata` to JWTRule | Merge | Merge | compiles |  |
+| istio | [#3801](https://github.com/istio/api/pull/3801) feat: add `presence: IGNORED` and `failedStatusInMetadata` to JWTRule | Merge | Merge | compiles |  |
 | istio | [#3809](https://github.com/istio/api/pull/3809) document case-insensitive method matching in authorizationpolicy | Merge | Merge | compiles |  |
 | istio | [#3810](https://github.com/istio/api/pull/3810) fix wasm docs | Merge | Merge | compiles |  |
 | jaeger | [#231](https://github.com/jaegertracing/jaeger-idl/pull/231) feat(expression): Add phrase and fulltext text-search operators | Needs review | Needs review | compiles | OPTION_CHANGED |
@@ -142,9 +145,12 @@ verifier before the compiler built the consumer against it.
 | loki | [#25117](https://github.com/grafana/loki/pull/25117) feat(dataobj): Decide data object routing in the query-frontend | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#25117](https://github.com/grafana/loki/pull/25117) feat(dataobj): Decide data object routing in the query-frontend | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#25208](https://github.com/grafana/loki/pull/25208) fix(storage): Remove propagate_chunk_fetch_errors flag. Part 1 | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
+| loki | [#25208](https://github.com/grafana/loki/pull/25208) fix(storage): Remove propagate_chunk_fetch_errors flag. Part 1 | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25259](https://github.com/grafana/loki/pull/25259) perf(logline): Run pass-through intervals without waiting for the hint lookup | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25259](https://github.com/grafana/loki/pull/25259) perf(logline): Run pass-through intervals without waiting for the hint lookup | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
+| loki | [#25425](https://github.com/grafana/loki/pull/25425) feat(logline): Plan OR-aware hint needles | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25436](https://github.com/grafana/loki/pull/25436) refactor(compactor): Delete sort object task | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
+| loki | [#25501](https://github.com/grafana/loki/pull/25501) feat(server): Enable configurable TLS group preferences | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | spire | [#102](https://github.com/spiffe/spire-api-sdk/pull/102) Add unauthenticated server Version GetVersion API | Merge | Merge | compiles |  |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |
 | temporal | [#827](https://github.com/temporalio/api/pull/827) Add RESOURCE_EXHAUSTED_CAUSE_CALLER_RPS_LIMIT resource-exhausted cause | Merge | Merge | not judged |  |

@@ -1,0 +1,51 @@
+{
+  "pr": {
+    "n": 25501,
+    "head": "68756df6073a53596fc0dc0ac1e1913158d882d1",
+    "base": "18847c354a22ce27702d9e1f211a87a614bd6251",
+    "title": "feat(server): Enable configurable TLS group preferences",
+    "url": "https://github.com/grafana/loki/pull/25501",
+    "updated": "2026-10-21T14:10:02Z",
+    "eco": "loki",
+    "key": "loki-25501-68756df6073a",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "68756df6073a53596fc0dc0ac1e1913158d882d1"
+  },
+  "merge_base": "18847c354a22ce27702d9e1f211a87a614bd6251",
+  "decided": "af65461c36e0c2065add00bbe39326f3637b31fc",
+  "started": "2026-10-21T17:28:53Z",
+  "finished": "2026-10-21T17:29:05Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/39643635851",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "af65461c36e0c2065add00bbe39326f3637b31fc",
+      "parent": "18847c354a22ce27702d9e1f211a87a614bd6251",
+      "date": "2026-10-21",
+      "subject": "pull request 25501 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "TOOLCHAIN_TOO_OLD"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "vendor/github.com/grafana/dskit/ring/partition_ring_desc.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: vendor/github.com/grafana/dskit/ring/partition_ring_desc.proto",
+      "seconds": 2.372368098,
+      "total": 1
+    }
+  ],
+  "log": "loki        af65461c UNKNOWN  source_build=UNKNOWN compiler=-                   2.4s \nloki           1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  TOOLCHAIN_TOO_OLD (e.g. loki@af65461c36e0c2065add00bbe39326f3637b31fc)\n\n1 windows in 12s."
+}
