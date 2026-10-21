@@ -1,0 +1,35 @@
+time=2026-10-21T09:24:21.885Z level=INFO msg=cloning repo=p-etcd-api url=https://github.com/etcd-io/etcd.git
+time=2026-10-21T09:24:24.078Z level=INFO msg=cloning repo=c-etcd-api url=https://github.com/k3s-io/kine.git
+etcd-api    d098a8b5 GO       source_build=GO      compiler=compiles          139.9s 
+etcd-api    ee374bdc GO       source_build=GO      compiler=compiles            5.8s 
+etcd-api    84e612f3 UNKNOWN  source_build=UNKNOWN compiler=compiles           10.9s 
+etcd-api    ff2e00f5 GO       source_build=GO      compiler=-                   3.2s 
+etcd-api    c4e53cdd UNKNOWN  source_build=UNKNOWN compiler=-                   1.2s 
+etcd-api    74f54e6f GO       source_build=GO      compiler=-                   1.5s 
+etcd-api    c2251842 NO_GO    source_build=NO_GO   compiler=-                   0.9s 
+etcd-api    121e8a3d UNKNOWN  source_build=UNKNOWN compiler=-                   0.9s 
+etcd-api    55035cab UNKNOWN  source_build=UNKNOWN compiler=-                   2.5s 
+etcd-api    75932ca1 UNKNOWN  source_build=UNKNOWN compiler=-                   2.0s 
+etcd-api    b428dc25 NO_GO    source_build=NO_GO   compiler=-                   1.6s 
+etcd-api    073d46a5 UNKNOWN  source_build=GO      compiler=compiles            6.7s 
+etcd-api    c501d6bf GO       source_build=GO      compiler=compiles            8.9s 
+etcd-api    f5409c42 GO       source_build=GO      compiler=-                   5.0s 
+etcd-api    022b9b22 GO       source_build=GO      compiler=compiles            8.2s 
+etcd-api    97c63c9f GO       source_build=GO      compiler=compiles            7.2s 
+etcd-api    9d57554c GO       source_build=GO      compiler=compiles            3.2s 
+etcd-api    2eca68e3 GO       source_build=GO      compiler=compiles            8.0s 
+etcd-api    63fe0f28 GO       source_build=GO      compiler=compiles            5.8s 
+etcd-api    4155d8bb GO       source_build=GO      compiler=compiles           11.1s 
+etcd-api      20 decisions  GO  12  NO-GO   2  UNKNOWN   6 (30.0%)  errors 0 | compiler judged  11: agree  10  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 1 | not judged 9
+TOTAL         20 decisions  GO  12  NO-GO   2  UNKNOWN   6 (30.0%)  errors 0 | compiler judged  11: agree  10  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 1 | not judged 9
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    4   1  CONTRACT_COMPILE_ERROR (e.g. etcd-api@c4e53cdd272eb75eac8ab814fea74337c8fd0d1d)
+    2   1  NEEDS_REVIEW (e.g. etcd-api@84e612f39b82d1c8ee3f884a59e3f973209d8fbc)
+    1   1  OPTION_CHANGED (e.g. etcd-api@55035caba28ac42c0eefc2b31e9f89127ec4a8c4)
+    1   1  WHOLE_MESSAGE_FLOW (e.g. etcd-api@073d46a558de734e5e86ff2f84cd2f54f990f75d)
+  FAILED etcd-api@84e612f39b82d1c8ee3f884a59e3f973209d8fbc: unknown_on_safe: NEEDS_REVIEW
+
+20 windows in 3m58s.
+verifier gate: scan failed: 1 disagreements with the compiler or errors
+exit 1 seconds 238
