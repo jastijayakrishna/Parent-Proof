@@ -1,0 +1,17 @@
+time=2026-10-21T09:09:28.455Z level=INFO msg=cloning repo=apm-data url=https://github.com/elastic/apm-data.git
+time=2026-10-21T09:09:29.627Z level=INFO msg=cloning repo=apm-aggregation url=https://github.com/elastic/apm-aggregation.git
+time=2026-10-21T09:09:31.761Z level=INFO msg=mined consumer=apm-aggregation pin_moves=25 to_compile=12 skipped=map[]
+time=2026-10-21T09:10:00.350Z level=INFO msg=canary consumer=apm-aggregation at=0edaadeee2bad42b43883c0fff1cab379f1b5a19^ outcome=breaks detail="canary: github.com/elastic/apm-data/model/modelpb removed."
+time=2026-10-21T09:10:05.373Z level=INFO msg=window consumer=apm-aggregation bump=0edaadee select=breaking breaking=4 compiler=breaks
+time=2026-10-21T09:10:21.527Z level=INFO msg=window consumer=apm-aggregation bump=461c4f56 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:10:24.252Z level=INFO msg=window consumer=apm-aggregation bump=28945669 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:10:26.992Z level=INFO msg=window consumer=apm-aggregation bump=5c307e3c select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:10:32.230Z level=INFO msg=window consumer=apm-aggregation bump=78454528 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:10:40.095Z level=INFO msg=window consumer=apm-aggregation bump=8bb2e5c7 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:10:48.375Z level=INFO msg=window consumer=apm-aggregation bump=9f2ca7df select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:10:52.054Z level=INFO msg=window consumer=apm-aggregation bump=968f8036 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:10:52.099Z level=INFO msg=window consumer=apm-aggregation bump=c82b2b7e select=breaking breaking=14 compiler=breaks
+time=2026-10-21T09:11:06.418Z level=INFO msg=window consumer=apm-aggregation bump=eb29ba50 select=unchanged breaking=0 compiler=baseline_fails
+time=2026-10-21T09:11:07.503Z level=INFO msg=window consumer=apm-aggregation bump=f7831e2c select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:11:08.228Z level=INFO msg=window consumer=apm-aggregation bump=d6e4828a select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:11:08.228Z level=INFO msg="suite built" suite=apm-data windows_added=12
