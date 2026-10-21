@@ -1,0 +1,12 @@
+time=2026-10-21T08:33:17.104Z level=INFO msg=mined consumer=cosign pin_moves=10 to_compile=10 skipped=map[]
+time=2026-10-21T08:35:04.532Z level=INFO msg=canary consumer=cosign at=c6cdf1b37664e8e83fdf4d4abf464f2ead4021a2 outcome=breaks detail="canary: github.com/sigstore/protobuf-specs/gen/pb-go/bundle/v1 removed."
+time=2026-10-21T08:35:05.319Z level=INFO msg=window consumer=cosign bump=c6cdf1b3 select=breaking breaking=22 compiler=baseline_fails
+time=2026-10-21T08:35:12.600Z level=INFO msg=window consumer=cosign bump=b4cf37b0 select=breaking breaking=1 compiler=compiles
+time=2026-10-21T08:37:42.431Z level=INFO msg=window consumer=cosign bump=76d23ba9 select=breaking breaking=7 compiler=breaks
+time=2026-10-21T08:38:02.072Z level=INFO msg=window consumer=cosign bump=b5f6d98a select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:39:48.353Z level=INFO msg=window consumer=cosign bump=667ef61d select=breaking breaking=3 compiler=compiles
+time=2026-10-21T08:40:40.688Z level=INFO msg=window consumer=cosign bump=2eb0d916 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:42:04.407Z level=INFO msg=window consumer=cosign bump=b2b94625 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:43:59.747Z level=INFO msg=window consumer=cosign bump=39940de0 select=breaking breaking=7 compiler=compiles
+time=2026-10-21T08:44:17.084Z level=INFO msg=window consumer=cosign bump=a25bb31f select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:45:52.914Z level=INFO msg=window consumer=cosign bump=633e8f43 select=additive breaking=0 compiler=compiles
