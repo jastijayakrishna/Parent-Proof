@@ -1,0 +1,14 @@
+time=2026-10-21T08:19:41.360Z level=INFO msg=cloning repo=durabletask-go url=https://github.com/dapr/durabletask-go.git
+time=2026-10-21T08:19:41.925Z level=INFO msg=cloning repo=durabletask-protobuf url=https://github.com/dapr/durabletask-protobuf.git
+time=2026-10-21T08:19:42.177Z level=INFO msg=cloning repo=dapr url=https://github.com/dapr/dapr.git
+time=2026-10-21T08:19:50.311Z level=WARN msg=classify consumer=dapr bump=40b1bcd9 err="base: git rev-parse --verify 032f09142da3676853a660644480c762582d54be^{commit}: exit status 128: fatal: Needed a single revision"
+time=2026-10-21T08:19:50.495Z level=WARN msg=classify consumer=dapr bump=e6aad043 err="head: git rev-parse --verify 600d9045237518945c2663d561b4893dd10ab0f1^{commit}: exit status 128: fatal: Needed a single revision"
+time=2026-10-21T08:19:50.496Z level=WARN msg=classify consumer=dapr bump=15f48b50 err="base: git rev-parse --verify 600d9045237518945c2663d561b4893dd10ab0f1^{commit}: exit status 128: fatal: Needed a single revision"
+time=2026-10-21T08:19:50.497Z level=WARN msg=classify consumer=dapr bump=498ed75e err="base: git rev-parse --verify 600d9045237518945c2663d561b4893dd10ab0f1^{commit}: exit status 128: fatal: Needed a single revision"
+time=2026-10-21T08:19:51.230Z level=INFO msg=mined consumer=dapr pin_moves=40 to_compile=4 skipped=map[]
+time=2026-10-21T08:21:46.691Z level=INFO msg=canary consumer=dapr at=3411a8005a258f14a938ffb4282c0a6359f2f21d^ outcome=breaks detail="canary: github.com/dapr/durabletask-go/api/protos removed."
+time=2026-10-21T08:23:20.086Z level=INFO msg=window consumer=dapr bump=3411a800 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:24:12.227Z level=INFO msg=window consumer=dapr bump=61a7a7cb select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:26:02.655Z level=INFO msg=window consumer=dapr bump=983349b6 select=breaking breaking=16 compiler=compiles
+time=2026-10-21T08:26:23.456Z level=INFO msg=window consumer=dapr bump=e6aad043 select=unclassified breaking=0 compiler=compiles
+time=2026-10-21T08:26:23.456Z level=INFO msg="suite built" suite=durabletask windows_added=4
