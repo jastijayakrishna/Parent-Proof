@@ -1,0 +1,6 @@
+time=2026-10-21T08:43:55.522Z level=INFO msg=cloning repo=kms url=https://github.com/kubernetes/kms.git
+time=2026-10-21T08:43:55.952Z level=INFO msg=cloning repo=kubernetes-kms url=https://github.com/Azure/kubernetes-kms.git
+time=2026-10-21T08:43:56.567Z level=INFO msg=mined consumer=kubernetes-kms pin_moves=1 to_compile=1 skipped=map[]
+time=2026-10-21T08:44:31.183Z level=INFO msg=canary consumer=kubernetes-kms at=5922b512d80b5928d626e48e0a706c19595c1d68^ outcome=breaks detail="canary: k8s.io/kms/apis/v1beta1 removed."
+time=2026-10-21T08:44:42.734Z level=INFO msg=window consumer=kubernetes-kms bump=5922b512 select=unchanged breaking=0 compiler=bump_side_effect
+time=2026-10-21T08:44:42.734Z level=INFO msg="suite built" suite=kms windows_added=1
