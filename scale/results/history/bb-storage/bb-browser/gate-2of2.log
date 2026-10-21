@@ -1,0 +1,23 @@
+bb-browser 4035a546 NO_GO    source_build=NO_GO   compiler=bump_side_effect   9.6s replay=true 
+bb-browser 4ab3ea9d NO_GO    source_build=NO_GO   compiler=compiles           3.2s replay=true 
+bb-browser 4ed56d70 NO_GO    source_build=NO_GO   compiler=compiles           6.4s replay=true 
+bb-browser 10b339da NO_GO    source_build=NO_GO   compiler=compiles          20.3s replay=true 
+bb-browser 5d710fd5 NO_GO    source_build=NO_GO   compiler=compiles           2.7s replay=true 
+bb-browser 84796f05 NO_GO    source_build=NO_GO   compiler=compiles           2.1s replay=true 
+bb-browser 794e3807 NO_GO    source_build=NO_GO   compiler=compiles           3.0s replay=true 
+bb-browser b3570162 GO       source_build=GO      compiler=compiles           2.8s replay=true 
+bb-browser cc676d9c NO_GO    source_build=NO_GO   compiler=bump_side_effect   3.4s replay=true 
+bb-browser e6e9ad5f GO       source_build=GO      compiler=compiles           2.4s replay=true 
+bb-browser f0fbe965 GO       source_build=GO      compiler=compiles           6.7s replay=true 
+bb-browser 9b44996f NO_GO    source_build=GO      compiler=compiles          18.6s replay=true 
+bb-browser d115d51d NO_GO    source_build=NO_GO   compiler=breaks            16.0s replay=true 
+bb-browser/additive    windows=  4 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 4: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=4 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=4
+bb-browser/breaking    windows=  5 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles= 3: GO= 1 FALSE_NOGO=2 abstained=0 (runtime-only NO-GO 1) | unavailable=1 (NO-GO 1, UNKNOWN 0, GO 0) | wire: judged=5 broken=4 RUNTIME_WRONG_GO=0 confirmed=4 unconfirmed=1 | errors=0 | replayed=5
+bb-browser/unchanged   windows=  4 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 3: GO= 2 FALSE_NOGO=1 abstained=0 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 1, UNKNOWN 0, GO 0) | wire: judged=4 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=4
+TOTAL                  windows= 13 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles=10: GO= 4 FALSE_NOGO=3 abstained=0 (runtime-only NO-GO 1) | unavailable=2 (NO-GO 2, UNKNOWN 0, GO 0) | wire: judged=13 broken=4 RUNTIME_WRONG_GO=0 confirmed=4 unconfirmed=1 | errors=0 | replayed=13
+  FAILED bb-browser@10b339da6324..20598f43: false_nogo: cmd/bb_browser/browser_service.go:1011, cmd/bb_browser/browser_service.go:177, cmd/bb_browser/browser_service.go:970
+  FAILED bb-browser@4ab3ea9df0fa..34e3e8d9: false_nogo: cmd/bb_browser/main.go:276, github.com/buildbarn/bb-storage@v0.0.0-20230629193729-d6a051ca744d/pkg/global/apply_configuration.go:74
+  FAILED bb-browser@794e38071d7a..519a8946: false_nogo: github.com/buildbarn/bb-storage@v0.0.0-20230905110346-c04246b462b6/pkg/blobstore/configuration/ac_blob_access_creator.go:62, github.com/buildbarn/bb-storage@v0.0.0-20230905110346-c04246b462b6/pkg/blobstore/configuration/cas_blob_access_creator.go:80, github.com/buildbarn/bb-storage@v0.0.0-20230905110346-c04246b462b6/pkg/blobstore/configuration/fsac_blob_access_creator.go:44
+
+13 windows in 53s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 3 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`

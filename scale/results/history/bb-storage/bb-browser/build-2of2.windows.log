@@ -1,0 +1,15 @@
+time=2026-10-21T09:07:04.353Z level=INFO msg=mined consumer=bb-browser pin_moves=27 to_compile=13 skipped=map[]
+time=2026-10-21T09:07:46.526Z level=INFO msg=canary consumer=bb-browser at=10b339da6324b00efb3e8a7cfb95f2f3790bed7f^ outcome=breaks detail="canary: github.com/buildbarn/bb-storage/pkg/proto/auth removed."
+time=2026-10-21T09:07:51.223Z level=INFO msg=window consumer=bb-browser bump=10b339da select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:08:31.979Z level=INFO msg=window consumer=bb-browser bump=4035a546 select=breaking breaking=2 compiler=bump_side_effect
+time=2026-10-21T09:08:50.380Z level=INFO msg=window consumer=bb-browser bump=4ab3ea9d select=breaking breaking=1 compiler=compiles
+time=2026-10-21T09:09:09.780Z level=INFO msg=window consumer=bb-browser bump=4ed56d70 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:09:26.689Z level=INFO msg=window consumer=bb-browser bump=5d710fd5 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:09:38.387Z level=INFO msg=window consumer=bb-browser bump=84796f05 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:09:41.073Z level=INFO msg=window consumer=bb-browser bump=794e3807 select=breaking breaking=8 compiler=compiles
+time=2026-10-21T09:09:56.951Z level=INFO msg=window consumer=bb-browser bump=b3570162 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:10:15.478Z level=INFO msg=window consumer=bb-browser bump=cc676d9c select=unchanged breaking=0 compiler=bump_side_effect
+time=2026-10-21T09:10:47.910Z level=INFO msg=window consumer=bb-browser bump=9b44996f select=breaking breaking=2 compiler=compiles
+time=2026-10-21T09:11:09.328Z level=INFO msg=window consumer=bb-browser bump=e6e9ad5f select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T09:11:55.493Z level=INFO msg=window consumer=bb-browser bump=f0fbe965 select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:12:13.296Z level=INFO msg=window consumer=bb-browser bump=d115d51d select=breaking breaking=19 compiler=breaks
