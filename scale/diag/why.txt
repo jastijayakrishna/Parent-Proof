@@ -1,4 +1,2 @@
 # NAME PROVIDER_URL BASE HEAD CONSUMER_URL CONSUMER_REV GOMOD_DIR (scale/diag: not scored)
-terraform-plugin-mux-v0.28.0 https://github.com/hashicorp/terraform-plugin-go.git 2030c6ca744896f2e8d5a5c60ed87989a57ef0ce 3fd901baa420da6d63c8bb999304291117ff09df https://github.com/hashicorp/terraform-plugin-mux.git e2f2af1a13b5ee6648724f3af068b016aea60859^ .
-terraform-plugin-sdk-v0.22.0 https://github.com/hashicorp/terraform-plugin-go.git 1a2a9f86a5f1c9ca092f7b1d4840c968ab9cae60 01b86e957909a2845ecce8d58f502771b4d70d99 https://github.com/hashicorp/terraform-plugin-sdk.git 70fb6b9b15e8e5fc73f424e24084c28fedd1e013^ .
-apm-server-v1.13.1 https://github.com/elastic/apm-data.git ff9005d980936d46e0568b89bf1709fa08a02d4e 2f0f99aebe6c982eb7b7ccb0efb380fd0c4b1854 https://github.com/elastic/apm-server.git 55f9eb59ee96a6c8e17c9a976c99570fed29a363^ .
+openfga-cli-c96ec773 https://github.com/openfga/api.git f33cb24bcd9707c5fba8cbbc4a4441ab24a3442d c96ec773cae9caf2a9536856bf1fa206a42ef7ef https://github.com/openfga/cli.git 53a584b4113f9f38bb392d89e7b0c5b0c5f2b13d^ .
