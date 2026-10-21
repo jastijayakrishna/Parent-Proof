@@ -1,0 +1,49 @@
+=true 
+pulumi-go-provider 143e131e GO       source_build=GO      compiler=compiles           9.1s replay=true 
+pulumi-go-provider 1bec48e4 UNKNOWN  source_build=UNKNOWN compiler=breaks             8.4s replay=true 
+pulumi-go-provider 235777c9 GO       source_build=GO      compiler=compiles          11.5s replay=true 
+pulumi-go-provider 23b717be GO       source_build=GO      compiler=compiles           9.8s replay=true 
+pulumi-go-provider 28d8c867 GO       source_build=GO      compiler=compiles          10.0s replay=true 
+pulumi-go-provider 34793134 GO       source_build=GO      compiler=compiles           8.7s replay=true 
+pulumi-go-provider 39379d96 GO       source_build=GO      compiler=compiles           8.2s replay=true 
+pulumi-go-provider 3c29a760 GO       source_build=GO      compiler=compiles           9.2s replay=true 
+pulumi-go-provider 43eb2a59 GO       source_build=GO      compiler=compiles           7.7s replay=true 
+pulumi-go-provider 46d3d11d GO       source_build=GO      compiler=compiles           8.6s replay=true 
+pulumi-go-provider 4a07fc1b GO       source_build=GO      compiler=compiles           8.5s replay=true 
+pulumi-go-provider 56b101a4 GO       source_build=GO      compiler=compiles           6.3s replay=true 
+pulumi-go-provider 56fece70 NO_GO    source_build=NO_GO   compiler=breaks             8.9s replay=true 
+pulumi-go-provider 579696be GO       source_build=GO      compiler=compiles           9.0s replay=true 
+pulumi-go-provider 598fa8f2 GO       source_build=GO      compiler=compiles           8.7s replay=true 
+pulumi-go-provider 5dfaa7e0 GO       source_build=GO      compiler=compiles           8.3s replay=true 
+pulumi-go-provider 609ad86a NO_GO    source_build=NO_GO   compiler=breaks             7.0s replay=true 
+pulumi-go-provider 7ccd0060 GO       source_build=GO      compiler=compiles           6.2s replay=true 
+pulumi-go-provider 854ffc79 GO       source_build=GO      compiler=compiles           6.4s replay=true 
+pulumi-go-provider 8fa58a35 NO_GO    source_build=NO_GO   compiler=breaks             9.4s replay=true 
+pulumi-go-provider ac69bde0 GO       source_build=GO      compiler=compiles           8.5s replay=true 
+pulumi-go-provider b74dec3a GO       source_build=GO      compiler=compiles           6.4s replay=true 
+pulumi-go-provider c8ce5511 GO       source_build=GO      compiler=compiles           6.2s replay=true 
+pulumi-go-provider bf55f7db UNKNOWN  source_build=UNKNOWN compiler=compiles           8.5s replay=true 
+pulumi-go-provider c983a1b5 GO       source_build=GO      compiler=compiles           7.3s replay=true 
+pulumi-go-provider d2450a1e GO       source_build=GO      compiler=compiles           7.5s replay=true 
+pulumi-go-provider d829f2fe UNKNOWN  source_build=UNKNOWN compiler=breaks             7.8s replay=true 
+pulumi-go-provider d83264b8 GO       source_build=GO      compiler=compiles           8.4s replay=true 
+pulumi-go-provider d932a0cb GO       source_build=GO      compiler=compiles           9.0s replay=true 
+pulumi-go-provider daba2832 GO       source_build=GO      compiler=compiles          10.3s replay=true 
+pulumi-go-provider e45484a0 GO       source_build=GO      compiler=compiles           5.5s replay=true 
+pulumi-go-provider ee63ece0 GO       source_build=GO      compiler=compiles           7.1s replay=true 
+pulumi-go-provider f8bfe858 GO       source_build=GO      compiler=compiles           7.4s replay=true 
+pulumi-go-provider f96604c3 GO       source_build=GO      compiler=compiles           7.2s replay=true 
+pulumi-go-provider ff2ee4c4 GO       source_build=GO      compiler=compiles           7.1s replay=true 
+pulumi-go-provider/additive windows= 17 | breaks= 3: caught= 1 WRONG_GO=0 abstained=2 | compiles=14: GO=13 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=17 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=17
+pulumi-go-provider/breaking windows=  3 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles= 2: GO= 1 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=3 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=1 | errors=0 | replayed=3
+pulumi-go-provider/unchanged windows= 20 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles=19: GO=18 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=20 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=20
+TOTAL                  windows= 40 | breaks= 5: caught= 3 WRONG_GO=0 abstained=2 | compiles=35: GO=32 FALSE_NOGO=0 abstained=3 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=40 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=1 | errors=0 | replayed=40
+  WITHIN THE UNKNOWN LIMIT pulumi-go-provider@02affded5d81..adffab45: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
+  WITHIN THE UNKNOWN LIMIT pulumi-go-provider@04fe46afd729..59d156aa: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
+  FAILED pulumi-go-provider@1bec48e4a6d2..d6021091: unknown_on_break: /home/runner/go/pkg/mod/github.com/pulumi/pulumi/pkg/v3@v3.243.0/workspace/plugin.go:165:3: not enough arguments in call to plugin.NewContextWithRoot
+  WITHIN THE UNKNOWN LIMIT pulumi-go-provider@bf55f7db3f46..75496359: unknown_on_safe: GO_API_MEMBER_MOVED, GO_API_CHANGED_USED_BY_CALLER
+  FAILED pulumi-go-provider@d829f2fe37ac..a88168d8: unknown_on_break: /home/runner/go/pkg/mod/github.com/pulumi/pulumi/pkg/v3@v3.246.0/workspace/plugin.go:201:3: too many arguments in call to plugin.NewContextWithRoot | /home/runner/go/pkg/mod/github.com/pulumi/pulumi/pkg/v3@v3.246.0/workspace/plugin.go:216:44: not enough arguments in call to pctx.Host.LanguageRuntime
+
+40 windows in 2m57s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 2 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 195
