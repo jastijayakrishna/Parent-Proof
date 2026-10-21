@@ -1,4 +1,4 @@
-# Scale test (scale/PREREG.md): one wave of upgrades per push
-wave=4
-parts=history
+# Scale test (scale/PREREG.md): contract commits
+wave=
+parts=scan
 only=
