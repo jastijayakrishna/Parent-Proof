@@ -1,0 +1,4 @@
+beam history: 56 windows, shard 2/40 has 2
+canary at fafdf4a2121b: oracle_error (11 files moved) ['']
+fafdf4a2121b 2023-02-10 verifier=None build=None compiler=baseline_fails 18.6s 
+21dbf592f87d 2025-10-28 verifier=UNKNOWN build=UNKNOWN compiler=compiles 615.4s 
