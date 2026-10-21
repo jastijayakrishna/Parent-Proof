@@ -1,0 +1,37 @@
+source_build=UNKNOWN compiler=breaks             7.7s replay=true 
+bb-clientd 19e35d0d NO_GO    source_build=NO_GO   compiler=compiles           3.2s replay=true 
+bb-clientd 253388f5 NO_GO    source_build=NO_GO   compiler=breaks            19.1s replay=true 
+bb-clientd 2589e268 GO       source_build=GO      compiler=compiles          16.2s replay=true 
+bb-clientd 25fd4b18 NO_GO    source_build=NO_GO   compiler=compiles           6.9s replay=true 
+bb-clientd 316e5632 GO       source_build=GO      compiler=compiles           0.1s replay=true 
+bb-clientd 28636995 UNKNOWN  source_build=UNKNOWN compiler=breaks            18.8s replay=true 
+bb-clientd 4b20a85a NO_GO    source_build=GO      compiler=compiles          20.0s replay=true 
+bb-clientd 4c800c40 NO_GO    source_build=NO_GO   compiler=breaks             9.6s replay=true 
+bb-clientd 696018ff GO       source_build=GO      compiler=compiles           4.3s replay=true 
+bb-clientd 8288a816 NO_GO    source_build=NO_GO   compiler=breaks            10.1s replay=true 
+bb-clientd 64e635ac NO_GO    source_build=UNKNOWN compiler=compiles          17.4s replay=true 
+bb-clientd b55af46f NO_GO    source_build=NO_GO   compiler=compiles           7.8s replay=true 
+bb-clientd ac37453d GO       source_build=GO      compiler=compiles           8.9s replay=true 
+bb-clientd b57a6cb5 NO_GO    source_build=GO      compiler=compiles           7.0s replay=true 
+bb-clientd c239701b NO_GO    source_build=NO_GO   compiler=bump_side_effect   7.5s replay=true 
+bb-clientd d70a80bd GO       source_build=GO      compiler=compiles           6.7s replay=true 
+bb-clientd e1139953 GO       source_build=GO      compiler=compiles           0.0s replay=true 
+bb-clientd d33e5813 GO       source_build=GO      compiler=compiles           7.5s replay=true 
+bb-clientd ed0a0acf GO       source_build=GO      compiler=compiles           3.3s replay=true 
+bb-clientd f5aa0a1e UNKNOWN  source_build=UNKNOWN compiler=compiles           2.7s replay=true 
+bb-clientd f87436b4 GO       source_build=GO      compiler=compiles           4.9s replay=true 
+bb-clientd f4f51ee5 NO_GO    source_build=UNKNOWN compiler=compiles          16.8s replay=true 
+bb-clientd/additive    windows=  6 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles= 4: GO= 1 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 0, UNKNOWN 1, GO 0) | wire: judged=6 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=6
+bb-clientd/breaking    windows=  8 | breaks= 2: caught= 2 WRONG_GO=0 abstained=0 | compiles= 5: GO= 2 FALSE_NOGO=1 abstained=2 (runtime-only NO-GO 2) | unavailable=1 (NO-GO 1, UNKNOWN 0, GO 0) | wire: judged=8 broken=7 RUNTIME_WRONG_GO=0 confirmed=7 unconfirmed=1 | errors=0 | replayed=8
+bb-clientd/unchanged   windows= 15 | breaks= 4: caught= 2 WRONG_GO=0 abstained=2 | compiles=10: GO= 9 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=1 (NO-GO 1, UNKNOWN 0, GO 0) | wire: judged=15 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=15
+TOTAL                  windows= 29 | breaks= 7: caught= 5 WRONG_GO=0 abstained=2 | compiles=19: GO=12 FALSE_NOGO=1 abstained=3 (runtime-only NO-GO 2) | unavailable=3 (NO-GO 2, UNKNOWN 1, GO 0) | wire: judged=29 broken=7 RUNTIME_WRONG_GO=0 confirmed=7 unconfirmed=1 | errors=0 | replayed=29
+  FAILED bb-clientd@0dd19dea6490..e8fd6935: unknown_on_break: /home/runner/go/pkg/mod/github.com/buildbarn/bb-remote-execution@v0.0.0-20240307211444-6879a90a1d00/pkg/filesystem/lazy_directory.go:38:9: cannot use &lazyDirectory{…} (value of type *lazyDirectory) as "github.com/buildbarn/bb-storage/pkg/filesystem".Directory value in return statement: *lazyDirectory does not implement "github.com/buildbarn/bb-storage/pkg/filesystem".Directory (wrong type for method Readlink) | /home/runner/go/pkg/mod/github.com/buildbarn/bb-remote-execution@v0.0.0-20240307211444-6879a90a1d00/pkg/filesystem/lazy_directory.go:156:9: cannot use 1st function result (value of interface type "github.com/buildbarn/bb-storage/pkg/filesystem/path".Parser) as string value in return statement | /home/runner/go/pkg/mod/github.com/buildbarn/bb-remote-execution@v0.0.0-20240307211444-6879a90a1d00/pkg/filesystem/lazy_directory.go:201:28: cannot use oldName (variable of type string) as "github.com/buildbarn/bb-storage/pkg/filesystem/path".Parser value in argument to underlying.Symlink: string does not implement "github.com/buildbarn/bb-storage/pkg/filesystem/path".Parser (missing method ParseScope)
+  FAILED bb-clientd@2863699529e7..3991d6eb: unknown_on_break: /home/runner/go/pkg/mod/github.com/buildbarn/bb-remote-execution@v0.0.0-20260319042723-cd89f0554d18/pkg/blobstore/batched_store_blob_access.go:70:13: not enough arguments in call to digest.NewSetBuilder | /home/runner/go/pkg/mod/github.com/buildbarn/bb-remote-execution@v0.0.0-20260319042723-cd89f0554d18/pkg/filesystem/virtual/cas_initial_contents_fetcher.go:139:25: not enough arguments in call to digest.NewSetBuilder
+  WITHIN THE UNKNOWN LIMIT bb-clientd@64e635acb0ab..3a1f64c0: unknown_on_safe: CONTRACT_COMPILE_ERROR, NEEDS_REVIEW
+  FAILED bb-clientd@b55af46f6ebc..ba53c0ad: false_nogo: github.com/buildbarn/bb-storage@v0.0.0-20230905110346-c04246b462b6/pkg/blobstore/configuration/ac_blob_access_creator.go:62, github.com/buildbarn/bb-storage@v0.0.0-20230905110346-c04246b462b6/pkg/blobstore/configuration/cas_blob_access_creator.go:80, github.com/buildbarn/bb-storage@v0.0.0-20230905110346-c04246b462b6/pkg/blobstore/configuration/fsac_blob_access_creator.go:44
+  WITHIN THE UNKNOWN LIMIT bb-clientd@f4f51ee5b9ef..dc342e17: unknown_on_safe: CONTRACT_COMPILE_ERROR, GO_API_CHANGED_USED_BY_CALLER
+  WITHIN THE UNKNOWN LIMIT bb-clientd@f5aa0a1e77fa..756fc23c: unknown_on_safe: CONTRACT_COMPILE_ERROR
+
+29 windows in 2m22s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 3 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 145
