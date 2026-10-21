@@ -1,0 +1,27 @@
+time=2026-10-21T09:25:15.406Z level=INFO msg=cloning repo=p-containerd-api-new url=https://github.com/containerd/containerd.git
+time=2026-10-21T09:25:17.394Z level=INFO msg=cloning repo=c-containerd-api-new url=https://github.com/awslabs/soci-snapshotter.git
+containerd-api-new 40f84371 GO       source_build=GO      compiler=-                  21.9s 
+containerd-api-new 2ea4ddb3 GO       source_build=GO      compiler=breaks             75.3s 
+containerd-api-new 52be09ef GO       source_build=GO      compiler=-                   2.6s 
+containerd-api-new 65b4eb91 GO       source_build=GO      compiler=-                   1.9s 
+containerd-api-new a7224742 GO       source_build=GO      compiler=compiles            7.0s 
+containerd-api-new 8c4ccd29 GO       source_build=GO      compiler=-                   2.3s 
+containerd-api-new fbbe2067 GO       source_build=GO      compiler=-                   3.3s 
+containerd-api-new 7e217685 GO       source_build=GO      compiler=-                   1.3s 
+containerd-api-new 78abbfb7 GO       source_build=GO      compiler=-                   1.5s 
+containerd-api-new a452c2e2 GO       source_build=GO      compiler=-                   0.9s 
+containerd-api-new 658a1c78 GO       source_build=GO      compiler=-                   3.0s 
+containerd-api-new 988f3af0 GO       source_build=GO      compiler=-                   2.0s 
+containerd-api-new ea0ed51e GO       source_build=GO      compiler=-                   1.6s 
+containerd-api-new d763407d GO       source_build=GO      compiler=-                   0.8s 
+containerd-api-new 7f10e9eb GO       source_build=GO      compiler=-                   0.4s 
+containerd-api-new ac01ae5c GO       source_build=GO      compiler=-                   4.7s 
+containerd-api-new efc8e125 GO       source_build=GO      compiler=-                   2.2s 
+containerd-api-new d806373f GO       source_build=GO      compiler=-                   3.8s 
+containerd-api-new 74b465dc GO       source_build=GO      compiler=-                   1.4s 
+containerd-api-new 2c102c6c GO       source_build=GO      compiler=-                   1.5s 
+containerd-api-new   20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+TOTAL         20 decisions  GO  20  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 20
+
+20 windows in 2m23s.
+exit 0 seconds 143
