@@ -1,0 +1,9 @@
+time=2026-10-21T08:47:53.790Z level=INFO msg=cloning repo=pulumi-v3 url=https://github.com/pulumi/pulumi.git
+time=2026-10-21T08:48:10.016Z level=INFO msg=cloning repo=pulumi-go-provider url=https://github.com/pulumi/pulumi-go-provider.git
+time=2026-10-21T08:48:42.261Z level=INFO msg=mined consumer=pulumi-go-provider pin_moves=40 to_compile=4 skipped=map[]
+time=2026-10-21T08:49:42.475Z level=INFO msg=canary consumer=pulumi-go-provider at=23b717be4781d8a9127d7aac9c0f877283e6bcd3^ outcome=breaks detail="canary: github.com/pulumi/pulumi/sdk/v3/proto/go removed."
+time=2026-10-21T08:50:17.620Z level=INFO msg=window consumer=pulumi-go-provider bump=23b717be select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:50:59.735Z level=INFO msg=window consumer=pulumi-go-provider bump=56fece70 select=breaking breaking=1 compiler=breaks
+time=2026-10-21T08:51:24.602Z level=INFO msg=window consumer=pulumi-go-provider bump=b74dec3a select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:51:38.139Z level=INFO msg=window consumer=pulumi-go-provider bump=e45484a0 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:51:38.139Z level=INFO msg="suite built" suite=pulumi windows_added=4
