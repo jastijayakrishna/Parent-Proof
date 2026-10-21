@@ -1,0 +1,596 @@
+{
+ "verdict": "GO",
+ "aspects": {
+  "generated_code": "GO",
+  "runtime": "GO",
+  "source_build": "GO"
+ },
+ "changes": 0,
+ "go_only": true,
+ "contract_files": 0,
+ "provider_api_error": null,
+ "findings": [],
+ "callers": [
+  {
+   "unit": "apm-server (library)",
+   "outcome": "GO"
+  },
+  {
+   "unit": "cmd/apm-server",
+   "outcome": "GO"
+  },
+  {
+   "unit": "x-pack/apm-server",
+   "outcome": "GO"
+  }
+ ],
+ "provider_api_facts": {
+  "version": "goapi/v2",
+  "modules": {
+   "github.com/cockroachdb/errors": "",
+   "github.com/dgraph-io/badger/v2": "",
+   "github.com/elastic/apm-aggregation": "",
+   "github.com/elastic/apm-data": ".",
+   "github.com/elastic/elastic-agent-client/v7": "",
+   "github.com/jaegertracing/jaeger": "",
+   "go.opentelemetry.io/collector/consumer": "",
+   "go.opentelemetry.io/collector/pdata": "",
+   "go.opentelemetry.io/collector/semconv": ""
+  },
+  "decls": "{\"github.com/elastic/apm-data/input.Semaphore\": {\"head\": true, \"base\": true, \"methods\": [\"Acquire\", \"Release\", \"TryAcquire\"]}, \"github.com/elastic/apm-data/input/elasticapm.Config\": {\"head\": true, \"base\": true}, \"github.com/elastic/apm-data/input/elasticapm.InvalidInputError\": {\"head\": true, \"base\": true, \"methods\": [\"Error\"]}, \"github.com/elastic/apm-data/input/elasticapm.InvalidInputError.Docume"
+ },
+ "caller_provider_api_uses": 1960,
+ "caller_provider_api_sample": [
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input",
+   "name": "Semaphore",
+   "location": {
+    "file": "internal/beater/api/mux.go",
+    "line": 91,
+    "column": 18
+   },
+   "snippet": "Semaphore",
+   "count": 7
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input",
+   "name": "Semaphore",
+   "implements": {
+    "type": "golang.org/x/sync/semaphore.Weighted",
+    "methods": [
+     "Acquire",
+     "Release",
+     "TryAcquire"
+    ]
+   },
+   "location": {
+    "file": "internal/beater/beater.go",
+    "line": 445,
+    "column": 27
+   },
+   "snippet": "semaphore.NewWeighted(int64(s.config.MaxConcurrentDecoders))",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/elasticapm",
+   "name": "Config",
+   "location": {
+    "file": "internal/beater/api/mux.go",
+    "line": 108,
+    "column": 63
+   },
+   "snippet": "Config",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/elasticapm",
+   "name": "InvalidInputError",
+   "member": "Document",
+   "location": {
+    "file": "internal/beater/api/intake/handler.go",
+    "line": 159,
+    "column": 27
+   },
+   "snippet": "invalidInput.Document",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/elasticapm",
+   "name": "InvalidInputError",
+   "member": "Message",
+   "location": {
+    "file": "internal/beater/api/intake/handler.go",
+    "line": 158,
+    "column": 27
+   },
+   "snippet": "invalidInput.Message",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/elasticapm",
+   "name": "InvalidInputError",
+   "member": "TooLarge",
+   "location": {
+    "file": "internal/beater/api/intake/handler.go",
+    "line": 152,
+    "column": 19
+   },
+   "snippet": "invalidInput.TooLarge",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/elasticapm",
+   "name": "InvalidInputError",
+   "location": {
+    "file": "internal/beater/api/intake/handler.go",
+    "line": 150,
+    "column": 31
+   },
+   "snippet": "InvalidInputError",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/elasticapm",
+   "name": "NewProcessor",
+   "location": {
+    "file": "internal/beater/api/mux.go",
+    "line": 108,
+    "column": 39
+   },
+   "snippet": "NewProcessor",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/elasticapm",
+   "name": "Processor",
+   "location": {
+    "file": "internal/beater/api/mux.go",
+    "line": 169,
+    "column": 31
+   },
+   "snippet": "Processor",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/elasticapm",
+   "name": "Result",
+   "member": "Accepted",
+   "location": {
+    "file": "internal/beater/api/intake/handler.go",
+    "line": 85,
+    "column": 35
+   },
+   "snippet": "result.Accepted",
+   "count": 2
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/elasticapm",
+   "name": "Result",
+   "member": "Errors",
+   "location": {
+    "file": "internal/beater/api/intake/handler.go",
+    "line": 115,
+    "column": 27
+   },
+   "snippet": "streamResult.Errors",
+   "count": 2
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/elasticapm",
+   "name": "Result",
+   "member": "Invalid",
+   "location": {
+    "file": "internal/beater/api/intake/handler.go",
+    "line": 86,
+    "column": 34
+   },
+   "snippet": "result.Invalid",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/elasticapm",
+   "name": "Result",
+   "member": "TooLarge",
+   "location": {
+    "file": "internal/beater/api/intake/handler.go",
+    "line": 87,
+    "column": 35
+   },
+   "snippet": "result.TooLarge",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/elasticapm",
+   "name": "Result",
+   "location": {
+    "file": "internal/beater/api/intake/handler.go",
+    "line": 76,
+    "column": 25
+   },
+   "snippet": "Result",
+   "count": 3
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/elasticapm",
+   "name": "StreamHandler",
+   "member": "HandleStream",
+   "location": {
+    "file": "internal/beater/api/intake/handler.go",
+    "line": 77,
+    "column": 18
+   },
+   "snippet": "handler.HandleStream",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/elasticapm",
+   "name": "StreamHandler",
+   "location": {
+    "file": "internal/beater/api/intake/handler.go",
+    "line": 62,
+    "column": 33
+   },
+   "snippet": "StreamHandler",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "AgentNameJaeger",
+   "location": {
+    "file": "internal/beater/jaeger/grpc.go",
+    "line": 159,
+    "column": 38
+   },
+   "snippet": "AgentNameJaeger",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "ConsumeLogsResult",
+   "member": "ErrorMessage",
+   "location": {
+    "file": "internal/beater/otlp/grpc.go",
+    "line": 141,
+    "column": 48
+   },
+   "snippet": "tp.StatusInternalSe",
+   "count": 2
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "ConsumeLogsResult",
+   "member": "RejectedLogRecords",
+   "location": {
+    "file": "internal/beater/otlp/grpc.go",
+    "line": 139,
+    "column": 26
+   },
+   "snippet": "sumeLogsResult ...",
+   "count": 4
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "ConsumeLogsResult",
+   "location": {
+    "file": "internal/beater/otlp/http.go",
+    "line": 132,
+    "column": 18
+   },
+   "snippet": "ConsumeLogsResult",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "ConsumeMetricsResult",
+   "member": "ErrorMessage",
+   "location": {
+    "file": "internal/beater/otlp/grpc.go",
+    "line": 122,
+    "column": 48
+   },
+   "snippet": "l { ...",
+   "count": 2
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "ConsumeMetricsResult",
+   "member": "RejectedDataPoints",
+   "location": {
+    "file": "internal/beater/otlp/grpc.go",
+    "line": 120,
+    "column": 26
+   },
+   "snippet": "aPoints(result.RejectedDa",
+   "count": 4
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "ConsumeMetricsResult",
+   "location": {
+    "file": "internal/beater/otlp/http.go",
+    "line": 107,
+    "column": 18
+   },
+   "snippet": "ConsumeMetricsResult",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "ConsumeTracesResult",
+   "member": "ErrorMessage",
+   "location": {
+    "file": "internal/beater/otlp/grpc.go",
+    "line": 103,
+    "column": 48
+   },
+   "snippet": "est) { ...",
+   "count": 2
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "ConsumeTracesResult",
+   "member": "RejectedSpans",
+   "location": {
+    "file": "internal/beater/otlp/grpc.go",
+    "line": 101,
+    "column": 26
+   },
+   "snippet": "equest, and processe",
+   "count": 4
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "ConsumeTracesResult",
+   "location": {
+    "file": "internal/beater/otlp/http.go",
+    "line": 82,
+    "column": 18
+   },
+   "snippet": "ConsumeTracesResult",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "Consumer",
+   "member": "ConsumeLogsWithResult",
+   "location": {
+    "file": "internal/beater/otlp/grpc.go",
+    "line": 138,
+    "column": 28
+   },
+   "snippet": "err, http.StatusBadRequest) ...",
+   "count": 2
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "Consumer",
+   "member": "ConsumeMetricsWithResult",
+   "location": {
+    "file": "internal/beater/otlp/grpc.go",
+    "line": 119,
+    "column": 28
+   },
+   "snippet": "RejectedDataPoints > 0 { ...",
+   "count": 2
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "Consumer",
+   "member": "ConsumeTracesWithResult",
+   "location": {
+    "file": "internal/beater/otlp/grpc.go",
+    "line": 100,
+    "column": 28
+   },
+   "snippet": "ndlerFunc that receives a protobuf",
+   "count": 2
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "Consumer",
+   "member": "Stats",
+   "location": {
+    "file": "internal/beater/otlp/common.go",
+    "line": 58,
+    "column": 13
+   },
+   "snippet": ") ...",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "Consumer",
+   "location": {
+    "file": "internal/beater/otlp/common.go",
+    "line": 38,
+    "column": 17
+   },
+   "snippet": "lastic/a",
+   "count": 6
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "ConsumerConfig",
+   "location": {
+    "file": "internal/beater/jaeger/grpc.go",
+    "line": 74,
+    "column": 41
+   },
+   "snippet": "ConsumerConfig",
+   "count": 3
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "ConsumerStats",
+   "member": "UnsupportedMetricsDropped",
+   "location": {
+    "file": "internal/beater/otlp/common.go",
+    "line": 59,
+    "column": 55
+   },
+   "snippet": "ry(\"apm-server.otlp.http.traces",
+   "count": 1
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/input/otlp",
+   "name": "NewConsumer",
+   "location": {
+    "file": "internal/beater/jaeger/grpc.go",
+    "line": 74,
+    "column": 24
+   },
+   "snippet": "NewConsumer",
+   "count": 3
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/model/modeljson",
+   "name": "MarshalAPMEvent",
+   "location": {
+    "file": "internal/beater/processors.go",
+    "line": 96,
+    "column": 24
+   },
+   "count": 2
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/model/modelpb",
+   "name": "Addr2IP",
+   "location": {
+    "file": "internal/beater/api/mux.go",
+    "line": 314,
+    "column": 31
+   },
+   "snippet": "Addr2IP",
+   "count": 7
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/model/modelpb",
+   "name": "Batch",
+   "location": {
+    "file": "internal/agentcfg/reporter.go",
+    "line": 85,
+    "column": 25
+   },
+   "count": 16
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/model/modelpb",
+   "name": "BatchProcessor",
+   "member": "ProcessBatch",
+   "location": {
+    "file": "internal/agentcfg/reporter.go",
+    "line": 104,
+    "column": 18
+   },
+   "count": 3
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/model/modelpb",
+   "name": "BatchProcessor",
+   "location": {
+    "file": "internal/agentcfg/reporter.go",
+    "line": 31,
+    "column": 19
+   },
+   "snippet": "anitizingFetch",
+   "count": 18
+  },
+  {
+   "module": "github.com/elastic/apm-data",
+   "version": "v1.12.0",
+   "package": "github.com/elastic/apm-data/model/modelpb",
+   "name": "BatchProcessor",
+   "implements": {
+    "type": "github.com/elastic/apm-server/internal/model/modelprocessor.SetExcludeFromGrouping",
+    "methods": [
+     "ProcessBatch"
+    ]
+   },
+   "location": {
+    "file": "internal/beater/api/mux.go",
+    "line": 211,
+    "column": 46
+   },
+   "snippet": "srvmodelprocessor.SetExcludeFromGrouping{Pattern: re}",
+   "count": 1
+  }
+ ]
+}
