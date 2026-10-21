@@ -1,0 +1,2 @@
+scale-fixes-6c8def0 protocompile/v0.14.1 verdict/v0.16.0 go-analyzer/v0.27.0
+2e20c978077168cd4f30ab4b630eec1c75168129b35f0ba815b3ef940e307a65
