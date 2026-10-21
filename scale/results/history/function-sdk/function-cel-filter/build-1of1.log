@@ -1,0 +1,10 @@
+time=2026-10-21T08:42:51.390Z level=INFO msg=cloning repo=function-sdk-go url=https://github.com/crossplane/function-sdk-go.git
+time=2026-10-21T08:42:51.875Z level=INFO msg=cloning repo=function-cel-filter url=https://github.com/crossplane-contrib/function-cel-filter.git
+time=2026-10-21T08:42:52.561Z level=INFO msg=mined consumer=function-cel-filter pin_moves=5 to_compile=5 skipped=map[]
+time=2026-10-21T08:43:35.372Z level=INFO msg=canary consumer=function-cel-filter at=327f8b2e4b9f658d80e50e0160f9da146c10c521^ outcome=breaks detail="canary: github.com/crossplane/function-sdk-go/proto/v1beta1 removed."
+time=2026-10-21T08:44:29.481Z level=INFO msg=window consumer=function-cel-filter bump=327f8b2e select=breaking breaking=1 compiler=breaks
+time=2026-10-21T08:45:13.022Z level=INFO msg=window consumer=function-cel-filter bump=ce042ad8 select=breaking breaking=2 compiler=bump_side_effect
+time=2026-10-21T08:45:23.185Z level=INFO msg=window consumer=function-cel-filter bump=8ad8deb7 select=unchanged breaking=0 compiler=compiles
+time=2026-10-21T08:46:24.819Z level=INFO msg=window consumer=function-cel-filter bump=e641e90b select=unchanged breaking=0 compiler=bump_side_effect
+time=2026-10-21T08:46:24.880Z level=INFO msg=window consumer=function-cel-filter bump=b941cc57 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:46:24.880Z level=INFO msg="suite built" suite=function-sdk windows_added=5
