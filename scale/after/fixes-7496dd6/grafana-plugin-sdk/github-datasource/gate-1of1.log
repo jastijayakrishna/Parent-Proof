@@ -1,0 +1,52 @@
+time=2026-10-21T10:56:31.144Z level=INFO msg=cloning repo=github-datasource url=https://github.com/grafana/github-datasource.git
+time=2026-10-21T10:56:35.229Z level=INFO msg=cloning repo=grafana-plugin-sdk-go url=https://github.com/grafana/grafana-plugin-sdk-go.git
+github-datasource 03c6dc42 GO       source_build=GO      compiler=compiles          13.8s replay=true 
+github-datasource 0722529f GO       source_build=GO      compiler=compiles          13.8s replay=true 
+github-datasource 124fcb60 GO       source_build=GO      compiler=compiles           4.3s replay=true 
+github-datasource 0f89676d GO       source_build=GO      compiler=compiles           5.5s replay=true 
+github-datasource 1d55c178 GO       source_build=GO      compiler=compiles           7.8s replay=true 
+github-datasource 1d4b313f GO       source_build=GO      compiler=compiles           9.1s replay=true 
+github-datasource 2467672b GO       source_build=GO      compiler=compiles           4.1s replay=true 
+github-datasource 359d78bc GO       source_build=GO      compiler=compiles           4.2s replay=true 
+github-datasource 37372c6a GO       source_build=GO      compiler=compiles           2.5s replay=true 
+github-datasource 3934a880 GO       source_build=GO      compiler=compiles           3.3s replay=true 
+github-datasource 38f91ef0 GO       source_build=GO      compiler=compiles           5.7s replay=true 
+github-datasource 4452e594 GO       source_build=GO      compiler=compiles           2.7s replay=true 
+github-datasource 507185f0 GO       source_build=GO      compiler=compiles           3.2s replay=true 
+github-datasource 54a5cd0c UNKNOWN  source_build=UNKNOWN compiler=compiles           3.8s replay=true 
+github-datasource 521a7064 GO       source_build=GO      compiler=compiles           4.6s replay=true 
+github-datasource 6afb05c3 GO       source_build=GO      compiler=compiles           2.4s replay=true 
+github-datasource 778b06bd GO       source_build=GO      compiler=compiles           3.9s replay=true 
+github-datasource 79008e9e GO       source_build=GO      compiler=compiles           1.8s replay=true 
+github-datasource 9119fd2a GO       source_build=GO      compiler=compiles           1.9s replay=true 
+github-datasource 88528253 GO       source_build=GO      compiler=compiles           2.0s replay=true 
+github-datasource 96af547c GO       source_build=GO      compiler=compiles           1.7s replay=true 
+github-datasource 913dea68 UNKNOWN  source_build=UNKNOWN compiler=compiles           1.8s replay=true 
+github-datasource 99eafd20 GO       source_build=GO      compiler=compiles           3.2s replay=true 
+github-datasource a1f99783 NO_GO    source_build=GO      compiler=compiles           3.4s replay=true 
+github-datasource aaa953fb GO       source_build=GO      compiler=compiles           0.1s replay=true 
+github-datasource a63975f0 GO       source_build=GO      compiler=compiles           2.0s replay=true 
+github-datasource b1e83d70 GO       source_build=GO      compiler=compiles           2.8s replay=true 
+github-datasource b224e462 GO       source_build=GO      compiler=compiles           2.3s replay=true 
+github-datasource b603a8b3 GO       source_build=GO      compiler=compiles           2.1s replay=true 
+github-datasource b74353be GO       source_build=GO      compiler=compiles           2.7s replay=true 
+github-datasource bf280e3c GO       source_build=GO      compiler=compiles           3.1s replay=true 
+github-datasource c03f95e4 GO       source_build=GO      compiler=compiles           1.9s replay=true 
+github-datasource c3316f2d GO       source_build=GO      compiler=compiles           3.6s replay=true 
+github-datasource da7241ee GO       source_build=GO      compiler=compiles           3.1s replay=true 
+github-datasource df778426 GO       source_build=GO      compiler=compiles           1.7s replay=true 
+github-datasource dd9234ca GO       source_build=GO      compiler=compiles           1.8s replay=true 
+github-datasource f087ccae GO       source_build=GO      compiler=compiles           2.1s replay=true 
+github-datasource fe3a9344 GO       source_build=GO      compiler=compiles           2.0s replay=true 
+github-datasource fec69afc GO       source_build=GO      compiler=compiles           1.6s replay=true 
+github-datasource ff65daa4 GO       source_build=GO      compiler=compiles           3.4s replay=true 
+github-datasource/additive windows=  6 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 6: GO= 6 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=6 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=6
+github-datasource/breaking windows=  1 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 1: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 1) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=1 broken=1 RUNTIME_WRONG_GO=0 confirmed=1 unconfirmed=0 | errors=0 | replayed=1
+github-datasource/unchanged windows= 33 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=33: GO=31 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=33 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=33
+TOTAL                  windows= 40 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles=40: GO=38 FALSE_NOGO=0 abstained=2 (runtime-only NO-GO 1) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=40 broken=1 RUNTIME_WRONG_GO=0 confirmed=1 unconfirmed=0 | errors=0 | replayed=40
+  WITHIN THE UNKNOWN LIMIT github-datasource@54a5cd0cc97a..7ef35b28: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
+  WITHIN THE UNKNOWN LIMIT github-datasource@913dea68d679..6ae7edaf: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
+
+40 windows in 1m14s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 79
