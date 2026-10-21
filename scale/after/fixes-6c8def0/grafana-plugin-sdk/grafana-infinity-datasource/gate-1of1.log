@@ -1,0 +1,49 @@
+rue 
+grafana-infinity-datasource 05c90f17 GO       source_build=GO      compiler=compiles          10.0s replay=true 
+grafana-infinity-datasource 2675268d UNKNOWN  source_build=UNKNOWN compiler=compiles           3.4s replay=true 
+grafana-infinity-datasource 2ff3737e GO       source_build=GO      compiler=compiles           3.3s replay=true 
+grafana-infinity-datasource 3ec0c581 GO       source_build=GO      compiler=compiles           4.2s replay=true 
+grafana-infinity-datasource 4458dfaf GO       source_build=GO      compiler=compiles           3.9s replay=true 
+grafana-infinity-datasource 516e2591 GO       source_build=GO      compiler=compiles           4.2s replay=true 
+grafana-infinity-datasource 3039ff0d UNKNOWN  source_build=UNKNOWN compiler=compiles          13.5s replay=true 
+grafana-infinity-datasource 5b7b255a GO       source_build=GO      compiler=compiles           5.8s replay=true 
+grafana-infinity-datasource 574fd511 GO       source_build=GO      compiler=compiles           7.2s replay=true 
+grafana-infinity-datasource 6b6f6fb7 GO       source_build=GO      compiler=compiles           4.2s replay=true 
+grafana-infinity-datasource 65a171f4 GO       source_build=GO      compiler=compiles           4.5s replay=true 
+grafana-infinity-datasource 770c1b46 GO       source_build=GO      compiler=compiles           1.7s replay=true 
+grafana-infinity-datasource 771bd07e GO       source_build=GO      compiler=compiles           2.3s replay=true 
+grafana-infinity-datasource 7df3c6c4 UNKNOWN  source_build=UNKNOWN compiler=compiles           4.2s replay=true 
+grafana-infinity-datasource 7ad6cede GO       source_build=GO      compiler=compiles           5.3s replay=true 
+grafana-infinity-datasource 7fe569b3 GO       source_build=GO      compiler=compiles           2.8s replay=true 
+grafana-infinity-datasource 8d01502f GO       source_build=GO      compiler=compiles           0.1s replay=true 
+grafana-infinity-datasource 88d34f02 GO       source_build=GO      compiler=compiles           2.5s replay=true 
+grafana-infinity-datasource 9385a4c9 GO       source_build=GO      compiler=compiles           1.9s replay=true 
+grafana-infinity-datasource 91a7fcda GO       source_build=GO      compiler=compiles           2.4s replay=true 
+grafana-infinity-datasource 94dc2ef2 GO       source_build=GO      compiler=compiles           2.8s replay=true 
+grafana-infinity-datasource 95f650dd GO       source_build=GO      compiler=compiles           2.7s replay=true 
+grafana-infinity-datasource 9932e9ae GO       source_build=GO      compiler=compiles           1.1s replay=true 
+grafana-infinity-datasource a4f772e2 GO       source_build=GO      compiler=compiles           1.4s replay=true 
+grafana-infinity-datasource 9bd9ed2b UNKNOWN  source_build=UNKNOWN compiler=compiles           4.3s replay=true 
+grafana-infinity-datasource a9db545c GO       source_build=GO      compiler=compiles           2.2s replay=true 
+grafana-infinity-datasource b29b1650 GO       source_build=GO      compiler=compiles           1.3s replay=true 
+grafana-infinity-datasource b40c48f6 NO_GO    source_build=NO_GO   compiler=breaks             3.2s replay=true 
+grafana-infinity-datasource b990dd40 GO       source_build=GO      compiler=compiles           2.2s replay=true 
+grafana-infinity-datasource c1cec615 GO       source_build=GO      compiler=compiles           1.4s replay=true 
+grafana-infinity-datasource c903e601 GO       source_build=GO      compiler=compiles           1.3s replay=true 
+grafana-infinity-datasource cfab73e2 GO       source_build=GO      compiler=compiles           1.7s replay=true 
+grafana-infinity-datasource e7760b19 GO       source_build=GO      compiler=compiles           2.6s replay=true 
+grafana-infinity-datasource f0879c25 GO       source_build=GO      compiler=compiles           3.5s replay=true 
+grafana-infinity-datasource f613c720 GO       source_build=GO      compiler=compiles           2.5s replay=true 
+grafana-infinity-datasource fb58d6a6 GO       source_build=GO      compiler=compiles           1.0s replay=true 
+grafana-infinity-datasource/additive windows=  7 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 7: GO= 6 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=7 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=7
+grafana-infinity-datasource/breaking windows=  1 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 1: GO= 1 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 1) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=1 broken=1 RUNTIME_WRONG_GO=0 confirmed=1 unconfirmed=0 | errors=0 | replayed=1
+grafana-infinity-datasource/unchanged windows= 32 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles=31: GO=28 FALSE_NOGO=0 abstained=3 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=32 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=32
+TOTAL                  windows= 40 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles=39: GO=35 FALSE_NOGO=0 abstained=4 (runtime-only NO-GO 1) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=40 broken=1 RUNTIME_WRONG_GO=0 confirmed=1 unconfirmed=0 | errors=0 | replayed=40
+  WITHIN THE UNKNOWN LIMIT grafana-infinity-datasource@2675268df098..5364a9d4: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER, GO_API_MEMBER_MOVED
+  WITHIN THE UNKNOWN LIMIT grafana-infinity-datasource@3039ff0d54eb..63f03d32: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
+  WITHIN THE UNKNOWN LIMIT grafana-infinity-datasource@7df3c6c4153a..10aa162a: unknown_on_safe: GO_API_MEMBER_MOVED, GO_API_CHANGED_USED_BY_CALLER
+  WITHIN THE UNKNOWN LIMIT grafana-infinity-datasource@9bd9ed2b74fe..896568c7: unknown_on_safe: GO_API_MEMBER_MOVED
+
+40 windows in 1m22s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 85
