@@ -1,0 +1,30 @@
+time=2026-10-21T09:22:00.916Z level=INFO msg=cloning repo=p-function-sdk url=https://github.com/crossplane/function-sdk-go.git
+time=2026-10-21T09:22:01.156Z level=INFO msg=cloning repo=c-function-sdk url=https://github.com/crossplane-contrib/function-patch-and-transform.git
+function-sdk ee776c4b GO       source_build=GO      compiler=baseline_fails     87.7s 
+function-sdk 6f13bae3 GO       source_build=GO      compiler=baseline_fails      1.2s 
+function-sdk ba51908e GO       source_build=GO      compiler=baseline_fails      2.8s 
+function-sdk ff5d0e1a NO_GO    source_build=UNKNOWN compiler=baseline_fails      1.4s 
+function-sdk be109a00 NO_GO    source_build=UNKNOWN compiler=baseline_fails      1.8s 
+function-sdk 4f718047 GO       source_build=GO      compiler=baseline_fails      1.8s 
+function-sdk 1f3ee551 UNKNOWN  source_build=UNKNOWN compiler=baseline_fails      2.9s 
+function-sdk 9de53115 UNKNOWN  source_build=UNKNOWN compiler=baseline_fails      1.5s 
+function-sdk 7617361f GO       source_build=GO      compiler=baseline_fails      1.7s 
+function-sdk d73e859f GO       source_build=GO      compiler=baseline_fails      2.2s 
+function-sdk 9e73fdc8 GO       source_build=GO      compiler=baseline_fails      1.5s 
+function-sdk bb797d14 GO       source_build=GO      compiler=baseline_fails      1.5s 
+function-sdk 0eb69eba GO       source_build=GO      compiler=baseline_fails      3.7s 
+function-sdk 14e07d23 GO       source_build=GO      compiler=baseline_fails      3.4s 
+function-sdk 21ef1a8d GO       source_build=GO      compiler=baseline_fails      1.0s 
+function-sdk fb50b8ac GO       source_build=GO      compiler=baseline_fails      1.0s 
+function-sdk ec7f835b GO       source_build=GO      compiler=-                   0.2s 
+function-sdk 191462b0 GO       source_build=GO      compiler=baseline_fails      0.9s 
+function-sdk   18 decisions  GO  14  NO-GO   2  UNKNOWN   2 (11.1%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 18
+TOTAL         18 decisions  GO  14  NO-GO   2  UNKNOWN   2 (11.1%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 18
+
+UNKNOWN reasons across all: windows, ecosystems, an example
+    2   1  GO_API_CHANGED_USED_BY_CALLER (e.g. function-sdk@1f3ee551a040e23032754034de5aa83c5b78563c)
+    2   1  SECOND_CHECK_DISAGREES (e.g. function-sdk@ff5d0e1ae46d05794e9941afd6357658cc96ef64)
+    2   1  WHOLE_MESSAGE_FLOW (e.g. function-sdk@ff5d0e1ae46d05794e9941afd6357658cc96ef64)
+
+18 windows in 1m59s.
+exit 0 seconds 119
