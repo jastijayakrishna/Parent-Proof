@@ -1,0 +1,17 @@
+cri-o      0393a498 GO       source_build=GO      compiler=compiles          31.0s replay=true 
+cri-o      1891357e NO_GO    source_build=NO_GO   compiler=compiles          31.8s replay=true 
+cri-o      33da12ff UNKNOWN  source_build=UNKNOWN compiler=compiles          25.9s replay=true 
+cri-o      91bf1709 GO       source_build=GO      compiler=compiles          25.3s replay=true 
+cri-o      9de68f5d GO       source_build=GO      compiler=compiles          13.6s replay=true 
+cri-o      a8f0ff8d GO       source_build=GO      compiler=compiles          10.1s replay=true 
+cri-o      85104990 GO       source_build=GO      compiler=compiles          25.2s replay=true 
+cri-o      cde8de8a GO       source_build=GO      compiler=compiles           6.0s replay=true 
+cri-o/additive         windows=  3 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 3: GO= 2 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=3 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=3
+cri-o/breaking         windows=  1 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 1: GO= 0 FALSE_NOGO=1 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=1 broken=1 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=1
+cri-o/unchanged        windows=  4 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 4: GO= 4 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=4 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=4
+TOTAL                  windows=  8 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 8: GO= 6 FALSE_NOGO=1 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=8 broken=1 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=8
+  FAILED cri-o@1891357ec992..a2eea2bc: false_nogo: server/nri-api.go:272, server/nri-api.go:80, vendor/github.com/containerd/nri/pkg/adaptation/adaptation.go:207
+  WITHIN THE UNKNOWN LIMIT cri-o@33da12ff6d9a..edfd91b7: unknown_on_safe: GO_API_CHANGED_USED_BY_CALLER
+
+8 windows in 1m27s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: 1 unexpected failures; the suite has no baseline: record one with `verifier gate baseline`
