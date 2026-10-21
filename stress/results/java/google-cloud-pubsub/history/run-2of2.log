@@ -1,0 +1,11 @@
+google-cloud-pubsub history: 19 windows, shard 2/2 has 9
+canary at 6ce7a4941ef5: oracle_error (157 files moved) ['']
+6ce7a4941ef5 2026-06-03 verifier=None build=None compiler=baseline_fails 28.6s 
+73c9a0342f91 2026-07-07 verifier=None build=None compiler=baseline_fails 31.1s 
+b7a850434fe0 2026-07-08 verifier=None build=None compiler=baseline_fails 28.5s 
+5c6478cfe19f 2026-07-27 verifier=None build=None compiler=baseline_fails 33.9s 
+12cc0537a10c 2026-07-31 verifier=GO build=GO compiler=oracle_error 97.1s 
+dd50e0dcd3cb 2026-08-25 verifier=GO build=GO compiler=oracle_error 81.7s 
+0b2991e56b4d 2026-09-04 verifier=None build=None compiler=baseline_fails 32.4s 
+0c703082f187 2026-09-14 verifier=None build=None compiler=baseline_fails 34.5s 
+05a998f3368c 2026-09-24 verifier=GO build=GO compiler=oracle_error 81.7s 
