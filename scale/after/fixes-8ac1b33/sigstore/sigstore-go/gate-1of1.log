@@ -1,0 +1,24 @@
+time=2026-10-21T09:44:53.649Z level=INFO msg=cloning repo=protobuf-specs url=https://github.com/sigstore/protobuf-specs.git
+time=2026-10-21T09:44:54.603Z level=INFO msg=cloning repo=sigstore-go url=https://github.com/sigstore/sigstore-go.git
+sigstore-go 2c9ea938 UNKNOWN  source_build=UNKNOWN compiler=compiles           9.7s replay=true 
+sigstore-go 2a9419a8 GO       source_build=GO      compiler=compiles           9.8s replay=true 
+sigstore-go 56c25281 UNKNOWN  source_build=GO      compiler=compiles           4.1s replay=true 
+sigstore-go 916a0214 GO       source_build=GO      compiler=compiles           3.7s replay=true 
+sigstore-go 2cdb28ed GO       source_build=GO      compiler=compiles           8.0s replay=true 
+sigstore-go bdbe45f0 UNKNOWN  source_build=GO      compiler=compiles           2.5s replay=true 
+sigstore-go c43b3487 NO_GO    source_build=GO      compiler=compiles           1.5s replay=true 
+sigstore-go 976125fd GO       source_build=GO      compiler=compiles           4.2s replay=true 
+sigstore-go cb4515a4 NO_GO    source_build=NO_GO   compiler=breaks             1.2s replay=true 
+sigstore-go e5c957ab NO_GO    source_build=GO      compiler=compiles           1.5s replay=true 
+sigstore-go edafa82f NO_GO    source_build=GO      compiler=compiles           0.6s replay=true 
+sigstore-go f62d7f4c GO       source_build=GO      compiler=compiles           2.4s replay=true 
+sigstore-go dcab992b GO       source_build=GO      compiler=compiles          11.4s replay=true 
+sigstore-go/additive   windows=  3 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 3: GO= 3 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 1) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=3 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=1 | errors=0 | replayed=3
+sigstore-go/breaking   windows=  7 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles= 6: GO= 6 FALSE_NOGO=0 abstained=0 (runtime-only NO-GO 2) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=7 broken=1 RUNTIME_WRONG_GO=0 confirmed=1 unconfirmed=2 | errors=0 | replayed=7
+sigstore-go/unchanged  windows=  3 | breaks= 0: caught= 0 WRONG_GO=0 abstained=0 | compiles= 3: GO= 2 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 0) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=3 broken=0 RUNTIME_WRONG_GO=0 confirmed=0 unconfirmed=0 | errors=0 | replayed=3
+TOTAL                  windows= 13 | breaks= 1: caught= 1 WRONG_GO=0 abstained=0 | compiles=12: GO=11 FALSE_NOGO=0 abstained=1 (runtime-only NO-GO 3) | unavailable=0 (NO-GO 0, UNKNOWN 0, GO 0) | wire: judged=13 broken=1 RUNTIME_WRONG_GO=0 confirmed=1 unconfirmed=3 | errors=0 | replayed=13
+  WITHIN THE UNKNOWN LIMIT sigstore-go@2c9ea93842ff..eede12ff: unknown_on_safe: CONTRACT_COMPILE_ERROR
+
+13 windows in 33s with 2 workers; 0 differ from the baseline.
+verifier gate: release gate failed: the suite has no baseline: record one with `verifier gate baseline`
+gate exit 1 seconds 35
