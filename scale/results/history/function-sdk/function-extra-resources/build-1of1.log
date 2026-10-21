@@ -1,0 +1,9 @@
+time=2026-10-21T08:29:02.238Z level=INFO msg=cloning repo=function-sdk-go url=https://github.com/crossplane/function-sdk-go.git
+time=2026-10-21T08:29:02.475Z level=INFO msg=cloning repo=function-extra-resources url=https://github.com/crossplane-contrib/function-extra-resources.git
+time=2026-10-21T08:29:02.951Z level=INFO msg=mined consumer=function-extra-resources pin_moves=4 to_compile=4 skipped=map[]
+time=2026-10-21T08:29:51.959Z level=INFO msg=canary consumer=function-extra-resources at=3bf8f5d599f912ba078b436fad33c96454dd81f4^ outcome=breaks detail="canary: github.com/crossplane/function-sdk-go/proto/v1beta1 removed."
+time=2026-10-21T08:30:54.145Z level=INFO msg=window consumer=function-extra-resources bump=3bf8f5d5 select=breaking breaking=1 compiler=breaks
+time=2026-10-21T08:31:44.011Z level=INFO msg=window consumer=function-extra-resources bump=c6ef3048 select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:31:55.546Z level=INFO msg=window consumer=function-extra-resources bump=ab9198c8 select=breaking breaking=2 compiler=breaks
+time=2026-10-21T08:32:45.992Z level=INFO msg=window consumer=function-extra-resources bump=bb6b9d9b select=additive breaking=0 compiler=compiles
+time=2026-10-21T08:32:45.992Z level=INFO msg="suite built" suite=function-sdk windows_added=4
