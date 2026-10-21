@@ -1,0 +1,11 @@
+time=2026-10-21T09:04:07.912Z level=INFO msg=cloning repo=loop-swapserverrpc url=https://github.com/lightninglabs/loop.git
+time=2026-10-21T09:04:08.791Z level=INFO msg=cloning repo=lightning-terminal url=https://github.com/lightninglabs/lightning-terminal.git
+time=2026-10-21T09:04:11.797Z level=INFO msg=skip consumer=lightning-terminal bump=443b5f41 old=v1.0.12 new=v1.0.13-0.20250306160707-1091a628755c reason=unresolved_pin
+time=2026-10-21T09:04:11.797Z level=INFO msg=skip consumer=lightning-terminal bump=5d8753ab old=v1.0.13-0.20250306160707-1091a628755c new=v1.0.13 reason=unresolved_pin
+time=2026-10-21T09:04:12.482Z level=INFO msg=mined consumer=lightning-terminal pin_moves=18 to_compile=4 skipped=map[unresolved_pin:2]
+time=2026-10-21T09:05:32.511Z level=INFO msg=canary consumer=lightning-terminal at=2714bdc19866a2b1778d89e6b14cebd69417f763^ outcome=bump_side_effect detail="canary: github.com/lightninglabs/loop/swapserverrpc removed. module github.com/lightninglabs/loop/swapserverrpc@latest found (v1.0.22, replaced by /tmp/parent-canary-2388109606), but does not contain package github.com/lightninglabs/loop/swapserverrpc"
+time=2026-10-21T09:05:38.676Z level=INFO msg=window consumer=lightning-terminal bump=2714bdc1 select=breaking breaking=2 compiler=compiles
+time=2026-10-21T09:08:58.419Z level=INFO msg=window consumer=lightning-terminal bump=6ac0757d select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:10:40.818Z level=INFO msg=window consumer=lightning-terminal bump=f73b43a7 select=breaking breaking=7 compiler=compiles
+time=2026-10-21T09:11:39.746Z level=INFO msg=window consumer=lightning-terminal bump=9869f81c select=additive breaking=0 compiler=compiles
+time=2026-10-21T09:11:39.746Z level=INFO msg="suite built" suite=swapserverrpc windows_added=4
