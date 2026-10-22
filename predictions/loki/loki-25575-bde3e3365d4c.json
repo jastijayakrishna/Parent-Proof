@@ -1,0 +1,51 @@
+{
+  "pr": {
+    "n": 25575,
+    "head": "bde3e3365d4c30625c11650ac4a0a575491c143c",
+    "base": "21072d1cdc67679c797bc6b573cdfd09b8e0c5d0",
+    "title": "feat(dataobj): Record the stream layout in the streams section",
+    "url": "https://github.com/grafana/loki/pull/25575",
+    "updated": "2026-10-22T15:28:44Z",
+    "eco": "loki",
+    "key": "loki-25575-bde3e3365d4c",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "bde3e3365d4c30625c11650ac4a0a575491c143c"
+  },
+  "merge_base": "14f73b26d0984988112c3e6085eee16ea7c226bd",
+  "decided": "79cececf09a1dbf53601df505bcec0835fd3b5b3",
+  "started": "2026-10-22T15:30:47Z",
+  "finished": "2026-10-22T15:30:56Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/39804976098",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "79cececf09a1dbf53601df505bcec0835fd3b5b3",
+      "parent": "14f73b26d0984988112c3e6085eee16ea7c226bd",
+      "date": "2026-10-22",
+      "subject": "pull request 25575 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "TOOLCHAIN_TOO_OLD"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "pkg/dataobj/internal/metadata/datasetmd/datasetmd.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: pkg/dataobj/internal/metadata/datasetmd/datasetmd.proto",
+      "seconds": 1.72250223,
+      "total": 1
+    }
+  ],
+  "log": "loki        79cececf UNKNOWN  source_build=UNKNOWN compiler=-                   1.7s \nloki           1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  TOOLCHAIN_TOO_OLD (e.g. loki@79cececf09a1dbf53601df505bcec0835fd3b5b3)\n\n1 windows in 9s."
+}
