@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 27585,
+    "head": "69aa32077d0cbd3577e393f8e43b06e7436a5f03",
+    "base": "81c0798e7c85bb6615173a498e2bd4c617ddb879",
+    "title": "feat: add bearer token support to Bitbucket Cloud SCM provider Fixes #26929",
+    "url": "https://github.com/argoproj/argo-cd/pull/27585",
+    "updated": "2026-10-22T21:47:28Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-27585-69aa32077d0c",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "69aa32077d0cbd3577e393f8e43b06e7436a5f03"
+  },
+  "merge_base": "81c0798e7c85bb6615173a498e2bd4c617ddb879",
+  "decided": "8dfab730fd6396ade49919f77321e98000aff144",
+  "started": "2026-10-22T22:52:43Z",
+  "finished": "2026-10-22T22:53:19Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/39867705784",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "8dfab730fd6396ade49919f77321e98000aff144",
+      "parent": "81c0798e7c85bb6615173a498e2bd4c617ddb879",
+      "date": "2026-10-22",
+      "subject": "pull request 27585 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "pkg/apis/application/v1alpha1/generated.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 32.20370879,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     8dfab730 GO       source_build=GO      compiler=-                  32.2s \nargo-cd        1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 35s."
+}
