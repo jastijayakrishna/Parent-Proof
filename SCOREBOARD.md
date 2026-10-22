@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-22 00:05 UTC.
+Updated 2026-10-22 05:08 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 171 | 136 | 5 | 30 | 72 | 71 | 0 | 0 |
+| 173 | 137 | 5 | 31 | 72 | 71 | 0 | 0 |
 
 ## Every pull request
 
@@ -22,6 +22,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#27458](https://github.com/argoproj/argo-cd/pull/27458) feat: add sso.auto-login option to skip SSO login button click | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#28233](https://github.com/argoproj/argo-cd/pull/28233) feat: disambiguate local users from SSO users in RBAC with strict mode | Merge | Merge | not judged |  |
 | argo-cd | [#28233](https://github.com/argoproj/argo-cd/pull/28233) feat: disambiguate local users from SSO users in RBAC with strict mode | Merge | Merge | not judged |  |
+| argo-cd | [#28309](https://github.com/argoproj/argo-cd/pull/28309) feat: add --output-parameters to argocd appset generate (#27599) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
 | argo-cd | [#28908](https://github.com/argoproj/argo-cd/pull/28908) fix: base auto-sync change detection on the last synced revision (#27875, #21692) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -184,6 +185,7 @@ verifier before the compiler built the consumer against it.
 | temporal | [#886](https://github.com/temporalio/api/pull/886) Document current activity attempt start time | Merge | Merge | not judged |  |
 | temporal | [#886](https://github.com/temporalio/api/pull/886) Document current activity attempt start time | Merge | Merge | not judged |  |
 | temporal | [#887](https://github.com/temporalio/api/pull/887) Add PollerScalingInfo to poll requests | Merge | Merge | not judged |  |
+| temporal | [#887](https://github.com/temporalio/api/pull/887) Report poller target on poll requests and in the worker heartbeat | Merge | Merge | not judged |  |
 | temporal | [#890](https://github.com/temporalio/api/pull/890) marking time skipping API experimental | Merge | Merge | not judged |  |
 | temporal | [#891](https://github.com/temporalio/api/pull/891) PoC Workflow Heartbeat Notification | Merge | Merge | not judged |  |
 | temporal | [#891](https://github.com/temporalio/api/pull/891) PoC Workflow Heartbeat Notification | Merge | Merge | not judged |  |
