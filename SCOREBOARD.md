@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-22 15:35 UTC.
+Updated 2026-10-22 19:42 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 185 | 142 | 5 | 38 | 74 | 73 | 0 | 0 |
+| 189 | 146 | 5 | 38 | 76 | 75 | 0 | 0 |
 
 ## Every pull request
 
@@ -55,6 +55,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
+| argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
@@ -64,6 +65,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30132](https://github.com/argoproj/argo-cd/pull/30132) fix(hydrator): point README clone command at dry source repo (#29197) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#30244](https://github.com/argoproj/argo-cd/pull/30244) feat: add enableDNS flag for Helm (#17596) | Merge | Merge | not judged |  |
 | cometbft-cosmos-sdk | [#6100](https://github.com/cometbft/cometbft/pull/6100) fix(types,state): enforce minimum Block.MaxBytes floor and handle small limits defensively | Merge | Merge | compiles |  |
+| containerd | [#13822](https://github.com/containerd/containerd/pull/13822) cri: implement pod-level checkpoint/restore (KEP-5823) | Merge | Merge | not judged |  |
 | containerd | [#13822](https://github.com/containerd/containerd/pull/13822) cri: implement pod-level checkpoint/restore (KEP-5823) | Merge | Merge | not judged |  |
 | containerd | [#13822](https://github.com/containerd/containerd/pull/13822) cri: implement pod-level checkpoint/restore (KEP-5823) | Merge | Merge | not judged |  |
 | containerd | [#13908](https://github.com/containerd/containerd/pull/13908) cri: Upgrade go-criu to v8 | Merge | Merge | not judged |  |
@@ -136,7 +138,9 @@ verifier before the compiler built the consumer against it.
 | lnd | [#10993](https://github.com/lightningnetwork/lnd/pull/10993) walletrpc: return the master key birthday from ListAccounts | Merge | Merge | compiles |  |
 | lnd | [#11095](https://github.com/lightningnetwork/lnd/pull/11095) keychain+walletrpc: add DeriveAndStoreKey | Merge | Merge | compiles |  |
 | lnd | [#11095](https://github.com/lightningnetwork/lnd/pull/11095) keychain+walletrpc: add DeriveAndStoreKey | Merge | Merge | compiles |  |
+| lnd | [#11244](https://github.com/lightningnetwork/lnd/pull/11244) routerrpc: correct timeout_seconds field documentation | Merge | Merge | compiles |  |
 | lnd | [#11327](https://github.com/lightningnetwork/lnd/pull/11327) lnrpc: make forwarding package counts optional | Merge | Merge | compiles |  |
+| lnd | [#11365](https://github.com/lightningnetwork/lnd/pull/11365) multi: add reverse ordering to listchaintxns | Merge | Merge | compiles |  |
 | lnd | [#11365](https://github.com/lightningnetwork/lnd/pull/11365) multi: add reverse ordering to listchaintxns | Merge | Merge | compiles |  |
 | lnd | [#11365](https://github.com/lightningnetwork/lnd/pull/11365) multi: add reverse ordering to listchaintxns | Merge | Merge | compiles |  |
 | lnd | [#11365](https://github.com/lightningnetwork/lnd/pull/11365) multi: add reverse ordering to listchaintxns | Merge | Merge | compiles |  |
