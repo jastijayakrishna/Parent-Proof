@@ -1,0 +1,52 @@
+{
+  "pr": {
+    "n": 24121,
+    "head": "cb4a49a247df7550652c6d224982fe9efbdbf5db",
+    "base": "65350789e8e593f348a7b8179d70b56407c9a429",
+    "title": "feat(azure): allow setting azure cloud (gov, china) for authentication",
+    "url": "https://github.com/argoproj/argo-cd/pull/24121",
+    "updated": "2026-10-22T08:22:57Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-24121-cb4a49a247df",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "cb4a49a247df7550652c6d224982fe9efbdbf5db"
+  },
+  "merge_base": "65350789e8e593f348a7b8179d70b56407c9a429",
+  "decided": "c67667b2310eb7749ce8fea23fee5aaedaa464a1",
+  "started": "2026-10-22T10:23:49Z",
+  "finished": "2026-10-22T10:24:35Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/39762394168",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "c67667b2310eb7749ce8fea23fee5aaedaa464a1",
+      "parent": "65350789e8e593f348a7b8179d70b56407c9a429",
+      "date": "2026-10-22",
+      "subject": "pull request 24121 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "CONTRACT_COMPILE_ERROR"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "pkg/apis/application/v1alpha1/generated.proto",
+        "server/repository/repository.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 43.496724991,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     c67667b2 UNKNOWN  source_build=UNKNOWN compiler=-                  43.5s \nargo-cd        1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  CONTRACT_COMPILE_ERROR (e.g. argo-cd@c67667b2310eb7749ce8fea23fee5aaedaa464a1)\n\n1 windows in 46s."
+}

@@ -1,0 +1,51 @@
+{
+  "pr": {
+    "n": 27124,
+    "head": "86bdaf5a11df6819e090a3b4b9b661ea8eb78bde",
+    "base": "606df257fa280c1bc4786f6d764400bcfbc588e2",
+    "title": "feat: add support for attaching ephemeral containers (debug containers)",
+    "url": "https://github.com/argoproj/argo-cd/pull/27124",
+    "updated": "2026-10-22T05:42:43Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-27124-86bdaf5a11df",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "86bdaf5a11df6819e090a3b4b9b661ea8eb78bde"
+  },
+  "merge_base": "606df257fa280c1bc4786f6d764400bcfbc588e2",
+  "decided": "ca74402933a607169b947bfb361374d7f5461f7e",
+  "started": "2026-10-22T10:23:52Z",
+  "finished": "2026-10-22T10:24:28Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/39762394168",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "ca74402933a607169b947bfb361374d7f5461f7e",
+      "parent": "606df257fa280c1bc4786f6d764400bcfbc588e2",
+      "date": "2026-10-22",
+      "subject": "pull request 27124 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "CONTRACT_COMPILE_ERROR"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "server/settings/settings.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 33.306465132,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     ca744029 UNKNOWN  source_build=UNKNOWN compiler=-                  33.3s \nargo-cd        1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  CONTRACT_COMPILE_ERROR (e.g. argo-cd@ca74402933a607169b947bfb361374d7f5461f7e)\n\n1 windows in 36s."
+}
