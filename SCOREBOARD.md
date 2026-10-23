@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-23 16:34 UTC.
+Updated 2026-10-23 20:11 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 204 | 155 | 5 | 44 | 77 | 76 | 0 | 0 |
+| 206 | 156 | 6 | 44 | 77 | 76 | 0 | 0 |
 
 ## Every pull request
 
@@ -75,6 +75,7 @@ verifier before the compiler built the consumer against it.
 | containerd | [#13822](https://github.com/containerd/containerd/pull/13822) cri: implement pod-level checkpoint/restore (KEP-5823) | Merge | Merge | not judged |  |
 | containerd | [#13908](https://github.com/containerd/containerd/pull/13908) cri: Upgrade go-criu to v8 | Merge | Merge | not judged |  |
 | containerd | [#14453](https://github.com/containerd/containerd/pull/14453) Update NRI to latest (0.12.4) | Merge | Merge | not judged |  |
+| containerd | [#14453](https://github.com/containerd/containerd/pull/14453) Update NRI to latest (0.12.5) | Merge | Merge | not judged |  |
 | containerd | [#14453](https://github.com/containerd/containerd/pull/14453) Update NRI to latest (0.12.4) | Merge | Merge | not judged |  |
 | containerd | [#14453](https://github.com/containerd/containerd/pull/14453) Update NRI to latest (0.12.5) | Merge | Merge | not judged |  |
 | cortex | [#7384](https://github.com/cortexproject/cortex/pull/7384) Add per-tenant cardinality API endpoint | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, NEEDS_REVIEW |
@@ -221,3 +222,4 @@ verifier before the compiler built the consumer against it.
 | temporal | [#891](https://github.com/temporalio/api/pull/891) PoC Workflow Heartbeat Notification | Merge | Merge | not judged |  |
 | temporal | [#891](https://github.com/temporalio/api/pull/891) PoC Workflow Heartbeat Notification | Merge | Merge | not judged |  |
 | temporal | [#891](https://github.com/temporalio/api/pull/891) PoC Workflow Heartbeat Notification | Merge | Merge | not judged |  |
+| temporal | [#893](https://github.com/temporalio/api/pull/893) Propose basic session API shape | Don't merge | Merge | not judged | WHOLE_MESSAGE_FLOW |

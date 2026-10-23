@@ -1,0 +1,55 @@
+{
+  "pr": {
+    "n": 893,
+    "head": "f3c6303764ed4e413b8a83d350b7b90224dce8c3",
+    "base": "6811161a3c59c7773ac236dbf9adf9eb359f9288",
+    "title": "Propose basic session API shape",
+    "url": "https://github.com/temporalio/api/pull/893",
+    "updated": "2026-10-23T19:57:19Z",
+    "eco": "temporal",
+    "key": "temporal-893-f3c6303764ed",
+    "provider": "temporalio/api",
+    "consumer": "temporalio/sdk-go",
+    "consumer_sha": "0ca89a472ff4ea9374e49fbb8aa72c0650873e0d"
+  },
+  "merge_base": "6811161a3c59c7773ac236dbf9adf9eb359f9288",
+  "decided": "47c0789aab38d479dcf63506f104b82d0a64ac36",
+  "started": "2026-10-23T20:10:42Z",
+  "finished": "2026-10-23T20:10:53Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/40016871375",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "temporal",
+      "commit": "47c0789aab38d479dcf63506f104b82d0a64ac36",
+      "parent": "6811161a3c59c7773ac236dbf9adf9eb359f9288",
+      "date": "2026-10-23",
+      "subject": "pull request 893 as one change",
+      "verdict": "NO_GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "NO_GO",
+        "source_build": "GO"
+      },
+      "unknown_reasons": [
+        "WHOLE_MESSAGE_FLOW"
+      ],
+      "evidence": [
+        "internal/common/serializer/serializer.go:39",
+        "internal/common/serializer/serializer.go:89"
+      ],
+      "evidence_count": 2,
+      "changed": [
+        "temporal/api/session/v1/message.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 8.940770131,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-23T20:10:42.969Z level=INFO msg=cloning repo=c-temporal url=https://github.com/temporalio/sdk-go.git\ntemporal    47c0789a NO_GO    source_build=GO      compiler=-                   8.9s \ntemporal       1 decisions  GO   0  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  WHOLE_MESSAGE_FLOW (e.g. temporal@47c0789aab38d479dcf63506f104b82d0a64ac36)\n\n1 windows in 11s."
+}
