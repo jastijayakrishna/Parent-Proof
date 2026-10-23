@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-23 06:11 UTC.
+Updated 2026-10-23 11:55 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 196 | 152 | 5 | 39 | 77 | 76 | 0 | 0 |
+| 200 | 153 | 5 | 42 | 77 | 76 | 0 | 0 |
 
 ## Every pull request
 
@@ -45,6 +45,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#29647](https://github.com/argoproj/argo-cd/pull/29647) refactor: filter appset file patterns in the repo-server | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29926](https://github.com/argoproj/argo-cd/pull/29926) feat: allow rollback while auto-sync is enabled | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29926](https://github.com/argoproj/argo-cd/pull/29926) feat: allow rollback while auto-sync is enabled | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
@@ -171,9 +172,12 @@ verifier before the compiler built the consumer against it.
 | loki | [#25425](https://github.com/grafana/loki/pull/25425) feat(logline): Plan OR-aware hint needles | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25436](https://github.com/grafana/loki/pull/25436) refactor(compactor): Delete sort object task | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25501](https://github.com/grafana/loki/pull/25501) feat(server): Enable configurable TLS curve preferences | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
+| loki | [#25501](https://github.com/grafana/loki/pull/25501) feat(server): Enable configurable TLS curve preferences | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25501](https://github.com/grafana/loki/pull/25501) feat(server): Enable configurable TLS group preferences | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25557](https://github.com/grafana/loki/pull/25557) refactor(dataobj): Move the layout information to the streams section | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
+| loki | [#25557](https://github.com/grafana/loki/pull/25557) refactor(dataobj): Move the layout information to the streams section | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25575](https://github.com/grafana/loki/pull/25575) feat(dataobj): Record the stream layout in the streams section | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
+| loki | [#25578](https://github.com/grafana/loki/pull/25578) feat(dataobj): Read the stream layout only from the streams section | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | spire | [#102](https://github.com/spiffe/spire-api-sdk/pull/102) Add unauthenticated server Version GetVersion API | Merge | Merge | compiles |  |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |
 | temporal | [#827](https://github.com/temporalio/api/pull/827) Add RESOURCE_EXHAUSTED_CAUSE_CALLER_RPS_LIMIT resource-exhausted cause | Merge | Merge | not judged |  |

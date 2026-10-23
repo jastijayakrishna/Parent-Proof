@@ -1,0 +1,53 @@
+{
+  "pr": {
+    "n": 25557,
+    "head": "5243148aba7adddcb67da3e894ef82bd256948de",
+    "base": "ce961feb092fa38e2dbc3ada3dd89df673566659",
+    "title": "refactor(dataobj): Move the layout information to the streams section",
+    "url": "https://github.com/grafana/loki/pull/25557",
+    "updated": "2026-10-23T09:42:11Z",
+    "eco": "loki",
+    "key": "loki-25557-5243148aba7a",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "5243148aba7adddcb67da3e894ef82bd256948de"
+  },
+  "merge_base": "ce961feb092fa38e2dbc3ada3dd89df673566659",
+  "decided": "b86804291c75e72157b626dea69bb905a2ebef55",
+  "started": "2026-10-23T11:54:37Z",
+  "finished": "2026-10-23T11:54:45Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/39949117490",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "b86804291c75e72157b626dea69bb905a2ebef55",
+      "parent": "ce961feb092fa38e2dbc3ada3dd89df673566659",
+      "date": "2026-10-23",
+      "subject": "pull request 25557 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "TOOLCHAIN_TOO_OLD"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "pkg/dataobj/compaction/v2/proto/compactionv2.proto",
+        "pkg/dataobj/internal/metadata/datasetmd/datasetmd.proto",
+        "pkg/engine/internal/proto/physicalpb/physicalpb.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: pkg/dataobj/compaction/v2/proto/compactionv2.proto",
+      "seconds": 1.915476669,
+      "total": 1
+    }
+  ],
+  "log": "loki        b8680429 UNKNOWN  source_build=UNKNOWN compiler=-                   1.9s \nloki           1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  TOOLCHAIN_TOO_OLD (e.g. loki@b86804291c75e72157b626dea69bb905a2ebef55)\n\n1 windows in 8s."
+}
