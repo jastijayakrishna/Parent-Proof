@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-23 20:11 UTC.
+Updated 2026-10-23 23:18 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 206 | 156 | 6 | 44 | 77 | 76 | 0 | 0 |
+| 207 | 156 | 7 | 44 | 77 | 76 | 0 | 0 |
 
 ## Every pull request
 
@@ -222,4 +222,5 @@ verifier before the compiler built the consumer against it.
 | temporal | [#891](https://github.com/temporalio/api/pull/891) PoC Workflow Heartbeat Notification | Merge | Merge | not judged |  |
 | temporal | [#891](https://github.com/temporalio/api/pull/891) PoC Workflow Heartbeat Notification | Merge | Merge | not judged |  |
 | temporal | [#891](https://github.com/temporalio/api/pull/891) PoC Workflow Heartbeat Notification | Merge | Merge | not judged |  |
+| temporal | [#893](https://github.com/temporalio/api/pull/893) Propose basic session API shape | Don't merge | Merge | not judged | WHOLE_MESSAGE_FLOW |
 | temporal | [#893](https://github.com/temporalio/api/pull/893) Propose basic session API shape | Don't merge | Merge | not judged | WHOLE_MESSAGE_FLOW |
