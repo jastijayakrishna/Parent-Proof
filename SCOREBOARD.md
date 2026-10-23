@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-23 11:55 UTC.
+Updated 2026-10-23 16:34 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 200 | 153 | 5 | 42 | 77 | 76 | 0 | 0 |
+| 204 | 155 | 5 | 44 | 77 | 76 | 0 | 0 |
 
 ## Every pull request
 
@@ -65,8 +65,10 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
+| argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30132](https://github.com/argoproj/argo-cd/pull/30132) fix(hydrator): point README clone command at dry source repo (#29197) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#30244](https://github.com/argoproj/argo-cd/pull/30244) feat: add enableDNS flag for Helm (#17596) | Merge | Merge | not judged |  |
+| argo-cd | [#30352](https://github.com/argoproj/argo-cd/pull/30352) feat: add sso.autoLogin to redirect the login page to SSO (#8027, #7918) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | cometbft-cosmos-sdk | [#6100](https://github.com/cometbft/cometbft/pull/6100) fix(types,state): enforce minimum Block.MaxBytes floor and handle small limits defensively | Merge | Merge | compiles |  |
 | containerd | [#13822](https://github.com/containerd/containerd/pull/13822) cri: implement pod-level checkpoint/restore (KEP-5823) | Merge | Merge | not judged |  |
 | containerd | [#13822](https://github.com/containerd/containerd/pull/13822) cri: implement pod-level checkpoint/restore (KEP-5823) | Merge | Merge | not judged |  |
@@ -74,6 +76,7 @@ verifier before the compiler built the consumer against it.
 | containerd | [#13908](https://github.com/containerd/containerd/pull/13908) cri: Upgrade go-criu to v8 | Merge | Merge | not judged |  |
 | containerd | [#14453](https://github.com/containerd/containerd/pull/14453) Update NRI to latest (0.12.4) | Merge | Merge | not judged |  |
 | containerd | [#14453](https://github.com/containerd/containerd/pull/14453) Update NRI to latest (0.12.4) | Merge | Merge | not judged |  |
+| containerd | [#14453](https://github.com/containerd/containerd/pull/14453) Update NRI to latest (0.12.5) | Merge | Merge | not judged |  |
 | cortex | [#7384](https://github.com/cortexproject/cortex/pull/7384) Add per-tenant cardinality API endpoint | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, NEEDS_REVIEW |
 | csi-provisioner | [#603](https://github.com/container-storage-interface/spec/pull/603) Add ControllerGetNodeInfo RPC (alpha) | Merge | Merge | compiles |  |
 | csi-provisioner | [#603](https://github.com/container-storage-interface/spec/pull/603) Add ControllerGetNodeInfo RPC (alpha) | Merge | Merge | compiles |  |
@@ -178,6 +181,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25557](https://github.com/grafana/loki/pull/25557) refactor(dataobj): Move the layout information to the streams section | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25575](https://github.com/grafana/loki/pull/25575) feat(dataobj): Record the stream layout in the streams section | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25578](https://github.com/grafana/loki/pull/25578) feat(dataobj): Read the stream layout only from the streams section | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
+| loki | [#25629](https://github.com/grafana/loki/pull/25629) refactor(dataobj-compactor): Write common sort layout into stats section headers | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | spire | [#102](https://github.com/spiffe/spire-api-sdk/pull/102) Add unauthenticated server Version GetVersion API | Merge | Merge | compiles |  |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |
 | temporal | [#827](https://github.com/temporalio/api/pull/827) Add RESOURCE_EXHAUSTED_CAUSE_CALLER_RPS_LIMIT resource-exhausted cause | Merge | Merge | not judged |  |
