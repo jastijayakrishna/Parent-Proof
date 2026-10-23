@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 14453,
+    "head": "6c0f2b9a5cf2568304bff5ff446abd3544104f8c",
+    "base": "57d315c6ec7c97b407bd62dbefb3b449e3a5d84c",
+    "title": "Update NRI to latest (0.12.4)",
+    "url": "https://github.com/containerd/containerd/pull/14453",
+    "updated": "2026-10-23T01:07:21Z",
+    "eco": "containerd",
+    "key": "containerd-14453-6c0f2b9a5cf2",
+    "provider": "containerd/containerd",
+    "consumer": "containerd/nerdctl",
+    "consumer_sha": "127dce535ff237bebdeab638d272fcfb9813d744"
+  },
+  "merge_base": "57d315c6ec7c97b407bd62dbefb3b449e3a5d84c",
+  "decided": "e0fc9977c77c6f1247c2ee526070fe43fc1b09f3",
+  "started": "2026-10-23T01:09:29Z",
+  "finished": "2026-10-23T01:09:51Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/39882127236",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "containerd",
+      "commit": "e0fc9977c77c6f1247c2ee526070fe43fc1b09f3",
+      "parent": "57d315c6ec7c97b407bd62dbefb3b449e3a5d84c",
+      "date": "2026-10-23",
+      "subject": "pull request 14453 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "vendor/github.com/containerd/nri/pkg/api/api.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: vendor/github.com/containerd/nri/pkg/api/api.proto",
+      "seconds": 20.808609126,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-23T01:09:29.892Z level=INFO msg=cloning repo=c-containerd url=https://github.com/containerd/nerdctl.git\ncontainerd  e0fc9977 GO       source_build=GO      compiler=-                  20.8s \ncontainerd     1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 22s."
+}

@@ -1,0 +1,76 @@
+{
+  "pr": {
+    "n": 11396,
+    "head": "db45a223af85c7588b89ccc4e1e1674961cd0254",
+    "base": "0d9c9d3afb27a09ce847e5e69a4dfb462cb4fc64",
+    "title": "walletrpc: make no-expiry leases explicit",
+    "url": "https://github.com/lightningnetwork/lnd/pull/11396",
+    "updated": "2026-10-23T00:08:49Z",
+    "eco": "lnd",
+    "key": "lnd-11396-db45a223af85",
+    "provider": "lightningnetwork/lnd",
+    "consumer": "lightninglabs/lndclient",
+    "consumer_sha": "5c1b59d36c94ab2b520515f6b75d270c401166c8"
+  },
+  "merge_base": "0d9c9d3afb27a09ce847e5e69a4dfb462cb4fc64",
+  "decided": "a70c4434d293187b8473a914e7a902de0bf45415",
+  "started": "2026-10-23T01:09:31Z",
+  "finished": "2026-10-23T01:13:35Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/39882127236",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "lnd",
+      "commit": "a70c4434d293187b8473a914e7a902de0bf45415",
+      "parent": "0d9c9d3afb27a09ce847e5e69a4dfb462cb4fc64",
+      "date": "2026-10-23",
+      "subject": "pull request 11396 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "UNKNOWN",
+        "source_build": "GO"
+      },
+      "unknown_reasons": [
+        "WHOLE_MESSAGE_FLOW",
+        "DESCRIPTOR_REFLECTION"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "lnrpc/walletrpc/walletkit.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 10
+      },
+      "canary": {
+        "outcome": "breaks",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 10,
+        "errors": [
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-970918505), but does not contain package github.com/lightningnetwork/lnd/lnrpc/chainrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-970918505), but does not contain package github.com/lightningnetwork/lnd/lnrpc/invoicesrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-970918505), but does not contain package github.com/lightningnetwork/lnd/lnrpc/routerrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-970918505), but does not contain package github.com/lightningnetwork/lnd/lnrpc/signrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-970918505), but does not contain package github.com/lightningnetwork/lnd/lnrpc/verrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-970918505), but does not contain package github.com/lightningnetwork/lnd/lnrpc/walletrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-970918505), but does not contain package github.com/lightningnetwork/lnd/lnrpc/wtclientrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-970918505), but does not contain package github.com/lightningnetwork/lnd/lnrpc"
+        ],
+        "error_count": 8,
+        "failed_packages": [
+          "github.com/lightninglabs/lndclient"
+        ],
+        "detail": "canary: github.com/lightningnetwork/lnd/lnrpc removed."
+      },
+      "seconds": 242.477010983,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-23T01:09:32.000Z level=INFO msg=cloning repo=c-lnd url=https://github.com/lightninglabs/lndclient.git\nlnd         a70c4434 UNKNOWN  source_build=GO      compiler=compiles          242.5s \nlnd            1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  DESCRIPTOR_REFLECTION (e.g. lnd@a70c4434d293187b8473a914e7a902de0bf45415)\n    1   1  WHOLE_MESSAGE_FLOW (e.g. lnd@a70c4434d293187b8473a914e7a902de0bf45415)\n\n1 windows in 4m3s."
+}
