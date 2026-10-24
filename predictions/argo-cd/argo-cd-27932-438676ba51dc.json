@@ -1,0 +1,51 @@
+{
+  "pr": {
+    "n": 27932,
+    "head": "438676ba51dc86d87f4bca932696e9c266a75203",
+    "base": "360aa9ba318d11a3c8805561d5fe7b7b771871a8",
+    "title": "feat(appset): add Refresh RPC and UI action (#27798)",
+    "url": "https://github.com/argoproj/argo-cd/pull/27932",
+    "updated": "2026-10-24T00:06:30Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-27932-438676ba51dc",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "438676ba51dc86d87f4bca932696e9c266a75203"
+  },
+  "merge_base": "360aa9ba318d11a3c8805561d5fe7b7b771871a8",
+  "decided": "326dbe0905c7d406e70341e9b3830b2c8fc3d63e",
+  "started": "2026-10-24T01:46:53Z",
+  "finished": "2026-10-24T01:47:38Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/40051135784",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "326dbe0905c7d406e70341e9b3830b2c8fc3d63e",
+      "parent": "360aa9ba318d11a3c8805561d5fe7b7b771871a8",
+      "date": "2026-10-24",
+      "subject": "pull request 27932 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "CONTRACT_COMPILE_ERROR"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "server/applicationset/applicationset.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 42.627677964,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     326dbe09 UNKNOWN  source_build=UNKNOWN compiler=-                  42.6s \nargo-cd        1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  CONTRACT_COMPILE_ERROR (e.g. argo-cd@326dbe0905c7d406e70341e9b3830b2c8fc3d63e)\n\n1 windows in 46s."
+}
