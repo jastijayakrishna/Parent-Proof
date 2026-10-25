@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-25 16:58 UTC.
+Updated 2026-10-25 22:11 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 210 | 158 | 7 | 45 | 78 | 77 | 0 | 0 |
+| 211 | 159 | 7 | 45 | 78 | 77 | 0 | 0 |
 
 ## Every pull request
 
@@ -186,6 +186,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25575](https://github.com/grafana/loki/pull/25575) feat(dataobj): Record the stream layout in the streams section | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25578](https://github.com/grafana/loki/pull/25578) feat(dataobj): Read the stream layout only from the streams section | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25629](https://github.com/grafana/loki/pull/25629) refactor(dataobj-compactor): Write common sort layout into stats section headers | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
+| loki | [#25719](https://github.com/grafana/loki/pull/25719) chore(deps): Update module go.etcd.io/etcd/api/v3 to v3.7.2 (release-3.7.x) | Merge | Merge | not judged |  |
 | spire | [#102](https://github.com/spiffe/spire-api-sdk/pull/102) Add unauthenticated server Version GetVersion API | Merge | Merge | compiles |  |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |
 | temporal | [#827](https://github.com/temporalio/api/pull/827) Add RESOURCE_EXHAUSTED_CAUSE_CALLER_RPS_LIMIT resource-exhausted cause | Merge | Merge | not judged |  |
