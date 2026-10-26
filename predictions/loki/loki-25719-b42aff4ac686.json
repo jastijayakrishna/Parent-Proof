@@ -1,0 +1,54 @@
+{
+  "pr": {
+    "n": 25719,
+    "head": "b42aff4ac68671f7ea4e54b59f2ca6934c20e207",
+    "base": "93342d07944e2e7bd69d72373f3967cfd4b8f942",
+    "title": "chore(deps): Update module go.etcd.io/etcd/api/v3 to v3.7.3 (release-3.7.x)",
+    "url": "https://github.com/grafana/loki/pull/25719",
+    "updated": "2026-10-26T00:16:52Z",
+    "eco": "loki",
+    "key": "loki-25719-b42aff4ac686",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "b42aff4ac68671f7ea4e54b59f2ca6934c20e207"
+  },
+  "merge_base": "93342d07944e2e7bd69d72373f3967cfd4b8f942",
+  "decided": "1431398314cda8937916b9aff6132de1f81c7fbc",
+  "started": "2026-10-26T00:33:15Z",
+  "finished": "2026-10-26T00:34:10Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/40249649125",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "1431398314cda8937916b9aff6132de1f81c7fbc",
+      "parent": "93342d07944e2e7bd69d72373f3967cfd4b8f942",
+      "date": "2026-10-26",
+      "subject": "pull request 25719 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "vendor/go.etcd.io/etcd/api/v3/authpb/auth.proto",
+        "vendor/go.etcd.io/etcd/api/v3/etcdserverpb/etcdserver.proto",
+        "vendor/go.etcd.io/etcd/api/v3/etcdserverpb/raft_internal.proto",
+        "vendor/go.etcd.io/etcd/api/v3/etcdserverpb/rpc.proto",
+        "vendor/go.etcd.io/etcd/api/v3/membershippb/membership.proto",
+        "vendor/go.etcd.io/etcd/api/v3/mvccpb/kv.proto",
+        "vendor/go.etcd.io/etcd/api/v3/versionpb/version.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: vendor/go.etcd.io/etcd/api/v3/authpb/auth.proto",
+      "seconds": 44.327347148,
+      "total": 1
+    }
+  ],
+  "log": "loki        14313983 GO       source_build=GO      compiler=-                  44.3s \nloki           1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 55s."
+}
