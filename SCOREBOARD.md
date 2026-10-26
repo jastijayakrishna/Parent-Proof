@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-26 00:34 UTC.
+Updated 2026-10-26 11:49 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 212 | 160 | 7 | 45 | 78 | 77 | 0 | 0 |
+| 221 | 166 | 7 | 48 | 79 | 78 | 0 | 0 |
 
 ## Every pull request
 
@@ -20,6 +20,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#24121](https://github.com/argoproj/argo-cd/pull/24121) feat(azure): allow setting azure cloud (gov, china) for authentication | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#24756](https://github.com/argoproj/argo-cd/pull/24756) feat: add paramPrefix to git generator to namespace data included from files (#18048) | Merge | Merge | not judged |  |
 | argo-cd | [#25416](https://github.com/argoproj/argo-cd/pull/25416) feat(repo-server): partial-clone | Merge | Merge | not judged |  |
+| argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
 | argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
 | argo-cd | [#27124](https://github.com/argoproj/argo-cd/pull/27124) feat: add support for attaching ephemeral containers (debug containers) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#27458](https://github.com/argoproj/argo-cd/pull/27458) feat: add sso.auto-login option to skip SSO login button click | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -61,6 +62,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
+| argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
@@ -71,7 +73,10 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30132](https://github.com/argoproj/argo-cd/pull/30132) fix(hydrator): point README clone command at dry source repo (#29197) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#30244](https://github.com/argoproj/argo-cd/pull/30244) feat: add enableDNS flag for Helm (#17596) | Merge | Merge | not judged |  |
 | argo-cd | [#30352](https://github.com/argoproj/argo-cd/pull/30352) feat: add sso.autoLogin to redirect the login page to SSO (#8027, #7918) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | cometbft-cosmos-sdk | [#6100](https://github.com/cometbft/cometbft/pull/6100) fix(types,state): enforce minimum Block.MaxBytes floor and handle small limits defensively | Merge | Merge | compiles |  |
+| containerd | [#12829](https://github.com/containerd/containerd/pull/12829) Fix transfer-service registry host config to support multi-root config_path | Merge | Merge | not judged |  |
+| containerd | [#13822](https://github.com/containerd/containerd/pull/13822) cri: implement pod-level checkpoint/restore (KEP-5823) | Merge | Merge | not judged |  |
 | containerd | [#13822](https://github.com/containerd/containerd/pull/13822) cri: implement pod-level checkpoint/restore (KEP-5823) | Merge | Merge | not judged |  |
 | containerd | [#13822](https://github.com/containerd/containerd/pull/13822) cri: implement pod-level checkpoint/restore (KEP-5823) | Merge | Merge | not judged |  |
 | containerd | [#13822](https://github.com/containerd/containerd/pull/13822) cri: implement pod-level checkpoint/restore (KEP-5823) | Merge | Merge | not judged |  |
@@ -158,6 +163,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#11365](https://github.com/lightningnetwork/lnd/pull/11365) multi: add reverse ordering to listchaintxns | Merge | Merge | compiles |  |
 | lnd | [#11374](https://github.com/lightningnetwork/lnd/pull/11374) bolt12handler+devrpc: dispatch invoice requests and add CreateOffer | Merge | Merge | compiles |  |
 | lnd | [#11396](https://github.com/lightningnetwork/lnd/pull/11396) walletrpc: make no-expiry leases explicit | Needs review | Merge | compiles | WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION |
+| lnd | [#11396](https://github.com/lightningnetwork/lnd/pull/11396) walletrpc: make no-expiry leases explicit | Needs review | Merge | compiles | WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
 | loki | [#24991](https://github.com/grafana/loki/pull/24991) feat(logline): Report Logline query stats on the metrics.go line | Merge | Merge | not judged |  |
@@ -186,8 +192,11 @@ verifier before the compiler built the consumer against it.
 | loki | [#25575](https://github.com/grafana/loki/pull/25575) feat(dataobj): Record the stream layout in the streams section | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25578](https://github.com/grafana/loki/pull/25578) feat(dataobj): Read the stream layout only from the streams section | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25629](https://github.com/grafana/loki/pull/25629) refactor(dataobj-compactor): Write common sort layout into stats section headers | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
+| loki | [#25629](https://github.com/grafana/loki/pull/25629) refactor(dataobj-compactor): Write common sort layout into stats section headers | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25719](https://github.com/grafana/loki/pull/25719) chore(deps): Update module go.etcd.io/etcd/api/v3 to v3.7.2 (release-3.7.x) | Merge | Merge | not judged |  |
 | loki | [#25719](https://github.com/grafana/loki/pull/25719) chore(deps): Update module go.etcd.io/etcd/api/v3 to v3.7.3 (release-3.7.x) | Merge | Merge | not judged |  |
+| loki | [#25736](https://github.com/grafana/loki/pull/25736) chore(deps): Update module go.etcd.io/etcd/client/v3 to v3.7.3 (release-3.7.x) | Merge | Merge | not judged |  |
+| loki | [#25747](https://github.com/grafana/loki/pull/25747) fix(queryrange): Preserve scan statistics for detected-field queries | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | spire | [#102](https://github.com/spiffe/spire-api-sdk/pull/102) Add unauthenticated server Version GetVersion API | Merge | Merge | compiles |  |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |
 | temporal | [#827](https://github.com/temporalio/api/pull/827) Add RESOURCE_EXHAUSTED_CAUSE_CALLER_RPS_LIMIT resource-exhausted cause | Merge | Merge | not judged |  |

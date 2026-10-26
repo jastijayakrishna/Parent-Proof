@@ -1,0 +1,51 @@
+{
+  "pr": {
+    "n": 25629,
+    "head": "9ce4850cd33edc3cf848d6fc1659774aa9dd99ef",
+    "base": "518630ab23d6b0fa51135fbaa1d3f66fbb2e4cd5",
+    "title": "refactor(dataobj-compactor): Write common sort layout into stats section headers",
+    "url": "https://github.com/grafana/loki/pull/25629",
+    "updated": "2026-10-26T10:57:02Z",
+    "eco": "loki",
+    "key": "loki-25629-9ce4850cd33e",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "9ce4850cd33edc3cf848d6fc1659774aa9dd99ef"
+  },
+  "merge_base": "a26d83b0f23738fe5e3e7699480475c92546f895",
+  "decided": "cf1bb19e9f29855ba1c7a9f13064403c9136efe7",
+  "started": "2026-10-26T11:45:18Z",
+  "finished": "2026-10-26T11:45:26Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/40316990150",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "cf1bb19e9f29855ba1c7a9f13064403c9136efe7",
+      "parent": "a26d83b0f23738fe5e3e7699480475c92546f895",
+      "date": "2026-10-26",
+      "subject": "pull request 25629 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "TOOLCHAIN_TOO_OLD"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "pkg/dataobj/internal/metadata/datasetmd/datasetmd.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: pkg/dataobj/internal/metadata/datasetmd/datasetmd.proto",
+      "seconds": 1.61933216,
+      "total": 1
+    }
+  ],
+  "log": "loki        cf1bb19e UNKNOWN  source_build=UNKNOWN compiler=-                   1.6s \nloki           1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  TOOLCHAIN_TOO_OLD (e.g. loki@cf1bb19e9f29855ba1c7a9f13064403c9136efe7)\n\n1 windows in 8s."
+}
