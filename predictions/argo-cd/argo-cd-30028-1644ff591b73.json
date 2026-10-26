@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 30028,
+    "head": "1644ff591b73d5325e43a135f0aead2f95a1e681",
+    "base": "c1db40df148547243543def36f35a073a2c25f86",
+    "title": "feat(syncPolicy): Allow to define prune by default for manual sync applications.",
+    "url": "https://github.com/argoproj/argo-cd/pull/30028",
+    "updated": "2026-10-26T18:28:55Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-30028-1644ff591b73",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "1644ff591b73d5325e43a135f0aead2f95a1e681"
+  },
+  "merge_base": "c1db40df148547243543def36f35a073a2c25f86",
+  "decided": "741df9f155710c98123cb3ad61084689dd4cf04c",
+  "started": "2026-10-26T22:02:41Z",
+  "finished": "2026-10-26T22:03:28Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/40408862442",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "741df9f155710c98123cb3ad61084689dd4cf04c",
+      "parent": "c1db40df148547243543def36f35a073a2c25f86",
+      "date": "2026-10-26",
+      "subject": "pull request 30028 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "pkg/apis/application/v1alpha1/generated.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 42.454930145,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     741df9f1 GO       source_build=GO      compiler=-                  42.5s \nargo-cd        1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 46s."
+}
