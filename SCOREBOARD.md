@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-27 19:09 UTC.
+Updated 2026-10-27 23:04 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 235 | 176 | 7 | 52 | 82 | 81 | 0 | 0 |
+| 236 | 177 | 7 | 52 | 82 | 81 | 0 | 0 |
 
 ## Every pull request
 
@@ -252,3 +252,4 @@ verifier before the compiler built the consumer against it.
 | temporal | [#893](https://github.com/temporalio/api/pull/893) Propose basic session API shape | Don't merge | Merge | not judged | WHOLE_MESSAGE_FLOW |
 | temporal | [#893](https://github.com/temporalio/api/pull/893) Propose basic session API shape | Don't merge | Merge | not judged | WHOLE_MESSAGE_FLOW |
 | temporal | [#897](https://github.com/temporalio/api/pull/897) Require a temporal-resource-id annotation or exemption on every RPC | Needs review | Needs review | not judged | OPTION_CHANGED, DESCRIPTOR_REFLECTION |
+| temporal | [#899](https://github.com/temporalio/api/pull/899) Add RPC definitions for namespace soft deletion and restoration | Merge | Merge | not judged |  |
