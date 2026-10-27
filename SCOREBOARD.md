@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-26 22:03 UTC.
+Updated 2026-10-27 01:38 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 225 | 170 | 7 | 48 | 79 | 78 | 0 | 0 |
+| 229 | 172 | 7 | 50 | 80 | 79 | 0 | 0 |
 
 ## Every pull request
 
@@ -19,6 +19,7 @@ verifier before the compiler built the consumer against it.
 |---|---|---|---|---|---|
 | argo-cd | [#24121](https://github.com/argoproj/argo-cd/pull/24121) feat(azure): allow setting azure cloud (gov, china) for authentication | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#24756](https://github.com/argoproj/argo-cd/pull/24756) feat: add paramPrefix to git generator to namespace data included from files (#18048) | Merge | Merge | not judged |  |
+| argo-cd | [#25416](https://github.com/argoproj/argo-cd/pull/25416) feat(repo-server): partial-clone | Merge | Merge | not judged |  |
 | argo-cd | [#25416](https://github.com/argoproj/argo-cd/pull/25416) feat(repo-server): partial-clone | Merge | Merge | not judged |  |
 | argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
 | argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
@@ -168,6 +169,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#11374](https://github.com/lightningnetwork/lnd/pull/11374) bolt12handler+devrpc: dispatch invoice requests and add CreateOffer | Merge | Merge | compiles |  |
 | lnd | [#11396](https://github.com/lightningnetwork/lnd/pull/11396) walletrpc: make no-expiry leases explicit | Needs review | Merge | compiles | WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION |
 | lnd | [#11396](https://github.com/lightningnetwork/lnd/pull/11396) walletrpc: make no-expiry leases explicit | Needs review | Merge | compiles | WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION |
+| lnd | [#11422](https://github.com/lightningnetwork/lnd/pull/11422) funding: reject new static remote key channels | Merge | Merge | compiles |  |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
 | loki | [#24991](https://github.com/grafana/loki/pull/24991) feat(logline): Report Logline query stats on the metrics.go line | Merge | Merge | not judged |  |
@@ -224,6 +226,7 @@ verifier before the compiler built the consumer against it.
 | temporal | [#876](https://github.com/temporalio/api/pull/876) Add eager standalone activity start API | Merge | Merge | not judged |  |
 | temporal | [#876](https://github.com/temporalio/api/pull/876) Add eager standalone activity start API | Merge | Merge | not judged |  |
 | temporal | [#877](https://github.com/temporalio/api/pull/877) Add resource id annotation for standalone Nexus operations | Needs review | Needs review | not judged | OPTION_CHANGED, DESCRIPTOR_REFLECTION |
+| temporal | [#877](https://github.com/temporalio/api/pull/877) Add resource id annotation for standalone Nexus operations | Needs review | Needs review | not judged | OPTION_CHANGED, DESCRIPTOR_REFLECTION |
 | temporal | [#878](https://github.com/temporalio/api/pull/878) Deprecate BatchOperationResetActivities.reset_attempts | Merge | Merge | not judged |  |
 | temporal | [#880](https://github.com/temporalio/api/pull/880) Add Graal AOT and Kotlin worker runtimes | Merge | Merge | not judged |  |
 | temporal | [#882](https://github.com/temporalio/api/pull/882) ACT-1185: Expose standalone activity principals in Describe API | Merge | Merge | not judged |  |
@@ -242,3 +245,4 @@ verifier before the compiler built the consumer against it.
 | temporal | [#891](https://github.com/temporalio/api/pull/891) PoC Workflow Heartbeat Notification | Merge | Merge | not judged |  |
 | temporal | [#893](https://github.com/temporalio/api/pull/893) Propose basic session API shape | Don't merge | Merge | not judged | WHOLE_MESSAGE_FLOW |
 | temporal | [#893](https://github.com/temporalio/api/pull/893) Propose basic session API shape | Don't merge | Merge | not judged | WHOLE_MESSAGE_FLOW |
+| temporal | [#897](https://github.com/temporalio/api/pull/897) Require a temporal-resource-id annotation or exemption on every RPC | Needs review | Needs review | not judged | OPTION_CHANGED, DESCRIPTOR_REFLECTION |

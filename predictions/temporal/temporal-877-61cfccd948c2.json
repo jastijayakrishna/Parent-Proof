@@ -1,0 +1,52 @@
+{
+  "pr": {
+    "n": 877,
+    "head": "61cfccd948c23a5681dd48b467adcc902158ba6b",
+    "base": "d21dd97a8854fef9e67c78a07903d73b5cea95aa",
+    "title": "Add resource id annotation for standalone Nexus operations",
+    "url": "https://github.com/temporalio/api/pull/877",
+    "updated": "2026-10-27T01:17:20Z",
+    "eco": "temporal",
+    "key": "temporal-877-61cfccd948c2",
+    "provider": "temporalio/api",
+    "consumer": "temporalio/sdk-go",
+    "consumer_sha": "040e58fc183966980bca37ff209752a2f6036bcd"
+  },
+  "merge_base": "d21dd97a8854fef9e67c78a07903d73b5cea95aa",
+  "decided": "6fbf88a55925e5b5bd922fb0582d8a97ae1dfb79",
+  "started": "2026-10-27T01:34:43Z",
+  "finished": "2026-10-27T01:34:53Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/40433151045",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "temporal",
+      "commit": "6fbf88a55925e5b5bd922fb0582d8a97ae1dfb79",
+      "parent": "d21dd97a8854fef9e67c78a07903d73b5cea95aa",
+      "date": "2026-10-27",
+      "subject": "pull request 877 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "OPTION_CHANGED",
+        "DESCRIPTOR_REFLECTION"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "temporal/api/workflowservice/v1/service.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 9.229545786,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-27T01:34:43.724Z level=INFO msg=cloning repo=c-temporal url=https://github.com/temporalio/sdk-go.git\ntemporal    6fbf88a5 UNKNOWN  source_build=UNKNOWN compiler=-                   9.2s \ntemporal       1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  DESCRIPTOR_REFLECTION (e.g. temporal@6fbf88a55925e5b5bd922fb0582d8a97ae1dfb79)\n    1   1  OPTION_CHANGED (e.g. temporal@6fbf88a55925e5b5bd922fb0582d8a97ae1dfb79)\n\n1 windows in 10s."
+}
