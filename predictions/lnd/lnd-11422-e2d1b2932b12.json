@@ -1,0 +1,72 @@
+{
+  "pr": {
+    "n": 11422,
+    "head": "e2d1b2932b12a3d830fafe37e1a53ae6ab57d867",
+    "base": "1b9b099f9dbfd756c3c5a07458cc88ad48c0b55a",
+    "title": "funding: reject new static remote key channels",
+    "url": "https://github.com/lightningnetwork/lnd/pull/11422",
+    "updated": "2026-10-27T01:53:45Z",
+    "eco": "lnd",
+    "key": "lnd-11422-e2d1b2932b12",
+    "provider": "lightningnetwork/lnd",
+    "consumer": "lightninglabs/lndclient",
+    "consumer_sha": "5c1b59d36c94ab2b520515f6b75d270c401166c8"
+  },
+  "merge_base": "85db2f580c39303ee154eb7a85829510ce6b6924",
+  "decided": "b2e0e86f0d0cc85af8949559d1d7c18a1817f22e",
+  "started": "2026-10-27T06:58:45Z",
+  "finished": "2026-10-27T07:02:46Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/40464032099",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "lnd",
+      "commit": "b2e0e86f0d0cc85af8949559d1d7c18a1817f22e",
+      "parent": "85db2f580c39303ee154eb7a85829510ce6b6924",
+      "date": "2026-10-27",
+      "subject": "pull request 11422 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "lnrpc/lightning.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 10
+      },
+      "canary": {
+        "outcome": "breaks",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 10,
+        "errors": [
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-3678259022), but does not contain package github.com/lightningnetwork/lnd/lnrpc/walletrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-3678259022), but does not contain package github.com/lightningnetwork/lnd/lnrpc/wtclientrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-3678259022), but does not contain package github.com/lightningnetwork/lnd/lnrpc/chainrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-3678259022), but does not contain package github.com/lightningnetwork/lnd/lnrpc/invoicesrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-3678259022), but does not contain package github.com/lightningnetwork/lnd/lnrpc/routerrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-3678259022), but does not contain package github.com/lightningnetwork/lnd/lnrpc/signrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-3678259022), but does not contain package github.com/lightningnetwork/lnd/lnrpc/verrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-3678259022), but does not contain package github.com/lightningnetwork/lnd/lnrpc"
+        ],
+        "error_count": 8,
+        "failed_packages": [
+          "github.com/lightninglabs/lndclient"
+        ],
+        "detail": "canary: github.com/lightningnetwork/lnd/lnrpc removed."
+      },
+      "seconds": 240.331987933,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-27T06:58:45.422Z level=INFO msg=cloning repo=c-lnd url=https://github.com/lightninglabs/lndclient.git\nlnd         b2e0e86f GO       source_build=GO      compiler=compiles          240.3s \nlnd            1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 4m1s."
+}
