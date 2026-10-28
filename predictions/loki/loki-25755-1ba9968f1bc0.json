@@ -1,0 +1,51 @@
+{
+  "pr": {
+    "n": 25755,
+    "head": "1ba9968f1bc0a3eab88ec2d56f5dacd7abbc9cc9",
+    "base": "93246615bdedaf4112fe3edd1a2c92304a4b1ab7",
+    "title": "fix(ingester): Stamp backfilled chunks with the Kafka record timestamp",
+    "url": "https://github.com/grafana/loki/pull/25755",
+    "updated": "2026-10-28T13:05:28Z",
+    "eco": "loki",
+    "key": "loki-25755-1ba9968f1bc0",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "1ba9968f1bc0a3eab88ec2d56f5dacd7abbc9cc9"
+  },
+  "merge_base": "93246615bdedaf4112fe3edd1a2c92304a4b1ab7",
+  "decided": "afdee46b5a1e980c07ed74fac466f5b5e3f6fcd8",
+  "started": "2026-10-28T16:13:41Z",
+  "finished": "2026-10-28T16:13:55Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/40723274091",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "afdee46b5a1e980c07ed74fac466f5b5e3f6fcd8",
+      "parent": "93246615bdedaf4112fe3edd1a2c92304a4b1ab7",
+      "date": "2026-10-28",
+      "subject": "pull request 25755 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "TOOLCHAIN_TOO_OLD"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "pkg/ingester/checkpoint.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: pkg/ingester/checkpoint.proto",
+      "seconds": 1.582317782,
+      "total": 1
+    }
+  ],
+  "log": "loki        afdee46b UNKNOWN  source_build=UNKNOWN compiler=-                   1.6s \nloki           1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  TOOLCHAIN_TOO_OLD (e.g. loki@afdee46b5a1e980c07ed74fac466f5b5e3f6fcd8)\n\n1 windows in 14s."
+}
