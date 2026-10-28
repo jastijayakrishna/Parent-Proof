@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-28 16:15 UTC.
+Updated 2026-10-28 21:20 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 245 | 183 | 7 | 55 | 82 | 81 | 0 | 0 |
+| 248 | 186 | 7 | 55 | 84 | 83 | 0 | 0 |
 
 ## Every pull request
 
@@ -31,6 +31,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#28233](https://github.com/argoproj/argo-cd/pull/28233) feat: disambiguate local users from SSO users in RBAC with strict mode | Merge | Merge | not judged |  |
 | argo-cd | [#28233](https://github.com/argoproj/argo-cd/pull/28233) feat: disambiguate local users from SSO users in RBAC with strict mode | Merge | Merge | not judged |  |
 | argo-cd | [#28309](https://github.com/argoproj/argo-cd/pull/28309) feat: add --output-parameters to argocd appset generate (#27599) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#28531](https://github.com/argoproj/argo-cd/pull/28531) feat: add ignoreDuplicateResources to suppress RepeatedResourceWarning (#28026) | Merge | Merge | not judged |  |
 | argo-cd | [#28531](https://github.com/argoproj/argo-cd/pull/28531) feat: add ignoreDuplicateResources to suppress RepeatedResourceWarning (#28026) | Merge | Merge | not judged |  |
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
@@ -127,6 +128,7 @@ verifier before the compiler built the consumer against it.
 | dapr | [#10717](https://github.com/dapr/dapr/pull/10717) jobs: allow overriding the app route a triggered job is delivered on | Merge | Merge | compiles |  |
 | dapr | [#10771](https://github.com/dapr/dapr/pull/10771) [Backport release-1.19] Binary store building block support | Merge | Merge | compiles |  |
 | dapr | [#10866](https://github.com/dapr/dapr/pull/10866) [Backport release-1.19] feat: search and vector blocks | Merge | Merge | compiles |  |
+| istio | [#3088](https://github.com/istio/api/pull/3088) Doc: Add note on DR workloadSelector | Merge | Merge | compiles |  |
 | istio | [#3722](https://github.com/istio/api/pull/3722) feat(tracing): add otel always_on sampler | Merge | Merge | compiles |  |
 | istio | [#3787](https://github.com/istio/api/pull/3787)  add cert_signer_namespace_map field to MeshConfig for namespace-scoped CSR signer authorization | Merge | Merge | compiles |  |
 | istio | [#3791](https://github.com/istio/api/pull/3791) docs: use camelCase prefixRewrite in HTTPRedirect example | Merge | Merge | compiles |  |
@@ -166,6 +168,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#10973](https://github.com/lightningnetwork/lnd/pull/10973) multi: expose peer address sources and offline peers in ListPeers | Merge | Merge | compiles |  |
 | lnd | [#10976](https://github.com/lightningnetwork/lnd/pull/10976) multi: add `--forget_node` and `--forget_address` to `lncli disconnect` | Merge | Merge | compiles |  |
 | lnd | [#10993](https://github.com/lightningnetwork/lnd/pull/10993) walletrpc: return the master key birthday from ListAccounts | Merge | Merge | compiles |  |
+| lnd | [#11013](https://github.com/lightningnetwork/lnd/pull/11013) routerrpc: refuse local dispatch on a switchrpc build | Merge | Merge | compiles |  |
 | lnd | [#11095](https://github.com/lightningnetwork/lnd/pull/11095) keychain+walletrpc: add DeriveAndStoreKey | Merge | Merge | compiles |  |
 | lnd | [#11095](https://github.com/lightningnetwork/lnd/pull/11095) keychain+walletrpc: add DeriveAndStoreKey | Merge | Merge | compiles |  |
 | lnd | [#11244](https://github.com/lightningnetwork/lnd/pull/11244) routerrpc: correct timeout_seconds field documentation | Merge | Merge | compiles |  |
