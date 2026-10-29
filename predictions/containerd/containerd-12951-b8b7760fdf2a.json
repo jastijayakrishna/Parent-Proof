@@ -1,0 +1,49 @@
+{
+  "pr": {
+    "n": 12951,
+    "head": "b8b7760fdf2aabc21a54187e887d46d0a0f8ae22",
+    "base": "842119a7790e006ddf24ae14163722f701ad631c",
+    "title": "cri: add configurable DNS servers for resolving registry hostnames",
+    "url": "https://github.com/containerd/containerd/pull/12951",
+    "updated": "2026-10-29T19:46:04Z",
+    "eco": "containerd",
+    "key": "containerd-12951-b8b7760fdf2a",
+    "provider": "containerd/containerd",
+    "consumer": "containerd/nerdctl",
+    "consumer_sha": "9017978289b63971065612a9fe84b8bdde868cbf"
+  },
+  "merge_base": "842119a7790e006ddf24ae14163722f701ad631c",
+  "decided": "ed08c95dc0973d22421112d02068e7d8027bdbee",
+  "started": "2026-10-29T19:58:15Z",
+  "finished": "2026-10-29T19:58:45Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/40944390317",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "containerd",
+      "commit": "ed08c95dc0973d22421112d02068e7d8027bdbee",
+      "parent": "842119a7790e006ddf24ae14163722f701ad631c",
+      "date": "2026-10-29",
+      "subject": "pull request 12951 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "api/types/transfer/registry.proto",
+        "vendor/github.com/containerd/containerd/api/types/transfer/registry.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/types/transfer/registry.proto",
+      "seconds": 28.750828499,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-29T19:58:15.206Z level=INFO msg=cloning repo=c-containerd url=https://github.com/containerd/nerdctl.git\ncontainerd  ed08c95d GO       source_build=GO      compiler=-                  28.8s \ncontainerd     1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 30s."
+}
