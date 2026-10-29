@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-28 21:20 UTC.
+Updated 2026-10-29 01:09 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 248 | 186 | 7 | 55 | 84 | 83 | 0 | 0 |
+| 250 | 188 | 7 | 55 | 84 | 83 | 0 | 0 |
 
 ## Every pull request
 
@@ -220,6 +220,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25798](https://github.com/grafana/loki/pull/25798) feat(dataobj-compactor): Split large tasks into parallelisable sub-tasks by size | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25798](https://github.com/grafana/loki/pull/25798) feat(dataobj-compactor): Split large tasks into parallelisable sub-tasks by size | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25848](https://github.com/grafana/loki/pull/25848) chore(deps): Update module k8s.io/client-go to v0.37.1 (release-3.7.x) | Merge | Merge | not judged |  |
+| loki | [#25888](https://github.com/grafana/loki/pull/25888) chore(deps): Update module github.com/containerd/containerd/v2 to v2.4.2 (release-3.7.x) | Merge | Merge | not judged |  |
 | spire | [#102](https://github.com/spiffe/spire-api-sdk/pull/102) Add unauthenticated server Version GetVersion API | Merge | Merge | compiles |  |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |
 | temporal | [#827](https://github.com/temporalio/api/pull/827) Add RESOURCE_EXHAUSTED_CAUSE_CALLER_RPS_LIMIT resource-exhausted cause | Merge | Merge | not judged |  |
@@ -255,6 +256,7 @@ verifier before the compiler built the consumer against it.
 | temporal | [#886](https://github.com/temporalio/api/pull/886) Document current activity attempt start time | Merge | Merge | not judged |  |
 | temporal | [#886](https://github.com/temporalio/api/pull/886) Document current activity attempt start time | Merge | Merge | not judged |  |
 | temporal | [#887](https://github.com/temporalio/api/pull/887) Add PollerScalingInfo to poll requests | Merge | Merge | not judged |  |
+| temporal | [#887](https://github.com/temporalio/api/pull/887) Report poller target on poll requests and in the worker heartbeat | Merge | Merge | not judged |  |
 | temporal | [#887](https://github.com/temporalio/api/pull/887) Report poller target on poll requests and in the worker heartbeat | Merge | Merge | not judged |  |
 | temporal | [#890](https://github.com/temporalio/api/pull/890) marking time skipping API experimental | Merge | Merge | not judged |  |
 | temporal | [#891](https://github.com/temporalio/api/pull/891) PoC Workflow Heartbeat Notification | Merge | Merge | not judged |  |
