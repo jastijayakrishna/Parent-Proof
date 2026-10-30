@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-30 18:49 UTC.
+Updated 2026-10-30 22:46 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 275 | 205 | 7 | 63 | 90 | 89 | 0 | 0 |
+| 278 | 206 | 7 | 65 | 90 | 89 | 0 | 0 |
 
 ## Every pull request
 
@@ -50,6 +50,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#29236](https://github.com/argoproj/argo-cd/pull/29236) feat: add seal signing inspection command | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29236](https://github.com/argoproj/argo-cd/pull/29236) feat: add seal signing inspection command | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29322](https://github.com/argoproj/argo-cd/pull/29322) feat(appset): add metrics for appset to measure rollout durations for progressive sync | Merge | Merge | not judged |  |
+| argo-cd | [#29647](https://github.com/argoproj/argo-cd/pull/29647) refactor: filter appset file patterns in the repo-server | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29647](https://github.com/argoproj/argo-cd/pull/29647) refactor: filter appset file patterns in the repo-server | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29926](https://github.com/argoproj/argo-cd/pull/29926) feat: allow rollback while auto-sync is enabled | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29926](https://github.com/argoproj/argo-cd/pull/29926) feat: allow rollback while auto-sync is enabled | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -241,10 +242,12 @@ verifier before the compiler built the consumer against it.
 | loki | [#25798](https://github.com/grafana/loki/pull/25798) feat(dataobj-compactor): Split large tasks into parallelisable sub-tasks by size | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25848](https://github.com/grafana/loki/pull/25848) chore(deps): Update module k8s.io/client-go to v0.37.1 (release-3.7.x) | Merge | Merge | not judged |  |
 | loki | [#25888](https://github.com/grafana/loki/pull/25888) chore(deps): Update module github.com/containerd/containerd/v2 to v2.4.2 (release-3.7.x) | Merge | Merge | not judged |  |
+| loki | [#25888](https://github.com/grafana/loki/pull/25888) chore(deps): Update module github.com/containerd/containerd/v2 to v2.4.2 (release-3.7.x) | Merge | Merge | not judged |  |
 | loki | [#25950](https://github.com/grafana/loki/pull/25950) refactor(logql): Move pkg/logqlmodel to pkg/logql/model | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, TOOLCHAIN_TOO_OLD |
 | loki | [#25964](https://github.com/grafana/loki/pull/25964) feat!: Upgrade Go module to v4 | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, TOOLCHAIN_TOO_OLD |
 | loki | [#25971](https://github.com/grafana/loki/pull/25971) refactor(ingester): Pass the Kafka record timestamp on the push request | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25972](https://github.com/grafana/loki/pull/25972) feat!: Upgrade Go module to github.com/grafana/loki/v4 | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, TOOLCHAIN_TOO_OLD |
+| loki | [#26002](https://github.com/grafana/loki/pull/26002) feat(logline): Look up hints for live instant metric queries | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | spire | [#102](https://github.com/spiffe/spire-api-sdk/pull/102) Add unauthenticated server Version GetVersion API | Merge | Merge | compiles |  |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |
 | temporal | [#827](https://github.com/temporalio/api/pull/827) Add RESOURCE_EXHAUSTED_CAUSE_CALLER_RPS_LIMIT resource-exhausted cause | Merge | Merge | not judged |  |

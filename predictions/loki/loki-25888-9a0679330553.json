@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 25888,
+    "head": "9a0679330553e66249c682310de4bc4715b6b431",
+    "base": "cf47a8b579104f5c30b419de0648b1eaa90fc0db",
+    "title": "chore(deps): Update module github.com/containerd/containerd/v2 to v2.4.2 (release-3.7.x)",
+    "url": "https://github.com/grafana/loki/pull/25888",
+    "updated": "2026-10-30T21:13:40Z",
+    "eco": "loki",
+    "key": "loki-25888-9a0679330553",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "9a0679330553e66249c682310de4bc4715b6b431"
+  },
+  "merge_base": "043c0a9c4c256287134aea0552bc6da6c2315b5c",
+  "decided": "22ac7572ab08516267d34117d366c69b34f4caca",
+  "started": "2026-10-30T22:45:01Z",
+  "finished": "2026-10-30T22:45:31Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/41139836916",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "22ac7572ab08516267d34117d366c69b34f4caca",
+      "parent": "043c0a9c4c256287134aea0552bc6da6c2315b5c",
+      "date": "2026-10-30",
+      "subject": "pull request 25888 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "vendor/github.com/containerd/ttrpc/request.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: vendor/github.com/containerd/ttrpc/request.proto",
+      "seconds": 19.166321896,
+      "total": 1
+    }
+  ],
+  "log": "loki        22ac7572 GO       source_build=GO      compiler=-                  19.2s \nloki           1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 30s."
+}

@@ -1,0 +1,51 @@
+{
+  "pr": {
+    "n": 26002,
+    "head": "583c8d90810d62808616d5b3f3c61e3fe32c04f5",
+    "base": "58d1ae251056526481b1374655af355003a3a9b1",
+    "title": "feat(logline): Look up hints for live instant metric queries",
+    "url": "https://github.com/grafana/loki/pull/26002",
+    "updated": "2026-10-30T21:53:47Z",
+    "eco": "loki",
+    "key": "loki-26002-583c8d90810d",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "583c8d90810d62808616d5b3f3c61e3fe32c04f5"
+  },
+  "merge_base": "58d1ae251056526481b1374655af355003a3a9b1",
+  "decided": "a3484225dc2938a92fbe63c879d21fe7a93fd329",
+  "started": "2026-10-30T22:45:04Z",
+  "finished": "2026-10-30T22:45:14Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/41139836916",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "a3484225dc2938a92fbe63c879d21fe7a93fd329",
+      "parent": "58d1ae251056526481b1374655af355003a3a9b1",
+      "date": "2026-10-30",
+      "subject": "pull request 26002 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "CONTRACT_COMPILE_ERROR"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "pkg/querier/queryrange/queryrange.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: pkg/querier/queryrange/queryrange.proto",
+      "seconds": 2.938122393,
+      "total": 1
+    }
+  ],
+  "log": "loki        a3484225 UNKNOWN  source_build=UNKNOWN compiler=-                   2.9s \nloki           1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  CONTRACT_COMPILE_ERROR (e.g. loki@a3484225dc2938a92fbe63c879d21fe7a93fd329)\n\n1 windows in 10s."
+}
