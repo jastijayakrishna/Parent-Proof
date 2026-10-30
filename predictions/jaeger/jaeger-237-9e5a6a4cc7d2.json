@@ -1,0 +1,51 @@
+{
+  "pr": {
+    "n": 237,
+    "head": "9e5a6a4cc7d2de09e7f1d592b56b5009b90a0bfd",
+    "base": "4f6fc86c5b9e20e15f82a8f9c0033563c20ec445",
+    "title": "feat(api_v3): Add a sql field to TraceQueryParameters and an ExplainQuery RPC",
+    "url": "https://github.com/jaegertracing/jaeger-idl/pull/237",
+    "updated": "2026-10-30T02:26:41Z",
+    "eco": "jaeger",
+    "key": "jaeger-237-9e5a6a4cc7d2",
+    "provider": "jaegertracing/jaeger-idl",
+    "consumer": "jaegertracing/jaeger",
+    "consumer_sha": "e5274265d8911e2b51f1386f2923a3d00c902af0"
+  },
+  "merge_base": "4f6fc86c5b9e20e15f82a8f9c0033563c20ec445",
+  "decided": "9ea1695cd4b21a99e8fb5e1f59ac888253c8a708",
+  "started": "2026-10-30T06:08:11Z",
+  "finished": "2026-10-30T06:08:39Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/41012047307",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "jaeger",
+      "commit": "9ea1695cd4b21a99e8fb5e1f59ac888253c8a708",
+      "parent": "4f6fc86c5b9e20e15f82a8f9c0033563c20ec445",
+      "date": "2026-10-30",
+      "subject": "pull request 237 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "CONTRACT_COMPILE_ERROR"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "proto/api_v3/query_service.proto"
+      ],
+      "unjudged": "the commit changes no Go file of the module: its generated code is not regenerated with the .proto change, so the build cannot see it",
+      "seconds": 26.566466334,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-30T06:08:11.382Z level=INFO msg=cloning repo=c-jaeger url=https://github.com/jaegertracing/jaeger.git\njaeger      9ea1695c UNKNOWN  source_build=UNKNOWN compiler=-                  26.6s \njaeger         1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  CONTRACT_COMPILE_ERROR (e.g. jaeger@9ea1695cd4b21a99e8fb5e1f59ac888253c8a708)\n\n1 windows in 28s."
+}

@@ -1,0 +1,56 @@
+{
+  "pr": {
+    "n": 25950,
+    "head": "a5f13028ba6ab54988da88e0f1f4df5332d33e64",
+    "base": "748a66317b3e8ceec76965fe432b6f9f23e0167e",
+    "title": "refactor(logql): Move pkg/logqlmodel to pkg/logql/model",
+    "url": "https://github.com/grafana/loki/pull/25950",
+    "updated": "2026-10-30T04:08:54Z",
+    "eco": "loki",
+    "key": "loki-25950-a5f13028ba6a",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "a5f13028ba6ab54988da88e0f1f4df5332d33e64"
+  },
+  "merge_base": "748a66317b3e8ceec76965fe432b6f9f23e0167e",
+  "decided": "6adea57066910199d0c1b3bef87ff4035ea73feb",
+  "started": "2026-10-30T06:08:18Z",
+  "finished": "2026-10-30T06:08:28Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/41012047307",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "6adea57066910199d0c1b3bef87ff4035ea73feb",
+      "parent": "748a66317b3e8ceec76965fe432b6f9f23e0167e",
+      "date": "2026-10-30",
+      "subject": "pull request 25950 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "CONTRACT_COMPILE_ERROR",
+        "TOOLCHAIN_TOO_OLD"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "pkg/logproto/indexgateway.proto",
+        "pkg/logproto/logproto.proto",
+        "pkg/logql/model/stats/stats.proto",
+        "pkg/logqlmodel/stats/stats.proto",
+        "pkg/querier/queryrange/queryrange.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: pkg/logproto/indexgateway.proto",
+      "seconds": 2.933557836,
+      "total": 1
+    }
+  ],
+  "log": "loki        6adea570 UNKNOWN  source_build=UNKNOWN compiler=-                   2.9s \nloki           1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  CONTRACT_COMPILE_ERROR (e.g. loki@6adea57066910199d0c1b3bef87ff4035ea73feb)\n    1   1  TOOLCHAIN_TOO_OLD (e.g. loki@6adea57066910199d0c1b3bef87ff4035ea73feb)\n\n1 windows in 10s."
+}

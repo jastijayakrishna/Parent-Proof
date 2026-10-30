@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-30 00:04 UTC.
+Updated 2026-10-30 06:09 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 260 | 196 | 7 | 57 | 88 | 87 | 0 | 0 |
+| 263 | 197 | 7 | 59 | 88 | 87 | 0 | 0 |
 
 ## Every pull request
 
@@ -91,6 +91,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
+| argo-cd | [#30645](https://github.com/argoproj/argo-cd/pull/30645) feat(applicationset): support GitLab pull request generator mTLS (#30644) | Merge | Merge | not judged |  |
 | cometbft-cosmos-sdk | [#6100](https://github.com/cometbft/cometbft/pull/6100) fix(types,state): enforce minimum Block.MaxBytes floor and handle small limits defensively | Merge | Merge | compiles |  |
 | containerd | [#12829](https://github.com/containerd/containerd/pull/12829) Fix transfer-service registry host config to support multi-root config_path | Merge | Merge | not judged |  |
 | containerd | [#12951](https://github.com/containerd/containerd/pull/12951) cri: add configurable DNS servers for resolving registry hostnames | Merge | Merge | not judged |  |
@@ -148,6 +149,7 @@ verifier before the compiler built the consumer against it.
 | istio | [#3810](https://github.com/istio/api/pull/3810) fix wasm docs | Merge | Merge | compiles |  |
 | istio | [#3818](https://github.com/istio/api/pull/3818) networking: add retryBudget to DestinationRule portLevelSettings | Merge | Merge | compiles |  |
 | jaeger | [#231](https://github.com/jaegertracing/jaeger-idl/pull/231) feat(expression): Add phrase and fulltext text-search operators | Needs review | Needs review | compiles | OPTION_CHANGED |
+| jaeger | [#237](https://github.com/jaegertracing/jaeger-idl/pull/237) feat(api_v3): Add a sql field to TraceQueryParameters and an ExplainQuery RPC | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | lnd | [#9457](https://github.com/lightningnetwork/lnd/pull/9457) routerrpc: add option PreventSubsequentPayment to TrackPaymentV2 | Merge | Merge | compiles |  |
 | lnd | [#9888](https://github.com/lightningnetwork/lnd/pull/9888) Attributable failures | Merge | Merge | bump_side_effect |  |
 | lnd | [#9907](https://github.com/lightningnetwork/lnd/pull/9907)   routing: add mission control namespace support to SendPaymentV2 | Merge | Merge | compiles |  |
@@ -231,6 +233,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25798](https://github.com/grafana/loki/pull/25798) feat(dataobj-compactor): Split large tasks into parallelisable sub-tasks by size | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25848](https://github.com/grafana/loki/pull/25848) chore(deps): Update module k8s.io/client-go to v0.37.1 (release-3.7.x) | Merge | Merge | not judged |  |
 | loki | [#25888](https://github.com/grafana/loki/pull/25888) chore(deps): Update module github.com/containerd/containerd/v2 to v2.4.2 (release-3.7.x) | Merge | Merge | not judged |  |
+| loki | [#25950](https://github.com/grafana/loki/pull/25950) refactor(logql): Move pkg/logqlmodel to pkg/logql/model | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, TOOLCHAIN_TOO_OLD |
 | spire | [#102](https://github.com/spiffe/spire-api-sdk/pull/102) Add unauthenticated server Version GetVersion API | Merge | Merge | compiles |  |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |
 | temporal | [#827](https://github.com/temporalio/api/pull/827) Add RESOURCE_EXHAUSTED_CAUSE_CALLER_RPS_LIMIT resource-exhausted cause | Merge | Merge | not judged |  |
