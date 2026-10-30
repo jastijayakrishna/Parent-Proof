@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-29 20:02 UTC.
+Updated 2026-10-30 00:04 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 259 | 196 | 7 | 56 | 88 | 87 | 0 | 0 |
+| 260 | 196 | 7 | 57 | 88 | 87 | 0 | 0 |
 
 ## Every pull request
 
@@ -45,6 +45,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Merge | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#29236](https://github.com/argoproj/argo-cd/pull/29236) feat: add seal signing inspection command | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29236](https://github.com/argoproj/argo-cd/pull/29236) feat: add seal signing inspection command | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29236](https://github.com/argoproj/argo-cd/pull/29236) feat: add seal signing inspection command | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29236](https://github.com/argoproj/argo-cd/pull/29236) feat: add seal signing inspection command | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
