@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-30 13:19 UTC.
+Updated 2026-10-30 18:49 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 269 | 200 | 7 | 62 | 88 | 87 | 0 | 0 |
+| 275 | 205 | 7 | 63 | 90 | 89 | 0 | 0 |
 
 ## Every pull request
 
@@ -54,6 +54,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#29926](https://github.com/argoproj/argo-cd/pull/29926) feat: allow rollback while auto-sync is enabled | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29926](https://github.com/argoproj/argo-cd/pull/29926) feat: allow rollback while auto-sync is enabled | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29926](https://github.com/argoproj/argo-cd/pull/29926) feat: allow rollback while auto-sync is enabled | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#29926](https://github.com/argoproj/argo-cd/pull/29926) feat: allow rollback while auto-sync is enabled | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
@@ -79,6 +80,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
+| argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedRevisionOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
@@ -107,6 +109,7 @@ verifier before the compiler built the consumer against it.
 | containerd | [#14453](https://github.com/containerd/containerd/pull/14453) Update NRI to latest (0.12.5) | Merge | Merge | not judged |  |
 | containerd | [#14453](https://github.com/containerd/containerd/pull/14453) Update NRI to latest (0.12.4) | Merge | Merge | not judged |  |
 | containerd | [#14453](https://github.com/containerd/containerd/pull/14453) Update NRI to latest (0.12.5) | Merge | Merge | not judged |  |
+| containerd | [#14477](https://github.com/containerd/containerd/pull/14477) [release/2.4] Update NRI to latest (0.12.5) | Merge | Merge | not judged |  |
 | containerd | [#14477](https://github.com/containerd/containerd/pull/14477) [release/2.4] Update NRI to latest (0.12.5) | Merge | Merge | not judged |  |
 | cortex | [#7384](https://github.com/cortexproject/cortex/pull/7384) Add per-tenant cardinality API endpoint | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, NEEDS_REVIEW |
 | csi-provisioner | [#603](https://github.com/container-storage-interface/spec/pull/603) Add ControllerGetNodeInfo RPC (alpha) | Merge | Merge | compiles |  |
@@ -137,6 +140,7 @@ verifier before the compiler built the consumer against it.
 | dapr | [#10717](https://github.com/dapr/dapr/pull/10717) jobs: allow overriding the app route a triggered job is delivered on | Merge | Merge | compiles |  |
 | dapr | [#10771](https://github.com/dapr/dapr/pull/10771) [Backport release-1.19] Binary store building block support | Merge | Merge | compiles |  |
 | dapr | [#10866](https://github.com/dapr/dapr/pull/10866) [Backport release-1.19] feat: search and vector blocks | Merge | Merge | compiles |  |
+| dapr | [#11003](https://github.com/dapr/dapr/pull/11003) Add app error details to dead-letter pub/sub messages | Merge | Merge | compiles |  |
 | istio | [#3088](https://github.com/istio/api/pull/3088) Doc: Add note on DR workloadSelector | Merge | Merge | compiles |  |
 | istio | [#3722](https://github.com/istio/api/pull/3722) feat(tracing): add otel always_on sampler | Merge | Merge | compiles |  |
 | istio | [#3787](https://github.com/istio/api/pull/3787)  add cert_signer_namespace_map field to MeshConfig for namespace-scoped CSR signer authorization | Merge | Merge | compiles |  |
@@ -151,6 +155,7 @@ verifier before the compiler built the consumer against it.
 | istio | [#3809](https://github.com/istio/api/pull/3809) document case-insensitive method matching in authorizationpolicy | Merge | Merge | compiles |  |
 | istio | [#3810](https://github.com/istio/api/pull/3810) fix wasm docs | Merge | Merge | compiles |  |
 | istio | [#3818](https://github.com/istio/api/pull/3818) networking: add retryBudget to DestinationRule portLevelSettings | Merge | Merge | compiles |  |
+| istio | [#3819](https://github.com/istio/api/pull/3819) security: add payloadToMetadata to JWTRule to keep claims of all tokens | Merge | Merge | compiles |  |
 | jaeger | [#231](https://github.com/jaegertracing/jaeger-idl/pull/231) feat(expression): Add phrase and fulltext text-search operators | Needs review | Needs review | compiles | OPTION_CHANGED |
 | jaeger | [#237](https://github.com/jaegertracing/jaeger-idl/pull/237) feat(api_v3): Add a sql field to TraceQueryParameters and an ExplainQuery RPC | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | lnd | [#9457](https://github.com/lightningnetwork/lnd/pull/9457) routerrpc: add option PreventSubsequentPayment to TrackPaymentV2 | Merge | Merge | compiles |  |
@@ -284,5 +289,6 @@ verifier before the compiler built the consumer against it.
 | temporal | [#893](https://github.com/temporalio/api/pull/893) Propose basic session API shape | Don't merge | Merge | not judged | WHOLE_MESSAGE_FLOW |
 | temporal | [#893](https://github.com/temporalio/api/pull/893) Propose basic session API shape | Don't merge | Merge | not judged | WHOLE_MESSAGE_FLOW |
 | temporal | [#897](https://github.com/temporalio/api/pull/897) Require a temporal-resource-id annotation or exemption on every RPC | Needs review | Needs review | not judged | OPTION_CHANGED, DESCRIPTOR_REFLECTION |
+| temporal | [#899](https://github.com/temporalio/api/pull/899) Add RPC definitions for namespace soft deletion and restoration | Merge | Merge | not judged |  |
 | temporal | [#899](https://github.com/temporalio/api/pull/899) Add RPC definitions for namespace soft deletion and restoration | Merge | Merge | not judged |  |
 | temporal | [#899](https://github.com/temporalio/api/pull/899) Add RPC definitions for namespace soft deletion and restoration | Merge | Merge | not judged |  |

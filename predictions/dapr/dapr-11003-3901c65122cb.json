@@ -1,0 +1,75 @@
+{
+  "pr": {
+    "n": 11003,
+    "head": "3901c65122cb4fcb43d5876c750cc4b00afaf23f",
+    "base": "f2baba403d85baae280896911aef59329b8f9279",
+    "title": "Add app error details to dead-letter pub/sub messages",
+    "url": "https://github.com/dapr/dapr/pull/11003",
+    "updated": "2026-10-30T15:22:44Z",
+    "eco": "dapr",
+    "key": "dapr-11003-3901c65122cb",
+    "provider": "dapr/dapr",
+    "consumer": "dapr/go-sdk",
+    "consumer_sha": "c90047cb0257e5e2a849c0ee3aa4038a6ae0b1a4"
+  },
+  "merge_base": "f2baba403d85baae280896911aef59329b8f9279",
+  "decided": "2b8f190b71084d0d52206e9ccacb8e77ebdbbe86",
+  "started": "2026-10-30T18:44:03Z",
+  "finished": "2026-10-30T18:44:46Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/41109011227",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "dapr",
+      "commit": "2b8f190b71084d0d52206e9ccacb8e77ebdbbe86",
+      "parent": "f2baba403d85baae280896911aef59329b8f9279",
+      "date": "2026-10-30",
+      "subject": "pull request 11003 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "dapr/proto/runtime/v1/appcallback.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 6
+      },
+      "canary": {
+        "outcome": "breaks",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 6,
+        "errors": [
+          "module github.com/dapr/dapr@latest found (v1.19.0, replaced by /tmp/parent-canary-4166436103), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.19.0, replaced by /tmp/parent-canary-4166436103), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.19.0, replaced by /tmp/parent-canary-4166436103), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.19.0, replaced by /tmp/parent-canary-4166436103), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.19.0, replaced by /tmp/parent-canary-4166436103), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.19.0, replaced by /tmp/parent-canary-4166436103), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1"
+        ],
+        "error_count": 6,
+        "failed_packages": [
+          "github.com/dapr/go-sdk/actor/manager",
+          "github.com/dapr/go-sdk/actor/runtime",
+          "github.com/dapr/go-sdk/actor/state",
+          "github.com/dapr/go-sdk/client",
+          "github.com/dapr/go-sdk/service/grpc",
+          "github.com/dapr/go-sdk/service/http"
+        ],
+        "detail": "canary: github.com/dapr/dapr/pkg/proto/common/v1 removed."
+      },
+      "seconds": 42.049724563,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-30T18:44:03.191Z level=INFO msg=cloning repo=c-dapr url=https://github.com/dapr/go-sdk.git\ndapr        2b8f190b GO       source_build=GO      compiler=compiles           42.0s \ndapr           1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 44s."
+}

@@ -1,0 +1,50 @@
+{
+  "pr": {
+    "n": 899,
+    "head": "913d5f884b037d23abd34af7b70a3e5bd9693454",
+    "base": "e9e8d9de889f3a1d34aaa44b5342ea846aa1337e",
+    "title": "Add RPC definitions for namespace soft deletion and restoration",
+    "url": "https://github.com/temporalio/api/pull/899",
+    "updated": "2026-10-30T16:08:41Z",
+    "eco": "temporal",
+    "key": "temporal-899-913d5f884b03",
+    "provider": "temporalio/api",
+    "consumer": "temporalio/sdk-go",
+    "consumer_sha": "32e10989934a23ea2b5435e8440fbb15299c2347"
+  },
+  "merge_base": "e9e8d9de889f3a1d34aaa44b5342ea846aa1337e",
+  "decided": "8ffe3b7561133f63f4bcc0eca15235d0501d52fa",
+  "started": "2026-10-30T18:43:59Z",
+  "finished": "2026-10-30T18:44:09Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/41109011227",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "temporal",
+      "commit": "8ffe3b7561133f63f4bcc0eca15235d0501d52fa",
+      "parent": "e9e8d9de889f3a1d34aaa44b5342ea846aa1337e",
+      "date": "2026-10-30",
+      "subject": "pull request 899 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "temporal/api/enums/v1/namespace.proto",
+        "temporal/api/operatorservice/v1/request_response.proto",
+        "temporal/api/operatorservice/v1/service.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 8.497349295,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-10-30T18:43:59.995Z level=INFO msg=cloning repo=c-temporal url=https://github.com/temporalio/sdk-go.git\ntemporal    8ffe3b75 GO       source_build=GO      compiler=-                   8.5s \ntemporal       1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 10s."
+}
