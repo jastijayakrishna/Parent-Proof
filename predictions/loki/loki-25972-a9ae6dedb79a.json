@@ -1,0 +1,83 @@
+{
+  "pr": {
+    "n": 25972,
+    "head": "a9ae6dedb79a02a8e8f1782cf5016fac18e76a26",
+    "base": "5aa4b9212d64d723f63b2770452054aa23df114d",
+    "title": "feat!: Upgrade Go module to github.com/grafana/loki/v4",
+    "url": "https://github.com/grafana/loki/pull/25972",
+    "updated": "2026-10-30T10:59:56Z",
+    "eco": "loki",
+    "key": "loki-25972-a9ae6dedb79a",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "a9ae6dedb79a02a8e8f1782cf5016fac18e76a26"
+  },
+  "merge_base": "5aa4b9212d64d723f63b2770452054aa23df114d",
+  "decided": "34f766516af4ca345ae700470aa457085cc3b511",
+  "started": "2026-10-30T13:17:33Z",
+  "finished": "2026-10-30T13:17:42Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/41061577581",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "34f766516af4ca345ae700470aa457085cc3b511",
+      "parent": "5aa4b9212d64d723f63b2770452054aa23df114d",
+      "date": "2026-10-30",
+      "subject": "pull request 25972 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "CONTRACT_COMPILE_ERROR",
+        "TOOLCHAIN_TOO_OLD"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "clients/cmd/docker-driver/logdriver/entry.proto",
+        "pkg/compactor/deletion/deletionproto/types.proto",
+        "pkg/dataobj/compaction/v2/proto/compactionv2.proto",
+        "pkg/dataobj/internal/metadata/datasetmd/datasetmd.proto",
+        "pkg/dataobj/internal/metadata/filemd/filemd.proto",
+        "pkg/dataset/encoding/wirecodec/internal/arraymd/arraymd.proto",
+        "pkg/dataset/encoding/wirecodec/internal/datasetmd/datasetmd.proto",
+        "pkg/dataset/encoding/wirecodec/internal/inlinemd/inlinemd.proto",
+        "pkg/dataset/encoding/wirecodec/internal/layoutmd/layoutmd.proto",
+        "pkg/dataset/encoding/wirecodec/internal/typemd/typemd.proto",
+        "pkg/engine/internal/proto/physicalpb/physicalpb.proto",
+        "pkg/engine/internal/proto/ulid/ulid.proto",
+        "pkg/engine/internal/proto/wirepb/wirepb.proto",
+        "pkg/ingester/checkpoint.proto",
+        "pkg/logproto/bloomgateway.proto",
+        "pkg/logproto/indexgateway.proto",
+        "pkg/logproto/ingester-rf1.proto",
+        "pkg/logproto/internal_push.proto",
+        "pkg/logproto/logproto.proto",
+        "pkg/logproto/metrics.proto",
+        "pkg/logproto/pattern.proto",
+        "pkg/logproto/sketch.proto",
+        "pkg/logqlmodel/stats/stats.proto",
+        "pkg/querier/queryrange/queryrange.proto",
+        "pkg/querier/queryrange/queryrangebase/definitions/definitions.proto",
+        "pkg/querier/queryrange/queryrangebase/queryrange.proto",
+        "pkg/querier/stats/stats.proto",
+        "pkg/ruler/base/ruler.proto",
+        "pkg/ruler/rulespb/rules.proto",
+        "pkg/storage/chunk/cache/resultscache/test_types.proto",
+        "pkg/storage/chunk/cache/resultscache/types.proto",
+        "pkg/xcap/internal/proto/xcap.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: clients/cmd/docker-driver/logdriver/entry.proto",
+      "seconds": 1.989162184,
+      "total": 1
+    }
+  ],
+  "log": "loki        34f76651 UNKNOWN  source_build=UNKNOWN compiler=-                   2.0s \nloki           1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  CONTRACT_COMPILE_ERROR (e.g. loki@34f766516af4ca345ae700470aa457085cc3b511)\n    1   1  TOOLCHAIN_TOO_OLD (e.g. loki@34f766516af4ca345ae700470aa457085cc3b511)\n\n1 windows in 9s."
+}

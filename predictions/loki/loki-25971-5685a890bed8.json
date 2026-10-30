@@ -1,0 +1,52 @@
+{
+  "pr": {
+    "n": 25971,
+    "head": "5685a890bed891c64b5b76a98c103557cb946c81",
+    "base": "45be78b3b59a86906b51da4ecf575785b8539fd0",
+    "title": "refactor(ingester): Pass the Kafka record timestamp on the push request",
+    "url": "https://github.com/grafana/loki/pull/25971",
+    "updated": "2026-10-30T11:32:14Z",
+    "eco": "loki",
+    "key": "loki-25971-5685a890bed8",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "5685a890bed891c64b5b76a98c103557cb946c81"
+  },
+  "merge_base": "45be78b3b59a86906b51da4ecf575785b8539fd0",
+  "decided": "567ae032f5f4181017feda5882687d51a93dd9bb",
+  "started": "2026-10-30T13:17:35Z",
+  "finished": "2026-10-30T13:18:44Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/41061577581",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "567ae032f5f4181017feda5882687d51a93dd9bb",
+      "parent": "45be78b3b59a86906b51da4ecf575785b8539fd0",
+      "date": "2026-10-30",
+      "subject": "pull request 25971 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "TOOLCHAIN_TOO_OLD"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "pkg/push/push.proto",
+        "vendor/github.com/grafana/loki/pkg/push/push.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: vendor/github.com/grafana/loki/pkg/push/push.proto",
+      "seconds": 62.485287638,
+      "total": 1
+    }
+  ],
+  "log": "loki        567ae032 UNKNOWN  source_build=UNKNOWN compiler=-                  62.5s \nloki           1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  TOOLCHAIN_TOO_OLD (e.g. loki@567ae032f5f4181017feda5882687d51a93dd9bb)\n\n1 windows in 1m9s."
+}
