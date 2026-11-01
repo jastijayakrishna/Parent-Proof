@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 26176,
+    "head": "372fb315c77b63d03241a1f11a4fed34677979fc",
+    "base": "2a73dde17b012632ee8fa2a565563c24329e26c9",
+    "title": "fix(Hydrator): prevent hydration skip when apps share drySha but have different paths (#26154)",
+    "url": "https://github.com/argoproj/argo-cd/pull/26176",
+    "updated": "2026-11-01T17:55:19Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-26176-372fb315c77b",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "372fb315c77b63d03241a1f11a4fed34677979fc"
+  },
+  "merge_base": "2a73dde17b012632ee8fa2a565563c24329e26c9",
+  "decided": "6e7d1e77f6246703e05f06e7817658ce4ef9eeb0",
+  "started": "2026-11-01T19:53:44Z",
+  "finished": "2026-11-01T19:54:25Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/41343756206",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "6e7d1e77f6246703e05f06e7817658ce4ef9eeb0",
+      "parent": "2a73dde17b012632ee8fa2a565563c24329e26c9",
+      "date": "2026-11-01",
+      "subject": "pull request 26176 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "pkg/apis/application/v1alpha1/generated.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 37.234514923,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     6e7d1e77 GO       source_build=GO      compiler=-                  37.2s \nargo-cd        1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 41s."
+}

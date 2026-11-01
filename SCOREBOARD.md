@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-01 08:24 UTC.
+Updated 2026-11-01 19:54 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 284 | 211 | 7 | 66 | 92 | 91 | 0 | 0 |
+| 286 | 212 | 7 | 67 | 92 | 91 | 0 | 0 |
 
 ## Every pull request
 
@@ -23,6 +23,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#25416](https://github.com/argoproj/argo-cd/pull/25416) feat(repo-server): partial-clone | Merge | Merge | not judged |  |
 | argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
 | argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
+| argo-cd | [#26176](https://github.com/argoproj/argo-cd/pull/26176) fix(Hydrator): prevent hydration skip when apps share drySha but have different paths (#26154) | Merge | Merge | not judged |  |
 | argo-cd | [#26755](https://github.com/argoproj/argo-cd/pull/26755) feat(appset): add commitSHA parameter to git generator | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#27124](https://github.com/argoproj/argo-cd/pull/27124) feat: add support for attaching ephemeral containers (debug containers) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#27124](https://github.com/argoproj/argo-cd/pull/27124) feat: add support for attaching ephemeral containers (debug containers) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -250,6 +251,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25888](https://github.com/grafana/loki/pull/25888) chore(deps): Update module github.com/containerd/containerd/v2 to v2.4.2 (release-3.7.x) | Merge | Merge | not judged |  |
 | loki | [#25888](https://github.com/grafana/loki/pull/25888) chore(deps): Update module github.com/containerd/containerd/v2 to v2.4.2 (release-3.7.x) | Merge | Merge | not judged |  |
 | loki | [#25950](https://github.com/grafana/loki/pull/25950) refactor(logql): Move pkg/logqlmodel to pkg/logql/model | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, TOOLCHAIN_TOO_OLD |
+| loki | [#25964](https://github.com/grafana/loki/pull/25964) feat!: Upgrade Go module to v4 | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, TOOLCHAIN_TOO_OLD |
 | loki | [#25964](https://github.com/grafana/loki/pull/25964) feat!: Upgrade Go module to v4 | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, TOOLCHAIN_TOO_OLD |
 | loki | [#25971](https://github.com/grafana/loki/pull/25971) refactor(ingester): Pass the Kafka record timestamp on the push request | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25972](https://github.com/grafana/loki/pull/25972) feat!: Upgrade Go module to github.com/grafana/loki/v4 | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, TOOLCHAIN_TOO_OLD |
