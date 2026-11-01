@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-10-31 08:38 UTC.
+Updated 2026-11-01 01:42 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 280 | 208 | 7 | 65 | 90 | 89 | 0 | 0 |
+| 282 | 209 | 7 | 66 | 91 | 90 | 0 | 0 |
 
 ## Every pull request
 
@@ -23,6 +23,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#25416](https://github.com/argoproj/argo-cd/pull/25416) feat(repo-server): partial-clone | Merge | Merge | not judged |  |
 | argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
 | argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
+| argo-cd | [#26755](https://github.com/argoproj/argo-cd/pull/26755) feat(appset): add commitSHA parameter to git generator | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#27124](https://github.com/argoproj/argo-cd/pull/27124) feat: add support for attaching ephemeral containers (debug containers) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#27124](https://github.com/argoproj/argo-cd/pull/27124) feat: add support for attaching ephemeral containers (debug containers) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#27458](https://github.com/argoproj/argo-cd/pull/27458) feat: add sso.auto-login option to skip SSO login button click | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -205,6 +206,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#11422](https://github.com/lightningnetwork/lnd/pull/11422) funding: reject new static remote key channels | Merge | Merge | compiles |  |
 | lnd | [#11422](https://github.com/lightningnetwork/lnd/pull/11422) funding: reject new static remote key channels | Merge | Merge | compiles |  |
 | lnd | [#11439](https://github.com/lightningnetwork/lnd/pull/11439) routing: add experimental fee levels to mission control | Merge | Merge | compiles |  |
+| lnd | [#11466](https://github.com/lightningnetwork/lnd/pull/11466) multi: add dry run option to SendCoins | Merge | Merge | compiles |  |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
 | loki | [#24991](https://github.com/grafana/loki/pull/24991) feat(logline): Report Logline query stats on the metrics.go line | Merge | Merge | not judged |  |
