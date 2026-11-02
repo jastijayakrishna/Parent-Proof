@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 3820,
+    "head": "8bedb24707ddeae6471c8adfc0c186efb8bf57dc",
+    "base": "97748e4cb00576b8b2a79537d4752896d2cb649a",
+    "title": "[release-1.32] docs: expose presence field in JWTRule reference docs",
+    "url": "https://github.com/istio/api/pull/3820",
+    "updated": "2026-11-02T19:44:27Z",
+    "eco": "istio",
+    "key": "istio-3820-8bedb24707dd",
+    "provider": "istio/api",
+    "consumer": "istio/istio",
+    "consumer_sha": "44f0d60232959d76bac921ff2717d1a67ee30293"
+  },
+  "merge_base": "97748e4cb00576b8b2a79537d4752896d2cb649a",
+  "decided": "4f0f830a4c7fcf4dffb802322aac985bfc4c7f3b",
+  "started": "2026-11-02T20:28:51Z",
+  "finished": "2026-11-02T20:28:58Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/41519031182",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "istio",
+      "commit": "4f0f830a4c7fcf4dffb802322aac985bfc4c7f3b",
+      "parent": "97748e4cb00576b8b2a79537d4752896d2cb649a",
+      "date": "2026-11-02",
+      "subject": "pull request 3820 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "security/v1beta1/request_authentication.proto"
+      ],
+      "unjudged": "the commit changes no Go file of the module: its generated code is not regenerated with the .proto change, so the build cannot see it",
+      "seconds": 0.916919961,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-11-02T20:28:51.478Z level=INFO msg=cloning repo=c-istio url=https://github.com/istio/istio.git\nistio       4f0f830a GO       source_build=GO      compiler=-                   0.9s \nistio          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 7s."
+}

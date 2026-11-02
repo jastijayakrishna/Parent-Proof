@@ -1,0 +1,50 @@
+{
+  "pr": {
+    "n": 155,
+    "head": "2b622c932da671c438083b1039af8efb5dd8afb5",
+    "base": "3270b08244f3e97e2a57a7ee2d9c649c88b861d3",
+    "title": "docs: Document UNSPECIFIED enum values that are not returned",
+    "url": "https://github.com/authzed/api/pull/155",
+    "updated": "2026-11-02T16:59:01Z",
+    "eco": "authzed",
+    "key": "authzed-155-2b622c932da6",
+    "provider": "authzed/api",
+    "consumer": "authzed/spicedb",
+    "consumer_sha": "a87308b06994d3559458283cc4272d6211580c32"
+  },
+  "merge_base": "3270b08244f3e97e2a57a7ee2d9c649c88b861d3",
+  "decided": "5b1f97846d71c211017b62dafb83994eb1122d50",
+  "started": "2026-11-02T20:28:50Z",
+  "finished": "2026-11-02T20:28:52Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/41519031182",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "authzed",
+      "commit": "5b1f97846d71c211017b62dafb83994eb1122d50",
+      "parent": "3270b08244f3e97e2a57a7ee2d9c649c88b861d3",
+      "date": "2026-11-02",
+      "subject": "pull request 155 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "authzed/api/v1/core.proto",
+        "authzed/api/v1/debug.proto",
+        "authzed/api/v1/permission_service.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 0.618386671,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-11-02T20:28:50.371Z level=INFO msg=cloning repo=c-authzed url=https://github.com/authzed/spicedb.git\nauthzed     5b1f9784 GO       source_build=GO      compiler=-                   0.6s \nauthzed        1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 2s."
+}

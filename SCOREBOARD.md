@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-02 10:18 UTC.
+Updated 2026-11-02 20:30 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 288 | 213 | 7 | 68 | 93 | 92 | 0 | 0 |
+| 296 | 219 | 7 | 70 | 94 | 93 | 0 | 0 |
 
 ## Every pull request
 
@@ -38,6 +38,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#28531](https://github.com/argoproj/argo-cd/pull/28531) feat: add ignoreDuplicateResources to suppress RepeatedResourceWarning (#28026) | Merge | Merge | not judged |  |
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
+| argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
 | argo-cd | [#28908](https://github.com/argoproj/argo-cd/pull/28908) fix: base auto-sync change detection on the last synced revision (#27875, #21692) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29105](https://github.com/argoproj/argo-cd/pull/29105) feat: expose health check code in UI (#7773) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -52,6 +53,8 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#29236](https://github.com/argoproj/argo-cd/pull/29236) feat: add seal signing inspection command | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29236](https://github.com/argoproj/argo-cd/pull/29236) feat: add seal signing inspection command | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29236](https://github.com/argoproj/argo-cd/pull/29236) feat: add seal signing inspection command | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#29236](https://github.com/argoproj/argo-cd/pull/29236) feat: add seal signing inspection command | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#29322](https://github.com/argoproj/argo-cd/pull/29322) feat(appset): add metrics for appset to measure rollout durations for progressive sync | Merge | Merge | not judged |  |
 | argo-cd | [#29322](https://github.com/argoproj/argo-cd/pull/29322) feat(appset): add metrics for appset to measure rollout durations for progressive sync | Merge | Merge | not judged |  |
 | argo-cd | [#29647](https://github.com/argoproj/argo-cd/pull/29647) refactor: filter appset file patterns in the repo-server | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29647](https://github.com/argoproj/argo-cd/pull/29647) refactor: filter appset file patterns in the repo-server | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -102,8 +105,11 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
+| argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30645](https://github.com/argoproj/argo-cd/pull/30645) feat(applicationset): support GitLab pull request generator mTLS (#30644) | Merge | Merge | not judged |  |
 | argo-cd | [#30645](https://github.com/argoproj/argo-cd/pull/30645) feat(applicationset): support GitLab pull request generator mTLS (#30644) | Merge | Merge | not judged |  |
+| authzed | [#155](https://github.com/authzed/api/pull/155) docs: Document UNSPECIFIED enum values that are not returned | Merge | Merge | not judged |  |
+| authzed | [#156](https://github.com/authzed/api/pull/156) feat: allow underscore prefix for private identifiers | Needs review | Needs review | not judged | OPTION_CHANGED, DESCRIPTOR_REFLECTION, NEEDS_REVIEW |
 | cometbft-cosmos-sdk | [#6100](https://github.com/cometbft/cometbft/pull/6100) fix(types,state): enforce minimum Block.MaxBytes floor and handle small limits defensively | Merge | Merge | compiles |  |
 | containerd | [#12829](https://github.com/containerd/containerd/pull/12829) Fix transfer-service registry host config to support multi-root config_path | Merge | Merge | not judged |  |
 | containerd | [#12951](https://github.com/containerd/containerd/pull/12951) cri: add configurable DNS servers for resolving registry hostnames | Merge | Merge | not judged |  |
@@ -148,6 +154,7 @@ verifier before the compiler built the consumer against it.
 | dapr | [#10771](https://github.com/dapr/dapr/pull/10771) [Backport release-1.19] Binary store building block support | Merge | Merge | compiles |  |
 | dapr | [#10866](https://github.com/dapr/dapr/pull/10866) [Backport release-1.19] feat: search and vector blocks | Merge | Merge | compiles |  |
 | dapr | [#11003](https://github.com/dapr/dapr/pull/11003) Add app error details to dead-letter pub/sub messages | Merge | Merge | compiles |  |
+| dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
 | istio | [#3088](https://github.com/istio/api/pull/3088) Doc: Add note on DR workloadSelector | Merge | Merge | compiles |  |
 | istio | [#3722](https://github.com/istio/api/pull/3722) feat(tracing): add otel always_on sampler | Merge | Merge | compiles |  |
 | istio | [#3787](https://github.com/istio/api/pull/3787)  add cert_signer_namespace_map field to MeshConfig for namespace-scoped CSR signer authorization | Merge | Merge | compiles |  |
@@ -163,6 +170,7 @@ verifier before the compiler built the consumer against it.
 | istio | [#3810](https://github.com/istio/api/pull/3810) fix wasm docs | Merge | Merge | compiles |  |
 | istio | [#3818](https://github.com/istio/api/pull/3818) networking: add retryBudget to DestinationRule portLevelSettings | Merge | Merge | compiles |  |
 | istio | [#3819](https://github.com/istio/api/pull/3819) security: add payloadToMetadata to JWTRule to keep claims of all tokens | Merge | Merge | compiles |  |
+| istio | [#3820](https://github.com/istio/api/pull/3820) [release-1.32] docs: expose presence field in JWTRule reference docs | Merge | Merge | not judged |  |
 | jaeger | [#231](https://github.com/jaegertracing/jaeger-idl/pull/231) feat(expression): Add phrase and fulltext text-search operators | Needs review | Needs review | compiles | OPTION_CHANGED |
 | jaeger | [#237](https://github.com/jaegertracing/jaeger-idl/pull/237) feat(api_v3): Add a sql field to TraceQueryParameters and an ExplainQuery RPC | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | lnd | [#9457](https://github.com/lightningnetwork/lnd/pull/9457) routerrpc: add option PreventSubsequentPayment to TrackPaymentV2 | Merge | Merge | compiles |  |
