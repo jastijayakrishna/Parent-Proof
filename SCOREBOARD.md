@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-01 19:54 UTC.
+Updated 2026-11-02 02:41 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 286 | 212 | 7 | 67 | 92 | 91 | 0 | 0 |
+| 287 | 213 | 7 | 67 | 92 | 91 | 0 | 0 |
 
 ## Every pull request
 
@@ -24,6 +24,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
 | argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
 | argo-cd | [#26176](https://github.com/argoproj/argo-cd/pull/26176) fix(Hydrator): prevent hydration skip when apps share drySha but have different paths (#26154) | Merge | Merge | not judged |  |
+| argo-cd | [#26473](https://github.com/argoproj/argo-cd/pull/26473) feat(appset): add labelSelector to ignoreApplicationDifferences (#17295) | Merge | Merge | not judged |  |
 | argo-cd | [#26755](https://github.com/argoproj/argo-cd/pull/26755) feat(appset): add commitSHA parameter to git generator | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#27124](https://github.com/argoproj/argo-cd/pull/27124) feat: add support for attaching ephemeral containers (debug containers) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#27124](https://github.com/argoproj/argo-cd/pull/27124) feat: add support for attaching ephemeral containers (debug containers) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
