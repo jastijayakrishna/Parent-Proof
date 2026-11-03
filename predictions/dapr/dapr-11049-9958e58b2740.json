@@ -1,0 +1,75 @@
+{
+  "pr": {
+    "n": 11049,
+    "head": "9958e58b27401f17c1011aeaad613337aabbb37e",
+    "base": "bd54d837636ebec3450a24159f7f93cb0a89da87",
+    "title": "security: mint JWT SVIDs on demand from Sentry",
+    "url": "https://github.com/dapr/dapr/pull/11049",
+    "updated": "2026-11-03T19:13:45Z",
+    "eco": "dapr",
+    "key": "dapr-11049-9958e58b2740",
+    "provider": "dapr/dapr",
+    "consumer": "dapr/go-sdk",
+    "consumer_sha": "c90047cb0257e5e2a849c0ee3aa4038a6ae0b1a4"
+  },
+  "merge_base": "bd54d837636ebec3450a24159f7f93cb0a89da87",
+  "decided": "384e155c289b1604711e17a6ac4b23644ab8e2ff",
+  "started": "2026-11-03T23:35:24Z",
+  "finished": "2026-11-03T23:36:07Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/41739847256",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "dapr",
+      "commit": "384e155c289b1604711e17a6ac4b23644ab8e2ff",
+      "parent": "bd54d837636ebec3450a24159f7f93cb0a89da87",
+      "date": "2026-11-03",
+      "subject": "pull request 11049 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "dapr/proto/sentry/v1/sentry.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 6
+      },
+      "canary": {
+        "outcome": "breaks",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 6,
+        "errors": [
+          "module github.com/dapr/dapr@latest found (v1.19.1, replaced by /tmp/parent-canary-1067376803), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.19.1, replaced by /tmp/parent-canary-1067376803), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.19.1, replaced by /tmp/parent-canary-1067376803), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.19.1, replaced by /tmp/parent-canary-1067376803), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.19.1, replaced by /tmp/parent-canary-1067376803), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.19.1, replaced by /tmp/parent-canary-1067376803), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1"
+        ],
+        "error_count": 6,
+        "failed_packages": [
+          "github.com/dapr/go-sdk/actor/manager",
+          "github.com/dapr/go-sdk/actor/runtime",
+          "github.com/dapr/go-sdk/actor/state",
+          "github.com/dapr/go-sdk/client",
+          "github.com/dapr/go-sdk/service/grpc",
+          "github.com/dapr/go-sdk/service/http"
+        ],
+        "detail": "canary: github.com/dapr/dapr/pkg/proto/common/v1 removed."
+      },
+      "seconds": 41.8313875,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-11-03T23:35:24.020Z level=INFO msg=cloning repo=c-dapr url=https://github.com/dapr/go-sdk.git\ndapr        384e155c GO       source_build=GO      compiler=compiles           41.8s \ndapr           1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 43s."
+}
