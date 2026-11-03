@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-02 20:30 UTC.
+Updated 2026-11-03 02:53 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 296 | 219 | 7 | 70 | 94 | 93 | 0 | 0 |
+| 302 | 223 | 7 | 72 | 96 | 95 | 0 | 0 |
 
 ## Every pull request
 
@@ -90,6 +90,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedRevisionOnly option for source integrity | Merge | Merge | not judged |  |
+| argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedRevisionOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
@@ -155,6 +156,7 @@ verifier before the compiler built the consumer against it.
 | dapr | [#10866](https://github.com/dapr/dapr/pull/10866) [Backport release-1.19] feat: search and vector blocks | Merge | Merge | compiles |  |
 | dapr | [#11003](https://github.com/dapr/dapr/pull/11003) Add app error details to dead-letter pub/sub messages | Merge | Merge | compiles |  |
 | dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
+| dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
 | istio | [#3088](https://github.com/istio/api/pull/3088) Doc: Add note on DR workloadSelector | Merge | Merge | compiles |  |
 | istio | [#3722](https://github.com/istio/api/pull/3722) feat(tracing): add otel always_on sampler | Merge | Merge | compiles |  |
 | istio | [#3787](https://github.com/istio/api/pull/3787)  add cert_signer_namespace_map field to MeshConfig for namespace-scoped CSR signer authorization | Merge | Merge | compiles |  |
@@ -169,6 +171,7 @@ verifier before the compiler built the consumer against it.
 | istio | [#3809](https://github.com/istio/api/pull/3809) document case-insensitive method matching in authorizationpolicy | Merge | Merge | compiles |  |
 | istio | [#3810](https://github.com/istio/api/pull/3810) fix wasm docs | Merge | Merge | compiles |  |
 | istio | [#3818](https://github.com/istio/api/pull/3818) networking: add retryBudget to DestinationRule portLevelSettings | Merge | Merge | compiles |  |
+| istio | [#3819](https://github.com/istio/api/pull/3819) security: add payloadToMetadata to JWTRule to keep claims of all tokens | Merge | Merge | compiles |  |
 | istio | [#3819](https://github.com/istio/api/pull/3819) security: add payloadToMetadata to JWTRule to keep claims of all tokens | Merge | Merge | compiles |  |
 | istio | [#3820](https://github.com/istio/api/pull/3820) [release-1.32] docs: expose presence field in JWTRule reference docs | Merge | Merge | not judged |  |
 | jaeger | [#231](https://github.com/jaegertracing/jaeger-idl/pull/231) feat(expression): Add phrase and fulltext text-search operators | Needs review | Needs review | compiles | OPTION_CHANGED |
@@ -255,9 +258,11 @@ verifier before the compiler built the consumer against it.
 | loki | [#25747](https://github.com/grafana/loki/pull/25747) fix(queryrange): Preserve scan statistics for detected-field queries | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#25755](https://github.com/grafana/loki/pull/25755) fix(ingester): Stamp backfilled chunks with the Kafka record timestamp | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25755](https://github.com/grafana/loki/pull/25755) fix(ingester): Stamp backfilled chunks with the Kafka record timestamp | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
+| loki | [#25768](https://github.com/grafana/loki/pull/25768) feat(logline): Count passthrough sub-requests in query stats | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25798](https://github.com/grafana/loki/pull/25798) feat(dataobj-compactor): Split large tasks into parallelisable sub-tasks by size | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25798](https://github.com/grafana/loki/pull/25798) feat(dataobj-compactor): Split large tasks into parallelisable sub-tasks by size | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25848](https://github.com/grafana/loki/pull/25848) chore(deps): Update module k8s.io/client-go to v0.37.1 (release-3.7.x) | Merge | Merge | not judged |  |
+| loki | [#25888](https://github.com/grafana/loki/pull/25888) chore(deps): Update module github.com/containerd/containerd/v2 to v2.4.2 (release-3.7.x) | Merge | Merge | not judged |  |
 | loki | [#25888](https://github.com/grafana/loki/pull/25888) chore(deps): Update module github.com/containerd/containerd/v2 to v2.4.2 (release-3.7.x) | Merge | Merge | not judged |  |
 | loki | [#25888](https://github.com/grafana/loki/pull/25888) chore(deps): Update module github.com/containerd/containerd/v2 to v2.4.2 (release-3.7.x) | Merge | Merge | not judged |  |
 | loki | [#25950](https://github.com/grafana/loki/pull/25950) refactor(logql): Move pkg/logqlmodel to pkg/logql/model | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, TOOLCHAIN_TOO_OLD |
@@ -265,6 +270,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25964](https://github.com/grafana/loki/pull/25964) feat!: Upgrade Go module to v4 | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, TOOLCHAIN_TOO_OLD |
 | loki | [#25971](https://github.com/grafana/loki/pull/25971) refactor(ingester): Pass the Kafka record timestamp on the push request | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25972](https://github.com/grafana/loki/pull/25972) feat!: Upgrade Go module to github.com/grafana/loki/v4 | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, TOOLCHAIN_TOO_OLD |
+| loki | [#26002](https://github.com/grafana/loki/pull/26002) feat(logline): Look up hints for live instant metric queries | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#26002](https://github.com/grafana/loki/pull/26002) feat(logline): Look up hints for live instant metric queries | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | spire | [#102](https://github.com/spiffe/spire-api-sdk/pull/102) Add unauthenticated server Version GetVersion API | Merge | Merge | compiles |  |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |

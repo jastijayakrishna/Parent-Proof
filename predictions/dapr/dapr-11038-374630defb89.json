@@ -1,0 +1,75 @@
+{
+  "pr": {
+    "n": 11038,
+    "head": "374630defb894e4770c5f3dae37422d3cd8403c2",
+    "base": "bd54d837636ebec3450a24159f7f93cb0a89da87",
+    "title": "scheduler: pull dispatch of actor reminders to sidecars with free slots",
+    "url": "https://github.com/dapr/dapr/pull/11038",
+    "updated": "2026-11-02T23:43:44Z",
+    "eco": "dapr",
+    "key": "dapr-11038-374630defb89",
+    "provider": "dapr/dapr",
+    "consumer": "dapr/go-sdk",
+    "consumer_sha": "c90047cb0257e5e2a849c0ee3aa4038a6ae0b1a4"
+  },
+  "merge_base": "bd54d837636ebec3450a24159f7f93cb0a89da87",
+  "decided": "5537ea804076411326ee649bc9ad4e1a1e396eb7",
+  "started": "2026-11-03T02:45:34Z",
+  "finished": "2026-11-03T02:46:16Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/41567762708",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "dapr",
+      "commit": "5537ea804076411326ee649bc9ad4e1a1e396eb7",
+      "parent": "bd54d837636ebec3450a24159f7f93cb0a89da87",
+      "date": "2026-11-03",
+      "subject": "pull request 11038 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "dapr/proto/scheduler/v1/scheduler.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 6
+      },
+      "canary": {
+        "outcome": "breaks",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 6,
+        "errors": [
+          "module github.com/dapr/dapr@latest found (v1.19.1, replaced by /tmp/parent-canary-4026462902), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.19.1, replaced by /tmp/parent-canary-4026462902), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.19.1, replaced by /tmp/parent-canary-4026462902), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.19.1, replaced by /tmp/parent-canary-4026462902), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.19.1, replaced by /tmp/parent-canary-4026462902), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1",
+          "module github.com/dapr/dapr@latest found (v1.19.1, replaced by /tmp/parent-canary-4026462902), but does not contain package github.com/dapr/dapr/pkg/proto/common/v1"
+        ],
+        "error_count": 6,
+        "failed_packages": [
+          "github.com/dapr/go-sdk/actor/manager",
+          "github.com/dapr/go-sdk/actor/runtime",
+          "github.com/dapr/go-sdk/actor/state",
+          "github.com/dapr/go-sdk/client",
+          "github.com/dapr/go-sdk/service/grpc",
+          "github.com/dapr/go-sdk/service/http"
+        ],
+        "detail": "canary: github.com/dapr/dapr/pkg/proto/common/v1 removed."
+      },
+      "seconds": 40.20420322,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-11-03T02:45:34.909Z level=INFO msg=cloning repo=c-dapr url=https://github.com/dapr/go-sdk.git\ndapr        5537ea80 GO       source_build=GO      compiler=compiles           40.2s \ndapr           1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 41s."
+}
