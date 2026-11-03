@@ -1,0 +1,51 @@
+{
+  "pr": {
+    "n": 29949,
+    "head": "144f4d31642dcf3ec8a870a619b4200267d3519b",
+    "base": "317dd84c616a5a1bb72670a03665ef0b2a943451",
+    "title": "feat: add GetCertificate API and certificate details in CLI and UI (#29400)",
+    "url": "https://github.com/argoproj/argo-cd/pull/29949",
+    "updated": "2026-11-03T13:52:38Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-29949-144f4d31642d",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "144f4d31642dcf3ec8a870a619b4200267d3519b"
+  },
+  "merge_base": "7b71bcaa1b2e9fee5d845dbe869fb2b960839f1a",
+  "decided": "1c372ec6257bf55547c8c205b8b221c06b9d015f",
+  "started": "2026-11-03T17:59:57Z",
+  "finished": "2026-11-03T18:03:11Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/41688924253",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "1c372ec6257bf55547c8c205b8b221c06b9d015f",
+      "parent": "7b71bcaa1b2e9fee5d845dbe869fb2b960839f1a",
+      "date": "2026-11-03",
+      "subject": "pull request 29949 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "CONTRACT_COMPILE_ERROR"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "server/certificate/certificate.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 165.424927189,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     1c372ec6 UNKNOWN  source_build=UNKNOWN compiler=-                 165.4s \nargo-cd        1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  CONTRACT_COMPILE_ERROR (e.g. argo-cd@1c372ec6257bf55547c8c205b8b221c06b9d015f)\n\n1 windows in 3m14s."
+}
