@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-03 02:53 UTC.
+Updated 2026-11-03 10:20 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 302 | 223 | 7 | 72 | 96 | 95 | 0 | 0 |
+| 304 | 224 | 7 | 73 | 97 | 96 | 0 | 0 |
 
 ## Every pull request
 
@@ -159,6 +159,7 @@ verifier before the compiler built the consumer against it.
 | dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
 | istio | [#3088](https://github.com/istio/api/pull/3088) Doc: Add note on DR workloadSelector | Merge | Merge | compiles |  |
 | istio | [#3722](https://github.com/istio/api/pull/3722) feat(tracing): add otel always_on sampler | Merge | Merge | compiles |  |
+| istio | [#3722](https://github.com/istio/api/pull/3722) feat(tracing): add otel always_on sampler | Merge | Merge | compiles |  |
 | istio | [#3787](https://github.com/istio/api/pull/3787)  add cert_signer_namespace_map field to MeshConfig for namespace-scoped CSR signer authorization | Merge | Merge | compiles |  |
 | istio | [#3791](https://github.com/istio/api/pull/3791) docs: use camelCase prefixRewrite in HTTPRedirect example | Merge | Merge | compiles |  |
 | istio | [#3792](https://github.com/istio/api/pull/3792) docs: expose presence field in JWTRule reference docs | Merge | Merge | compiles |  |
@@ -256,6 +257,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25719](https://github.com/grafana/loki/pull/25719) chore(deps): Update module go.etcd.io/etcd/api/v3 to v3.7.3 (release-3.7.x) | Merge | Merge | not judged |  |
 | loki | [#25736](https://github.com/grafana/loki/pull/25736) chore(deps): Update module go.etcd.io/etcd/client/v3 to v3.7.3 (release-3.7.x) | Merge | Merge | not judged |  |
 | loki | [#25747](https://github.com/grafana/loki/pull/25747) fix(queryrange): Preserve scan statistics for detected-field queries | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| loki | [#25755](https://github.com/grafana/loki/pull/25755) fix(ingester): Stamp backfilled chunks with the Kafka record timestamp | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25755](https://github.com/grafana/loki/pull/25755) fix(ingester): Stamp backfilled chunks with the Kafka record timestamp | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25755](https://github.com/grafana/loki/pull/25755) fix(ingester): Stamp backfilled chunks with the Kafka record timestamp | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25768](https://github.com/grafana/loki/pull/25768) feat(logline): Count passthrough sub-requests in query stats | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
