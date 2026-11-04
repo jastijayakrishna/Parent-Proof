@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-04 11:50 UTC.
+Updated 2026-11-04 19:08 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 323 | 238 | 7 | 78 | 104 | 103 | 0 | 0 |
+| 331 | 243 | 7 | 81 | 110 | 108 | 0 | 0 |
 
 ## Every pull request
 
@@ -111,6 +111,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
+| argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30645](https://github.com/argoproj/argo-cd/pull/30645) feat(applicationset): support GitLab pull request generator mTLS (#30644) | Merge | Merge | not judged |  |
 | argo-cd | [#30645](https://github.com/argoproj/argo-cd/pull/30645) feat(applicationset): support GitLab pull request generator mTLS (#30644) | Merge | Merge | not judged |  |
 | argo-cd | [#30745](https://github.com/argoproj/argo-cd/pull/30745) feat(Hydrator):  show when syncSource is behind hydrateTo (#30590) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -135,8 +136,10 @@ verifier before the compiler built the consumer against it.
 | cortex | [#7384](https://github.com/cortexproject/cortex/pull/7384) Add per-tenant cardinality API endpoint | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, NEEDS_REVIEW |
 | csi-provisioner | [#603](https://github.com/container-storage-interface/spec/pull/603) Add ControllerGetNodeInfo RPC (alpha) | Merge | Merge | compiles |  |
 | csi-provisioner | [#603](https://github.com/container-storage-interface/spec/pull/603) Add ControllerGetNodeInfo RPC (alpha) | Merge | Merge | compiles |  |
+| csi-provisioner | [#603](https://github.com/container-storage-interface/spec/pull/603) Add ControllerGetNodeInfo RPC (alpha) | Merge | Merge | compiles |  |
 | csi-provisioner | [#613](https://github.com/container-storage-interface/spec/pull/613) Add reason to ControllerUnpublishVolumeRequest | Merge | Merge | compiles |  |
 | csi-provisioner | [#613](https://github.com/container-storage-interface/spec/pull/613) Add reason to ControllerUnpublishVolumeRequest | Merge | Merge | compiles |  |
+| csi-provisioner | [#614](https://github.com/container-storage-interface/spec/pull/614) Fix SP reference in GetCapacity topology comment | Merge | Merge | compiles |  |
 | dapr | [#9974](https://github.com/dapr/dapr/pull/9974) feat: search and vector blocks | Merge | Merge | compiles |  |
 | dapr | [#9974](https://github.com/dapr/dapr/pull/9974) feat: search and vector blocks | Merge | Merge | compiles |  |
 | dapr | [#9974](https://github.com/dapr/dapr/pull/9974) feat: search and vector blocks | Merge | Merge | compiles |  |
@@ -167,6 +170,7 @@ verifier before the compiler built the consumer against it.
 | dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
 | dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
 | dapr | [#11049](https://github.com/dapr/dapr/pull/11049) security: mint JWT SVIDs on demand from Sentry | Merge | Merge | compiles |  |
+| dapr | [#11049](https://github.com/dapr/dapr/pull/11049) security: mint JWT SVIDs on demand from Sentry | Merge | Merge | compiles |  |
 | istio | [#3088](https://github.com/istio/api/pull/3088) Doc: Add note on DR workloadSelector | Merge | Merge | compiles |  |
 | istio | [#3722](https://github.com/istio/api/pull/3722) feat(tracing): add otel always_on sampler | Merge | Merge | compiles |  |
 | istio | [#3722](https://github.com/istio/api/pull/3722) feat(tracing): add otel always_on sampler | Merge | Merge | compiles |  |
@@ -186,6 +190,7 @@ verifier before the compiler built the consumer against it.
 | istio | [#3818](https://github.com/istio/api/pull/3818) networking: add retryBudget to DestinationRule portLevelSettings | Merge | Merge | compiles |  |
 | istio | [#3819](https://github.com/istio/api/pull/3819) security: add payloadToMetadata to JWTRule to keep claims of all tokens | Merge | Merge | compiles |  |
 | istio | [#3819](https://github.com/istio/api/pull/3819) security: add payloadToMetadata to JWTRule to keep claims of all tokens | Merge | Merge | compiles |  |
+| istio | [#3819](https://github.com/istio/api/pull/3819) security: add outputPayloadToMetadata to JWTRule to keep claims of all tokens | Merge | Merge | compiles |  |
 | istio | [#3820](https://github.com/istio/api/pull/3820) [release-1.32] docs: expose presence field in JWTRule reference docs | Merge | Merge | not judged |  |
 | istio | [#3822](https://github.com/istio/api/pull/3822) gateway: fix credentialName and tlsCertificates CRD validation rule | Merge | Merge | compiles |  |
 | jaeger | [#231](https://github.com/jaegertracing/jaeger-idl/pull/231) feat(expression): Add phrase and fulltext text-search operators | Needs review | Needs review | compiles | OPTION_CHANGED |
@@ -233,6 +238,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#11396](https://github.com/lightningnetwork/lnd/pull/11396) walletrpc: make no-expiry leases explicit | Needs review | Merge | compiles | WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION |
 | lnd | [#11396](https://github.com/lightningnetwork/lnd/pull/11396) walletrpc: make no-expiry leases explicit | Needs review | Merge | compiles | WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION |
 | lnd | [#11396](https://github.com/lightningnetwork/lnd/pull/11396) walletrpc: make no-expiry leases explicit | Needs review | Merge | compiles | WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION |
+| lnd | [#11396](https://github.com/lightningnetwork/lnd/pull/11396) walletrpc: make no-expiry leases explicit | Needs review | Merge | compiles | WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION |
 | lnd | [#11422](https://github.com/lightningnetwork/lnd/pull/11422) funding: reject new static remote key channels | Merge | Merge | compiles |  |
 | lnd | [#11422](https://github.com/lightningnetwork/lnd/pull/11422) funding: reject new static remote key channels | Merge | Merge | compiles |  |
 | lnd | [#11439](https://github.com/lightningnetwork/lnd/pull/11439) routing: add experimental fee levels to mission control | Merge | Merge | compiles |  |
@@ -276,6 +282,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25755](https://github.com/grafana/loki/pull/25755) fix(ingester): Stamp backfilled chunks with the Kafka record timestamp | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25755](https://github.com/grafana/loki/pull/25755) fix(ingester): Stamp backfilled chunks with the Kafka record timestamp | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25755](https://github.com/grafana/loki/pull/25755) fix(ingester): Stamp backfilled chunks with the Kafka record timestamp | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
+| loki | [#25755](https://github.com/grafana/loki/pull/25755) fix(ingester): Stamp backfilled chunks with the Kafka record timestamp | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25768](https://github.com/grafana/loki/pull/25768) feat(logline): Count passthrough sub-requests in query stats | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25798](https://github.com/grafana/loki/pull/25798) feat(dataobj-compactor): Split large tasks into parallelisable sub-tasks by size | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25798](https://github.com/grafana/loki/pull/25798) feat(dataobj-compactor): Split large tasks into parallelisable sub-tasks by size | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
@@ -292,6 +299,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#26002](https://github.com/grafana/loki/pull/26002) feat(logline): Look up hints for live instant metric queries | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#26218](https://github.com/grafana/loki/pull/26218) chore(deps): Update module github.com/google/gnostic-models to v0.7.1 (release-3.6.x) | Merge | Merge | not judged |  |
 | spire | [#102](https://github.com/spiffe/spire-api-sdk/pull/102) Add unauthenticated server Version GetVersion API | Merge | Merge | compiles |  |
+| spire | [#105](https://github.com/spiffe/spire-api-sdk/pull/105) Sync main with next branch | Needs review | Needs review | compiles | TOOLCHAIN_TOO_OLD |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |
 | temporal | [#827](https://github.com/temporalio/api/pull/827) Add RESOURCE_EXHAUSTED_CAUSE_CALLER_RPS_LIMIT resource-exhausted cause | Merge | Merge | not judged |  |
 | temporal | [#852](https://github.com/temporalio/api/pull/852) Task queue config for whole-queue concurrency limit | Merge | Merge | not judged |  |
