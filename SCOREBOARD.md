@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-03 23:41 UTC.
+Updated 2026-11-04 03:45 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 314 | 231 | 7 | 76 | 102 | 101 | 0 | 0 |
+| 318 | 235 | 7 | 76 | 103 | 102 | 0 | 0 |
 
 ## Every pull request
 
@@ -122,6 +122,7 @@ verifier before the compiler built the consumer against it.
 | containerd | [#13822](https://github.com/containerd/containerd/pull/13822) cri: implement pod-level checkpoint/restore (KEP-5823) | Merge | Merge | not judged |  |
 | containerd | [#13822](https://github.com/containerd/containerd/pull/13822) cri: implement pod-level checkpoint/restore (KEP-5823) | Merge | Merge | not judged |  |
 | containerd | [#13908](https://github.com/containerd/containerd/pull/13908) cri: Upgrade go-criu to v8 | Merge | Merge | not judged |  |
+| containerd | [#14266](https://github.com/containerd/containerd/pull/14266) cri: KEP-5714: cgroup namespaces | Merge | Merge | not judged |  |
 | containerd | [#14453](https://github.com/containerd/containerd/pull/14453) Update NRI to latest (0.12.4) | Merge | Merge | not judged |  |
 | containerd | [#14453](https://github.com/containerd/containerd/pull/14453) Update NRI to latest (0.12.5) | Merge | Merge | not judged |  |
 | containerd | [#14453](https://github.com/containerd/containerd/pull/14453) Update NRI to latest (0.12.4) | Merge | Merge | not judged |  |
@@ -182,6 +183,7 @@ verifier before the compiler built the consumer against it.
 | istio | [#3819](https://github.com/istio/api/pull/3819) security: add payloadToMetadata to JWTRule to keep claims of all tokens | Merge | Merge | compiles |  |
 | istio | [#3819](https://github.com/istio/api/pull/3819) security: add payloadToMetadata to JWTRule to keep claims of all tokens | Merge | Merge | compiles |  |
 | istio | [#3820](https://github.com/istio/api/pull/3820) [release-1.32] docs: expose presence field in JWTRule reference docs | Merge | Merge | not judged |  |
+| istio | [#3822](https://github.com/istio/api/pull/3822) gateway: fix credentialName and tlsCertificates CRD validation rule | Merge | Merge | compiles |  |
 | jaeger | [#231](https://github.com/jaegertracing/jaeger-idl/pull/231) feat(expression): Add phrase and fulltext text-search operators | Needs review | Needs review | compiles | OPTION_CHANGED |
 | jaeger | [#237](https://github.com/jaegertracing/jaeger-idl/pull/237) feat(api_v3): Add a sql field to TraceQueryParameters and an ExplainQuery RPC | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | lnd | [#9457](https://github.com/lightningnetwork/lnd/pull/9457) routerrpc: add option PreventSubsequentPayment to TrackPaymentV2 | Merge | Merge | compiles |  |
@@ -283,6 +285,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25972](https://github.com/grafana/loki/pull/25972) feat!: Upgrade Go module to github.com/grafana/loki/v4 | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, TOOLCHAIN_TOO_OLD |
 | loki | [#26002](https://github.com/grafana/loki/pull/26002) feat(logline): Look up hints for live instant metric queries | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#26002](https://github.com/grafana/loki/pull/26002) feat(logline): Look up hints for live instant metric queries | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| loki | [#26218](https://github.com/grafana/loki/pull/26218) chore(deps): Update module github.com/google/gnostic-models to v0.7.1 (release-3.6.x) | Merge | Merge | not judged |  |
 | spire | [#102](https://github.com/spiffe/spire-api-sdk/pull/102) Add unauthenticated server Version GetVersion API | Merge | Merge | compiles |  |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |
 | temporal | [#827](https://github.com/temporalio/api/pull/827) Add RESOURCE_EXHAUSTED_CAUSE_CALLER_RPS_LIMIT resource-exhausted cause | Merge | Merge | not judged |  |
@@ -331,3 +334,4 @@ verifier before the compiler built the consumer against it.
 | temporal | [#899](https://github.com/temporalio/api/pull/899) Add RPC definitions for namespace soft deletion and restoration | Merge | Merge | not judged |  |
 | temporal | [#899](https://github.com/temporalio/api/pull/899) Add RPC definitions for namespace soft deletion and restoration | Merge | Merge | not judged |  |
 | temporal | [#899](https://github.com/temporalio/api/pull/899) Add RPC definitions for namespace soft deletion and restoration | Merge | Merge | not judged |  |
+| temporal | [#901](https://github.com/temporalio/api/pull/901) support workflow heartbeat notification | Merge | Merge | not judged |  |
