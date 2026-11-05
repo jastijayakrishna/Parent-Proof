@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-05 07:32 UTC.
+Updated 2026-11-05 15:58 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 339 | 245 | 7 | 87 | 111 | 109 | 0 | 0 |
+| 343 | 246 | 8 | 89 | 112 | 110 | 0 | 0 |
 
 ## Every pull request
 
@@ -40,6 +40,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
+| argo-cd | [#28908](https://github.com/argoproj/argo-cd/pull/28908) fix: base auto-sync change detection on the last synced revision (#27875, #21692) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#28908](https://github.com/argoproj/argo-cd/pull/28908) fix: base auto-sync change detection on the last synced revision (#27875, #21692) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#28908](https://github.com/argoproj/argo-cd/pull/28908) fix: base auto-sync change detection on the last synced revision (#27875, #21692) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29105](https://github.com/argoproj/argo-cd/pull/29105) feat: expose health check code in UI (#7773) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -114,6 +115,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
+| argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30645](https://github.com/argoproj/argo-cd/pull/30645) feat(applicationset): support GitLab pull request generator mTLS (#30644) | Merge | Merge | not judged |  |
 | argo-cd | [#30645](https://github.com/argoproj/argo-cd/pull/30645) feat(applicationset): support GitLab pull request generator mTLS (#30644) | Merge | Merge | not judged |  |
 | argo-cd | [#30745](https://github.com/argoproj/argo-cd/pull/30745) feat(Hydrator):  show when syncSource is behind hydrateTo (#30590) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -178,6 +180,7 @@ verifier before the compiler built the consumer against it.
 | dapr | [#11049](https://github.com/dapr/dapr/pull/11049) security: mint JWT SVIDs on demand from Sentry | Merge | Merge | compiles |  |
 | dapr | [#11049](https://github.com/dapr/dapr/pull/11049) security: mint JWT SVIDs on demand from Sentry | Merge | Merge | compiles |  |
 | istio | [#3088](https://github.com/istio/api/pull/3088) Doc: Add note on DR workloadSelector | Merge | Merge | compiles |  |
+| istio | [#3442](https://github.com/istio/api/pull/3442) add waypoint context to envoyfilter | Don't merge | Merge | compiles |  |
 | istio | [#3722](https://github.com/istio/api/pull/3722) feat(tracing): add otel always_on sampler | Merge | Merge | compiles |  |
 | istio | [#3722](https://github.com/istio/api/pull/3722) feat(tracing): add otel always_on sampler | Merge | Merge | compiles |  |
 | istio | [#3787](https://github.com/istio/api/pull/3787)  add cert_signer_namespace_map field to MeshConfig for namespace-scoped CSR signer authorization | Merge | Merge | compiles |  |
@@ -284,6 +287,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25719](https://github.com/grafana/loki/pull/25719) chore(deps): Update module go.etcd.io/etcd/api/v3 to v3.7.3 (release-3.7.x) | Merge | Merge | not judged |  |
 | loki | [#25736](https://github.com/grafana/loki/pull/25736) chore(deps): Update module go.etcd.io/etcd/client/v3 to v3.7.3 (release-3.7.x) | Merge | Merge | not judged |  |
 | loki | [#25747](https://github.com/grafana/loki/pull/25747) fix(queryrange): Preserve scan statistics for detected-field queries | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| loki | [#25755](https://github.com/grafana/loki/pull/25755) fix(ingester): Stamp backfilled chunks with the Kafka record timestamp | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25755](https://github.com/grafana/loki/pull/25755) fix(ingester): Stamp backfilled chunks with the Kafka record timestamp | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25755](https://github.com/grafana/loki/pull/25755) fix(ingester): Stamp backfilled chunks with the Kafka record timestamp | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25755](https://github.com/grafana/loki/pull/25755) fix(ingester): Stamp backfilled chunks with the Kafka record timestamp | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
