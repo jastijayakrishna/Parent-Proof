@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-05 15:58 UTC.
+Updated 2026-11-05 21:52 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 343 | 246 | 8 | 89 | 112 | 110 | 0 | 0 |
+| 350 | 251 | 9 | 90 | 116 | 114 | 0 | 0 |
 
 ## Every pull request
 
@@ -147,6 +147,7 @@ verifier before the compiler built the consumer against it.
 | csi-provisioner | [#613](https://github.com/container-storage-interface/spec/pull/613) Add reason to ControllerUnpublishVolumeRequest | Merge | Merge | compiles |  |
 | csi-provisioner | [#613](https://github.com/container-storage-interface/spec/pull/613) Add reason to ControllerUnpublishVolumeRequest | Merge | Merge | compiles |  |
 | csi-provisioner | [#613](https://github.com/container-storage-interface/spec/pull/613) Add reason to ControllerUnpublishVolumeRequest | Merge | Merge | compiles |  |
+| csi-provisioner | [#613](https://github.com/container-storage-interface/spec/pull/613) Add reason to ControllerUnpublishVolumeRequest | Merge | Merge | compiles |  |
 | csi-provisioner | [#614](https://github.com/container-storage-interface/spec/pull/614) Fix SP reference in GetCapacity topology comment | Merge | Merge | compiles |  |
 | dapr | [#9974](https://github.com/dapr/dapr/pull/9974) feat: search and vector blocks | Merge | Merge | compiles |  |
 | dapr | [#9974](https://github.com/dapr/dapr/pull/9974) feat: search and vector blocks | Merge | Merge | compiles |  |
@@ -177,8 +178,10 @@ verifier before the compiler built the consumer against it.
 | dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
 | dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
 | dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
+| dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
 | dapr | [#11049](https://github.com/dapr/dapr/pull/11049) security: mint JWT SVIDs on demand from Sentry | Merge | Merge | compiles |  |
 | dapr | [#11049](https://github.com/dapr/dapr/pull/11049) security: mint JWT SVIDs on demand from Sentry | Merge | Merge | compiles |  |
+| etcd | [#22116](https://github.com/etcd-io/etcd/pull/22116) Comparing value in TXN on non-existing key always returns failure. | Merge | Merge | compiles |  |
 | istio | [#3088](https://github.com/istio/api/pull/3088) Doc: Add note on DR workloadSelector | Merge | Merge | compiles |  |
 | istio | [#3442](https://github.com/istio/api/pull/3442) add waypoint context to envoyfilter | Don't merge | Merge | compiles |  |
 | istio | [#3722](https://github.com/istio/api/pull/3722) feat(tracing): add otel always_on sampler | Merge | Merge | compiles |  |
@@ -244,6 +247,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#11374](https://github.com/lightningnetwork/lnd/pull/11374) bolt12handler+devrpc: dispatch invoice requests and add CreateOffer | Merge | Merge | compiles |  |
 | lnd | [#11374](https://github.com/lightningnetwork/lnd/pull/11374) bolt12handler+devrpc: dispatch invoice requests and add CreateOffer | Merge | Merge | compiles |  |
 | lnd | [#11374](https://github.com/lightningnetwork/lnd/pull/11374) bolt12handler+devrpc: dispatch invoice requests and add CreateOffer | Merge | Merge | compiles |  |
+| lnd | [#11374](https://github.com/lightningnetwork/lnd/pull/11374) bolt12handler+devrpc: dispatch invoice requests and add CreateOffer | Merge | Merge | compiles |  |
 | lnd | [#11396](https://github.com/lightningnetwork/lnd/pull/11396) walletrpc: make no-expiry leases explicit | Needs review | Merge | compiles | WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION |
 | lnd | [#11396](https://github.com/lightningnetwork/lnd/pull/11396) walletrpc: make no-expiry leases explicit | Needs review | Merge | compiles | WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION |
 | lnd | [#11396](https://github.com/lightningnetwork/lnd/pull/11396) walletrpc: make no-expiry leases explicit | Needs review | Merge | compiles | WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION |
@@ -272,6 +276,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25208](https://github.com/grafana/loki/pull/25208) fix(storage): Remove propagate_chunk_fetch_errors flag. Part 1 | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25259](https://github.com/grafana/loki/pull/25259) perf(logline): Run pass-through intervals without waiting for the hint lookup | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25259](https://github.com/grafana/loki/pull/25259) perf(logline): Run pass-through intervals without waiting for the hint lookup | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
+| loki | [#25425](https://github.com/grafana/loki/pull/25425) feat(logline): Plan OR-aware hint needles | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25425](https://github.com/grafana/loki/pull/25425) feat(logline): Plan OR-aware hint needles | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25436](https://github.com/grafana/loki/pull/25436) refactor(compactor): Delete sort object task | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25501](https://github.com/grafana/loki/pull/25501) feat(server): Enable configurable TLS curve preferences | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
@@ -342,9 +347,11 @@ verifier before the compiler built the consumer against it.
 | temporal | [#882](https://github.com/temporalio/api/pull/882) ACT-1185: Expose standalone activity principals in Describe API | Merge | Merge | not judged |  |
 | temporal | [#883](https://github.com/temporalio/api/pull/883) Adding PropagatedNexusSerializationContext to UpdateWorkflow apis | Merge | Merge | not judged |  |
 | temporal | [#884](https://github.com/temporalio/api/pull/884) Add activity async handoff API definitions | Don't merge | Merge | not judged |  |
+| temporal | [#884](https://github.com/temporalio/api/pull/884) Add activity async handoff API definitions | Don't merge | Merge | not judged |  |
 | temporal | [#886](https://github.com/temporalio/api/pull/886) Document current activity attempt start time | Merge | Merge | not judged |  |
 | temporal | [#886](https://github.com/temporalio/api/pull/886) Document current activity attempt start time | Merge | Merge | not judged |  |
 | temporal | [#887](https://github.com/temporalio/api/pull/887) Add PollerScalingInfo to poll requests | Merge | Merge | not judged |  |
+| temporal | [#887](https://github.com/temporalio/api/pull/887) Report poller target on poll requests and in the worker heartbeat | Merge | Merge | not judged |  |
 | temporal | [#887](https://github.com/temporalio/api/pull/887) Report poller target on poll requests and in the worker heartbeat | Merge | Merge | not judged |  |
 | temporal | [#887](https://github.com/temporalio/api/pull/887) Report poller target on poll requests and in the worker heartbeat | Merge | Merge | not judged |  |
 | temporal | [#890](https://github.com/temporalio/api/pull/890) marking time skipping API experimental | Merge | Merge | not judged |  |

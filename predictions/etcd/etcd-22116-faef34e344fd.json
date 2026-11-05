@@ -1,0 +1,103 @@
+{
+  "pr": {
+    "n": 22116,
+    "head": "faef34e344fd28778e0d05aa36a879570f9212ee",
+    "base": "6006f405800929b5e7e839e7a821d608a311579f",
+    "title": "Comparing value in TXN on non-existing key always returns failure.",
+    "url": "https://github.com/etcd-io/etcd/pull/22116",
+    "updated": "2026-11-05T20:41:17Z",
+    "eco": "etcd",
+    "key": "etcd-22116-faef34e344fd",
+    "provider": "etcd-io/etcd",
+    "consumer": "etcd-io/etcd",
+    "consumer_sha": "faef34e344fd28778e0d05aa36a879570f9212ee"
+  },
+  "merge_base": "6006f405800929b5e7e839e7a821d608a311579f",
+  "decided": "74f6a25e9c4745205d2f129cf88aa3a3685cceab",
+  "started": "2026-11-05T21:48:57Z",
+  "finished": "2026-11-05T21:49:49Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/42115495617",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "etcd",
+      "commit": "74f6a25e9c4745205d2f129cf88aa3a3685cceab",
+      "parent": "6006f405800929b5e7e839e7a821d608a311579f",
+      "date": "2026-11-05",
+      "subject": "pull request 22116 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "api/etcdserverpb/rpc.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 45
+      },
+      "canary": {
+        "outcome": "breaks",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 45,
+        "errors": [
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb/gw",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb/gw",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb/gw",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb",
+          "module go.etcd.io/etcd/api/v3@latest found (v3.7.3, replaced by /tmp/parent-canary-1169006253), but does not contain package go.etcd.io/etcd/api/v3/etcdserverpb"
+        ],
+        "error_count": 42,
+        "failed_packages": [
+          "go.etcd.io/etcd/client/v3",
+          "go.etcd.io/etcd/client/v3/concurrency",
+          "go.etcd.io/etcd/client/v3/leasing",
+          "go.etcd.io/etcd/client/v3/namespace",
+          "go.etcd.io/etcd/client/v3/naming/endpoints",
+          "go.etcd.io/etcd/client/v3/ordering",
+          "go.etcd.io/etcd/server/v3",
+          "go.etcd.io/etcd/server/v3/auth",
+          "go.etcd.io/etcd/server/v3/config",
+          "go.etcd.io/etcd/server/v3/embed",
+          "go.etcd.io/etcd/server/v3/etcdmain",
+          "go.etcd.io/etcd/server/v3/etcdserver",
+          "go.etcd.io/etcd/server/v3/etcdserver/api/etcdhttp",
+          "go.etcd.io/etcd/server/v3/etcdserver/api/v3alarm",
+          "go.etcd.io/etcd/server/v3/etcdserver/api/v3client",
+          "go.etcd.io/etcd/server/v3/etcdserver/api/v3compactor",
+          "go.etcd.io/etcd/server/v3/etcdserver/api/v3discovery",
+          "go.etcd.io/etcd/server/v3/etcdserver/api/v3election",
+          "go.etcd.io/etcd/server/v3/etcdserver/api/v3election/v3electionpb",
+          "go.etcd.io/etcd/server/v3/etcdserver/api/v3election/v3electionpb/gw"
+        ],
+        "detail": "canary: go.etcd.io/etcd/api/v3/etcdserverpb removed."
+      },
+      "seconds": 50.859679095,
+      "total": 1
+    }
+  ],
+  "log": "etcd        74f6a25e GO       source_build=GO      compiler=compiles           50.9s \netcd           1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 52s."
+}

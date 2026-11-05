@@ -1,0 +1,77 @@
+{
+  "pr": {
+    "n": 613,
+    "head": "befd431cf166ee94cb3aadc0f9ce41209d17754d",
+    "base": "f46eaa40509f2390e5a16fbe7966771bcb4c7e66",
+    "title": "Add reason to ControllerUnpublishVolumeRequest",
+    "url": "https://github.com/container-storage-interface/spec/pull/613",
+    "updated": "2026-11-05T21:38:24Z",
+    "eco": "csi-provisioner",
+    "key": "csi-provisioner-613-befd431cf166",
+    "provider": "container-storage-interface/spec",
+    "consumer": "kubernetes-csi/external-provisioner",
+    "consumer_sha": "825ad21de1ef4c632f88c79dcf485ab11d093ff1"
+  },
+  "merge_base": "f46eaa40509f2390e5a16fbe7966771bcb4c7e66",
+  "decided": "ec26090aaa08ef24f595856c9c7f13185ff6e3c8",
+  "started": "2026-11-05T21:48:56Z",
+  "finished": "2026-11-05T21:50:44Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/42115495617",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "csi-provisioner",
+      "commit": "ec26090aaa08ef24f595856c9c7f13185ff6e3c8",
+      "parent": "f46eaa40509f2390e5a16fbe7966771bcb4c7e66",
+      "date": "2026-11-05",
+      "subject": "pull request 613 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "csi.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 7
+      },
+      "canary": {
+        "outcome": "breaks",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 7,
+        "errors": [
+          "module github.com/container-storage-interface/spec@latest found (v1.13.0, replaced by /tmp/parent-canary-1603773238), but does not contain package github.com/container-storage-interface/spec/lib/go/csi",
+          "module github.com/container-storage-interface/spec@latest found (v1.13.0, replaced by /tmp/parent-canary-1603773238), but does not contain package github.com/container-storage-interface/spec/lib/go/csi",
+          "module github.com/container-storage-interface/spec@latest found (v1.13.0, replaced by /tmp/parent-canary-1603773238), but does not contain package github.com/container-storage-interface/spec/lib/go/csi",
+          "module github.com/container-storage-interface/spec@latest found (v1.13.0, replaced by /tmp/parent-canary-1603773238), but does not contain package github.com/container-storage-interface/spec/lib/go/csi",
+          "module github.com/container-storage-interface/spec@latest found (v1.13.0, replaced by /tmp/parent-canary-1603773238), but does not contain package github.com/container-storage-interface/spec/lib/go/csi",
+          "module github.com/container-storage-interface/spec@latest found (v1.13.0, replaced by /tmp/parent-canary-1603773238), but does not contain package github.com/container-storage-interface/spec/lib/go/csi",
+          "module github.com/container-storage-interface/spec@latest found (v1.13.0, replaced by /tmp/parent-canary-1603773238), but does not contain package github.com/container-storage-interface/spec/lib/go/csi"
+        ],
+        "error_count": 7,
+        "failed_packages": [
+          "github.com/kubernetes-csi/csi-lib-utils/accessmodes",
+          "github.com/kubernetes-csi/csi-lib-utils/connection",
+          "github.com/kubernetes-csi/csi-lib-utils/protosanitizer",
+          "github.com/kubernetes-csi/csi-lib-utils/rpc",
+          "github.com/kubernetes-csi/external-provisioner/v6/cmd/csi-provisioner",
+          "github.com/kubernetes-csi/external-provisioner/v6/pkg/capacity",
+          "github.com/kubernetes-csi/external-provisioner/v6/pkg/controller"
+        ],
+        "detail": "canary: github.com/container-storage-interface/spec/lib/go/csi removed."
+      },
+      "seconds": 103.93948141,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-11-05T21:48:56.472Z level=INFO msg=cloning repo=c-csi-provisioner url=https://github.com/kubernetes-csi/external-provisioner.git\ncsi-provisioner ec26090a GO       source_build=GO      compiler=compiles          103.9s \ncsi-provisioner    1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   1  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 0\n\n1 windows in 1m48s."
+}
