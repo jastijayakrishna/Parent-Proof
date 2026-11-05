@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-04 19:08 UTC.
+Updated 2026-11-05 00:31 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 331 | 243 | 7 | 81 | 110 | 108 | 0 | 0 |
+| 336 | 244 | 7 | 85 | 111 | 109 | 0 | 0 |
 
 ## Every pull request
 
@@ -36,9 +36,11 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#28309](https://github.com/argoproj/argo-cd/pull/28309) feat: add --output-parameters to argocd appset generate (#27599) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#28531](https://github.com/argoproj/argo-cd/pull/28531) feat: add ignoreDuplicateResources to suppress RepeatedResourceWarning (#28026) | Merge | Merge | not judged |  |
 | argo-cd | [#28531](https://github.com/argoproj/argo-cd/pull/28531) feat: add ignoreDuplicateResources to suppress RepeatedResourceWarning (#28026) | Merge | Merge | not judged |  |
+| argo-cd | [#28601](https://github.com/argoproj/argo-cd/pull/28601) feat(hydrator): advance git note without full hydration | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
+| argo-cd | [#28908](https://github.com/argoproj/argo-cd/pull/28908) fix: base auto-sync change detection on the last synced revision (#27875, #21692) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#28908](https://github.com/argoproj/argo-cd/pull/28908) fix: base auto-sync change detection on the last synced revision (#27875, #21692) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29105](https://github.com/argoproj/argo-cd/pull/29105) feat: expose health check code in UI (#7773) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#29198](https://github.com/argoproj/argo-cd/pull/29198) feat(cli): implement OAuth 2.0 Device Authorization Grant (Beta) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -116,6 +118,8 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30645](https://github.com/argoproj/argo-cd/pull/30645) feat(applicationset): support GitLab pull request generator mTLS (#30644) | Merge | Merge | not judged |  |
 | argo-cd | [#30745](https://github.com/argoproj/argo-cd/pull/30745) feat(Hydrator):  show when syncSource is behind hydrateTo (#30590) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#30745](https://github.com/argoproj/argo-cd/pull/30745) feat(Hydrator):  show when syncSource is behind hydrateTo (#30590) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#30745](https://github.com/argoproj/argo-cd/pull/30745) feat(Hydrator):  show when syncSource is behind hydrateTo (#30590) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#30784](https://github.com/argoproj/argo-cd/pull/30784) feat(hydrator): advance git note when manifest-generate-paths skips hydration (#28556) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | authzed | [#155](https://github.com/authzed/api/pull/155) docs: Document UNSPECIFIED enum values that are not returned | Merge | Merge | not judged |  |
 | authzed | [#156](https://github.com/authzed/api/pull/156) feat: allow underscore prefix for private identifiers | Needs review | Needs review | not judged | OPTION_CHANGED, DESCRIPTOR_REFLECTION, NEEDS_REVIEW |
 | cometbft-cosmos-sdk | [#6100](https://github.com/cometbft/cometbft/pull/6100) fix(types,state): enforce minimum Block.MaxBytes floor and handle small limits defensively | Merge | Merge | compiles |  |
@@ -137,6 +141,7 @@ verifier before the compiler built the consumer against it.
 | csi-provisioner | [#603](https://github.com/container-storage-interface/spec/pull/603) Add ControllerGetNodeInfo RPC (alpha) | Merge | Merge | compiles |  |
 | csi-provisioner | [#603](https://github.com/container-storage-interface/spec/pull/603) Add ControllerGetNodeInfo RPC (alpha) | Merge | Merge | compiles |  |
 | csi-provisioner | [#603](https://github.com/container-storage-interface/spec/pull/603) Add ControllerGetNodeInfo RPC (alpha) | Merge | Merge | compiles |  |
+| csi-provisioner | [#613](https://github.com/container-storage-interface/spec/pull/613) Add reason to ControllerUnpublishVolumeRequest | Merge | Merge | compiles |  |
 | csi-provisioner | [#613](https://github.com/container-storage-interface/spec/pull/613) Add reason to ControllerUnpublishVolumeRequest | Merge | Merge | compiles |  |
 | csi-provisioner | [#613](https://github.com/container-storage-interface/spec/pull/613) Add reason to ControllerUnpublishVolumeRequest | Merge | Merge | compiles |  |
 | csi-provisioner | [#614](https://github.com/container-storage-interface/spec/pull/614) Fix SP reference in GetCapacity topology comment | Merge | Merge | compiles |  |
