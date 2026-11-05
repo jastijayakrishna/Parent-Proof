@@ -1,0 +1,86 @@
+{
+  "pr": {
+    "n": 22382,
+    "head": "d941ba1a4b1c6b470fefcfaeb9418ab2a8a622e8",
+    "base": "e1c4e2a01777bf76e4d1e3efe3a4adfdfd966c9d",
+    "title": "refactor: Replace gogoproto with wiresmith codegen for Loki-authored protos",
+    "url": "https://github.com/grafana/loki/pull/22382",
+    "updated": "2026-11-05T03:13:14Z",
+    "eco": "loki",
+    "key": "loki-22382-d941ba1a4b1c",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "d941ba1a4b1c6b470fefcfaeb9418ab2a8a622e8"
+  },
+  "merge_base": "e1c4e2a01777bf76e4d1e3efe3a4adfdfd966c9d",
+  "decided": "a0950debcb1742b7cd20d6af0304372d926d4b50",
+  "started": "2026-11-05T07:31:19Z",
+  "finished": "2026-11-05T07:31:47Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/41987484066",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "a0950debcb1742b7cd20d6af0304372d926d4b50",
+      "parent": "e1c4e2a01777bf76e4d1e3efe3a4adfdfd966c9d",
+      "date": "2026-11-05",
+      "subject": "pull request 22382 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "CONTRACT_COMPILE_ERROR"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "pkg/bloombuild/protos/service.proto",
+        "pkg/bloombuild/protos/types.proto",
+        "pkg/compactor/client/grpc/grpc.proto",
+        "pkg/compactor/deletion/deletionproto/types.proto",
+        "pkg/dataobj/compaction/proto/compaction.proto",
+        "pkg/dataobj/compaction/v2/proto/compactionv2.proto",
+        "pkg/dataobj/internal/metadata/datasetmd/datasetmd.proto",
+        "pkg/dataobj/internal/metadata/filemd/filemd.proto",
+        "pkg/dataobj/metastore/metastore.proto",
+        "pkg/engine/internal/proto/expressionpb/expressionpb.proto",
+        "pkg/engine/internal/proto/physicalpb/physicalpb.proto",
+        "pkg/engine/internal/proto/ulid/ulid.proto",
+        "pkg/engine/internal/proto/wirepb/wirepb.proto",
+        "pkg/ingester/checkpoint.proto",
+        "pkg/limits/proto/limits.proto",
+        "pkg/logproto/bloomgateway.proto",
+        "pkg/logproto/indexgateway.proto",
+        "pkg/logproto/ingester-rf1.proto",
+        "pkg/logproto/logproto.proto",
+        "pkg/logproto/metrics.proto",
+        "pkg/logproto/pattern.proto",
+        "pkg/logproto/sketch.proto",
+        "pkg/logqlmodel/stats/stats.proto",
+        "pkg/lokifrontend/frontend/v1/frontendv1pb/frontend.proto",
+        "pkg/lokifrontend/frontend/v2/frontendv2pb/frontend.proto",
+        "pkg/querier/queryrange/queryrange.proto",
+        "pkg/querier/queryrange/queryrangebase/definitions/definitions.proto",
+        "pkg/querier/queryrange/queryrangebase/queryrange.proto",
+        "pkg/querier/stats/stats.proto",
+        "pkg/ruler/base/ruler.proto",
+        "pkg/ruler/rulespb/rules.proto",
+        "pkg/scheduler/schedulerpb/scheduler.proto",
+        "pkg/storage/chunk/cache/resultscache/test_types.proto",
+        "pkg/storage/chunk/cache/resultscache/types.proto",
+        "pkg/util/httpgrpcpb/httpgrpcpb.proto",
+        "pkg/xcap/internal/proto/xcap.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: pkg/bloombuild/protos/service.proto",
+      "seconds": 20.010334895,
+      "total": 1
+    }
+  ],
+  "log": "loki        a0950deb UNKNOWN  source_build=UNKNOWN compiler=-                  20.0s \nloki           1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  CONTRACT_COMPILE_ERROR (e.g. loki@a0950debcb1742b7cd20d6af0304372d926d4b50)\n\n1 windows in 28s."
+}

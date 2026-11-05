@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-05 00:31 UTC.
+Updated 2026-11-05 07:32 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 336 | 244 | 7 | 85 | 111 | 109 | 0 | 0 |
+| 339 | 245 | 7 | 87 | 111 | 109 | 0 | 0 |
 
 ## Every pull request
 
@@ -116,6 +116,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30645](https://github.com/argoproj/argo-cd/pull/30645) feat(applicationset): support GitLab pull request generator mTLS (#30644) | Merge | Merge | not judged |  |
 | argo-cd | [#30645](https://github.com/argoproj/argo-cd/pull/30645) feat(applicationset): support GitLab pull request generator mTLS (#30644) | Merge | Merge | not judged |  |
+| argo-cd | [#30745](https://github.com/argoproj/argo-cd/pull/30745) feat(Hydrator):  show when syncSource is behind hydrateTo (#30590) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#30745](https://github.com/argoproj/argo-cd/pull/30745) feat(Hydrator):  show when syncSource is behind hydrateTo (#30590) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#30745](https://github.com/argoproj/argo-cd/pull/30745) feat(Hydrator):  show when syncSource is behind hydrateTo (#30590) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#30745](https://github.com/argoproj/argo-cd/pull/30745) feat(Hydrator):  show when syncSource is behind hydrateTo (#30590) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -249,6 +250,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#11439](https://github.com/lightningnetwork/lnd/pull/11439) routing: add experimental fee levels to mission control | Merge | Merge | compiles |  |
 | lnd | [#11466](https://github.com/lightningnetwork/lnd/pull/11466) multi: add dry run option to SendCoins | Merge | Merge | compiles |  |
 | lnd | [#11466](https://github.com/lightningnetwork/lnd/pull/11466) multi: add dry run option to SendCoins | Merge | Merge | compiles |  |
+| loki | [#22382](https://github.com/grafana/loki/pull/22382) refactor: Replace gogoproto with wiresmith codegen for Loki-authored protos | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
 | loki | [#24991](https://github.com/grafana/loki/pull/24991) feat(logline): Report Logline query stats on the metrics.go line | Merge | Merge | not judged |  |
@@ -352,4 +354,5 @@ verifier before the compiler built the consumer against it.
 | temporal | [#899](https://github.com/temporalio/api/pull/899) Add RPC definitions for namespace soft deletion and restoration | Merge | Merge | not judged |  |
 | temporal | [#899](https://github.com/temporalio/api/pull/899) Add RPC definitions for namespace soft deletion and restoration | Merge | Merge | not judged |  |
 | temporal | [#899](https://github.com/temporalio/api/pull/899) Add RPC definitions for namespace soft deletion and restoration | Merge | Merge | not judged |  |
+| temporal | [#901](https://github.com/temporalio/api/pull/901) support workflow heartbeat notification | Merge | Merge | not judged |  |
 | temporal | [#901](https://github.com/temporalio/api/pull/901) support workflow heartbeat notification | Merge | Merge | not judged |  |

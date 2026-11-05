@@ -1,0 +1,53 @@
+{
+  "pr": {
+    "n": 30745,
+    "head": "5fa90284317a9c19c0e6ac2b5e4522dc0e95855e",
+    "base": "2692fc97d3480993343493396d295770013cd0db",
+    "title": "feat(Hydrator):  show when syncSource is behind hydrateTo (#30590)",
+    "url": "https://github.com/argoproj/argo-cd/pull/30745",
+    "updated": "2026-11-05T05:12:29Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-30745-5fa90284317a",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "5fa90284317a9c19c0e6ac2b5e4522dc0e95855e"
+  },
+  "merge_base": "2692fc97d3480993343493396d295770013cd0db",
+  "decided": "4347114f4c92c11c9fee7b1479530c6517a03083",
+  "started": "2026-11-05T07:31:17Z",
+  "finished": "2026-11-05T07:31:58Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/41987484066",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "4347114f4c92c11c9fee7b1479530c6517a03083",
+      "parent": "2692fc97d3480993343493396d295770013cd0db",
+      "date": "2026-11-05",
+      "subject": "pull request 30745 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "CONTRACT_COMPILE_ERROR"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "commitserver/commit/commit.proto",
+        "pkg/apis/application/v1alpha1/generated.proto",
+        "reposerver/repository/repository.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 37.979578446,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     4347114f UNKNOWN  source_build=UNKNOWN compiler=-                  38.0s \nargo-cd        1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  CONTRACT_COMPILE_ERROR (e.g. argo-cd@4347114f4c92c11c9fee7b1479530c6517a03083)\n\n1 windows in 41s."
+}
