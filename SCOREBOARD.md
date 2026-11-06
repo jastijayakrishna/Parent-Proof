@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-06 17:00 UTC.
+Updated 2026-11-06 22:01 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 365 | 263 | 10 | 92 | 123 | 120 | 0 | 1 |
+| 369 | 265 | 11 | 93 | 124 | 121 | 0 | 1 |
 
 ## Every pull request
 
@@ -42,6 +42,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
 | argo-cd | [#28840](https://github.com/argoproj/argo-cd/pull/28840) feat(SyncWindow): CRD for sync window | Merge | Merge | not judged |  |
+| argo-cd | [#28908](https://github.com/argoproj/argo-cd/pull/28908) fix: base auto-sync change detection on the last synced revision (#27875, #21692) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#28908](https://github.com/argoproj/argo-cd/pull/28908) fix: base auto-sync change detection on the last synced revision (#27875, #21692) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#28908](https://github.com/argoproj/argo-cd/pull/28908) fix: base auto-sync change detection on the last synced revision (#27875, #21692) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#28908](https://github.com/argoproj/argo-cd/pull/28908) fix: base auto-sync change detection on the last synced revision (#27875, #21692) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -102,6 +103,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedRevisionOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
+| argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedRevisionOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedRevisionOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
@@ -269,6 +271,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#11528](https://github.com/lightningnetwork/lnd/pull/11528) multi: allow partial channel policy updates | Merge | Merge | compiles |  |
 | lnd | [#11528](https://github.com/lightningnetwork/lnd/pull/11528) multi: allow partial channel policy updates | Merge | Merge | compiles |  |
 | lnd | [#11529](https://github.com/lightningnetwork/lnd/pull/11529) Remote signer: harden signing and stream lifecycle | Merge | Merge | compiles |  |
+| lnd | [#11529](https://github.com/lightningnetwork/lnd/pull/11529) Remote signer: harden signing and stream lifecycle | Merge | Merge | compiles |  |
 | lnd | [#11532](https://github.com/lightningnetwork/lnd/pull/11532) bolt12handler+invoices: carry the invoice envelope in payment paths | Don't merge | Don't merge | compiles |  |
 | loki | [#22382](https://github.com/grafana/loki/pull/22382) refactor: Replace gogoproto with wiresmith codegen for Loki-authored protos | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
@@ -360,6 +363,7 @@ verifier before the compiler built the consumer against it.
 | temporal | [#882](https://github.com/temporalio/api/pull/882) ACT-1185: Expose standalone activity principals in Describe API | Merge | Merge | not judged |  |
 | temporal | [#882](https://github.com/temporalio/api/pull/882) ACT-1185: Expose standalone activity principals in Describe API | Merge | Merge | not judged |  |
 | temporal | [#883](https://github.com/temporalio/api/pull/883) Adding PropagatedNexusSerializationContext to UpdateWorkflow apis | Merge | Merge | not judged |  |
+| temporal | [#884](https://github.com/temporalio/api/pull/884) Add activity async handoff API definitions | Don't merge | Merge | not judged |  |
 | temporal | [#884](https://github.com/temporalio/api/pull/884) Add activity async handoff API definitions | Don't merge | Merge | not judged |  |
 | temporal | [#884](https://github.com/temporalio/api/pull/884) Add activity async handoff API definitions | Don't merge | Merge | not judged |  |
 | temporal | [#886](https://github.com/temporalio/api/pull/886) Document current activity attempt start time | Merge | Merge | not judged |  |

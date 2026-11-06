@@ -1,0 +1,59 @@
+{
+  "pr": {
+    "n": 884,
+    "head": "68d5430efafc5d444043d545d5b5adfb1b649d57",
+    "base": "fb8922776dc847f5cbac40a24df8960793812f40",
+    "title": "Add activity async handoff API definitions",
+    "url": "https://github.com/temporalio/api/pull/884",
+    "updated": "2026-11-06T18:43:24Z",
+    "eco": "temporal",
+    "key": "temporal-884-68d5430efafc",
+    "provider": "temporalio/api",
+    "consumer": "temporalio/sdk-go",
+    "consumer_sha": "72dabe87bba70ab346a4688c13b974dc181aa892"
+  },
+  "merge_base": "fb8922776dc847f5cbac40a24df8960793812f40",
+  "decided": "c259ed61626330ffbaa303376fb01554c708869e",
+  "started": "2026-11-06T21:57:17Z",
+  "finished": "2026-11-06T21:57:26Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/42300538585",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "temporal",
+      "commit": "c259ed61626330ffbaa303376fb01554c708869e",
+      "parent": "fb8922776dc847f5cbac40a24df8960793812f40",
+      "date": "2026-11-06",
+      "subject": "pull request 884 as one change",
+      "verdict": "NO_GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "NO_GO",
+        "source_build": "GO"
+      },
+      "evidence": [
+        "internal/common/serializer/serializer.go:89",
+        "internal/nexus_operations.go:464"
+      ],
+      "evidence_count": 2,
+      "changed": [
+        "temporal/api/activity/v1/message.proto",
+        "temporal/api/command/v1/message.proto",
+        "temporal/api/enums/v1/workflow.proto",
+        "temporal/api/history/v1/message.proto",
+        "temporal/api/namespace/v1/message.proto",
+        "temporal/api/workflow/v1/message.proto",
+        "temporal/api/workflowservice/v1/request_response.proto",
+        "temporal/api/workflowservice/v1/service.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 7.377630571,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-11-06T21:57:17.590Z level=INFO msg=cloning repo=c-temporal url=https://github.com/temporalio/sdk-go.git\ntemporal    c259ed61 NO_GO    source_build=GO      compiler=-                   7.4s \ntemporal       1 decisions  GO   0  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 9s."
+}
