@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-06 02:00 UTC.
+Updated 2026-11-06 09:01 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 356 | 255 | 9 | 92 | 118 | 116 | 0 | 0 |
+| 360 | 259 | 9 | 92 | 119 | 117 | 0 | 0 |
 
 ## Every pull request
 
@@ -24,6 +24,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
 | argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
 | argo-cd | [#26176](https://github.com/argoproj/argo-cd/pull/26176) fix(Hydrator): prevent hydration skip when apps share drySha but have different paths (#26154) | Merge | Merge | not judged |  |
+| argo-cd | [#26435](https://github.com/argoproj/argo-cd/pull/26435) feat(sync): allow resource-level Prune=true sync option to override disabled pruning (#14277) | Merge | Merge | not judged |  |
 | argo-cd | [#26435](https://github.com/argoproj/argo-cd/pull/26435) feat(sync): allow resource-level Prune=true sync option to override disabled pruning (#14277) | Merge | Merge | not judged |  |
 | argo-cd | [#26473](https://github.com/argoproj/argo-cd/pull/26473) feat(appset): add labelSelector to ignoreApplicationDifferences (#17295) | Merge | Merge | not judged |  |
 | argo-cd | [#26755](https://github.com/argoproj/argo-cd/pull/26755) feat(appset): add commitSHA parameter to git generator | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -94,6 +95,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30028](https://github.com/argoproj/argo-cd/pull/30028) feat(syncPolicy): Allow to define prune by default for manual sync applications. | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
+| argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedRevisionOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedRevisionOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedRevisionOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedRevisionOnly option for source integrity | Merge | Merge | not judged |  |
@@ -262,6 +264,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#11466](https://github.com/lightningnetwork/lnd/pull/11466) multi: add dry run option to SendCoins | Merge | Merge | compiles |  |
 | lnd | [#11466](https://github.com/lightningnetwork/lnd/pull/11466) multi: add dry run option to SendCoins | Merge | Merge | compiles |  |
 | lnd | [#11528](https://github.com/lightningnetwork/lnd/pull/11528) multi: allow partial channel policy updates | Merge | Merge | compiles |  |
+| lnd | [#11528](https://github.com/lightningnetwork/lnd/pull/11528) multi: allow partial channel policy updates | Merge | Merge | compiles |  |
 | loki | [#22382](https://github.com/grafana/loki/pull/22382) refactor: Replace gogoproto with wiresmith codegen for Loki-authored protos | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
@@ -373,3 +376,4 @@ verifier before the compiler built the consumer against it.
 | temporal | [#899](https://github.com/temporalio/api/pull/899) Add RPC definitions for namespace soft deletion and restoration | Merge | Merge | not judged |  |
 | temporal | [#901](https://github.com/temporalio/api/pull/901) support workflow heartbeat notification | Merge | Merge | not judged |  |
 | temporal | [#901](https://github.com/temporalio/api/pull/901) support workflow heartbeat notification | Merge | Merge | not judged |  |
+| temporal | [#903](https://github.com/temporalio/api/pull/903) Reword the target_pollers comments | Merge | Merge | not judged |  |
