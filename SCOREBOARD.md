@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-05 21:52 UTC.
+Updated 2026-11-06 02:00 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 350 | 251 | 9 | 90 | 116 | 114 | 0 | 0 |
+| 356 | 255 | 9 | 92 | 118 | 116 | 0 | 0 |
 
 ## Every pull request
 
@@ -24,6 +24,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
 | argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
 | argo-cd | [#26176](https://github.com/argoproj/argo-cd/pull/26176) fix(Hydrator): prevent hydration skip when apps share drySha but have different paths (#26154) | Merge | Merge | not judged |  |
+| argo-cd | [#26435](https://github.com/argoproj/argo-cd/pull/26435) feat(sync): allow resource-level Prune=true sync option to override disabled pruning (#14277) | Merge | Merge | not judged |  |
 | argo-cd | [#26473](https://github.com/argoproj/argo-cd/pull/26473) feat(appset): add labelSelector to ignoreApplicationDifferences (#17295) | Merge | Merge | not judged |  |
 | argo-cd | [#26755](https://github.com/argoproj/argo-cd/pull/26755) feat(appset): add commitSHA parameter to git generator | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#27124](https://github.com/argoproj/argo-cd/pull/27124) feat: add support for attaching ephemeral containers (debug containers) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -99,6 +100,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedRevisionOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
+| argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedRevisionOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
 | argo-cd | [#30033](https://github.com/argoproj/argo-cd/pull/30033) feat(util): add signedTagsOnly option for source integrity | Merge | Merge | not judged |  |
@@ -122,6 +124,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30745](https://github.com/argoproj/argo-cd/pull/30745) feat(Hydrator):  show when syncSource is behind hydrateTo (#30590) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#30745](https://github.com/argoproj/argo-cd/pull/30745) feat(Hydrator):  show when syncSource is behind hydrateTo (#30590) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#30745](https://github.com/argoproj/argo-cd/pull/30745) feat(Hydrator):  show when syncSource is behind hydrateTo (#30590) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#30784](https://github.com/argoproj/argo-cd/pull/30784) feat(hydrator): advance git note when manifest-generate-paths skips hydration (#28556) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#30784](https://github.com/argoproj/argo-cd/pull/30784) feat(hydrator): advance git note when manifest-generate-paths skips hydration (#28556) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | authzed | [#155](https://github.com/authzed/api/pull/155) docs: Document UNSPECIFIED enum values that are not returned | Merge | Merge | not judged |  |
 | authzed | [#156](https://github.com/authzed/api/pull/156) feat: allow underscore prefix for private identifiers | Needs review | Needs review | not judged | OPTION_CHANGED, DESCRIPTOR_REFLECTION, NEEDS_REVIEW |
@@ -197,6 +200,7 @@ verifier before the compiler built the consumer against it.
 | istio | [#3801](https://github.com/istio/api/pull/3801) feat: add `presence: IGNORED` and `failedStatusInMetadata` to JWTRule | Merge | Merge | compiles |  |
 | istio | [#3801](https://github.com/istio/api/pull/3801) feat: add `presence: IGNORED` and `failedStatusInMetadata` to JWTRule | Merge | Merge | compiles |  |
 | istio | [#3801](https://github.com/istio/api/pull/3801) feat: add `presence: IGNORED` and `failedStatusMetadataKey` to JWTRule | Merge | Merge | compiles |  |
+| istio | [#3801](https://github.com/istio/api/pull/3801) feat: add `presence: IGNORED` and `failedStatusMetadataKey` to JWTRule | Merge | Merge | compiles |  |
 | istio | [#3809](https://github.com/istio/api/pull/3809) document case-insensitive method matching in authorizationpolicy | Merge | Merge | compiles |  |
 | istio | [#3810](https://github.com/istio/api/pull/3810) fix wasm docs | Merge | Merge | compiles |  |
 | istio | [#3818](https://github.com/istio/api/pull/3818) networking: add retryBudget to DestinationRule portLevelSettings | Merge | Merge | compiles |  |
@@ -257,6 +261,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#11439](https://github.com/lightningnetwork/lnd/pull/11439) routing: add experimental fee levels to mission control | Merge | Merge | compiles |  |
 | lnd | [#11466](https://github.com/lightningnetwork/lnd/pull/11466) multi: add dry run option to SendCoins | Merge | Merge | compiles |  |
 | lnd | [#11466](https://github.com/lightningnetwork/lnd/pull/11466) multi: add dry run option to SendCoins | Merge | Merge | compiles |  |
+| lnd | [#11528](https://github.com/lightningnetwork/lnd/pull/11528) multi: allow partial channel policy updates | Merge | Merge | compiles |  |
 | loki | [#22382](https://github.com/grafana/loki/pull/22382) refactor: Replace gogoproto with wiresmith codegen for Loki-authored protos | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
@@ -311,6 +316,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#25964](https://github.com/grafana/loki/pull/25964) feat!: Upgrade Go module to v4 | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, TOOLCHAIN_TOO_OLD |
 | loki | [#25971](https://github.com/grafana/loki/pull/25971) refactor(ingester): Pass the Kafka record timestamp on the push request | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#25972](https://github.com/grafana/loki/pull/25972) feat!: Upgrade Go module to github.com/grafana/loki/v4 | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR, TOOLCHAIN_TOO_OLD |
+| loki | [#26002](https://github.com/grafana/loki/pull/26002) feat(logline): Look up hints for live instant metric queries | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#26002](https://github.com/grafana/loki/pull/26002) feat(logline): Look up hints for live instant metric queries | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#26002](https://github.com/grafana/loki/pull/26002) feat(logline): Look up hints for live instant metric queries | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#26218](https://github.com/grafana/loki/pull/26218) chore(deps): Update module github.com/google/gnostic-models to v0.7.1 (release-3.6.x) | Merge | Merge | not judged |  |
