@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-06 09:01 UTC.
+Updated 2026-11-06 17:00 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 360 | 259 | 9 | 92 | 119 | 117 | 0 | 0 |
+| 365 | 263 | 10 | 92 | 123 | 120 | 0 | 1 |
 
 ## Every pull request
 
@@ -120,6 +120,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
+| argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30645](https://github.com/argoproj/argo-cd/pull/30645) feat(applicationset): support GitLab pull request generator mTLS (#30644) | Merge | Merge | not judged |  |
 | argo-cd | [#30645](https://github.com/argoproj/argo-cd/pull/30645) feat(applicationset): support GitLab pull request generator mTLS (#30644) | Merge | Merge | not judged |  |
 | argo-cd | [#30745](https://github.com/argoproj/argo-cd/pull/30745) feat(Hydrator):  show when syncSource is behind hydrateTo (#30590) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -184,6 +185,7 @@ verifier before the compiler built the consumer against it.
 | dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
 | dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
 | dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
+| dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
 | dapr | [#11049](https://github.com/dapr/dapr/pull/11049) security: mint JWT SVIDs on demand from Sentry | Merge | Merge | compiles |  |
 | dapr | [#11049](https://github.com/dapr/dapr/pull/11049) security: mint JWT SVIDs on demand from Sentry | Merge | Merge | compiles |  |
 | etcd | [#22116](https://github.com/etcd-io/etcd/pull/22116) Comparing value in TXN on non-existing key always returns failure. | Merge | Merge | compiles |  |
@@ -191,6 +193,7 @@ verifier before the compiler built the consumer against it.
 | istio | [#3442](https://github.com/istio/api/pull/3442) add waypoint context to envoyfilter | Don't merge | Merge | compiles |  |
 | istio | [#3722](https://github.com/istio/api/pull/3722) feat(tracing): add otel always_on sampler | Merge | Merge | compiles |  |
 | istio | [#3722](https://github.com/istio/api/pull/3722) feat(tracing): add otel always_on sampler | Merge | Merge | compiles |  |
+| istio | [#3759](https://github.com/istio/api/pull/3759) networking: add suffix match type to StringMatch | Merge | Merge | compiles |  |
 | istio | [#3787](https://github.com/istio/api/pull/3787)  add cert_signer_namespace_map field to MeshConfig for namespace-scoped CSR signer authorization | Merge | Merge | compiles |  |
 | istio | [#3791](https://github.com/istio/api/pull/3791) docs: use camelCase prefixRewrite in HTTPRedirect example | Merge | Merge | compiles |  |
 | istio | [#3792](https://github.com/istio/api/pull/3792) docs: expose presence field in JWTRule reference docs | Merge | Merge | compiles |  |
@@ -265,6 +268,8 @@ verifier before the compiler built the consumer against it.
 | lnd | [#11466](https://github.com/lightningnetwork/lnd/pull/11466) multi: add dry run option to SendCoins | Merge | Merge | compiles |  |
 | lnd | [#11528](https://github.com/lightningnetwork/lnd/pull/11528) multi: allow partial channel policy updates | Merge | Merge | compiles |  |
 | lnd | [#11528](https://github.com/lightningnetwork/lnd/pull/11528) multi: allow partial channel policy updates | Merge | Merge | compiles |  |
+| lnd | [#11529](https://github.com/lightningnetwork/lnd/pull/11529) Remote signer: harden signing and stream lifecycle | Merge | Merge | compiles |  |
+| lnd | [#11532](https://github.com/lightningnetwork/lnd/pull/11532) bolt12handler+invoices: carry the invoice envelope in payment paths | Don't merge | Don't merge | compiles |  |
 | loki | [#22382](https://github.com/grafana/loki/pull/22382) refactor: Replace gogoproto with wiresmith codegen for Loki-authored protos | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |

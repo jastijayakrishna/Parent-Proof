@@ -1,0 +1,75 @@
+{
+  "pr": {
+    "n": 11532,
+    "head": "53e9761e42d94cb703677452af8417c060d0bab2",
+    "base": "0c538e1f27148ea36e0c8606a5c346a51b61a461",
+    "title": "bolt12handler+invoices: carry the invoice envelope in payment paths",
+    "url": "https://github.com/lightningnetwork/lnd/pull/11532",
+    "updated": "2026-11-06T13:44:10Z",
+    "eco": "lnd",
+    "key": "lnd-11532-53e9761e42d9",
+    "provider": "lightningnetwork/lnd",
+    "consumer": "lightninglabs/lndclient",
+    "consumer_sha": "5c1b59d36c94ab2b520515f6b75d270c401166c8"
+  },
+  "merge_base": "25406e1a62b1fb97872bc38495524a877e5eb202",
+  "decided": "63fa4f25c662972be98d87b96cfe0b57ae89c43a",
+  "started": "2026-11-06T16:53:28Z",
+  "finished": "2026-11-06T16:56:49Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/42256127426",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 1,
+  "results": [
+    {
+      "ecosystem": "lnd",
+      "commit": "63fa4f25c662972be98d87b96cfe0b57ae89c43a",
+      "parent": "25406e1a62b1fb97872bc38495524a877e5eb202",
+      "date": "2026-11-06",
+      "subject": "pull request 11532 as one change",
+      "verdict": "NO_GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "NO_GO"
+      },
+      "evidence": [
+        "github.com/lightningnetwork/lnd@v0.21.0-beta.rc2.0.20260630214209-40c64f9db30d/invoices/sql_migration.go:514"
+      ],
+      "evidence_count": 1,
+      "changed": [
+        "lnrpc/devrpc/dev.proto"
+      ],
+      "oracle": {
+        "outcome": "compiles",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 10
+      },
+      "canary": {
+        "outcome": "breaks",
+        "build": "linux/amd64 cgo=0 compile-only",
+        "packages": 10,
+        "errors": [
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-3414025308), but does not contain package github.com/lightningnetwork/lnd/lnrpc/chainrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-3414025308), but does not contain package github.com/lightningnetwork/lnd/lnrpc/invoicesrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-3414025308), but does not contain package github.com/lightningnetwork/lnd/lnrpc/routerrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-3414025308), but does not contain package github.com/lightningnetwork/lnd/lnrpc/signrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-3414025308), but does not contain package github.com/lightningnetwork/lnd/lnrpc/verrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-3414025308), but does not contain package github.com/lightningnetwork/lnd/lnrpc/walletrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-3414025308), but does not contain package github.com/lightningnetwork/lnd/lnrpc/wtclientrpc",
+          "module github.com/lightningnetwork/lnd@latest found (v0.0.2, replaced by /tmp/parent-canary-3414025308), but does not contain package github.com/lightningnetwork/lnd/lnrpc"
+        ],
+        "error_count": 8,
+        "failed_packages": [
+          "github.com/lightninglabs/lndclient"
+        ],
+        "detail": "canary: github.com/lightningnetwork/lnd/lnrpc removed."
+      },
+      "seconds": 200.656855441,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-11-06T16:53:28.064Z level=INFO msg=cloning repo=c-lnd url=https://github.com/lightninglabs/lndclient.git\nlnd         63fa4f25 NO_GO    source_build=NO_GO   compiler=compiles          200.7s \nlnd            1 decisions  GO   0  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   0  WRONG_GO 0  FALSE_NOGO 1  UNKNOWN 0 | not judged 0\nTOTAL          1 decisions  GO   0  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   1: agree   0  WRONG_GO 0  FALSE_NOGO 1  UNKNOWN 0 | not judged 0\n  FAILED lnd@63fa4f25c662972be98d87b96cfe0b57ae89c43a: false_nogo: github.com/lightningnetwork/lnd@v0.21.0-beta.rc2.0.20260630214209-40c64f9db30d/invoices/sql_migration.go:514\n\n1 windows in 3m22s.\nverifier gate: scan failed: 1 disagreements with the compiler or errors"
+}
