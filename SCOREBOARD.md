@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-06 22:01 UTC.
+Updated 2026-11-07 09:02 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 369 | 265 | 11 | 93 | 124 | 121 | 0 | 1 |
+| 370 | 266 | 11 | 93 | 124 | 121 | 0 | 1 |
 
 ## Every pull request
 
@@ -30,6 +30,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#26755](https://github.com/argoproj/argo-cd/pull/26755) feat(appset): add commitSHA parameter to git generator | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#27124](https://github.com/argoproj/argo-cd/pull/27124) feat: add support for attaching ephemeral containers (debug containers) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#27124](https://github.com/argoproj/argo-cd/pull/27124) feat: add support for attaching ephemeral containers (debug containers) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#27329](https://github.com/argoproj/argo-cd/pull/27329) feat: Add Custom Printer Columns to ApplicationSet CRD | Merge | Merge | not judged |  |
 | argo-cd | [#27458](https://github.com/argoproj/argo-cd/pull/27458) feat: add sso.auto-login option to skip SSO login button click | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#27585](https://github.com/argoproj/argo-cd/pull/27585) feat: add bearer token support to Bitbucket Cloud SCM provider Fixes #26929 | Merge | Merge | not judged |  |
 | argo-cd | [#27932](https://github.com/argoproj/argo-cd/pull/27932) feat(appset): add Refresh RPC and UI action (#27798) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |

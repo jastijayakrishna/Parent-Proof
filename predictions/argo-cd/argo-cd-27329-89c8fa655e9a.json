@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 27329,
+    "head": "89c8fa655e9a2fadb024d71e01bd9668becd96f0",
+    "base": "8a1d6eb6e4d0a20c5af6f8523d8b1813fbaf23e8",
+    "title": "feat: Add Custom Printer Columns to ApplicationSet CRD",
+    "url": "https://github.com/argoproj/argo-cd/pull/27329",
+    "updated": "2026-11-07T06:37:21Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-27329-89c8fa655e9a",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "89c8fa655e9a2fadb024d71e01bd9668becd96f0"
+  },
+  "merge_base": "8a1d6eb6e4d0a20c5af6f8523d8b1813fbaf23e8",
+  "decided": "5b7187479b790a92ff78d0d74a2acf8d060f2761",
+  "started": "2026-11-07T09:01:02Z",
+  "finished": "2026-11-07T09:01:47Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/42357687223",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "5b7187479b790a92ff78d0d74a2acf8d060f2761",
+      "parent": "8a1d6eb6e4d0a20c5af6f8523d8b1813fbaf23e8",
+      "date": "2026-11-07",
+      "subject": "pull request 27329 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "pkg/apis/application/v1alpha1/generated.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 41.406085934,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     5b718747 GO       source_build=GO      compiler=-                  41.4s \nargo-cd        1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 45s."
+}
