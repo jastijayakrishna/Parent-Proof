@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-07 15:49 UTC.
+Updated 2026-11-07 19:49 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 371 | 267 | 11 | 93 | 124 | 121 | 0 | 1 |
+| 372 | 268 | 11 | 93 | 125 | 122 | 0 | 1 |
 
 ## Every pull request
 
@@ -274,6 +274,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#11529](https://github.com/lightningnetwork/lnd/pull/11529) Remote signer: harden signing and stream lifecycle | Merge | Merge | compiles |  |
 | lnd | [#11529](https://github.com/lightningnetwork/lnd/pull/11529) Remote signer: harden signing and stream lifecycle | Merge | Merge | compiles |  |
 | lnd | [#11532](https://github.com/lightningnetwork/lnd/pull/11532) bolt12handler+invoices: carry the invoice envelope in payment paths | Don't merge | Don't merge | compiles |  |
+| lnd | [#11534](https://github.com/lightningnetwork/lnd/pull/11534) sweep: keep budget-bound fees publishable | Merge | Merge | compiles |  |
 | loki | [#22382](https://github.com/grafana/loki/pull/22382) refactor: Replace gogoproto with wiresmith codegen for Loki-authored protos | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
