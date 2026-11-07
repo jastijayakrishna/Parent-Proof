@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-07 09:02 UTC.
+Updated 2026-11-07 15:49 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 370 | 266 | 11 | 93 | 124 | 121 | 0 | 1 |
+| 371 | 267 | 11 | 93 | 124 | 121 | 0 | 1 |
 
 ## Every pull request
 
@@ -384,6 +384,7 @@ verifier before the compiler built the consumer against it.
 | temporal | [#899](https://github.com/temporalio/api/pull/899) Add RPC definitions for namespace soft deletion and restoration | Merge | Merge | not judged |  |
 | temporal | [#899](https://github.com/temporalio/api/pull/899) Add RPC definitions for namespace soft deletion and restoration | Merge | Merge | not judged |  |
 | temporal | [#899](https://github.com/temporalio/api/pull/899) Add RPC definitions for namespace soft deletion and restoration | Merge | Merge | not judged |  |
+| temporal | [#901](https://github.com/temporalio/api/pull/901) support workflow heartbeat notification | Merge | Merge | not judged |  |
 | temporal | [#901](https://github.com/temporalio/api/pull/901) support workflow heartbeat notification | Merge | Merge | not judged |  |
 | temporal | [#901](https://github.com/temporalio/api/pull/901) support workflow heartbeat notification | Merge | Merge | not judged |  |
 | temporal | [#903](https://github.com/temporalio/api/pull/903) Reword the target_pollers comments | Merge | Merge | not judged |  |
