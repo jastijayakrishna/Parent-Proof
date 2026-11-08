@@ -1,0 +1,49 @@
+{
+  "pr": {
+    "n": 12813,
+    "head": "120cf20a7765553f70d80b01082d4f42f4d45a62",
+    "base": "10cf3c8bc60889cffab5f8f9dd2e85a367dd3e17",
+    "title": "selinux: support create and delete selinux label",
+    "url": "https://github.com/containerd/containerd/pull/12813",
+    "updated": "2026-11-08T00:12:48Z",
+    "eco": "containerd",
+    "key": "containerd-12813-120cf20a7765",
+    "provider": "containerd/containerd",
+    "consumer": "containerd/nerdctl",
+    "consumer_sha": "27dac9462451c6f2ebde1889230480111521c766"
+  },
+  "merge_base": "10cf3c8bc60889cffab5f8f9dd2e85a367dd3e17",
+  "decided": "8d27d7daf02124c2815adf28ea63f621d6fd38a6",
+  "started": "2026-11-08T02:37:40Z",
+  "finished": "2026-11-08T02:38:11Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/42439149384",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "containerd",
+      "commit": "8d27d7daf02124c2815adf28ea63f621d6fd38a6",
+      "parent": "10cf3c8bc60889cffab5f8f9dd2e85a367dd3e17",
+      "date": "2026-11-08",
+      "subject": "pull request 12813 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "api/services/selinux/v1/selinux.proto",
+        "vendor/github.com/containerd/containerd/api/services/selinux/v1/selinux.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: vendor/github.com/containerd/containerd/api/services/selinux/v1/selinux.proto",
+      "seconds": 29.129710166,
+      "total": 1
+    }
+  ],
+  "log": "time=2026-11-08T02:37:40.551Z level=INFO msg=cloning repo=c-containerd url=https://github.com/containerd/nerdctl.git\ncontainerd  8d27d7da GO       source_build=GO      compiler=-                  29.1s \ncontainerd     1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 31s."
+}

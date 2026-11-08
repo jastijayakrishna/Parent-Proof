@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-07 23:13 UTC.
+Updated 2026-11-08 02:38 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 373 | 269 | 11 | 93 | 125 | 122 | 0 | 1 |
+| 374 | 270 | 11 | 93 | 125 | 122 | 0 | 1 |
 
 ## Every pull request
 
@@ -135,6 +135,7 @@ verifier before the compiler built the consumer against it.
 | authzed | [#155](https://github.com/authzed/api/pull/155) docs: Document UNSPECIFIED enum values that are not returned | Merge | Merge | not judged |  |
 | authzed | [#156](https://github.com/authzed/api/pull/156) feat: allow underscore prefix for private identifiers | Needs review | Needs review | not judged | OPTION_CHANGED, DESCRIPTOR_REFLECTION, NEEDS_REVIEW |
 | cometbft-cosmos-sdk | [#6100](https://github.com/cometbft/cometbft/pull/6100) fix(types,state): enforce minimum Block.MaxBytes floor and handle small limits defensively | Merge | Merge | compiles |  |
+| containerd | [#12813](https://github.com/containerd/containerd/pull/12813) selinux: support create and delete selinux label | Merge | Merge | not judged |  |
 | containerd | [#12829](https://github.com/containerd/containerd/pull/12829) Fix transfer-service registry host config to support multi-root config_path | Merge | Merge | not judged |  |
 | containerd | [#12951](https://github.com/containerd/containerd/pull/12951) cri: add configurable DNS servers for resolving registry hostnames | Merge | Merge | not judged |  |
 | containerd | [#13822](https://github.com/containerd/containerd/pull/13822) cri: implement pod-level checkpoint/restore (KEP-5823) | Merge | Merge | not judged |  |
