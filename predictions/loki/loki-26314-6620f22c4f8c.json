@@ -1,0 +1,53 @@
+{
+  "pr": {
+    "n": 26314,
+    "head": "6620f22c4f8cd8fbb6cf29256e37eec2d17284ce",
+    "base": "9a0b776f58d5e133110e631cd8bae572af49de79",
+    "title": "feat(dataobj): Record the compaction level in the file metadata of compacted log objects",
+    "url": "https://github.com/grafana/loki/pull/26314",
+    "updated": "2026-11-09T16:56:38Z",
+    "eco": "loki",
+    "key": "loki-26314-6620f22c4f8c",
+    "provider": "grafana/loki",
+    "consumer": "grafana/loki",
+    "consumer_sha": "6620f22c4f8cd8fbb6cf29256e37eec2d17284ce"
+  },
+  "merge_base": "9a0b776f58d5e133110e631cd8bae572af49de79",
+  "decided": "82b18653a74243b8f71f5822b3a7cd8703b9d675",
+  "started": "2026-11-09T17:46:42Z",
+  "finished": "2026-11-09T17:46:52Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/42667293254",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "loki",
+      "commit": "82b18653a74243b8f71f5822b3a7cd8703b9d675",
+      "parent": "9a0b776f58d5e133110e631cd8bae572af49de79",
+      "date": "2026-11-09",
+      "subject": "pull request 26314 as one change",
+      "verdict": "UNKNOWN",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "UNKNOWN",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "TOOLCHAIN_TOO_OLD"
+      ],
+      "evidence_count": 0,
+      "changed": [
+        "pkg/dataobj/compaction/v2/proto/compactionv2.proto",
+        "pkg/dataobj/internal/metadata/filemd/filemd.proto",
+        "pkg/engine/internal/proto/physicalpb/physicalpb.proto"
+      ],
+      "unjudged": "a changed contract file is outside the module: pkg/dataobj/compaction/v2/proto/compactionv2.proto",
+      "seconds": 2.451662155,
+      "total": 1
+    }
+  ],
+  "log": "loki        82b18653 UNKNOWN  source_build=UNKNOWN compiler=-                   2.5s \nloki           1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   0  UNKNOWN   1 (100.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  TOOLCHAIN_TOO_OLD (e.g. loki@82b18653a74243b8f71f5822b3a7cd8703b9d675)\n\n1 windows in 10s."
+}

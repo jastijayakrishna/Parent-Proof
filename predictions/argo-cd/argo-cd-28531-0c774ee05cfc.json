@@ -1,0 +1,48 @@
+{
+  "pr": {
+    "n": 28531,
+    "head": "0c774ee05cfc019c97d6d44c67f25463404779df",
+    "base": "8e95a17620ee29d9054b470a35cc074092ff7d6b",
+    "title": "feat: add ignoreDuplicateResources to suppress RepeatedResourceWarning (#28026)",
+    "url": "https://github.com/argoproj/argo-cd/pull/28531",
+    "updated": "2026-11-09T17:45:18Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-28531-0c774ee05cfc",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "0c774ee05cfc019c97d6d44c67f25463404779df"
+  },
+  "merge_base": "8e95a17620ee29d9054b470a35cc074092ff7d6b",
+  "decided": "fb4c6636825cb7170ad1fac401515dd698cd3865",
+  "started": "2026-11-09T17:46:40Z",
+  "finished": "2026-11-09T17:47:21Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/42667293254",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "fb4c6636825cb7170ad1fac401515dd698cd3865",
+      "parent": "8e95a17620ee29d9054b470a35cc074092ff7d6b",
+      "date": "2026-11-09",
+      "subject": "pull request 28531 as one change",
+      "verdict": "GO",
+      "aspects": {
+        "generated_code": "GO",
+        "runtime": "GO",
+        "source_build": "GO"
+      },
+      "evidence_count": 0,
+      "changed": [
+        "pkg/apis/application/v1alpha1/generated.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 37.841240176,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     fb4c6636 GO       source_build=GO      compiler=-                  37.8s \nargo-cd        1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   1  NO-GO   0  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\n1 windows in 41s."
+}
