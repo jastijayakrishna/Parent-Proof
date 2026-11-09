@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-08 02:38 UTC.
+Updated 2026-11-09 00:29 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 374 | 270 | 11 | 93 | 125 | 122 | 0 | 1 |
+| 375 | 271 | 11 | 93 | 125 | 122 | 0 | 1 |
 
 ## Every pull request
 
@@ -24,6 +24,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
 | argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
 | argo-cd | [#26176](https://github.com/argoproj/argo-cd/pull/26176) fix(Hydrator): prevent hydration skip when apps share drySha but have different paths (#26154) | Merge | Merge | not judged |  |
+| argo-cd | [#26435](https://github.com/argoproj/argo-cd/pull/26435) feat(sync): allow resource-level Prune=true sync option to override disabled pruning (#14277) | Merge | Merge | not judged |  |
 | argo-cd | [#26435](https://github.com/argoproj/argo-cd/pull/26435) feat(sync): allow resource-level Prune=true sync option to override disabled pruning (#14277) | Merge | Merge | not judged |  |
 | argo-cd | [#26435](https://github.com/argoproj/argo-cd/pull/26435) feat(sync): allow resource-level Prune=true sync option to override disabled pruning (#14277) | Merge | Merge | not judged |  |
 | argo-cd | [#26473](https://github.com/argoproj/argo-cd/pull/26473) feat(appset): add labelSelector to ignoreApplicationDifferences (#17295) | Merge | Merge | not judged |  |
