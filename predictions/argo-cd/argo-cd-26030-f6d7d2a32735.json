@@ -1,0 +1,90 @@
+{
+  "pr": {
+    "n": 26030,
+    "head": "f6d7d2a327357ca5fb12ebe918a77105a22446dd",
+    "base": "a66fe2af24d3569aa384881bc3a8f8e9f6624523",
+    "title": "feat: Add azureTenantId support for multi-tenant Azure Workload Identity",
+    "url": "https://github.com/argoproj/argo-cd/pull/26030",
+    "updated": "2026-11-10T01:36:42Z",
+    "eco": "argo-cd",
+    "key": "argo-cd-26030-f6d7d2a32735",
+    "provider": "argoproj/argo-cd",
+    "consumer": "argoproj/argo-cd",
+    "consumer_sha": "f6d7d2a327357ca5fb12ebe918a77105a22446dd"
+  },
+  "merge_base": "a66fe2af24d3569aa384881bc3a8f8e9f6624523",
+  "decided": "15c3a73d985028313f9cad7b97878a4e16083435",
+  "started": "2026-11-10T08:34:53Z",
+  "finished": "2026-11-10T08:35:30Z",
+  "run": "https://github.com/jastijayakrishna/Parent-Proof/actions/runs/42783322646",
+  "verifier": {
+    "version": "v0.0.0-20261021072113-f3db8e9543ea protocompile/v0.14.1 verdict/v0.15.0 go-analyzer/v0.25.0",
+    "sha256": "b494ad99de344acfa7f391d9adbf1415e3abc5d3b9cef987c2c1ee14ac862a32"
+  },
+  "exit": 0,
+  "results": [
+    {
+      "ecosystem": "argo-cd",
+      "commit": "15c3a73d985028313f9cad7b97878a4e16083435",
+      "parent": "a66fe2af24d3569aa384881bc3a8f8e9f6624523",
+      "date": "2026-11-10",
+      "subject": "pull request 26030 as one change",
+      "verdict": "NO_GO",
+      "aspects": {
+        "generated_code": "UNKNOWN",
+        "runtime": "NO_GO",
+        "source_build": "UNKNOWN"
+      },
+      "unknown_reasons": [
+        "UNRESOLVED_MEMBER"
+      ],
+      "evidence": [
+        "cmd/argocd/commands/admin/repo.go:151",
+        "cmd/argocd/commands/admin/repo.go:163",
+        "cmd/argocd/commands/admin/repo.go:165",
+        "cmd/argocd/commands/admin/repo.go:167",
+        "cmd/argocd/commands/repo.go:194",
+        "cmd/argocd/commands/repo.go:202",
+        "cmd/argocd/commands/repo.go:214",
+        "cmd/argocd/commands/repo.go:216",
+        "cmd/argocd/commands/repo.go:218",
+        "cmd/argocd/commands/repo.go:234",
+        "cmd/argocd/commands/repo.go:249",
+        "cmd/argocd/commands/repo.go:458",
+        "cmd/argocd/commands/repocreds.go:170",
+        "cmd/argocd/commands/repocreds.go:172",
+        "cmd/argocd/commands/repocreds.go:174",
+        "cmd/argocd/commands/repocreds.go:189",
+        "cmd/argocd/commands/repocreds.go:203",
+        "cmd/argocd/commands/repocreds.go:292",
+        "cmd/util/repo.go:40",
+        "server/repository/repository.go:690",
+        "server/repository/repository.go:702",
+        "server/repository/repository.go:741",
+        "server/server.go:1241",
+        "server/server.go:1242",
+        "util/db/repository_secrets.go:337",
+        "util/db/repository_secrets.go:348",
+        "util/db/repository_secrets.go:379",
+        "util/db/repository_secrets.go:428",
+        "util/db/repository_secrets.go:431",
+        "util/db/repository_secrets.go:447",
+        "util/db/repository_secrets.go:461",
+        "util/db/repository_secrets.go:471",
+        "util/db/repository_secrets.go:523",
+        "util/db/repository_secrets.go:539",
+        "util/webhook/webhook.go:234",
+        "util/webhook/webhook.go:569",
+        "util/webhook/webhook.go:574"
+      ],
+      "evidence_count": 37,
+      "changed": [
+        "pkg/apis/application/v1alpha1/generated.proto"
+      ],
+      "unjudged": "the provider's repository holds no Go module the consumer builds against",
+      "seconds": 35.30513789,
+      "total": 1
+    }
+  ],
+  "log": "argo-cd     15c3a73d NO_GO    source_build=UNKNOWN compiler=-                  35.3s \nargo-cd        1 decisions  GO   0  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\nTOTAL          1 decisions  GO   0  NO-GO   1  UNKNOWN   0 ( 0.0%)  errors 0 | compiler judged   0: agree   0  WRONG_GO 0  FALSE_NOGO 0  UNKNOWN 0 | not judged 1\n\nUNKNOWN reasons across all: windows, ecosystems, an example\n    1   1  UNRESOLVED_MEMBER (e.g. argo-cd@15c3a73d985028313f9cad7b97878a4e16083435)\n\n1 windows in 37s."
+}

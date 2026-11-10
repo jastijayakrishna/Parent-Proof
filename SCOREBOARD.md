@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-10 01:03 UTC.
+Updated 2026-11-10 08:38 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 385 | 278 | 11 | 96 | 128 | 125 | 0 | 1 |
+| 388 | 280 | 12 | 96 | 129 | 126 | 0 | 1 |
 
 ## Every pull request
 
@@ -23,6 +23,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#25416](https://github.com/argoproj/argo-cd/pull/25416) feat(repo-server): partial-clone | Merge | Merge | not judged |  |
 | argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
 | argo-cd | [#25756](https://github.com/argoproj/argo-cd/pull/25756) feat: Pull Request Generator - Support excluding PRs by label (#25755) | Merge | Merge | not judged |  |
+| argo-cd | [#26030](https://github.com/argoproj/argo-cd/pull/26030) feat: Add azureTenantId support for multi-tenant Azure Workload Identity | Don't merge | Needs review | not judged | UNRESOLVED_MEMBER |
 | argo-cd | [#26176](https://github.com/argoproj/argo-cd/pull/26176) fix(Hydrator): prevent hydration skip when apps share drySha but have different paths (#26154) | Merge | Merge | not judged |  |
 | argo-cd | [#26435](https://github.com/argoproj/argo-cd/pull/26435) feat(sync): allow resource-level Prune=true sync option to override disabled pruning (#14277) | Merge | Merge | not judged |  |
 | argo-cd | [#26435](https://github.com/argoproj/argo-cd/pull/26435) feat(sync): allow resource-level Prune=true sync option to override disabled pruning (#14277) | Merge | Merge | not judged |  |
@@ -33,6 +34,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#27124](https://github.com/argoproj/argo-cd/pull/27124) feat: add support for attaching ephemeral containers (debug containers) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#27329](https://github.com/argoproj/argo-cd/pull/27329) feat: Add Custom Printer Columns to ApplicationSet CRD | Merge | Merge | not judged |  |
 | argo-cd | [#27458](https://github.com/argoproj/argo-cd/pull/27458) feat: add sso.auto-login option to skip SSO login button click | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#27585](https://github.com/argoproj/argo-cd/pull/27585) feat: add bearer token support to Bitbucket Cloud SCM provider Fixes #26929 | Merge | Merge | not judged |  |
 | argo-cd | [#27585](https://github.com/argoproj/argo-cd/pull/27585) feat: add bearer token support to Bitbucket Cloud SCM provider Fixes #26929 | Merge | Merge | not judged |  |
 | argo-cd | [#27585](https://github.com/argoproj/argo-cd/pull/27585) feat: add bearer token support to Bitbucket Cloud SCM provider Fixes #26929 | Merge | Merge | not judged |  |
 | argo-cd | [#27932](https://github.com/argoproj/argo-cd/pull/27932) feat(appset): add Refresh RPC and UI action (#27798) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -279,6 +281,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#11439](https://github.com/lightningnetwork/lnd/pull/11439) routing: add experimental fee levels to mission control | Merge | Merge | compiles |  |
 | lnd | [#11466](https://github.com/lightningnetwork/lnd/pull/11466) multi: add dry run option to SendCoins | Merge | Merge | compiles |  |
 | lnd | [#11466](https://github.com/lightningnetwork/lnd/pull/11466) multi: add dry run option to SendCoins | Merge | Merge | compiles |  |
+| lnd | [#11528](https://github.com/lightningnetwork/lnd/pull/11528) multi: allow partial channel policy updates | Merge | Merge | compiles |  |
 | lnd | [#11528](https://github.com/lightningnetwork/lnd/pull/11528) multi: allow partial channel policy updates | Merge | Merge | compiles |  |
 | lnd | [#11528](https://github.com/lightningnetwork/lnd/pull/11528) multi: allow partial channel policy updates | Merge | Merge | compiles |  |
 | lnd | [#11529](https://github.com/lightningnetwork/lnd/pull/11529) Remote signer: harden signing and stream lifecycle | Merge | Merge | compiles |  |
