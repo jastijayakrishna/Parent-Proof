@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-10 16:47 UTC.
+Updated 2026-11-10 22:08 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 394 | 284 | 12 | 98 | 133 | 130 | 0 | 1 |
+| 397 | 287 | 12 | 98 | 135 | 132 | 0 | 1 |
 
 ## Every pull request
 
@@ -132,6 +132,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
+| argo-cd | [#30359](https://github.com/argoproj/argo-cd/pull/30359) feat: add observed generation to applicationset controller  | Merge | Merge | not judged |  |
 | argo-cd | [#30645](https://github.com/argoproj/argo-cd/pull/30645) feat(applicationset): support GitLab pull request generator mTLS (#30644) | Merge | Merge | not judged |  |
 | argo-cd | [#30645](https://github.com/argoproj/argo-cd/pull/30645) feat(applicationset): support GitLab pull request generator mTLS (#30644) | Merge | Merge | not judged |  |
 | argo-cd | [#30745](https://github.com/argoproj/argo-cd/pull/30745) feat(Hydrator):  show when syncSource is behind hydrateTo (#30590) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
@@ -193,6 +194,7 @@ verifier before the compiler built the consumer against it.
 | dapr | [#10866](https://github.com/dapr/dapr/pull/10866) [Backport release-1.19] feat: search and vector blocks | Merge | Merge | compiles |  |
 | dapr | [#10978](https://github.com/dapr/dapr/pull/10978) feat(conversation): reasoning effort and reasoning text in alpha2 | Merge | Merge | compiles |  |
 | dapr | [#11003](https://github.com/dapr/dapr/pull/11003) Add app error details to dead-letter pub/sub messages | Merge | Merge | compiles |  |
+| dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
 | dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
 | dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
 | dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
@@ -287,6 +289,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#11528](https://github.com/lightningnetwork/lnd/pull/11528) multi: allow partial channel policy updates | Merge | Merge | compiles |  |
 | lnd | [#11528](https://github.com/lightningnetwork/lnd/pull/11528) multi: allow partial channel policy updates | Merge | Merge | compiles |  |
 | lnd | [#11528](https://github.com/lightningnetwork/lnd/pull/11528) multi: allow partial channel policy updates | Merge | Merge | compiles |  |
+| lnd | [#11529](https://github.com/lightningnetwork/lnd/pull/11529) Remote signer: harden signing and stream lifecycle | Merge | Merge | compiles |  |
 | lnd | [#11529](https://github.com/lightningnetwork/lnd/pull/11529) Remote signer: harden signing and stream lifecycle | Merge | Merge | compiles |  |
 | lnd | [#11529](https://github.com/lightningnetwork/lnd/pull/11529) Remote signer: harden signing and stream lifecycle | Merge | Merge | compiles |  |
 | lnd | [#11532](https://github.com/lightningnetwork/lnd/pull/11532) bolt12handler+invoices: carry the invoice envelope in payment paths | Don't merge | Don't merge | compiles |  |
