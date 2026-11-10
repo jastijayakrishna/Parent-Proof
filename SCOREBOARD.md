@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-10 08:38 UTC.
+Updated 2026-11-10 16:47 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 388 | 280 | 12 | 96 | 129 | 126 | 0 | 1 |
+| 394 | 284 | 12 | 98 | 133 | 130 | 0 | 1 |
 
 ## Every pull request
 
@@ -200,6 +200,7 @@ verifier before the compiler built the consumer against it.
 | dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
 | dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
 | dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
+| dapr | [#11038](https://github.com/dapr/dapr/pull/11038) scheduler: pull dispatch of actor reminders to sidecars with free slots | Merge | Merge | compiles |  |
 | dapr | [#11049](https://github.com/dapr/dapr/pull/11049) security: mint JWT SVIDs on demand from Sentry | Merge | Merge | compiles |  |
 | dapr | [#11049](https://github.com/dapr/dapr/pull/11049) security: mint JWT SVIDs on demand from Sentry | Merge | Merge | compiles |  |
 | etcd | [#22116](https://github.com/etcd-io/etcd/pull/22116) Comparing value in TXN on non-existing key always returns failure. | Merge | Merge | compiles |  |
@@ -209,6 +210,7 @@ verifier before the compiler built the consumer against it.
 | istio | [#3722](https://github.com/istio/api/pull/3722) feat(tracing): add otel always_on sampler | Merge | Merge | compiles |  |
 | istio | [#3759](https://github.com/istio/api/pull/3759) networking: add suffix match type to StringMatch | Merge | Merge | compiles |  |
 | istio | [#3787](https://github.com/istio/api/pull/3787)  add cert_signer_namespace_map field to MeshConfig for namespace-scoped CSR signer authorization | Merge | Merge | compiles |  |
+| istio | [#3791](https://github.com/istio/api/pull/3791) docs: use camelCase prefixRewrite in HTTPRedirect example | Merge | Merge | compiles |  |
 | istio | [#3791](https://github.com/istio/api/pull/3791) docs: use camelCase prefixRewrite in HTTPRedirect example | Merge | Merge | compiles |  |
 | istio | [#3792](https://github.com/istio/api/pull/3792) docs: expose presence field in JWTRule reference docs | Merge | Merge | compiles |  |
 | istio | [#3796](https://github.com/istio/api/pull/3796) destinationrule: add hash_balance_factor to ConsistentHashLB | Merge | Merge | compiles |  |
@@ -276,6 +278,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#11396](https://github.com/lightningnetwork/lnd/pull/11396) walletrpc: make no-expiry leases explicit | Needs review | Merge | compiles | WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION |
 | lnd | [#11396](https://github.com/lightningnetwork/lnd/pull/11396) walletrpc: make no-expiry leases explicit | Needs review | Merge | compiles | WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION |
 | lnd | [#11396](https://github.com/lightningnetwork/lnd/pull/11396) walletrpc: make no-expiry leases explicit | Needs review | Merge | compiles | WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION |
+| lnd | [#11396](https://github.com/lightningnetwork/lnd/pull/11396) walletrpc: make no-expiry leases explicit | Needs review | Merge | compiles | WHOLE_MESSAGE_FLOW, DESCRIPTOR_REFLECTION |
 | lnd | [#11422](https://github.com/lightningnetwork/lnd/pull/11422) funding: reject new static remote key channels | Merge | Merge | compiles |  |
 | lnd | [#11422](https://github.com/lightningnetwork/lnd/pull/11422) funding: reject new static remote key channels | Merge | Merge | compiles |  |
 | lnd | [#11439](https://github.com/lightningnetwork/lnd/pull/11439) routing: add experimental fee levels to mission control | Merge | Merge | compiles |  |
@@ -287,6 +290,7 @@ verifier before the compiler built the consumer against it.
 | lnd | [#11529](https://github.com/lightningnetwork/lnd/pull/11529) Remote signer: harden signing and stream lifecycle | Merge | Merge | compiles |  |
 | lnd | [#11529](https://github.com/lightningnetwork/lnd/pull/11529) Remote signer: harden signing and stream lifecycle | Merge | Merge | compiles |  |
 | lnd | [#11532](https://github.com/lightningnetwork/lnd/pull/11532) bolt12handler+invoices: carry the invoice envelope in payment paths | Don't merge | Don't merge | compiles |  |
+| lnd | [#11534](https://github.com/lightningnetwork/lnd/pull/11534) sweep: keep budget-bound fees publishable | Merge | Merge | compiles |  |
 | lnd | [#11534](https://github.com/lightningnetwork/lnd/pull/11534) sweep: keep budget-bound fees publishable | Merge | Merge | compiles |  |
 | loki | [#22382](https://github.com/grafana/loki/pull/22382) refactor: Replace gogoproto with wiresmith codegen for Loki-authored protos | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#24984](https://github.com/grafana/loki/pull/24984) feat(logql): Track stream-first query stats, add integration test | Merge | Merge | not judged |  |
@@ -348,6 +352,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#26218](https://github.com/grafana/loki/pull/26218) chore(deps): Update module github.com/google/gnostic-models to v0.7.1 (release-3.6.x) | Merge | Merge | not judged |  |
 | loki | [#26314](https://github.com/grafana/loki/pull/26314) feat(dataobj): Record the compaction level in the file metadata of compacted log objects | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#26314](https://github.com/grafana/loki/pull/26314) feat(dataobj): Record the compaction level in the file metadata of compacted log objects | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
+| loki | [#26314](https://github.com/grafana/loki/pull/26314) feat(dataobj): Record the compaction level in the file metadata of compacted log objects | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | spire | [#102](https://github.com/spiffe/spire-api-sdk/pull/102) Add unauthenticated server Version GetVersion API | Merge | Merge | compiles |  |
 | spire | [#105](https://github.com/spiffe/spire-api-sdk/pull/105) Sync main with next branch | Needs review | Needs review | compiles | TOOLCHAIN_TOO_OLD |
 | temporal | [#781](https://github.com/temporalio/api/pull/781) add GetWorkflowExecutionResult as a system nexus endpoint | Merge | Merge | not judged |  |
@@ -405,3 +410,4 @@ verifier before the compiler built the consumer against it.
 | temporal | [#901](https://github.com/temporalio/api/pull/901) support workflow heartbeat notification | Merge | Merge | not judged |  |
 | temporal | [#901](https://github.com/temporalio/api/pull/901) support workflow heartbeat notification | Merge | Merge | not judged |  |
 | temporal | [#903](https://github.com/temporalio/api/pull/903) Reword the target_pollers comments | Merge | Merge | not judged |  |
+| temporal | [#906](https://github.com/temporalio/api/pull/906) Add fairness_enabled to DescribeTaskQueueResponse | Merge | Merge | not judged |  |
