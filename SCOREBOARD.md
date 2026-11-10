@@ -1,6 +1,6 @@
 # Scoreboard
 
-Updated 2026-11-09 17:47 UTC.
+Updated 2026-11-10 01:03 UTC.
 
 Every row is one pull request that changed a .proto file, decided by the
 verifier before the compiler built the consumer against it.
@@ -11,7 +11,7 @@ verifier before the compiler built the consumer against it.
 
 | pull requests | Merge | Don't merge | Needs review | compiler judged | agree | missed | false alarm |
 |---|---|---|---|---|---|---|---|
-| 382 | 276 | 11 | 95 | 127 | 124 | 0 | 1 |
+| 385 | 278 | 11 | 96 | 128 | 125 | 0 | 1 |
 
 ## Every pull request
 
@@ -33,6 +33,7 @@ verifier before the compiler built the consumer against it.
 | argo-cd | [#27124](https://github.com/argoproj/argo-cd/pull/27124) feat: add support for attaching ephemeral containers (debug containers) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#27329](https://github.com/argoproj/argo-cd/pull/27329) feat: Add Custom Printer Columns to ApplicationSet CRD | Merge | Merge | not judged |  |
 | argo-cd | [#27458](https://github.com/argoproj/argo-cd/pull/27458) feat: add sso.auto-login option to skip SSO login button click | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
+| argo-cd | [#27585](https://github.com/argoproj/argo-cd/pull/27585) feat: add bearer token support to Bitbucket Cloud SCM provider Fixes #26929 | Merge | Merge | not judged |  |
 | argo-cd | [#27585](https://github.com/argoproj/argo-cd/pull/27585) feat: add bearer token support to Bitbucket Cloud SCM provider Fixes #26929 | Merge | Merge | not judged |  |
 | argo-cd | [#27932](https://github.com/argoproj/argo-cd/pull/27932) feat(appset): add Refresh RPC and UI action (#27798) | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | argo-cd | [#28233](https://github.com/argoproj/argo-cd/pull/28233) feat: disambiguate local users from SSO users in RBAC with strict mode | Merge | Merge | not judged |  |
@@ -217,6 +218,7 @@ verifier before the compiler built the consumer against it.
 | istio | [#3801](https://github.com/istio/api/pull/3801) feat: add `presence: IGNORED` and `failedStatusInMetadata` to JWTRule | Merge | Merge | compiles |  |
 | istio | [#3801](https://github.com/istio/api/pull/3801) feat: add `presence: IGNORED` and `failedStatusMetadataKey` to JWTRule | Merge | Merge | compiles |  |
 | istio | [#3801](https://github.com/istio/api/pull/3801) feat: add `presence: IGNORED` and `failedStatusMetadataKey` to JWTRule | Merge | Merge | compiles |  |
+| istio | [#3801](https://github.com/istio/api/pull/3801) feat: add `presence: PERMISSIVE` and `failedStatusMetadataKey` to JWTRule | Merge | Merge | compiles |  |
 | istio | [#3809](https://github.com/istio/api/pull/3809) document case-insensitive method matching in authorizationpolicy | Merge | Merge | compiles |  |
 | istio | [#3810](https://github.com/istio/api/pull/3810) fix wasm docs | Merge | Merge | compiles |  |
 | istio | [#3818](https://github.com/istio/api/pull/3818) networking: add retryBudget to DestinationRule portLevelSettings | Merge | Merge | compiles |  |
@@ -341,6 +343,7 @@ verifier before the compiler built the consumer against it.
 | loki | [#26002](https://github.com/grafana/loki/pull/26002) feat(logline): Look up hints for live instant metric queries | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#26002](https://github.com/grafana/loki/pull/26002) feat(logline): Look up hints for live instant metric queries | Needs review | Needs review | not judged | CONTRACT_COMPILE_ERROR |
 | loki | [#26218](https://github.com/grafana/loki/pull/26218) chore(deps): Update module github.com/google/gnostic-models to v0.7.1 (release-3.6.x) | Merge | Merge | not judged |  |
+| loki | [#26314](https://github.com/grafana/loki/pull/26314) feat(dataobj): Record the compaction level in the file metadata of compacted log objects | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | loki | [#26314](https://github.com/grafana/loki/pull/26314) feat(dataobj): Record the compaction level in the file metadata of compacted log objects | Needs review | Needs review | not judged | TOOLCHAIN_TOO_OLD |
 | spire | [#102](https://github.com/spiffe/spire-api-sdk/pull/102) Add unauthenticated server Version GetVersion API | Merge | Merge | compiles |  |
 | spire | [#105](https://github.com/spiffe/spire-api-sdk/pull/105) Sync main with next branch | Needs review | Needs review | compiles | TOOLCHAIN_TOO_OLD |
